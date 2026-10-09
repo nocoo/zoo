@@ -1,5 +1,11 @@
 # Retrospective
 
+## 2026-10-10 - Preview entrypoint and speech pace
+
+The Vite SPA fallback served the application homepage for the directory-style `/voice-preview/` URL, despite `public/voice-preview/index.html` existing. Add an exact local route rewrite and validate the actual URL, including a nonzero expected audio element count, before declaring the preview usable. An `every()` check over an empty element list otherwise passes vacuously.
+
+The owner found the first speech take too slow. Regenerate the same three samples with shorter pauses and a conversational pace while retaining the voice and pronunciation instructions. Preserve immutable take paths and provide old/new comparison instead of changing playback speed or overwriting the previous recordings.
+
 ## 2026-10-10 - Picture-centered browsing
 
 The initial card reused a pill Button without resetting its border, radius and hover surface. These styles created a second shape inside the card, particularly after touch/hover. Opaque cream illustrations multiplied over category colors also exposed rectangular edges. The blob modal further constrained image size to 170-210 pixels and added conflicting background shapes.
