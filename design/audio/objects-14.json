@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "玩具车。小小玩具车，推一推，向前走。",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 6.2,
+  "interaction_id": "v1_ChdoRl9KYXUyQUV0Q2IxZThQbjhHYndRURIXaEZfSmF1MkFFdENiMWU4UG44R2J3UVE",
+  "origin": "generated",
+  "wav_sha256": "8a974cb82db46057f1eb12c780cf89984fac18ce4201b5ba6359138bcd04f0d0",
+  "mp3_sha256": "1712ce3883fc2a8ccc468d9bcf251e576d1b51647803a337546990a857abbf4b"
+}

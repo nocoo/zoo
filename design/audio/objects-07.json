@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "鞋子。穿上合脚的鞋子，保护我们的小脚。",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 5.44,
+  "interaction_id": "v1_ChZZVl9KYXBFZDBfUGF1Z19wcl9xZ0NnEhZZVl9KYXBFZDBfUGF1Z19wcl9xZ0Nn",
+  "origin": "generated",
+  "wav_sha256": "baa77b3276342019a4b5ad1e12db621050ff9fade9e9398287424fcf6b95a7cb",
+  "mp3_sha256": "4ce7bb09ad64b5ccd5d536e5562891da991501e184494ccf1be926114fb4a252"
+}

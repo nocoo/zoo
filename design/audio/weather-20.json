@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "雪人。和大人一起，把白白的雪堆成雪人。",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 6.24,
+  "interaction_id": "v1_ChdIbF9KYXR6VER0anVyZmNQeE9iR3FBTRIXSGxfSmF0elREdGp1cmZjUHhPYkdxQU0",
+  "origin": "generated",
+  "wav_sha256": "f2cdead8a04021033dd53b785137fdc7506893009e22c36c343ce7381596c38b",
+  "mp3_sha256": "b4ca0ed6a8f38fec059f04ac4c731438e84849a1ca8ed93025d8bdde27235f5f"
+}

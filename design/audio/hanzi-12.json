@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "田。田里可以种庄稼。",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 3.68,
+  "interaction_id": "v1_ChdCbURKYXZiUE9KR3E5dE1QMXBxaGdRVRIXQm1ESmF2YlBPSkdxOXRNUDFwcWhnUVU",
+  "origin": "generated",
+  "wav_sha256": "2cba3c8184d62656834936d59db3b7a0fb854bc2065dda7b2ae32e8580517c35",
+  "mp3_sha256": "e2808457212676d8ea2459c3d14e842331ff9050aa433ace0c34c294473fb7a1"
+}

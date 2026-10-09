@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "碗。小碗里装着香香的饭。",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 4.6,
+  "interaction_id": "v1_ChdMbF9KYXNha0U2TEN2cjBQcjhmTGdBMBIXTGxfSmFzYWtFNkxDdnIwUHI4ZkxnQTA",
+  "origin": "generated",
+  "wav_sha256": "ef5193abd31cbf925a31256c6e1b564757ff9ed6b60e38c51a529a47e095b70f",
+  "mp3_sha256": "cb1e944d5d4183e398befe55fc29d3dfa5509cf1046675215ab9ff2d388818ea"
+}

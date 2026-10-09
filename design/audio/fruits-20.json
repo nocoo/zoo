@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "哈密瓜。哈密瓜的果肉甜甜的，外皮常有网纹。",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 6.2,
+  "interaction_id": "v1_ChdmVjdKYXRDNENvSHIycm9QZ002NHdBZxIXZlY3SmF0QzRDb0hyMnJvUGdNNjR3QWc",
+  "origin": "generated",
+  "wav_sha256": "a4f1a1d04bcf9edcb1b478187457d372a68753e3e440131cd094f68993117285",
+  "mp3_sha256": "7f7c00f7f51cf1995b5bd2e54160ce7653272afe8a7d6f684810072085e1f185"
+}

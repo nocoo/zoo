@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "袜子。小袜子，套在脚上暖暖的。",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 5.0,
+  "interaction_id": "v1_ChdVbF9KYXZPR01xSGQ5dE1QcktteWtBVRIXVWxfSmF2T0dNcUhkOXRNUHJLbXlrQVU",
+  "origin": "generated",
+  "wav_sha256": "7bded6080b0e78c011beddf4bf8e04682df2094d0e0c0bd7100eae171bb5c187",
+  "mp3_sha256": "85dee176a8c41d42a38252789e3dd87e7205ff877ede33f1ab780b2262724019"
+}

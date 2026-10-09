@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "日。日，就是太阳。太阳出来了！",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 5.0,
+  "interaction_id": "v1_Chd3Rl9KYXZQVEVZN05yZmNQX19MV21RbxIXd0ZfSmF2UFRFWTdOcmZjUF9fTFdtUW8",
+  "origin": "generated",
+  "wav_sha256": "f986164b88cfd5da096c498bd2bf714e0b4b5e99dabfc08cda3b2984f9d2e15c",
+  "mp3_sha256": "0f641a3ac2fcbc7c4287eff2657326e61e2d8e00a74cc0610c2698ba4b455051"
+}
