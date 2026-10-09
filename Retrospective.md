@@ -2,7 +2,7 @@
 
 ## 2026-10-10 - Batch speech rate limits
 
-Four concurrent speech requests exceeded the provider quota. Spacing starts by seven seconds still triggered HTTP 429 later in the batch. Preserve completed WAVs and their hashes, stop on errors, cool down, and resume at fifteen-second intervals rather than regenerating clips or silently switching models. Concurrency alone is not a rate limit.
+The generator initially hid provider error details and treated HTTP 429 as a short-window rate limit. Spacing starts by seven and then fifteen seconds did not resolve it. Reading the sanitized response revealed a Tier 1 limit of 100 requests per day and a reset countdown. Preserve completed WAVs and their hashes, expose useful errors without credentials, and wait for the actual quota reset instead of assuming a one-minute cooldown. Concurrency alone is not a rate limit. The batch stopped with 98 completed clips; the site retains its existing playback until all 246 are ready.
 
 ## 2026-10-10 - Preview entrypoint and speech pace
 

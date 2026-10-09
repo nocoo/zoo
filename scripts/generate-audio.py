@@ -113,7 +113,12 @@ def generate(item, key, check_only):
                         raise ValueError(f'{identifier} 响应超出大小限制')
                     result = json.loads(raw)
             except urllib.error.HTTPError as error:
-                raise ValueError(f'{identifier} Gemini HTTP {error.code}；未自动重试或切换模型') from None
+                try:
+                    detail = json.loads(error.read(16384)).get('error', {}).get('message', '')
+                    detail = detail.replace(key, '[REDACTED]')[:1500]
+                except (ValueError, AttributeError):
+                    detail = ''
+                raise ValueError(f'{identifier} Gemini HTTP {error.code}；未自动重试或切换模型\n{detail}') from None
             except (urllib.error.URLError, TimeoutError):
                 raise ValueError(f'{identifier} Gemini 网络失败；可稍后重跑续传') from None
             blocks = [content for step in result.get('steps', []) if step.get('type') == 'model_output'
