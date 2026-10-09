@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>温柔女声试听 · 小小动物岛</title>
+  <style>
+    :root { color-scheme: light; --paper: #faf6e8; --ink: #66503d; --green: #3f927b; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: 'Noto Sans SC', 'PingFang SC', sans-serif; }
+    main { max-width: 900px; margin: auto; padding: 36px 22px; }
+    a { color: var(--green); }
+    h1 { font-size: 30px; margin-bottom: 12px; }
+    .intro { line-height: 1.8; font-size: 14px; }
+    .samples { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin: 28px 0; }
+    article { border: 1px solid #e4ddc8; padding: 18px; border-radius: 24px; }
+    img { display: block; width: 100%; aspect-ratio: 1.2; object-fit: contain; }
+    h2 { margin: 10px 0; font-size: 22px; }
+    article p { font-size: 14px; line-height: 1.8; min-height: 76px; }
+    audio { width: 100%; height: 44px; }
+    small { line-height: 1.8; display: block; }
+    @media (max-width: 650px) { .samples { grid-template-columns: 1fr; } article { display: grid; grid-template-columns: 100px 1fr; gap: 0 14px; } img { grid-row: 1 / 3; } article p { min-height: 0; margin-top: 0; } audio { grid-column: 1 / -1; margin-top: 12px; } }
+  </style>
+</head>
+<body><main>
+  <a href="/">返回小小动物岛</a>
+  <h1>先听听这位温柔的大朋友</h1>
+  <p class="intro">Gemini 3.8 Flash TTS · Sulafat 女声 · 第一组试听<br>已要求温暖、自然、语速稍慢，使用标准大陆普通话，不带港台口音。实际音色和发音等你试听确认。</p>
+  <div class="samples">
+    <article><img src="/art/animals-01.webp" alt="狮子"><h2>狮子</h2><p>狮子。狮子有一圈蓬松的鬃毛，像戴着小围巾。</p><audio controls preload="metadata" src="animals-01.wav" aria-label="试听狮子"></audio></article>
+    <article><img src="/art/animals-02.webp" alt="熊猫"><h2>熊猫</h2><p>熊猫。熊猫穿着黑白衣服，最爱吃竹子。</p><audio controls preload="metadata" src="animals-02.wav" aria-label="试听熊猫"></audio></article>
+    <article><img src="/art/animals-03.webp" alt="兔子"><h2>兔子</h2><p>兔子。兔子的耳朵长长的，蹦蹦跳跳真可爱。</p><audio controls preload="metadata" src="animals-03.wav" aria-label="试听兔子"></audio></article>
+  </div>
+  <small>请重点听：音色是否温柔、语速是否合适，以及“狮子、鬃毛、竹子、长长的”的发音。<br>这组尚未替换主站朗读，也没有开始生成剩余内容。</small>
+</main><script>
+  document.addEventListener('play', event => {
+    if (event.target instanceof HTMLAudioElement) document.querySelectorAll('audio').forEach(audio => { if (audio !== event.target) audio.pause(); });
+  }, true);
+</script></body>
+</html>
