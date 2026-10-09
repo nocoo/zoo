@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { existsSync } from 'node:fs';
 import { categories, chineseNumber, pictures } from '../src/content.ts';
+import { swipeStep } from '../src/swipe.ts';
 
 assert.equal(pictures.length, 246);
 assert.equal(new Set(pictures.map(p => p.id)).size, pictures.length);
@@ -16,4 +17,9 @@ for (const [value, label] of [[1, '一'], [10, '十'], [11, '十一'], [20, '二
   assert.equal(chineseNumber(value), label);
 }
 assert.ok(existsSync('public/art/hero.webp'));
+assert.equal(swipeStep(-90, 12), 1);
+assert.equal(swipeStep(90, 12), -1);
+assert.equal(swipeStep(30, 0), 0);
+assert.equal(swipeStep(80, 100), 0);
+assert.equal(swipeStep(60, 40), 0);
 console.log('检查通过：8 个分类、246 张内容卡、全部插画和数字读法。');

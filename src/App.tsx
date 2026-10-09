@@ -1,49 +1,22 @@
-import { useEffect } from 'react';
 import { Button, Modal, Switch } from 'animal-island-ui';
 import {
-  AppleIcon, ArrowLeftIcon, ArrowRightIcon, BearIcon, BookIcon, ChatIcon,
-  CheckIcon, ChevronRightIcon, CloseIcon, FlowerIcon, HeartIcon, HomeIcon, LeafIcon,
+  AppleIcon, BearIcon, BookIcon, ChatIcon,
+  CheckIcon, ChevronRightIcon, FlowerIcon, HeartIcon, HomeIcon, LeafIcon,
   MusicIcon, PlayIcon, SettingsIcon, StarIcon, SunIcon,
 } from 'naive-icons';
-import { animalGroups, categories, type Picture } from './content';
+import { animalGroups, categories } from './content';
 import { useIsland } from './useIsland';
+import { Illustration } from './Illustration';
+import { PictureViewer } from './PictureViewer';
 
 const categoryIcons = {
   animals: BearIcon, numbers: StarIcon, letters: BookIcon, hanzi: BookIcon,
   phrases: ChatIcon, weather: SunIcon, objects: HomeIcon, fruits: AppleIcon,
 };
 
-function Illustration({ picture, large = false }: { picture: Picture; large?: boolean }) {
-  if (picture.category === 'numbers') return (
-    <div className={`number-art ${large ? 'large' : ''}`}>
-      <span>{picture.name}</span>
-      {large && <div className="counting-dots" aria-label={`${picture.value} 个圆点`}>
-        {Array.from({ length: picture.value! }, (_, index) => <i key={index} />)}
-      </div>}
-      {!large && <div className="number-sprinkles" aria-hidden="true"><i /><i /><i /></div>}
-    </div>
-  );
-  if (picture.category === 'letters') return (
-    <div className={`letter-art ${large ? 'large' : ''}`}><span>{picture.name}</span><span>{picture.pronunciation}</span></div>
-  );
-  return <img src={picture.image} alt="" className="picture-image" loading={large ? 'eager' : 'lazy'} width="308" height="256" />;
-}
-
 export function App() {
   const island = useIsland();
   const active = categories.find(c => c.id === island.category)!;
-  const currentIndex = island.items.findIndex(p => p.id === island.selected?.id);
-
-  useEffect(() => {
-    if (!island.selected) return;
-    const handleKey = (event: KeyboardEvent) => {
-      if (event.key === 'ArrowLeft') { event.preventDefault(); island.move(-1); }
-      if (event.key === 'ArrowRight') { event.preventDefault(); island.move(1); }
-    };
-    window.addEventListener('keydown', handleKey);
-    return () => window.removeEventListener('keydown', handleKey);
-  });
-
   function goExplore() {
     island.setCollection(false);
     document.getElementById('explore')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -133,22 +106,12 @@ export function App() {
 
       <footer className="site-footer"><span><LeafIcon size={17} color="currentColor" /> 小小动物岛</span><span>给小小的你，一个充满好奇的世界</span><span>无广告 · 无需登录 · 亲子陪伴</span></footer>
 
-      <Modal open={Boolean(island.selected)} variant="game" width="min(680px, 96vw)" onClose={island.closePicture} title={<div className="dialog-title"><span>一起认一认</span><Button type="text" aria-label="关闭认知卡片" onClick={island.closePicture} icon={<CloseIcon size={23} color="currentColor" />} /></div>} typewriter={false} footer={null} className="picture-modal">
-        {island.selected && <div className={`detail tone-${categories.find(c => c.id === island.selected!.category)!.tone}`}>
-          <div className="detail-art"><Illustration picture={island.selected} large /></div>
-          <span className="detail-pronunciation">{island.selected.category === 'letters' ? '大写和小写' : island.selected.pronunciation}</span>
-          <h2>{island.selected.category === 'letters' ? `${island.selected.name} ${island.selected.pronunciation}` : island.selected.name}</h2>
-          <p>{island.selected.description}</p>
-          {island.selected.category === 'fruits' && <small className="food-note">认识水果不等于整颗食用，请家长去核、切成适龄小块。</small>}
-          <div className="detail-actions"><Button type="primary" onClick={() => island.speak(island.selected!, true)} icon={<MusicIcon size={20} color="currentColor" />}>再听一遍</Button><Button type="default" onClick={() => island.toggleFavorite(island.selected!.id)} icon={<HeartIcon size={20} color="currentColor" fill={island.favorites.includes(island.selected.id) ? 'currentColor' : 'none'} />}>{island.favorites.includes(island.selected.id) ? '已收藏' : '收藏'}</Button></div>
-          <div className="detail-navigation"><Button type="text" onClick={() => island.move(-1)} disabled={island.items.length < 2} icon={<ArrowLeftIcon size={20} color="currentColor" />}>上一个</Button><span>{Math.max(0, currentIndex + 1)} / {island.items.length}</span><Button type="text" onClick={() => island.move(1)} disabled={island.items.length < 2}>下一个 <ArrowRightIcon size={20} color="currentColor" /></Button></div>
-        </div>}
-      </Modal>
+      {island.selected && <PictureViewer island={island} />}
 
       <Modal open={island.parentOpen} variant="game" width="min(560px, 96vw)" title="给大朋友的小纸条" onClose={() => island.setParentOpen(false)} typewriter={false} footer={<Button type="primary" onClick={() => island.setParentOpen(false)}>知道啦，一起玩吧</Button>}>
         <div className="parent-content"><p>这里不是小课堂，而是你和宝宝一起发现世界的小角落。</p><h3>慢一点，也很好</h3><p>1.5–2 岁以真实生活、亲子共读和实物为主；如果使用屏幕，请全程陪伴。2–3 岁也建议短时共同观看，每次 5–10 分钟，累了就休息。</p><h3>看一看，再找一找</h3><p>先从宝宝熟悉的动物、物品和 1–5 开始。数字 1–100、字母和汉字只是供探索，不是这个年龄必须掌握的目标。不测验、不排名。</p><div className="setting-row"><span>点开卡片时自动朗读</span><Switch checked={island.sound} onChange={island.toggleSound} aria-label="自动朗读" /></div><p className="privacy-note">无账号、无广告、无行为统计。收藏仅保存在这台设备。朗读使用浏览器与系统语音，声音和可用性因设备而异，部分系统语音可能联网。</p></div>
       </Modal>
-      {island.message && <div className="toast" role="status">{island.message}</div>}
+      {island.message && !island.selected && <div className="toast" role="status">{island.message}</div>}
     </>
   );
 }

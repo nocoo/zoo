@@ -2,7 +2,7 @@
 import argparse
 from pathlib import Path
 
-from PIL import Image
+from PIL import Image, ImageChops, ImageDraw, ImageOps
 
 ROOT = Path(__file__).resolve().parents[2]
 PUBLIC = ROOT / "public/art"
@@ -20,6 +20,18 @@ COLUMN_EDGES = {
     "animals": [0, 310, 607, 906, 1225, 1536],
     "hanzi": [0, 300, 604, 931, 1225, 1536],
 }
+PAPER = (250, 246, 232)
+
+
+def normalize_paper(image):
+    difference = ImageChops.difference(image, Image.new("RGB", image.size, PAPER))
+    red, green, blue = difference.split()
+    distance = ImageChops.lighter(ImageChops.lighter(red, green), blue)
+    candidates = distance.point(lambda value: 255 if value <= 18 else 0)
+    bordered = ImageOps.expand(candidates, border=1, fill=255)
+    ImageDraw.floodfill(bordered, (0, 0), 128, thresh=0)
+    background = bordered.crop((1, 1, image.width + 1, image.height + 1)).point(lambda value: 255 if value == 128 else 0)
+    return Image.composite(Image.new("RGB", image.size, PAPER), image, background)
 
 
 def process_atlas(category, source):
@@ -44,8 +56,8 @@ def process_atlas(category, source):
             box = (
                 cols[col], rows[row], cols[col + 1], rows[row + 1],
             )
-            cell = atlas.crop(box).resize((300, 250), Image.Resampling.LANCZOS)
-            cell.save(PUBLIC / f"{category}-{index + 1:02}.webp", "WEBP", quality=88, method=6)
+            cell = normalize_paper(atlas.crop(box).resize((300, 250), Image.Resampling.LANCZOS))
+            cell.save(PUBLIC / f"{category}-{index + 1:02}.webp", "WEBP", lossless=True, method=6)
 
     thumbs = []
     for index in range(20):
