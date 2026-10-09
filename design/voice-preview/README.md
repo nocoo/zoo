@@ -15,4 +15,4 @@ The generator reads only the existing Gemini credential from the private user-le
 | Panda | 7.64 s | 5.80 s |
 | Rabbit | 8.56 s | 6.76 s |
 
-The local comparison page is `/voice-preview/`. The second take remains pending owner listening approval. Main-site speech and the remaining 243 cards are unchanged; no full generation or production deployment has been performed. WAV decoding and real browser playback were verified, not accent quality or verbatim acoustic transcription.
+The local comparison page is `/voice-preview/`. The owner approved the second take on 2026-10-10 and authorized generating all card recordings with this voice and pace. Full-batch generation and safe rerun instructions are maintained in the root `AGENTS.md`. The original preview recordings remain unchanged; the first three full-batch entries reuse the exact approved second-take WAVs. No production deployment is implied by voice approval. WAV decoding and real browser playback were verified, not accent quality or verbatim acoustic transcription.
