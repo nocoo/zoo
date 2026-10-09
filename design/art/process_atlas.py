@@ -56,7 +56,7 @@ def process_atlas(category, source):
             box = (
                 cols[col], rows[row], cols[col + 1], rows[row + 1],
             )
-            cell = normalize_paper(atlas.crop(box).resize((300, 250), Image.Resampling.LANCZOS))
+            cell = normalize_paper(atlas.crop(box))
             cell.save(PUBLIC / f"{category}-{index + 1:02}.webp", "WEBP", lossless=True, method=6)
 
     thumbs = []
