@@ -7,6 +7,8 @@ import json
 from pathlib import Path
 import shutil
 import subprocess
+import threading
+import time
 import urllib.error
 import urllib.request
 import wave
@@ -14,6 +16,8 @@ import wave
 ROOT = Path(__file__).resolve().parents[1]
 MODEL = "gemini-3.8-flash-tts"
 VOICE = "Sulafat"
+REQUEST_LOCK = threading.Lock()
+NEXT_REQUEST = 0.0
 STYLE = (
     "A gentle, warm adult female voice reading a picture book to a toddler. "
     "Use clear, standard Mainland Chinese Putonghua with precise four tones, "
@@ -57,6 +61,7 @@ def atomic_write(path, data):
 
 
 def generate(item, key, check_only):
+    global NEXT_REQUEST
     identifier = item['id']
     archive = ROOT / 'design/audio'
     output = ROOT / 'public/audio'
@@ -98,6 +103,9 @@ def generate(item, key, check_only):
                 data=json.dumps(payload).encode(),
                 headers={'x-goog-api-key': key, 'Content-Type': 'application/json'},
             )
+            with REQUEST_LOCK:
+                time.sleep(max(0, NEXT_REQUEST - time.monotonic()))
+                NEXT_REQUEST = time.monotonic() + 7
             try:
                 with urllib.request.urlopen(request, timeout=180) as response:
                     raw = response.read(16 * 1024 * 1024 + 1)
