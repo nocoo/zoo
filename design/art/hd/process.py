@@ -47,7 +47,7 @@ def main():
             image = atlas.normalize_paper(raw.convert('RGB'), tolerance=8)
         files = []
         for suffix, size in [('full', (2048, 1792)), ('thumb', (640, 560))]:
-            derivative = image.resize(size, Image.Resampling.LANCZOS) if size != image.size else image
+            derivative = atlas.normalize_paper(image.resize(size, Image.Resampling.LANCZOS), tolerance=8) if size != image.size else image
             path = output / f'{identifier}-{suffix}.webp'
             derivative.save(path, 'WEBP', lossless=True, method=6)
             with Image.open(path) as saved:
