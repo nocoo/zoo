@@ -1,5 +1,9 @@
 # Retrospective
 
+## 2026-10-10 - Image batch pacing
+
+A four-request image burst produced one Azure HTTP 429 even though the other three completed. Preserve both successful native images and the rejected request record, add explicit 35-second request-start spacing, and resume after cooling down. Bounded concurrency is not request-rate control; never repeat a batch wholesale or automatically retry an outcome-unknown paid generation.
+
 ## 2026-10-10 - Full-screen illustration resolution
 
 The original 1536 x 1024 atlases placed twenty subjects on each canvas, leaving roughly 300 x 250 native pixels per card. Lossless export preserved those pixels but could not make them suitable for full-screen high-DPI viewing. Re-exporting or sharpening would not restore missing detail. For full-screen artwork, generate one subject per native high-resolution image and provide a separate small list derivative. The owner authorized a three-animal reference-guided redraw preview before expanding the batch; keep the original atlas and all generation provenance.
