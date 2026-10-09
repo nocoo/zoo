@@ -1,6 +1,8 @@
 {
-	"status": "pending",
-	"imageSha256": "ca54f4e6a35a8683956085eef29658e4d1c0084169fb1accac2606e4dc9dafb9",
-	"recordedAt": "2026-10-09T22:14:59.397993+00:00",
-	"nextStep": "Show this untouched image to the owner immediately. Await confirmation before extraction, compositing, exports, or catalogue integration."
+  "status": "approved",
+  "imageSha256": "ca54f4e6a35a8683956085eef29658e4d1c0084169fb1accac2606e4dc9dafb9",
+  "recordedAt": "2026-10-09T22:14:59.397993+00:00",
+  "nextStep": "Owner approved this direction and authorized the remaining 117 card redraws.",
+  "approvedBy": "owner",
+  "approvedOn": "2026-10-10"
 }
