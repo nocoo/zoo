@@ -7,6 +7,8 @@
 - Static application: no authentication, database, tracking or application API.
 - `src/content.ts` owns 246 cards across eight categories. Numbers cover 1-100; letters cover A-Z; other categories have 20 cards each.
 - `src/useIsland.ts` owns interaction state, device-local favorites and browser speech synthesis. `src/App.tsx` renders the views.
+- `src/PictureViewer.tsx` uses a native modal dialog for full-viewport browsing, focus containment and restoration. It supports pointer swipes and arrow keys; the ordinary library Modal remains only for parent information.
+- Keep card/viewer illustration surfaces on `--zoo-art-paper`. Card assets have a matching normalized background; do not restore multiply blending, colored letterboxing or nested pill geometry on image cards.
 - Preserve Chinese product copy and correct pinyin. Do not present advanced numbers or literacy as developmental requirements.
 - Images in `public/art/` are optimized delivery assets. Preserve generation originals, prompts and exact subject ordering under `design/art/`.
 

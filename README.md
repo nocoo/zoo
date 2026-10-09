@@ -20,9 +20,9 @@ A warm, colorful Chinese picture-learning island for children aged 1.5-3 and the
 | Everyday objects / 身边物品 | 20 |
 | Fruit / 缤纷水果 | 20 |
 
-Tap a card for a large illustration, pronunciation and a short explanation. Use the previous/next controls or desktop arrow keys to browse. Save favorites on the current device. Browser speech reads Chinese cards and English letters; the voice and availability depend on the device.
+Tap a card for a full-viewport illustration, pronunciation and a short explanation. Swipe left/right, use the previous/next controls or desktop arrow keys to browse. Escape or the close control returns to the focused card. Save favorites on the current device. Browser speech reads Chinese cards and English letters; the voice and availability depend on the device.
 
-点击卡片可查看大图、拼音和简短介绍；支持前后翻页、电脑方向键、随机探索及本机收藏。浏览器语音朗读中文内容和英文字母，实际音色与可用性取决于设备。建议亲子短时共同使用，数字 1–100、字母和汉字并非这一年龄必须掌握的学习目标。
+点击卡片进入全屏看图，显示拼音和简短介绍；支持左右滑动、前后翻页、电脑方向键、随机探索及本机收藏。浏览器语音朗读中文内容和英文字母，实际音色与可用性取决于设备。建议亲子短时共同使用，数字 1–100、字母和汉字并非这一年龄必须掌握的学习目标。
 
 ## Development / 开发
 
@@ -47,7 +47,7 @@ The assets-only Cloudflare Worker is named `zoo`; `wrangler.jsonc` configures `z
 
 ## Artwork / 插画
 
-- `public/art/`: 120 individual WebP cards and one hero image, about 1.6 MB total.
+- `public/art/`: 120 individual lossless WebP cards and one hero image, about 5.6 MB total; cards load lazily.
 - `design/art/`: original PNG generations, prompts, row-major subject orders, processing script and visual contact sheets.
 - Model: Azure OpenAI `gpt-image-2.5-sunburst`, called through the Workflow image-generation skill.
 - UI icons: `naive-icons`; the reference UI library and icon package retain their MIT notices in their distributions.

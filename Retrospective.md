@@ -1,5 +1,13 @@
 # Retrospective
 
+## 2026-10-10 - Picture-centered browsing
+
+The initial card reused a pill Button without resetting its border, radius and hover surface. These styles created a second shape inside the card, particularly after touch/hover. Opaque cream illustrations multiplied over category colors also exposed rectangular edges. The blob modal further constrained image size to 170-210 pixels and added conflicting background shapes.
+
+Reset the card action geometry, normalize only edge-connected paper pixels while preserving originals, and render images without multiply blending. Replace the recognition modal with a native full-viewport dialog, retaining concise controls and adding directional swipes. Inspect hover states, image letterboxing and landscape layouts rather than relying only on homepage screenshots. The installed Carousel implementation was inspected and has no touch handlers, so no carousel dependency was added.
+
+Validation: content/swipe checks and production build passed. Isolated Chromium checks covered real CDP touch swipes, vertical gesture rejection, keyboard navigation, favorites, closing/focus restoration, number 100, and 320/390/768/844/1440 layouts. The existing Vite server on port 7058 serves the local preview. No production deployment was performed.
+
 ## 2026-10-09 - Initial implementation verification
 
 - The inherited Herdr pane context did not resolve with `--current`. No pane was created by the failed command. Inspect live state and use the confirmed controller pane ID before splitting; never guess from focus.
