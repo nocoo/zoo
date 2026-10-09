@@ -90,7 +90,7 @@ export function useIsland() {
   return {
     category, group, setGroup, numberPage, setNumberPage, collection, setCollection,
     favorites, selected, sound, message, visited, parentOpen, setParentOpen, items,
-    chooseCategory, openPicture, toggleFavorite, speak, move,
+    chooseCategory, openPicture, toggleFavorite, speak, stopSpeech, move,
     closePicture: () => { stopSpeech(); setSelected(null); },
     toggleSound: () => { stopSpeech(); setSound(!sound); },
     surprise: () => { if (items.length) openPicture(items[Math.floor(Math.random() * items.length)]); },
