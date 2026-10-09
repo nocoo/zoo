@@ -1,0 +1,184 @@
+import argparse
+import base64
+from concurrent.futures import ThreadPoolExecutor
+import hashlib
+import io
+import json
+from pathlib import Path
+import shutil
+import subprocess
+import urllib.error
+import urllib.request
+import wave
+
+ROOT = Path(__file__).resolve().parents[1]
+MODEL = "gemini-3.8-flash-tts"
+VOICE = "Sulafat"
+STYLE = (
+    "A gentle, warm adult female voice reading a picture book to a toddler. "
+    "Use clear, standard Mainland Chinese Putonghua with precise four tones, "
+    "natural neutral tones, and clear zh/ch/sh versus z/c/s. "
+    "No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. "
+    "Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. "
+    "Use a natural conversational pace, about 4 Chinese syllables per second, "
+    "roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; "
+    "do not stretch vowels or leave long pauses between phrases. "
+    "Pause only 150 to 200 milliseconds after the animal name. "
+    "Read the text verbatim, no extra words, music or effects."
+)
+ENGLISH_STYLE = (
+    "The same gentle, warm adult female voice introducing an alphabet letter to a toddler. "
+    "Pronounce only the single written letter's standard American English alphabet name, "
+    "not its phonics sound or a word. Use a natural conversational pace and clear articulation. "
+    "Do not spell words, add explanations, repeat the letter, whisper, stretch vowels or sing. "
+    "No extra words, music or effects."
+)
+
+
+def sha(data):
+    return hashlib.sha256(data).hexdigest()
+
+
+def wav_info(data):
+    with wave.open(io.BytesIO(data)) as wav:
+        duration = wav.getnframes() / wav.getframerate()
+        if not 0 < duration <= 60 or wav.getsampwidth() != 2 or wav.getnchannels() != 1 or wav.getframerate() != 24000:
+            raise ValueError("语音格式或时长异常")
+        frames = wav.readframes(wav.getnframes())
+        if len(frames) != wav.getnframes() * 2 or not any(frames):
+            raise ValueError("语音数据截断或静音")
+        return duration
+
+
+def atomic_write(path, data):
+    temporary = path.with_suffix(path.suffix + '.tmp')
+    temporary.write_bytes(data)
+    temporary.replace(path)
+
+
+def generate(item, key, check_only):
+    identifier = item['id']
+    archive = ROOT / 'design/audio'
+    output = ROOT / 'public/audio'
+    wav_path = archive / f'{identifier}.wav'
+    meta_path = archive / f'{identifier}.json'
+    mp3_path = output / f'{identifier}.mp3'
+    style = ENGLISH_STYLE if item['category'] == 'letters' else STYLE
+    request_info = {'model': MODEL, 'voice': VOICE, 'text': item['text'], 'style': style}
+    if meta_path.exists():
+        metadata = json.loads(meta_path.read_text())
+        if any(metadata.get(k) != v for k, v in request_info.items()):
+            raise ValueError(f'{identifier} 文本或配置已变化，请先归档该条旧 WAV、JSON、MP3 再重跑')
+        audio = wav_path.read_bytes()
+        if metadata['wav_sha256'] != sha(audio):
+            raise ValueError(f'{identifier} 原始音频校验失败')
+    else:
+        if check_only:
+            raise ValueError(f'{identifier} 缺少生成记录')
+        preview = ROOT / f'design/voice-preview/v2/{identifier}.json'
+        if preview.exists():
+            previous = json.loads(preview.read_text())
+            if any(previous.get(k) != v for k, v in request_info.items()):
+                raise ValueError(f'{identifier} 与已批准试听不一致')
+            audio = (ROOT / f'public/voice-preview/v2/{identifier}.wav').read_bytes()
+            interaction_id = previous['interaction_id']
+            origin = 'approved-v2-preview'
+        else:
+            payload = {
+                'model': MODEL,
+                'input': [{'type': 'user_input', 'content': [{
+                    'type': 'text', 'text': item['text'],
+                    'annotations': [{'type': 'speech_metadata', 'style': style}],
+                }]}],
+                'response_format': {'type': 'audio', 'mime_type': 'audio/wav', 'sample_rate': 24000},
+                'generation_config': {'speech_config': [{'voice': VOICE}]},
+            }
+            request = urllib.request.Request(
+                'https://generativelanguage.googleapis.com/v1beta/interactions',
+                data=json.dumps(payload).encode(),
+                headers={'x-goog-api-key': key, 'Content-Type': 'application/json'},
+            )
+            try:
+                with urllib.request.urlopen(request, timeout=180) as response:
+                    raw = response.read(16 * 1024 * 1024 + 1)
+                    if len(raw) > 16 * 1024 * 1024:
+                        raise ValueError(f'{identifier} 响应超出大小限制')
+                    result = json.loads(raw)
+            except urllib.error.HTTPError as error:
+                raise ValueError(f'{identifier} Gemini HTTP {error.code}；未自动重试或切换模型') from None
+            except (urllib.error.URLError, TimeoutError):
+                raise ValueError(f'{identifier} Gemini 网络失败；可稍后重跑续传') from None
+            blocks = [content for step in result.get('steps', []) if step.get('type') == 'model_output'
+                      for content in step.get('content', []) if content.get('type') == 'audio']
+            if len(blocks) != 1:
+                raise ValueError(f'{identifier} 未返回唯一完整音频')
+            audio = base64.b64decode(blocks[0]['data'], validate=True)
+            interaction_id = result.get('id')
+            origin = 'generated'
+        duration = wav_info(audio)
+        metadata = {**request_info, 'duration_seconds': duration, 'interaction_id': interaction_id,
+                    'origin': origin, 'wav_sha256': sha(audio)}
+        atomic_write(wav_path, audio)
+        atomic_write(meta_path, (json.dumps(metadata, ensure_ascii=False, indent=2) + '\n').encode())
+    wav_info(audio)
+    if not mp3_path.exists():
+        if check_only:
+            raise ValueError(f'{identifier} 缺少 MP3')
+        temporary = mp3_path.with_suffix('.tmp.mp3')
+        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', str(wav_path), '-map_metadata', '-1',
+                        '-codec:a', 'libmp3lame', '-b:a', '96k', str(temporary)], check=True, capture_output=True)
+        temporary.replace(mp3_path)
+    digest = sha(mp3_path.read_bytes())
+    if metadata.get('mp3_sha256') not in (None, digest):
+        raise ValueError(f'{identifier} MP3 校验失败')
+    if check_only and 'mp3_sha256' not in metadata:
+        raise ValueError(f'{identifier} 缺少 MP3 校验记录')
+    if not check_only:
+        metadata['mp3_sha256'] = digest
+        atomic_write(meta_path, (json.dumps(metadata, ensure_ascii=False, indent=2) + '\n').encode())
+        print(f"完成 {identifier}：{metadata['duration_seconds']:.2f} 秒", flush=True)
+    return identifier, f'/audio/{identifier}.mp3?v={digest[:12]}'
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--check', action='store_true', help='Validate existing files without credentials or writes')
+    args = parser.parse_args()
+    items = json.loads(subprocess.check_output([
+        'node', '--experimental-strip-types', '--input-type=module', '-e',
+        "import {pictures} from './src/content.ts'; import {audioTranscript} from './src/audio.ts'; "
+        "console.log(JSON.stringify(pictures.map(p=>({id:p.id,category:p.category,text:audioTranscript(p)}))))",
+    ], cwd=ROOT))
+    key = None
+    if not args.check:
+        if not shutil.which('ffmpeg'):
+            raise SystemExit('请先安装 ffmpeg。')
+        config = json.loads((Path.home() / '.config/his.fm/config.json').read_text())
+        key = config.get('speechKeys', {}).get('gemini')
+        if not key:
+            raise SystemExit('his.fm 未配置 Gemini Key。')
+        (ROOT / 'design/audio').mkdir(parents=True, exist_ok=True)
+        (ROOT / 'public/audio').mkdir(parents=True, exist_ok=True)
+    manifest = {}
+    with ThreadPoolExecutor(max_workers=4) as executor:
+        for start in range(0, len(items), 4):
+            jobs = [executor.submit(generate, item, key, args.check) for item in items[start:start + 4]]
+            for job in jobs:
+                identifier, path = job.result()
+                manifest[identifier] = path
+    path = ROOT / 'src/audio-manifest.json'
+    if args.check:
+        if json.loads(path.read_text()) != manifest:
+            raise ValueError('音频清单与文件不一致')
+    else:
+        atomic_write(path, (json.dumps(manifest, indent=2) + '\n').encode())
+    print(f'全部 {len(manifest)} 条录音校验通过。', flush=True)
+
+
+if __name__ == '__main__':
+    try:
+        main()
+    except (ValueError, OSError, subprocess.CalledProcessError) as error:
+        if isinstance(error, ValueError):
+            raise SystemExit(str(error)) from None
+        raise SystemExit('生成或文件处理失败；已完成条目保留，可重跑续传。') from None
