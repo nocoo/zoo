@@ -1,0 +1,24 @@
+{
+  "source_sha256": "0685ac9f6083b654cd09081ba1774a89a34cc44f58f6b77c28c84bd00646236f",
+  "processing": "Edge-connected paper normalization (RGB tolerance 8); lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/fruits-18-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 2274338,
+      "sha256": "ac4ca9d786e6ffc2d11f8feb061c8d76a258492d7b9dbfac537ddde986935271"
+    },
+    {
+      "path": "public/art/hd/fruits-18-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 256204,
+      "sha256": "2197c87ee10c1cfa339c5e1b3cf7cdf41dbe5b08c79035613e4a3dffb86f52e2"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "source_sha256": "f1cb3ab806d78b3f4bc719417a41e0c27d290de1ce8e4e16f120fd3d19bf8538",
+  "processing": "Edge-connected paper normalization (RGB tolerance 8); lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/animals-09-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1857050,
+      "sha256": "a40edd49121ce3cf8776efdc2fbfafbc41b25f689e4aa24588ea4915e504ddb9"
+    },
+    {
+      "path": "public/art/hd/animals-09-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 206074,
+      "sha256": "5cc6ce4275d333393db9676f34ff44aa17fba8870433b2f308da802d64cf34bc"
+    }
+  ]
+}

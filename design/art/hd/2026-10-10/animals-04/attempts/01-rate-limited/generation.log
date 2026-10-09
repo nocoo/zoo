@@ -1,0 +1,9 @@
+Requesting gpt-image-2.5-sunburst 2048x1792, high quality, 1 reference images.
+Generation did not complete: HTTPError: {
+  "error": {
+    "message": "Your requests to gpt-image-2.5-sunburst for gpt-image-2.5-sunburst in eastus2 have exceeded request rate limit.",
+    "type": "too_many_requests",
+    "param": null,
+    "code": "rate_limit_exceeded"
+  }
+}
