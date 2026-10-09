@@ -1,0 +1,24 @@
+{
+  "source_sha256": "b6f802741eafd70ffa3f92b0de807b7b87959500fadbd74b86facb0500f6c7af",
+  "processing": "Edge-connected paper normalization (RGB tolerance 8); lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/weather-08-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 2460294,
+      "sha256": "c4cdfa3b9e2d2073043ad7bf15f594b064ededb0f72e7029b0943e92130d4fc2"
+    },
+    {
+      "path": "public/art/hd/weather-08-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 257962,
+      "sha256": "be4ac08ba5fa95fb9d55ecd0f498a08344c79068eb30251794016cad92c7c52f"
+    }
+  ]
+}
