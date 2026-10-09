@@ -34,6 +34,19 @@ def normalize_paper(image, tolerance=18):
     return Image.composite(Image.new("RGB", image.size, PAPER), image, background)
 
 
+def crop_box(category, index):
+    col, row = index % 5, index // 5
+    rows = ROW_EDGES[category].copy()
+    cols = COLUMN_EDGES.get(category, [round(i * 1536 / 5) for i in range(6)])
+    if category == "fruits" and col == 4:
+        rows[2] = 504
+    if category == "fruits" and col == 2:
+        rows[3] = 747
+    if category == "phrases" and col == 1:
+        rows[2] = 498
+    return cols[col], rows[row], cols[col + 1], rows[row + 1]
+
+
 def process_atlas(category, source):
     with Image.open(source) as atlas:
         atlas = atlas.convert("RGB")
@@ -44,18 +57,7 @@ def process_atlas(category, source):
         if len(items) != 20:
             raise ValueError(f"Expected 20 ordered items, got {len(items)}")
         for index, _item in enumerate(items):
-            col, row = index % 5, index // 5
-            rows = ROW_EDGES[category].copy()
-            cols = COLUMN_EDGES.get(category, [round(i * width / 5) for i in range(6)])
-            if category == "fruits" and col == 4:
-                rows[2] = 504
-            if category == "fruits" and col == 2:
-                rows[3] = 747
-            if category == "phrases" and col == 1:
-                rows[2] = 498
-            box = (
-                cols[col], rows[row], cols[col + 1], rows[row + 1],
-            )
+            box = crop_box(category, index)
             cell = normalize_paper(atlas.crop(box))
             cell.save(PUBLIC / f"{category}-{index + 1:02}.webp", "WEBP", lossless=True, method=6)
 
