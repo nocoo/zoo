@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { Button, Modal, Switch } from 'animal-island-ui';
 import {
   AppleIcon, ArrowLeftIcon, ArrowRightIcon, BearIcon, BookIcon, ChatIcon,
-  CheckIcon, ChevronRightIcon, FlowerIcon, HeartIcon, HomeIcon, LeafIcon,
+  CheckIcon, ChevronRightIcon, CloseIcon, FlowerIcon, HeartIcon, HomeIcon, LeafIcon,
   MusicIcon, PlayIcon, SettingsIcon, StarIcon, SunIcon,
 } from 'naive-icons';
 import { animalGroups, categories, type Picture } from './content';
@@ -63,7 +63,7 @@ export function App() {
             <Button type={island.collection ? 'primary' : 'text'} icon={<HeartIcon size={19} color="currentColor" />} onClick={() => { island.setCollection(true); document.getElementById('explore')?.scrollIntoView({ behavior: 'smooth' }); }}>我的收藏{island.favorites.length > 0 && <span className="favorite-total">{island.favorites.length}</span>}</Button>
           </nav>
           <div className="header-actions">
-            <Button type="text" className="sound-control" aria-label={island.sound ? '关闭自动朗读' : '开启自动朗读'} aria-pressed={island.sound} onClick={island.toggleSound} icon={<MusicIcon size={21} color="currentColor" />}><span>{island.sound ? '声音开' : '声音关'}</span></Button>
+            <Button type="text" className="sound-control" aria-label={island.sound ? '关闭自动朗读' : '开启自动朗读'} aria-pressed={island.sound} onClick={island.toggleSound} icon={<MusicIcon size={21} color="currentColor" />}><span className="sound-label">{island.sound ? '声音开' : '声音关'}</span></Button>
             <Button type="default" onClick={() => island.setParentOpen(true)} icon={<SettingsIcon size={18} color="currentColor" />} aria-label="家长小贴士"><span className="parent-label">家长入口</span></Button>
           </div>
         </div>
@@ -133,7 +133,7 @@ export function App() {
 
       <footer className="site-footer"><span><LeafIcon size={17} color="currentColor" /> 小小动物岛</span><span>给小小的你，一个充满好奇的世界</span><span>无广告 · 无需登录 · 亲子陪伴</span></footer>
 
-      <Modal open={Boolean(island.selected)} variant="game" width="min(680px, 96vw)" onClose={island.closePicture} title="一起认一认" typewriter={false} footer={null} className="picture-modal">
+      <Modal open={Boolean(island.selected)} variant="game" width="min(680px, 96vw)" onClose={island.closePicture} title={<div className="dialog-title"><span>一起认一认</span><Button type="text" aria-label="关闭认知卡片" onClick={island.closePicture} icon={<CloseIcon size={23} color="currentColor" />} /></div>} typewriter={false} footer={null} className="picture-modal">
         {island.selected && <div className={`detail tone-${categories.find(c => c.id === island.selected!.category)!.tone}`}>
           <div className="detail-art"><Illustration picture={island.selected} large /></div>
           <span className="detail-pronunciation">{island.selected.category === 'letters' ? '大写和小写' : island.selected.pronunciation}</span>

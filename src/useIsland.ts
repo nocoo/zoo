@@ -75,6 +75,9 @@ export function useIsland() {
   function toggleFavorite(id: string) {
     const next = favorites.includes(id) ? favorites.filter(value => value !== id) : [...favorites, id];
     setFavorites(next);
+    if (collection && selected?.id === id && !next.includes(id)) {
+      stopSpeech(); setSelected(null);
+    }
     try { localStorage.setItem('zoo-favorites', JSON.stringify(next)); }
     catch { setMessage('已暂存到本次浏览，浏览器未允许保存到设备。'); }
   }
