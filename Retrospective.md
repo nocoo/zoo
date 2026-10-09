@@ -1,5 +1,9 @@
 # Retrospective
 
+## 2026-10-10 - Batch speech rate limits
+
+Four concurrent speech requests exceeded the provider quota. Spacing starts by seven seconds still triggered HTTP 429 later in the batch. Preserve completed WAVs and their hashes, stop on errors, cool down, and resume at fifteen-second intervals rather than regenerating clips or silently switching models. Concurrency alone is not a rate limit.
+
 ## 2026-10-10 - Preview entrypoint and speech pace
 
 The Vite SPA fallback served the application homepage for the directory-style `/voice-preview/` URL, despite `public/voice-preview/index.html` existing. Add an exact local route rewrite and validate the actual URL, including a nonzero expected audio element count, before declaring the preview usable. An `every()` check over an empty element list otherwise passes vacuously.

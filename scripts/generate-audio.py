@@ -105,7 +105,7 @@ def generate(item, key, check_only):
             )
             with REQUEST_LOCK:
                 time.sleep(max(0, NEXT_REQUEST - time.monotonic()))
-                NEXT_REQUEST = time.monotonic() + 7
+                NEXT_REQUEST = time.monotonic() + 15
             try:
                 with urllib.request.urlopen(request, timeout=180) as response:
                     raw = response.read(16 * 1024 * 1024 + 1)
