@@ -1,0 +1,20 @@
+cup
+spoon
+bowl
+plate
+toothbrush
+towel
+shoe
+sock
+hat
+tshirt
+pants
+school bag
+ball
+toy car
+building blocks
+book
+chair
+table
+bed
+clock
