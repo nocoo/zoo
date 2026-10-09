@@ -5,10 +5,15 @@ import json
 from pathlib import Path
 import subprocess
 import sys
+import threading
+import time
 
 from PIL import Image
 
 from process import ROOT, RUN, atlas
+
+REQUEST_LOCK = threading.Lock()
+NEXT_REQUEST = 0.0
 
 
 def prepare():
@@ -51,6 +56,10 @@ def complete(folder):
 
 
 def generate(folder):
+    global NEXT_REQUEST
+    with REQUEST_LOCK:
+        time.sleep(max(0, NEXT_REQUEST - time.monotonic()))
+        NEXT_REQUEST = time.monotonic() + 35
     with (folder / 'generation.log').open('w') as log:
         result = subprocess.run([
             sys.executable, str(RUN / 'generate_azure.py'), '--run-dir', str(folder),
