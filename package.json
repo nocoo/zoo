@@ -7,7 +7,7 @@
     "build": "tsc --noEmit && vite build",
     "check": "node --experimental-strip-types scripts/check.ts",
     "preview": "vite preview --host 127.0.0.1 --port 7058",
-    "deploy": "npm run build && cf pages deploy dist --project-name zoo --branch main"
+    "deploy": "npm run build && wrangler deploy"
   },
   "repository": {
     "type": "git",
@@ -34,7 +34,11 @@
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.1",
     "typescript": "^7.0.2",
-    "vite": "^8.3.2"
+    "vite": "^8.3.2",
+    "wrangler": "^4.147.0"
   },
-  "private": true
+  "private": true,
+  "overrides": {
+    "sharp": "0.35.5"
+  }
 }
