@@ -1,0 +1,24 @@
+{
+  "source_sha256": "4438054b6f3c18117256ae05c02aa6d8112f573048c87e375e556d0e9ab25093",
+  "processing": "Edge-connected paper normalization (RGB tolerance 8); lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/objects-16-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 2178370,
+      "sha256": "504c8bc189b3c022f79a2e366d70f8a25b00ad88ac09f9c9bf3efacc88290409"
+    },
+    {
+      "path": "public/art/hd/objects-16-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 228562,
+      "sha256": "8221aa37410fa40cc6142010298c4e01c3d4a5be2e0b2caf424a1b507babad9e"
+    }
+  ]
+}
