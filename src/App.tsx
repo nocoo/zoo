@@ -1,0 +1,154 @@
+import { useEffect } from 'react';
+import { Button, Modal, Switch } from 'animal-island-ui';
+import {
+  AppleIcon, ArrowLeftIcon, ArrowRightIcon, BearIcon, BookIcon, ChatIcon,
+  CheckIcon, ChevronRightIcon, FlowerIcon, HeartIcon, HomeIcon, LeafIcon,
+  MusicIcon, PlayIcon, SettingsIcon, StarIcon, SunIcon,
+} from 'naive-icons';
+import { animalGroups, categories, type Picture } from './content';
+import { useIsland } from './useIsland';
+
+const categoryIcons = {
+  animals: BearIcon, numbers: StarIcon, letters: BookIcon, hanzi: BookIcon,
+  phrases: ChatIcon, weather: SunIcon, objects: HomeIcon, fruits: AppleIcon,
+};
+
+function Illustration({ picture, large = false }: { picture: Picture; large?: boolean }) {
+  if (picture.category === 'numbers') return (
+    <div className={`number-art ${large ? 'large' : ''}`}>
+      <span>{picture.name}</span>
+      {large && <div className="counting-dots" aria-label={`${picture.value} 个圆点`}>
+        {Array.from({ length: picture.value! }, (_, index) => <i key={index} />)}
+      </div>}
+      {!large && <div className="number-sprinkles" aria-hidden="true"><i /><i /><i /></div>}
+    </div>
+  );
+  if (picture.category === 'letters') return (
+    <div className={`letter-art ${large ? 'large' : ''}`}><span>{picture.name}</span><span>{picture.pronunciation}</span></div>
+  );
+  return <img src={picture.image} alt="" className="picture-image" loading={large ? 'eager' : 'lazy'} width="308" height="256" />;
+}
+
+export function App() {
+  const island = useIsland();
+  const active = categories.find(c => c.id === island.category)!;
+  const currentIndex = island.items.findIndex(p => p.id === island.selected?.id);
+
+  useEffect(() => {
+    if (!island.selected) return;
+    const handleKey = (event: KeyboardEvent) => {
+      if (event.key === 'ArrowLeft') { event.preventDefault(); island.move(-1); }
+      if (event.key === 'ArrowRight') { event.preventDefault(); island.move(1); }
+    };
+    window.addEventListener('keydown', handleKey);
+    return () => window.removeEventListener('keydown', handleKey);
+  });
+
+  function goExplore() {
+    island.setCollection(false);
+    document.getElementById('explore')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  return (
+    <>
+      <a className="skip-link" href="#explore">跳到认知卡片</a>
+      <header className="site-header">
+        <div className="header-inner">
+          <a className="brand" href="#" onClick={() => { island.chooseCategory('animals'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} aria-label="小小动物岛首页">
+            <span className="brand-mark"><BearIcon size={34} color="currentColor" /></span>
+            <span><strong>小小动物岛</strong><small>和好奇心一起长大</small></span>
+          </a>
+          <nav className="main-nav" aria-label="主导航">
+            <Button type={!island.collection ? 'primary' : 'text'} icon={<LeafIcon size={19} color="currentColor" />} onClick={goExplore}>探索小岛</Button>
+            <Button type={island.collection ? 'primary' : 'text'} icon={<HeartIcon size={19} color="currentColor" />} onClick={() => { island.setCollection(true); document.getElementById('explore')?.scrollIntoView({ behavior: 'smooth' }); }}>我的收藏{island.favorites.length > 0 && <span className="favorite-total">{island.favorites.length}</span>}</Button>
+          </nav>
+          <div className="header-actions">
+            <Button type="text" className="sound-control" aria-label={island.sound ? '关闭自动朗读' : '开启自动朗读'} aria-pressed={island.sound} onClick={island.toggleSound} icon={<MusicIcon size={21} color="currentColor" />}><span>{island.sound ? '声音开' : '声音关'}</span></Button>
+            <Button type="default" onClick={() => island.setParentOpen(true)} icon={<SettingsIcon size={18} color="currentColor" />} aria-label="家长小贴士"><span className="parent-label">家长入口</span></Button>
+          </div>
+        </div>
+      </header>
+
+      <main className="page-shell">
+        <section className="hero" aria-labelledby="hero-title">
+          <div className="hero-copy">
+            <span className="eyebrow"><SunIcon size={18} color="currentColor" /> 1.5–3 岁宝宝的认知小天地</span>
+            <h1 id="hero-title">小小眼睛，<br />发现<span>大大世界</span><FlowerIcon className="title-flower" size={37} color="currentColor" /></h1>
+            <p>每一次好奇，都是成长的开始。<br />和动物朋友一起，把世界认一点点。</p>
+            <div className="hero-actions">
+              <Button type="primary" size="large" onClick={goExplore} icon={<PlayIcon size={20} color="currentColor" />}>一起去探索</Button>
+              <span><HeartIcon size={16} color="currentColor" /> 陪伴，是最好的启蒙</span>
+            </div>
+          </div>
+          <div className="hero-picture"><img src="/art/hero.webp" alt="狮子、熊猫、兔子、大象和长颈鹿一起在彩色小岛上玩耍" fetchPriority="high" width="1536" height="1024" /><div className="hero-sticker"><LeafIcon size={17} color="currentColor" /> 今天也有新发现！</div></div>
+        </section>
+
+        <section className="category-section" aria-labelledby="category-heading">
+          <div className="section-kicker"><span id="category-heading">选一个喜欢的小世界</span><span>小手点一点，快乐学一点</span></div>
+          <nav className="category-grid" aria-label="认知分类">
+            {categories.map(category => {
+              const Icon = categoryIcons[category.id];
+              return <div key={category.id} className={`category-tile tone-${category.tone} ${!island.collection && island.category === category.id ? 'is-active' : ''}`}>
+                <Button type="text" className="category-button" aria-pressed={!island.collection && island.category === category.id} onClick={() => island.chooseCategory(category.id)}>
+                  <span className="category-symbol" aria-hidden="true">{category.id === 'numbers' ? <b>123</b> : category.id === 'letters' ? <b>Aa</b> : category.id === 'hanzi' ? <b>字</b> : <Icon size={33} color="currentColor" />}</span>
+                  <strong>{category.name}</strong><small>{category.subtitle}</small>
+                </Button>
+              </div>;
+            })}
+          </nav>
+        </section>
+
+        <section className="explore-section" id="explore" aria-labelledby="explore-heading">
+          <div className="explore-heading-row">
+            <div><div className="section-eyebrow"><span className={`tiny-dot tone-${active.tone}`} />{island.collection ? '装进口袋里的喜欢' : active.name}<span className="count-badge">{island.collection ? island.items.length : island.category === 'numbers' ? 100 : island.category === 'letters' ? 26 : 20} 张认知卡</span></div>
+              <h2 id="explore-heading">{island.collection ? '喜欢的朋友，都在这里' : active.title}</h2>
+              <p>{island.collection ? '一点小小的喜欢，值得再看一次' : active.hint}</p></div>
+            <Button type="default" icon={<StarIcon size={18} color="currentColor" />} disabled={!island.items.length} onClick={island.surprise}>随便认一个</Button>
+          </div>
+
+          {!island.collection && island.category === 'animals' && <div className="filter-row" aria-label="动物生活环境">
+            <div className="filter-buttons">{animalGroups.map(group => <Button key={group} size="small" type={island.group === group ? 'primary' : 'text'} aria-pressed={island.group === group} onClick={() => island.setGroup(group)}>{group}</Button>)}</div>
+            <span className="gentle-note"><MusicIcon size={15} color="currentColor" /> 点击卡片，听听名字</span>
+          </div>}
+          {!island.collection && island.category === 'numbers' && <div className="filter-row"><div className="filter-buttons">{Array.from({ length: 5 }, (_, index) => <Button key={index} size="small" type={island.numberPage === index ? 'primary' : 'text'} aria-pressed={island.numberPage === index} onClick={() => island.setNumberPage(index)}>{index * 20 + 1}–{(index + 1) * 20}</Button>)}</div><span className="gentle-note">先从 1–5 开始，不着急</span></div>}
+
+          <div className="picture-grid">
+            {island.items.map((picture, index) => <article className={`picture-card tone-${['yellow', 'mint', 'rose', 'blue', 'peach'][index % 5]}`} key={picture.id} style={{ animationDelay: `${Math.min(index, 9) * 30}ms` }}>
+              <div className="save-button"><Button type="text" aria-label={`${island.favorites.includes(picture.id) ? '取消收藏' : '收藏'}${picture.name}`} aria-pressed={island.favorites.includes(picture.id)} onClick={() => island.toggleFavorite(picture.id)} icon={<HeartIcon size={20} color="currentColor" fill={island.favorites.includes(picture.id) ? 'currentColor' : 'none'} />} /></div>
+              <Button type="text" className="picture-button" onClick={() => island.openPicture(picture)} aria-label={`认识${picture.name}`}>
+                <div className="picture-art"><Illustration picture={picture} /></div>
+                <div className="picture-caption"><div><span className="pronunciation" lang={picture.category === 'letters' ? 'en' : undefined}>{picture.category === 'letters' ? '大写 / 小写' : picture.pronunciation}</span><h3>{picture.category === 'letters' ? `${picture.name} ${picture.pronunciation}` : picture.name}</h3></div><span className="listen-bubble"><MusicIcon size={19} color="currentColor" /></span></div>
+              </Button>
+              {island.visited.includes(picture.id) && <span className="visited-mark" aria-label="本次已看过"><CheckIcon size={13} color="currentColor" /></span>}
+            </article>)}
+          </div>
+
+          {island.collection && !island.items.length && <div className="empty-state"><HeartIcon size={54} color="currentColor" /><h3>把喜欢的朋友，装进口袋</h3><p>点击卡片上的小爱心，就可以在这里找到它啦。</p><Button type="primary" onClick={() => island.setCollection(false)}>去认识新朋友</Button></div>}
+
+          <div className="section-footer"><FlowerIcon size={20} color="currentColor" /><span>不比赛，不着急。今天认识一个，也是小小的进步。</span><FlowerIcon size={20} color="currentColor" /></div>
+        </section>
+
+        <aside className="parent-note"><span className="parent-note-icon"><HeartIcon size={25} color="currentColor" /></span><div><strong>最好的探索，是和你一起</strong><p>建议每次玩 5–10 分钟，和宝宝一起指一指、说一说，再去真实的世界找一找。</p></div><Button type="text" onClick={() => island.setParentOpen(true)} icon={<ChevronRightIcon size={20} color="currentColor" />} aria-label="查看亲子陪伴小贴士" /></aside>
+      </main>
+
+      <footer className="site-footer"><span><LeafIcon size={17} color="currentColor" /> 小小动物岛</span><span>给小小的你，一个充满好奇的世界</span><span>无广告 · 无需登录 · 亲子陪伴</span></footer>
+
+      <Modal open={Boolean(island.selected)} variant="game" width="min(680px, 96vw)" onClose={island.closePicture} title="一起认一认" typewriter={false} footer={null} className="picture-modal">
+        {island.selected && <div className={`detail tone-${categories.find(c => c.id === island.selected!.category)!.tone}`}>
+          <div className="detail-art"><Illustration picture={island.selected} large /></div>
+          <span className="detail-pronunciation">{island.selected.category === 'letters' ? '大写和小写' : island.selected.pronunciation}</span>
+          <h2>{island.selected.category === 'letters' ? `${island.selected.name} ${island.selected.pronunciation}` : island.selected.name}</h2>
+          <p>{island.selected.description}</p>
+          {island.selected.category === 'fruits' && <small className="food-note">认识水果不等于整颗食用，请家长去核、切成适龄小块。</small>}
+          <div className="detail-actions"><Button type="primary" onClick={() => island.speak(island.selected!, true)} icon={<MusicIcon size={20} color="currentColor" />}>再听一遍</Button><Button type="default" onClick={() => island.toggleFavorite(island.selected!.id)} icon={<HeartIcon size={20} color="currentColor" fill={island.favorites.includes(island.selected.id) ? 'currentColor' : 'none'} />}>{island.favorites.includes(island.selected.id) ? '已收藏' : '收藏'}</Button></div>
+          <div className="detail-navigation"><Button type="text" onClick={() => island.move(-1)} disabled={island.items.length < 2} icon={<ArrowLeftIcon size={20} color="currentColor" />}>上一个</Button><span>{Math.max(0, currentIndex + 1)} / {island.items.length}</span><Button type="text" onClick={() => island.move(1)} disabled={island.items.length < 2}>下一个 <ArrowRightIcon size={20} color="currentColor" /></Button></div>
+        </div>}
+      </Modal>
+
+      <Modal open={island.parentOpen} variant="game" width="min(560px, 96vw)" title="给大朋友的小纸条" onClose={() => island.setParentOpen(false)} typewriter={false} footer={<Button type="primary" onClick={() => island.setParentOpen(false)}>知道啦，一起玩吧</Button>}>
+        <div className="parent-content"><p>这里不是小课堂，而是你和宝宝一起发现世界的小角落。</p><h3>慢一点，也很好</h3><p>1.5–2 岁以真实生活、亲子共读和实物为主；如果使用屏幕，请全程陪伴。2–3 岁也建议短时共同观看，每次 5–10 分钟，累了就休息。</p><h3>看一看，再找一找</h3><p>先从宝宝熟悉的动物、物品和 1–5 开始。数字 1–100、字母和汉字只是供探索，不是这个年龄必须掌握的目标。不测验、不排名。</p><div className="setting-row"><span>点开卡片时自动朗读</span><Switch checked={island.sound} onChange={island.toggleSound} aria-label="自动朗读" /></div><p className="privacy-note">无账号、无广告、无行为统计。收藏仅保存在这台设备。朗读使用浏览器与系统语音，声音和可用性因设备而异，部分系统语音可能联网。</p></div>
+      </Modal>
+      {island.message && <div className="toast" role="status">{island.message}</div>}
+    </>
+  );
+}
