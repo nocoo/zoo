@@ -13,5 +13,5 @@ export function Illustration({ picture, large = false }: { picture: Picture; lar
   if (picture.category === 'letters') return (
     <div className={`letter-art ${large ? 'large' : ''}`}><span>{picture.name}</span><span>{picture.pronunciation}</span></div>
   );
-  return <img src={picture.image} alt="" className="picture-image" loading={large ? 'eager' : 'lazy'} draggable={false} width="300" height="250" />;
+  return <img src={large && picture.imageLarge ? picture.imageLarge : picture.image} alt="" className="picture-image" loading={large ? 'eager' : 'lazy'} draggable={false} width={picture.imageLarge ? 2048 : 300} height={picture.imageLarge ? 1792 : 250} />;
 }

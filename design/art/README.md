@@ -1,5 +1,7 @@
 # Artwork Archive
 
+The first three animal cards now use individual high-resolution redraw previews. See `hd/README.md` for native originals, prompts, derivation and review status. The atlas pipeline below remains the source of the other 117 cards.
+
 Generated on 2026-10-09 through the Workflow `agi-image-generation` CLI using Azure OpenAI `gpt-image-2.5-sunburst`, high quality, 1536 x 1024. Original PNG outputs are retained unchanged in `originals/`.
 
 Six atlases each contain twenty subjects in row-major order. The `*-order.txt` files and `*-prompt.txt` files record the exact subjects and generation instructions. The hero is a separate image.

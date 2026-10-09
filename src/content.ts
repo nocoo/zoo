@@ -6,6 +6,7 @@ export type Picture = {
   pronunciation: string;
   description: string;
   image?: string;
+  imageLarge?: string;
   group?: string;
   value?: number;
   example?: string;
@@ -119,7 +120,12 @@ export function chineseNumber(value: number): string {
 export const pictures: Picture[] = [
   ...Object.entries(rows).flatMap(([category, items]) => items.map(([name, pronunciation, description, group], index) => ({
     id: `${category}-${String(index + 1).padStart(2, '0')}`, category: category as CategoryId,
-    name, pronunciation, description, group, image: `/art/${category}-${String(index + 1).padStart(2, '0')}.webp`,
+    name, pronunciation, description, group,
+    image: category === 'animals' && index < 3
+      ? `/art/hd/animals-${String(index + 1).padStart(2, '0')}-thumb.webp`
+      : `/art/${category}-${String(index + 1).padStart(2, '0')}.webp`,
+    imageLarge: category === 'animals' && index < 3
+      ? `/art/hd/animals-${String(index + 1).padStart(2, '0')}-full.webp` : undefined,
   }))),
   ...Array.from({ length: 100 }, (_, i) => ({
     id: `numbers-${i + 1}`, category: 'numbers' as const, name: String(i + 1), value: i + 1,

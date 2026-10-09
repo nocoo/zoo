@@ -12,12 +12,17 @@ for (const category of categories) {
   for (const item of items) {
     assert.ok(item.name && item.pronunciation && item.description);
     if (item.image) assert.ok(existsSync(`public${item.image}`), `Missing ${item.image}`);
+    if (item.imageLarge) {
+      assert.ok(existsSync(`public${item.imageLarge}`), `Missing ${item.imageLarge}`);
+      assert.notEqual(item.image, item.imageLarge);
+    }
   }
 }
 for (const [value, label] of [[1, '一'], [10, '十'], [11, '十一'], [20, '二十'], [99, '九十九'], [100, '一百']] as const) {
   assert.equal(chineseNumber(value), label);
 }
 assert.ok(existsSync('public/art/hero.webp'));
+assert.deepEqual(pictures.filter(p => p.imageLarge).map(p => p.id), ['animals-01', 'animals-02', 'animals-03']);
 assert.equal(swipeStep(-90, 12), 1);
 assert.equal(swipeStep(90, 12), -1);
 assert.equal(swipeStep(30, 0), 0);

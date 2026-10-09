@@ -23,11 +23,11 @@ COLUMN_EDGES = {
 PAPER = (250, 246, 232)
 
 
-def normalize_paper(image):
+def normalize_paper(image, tolerance=18):
     difference = ImageChops.difference(image, Image.new("RGB", image.size, PAPER))
     red, green, blue = difference.split()
     distance = ImageChops.lighter(ImageChops.lighter(red, green), blue)
-    candidates = distance.point(lambda value: 255 if value <= 18 else 0)
+    candidates = distance.point(lambda value: 255 if value <= tolerance else 0)
     bordered = ImageOps.expand(candidates, border=1, fill=255)
     ImageDraw.floodfill(bordered, (0, 0), 128, thresh=0)
     background = bordered.crop((1, 1, image.width + 1, image.height + 1)).point(lambda value: 255 if value == 128 else 0)

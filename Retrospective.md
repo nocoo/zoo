@@ -1,5 +1,9 @@
 # Retrospective
 
+## 2026-10-10 - Full-screen illustration resolution
+
+The original 1536 x 1024 atlases placed twenty subjects on each canvas, leaving roughly 300 x 250 native pixels per card. Lossless export preserved those pixels but could not make them suitable for full-screen high-DPI viewing. Re-exporting or sharpening would not restore missing detail. For full-screen artwork, generate one subject per native high-resolution image and provide a separate small list derivative. The owner authorized a three-animal reference-guided redraw preview before expanding the batch; keep the original atlas and all generation provenance.
+
 ## 2026-10-10 - Batch speech rate limits
 
 The generator initially hid provider error details and treated HTTP 429 as a short-window rate limit. Spacing starts by seven and then fifteen seconds did not resolve it. Reading the sanitized response revealed a Tier 1 limit of 100 requests per day and a reset countdown. Preserve completed WAVs and their hashes, expose useful errors without credentials, and wait for the actual quota reset instead of assuming a one-minute cooldown. Concurrency alone is not a rate limit. The batch stopped with 98 completed clips; the site retains its existing playback until all 246 are ready.
