@@ -37,6 +37,14 @@ npm run build
 
 Development listens on `127.0.0.1:7058`. The local Caddy mapping supplies HTTPS at `zoo.dev.hexly.ai`. On this machine use the approved package registry described in the global workflow instructions.
 
+## Install On iPhone / 添加到 iPhone 主屏幕
+
+Open the site in Safari, tap Share, then Add to Home Screen. The standalone app is named **小小动物岛** and uses an opaque Apple Touch Icon. After an online visit, the app shell and a bounded set of recently viewed images can work offline; uncached images need a connection. System speech may require a network connection, and iOS may evict stored data. Close all island windows and reopen to activate an installed update.
+
+用 Safari 打开网站，点“分享”→“添加到主屏幕”，即可用「小小动物岛」图标独立打开。联网访问后，可离线进入并查看部分最近浏览的图片；未保存的图片仍需联网，系统语音不保证离线可用，iOS 也可能清理缓存。更新后请关闭小岛的所有窗口再打开。
+
+PWA validation: `npm run build && node scripts/check-pwa.mjs`. The service worker is registered only in production builds; use Vite preview for local offline verification. Icon derivation and caching rules are documented in `AGENTS.md`.
+
 ## Deployment / 部署
 
 ```sh

@@ -32,7 +32,16 @@ export function useIsland() {
     if ('speechSynthesis' in window) window.speechSynthesis.cancel();
   }
 
-  useEffect(() => () => { if ('speechSynthesis' in window) window.speechSynthesis.cancel(); }, []);
+  useEffect(() => {
+    const onVisibility = () => { if (document.hidden) stopSpeech(); };
+    document.addEventListener('visibilitychange', onVisibility);
+    window.addEventListener('pagehide', stopSpeech);
+    return () => {
+      document.removeEventListener('visibilitychange', onVisibility);
+      window.removeEventListener('pagehide', stopSpeech);
+      stopSpeech();
+    };
+  }, []);
 
   const items = pictures.filter(p => collection ? favorites.includes(p.id) :
     p.category === category &&

@@ -1,5 +1,11 @@
 # Retrospective
 
+## 2026-10-10 - PWA offline response variants
+
+An initial offline reload returned the cached HTML but failed to resolve cached JS/CSS, leaving an empty application. Vite preview sends `Vary: Origin`; installation and page asset requests can differ in Origin headers. For this public, same-origin, versioned static app, explicitly match known shell paths and image cache entries with `ignoreVary`, rather than assuming a successful service-worker install proves offline usability. Validate a real offline reload and a previously viewed full-size image, not only CacheStorage entry counts. Keep audio/Range and cross-origin requests outside the worker, and do not precache the 246 MiB artwork collection.
+
+The image response must also be cloned before `respondWith` can consume its body; cloning later in a sibling promise can silently prevent cache writes. Preserve the copy before resolving the response and retain cache writes with `waitUntil`. Chromium now passes offline reload, cached HD images and uncached placeholders. WebKit automation reports an internal error on offline reload; do not claim iPhone offline acceptance from that test. Verify the actual Home Screen installation, status bar and offline reopening on a physical device after publication.
+
 ## 2026-10-10 - HD production deployment
 
 Deployed application revision `c902fea` to `zoo.hexly.ai` using the existing assets-only Worker. Active Cloudflare version: `c97fd2cb-ece7-440d-9fbd-7af7b832096f`, deployed at 03:57 UTC. Wrangler uploaded 349 changed files after one internal upload retry. Content checks, all 120 image provenance checks, build and Wrangler dry run passed. Production Chromium checks decoded and navigated all 120 full-size images at 390 px / 3x and 1440 px / 2x without page errors or horizontal overflow. An actual image response returned HTTP 200 and `CF-Cache-Status: HIT`.

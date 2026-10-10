@@ -22,6 +22,16 @@
 - `npm run deploy`: build and deploy the static Worker using repository-local Wrangler.
 - Follow the machine's registry policy when installing dependencies.
 
+## PWA And iOS
+
+- Document title, manifest name/short name and Apple standalone title are exactly `小小动物岛` (five Chinese characters). `public/manifest.webmanifest` uses stable `/` identity, root scope/start URL and standalone display without an orientation lock.
+- Icons derive from the existing bear in `public/favicon.svg`, not new generated art. `node scripts/generate-icons.mjs` uses the already-installed Sharp transitive package to create opaque 180 px Apple Touch Icon, 192/512 px regular icons and a padded 512 px maskable icon. Do not pre-round Apple or maskable PNG corners; the OS applies its mask. No generation credentials are involved.
+- Production builds run `scripts/build-pwa.mjs` after Vite to emit `dist/sw.js`, versioned by all build bytes and worker code. The native worker precaches the root HTML, bundled JS/CSS/fonts and install metadata only, never the full illustration/audio collection. Development does not register a worker. Use `vite preview` on reserved port 17058 for local offline tests rather than caching the development server.
+- The worker keeps one matching app-shell version until all old windows close; do not add unconditional `skipWaiting`, mix new HTML with old chunks, or reload mid-session. New builds change the worker version. Worker activation deletes only Zoo-owned obsolete caches. `/sw.js` and the manifest revalidate via `_headers`.
+- At most 48 successfully viewed image responses are cached on demand. Offline uncached images display a Chinese connection hint. Audio and Range requests bypass the worker; do not claim offline speech. Browser storage may be evicted, especially on iOS. No cache contains credentials, and there is no analytics or background sync.
+- Preserve viewport zoom and safe-area padding on the main page and viewer. Speech stops on page hide/backgrounding. Parent information explains Safari Share > Add to Home Screen and offline/update limitations.
+- Validation: `npm run check`, `npm run build`, then `node scripts/check-pwa.mjs`. Isolated Chromium covers offline reopening/images; WebKit covers online mobile layout and navigation. WebKit's automation offline reload returned an internal error; physical iPhone Home Screen/status-bar and offline verification remain outstanding.
+
 ## Environments
 
 - Local browser URL: `https://zoo.dev.hexly.ai`, proxied to `127.0.0.1:7058`.

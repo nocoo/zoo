@@ -109,7 +109,7 @@ export function App() {
       {island.selected && <PictureViewer island={island} />}
 
       <Modal open={island.parentOpen} variant="game" width="min(560px, 96vw)" title="给大朋友的小纸条" onClose={() => island.setParentOpen(false)} typewriter={false} footer={<Button type="primary" onClick={() => island.setParentOpen(false)}>知道啦，一起玩吧</Button>}>
-        <div className="parent-content"><p>这里不是小课堂，而是你和宝宝一起发现世界的小角落。</p><h3>慢一点，也很好</h3><p>1.5–2 岁以真实生活、亲子共读和实物为主；如果使用屏幕，请全程陪伴。2–3 岁也建议短时共同观看，每次 5–10 分钟，累了就休息。</p><h3>看一看，再找一找</h3><p>先从宝宝熟悉的动物、物品和 1–5 开始。数字 1–100、字母和汉字只是供探索，不是这个年龄必须掌握的目标。不测验、不排名。</p><div className="setting-row"><span>点开卡片时自动朗读</span><Switch checked={island.sound} onChange={island.toggleSound} aria-label="自动朗读" /></div><p className="privacy-note">无账号、无广告、无行为统计。收藏仅保存在这台设备。朗读使用浏览器与系统语音，声音和可用性因设备而异，部分系统语音可能联网。</p></div>
+        <div className="parent-content"><p>这里不是小课堂，而是你和宝宝一起发现世界的小角落。</p><h3>慢一点，也很好</h3><p>1.5–2 岁以真实生活、亲子共读和实物为主；如果使用屏幕，请全程陪伴。2–3 岁也建议短时共同观看，每次 5–10 分钟，累了就休息。</p><h3>看一看，再找一找</h3><p>先从宝宝熟悉的动物、物品和 1–5 开始。数字 1–100、字母和汉字只是供探索，不是这个年龄必须掌握的目标。不测验、不排名。</p><div className="setting-row"><span>点开卡片时自动朗读</span><Switch checked={island.sound} onChange={island.toggleSound} aria-label="自动朗读" /></div><h3>放到手机主屏幕</h3><p>在 iPhone 的 Safari 中点“分享”，选择“添加到主屏幕”，以后就能像打开 App 一样进入小岛。</p><p>联网打开过后，可以离线进入小岛并查看部分最近浏览的图片；没有保存的图片需要联网。系统可能自动清理缓存。更新后请关闭小岛的所有窗口再打开。</p><p className="privacy-note">无账号、无广告、无行为统计。收藏仅保存在这台设备。朗读使用浏览器与系统语音，声音和可用性因设备而异，部分系统语音可能联网。</p></div>
       </Modal>
       {island.message && !island.selected && <div className="toast" role="status">{island.message}</div>}
     </>

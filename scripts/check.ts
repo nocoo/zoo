@@ -1,10 +1,21 @@
 import assert from 'node:assert/strict';
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { categories, chineseNumber, pictures } from '../src/content.ts';
 import { swipeStep } from '../src/swipe.ts';
 import { audioTranscript } from '../src/audio.ts';
 
 assert.equal(pictures.length, 246);
+const manifest = JSON.parse(readFileSync('public/manifest.webmanifest', 'utf8'));
+assert.equal(manifest.name, '小小动物岛');
+assert.equal(manifest.short_name.length, 5);
+assert.equal(manifest.display, 'standalone');
+assert.equal(manifest.start_url, '/');
+assert.match(readFileSync('index.html', 'utf8'), /<title>小小动物岛<\/title>/);
+for (const [file, size] of [['/apple-touch-icon.png', 180], ...manifest.icons.map((icon: { src: string; sizes: string }) => [icon.src, Number(icon.sizes.split('x')[0])])] as [string, number][]) {
+  const bytes = readFileSync(`public${file}`);
+  assert.equal(bytes.readUInt32BE(16), size);
+  assert.equal(bytes.readUInt32BE(20), size);
+}
 assert.equal(new Set(pictures.map(p => p.id)).size, pictures.length);
 for (const category of categories) {
   const items = pictures.filter(p => p.category === category.id);
