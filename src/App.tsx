@@ -36,8 +36,11 @@ export function App() {
             <Button type={island.collection ? 'primary' : 'text'} icon={<HeartIcon size={19} color="currentColor" />} onClick={() => { island.setCollection(true); document.getElementById('explore')?.scrollIntoView({ behavior: 'smooth' }); }}>我的收藏{island.favorites.length > 0 && <span className="favorite-total">{island.favorites.length}</span>}</Button>
           </nav>
           <div className="header-actions">
-            <Button type="text" className="sound-control" aria-label={island.sound ? '关闭自动朗读' : '开启自动朗读'} aria-pressed={island.sound} onClick={island.toggleSound} icon={<MusicIcon size={21} color="currentColor" />}><span className="sound-label">{island.sound ? '声音开' : '声音关'}</span></Button>
-            <Button type="default" onClick={() => island.setParentOpen(true)} icon={<SettingsIcon size={18} color="currentColor" />} aria-label="家长小贴士"><span className="parent-label">家长入口</span></Button>
+            <Button type="text" className="sound-control" data-tooltip={island.sound ? '关闭自动朗读' : '开启自动朗读'} aria-label={island.sound ? '关闭自动朗读' : '开启自动朗读'} aria-pressed={island.sound} onClick={island.toggleSound} icon={<MusicIcon size={21} color="currentColor" />}><span className="sound-label">{island.sound ? '声音开' : '声音关'}</span></Button>
+            <Button type="default" data-tooltip="家长小贴士" onClick={() => island.setParentOpen(true)} icon={<SettingsIcon size={18} color="currentColor" />} aria-label="家长小贴士"><span className="parent-label">家长入口</span></Button>
+            <a className="hexly-entry" href="https://hexly.ai/projects/zoo" target="_blank" rel="noopener noreferrer" aria-label="在 hexly.ai 查看小小动物岛（新标签页）" data-tooltip="在 hexly.ai 查看小小动物岛">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false"><path d="m12 2 8.66 5v10L12 22l-8.66-5V7Z" /><path d="M12 2v20M3.34 7l17.32 10m0-10L3.34 17" /></svg>
+            </a>
           </div>
         </div>
       </header>
