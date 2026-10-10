@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Put on your hat",
+  "rate": "+0%",
+  "sha256": "8bbd757db6dcdbf93aeb3e8cfb30f7fde3d9e7ad984df78e813f0454b8f833af",
+  "bytes": 11664
+}

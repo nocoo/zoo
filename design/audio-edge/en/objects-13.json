@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Ball",
+  "rate": "+0%",
+  "sha256": "9425f34d785711aaba6d971adca834094ae6637f281df3f7fcd273dee59524d8",
+  "bytes": 8640
+}

@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Cantaloupe",
+  "rate": "+0%",
+  "sha256": "3c54755eecf9dff6e87ad02af90963e6289a67c5415cea4fff7db625371a2853",
+  "bytes": 9936
+}

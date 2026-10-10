@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "收玩具。玩好啦，把玩具送回家。",
+  "rate": "+10%",
+  "sha256": "7afa324ccd5e82c956f7a029ba0c0e9e2e5865c89a7f80fb47d677f999876f5c",
+  "bytes": 22032
+}

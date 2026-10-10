@@ -1,4 +1,4 @@
-import { Button, Modal, Switch } from 'animal-island-ui';
+import { Button, Modal } from 'animal-island-ui';
 import {
   AppleIcon, BearIcon, BookIcon, ChatIcon,
   CheckIcon, ChevronRightIcon, FlowerIcon, HeartIcon, HomeIcon, LeafIcon,
@@ -36,7 +36,6 @@ export function App() {
             <Button type={island.collection ? 'primary' : 'text'} icon={<HeartIcon size={19} color="currentColor" />} onClick={() => { island.setCollection(true); document.getElementById('explore')?.scrollIntoView({ behavior: 'smooth' }); }}>我的收藏{island.favorites.length > 0 && <span className="favorite-total">{island.favorites.length}</span>}</Button>
           </nav>
           <div className="header-actions">
-            <Button type="text" className="sound-control" data-tooltip={island.sound ? '关闭自动朗读' : '开启自动朗读'} aria-label={island.sound ? '关闭自动朗读' : '开启自动朗读'} aria-pressed={island.sound} onClick={island.toggleSound} icon={<MusicIcon size={21} color="currentColor" />}><span className="sound-label">{island.sound ? '声音开' : '声音关'}</span></Button>
             <Button type="default" data-tooltip="家长小贴士" onClick={() => island.setParentOpen(true)} icon={<SettingsIcon size={18} color="currentColor" />} aria-label="家长小贴士"><span className="parent-label">家长入口</span></Button>
             <a className="hexly-entry" href="https://hexly.ai/projects/zoo" target="_blank" rel="noopener noreferrer" aria-label="在 hexly.ai 查看小小动物岛（新标签页）" data-tooltip="在 hexly.ai 查看小小动物岛">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false"><path d="m12 2 8.66 5v10L12 22l-8.66-5V7Z" /><path d="M12 2v20M3.34 7l17.32 10m0-10L3.34 17" /></svg>
@@ -84,7 +83,7 @@ export function App() {
 
           {!island.collection && island.category === 'animals' && <div className="filter-row" aria-label="动物生活环境">
             <div className="filter-buttons">{animalGroups.map(group => <Button key={group} size="small" type={island.group === group ? 'primary' : 'text'} aria-pressed={island.group === group} onClick={() => island.setGroup(group)}>{group}</Button>)}</div>
-            <span className="gentle-note"><MusicIcon size={15} color="currentColor" /> 点击卡片，听听名字</span>
+            <span className="gentle-note"><MusicIcon size={15} color="currentColor" /> 点击卡片，看图认朋友</span>
           </div>}
           {!island.collection && island.category === 'numbers' && <div className="filter-row"><div className="filter-buttons">{Array.from({ length: 5 }, (_, index) => <Button key={index} size="small" type={island.numberPage === index ? 'primary' : 'text'} aria-pressed={island.numberPage === index} onClick={() => island.setNumberPage(index)}>{index * 20 + 1}–{(index + 1) * 20}</Button>)}</div><span className="gentle-note">先从 1–5 开始，不着急</span></div>}
 
@@ -112,7 +111,7 @@ export function App() {
       {island.selected && <PictureViewer island={island} />}
 
       <Modal open={island.parentOpen} variant="game" width="min(560px, 96vw)" title="给大朋友的小纸条" onClose={() => island.setParentOpen(false)} typewriter={false} footer={<Button type="primary" onClick={() => island.setParentOpen(false)}>知道啦，一起玩吧</Button>}>
-        <div className="parent-content"><p>这里不是小课堂，而是你和宝宝一起发现世界的小角落。</p><h3>慢一点，也很好</h3><p>1.5–2 岁以真实生活、亲子共读和实物为主；如果使用屏幕，请全程陪伴。2–3 岁也建议短时共同观看，每次 5–10 分钟，累了就休息。</p><h3>看一看，再找一找</h3><p>先从宝宝熟悉的动物、物品和 1–5 开始。数字 1–100、字母和汉字只是供探索，不是这个年龄必须掌握的目标。不测验、不排名。</p><div className="setting-row"><span>点开卡片时自动朗读</span><Switch checked={island.sound} onChange={island.toggleSound} aria-label="自动朗读" /></div><h3>放到手机主屏幕</h3><p>在 iPhone 的 Safari 中点“分享”，选择“添加到主屏幕”，以后就能像打开 App 一样进入小岛。</p><p>联网打开过后，可以离线进入小岛并查看部分最近浏览的图片；没有保存的图片需要联网。系统可能自动清理缓存。更新后请关闭小岛的所有窗口再打开。</p><p className="privacy-note">无账号、无广告、无行为统计。收藏仅保存在这台设备。朗读使用浏览器与系统语音，声音和可用性因设备而异，部分系统语音可能联网。</p></div>
+        <div className="parent-content"><p>这里不是小课堂，而是你和宝宝一起发现世界的小角落。</p><h3>慢一点，也很好</h3><p>1.5–2 岁以真实生活、亲子共读和实物为主；如果使用屏幕，请全程陪伴。2–3 岁也建议短时共同观看，每次 5–10 分钟，累了就休息。</p><h3>看一看，再找一找</h3><p>先从宝宝熟悉的动物、物品和 1–5 开始。数字 1–100、字母和汉字只是供探索，不是这个年龄必须掌握的目标。不测验、不排名。</p><p>打开和切换卡片保持安静，点击中文或英文按钮才播放对应录音。</p><h3>放到手机主屏幕</h3><p>在 iPhone 的 Safari 中点“分享”，选择“添加到主屏幕”，以后就能像打开 App 一样进入小岛。</p><p>联网打开过后，可以离线进入小岛并查看部分最近浏览的图片；没有保存的图片需要联网。系统可能自动清理缓存。更新后请关闭小岛的所有窗口再打开。</p><p className="privacy-note">无账号、无广告、无行为统计。收藏仅保存在这台设备。朗读播放预先生成的中英文录音，不使用浏览器实时合成。录音需联网加载。</p></div>
       </Modal>
       {island.message && !island.selected && <div className="toast" role="status">{island.message}</div>}
     </>

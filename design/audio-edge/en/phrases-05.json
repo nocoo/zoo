@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Wash your face",
+  "rate": "+0%",
+  "sha256": "174ae1c15c9ac75153c2eadc2e649fe662a7b8eb00a3840282e4371ee40fb47e",
+  "bytes": 12096
+}

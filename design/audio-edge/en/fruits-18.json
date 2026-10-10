@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Pomegranate",
+  "rate": "+0%",
+  "sha256": "173cbe84b5881eff2625c2a8a98f3b8b52b7757dd96cef40c74cdc76fe06f02e",
+  "bytes": 10800
+}

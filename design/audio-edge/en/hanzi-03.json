@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Mountain",
+  "rate": "+0%",
+  "sha256": "a354e488279810b8fab1c2b1fa20468d97f9b9413dbc79ad98156ccd8b1e9db6",
+  "bytes": 9504
+}

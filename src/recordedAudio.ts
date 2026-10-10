@@ -19,8 +19,8 @@ export function createRecordedAudio(onError: (message: string) => void) {
       if (active !== audio) return;
       stop();
       onError(error instanceof DOMException && error.name === 'NotAllowedError'
-        ? '浏览器暂未允许自动播放，点一下“再听一遍”就好。'
-        : '录音暂时加载失败，请检查网络后点“再听一遍”。');
+        ? '浏览器暂未允许播放，请再点一下读音按钮。'
+        : '录音暂时加载失败，请检查网络后再点读音按钮。');
     });
   }
 

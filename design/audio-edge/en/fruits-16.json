@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Coconut",
+  "rate": "+0%",
+  "sha256": "08b57310aba6acce6bb23893cacd99d899d0266bdc347a9803e47972eec51607",
+  "bytes": 9936
+}

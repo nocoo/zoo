@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Lightning",
+  "rate": "+0%",
+  "sha256": "eaa6fe440a6352175d638c59f2c35b492fb20837c868af20dd8650cf7b5ba319",
+  "bytes": 9648
+}

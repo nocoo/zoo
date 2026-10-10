@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Dolphin",
+  "rate": "+0%",
+  "sha256": "c9e38842a67b7fdb84f11f6188f9f1e5cb1be57864e1a6909e1355e90ed925ae",
+  "bytes": 9648
+}

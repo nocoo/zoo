@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Water",
+  "rate": "+0%",
+  "sha256": "b0a616c39cc734b9badaba32445bd0119f486f767001e2c6a8391348b1fa3479",
+  "bytes": 9072
+}

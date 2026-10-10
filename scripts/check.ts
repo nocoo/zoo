@@ -1,6 +1,8 @@
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
-import { categories, chineseNumber, pictures } from '../src/content.ts';
+import { categories, chineseNumber, numberPinyin, pictures } from '../src/content.ts';
+import { englishNumber } from '../src/english.ts';
+import { neighborImages } from '../src/neighbors.ts';
 import { swipeStep } from '../src/swipe.ts';
 import { audioTranscript } from '../src/audio.ts';
 
@@ -21,7 +23,7 @@ for (const category of categories) {
   const items = pictures.filter(p => p.category === category.id);
   assert.equal(items.length, category.id === 'numbers' ? 100 : category.id === 'letters' ? 26 : 20);
   for (const item of items) {
-    assert.ok(item.name && item.pronunciation && item.description);
+    assert.ok(item.name && item.pronunciation && item.description && item.english);
     if (item.image) assert.ok(existsSync(`public${item.image}`), `Missing ${item.image}`);
     if (item.imageLarge) {
       assert.ok(existsSync(`public${item.imageLarge}`), `Missing ${item.imageLarge}`);
@@ -43,4 +45,14 @@ assert.equal(swipeStep(60, 40), 0);
 assert.equal(audioTranscript(pictures.find(p => p.id === 'animals-01')!), '狮子。狮子有一圈蓬松的鬃毛，像戴着小围巾。');
 assert.equal(audioTranscript(pictures.find(p => p.id === 'numbers-100')!), '一百');
 assert.equal(audioTranscript(pictures.find(p => p.id === 'letters-A')!), 'A');
+assert.equal(englishNumber(21), 'Twenty-one');
+assert.equal(englishNumber(100), 'One hundred');
+assert.equal(numberPinyin(99), 'jiǔ shí jiǔ');
+assert.equal(numberPinyin(100), 'yī bǎi');
+const animals = pictures.filter(p => p.category === 'animals');
+assert.deepEqual(neighborImages(animals, animals[0].id), [19, 1, 18, 2].map(i => animals[i].imageLarge));
+assert.deepEqual(neighborImages(animals.slice(0, 1), animals[0].id), []);
+assert.deepEqual(neighborImages(animals.slice(0, 2), animals[0].id), [animals[1].imageLarge]);
+assert.deepEqual(neighborImages([], 'missing'), []);
+assert.deepEqual(neighborImages(pictures.filter(p => p.category === 'numbers'), 'numbers-1'), []);
 console.log('检查通过：8 个分类、246 张内容卡、全部插画和数字读法。');

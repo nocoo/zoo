@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Fire",
+  "rate": "+0%",
+  "sha256": "8f75a8f839259212a25795b00d757fade25dec7e8af72db5abdc5023ebf98d76",
+  "bytes": 9504
+}

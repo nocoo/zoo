@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Sheep",
+  "rate": "+0%",
+  "sha256": "f51d3165241c60654cd28cf5103320cd6183b3df5f3b8be3247a3af0d85fa4bc",
+  "bytes": 8496
+}

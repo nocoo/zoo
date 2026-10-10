@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Dragon fruit",
+  "rate": "+0%",
+  "sha256": "8c77845c85977a43bbb78be235fa6ba42e4ed6cfb56bab3358b4b789f12e39e8",
+  "bytes": 11376
+}

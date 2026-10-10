@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Orange",
+  "rate": "+0%",
+  "sha256": "b9c37e8912db3104fb54cdd0f5338666be0ca75284a51c29d9326284bb53605f",
+  "bytes": 9504
+}

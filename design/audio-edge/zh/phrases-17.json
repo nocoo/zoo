@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "慢慢走。小脚慢慢走，不着急。",
+  "rate": "+10%",
+  "sha256": "b62771fd8b61c0a17de12c1d42c4ecb8efaca8ca0325676f53281cc445fc79d5",
+  "bytes": 22320
+}

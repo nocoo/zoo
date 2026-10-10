@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Clock",
+  "rate": "+0%",
+  "sha256": "0df5bf15b15a08504bb1984c42d3c4369451c0a17425f21a04fe13ba4afca4b5",
+  "bytes": 9216
+}

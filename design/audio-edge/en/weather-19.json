@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Sun hat",
+  "rate": "+0%",
+  "sha256": "14b690d8c6344b6736b2a8e317df5e89db8990dc16db51c330053d46a65b2db3",
+  "bytes": 10512
+}

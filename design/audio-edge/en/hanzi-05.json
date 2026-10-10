@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Tree",
+  "rate": "+0%",
+  "sha256": "b0def813e73233228beb7b1baa7f2c65c910bd75fc99ac893653ce8e84c92421",
+  "bytes": 8784
+}

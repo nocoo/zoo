@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Persimmon",
+  "rate": "+0%",
+  "sha256": "5735a6c2378fc18f9db2c4d584d2cf41961e01ac6c1c9cd4cdb0c43257196da5",
+  "bytes": 9936
+}

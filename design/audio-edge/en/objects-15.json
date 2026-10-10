@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Building blocks",
+  "rate": "+0%",
+  "sha256": "315d69be3352c11fa0e388a6b1b47aa91c5b3c93ffee70d77cb5ffbb68f1a76d",
+  "bytes": 11808
+}

@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { pictures, type CategoryId, type Picture } from './content';
+import { createRecordedAudio } from './recordedAudio';
+import media from './media.json';
 
 function readSaved(): string[] {
   try {
@@ -15,11 +17,11 @@ export function useIsland() {
   const [collection, setCollection] = useState(false);
   const [favorites, setFavorites] = useState(readSaved);
   const [selected, setSelected] = useState<Picture | null>(null);
-  const [sound, setSound] = useState(true);
   const [message, setMessage] = useState('');
   const [visited, setVisited] = useState<string[]>([]);
   const [parentOpen, setParentOpen] = useState(false);
-  const speechRequest = useRef(0);
+  const player = useRef<ReturnType<typeof createRecordedAudio> | null>(null);
+  if (!player.current) player.current = createRecordedAudio(setMessage);
 
   useEffect(() => {
     if (!message) return;
@@ -28,8 +30,7 @@ export function useIsland() {
   }, [message]);
 
   function stopSpeech() {
-    speechRequest.current += 1;
-    if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+    player.current?.stop();
   }
 
   useEffect(() => {
@@ -48,33 +49,16 @@ export function useIsland() {
     (category !== 'animals' || group === '全部朋友' || p.group === group) &&
     (category !== 'numbers' || (p.value! > numberPage * 20 && p.value! <= (numberPage + 1) * 20)));
 
-  function speak(picture: Picture, full = false) {
-    if (!('speechSynthesis' in window)) {
-      setMessage('这个浏览器暂不支持朗读，可以和宝宝一起读一读哦。');
-      return;
-    }
-    stopSpeech();
-    const request = speechRequest.current;
-    const text = picture.category === 'letters' ? picture.name :
-      picture.category === 'numbers' ? picture.pronunciation :
-      full ? `${picture.name}。${picture.description}` : picture.name;
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = picture.category === 'letters' ? 'en-US' : 'zh-CN';
-    const voice = window.speechSynthesis.getVoices().find(v => v.lang.replace('_', '-').startsWith(utterance.lang));
-    if (voice) utterance.voice = voice;
-    utterance.rate = 0.8;
-    utterance.onerror = event => {
-      if (request === speechRequest.current && !['interrupted', 'canceled'].includes(event.error)) {
-        setMessage('朗读暂时不可用，请检查设备的语音设置，或陪宝宝读一读。');
-      }
-    };
-    window.speechSynthesis.speak(utterance);
+  function speak(picture: Picture, language: 'zh' | 'en') {
+    setMessage('');
+    const recordings: Record<string, { zh: string; en: string }> = media.audio;
+    player.current!.play(recordings[picture.id][language]);
   }
 
   function openPicture(picture: Picture) {
+    stopSpeech();
     setSelected(picture);
     setVisited(ids => ids.includes(picture.id) ? ids : [...ids, picture.id]);
-    if (sound) speak(picture);
   }
 
   function chooseCategory(id: CategoryId) {
@@ -98,10 +82,9 @@ export function useIsland() {
 
   return {
     category, group, setGroup, numberPage, setNumberPage, collection, setCollection,
-    favorites, selected, sound, message, visited, parentOpen, setParentOpen, items,
+    favorites, selected, message, visited, parentOpen, setParentOpen, items,
     chooseCategory, openPicture, toggleFavorite, speak, stopSpeech, move,
     closePicture: () => { stopSpeech(); setSelected(null); },
-    toggleSound: () => { stopSpeech(); setSound(!sound); },
     surprise: () => { if (items.length) openPicture(items[Math.floor(Math.random() * items.length)]); },
   };
 }

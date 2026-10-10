@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Toothbrush",
+  "rate": "+0%",
+  "sha256": "1bb5161e36debc983fb9e1b209c341a83220d0a46f0c4b716f122f5b474607a4",
+  "bytes": 10224
+}

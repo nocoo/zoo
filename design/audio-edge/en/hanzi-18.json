@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Horse",
+  "rate": "+0%",
+  "sha256": "5688341dc79b3bdc75ee464e13a967b6c254845d1cd85f2cf7f675a161fe1995",
+  "bytes": 9072
+}

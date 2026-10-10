@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Chair",
+  "rate": "+0%",
+  "sha256": "3b7f983ac5f1355151d4727e193db4b3a7ef7931c4e0bbc7a0c6b5a3a6a6e957",
+  "bytes": 8784
+}

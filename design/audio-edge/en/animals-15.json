@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Hippopotamus",
+  "rate": "+0%",
+  "sha256": "af672ea323121b467f52ceb06eabc81b8abc28c6fba10770414a7586bcc96481",
+  "bytes": 11952
+}

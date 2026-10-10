@@ -23,7 +23,7 @@ let online = true;
 const worker = await readFile('dist/sw.js', 'utf8');
 const shell = JSON.parse(worker.match(/const SHELL = (.*);/)[1]);
 assert.ok(shell.includes('/'));
-assert.ok(!shell.some(url => /^\/(api|art|audio|voice-preview)\//.test(url)));
+assert.ok(!shell.some(url => /^\/(api|art|audio|audio-edge|voice-preview)\//.test(url)));
 for (const url of shell) assert.ok((await stat(`dist${url === '/' ? '/index.html' : url}`)).isFile());
 vm.runInNewContext(worker, {
   caches, URL, Response,
@@ -44,11 +44,16 @@ async function request(path, mode = 'cors', headers = new Headers()) {
 for (let n = 0; n < 55; n++) await request(`/art/${n}.webp`);
 const art = await caches.open((await caches.keys()).find(key => key.startsWith('zoo-art-')));
 assert.equal((await art.keys()).length, 48);
+await request('/art/hd/test.webp?v=old');
+await request('/art/hd/test.webp?v=new');
 online = false;
 assert.ok((await request('/')).ok);
 assert.equal(await (await request('/art/54.webp')).text(), 'image');
 assert.match(await (await request('/art/unseen.webp')).text(), /联网/);
+assert.equal(await (await request('/art/hd/test.webp?v=new')).text(), 'image');
+assert.match(await (await request('/art/hd/test.webp?v=missing')).text(), /联网/);
 assert.equal(await request('/audio/test.mp3'), undefined);
+assert.equal(await request('/audio-edge/en/test.mp3'), undefined);
 assert.equal(await request('/api/live'), undefined);
 assert.equal(await request('/api/live', 'navigate'), undefined);
 assert.equal(await request('/art/54.webp', 'cors', new Headers({ Range: 'bytes=0-10' })), undefined);

@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Plate",
+  "rate": "+0%",
+  "sha256": "9067bd2255a8a2d659b374926d0c72700e7b69d233ee6ae4fa5e2e2e4ffcd6e0",
+  "bytes": 9072
+}

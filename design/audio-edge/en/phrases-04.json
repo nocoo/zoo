@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Brush your teeth",
+  "rate": "+0%",
+  "sha256": "616b3bb3db09041971ea0e52eade306d8ea7164d417c183d4566056bc1db3a0f",
+  "bytes": 11664
+}

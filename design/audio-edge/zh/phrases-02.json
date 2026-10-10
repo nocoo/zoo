@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "吃饭。我要吃饭啦。",
+  "rate": "+10%",
+  "sha256": "42cb3714fdc8d2aa591e0e45119fc273e993a2cd157e5e2f34b5f9464b105369",
+  "bytes": 15552
+}

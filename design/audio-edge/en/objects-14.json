@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Toy car",
+  "rate": "+0%",
+  "sha256": "e2466074fe2fe1ae689593ed26f9e8c329a1d118d659b2f2bbcf71565d14ec5e",
+  "bytes": 10512
+}

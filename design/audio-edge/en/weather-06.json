@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Wind",
+  "rate": "+0%",
+  "sha256": "7d12fb337f0b01e5a8481dcee6d216d256c1a1315a51f42540f13461a84d6f72",
+  "bytes": 8496
+}

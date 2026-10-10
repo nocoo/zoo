@@ -7,14 +7,14 @@
 
 Zoo is a static web app that introduces the everyday world through paper-textured cartoon illustrations. There are no quizzes, rankings, ads or login. Keep sessions short and shared with an adult; numbers 1–100, letters and Chinese characters are optional exploration, not developmental requirements for this age group.
 
-Favorites stay in the current browser's local storage. There are no accounts, analytics, advertisements or microphone requests. Narration uses browser and operating-system speech; voices and availability depend on the device, and some system voices may access network services.
+Favorites stay in the current browser's local storage. There are no accounts, analytics, advertisements or microphone requests. Narration plays pregenerated MP3 files only. Completed Gemini recordings are preserved; temporary Edge recordings fill missing Mandarin and English audio. There is no browser speech synthesis or runtime TTS.
 
 ## Features
 
 - 246 cards across eight categories, with pinyin or letter case, a name and a short description.
 - Full-viewport pictures with swipes, previous/next controls and desktop arrow keys; Escape or Close restores focus to the original card.
-- Animal habitat filters, number pages, random exploration, device-local favorites and automatic narration controls.
-- Each of 120 illustrations has a 640 × 560 thumbnail and a native 2048 × 1792 full-screen WebP loaded only when opened; numbers and letters use native text.
+- Animal habitat filters, number pages, random exploration, device-local favorites and separate manual Mandarin/English playback buttons. Opening and switching cards stay silent.
+- Each of 120 illustrations has a 640 × 560 thumbnail and a native 2048 × 1792 full-screen WebP with the two previous and two next images preloaded in the viewer; numbers and letters use native text.
 - iPhone Home Screen installation, bounded offline use and a header link to the Hexly project archive.
 
 | Category | Cards |
@@ -32,9 +32,9 @@ Favorites stay in the current browser's local storage. There are no accounts, an
 
 Open [zoo.hexly.ai](https://zoo.hexly.ai), choose a category and tap a card. Share sessions of around 5–10 minutes, then point out and find the subjects in the real world together.
 
-In Safari on iPhone, tap Share → Add to Home Screen to launch **小小动物岛** independently. After an online visit, the app shell and at most 48 recently viewed images can work offline; uncached pictures still need a connection. Audio and the health endpoint bypass offline caching, and system speech is not guaranteed offline. iOS may evict browser storage. Close all island windows and reopen to activate a downloaded update.
+In Safari on iPhone, tap Share → Add to Home Screen to launch **小小动物岛** independently. After an online visit, the app shell and at most 48 recently viewed images can work offline; uncached pictures still need a connection. Audio and the health endpoint bypass offline caching, so offline narration is not guaranteed. iOS may evict browser storage. Close all island windows and reopen to activate a downloaded update.
 
-Recorded narration is not integrated yet: as of 2026-10-10, 98 of 246 clips are archived, with the remaining generation limited by the provider's daily quota. Production playback still uses system speech; the local scheduled job does not automatically replace playback, commit or deploy.
+The local daily Gemini generation job continues under its existing quota limits. Dev/build selects any newly completed Gemini clips ahead of temporary Edge recordings; the job never commits or deploys automatically. See [AGENTS.md](../AGENTS.md) for generation and preservation instructions.
 
 ## Development
 
@@ -80,7 +80,7 @@ Existing Chromium smoke checks cover category selection, filters, favorites pers
 
 - React, TypeScript and Vite: static application, interaction and builds.
 - [animal-island-ui](https://github.com/guokaigdg/animal-island-ui): controls and base styling; `naive-icons`: UI icons.
-- Native Service Worker, Web App Manifest and browser speech: bounded offline use, Home Screen installation and narration.
+- Native Service Worker, Web App Manifest and static MP3 narration: bounded offline use, Home Screen installation and narration.
 - Cloudflare Workers Static Assets: static hosting and the build health document.
 
 ## Documentation

@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "三十三",
+  "rate": "+10%",
+  "sha256": "7381172182fa2d7a828eaca9bde6d5525fdb013ba0c81b5c346f1f939c5c3ed8",
+  "bytes": 8064
+}

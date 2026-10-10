@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Lychee",
+  "rate": "+0%",
+  "sha256": "fe3f1b95cefc1ff05180e995a246c0fe4881eb75f842b11e281fd80c8853c50f",
+  "bytes": 9648
+}

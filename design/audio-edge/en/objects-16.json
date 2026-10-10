@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Picture book",
+  "rate": "+0%",
+  "sha256": "b1e0c0908d895eb5d5a5b10d2764d6febfb345f8e625707f925981747917b9b7",
+  "bytes": 10800
+}

@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Give me a hug",
+  "rate": "+0%",
+  "sha256": "60c2f1af396a13adf97ef995ed9697592d2bf38f387969a56d81d82ec3ddb826",
+  "bytes": 11088
+}

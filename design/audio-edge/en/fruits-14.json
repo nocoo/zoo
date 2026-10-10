@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Lemon",
+  "rate": "+0%",
+  "sha256": "63c71807666f012382c8f53c7c56cca2440ba8a264639caa8b42cc3e0b7e5d3a",
+  "bytes": 9072
+}

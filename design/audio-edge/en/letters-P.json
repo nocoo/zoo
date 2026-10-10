@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "P",
+  "rate": "+0%",
+  "sha256": "6244616cb4255129a7d462dec8256014b0440492db4db987ad0081aa21661427",
+  "bytes": 8352
+}

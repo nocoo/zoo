@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Frost",
+  "rate": "+0%",
+  "sha256": "cbff2fbfab82f7d93b9c7812782a1307c32bc2aaf6cd90f4cbb2db4d6b7c3c26",
+  "bytes": 9504
+}

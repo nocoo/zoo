@@ -120,6 +120,11 @@ export function chineseNumber(value: number): string {
   return `${tens === 1 ? '' : digits[tens]}十${value % 10 ? digits[value % 10] : ''}`;
 }
 
+export function numberPinyin(value: number): string {
+  const syllables: Record<string, string> = { 零: 'líng', 一: 'yī', 二: 'èr', 三: 'sān', 四: 'sì', 五: 'wǔ', 六: 'liù', 七: 'qī', 八: 'bā', 九: 'jiǔ', 十: 'shí', 百: 'bǎi' };
+  return Array.from(chineseNumber(value), character => syllables[character]).join(' ');
+}
+
 export const pictures: Picture[] = [
   ...Object.entries(rows).flatMap(([category, items]) => items.map(([name, pronunciation, description, group], index) => ({
     id: `${category}-${String(index + 1).padStart(2, '0')}`, category: category as CategoryId,

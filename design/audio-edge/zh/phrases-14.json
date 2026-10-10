@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "再见。挥挥手，我们下次见。",
+  "rate": "+10%",
+  "sha256": "b43b57a215818a8b7de24af6d1a2ddbfc35f34003009bf715867cfc928276d80",
+  "bytes": 20448
+}

@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Penguin",
+  "rate": "+0%",
+  "sha256": "9caa468604f5610a9972fb86f53723318edf6fa32dbb1780bd5359606d206bd4",
+  "bytes": 9648
+}

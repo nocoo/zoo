@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Panda",
+  "rate": "+0%",
+  "sha256": "09826a2220cd12c5397862fc64c2811c9ff1888bfcb6acbc4e53818b4efb4417",
+  "bytes": 9216
+}

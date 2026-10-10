@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Bed",
+  "rate": "+0%",
+  "sha256": "d3f2680f8746ab91ccfd294395345141ec83d1dc96f9fb74f596254a532e6e5c",
+  "bytes": 8496
+}

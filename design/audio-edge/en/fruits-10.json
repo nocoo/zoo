@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Mango",
+  "rate": "+0%",
+  "sha256": "3e9539fdda13a3f786d84b0c07c231433b902514058aac5a2589f5346182e712",
+  "bytes": 9648
+}

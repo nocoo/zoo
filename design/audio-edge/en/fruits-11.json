@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Kiwi",
+  "rate": "+0%",
+  "sha256": "7a907038ecbb21596da7a25a710a173aad4467d2c0ccd5964bf1c932ff47a9f9",
+  "bytes": 9072
+}

@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Squirrel",
+  "rate": "+0%",
+  "sha256": "5383e57b96a55a26db313f47d9f709526cf85e285131860ca82ae7ad8c6b2be1",
+  "bytes": 9792
+}

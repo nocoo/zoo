@@ -4,6 +4,9 @@ import { ArrowLeftIcon, ArrowRightIcon, CloseIcon, HeartIcon, MusicIcon, FlowerI
 import { Illustration } from './Illustration';
 import type { useIsland } from './useIsland';
 import { swipeStep } from './swipe';
+import { neighborImages } from './neighbors';
+import { numberPinyin } from './content';
+import media from './media.json';
 import './viewer.css';
 
 export function PictureViewer({ island }: { island: ReturnType<typeof useIsland> }) {
@@ -14,6 +17,18 @@ export function PictureViewer({ island }: { island: ReturnType<typeof useIsland>
   const exitAnimation = useRef<Animation | null>(null);
   const picture = island.selected!;
   const index = island.items.findIndex(item => item.id === picture.id);
+  const adjacent = neighborImages(island.items, picture.id).join('|');
+
+  useEffect(() => {
+    const images: Record<string, string> = media.images;
+    const preload = adjacent.split('|').filter(Boolean).map(path => {
+      const image = new Image();
+      image.fetchPriority = 'low';
+      image.src = images[path];
+      return image;
+    });
+    return () => preload.forEach(image => image.removeAttribute('src'));
+  }, [adjacent]);
 
   useEffect(() => {
     const element = dialog.current!;
@@ -85,9 +100,17 @@ export function PictureViewer({ island }: { island: ReturnType<typeof useIsland>
     </div>
     <footer className="viewer-footer">
       <div className="viewer-caption" aria-live="polite">
-        <span className="viewer-pronunciation">{picture.category === 'letters' ? '大写和小写' : picture.pronunciation}</span>
-        <div className="viewer-name-row"><h2 id="viewer-name">{picture.category === 'letters' ? `${picture.name} ${picture.pronunciation}` : picture.name}</h2>
-          <Button type="text" aria-label="再听一遍" onClick={() => island.speak(picture, true)} icon={<MusicIcon size={27} color="currentColor" />} /></div>
+        <span className="viewer-pronunciation">{picture.category === 'letters' ? '大写和小写' : picture.category === 'numbers' ? numberPinyin(picture.value!) : picture.pronunciation}</span>
+        <div className="viewer-readings">
+          <Button type="text" className="reading-button" aria-label={`播放${picture.category === 'letters' ? '字母' : '中文'}：${picture.name}`} onClick={() => island.speak(picture, 'zh')}>
+            <span className="reading-label">{picture.category === 'letters' ? '字母' : '中文'} <MusicIcon size={17} color="currentColor" /></span>
+            <span id="viewer-name" className="reading-name">{picture.category === 'letters' ? `${picture.name} ${picture.pronunciation}` : picture.category === 'numbers' ? picture.pronunciation : picture.name}</span>
+          </Button>
+          {picture.category !== 'letters' && <Button type="text" className="reading-button english-reading" aria-label={`播放英文：${picture.english}`} onClick={() => island.speak(picture, 'en')}>
+            <span className="reading-label">English <MusicIcon size={17} color="currentColor" /></span>
+            <span className="reading-name" lang="en">{picture.english}</span>
+          </Button>}
+        </div>
         <p id="viewer-description">{picture.description}</p>
         {picture.category === 'fruits' && <small className="food-note">请家长去核、切成适龄小块后再食用。</small>}
       </div>

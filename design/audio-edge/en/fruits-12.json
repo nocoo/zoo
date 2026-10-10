@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Cherries",
+  "rate": "+0%",
+  "sha256": "9d44e661ed99b43cc03febad9e700e33b6761e44a7bbf57b036abf0c24a54645",
+  "bytes": 9792
+}

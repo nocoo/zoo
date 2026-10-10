@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "抱一抱。妈妈，我想抱一抱。",
+  "rate": "+10%",
+  "sha256": "97b631af57bf1675a474b7e8cec074834e927f093a25c160e0b04fb201531f82",
+  "bytes": 19008
+}

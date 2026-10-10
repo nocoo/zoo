@@ -30,7 +30,7 @@ assert.equal(errors.length, 0);
 player.play('/third.mp3');
 created[2].reject(new DOMException('gesture required', 'NotAllowedError'));
 await Promise.resolve();
-assert.match(errors[0], /自动播放/);
+assert.match(errors[0], /暂未允许播放/);
 player.play('/fourth.mp3');
 created[3].reject(new Error('network'));
 await Promise.resolve();

@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Shirt",
+  "rate": "+0%",
+  "sha256": "2f5838a38cf28ed59de83f9244788591898839d83171f7636972f1f63d6f3428",
+  "bytes": 9072
+}

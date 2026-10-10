@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Banana",
+  "rate": "+0%",
+  "sha256": "bd12fa122a09393e077dbead5796181a418ad8364e239732c3977b97d5603f61",
+  "bytes": 9648
+}

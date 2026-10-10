@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Snow",
+  "rate": "+0%",
+  "sha256": "86592bcea54a993b87a9a3cb2a76e0f72f2b88f83459e250aa6985dfac1a0bfe",
+  "bytes": 9360
+}

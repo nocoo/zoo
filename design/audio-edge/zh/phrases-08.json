@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "睡觉。晚安，我要睡觉了。",
+  "rate": "+10%",
+  "sha256": "02aede41b9fbe4f544ebfd26e6a170803c3bfc5bea0434b8b5aa2672962993fc",
+  "bytes": 19152
+}

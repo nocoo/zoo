@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "穿鞋。我要穿鞋子。",
+  "rate": "+10%",
+  "sha256": "6f849073d3836a50534dd8754311b4b4801773aaff4a83027082ca2575999042",
+  "bytes": 16272
+}

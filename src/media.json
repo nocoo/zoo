@@ -1,0 +1,1230 @@
+{
+  "images": {
+    "/art/hd/animals-01-full.webp": "/art/hd/animals-01-full.webp?v=e49862d262d44e4d",
+    "/art/hd/animals-01-thumb.webp": "/art/hd/animals-01-thumb.webp?v=d2027d1610cd2722",
+    "/art/hd/animals-02-full.webp": "/art/hd/animals-02-full.webp?v=8b989a95fcbe98c0",
+    "/art/hd/animals-02-thumb.webp": "/art/hd/animals-02-thumb.webp?v=f630da06cf698965",
+    "/art/hd/animals-03-full.webp": "/art/hd/animals-03-full.webp?v=8c8ab94025f57dad",
+    "/art/hd/animals-03-thumb.webp": "/art/hd/animals-03-thumb.webp?v=57231023c1f249fb",
+    "/art/hd/animals-04-full.webp": "/art/hd/animals-04-full.webp?v=1ac2d0270762f157",
+    "/art/hd/animals-04-thumb.webp": "/art/hd/animals-04-thumb.webp?v=04cd474298092c21",
+    "/art/hd/animals-05-full.webp": "/art/hd/animals-05-full.webp?v=aada1698593e3954",
+    "/art/hd/animals-05-thumb.webp": "/art/hd/animals-05-thumb.webp?v=ee0b1b2bbc02a0ca",
+    "/art/hd/animals-06-full.webp": "/art/hd/animals-06-full.webp?v=ae6d2441025cf00d",
+    "/art/hd/animals-06-thumb.webp": "/art/hd/animals-06-thumb.webp?v=0ed029820d0f6d36",
+    "/art/hd/animals-07-full.webp": "/art/hd/animals-07-full.webp?v=a906810bf4933f70",
+    "/art/hd/animals-07-thumb.webp": "/art/hd/animals-07-thumb.webp?v=dc83b83bdbb24705",
+    "/art/hd/animals-08-full.webp": "/art/hd/animals-08-full.webp?v=9596b1451ceae147",
+    "/art/hd/animals-08-thumb.webp": "/art/hd/animals-08-thumb.webp?v=bacda8d9da009627",
+    "/art/hd/animals-09-full.webp": "/art/hd/animals-09-full.webp?v=a40edd49121ce3cf",
+    "/art/hd/animals-09-thumb.webp": "/art/hd/animals-09-thumb.webp?v=5cc6ce4275d33339",
+    "/art/hd/animals-10-full.webp": "/art/hd/animals-10-full.webp?v=7ea01dcf9ba0142c",
+    "/art/hd/animals-10-thumb.webp": "/art/hd/animals-10-thumb.webp?v=cdd3824dae965e06",
+    "/art/hd/animals-11-full.webp": "/art/hd/animals-11-full.webp?v=902960dbb2de61c2",
+    "/art/hd/animals-11-thumb.webp": "/art/hd/animals-11-thumb.webp?v=f5635fc2e7b883ca",
+    "/art/hd/animals-12-full.webp": "/art/hd/animals-12-full.webp?v=d9e95fd84c774f2d",
+    "/art/hd/animals-12-thumb.webp": "/art/hd/animals-12-thumb.webp?v=751dc6f95c75e54e",
+    "/art/hd/animals-13-full.webp": "/art/hd/animals-13-full.webp?v=a47301c94bee0879",
+    "/art/hd/animals-13-thumb.webp": "/art/hd/animals-13-thumb.webp?v=ce088fb8f00bb55d",
+    "/art/hd/animals-14-full.webp": "/art/hd/animals-14-full.webp?v=95da049fc2b2b7a6",
+    "/art/hd/animals-14-thumb.webp": "/art/hd/animals-14-thumb.webp?v=98385b241da818c2",
+    "/art/hd/animals-15-full.webp": "/art/hd/animals-15-full.webp?v=c6723b21851db5e1",
+    "/art/hd/animals-15-thumb.webp": "/art/hd/animals-15-thumb.webp?v=d01ebc811f5c2aa4",
+    "/art/hd/animals-16-full.webp": "/art/hd/animals-16-full.webp?v=f54646e9beeed0cb",
+    "/art/hd/animals-16-thumb.webp": "/art/hd/animals-16-thumb.webp?v=9f092cc6da096cf9",
+    "/art/hd/animals-17-full.webp": "/art/hd/animals-17-full.webp?v=04bc56720585401a",
+    "/art/hd/animals-17-thumb.webp": "/art/hd/animals-17-thumb.webp?v=ca61893303a80ef3",
+    "/art/hd/animals-18-full.webp": "/art/hd/animals-18-full.webp?v=addc2a30ecf55c98",
+    "/art/hd/animals-18-thumb.webp": "/art/hd/animals-18-thumb.webp?v=88e37efa48f729ab",
+    "/art/hd/animals-19-full.webp": "/art/hd/animals-19-full.webp?v=c5a8d603533b4551",
+    "/art/hd/animals-19-thumb.webp": "/art/hd/animals-19-thumb.webp?v=72585b08f183244a",
+    "/art/hd/animals-20-full.webp": "/art/hd/animals-20-full.webp?v=68f19cf783581634",
+    "/art/hd/animals-20-thumb.webp": "/art/hd/animals-20-thumb.webp?v=2b33dff19c93cad7",
+    "/art/hd/fruits-01-full.webp": "/art/hd/fruits-01-full.webp?v=12b3a68c841b0836",
+    "/art/hd/fruits-01-thumb.webp": "/art/hd/fruits-01-thumb.webp?v=c85cdcf816e50932",
+    "/art/hd/fruits-02-full.webp": "/art/hd/fruits-02-full.webp?v=bd848f034496bf49",
+    "/art/hd/fruits-02-thumb.webp": "/art/hd/fruits-02-thumb.webp?v=e767ccd2c7cefdc1",
+    "/art/hd/fruits-03-full.webp": "/art/hd/fruits-03-full.webp?v=37a19332511b9f4a",
+    "/art/hd/fruits-03-thumb.webp": "/art/hd/fruits-03-thumb.webp?v=fb7de926fda9c99a",
+    "/art/hd/fruits-04-full.webp": "/art/hd/fruits-04-full.webp?v=9dc7e262ce95d656",
+    "/art/hd/fruits-04-thumb.webp": "/art/hd/fruits-04-thumb.webp?v=aa05e396efc735ad",
+    "/art/hd/fruits-05-full.webp": "/art/hd/fruits-05-full.webp?v=5934f7fcedf47612",
+    "/art/hd/fruits-05-thumb.webp": "/art/hd/fruits-05-thumb.webp?v=72694d77b6863079",
+    "/art/hd/fruits-06-full.webp": "/art/hd/fruits-06-full.webp?v=7425d6dfc57d118c",
+    "/art/hd/fruits-06-thumb.webp": "/art/hd/fruits-06-thumb.webp?v=d48300fd9002f7fb",
+    "/art/hd/fruits-07-full.webp": "/art/hd/fruits-07-full.webp?v=b2202bc7cca4a68e",
+    "/art/hd/fruits-07-thumb.webp": "/art/hd/fruits-07-thumb.webp?v=40aa4758658dc28e",
+    "/art/hd/fruits-08-full.webp": "/art/hd/fruits-08-full.webp?v=d42cddf1c7b293d1",
+    "/art/hd/fruits-08-thumb.webp": "/art/hd/fruits-08-thumb.webp?v=a5ff009dbad2e0d6",
+    "/art/hd/fruits-09-full.webp": "/art/hd/fruits-09-full.webp?v=572942b32d4c6bca",
+    "/art/hd/fruits-09-thumb.webp": "/art/hd/fruits-09-thumb.webp?v=9ef4b4a4232ded10",
+    "/art/hd/fruits-10-full.webp": "/art/hd/fruits-10-full.webp?v=11f5eb53758fe7c2",
+    "/art/hd/fruits-10-thumb.webp": "/art/hd/fruits-10-thumb.webp?v=b5644717ae6ad048",
+    "/art/hd/fruits-11-full.webp": "/art/hd/fruits-11-full.webp?v=331f014894d9c3b6",
+    "/art/hd/fruits-11-thumb.webp": "/art/hd/fruits-11-thumb.webp?v=b9d292258ec4411e",
+    "/art/hd/fruits-12-full.webp": "/art/hd/fruits-12-full.webp?v=41f10401d6b9ffaa",
+    "/art/hd/fruits-12-thumb.webp": "/art/hd/fruits-12-thumb.webp?v=7aa481beec17e57d",
+    "/art/hd/fruits-13-full.webp": "/art/hd/fruits-13-full.webp?v=48cd67ec3ab5130c",
+    "/art/hd/fruits-13-thumb.webp": "/art/hd/fruits-13-thumb.webp?v=e4af45ad1238da10",
+    "/art/hd/fruits-14-full.webp": "/art/hd/fruits-14-full.webp?v=74d97457320b64d1",
+    "/art/hd/fruits-14-thumb.webp": "/art/hd/fruits-14-thumb.webp?v=98f328c563856448",
+    "/art/hd/fruits-15-full.webp": "/art/hd/fruits-15-full.webp?v=903dac7c3372cbd7",
+    "/art/hd/fruits-15-thumb.webp": "/art/hd/fruits-15-thumb.webp?v=fb135fa822088f78",
+    "/art/hd/fruits-16-full.webp": "/art/hd/fruits-16-full.webp?v=917ad88206487ed7",
+    "/art/hd/fruits-16-thumb.webp": "/art/hd/fruits-16-thumb.webp?v=dc17716f92b3597d",
+    "/art/hd/fruits-17-full.webp": "/art/hd/fruits-17-full.webp?v=7ae551c183e21f06",
+    "/art/hd/fruits-17-thumb.webp": "/art/hd/fruits-17-thumb.webp?v=668adaa0923adc12",
+    "/art/hd/fruits-18-full.webp": "/art/hd/fruits-18-full.webp?v=ac4ca9d786e6ffc2",
+    "/art/hd/fruits-18-thumb.webp": "/art/hd/fruits-18-thumb.webp?v=2197c87ee10c1cfa",
+    "/art/hd/fruits-19-full.webp": "/art/hd/fruits-19-full.webp?v=7b4a43bd9c07ec3f",
+    "/art/hd/fruits-19-thumb.webp": "/art/hd/fruits-19-thumb.webp?v=1af4cb993fa9a3e2",
+    "/art/hd/fruits-20-full.webp": "/art/hd/fruits-20-full.webp?v=87303cc3c3b03092",
+    "/art/hd/fruits-20-thumb.webp": "/art/hd/fruits-20-thumb.webp?v=10c1fb7e29f817e3",
+    "/art/hd/hanzi-01-full.webp": "/art/hd/hanzi-01-full.webp?v=cd267fe2275c0f54",
+    "/art/hd/hanzi-01-thumb.webp": "/art/hd/hanzi-01-thumb.webp?v=83e1145b6a0c3a23",
+    "/art/hd/hanzi-02-full.webp": "/art/hd/hanzi-02-full.webp?v=9ff65962a1f20503",
+    "/art/hd/hanzi-02-thumb.webp": "/art/hd/hanzi-02-thumb.webp?v=a36efcd6b9c84fd5",
+    "/art/hd/hanzi-03-full.webp": "/art/hd/hanzi-03-full.webp?v=faba2c48cb374478",
+    "/art/hd/hanzi-03-thumb.webp": "/art/hd/hanzi-03-thumb.webp?v=28f9105038cedf24",
+    "/art/hd/hanzi-04-full.webp": "/art/hd/hanzi-04-full.webp?v=516a83421f925eac",
+    "/art/hd/hanzi-04-thumb.webp": "/art/hd/hanzi-04-thumb.webp?v=6f567d306366d13e",
+    "/art/hd/hanzi-05-full.webp": "/art/hd/hanzi-05-full.webp?v=dbb319781b86e637",
+    "/art/hd/hanzi-05-thumb.webp": "/art/hd/hanzi-05-thumb.webp?v=53453e78b91ec2a1",
+    "/art/hd/hanzi-06-full.webp": "/art/hd/hanzi-06-full.webp?v=b09e1b0bd972857c",
+    "/art/hd/hanzi-06-thumb.webp": "/art/hd/hanzi-06-thumb.webp?v=087e8408f075906e",
+    "/art/hd/hanzi-07-full.webp": "/art/hd/hanzi-07-full.webp?v=eb0c66f8d1eb7488",
+    "/art/hd/hanzi-07-thumb.webp": "/art/hd/hanzi-07-thumb.webp?v=6924f85d83d6a35f",
+    "/art/hd/hanzi-08-full.webp": "/art/hd/hanzi-08-full.webp?v=baf6bb41cbf9cec5",
+    "/art/hd/hanzi-08-thumb.webp": "/art/hd/hanzi-08-thumb.webp?v=288ed7b965a5be44",
+    "/art/hd/hanzi-09-full.webp": "/art/hd/hanzi-09-full.webp?v=35a17b7c92902bc8",
+    "/art/hd/hanzi-09-thumb.webp": "/art/hd/hanzi-09-thumb.webp?v=56d7066b8bdc4bea",
+    "/art/hd/hanzi-10-full.webp": "/art/hd/hanzi-10-full.webp?v=7aa67ace267e8b0c",
+    "/art/hd/hanzi-10-thumb.webp": "/art/hd/hanzi-10-thumb.webp?v=72dda04d947104e7",
+    "/art/hd/hanzi-11-full.webp": "/art/hd/hanzi-11-full.webp?v=73de6a927e680362",
+    "/art/hd/hanzi-11-thumb.webp": "/art/hd/hanzi-11-thumb.webp?v=8139900df564ce87",
+    "/art/hd/hanzi-12-full.webp": "/art/hd/hanzi-12-full.webp?v=c51e8b4e98d3fa9b",
+    "/art/hd/hanzi-12-thumb.webp": "/art/hd/hanzi-12-thumb.webp?v=e7940b4eae3201b2",
+    "/art/hd/hanzi-13-full.webp": "/art/hd/hanzi-13-full.webp?v=fe905651b95896bc",
+    "/art/hd/hanzi-13-thumb.webp": "/art/hd/hanzi-13-thumb.webp?v=ef3fd52dc71c69e8",
+    "/art/hd/hanzi-14-full.webp": "/art/hd/hanzi-14-full.webp?v=8ee72e85b6f49d47",
+    "/art/hd/hanzi-14-thumb.webp": "/art/hd/hanzi-14-thumb.webp?v=5d96acac543d1363",
+    "/art/hd/hanzi-15-full.webp": "/art/hd/hanzi-15-full.webp?v=c9f5370982978f57",
+    "/art/hd/hanzi-15-thumb.webp": "/art/hd/hanzi-15-thumb.webp?v=808b5d273594df99",
+    "/art/hd/hanzi-16-full.webp": "/art/hd/hanzi-16-full.webp?v=150a19e9b9147642",
+    "/art/hd/hanzi-16-thumb.webp": "/art/hd/hanzi-16-thumb.webp?v=63286807c7dea095",
+    "/art/hd/hanzi-17-full.webp": "/art/hd/hanzi-17-full.webp?v=341bf8139cc74f61",
+    "/art/hd/hanzi-17-thumb.webp": "/art/hd/hanzi-17-thumb.webp?v=2f250114d979b17f",
+    "/art/hd/hanzi-18-full.webp": "/art/hd/hanzi-18-full.webp?v=541f43aec7d9320c",
+    "/art/hd/hanzi-18-thumb.webp": "/art/hd/hanzi-18-thumb.webp?v=b33b821e2a8b524c",
+    "/art/hd/hanzi-19-full.webp": "/art/hd/hanzi-19-full.webp?v=e16c0e71a99865b5",
+    "/art/hd/hanzi-19-thumb.webp": "/art/hd/hanzi-19-thumb.webp?v=35e1e4f4b19eb41a",
+    "/art/hd/hanzi-20-full.webp": "/art/hd/hanzi-20-full.webp?v=7a07503fbfc68711",
+    "/art/hd/hanzi-20-thumb.webp": "/art/hd/hanzi-20-thumb.webp?v=dd3735d9e2806678",
+    "/art/hd/objects-01-full.webp": "/art/hd/objects-01-full.webp?v=f7f98446215983e2",
+    "/art/hd/objects-01-thumb.webp": "/art/hd/objects-01-thumb.webp?v=30510b6a2571435a",
+    "/art/hd/objects-02-full.webp": "/art/hd/objects-02-full.webp?v=48442c4cf96c6b4d",
+    "/art/hd/objects-02-thumb.webp": "/art/hd/objects-02-thumb.webp?v=6f7c911c0edba2c2",
+    "/art/hd/objects-03-full.webp": "/art/hd/objects-03-full.webp?v=95093dce40f09ea1",
+    "/art/hd/objects-03-thumb.webp": "/art/hd/objects-03-thumb.webp?v=2cad757419e9b762",
+    "/art/hd/objects-04-full.webp": "/art/hd/objects-04-full.webp?v=640036b3e70bd773",
+    "/art/hd/objects-04-thumb.webp": "/art/hd/objects-04-thumb.webp?v=f406e9e4cfd7f9fb",
+    "/art/hd/objects-05-full.webp": "/art/hd/objects-05-full.webp?v=359f0c2f791626b8",
+    "/art/hd/objects-05-thumb.webp": "/art/hd/objects-05-thumb.webp?v=68b2dffbc14aa5fa",
+    "/art/hd/objects-06-full.webp": "/art/hd/objects-06-full.webp?v=d8d01dfffbbc33ca",
+    "/art/hd/objects-06-thumb.webp": "/art/hd/objects-06-thumb.webp?v=e05b91a05b492a8b",
+    "/art/hd/objects-07-full.webp": "/art/hd/objects-07-full.webp?v=5b747b5316d40202",
+    "/art/hd/objects-07-thumb.webp": "/art/hd/objects-07-thumb.webp?v=58f97644208c1369",
+    "/art/hd/objects-08-full.webp": "/art/hd/objects-08-full.webp?v=30b9733892734f8d",
+    "/art/hd/objects-08-thumb.webp": "/art/hd/objects-08-thumb.webp?v=60f0c52e0981488f",
+    "/art/hd/objects-09-full.webp": "/art/hd/objects-09-full.webp?v=a56a9c2cd9ee39f2",
+    "/art/hd/objects-09-thumb.webp": "/art/hd/objects-09-thumb.webp?v=28853cc54ebef35c",
+    "/art/hd/objects-10-full.webp": "/art/hd/objects-10-full.webp?v=17a3630090f2e9a5",
+    "/art/hd/objects-10-thumb.webp": "/art/hd/objects-10-thumb.webp?v=ab986d686b9f1f4c",
+    "/art/hd/objects-11-full.webp": "/art/hd/objects-11-full.webp?v=5124a890abb0cf24",
+    "/art/hd/objects-11-thumb.webp": "/art/hd/objects-11-thumb.webp?v=3eea988a02473878",
+    "/art/hd/objects-12-full.webp": "/art/hd/objects-12-full.webp?v=b391b14fa05e8d3c",
+    "/art/hd/objects-12-thumb.webp": "/art/hd/objects-12-thumb.webp?v=d42c71b915a467d3",
+    "/art/hd/objects-13-full.webp": "/art/hd/objects-13-full.webp?v=0beac4433caf86c8",
+    "/art/hd/objects-13-thumb.webp": "/art/hd/objects-13-thumb.webp?v=3a6257685317b333",
+    "/art/hd/objects-14-full.webp": "/art/hd/objects-14-full.webp?v=218b1bd237ea8f2f",
+    "/art/hd/objects-14-thumb.webp": "/art/hd/objects-14-thumb.webp?v=76777f70a02db09c",
+    "/art/hd/objects-15-full.webp": "/art/hd/objects-15-full.webp?v=f49a936ca7793718",
+    "/art/hd/objects-15-thumb.webp": "/art/hd/objects-15-thumb.webp?v=0ad02d23d430a9f2",
+    "/art/hd/objects-16-full.webp": "/art/hd/objects-16-full.webp?v=504c8bc189b3c022",
+    "/art/hd/objects-16-thumb.webp": "/art/hd/objects-16-thumb.webp?v=8221aa37410fa40c",
+    "/art/hd/objects-17-full.webp": "/art/hd/objects-17-full.webp?v=fdcaf18558b6d180",
+    "/art/hd/objects-17-thumb.webp": "/art/hd/objects-17-thumb.webp?v=df0f88c2e8e847f1",
+    "/art/hd/objects-18-full.webp": "/art/hd/objects-18-full.webp?v=56dbadb43a72285d",
+    "/art/hd/objects-18-thumb.webp": "/art/hd/objects-18-thumb.webp?v=b68b7ce54ce40dad",
+    "/art/hd/objects-19-full.webp": "/art/hd/objects-19-full.webp?v=5a8704a72530e3ab",
+    "/art/hd/objects-19-thumb.webp": "/art/hd/objects-19-thumb.webp?v=0abbe69c7ca3d8c0",
+    "/art/hd/objects-20-full.webp": "/art/hd/objects-20-full.webp?v=3bfef43b1d7b8b5f",
+    "/art/hd/objects-20-thumb.webp": "/art/hd/objects-20-thumb.webp?v=a1d273d4cee6a59d",
+    "/art/hd/phrases-01-full.webp": "/art/hd/phrases-01-full.webp?v=09c56338e56ad394",
+    "/art/hd/phrases-01-thumb.webp": "/art/hd/phrases-01-thumb.webp?v=c7bfe3920c7d30a0",
+    "/art/hd/phrases-02-full.webp": "/art/hd/phrases-02-full.webp?v=2363031c987189fa",
+    "/art/hd/phrases-02-thumb.webp": "/art/hd/phrases-02-thumb.webp?v=7e6352b1be67a8df",
+    "/art/hd/phrases-03-full.webp": "/art/hd/phrases-03-full.webp?v=8da4d519ea4749a2",
+    "/art/hd/phrases-03-thumb.webp": "/art/hd/phrases-03-thumb.webp?v=15f387081107b131",
+    "/art/hd/phrases-04-full.webp": "/art/hd/phrases-04-full.webp?v=a5af2f42e28319ed",
+    "/art/hd/phrases-04-thumb.webp": "/art/hd/phrases-04-thumb.webp?v=e4f142b84800eaa0",
+    "/art/hd/phrases-05-full.webp": "/art/hd/phrases-05-full.webp?v=d89689ed748404b0",
+    "/art/hd/phrases-05-thumb.webp": "/art/hd/phrases-05-thumb.webp?v=f3e65fca813460f0",
+    "/art/hd/phrases-06-full.webp": "/art/hd/phrases-06-full.webp?v=673143ca4c8e614d",
+    "/art/hd/phrases-06-thumb.webp": "/art/hd/phrases-06-thumb.webp?v=d00be07a58233dd6",
+    "/art/hd/phrases-07-full.webp": "/art/hd/phrases-07-full.webp?v=3943ada8de710d45",
+    "/art/hd/phrases-07-thumb.webp": "/art/hd/phrases-07-thumb.webp?v=4d0c81642ba1d48c",
+    "/art/hd/phrases-08-full.webp": "/art/hd/phrases-08-full.webp?v=88308ff082c1fd22",
+    "/art/hd/phrases-08-thumb.webp": "/art/hd/phrases-08-thumb.webp?v=b9d23d7e33856aa8",
+    "/art/hd/phrases-09-full.webp": "/art/hd/phrases-09-full.webp?v=9af740b578d8fb56",
+    "/art/hd/phrases-09-thumb.webp": "/art/hd/phrases-09-thumb.webp?v=ea764051536364e1",
+    "/art/hd/phrases-10-full.webp": "/art/hd/phrases-10-full.webp?v=d159b2568fc4d195",
+    "/art/hd/phrases-10-thumb.webp": "/art/hd/phrases-10-thumb.webp?v=6c08b5f9a2ddc381",
+    "/art/hd/phrases-11-full.webp": "/art/hd/phrases-11-full.webp?v=0d835bdfb33461d2",
+    "/art/hd/phrases-11-thumb.webp": "/art/hd/phrases-11-thumb.webp?v=da807744fd4997cb",
+    "/art/hd/phrases-12-full.webp": "/art/hd/phrases-12-full.webp?v=65400cf547d69026",
+    "/art/hd/phrases-12-thumb.webp": "/art/hd/phrases-12-thumb.webp?v=73fb3824fc1b524a",
+    "/art/hd/phrases-13-full.webp": "/art/hd/phrases-13-full.webp?v=fc2382485b1c24ef",
+    "/art/hd/phrases-13-thumb.webp": "/art/hd/phrases-13-thumb.webp?v=bf1c4dc1711322b7",
+    "/art/hd/phrases-14-full.webp": "/art/hd/phrases-14-full.webp?v=70775e07436b2d98",
+    "/art/hd/phrases-14-thumb.webp": "/art/hd/phrases-14-thumb.webp?v=020c3bf2f217b8bb",
+    "/art/hd/phrases-15-full.webp": "/art/hd/phrases-15-full.webp?v=7d4073d46f49d486",
+    "/art/hd/phrases-15-thumb.webp": "/art/hd/phrases-15-thumb.webp?v=35f055e12a5b88f0",
+    "/art/hd/phrases-16-full.webp": "/art/hd/phrases-16-full.webp?v=05cdd5f65dd54737",
+    "/art/hd/phrases-16-thumb.webp": "/art/hd/phrases-16-thumb.webp?v=f945088fdf84c789",
+    "/art/hd/phrases-17-full.webp": "/art/hd/phrases-17-full.webp?v=7d654ca996d929ee",
+    "/art/hd/phrases-17-thumb.webp": "/art/hd/phrases-17-thumb.webp?v=f02fc5973403c5be",
+    "/art/hd/phrases-18-full.webp": "/art/hd/phrases-18-full.webp?v=ca2633b2d88f6655",
+    "/art/hd/phrases-18-thumb.webp": "/art/hd/phrases-18-thumb.webp?v=da4c6cfe1ae0d510",
+    "/art/hd/phrases-19-full.webp": "/art/hd/phrases-19-full.webp?v=18b6dd8d7f5939f3",
+    "/art/hd/phrases-19-thumb.webp": "/art/hd/phrases-19-thumb.webp?v=fc100989af474e87",
+    "/art/hd/phrases-20-full.webp": "/art/hd/phrases-20-full.webp?v=0c27f412e0e44518",
+    "/art/hd/phrases-20-thumb.webp": "/art/hd/phrases-20-thumb.webp?v=fe8c65e054f623c1",
+    "/art/hd/weather-01-full.webp": "/art/hd/weather-01-full.webp?v=a9d44c3d059f6f87",
+    "/art/hd/weather-01-thumb.webp": "/art/hd/weather-01-thumb.webp?v=703f543488ad165e",
+    "/art/hd/weather-02-full.webp": "/art/hd/weather-02-full.webp?v=a437a2b1d618c52f",
+    "/art/hd/weather-02-thumb.webp": "/art/hd/weather-02-thumb.webp?v=72f4e791593d16e0",
+    "/art/hd/weather-03-full.webp": "/art/hd/weather-03-full.webp?v=643377b742a6a0ef",
+    "/art/hd/weather-03-thumb.webp": "/art/hd/weather-03-thumb.webp?v=43639423e4873820",
+    "/art/hd/weather-04-full.webp": "/art/hd/weather-04-full.webp?v=f55b182c65b97081",
+    "/art/hd/weather-04-thumb.webp": "/art/hd/weather-04-thumb.webp?v=40caad0d26edfb28",
+    "/art/hd/weather-05-full.webp": "/art/hd/weather-05-full.webp?v=ec49c3d6266d93cb",
+    "/art/hd/weather-05-thumb.webp": "/art/hd/weather-05-thumb.webp?v=6da56717d3781ac5",
+    "/art/hd/weather-06-full.webp": "/art/hd/weather-06-full.webp?v=46171071ee3c3f2d",
+    "/art/hd/weather-06-thumb.webp": "/art/hd/weather-06-thumb.webp?v=d8dabb1db06c2e26",
+    "/art/hd/weather-07-full.webp": "/art/hd/weather-07-full.webp?v=d7b73bbd8048180f",
+    "/art/hd/weather-07-thumb.webp": "/art/hd/weather-07-thumb.webp?v=0a0b6f16f5edbea3",
+    "/art/hd/weather-08-full.webp": "/art/hd/weather-08-full.webp?v=c4cdfa3b9e2d2073",
+    "/art/hd/weather-08-thumb.webp": "/art/hd/weather-08-thumb.webp?v=be4ac08ba5fa95fb",
+    "/art/hd/weather-09-full.webp": "/art/hd/weather-09-full.webp?v=46b849de9cae299e",
+    "/art/hd/weather-09-thumb.webp": "/art/hd/weather-09-thumb.webp?v=2d2715e3076a3f45",
+    "/art/hd/weather-10-full.webp": "/art/hd/weather-10-full.webp?v=fe82283c637f356e",
+    "/art/hd/weather-10-thumb.webp": "/art/hd/weather-10-thumb.webp?v=6eeb2e83cf7efade",
+    "/art/hd/weather-11-full.webp": "/art/hd/weather-11-full.webp?v=c16ec85a58b62104",
+    "/art/hd/weather-11-thumb.webp": "/art/hd/weather-11-thumb.webp?v=728c8351811736bd",
+    "/art/hd/weather-12-full.webp": "/art/hd/weather-12-full.webp?v=40bea562c84b511c",
+    "/art/hd/weather-12-thumb.webp": "/art/hd/weather-12-thumb.webp?v=f8ab40d3adab602e",
+    "/art/hd/weather-13-full.webp": "/art/hd/weather-13-full.webp?v=60e566646059a357",
+    "/art/hd/weather-13-thumb.webp": "/art/hd/weather-13-thumb.webp?v=c6a4ef09b3decdad",
+    "/art/hd/weather-14-full.webp": "/art/hd/weather-14-full.webp?v=26ef69db864fc442",
+    "/art/hd/weather-14-thumb.webp": "/art/hd/weather-14-thumb.webp?v=f4d8baa00d01916a",
+    "/art/hd/weather-15-full.webp": "/art/hd/weather-15-full.webp?v=30217f00d233607f",
+    "/art/hd/weather-15-thumb.webp": "/art/hd/weather-15-thumb.webp?v=fede4ea803a95371",
+    "/art/hd/weather-16-full.webp": "/art/hd/weather-16-full.webp?v=46e3781f65a18d08",
+    "/art/hd/weather-16-thumb.webp": "/art/hd/weather-16-thumb.webp?v=e704ad055004fa2d",
+    "/art/hd/weather-17-full.webp": "/art/hd/weather-17-full.webp?v=ba7b96e637413e29",
+    "/art/hd/weather-17-thumb.webp": "/art/hd/weather-17-thumb.webp?v=579371d311f4e33e",
+    "/art/hd/weather-18-full.webp": "/art/hd/weather-18-full.webp?v=36ec928799356e78",
+    "/art/hd/weather-18-thumb.webp": "/art/hd/weather-18-thumb.webp?v=b6f5c27bd7e7c658",
+    "/art/hd/weather-19-full.webp": "/art/hd/weather-19-full.webp?v=411e8d63a7bfdc19",
+    "/art/hd/weather-19-thumb.webp": "/art/hd/weather-19-thumb.webp?v=91573c2b0cd31424",
+    "/art/hd/weather-20-full.webp": "/art/hd/weather-20-full.webp?v=65777d1dd0975706",
+    "/art/hd/weather-20-thumb.webp": "/art/hd/weather-20-thumb.webp?v=626fbfaa2a0d659f"
+  },
+  "audio": {
+    "animals-01": {
+      "zh": "/audio/animals-01.mp3?v=2cfbe25423744d2d",
+      "en": "/audio-edge/en/animals-01.mp3?v=aac16266ff96978c"
+    },
+    "animals-02": {
+      "zh": "/audio/animals-02.mp3?v=709e4c2433e94eb1",
+      "en": "/audio-edge/en/animals-02.mp3?v=09826a2220cd12c5"
+    },
+    "animals-03": {
+      "zh": "/audio/animals-03.mp3?v=8eca7620c8e89581",
+      "en": "/audio-edge/en/animals-03.mp3?v=c3835b25cfd1f770"
+    },
+    "animals-04": {
+      "zh": "/audio/animals-04.mp3?v=da9a758ab9a3d71c",
+      "en": "/audio-edge/en/animals-04.mp3?v=54188fba6e7af8ad"
+    },
+    "animals-05": {
+      "zh": "/audio/animals-05.mp3?v=95f4443a6793f713",
+      "en": "/audio-edge/en/animals-05.mp3?v=9689e34c1677462c"
+    },
+    "animals-06": {
+      "zh": "/audio/animals-06.mp3?v=ffb5293a4584c36f",
+      "en": "/audio-edge/en/animals-06.mp3?v=181cc35f98afacde"
+    },
+    "animals-07": {
+      "zh": "/audio/animals-07.mp3?v=e6f4bf93384daf08",
+      "en": "/audio-edge/en/animals-07.mp3?v=d17eb2746d02b776"
+    },
+    "animals-08": {
+      "zh": "/audio/animals-08.mp3?v=929e14b45f67385c",
+      "en": "/audio-edge/en/animals-08.mp3?v=76ad542bf00e4942"
+    },
+    "animals-09": {
+      "zh": "/audio/animals-09.mp3?v=eb157e65995f44f1",
+      "en": "/audio-edge/en/animals-09.mp3?v=8f8508a000524c8b"
+    },
+    "animals-10": {
+      "zh": "/audio/animals-10.mp3?v=3a4d5e618ff98dea",
+      "en": "/audio-edge/en/animals-10.mp3?v=64a26925b1a0b05b"
+    },
+    "animals-11": {
+      "zh": "/audio/animals-11.mp3?v=21c2cd92c56c5fa8",
+      "en": "/audio-edge/en/animals-11.mp3?v=6d4d7e0ea54ecb36"
+    },
+    "animals-12": {
+      "zh": "/audio/animals-12.mp3?v=8161e4edeee381af",
+      "en": "/audio-edge/en/animals-12.mp3?v=e6263c4e8536eab2"
+    },
+    "animals-13": {
+      "zh": "/audio/animals-13.mp3?v=8f55cdd9b1fdd5a1",
+      "en": "/audio-edge/en/animals-13.mp3?v=5383e57b96a55a26"
+    },
+    "animals-14": {
+      "zh": "/audio/animals-14.mp3?v=f722eb9243b379cc",
+      "en": "/audio-edge/en/animals-14.mp3?v=3632646de75e0a5e"
+    },
+    "animals-15": {
+      "zh": "/audio/animals-15.mp3?v=d3516b8bb7ab6cb6",
+      "en": "/audio-edge/en/animals-15.mp3?v=af672ea323121b46"
+    },
+    "animals-16": {
+      "zh": "/audio/animals-16.mp3?v=1d56184d64ad30a4",
+      "en": "/audio-edge/en/animals-16.mp3?v=9caa468604f5610a"
+    },
+    "animals-17": {
+      "zh": "/audio/animals-17.mp3?v=10a61d7c8d8a6e5e",
+      "en": "/audio-edge/en/animals-17.mp3?v=3abefd726cc4a12a"
+    },
+    "animals-18": {
+      "zh": "/audio/animals-18.mp3?v=dfc9920f4d8017fb",
+      "en": "/audio-edge/en/animals-18.mp3?v=e4c7b14303936e9c"
+    },
+    "animals-19": {
+      "zh": "/audio/animals-19.mp3?v=ddf53d2a92ee2eb0",
+      "en": "/audio-edge/en/animals-19.mp3?v=c9e38842a67b7fdb"
+    },
+    "animals-20": {
+      "zh": "/audio/animals-20.mp3?v=c8bb897a75eef6fb",
+      "en": "/audio-edge/en/animals-20.mp3?v=714416ccdf4e04cc"
+    },
+    "fruits-01": {
+      "zh": "/audio/fruits-01.mp3?v=a138c4750d30afa1",
+      "en": "/audio-edge/en/fruits-01.mp3?v=533b63ac7d08d935"
+    },
+    "fruits-02": {
+      "zh": "/audio/fruits-02.mp3?v=cc04d32fe75540a9",
+      "en": "/audio-edge/en/fruits-02.mp3?v=bd12fa122a09393e"
+    },
+    "fruits-03": {
+      "zh": "/audio/fruits-03.mp3?v=a754b9eae0bb50b1",
+      "en": "/audio-edge/en/fruits-03.mp3?v=b9c37e8912db3104"
+    },
+    "fruits-04": {
+      "zh": "/audio/fruits-04.mp3?v=f4b8e01e289b9569",
+      "en": "/audio-edge/en/fruits-04.mp3?v=ec85ba2d327b3095"
+    },
+    "fruits-05": {
+      "zh": "/audio/fruits-05.mp3?v=c75e850870c895d9",
+      "en": "/audio-edge/en/fruits-05.mp3?v=27efee67516bb372"
+    },
+    "fruits-06": {
+      "zh": "/audio/fruits-06.mp3?v=e2b7915544d08aa9",
+      "en": "/audio-edge/en/fruits-06.mp3?v=19c6c2d4485405ab"
+    },
+    "fruits-07": {
+      "zh": "/audio/fruits-07.mp3?v=bf4540edb8973fb6",
+      "en": "/audio-edge/en/fruits-07.mp3?v=858aef002ca642cc"
+    },
+    "fruits-08": {
+      "zh": "/audio/fruits-08.mp3?v=804d9045d2dfc4a2",
+      "en": "/audio-edge/en/fruits-08.mp3?v=8903f1c272df1f89"
+    },
+    "fruits-09": {
+      "zh": "/audio/fruits-09.mp3?v=922023902e55886a",
+      "en": "/audio-edge/en/fruits-09.mp3?v=3f7a43481ebdc165"
+    },
+    "fruits-10": {
+      "zh": "/audio/fruits-10.mp3?v=4ee6ad1d281cbc18",
+      "en": "/audio-edge/en/fruits-10.mp3?v=3e9539fdda13a3f7"
+    },
+    "fruits-11": {
+      "zh": "/audio/fruits-11.mp3?v=f9767e5e29080b7d",
+      "en": "/audio-edge/en/fruits-11.mp3?v=7a907038ecbb2159"
+    },
+    "fruits-12": {
+      "zh": "/audio/fruits-12.mp3?v=94c9959b504a5bb5",
+      "en": "/audio-edge/en/fruits-12.mp3?v=9d44e661ed99b43c"
+    },
+    "fruits-13": {
+      "zh": "/audio/fruits-13.mp3?v=c60816dbc7870bab",
+      "en": "/audio-edge/en/fruits-13.mp3?v=01f7f87c868f0b46"
+    },
+    "fruits-14": {
+      "zh": "/audio/fruits-14.mp3?v=93efed870f7997e7",
+      "en": "/audio-edge/en/fruits-14.mp3?v=63c71807666f0123"
+    },
+    "fruits-15": {
+      "zh": "/audio/fruits-15.mp3?v=14767a3070849f45",
+      "en": "/audio-edge/en/fruits-15.mp3?v=8c77845c85977a43"
+    },
+    "fruits-16": {
+      "zh": "/audio/fruits-16.mp3?v=9e4df7b4d4e8b67b",
+      "en": "/audio-edge/en/fruits-16.mp3?v=08b57310aba6acce"
+    },
+    "fruits-17": {
+      "zh": "/audio/fruits-17.mp3?v=722fd80a31be561e",
+      "en": "/audio-edge/en/fruits-17.mp3?v=5735a6c2378fc18f"
+    },
+    "fruits-18": {
+      "zh": "/audio/fruits-18.mp3?v=d015ae6fc6ff3bfc",
+      "en": "/audio-edge/en/fruits-18.mp3?v=173cbe84b5881eff"
+    },
+    "fruits-19": {
+      "zh": "/audio/fruits-19.mp3?v=de35ae537647ab9f",
+      "en": "/audio-edge/en/fruits-19.mp3?v=fe3f1b95cefc1ff0"
+    },
+    "fruits-20": {
+      "zh": "/audio/fruits-20.mp3?v=7f7c00f7f51cf199",
+      "en": "/audio-edge/en/fruits-20.mp3?v=3c54755eecf9dff6"
+    },
+    "weather-01": {
+      "zh": "/audio/weather-01.mp3?v=719f3d0c13692ad3",
+      "en": "/audio-edge/en/weather-01.mp3?v=f22fd1367e3f1deb"
+    },
+    "weather-02": {
+      "zh": "/audio/weather-02.mp3?v=259c185cb9f1d7fb",
+      "en": "/audio-edge/en/weather-02.mp3?v=4b17f6ff105c3ac8"
+    },
+    "weather-03": {
+      "zh": "/audio/weather-03.mp3?v=7c54c629a0767a41",
+      "en": "/audio-edge/en/weather-03.mp3?v=d89786691cc39ee3"
+    },
+    "weather-04": {
+      "zh": "/audio/weather-04.mp3?v=99e99cc1a47ba152",
+      "en": "/audio-edge/en/weather-04.mp3?v=86592bcea54a993b"
+    },
+    "weather-05": {
+      "zh": "/audio/weather-05.mp3?v=99ddfb77003ac276",
+      "en": "/audio-edge/en/weather-05.mp3?v=a1d9d6d2b869fddf"
+    },
+    "weather-06": {
+      "zh": "/audio/weather-06.mp3?v=97b980a3b151da0d",
+      "en": "/audio-edge/en/weather-06.mp3?v=7d12fb337f0b01e5"
+    },
+    "weather-07": {
+      "zh": "/audio/weather-07.mp3?v=bff92a12cc5a572b",
+      "en": "/audio-edge/en/weather-07.mp3?v=eaa6fe440a635217"
+    },
+    "weather-08": {
+      "zh": "/audio/weather-08.mp3?v=62ed5a99c2821aeb",
+      "en": "/audio-edge/en/weather-08.mp3?v=0f5fad02afb5c4de"
+    },
+    "weather-09": {
+      "zh": "/audio/weather-09.mp3?v=7a23b8a0be227aeb",
+      "en": "/audio-edge/en/weather-09.mp3?v=16b94dcf87e7cdac"
+    },
+    "weather-10": {
+      "zh": "/audio/weather-10.mp3?v=aac95c54b4b223cc",
+      "en": "/audio-edge/en/weather-10.mp3?v=b0358192188f9380"
+    },
+    "weather-11": {
+      "zh": "/audio/weather-11.mp3?v=4e78c6e9618b945a",
+      "en": "/audio-edge/en/weather-11.mp3?v=4dbf74e7528c4b7a"
+    },
+    "weather-12": {
+      "zh": "/audio/weather-12.mp3?v=5590ade87831352f",
+      "en": "/audio-edge/en/weather-12.mp3?v=94ae185f4df86f8a"
+    },
+    "weather-13": {
+      "zh": "/audio/weather-13.mp3?v=96878822981103c5",
+      "en": "/audio-edge/en/weather-13.mp3?v=1bdbb356b409e083"
+    },
+    "weather-14": {
+      "zh": "/audio/weather-14.mp3?v=c229988b627cffd1",
+      "en": "/audio-edge/en/weather-14.mp3?v=bbe0e698f5c427bc"
+    },
+    "weather-15": {
+      "zh": "/audio/weather-15.mp3?v=c1ec346d3bc44f22",
+      "en": "/audio-edge/en/weather-15.mp3?v=cbff2fbfab82f7d9"
+    },
+    "weather-16": {
+      "zh": "/audio/weather-16.mp3?v=f3cc2e1a85b8a843",
+      "en": "/audio-edge/en/weather-16.mp3?v=f32b2442a9f78494"
+    },
+    "weather-17": {
+      "zh": "/audio/weather-17.mp3?v=b54a0d85deca3f2a",
+      "en": "/audio-edge/en/weather-17.mp3?v=04e71d1a4f35890a"
+    },
+    "weather-18": {
+      "zh": "/audio/weather-18.mp3?v=bd6f0e54a7832c60",
+      "en": "/audio-edge/en/weather-18.mp3?v=eae0542aaea91896"
+    },
+    "weather-19": {
+      "zh": "/audio/weather-19.mp3?v=68fac7cfdfd98d4b",
+      "en": "/audio-edge/en/weather-19.mp3?v=14b690d8c6344b67"
+    },
+    "weather-20": {
+      "zh": "/audio/weather-20.mp3?v=b4ca0ed6a8f38fec",
+      "en": "/audio-edge/en/weather-20.mp3?v=c5a72891ee22d141"
+    },
+    "objects-01": {
+      "zh": "/audio/objects-01.mp3?v=e7b4567fc38ac9c4",
+      "en": "/audio-edge/en/objects-01.mp3?v=6bd9b87377427adc"
+    },
+    "objects-02": {
+      "zh": "/audio/objects-02.mp3?v=0a069acf43709a77",
+      "en": "/audio-edge/en/objects-02.mp3?v=fcbcf4ad94855e21"
+    },
+    "objects-03": {
+      "zh": "/audio/objects-03.mp3?v=cb1e944d5d4183e3",
+      "en": "/audio-edge/en/objects-03.mp3?v=2b6af9e3595d976c"
+    },
+    "objects-04": {
+      "zh": "/audio/objects-04.mp3?v=b4ae9aff5aca658e",
+      "en": "/audio-edge/en/objects-04.mp3?v=9067bd2255a8a2d6"
+    },
+    "objects-05": {
+      "zh": "/audio/objects-05.mp3?v=794bded1af5aae4a",
+      "en": "/audio-edge/en/objects-05.mp3?v=1bb5161e36debc98"
+    },
+    "objects-06": {
+      "zh": "/audio/objects-06.mp3?v=1fea8bd7d88d9cef",
+      "en": "/audio-edge/en/objects-06.mp3?v=e7d41163e0aa34cf"
+    },
+    "objects-07": {
+      "zh": "/audio/objects-07.mp3?v=4ce7bb09ad64b5cc",
+      "en": "/audio-edge/en/objects-07.mp3?v=ba87d3b2c3483292"
+    },
+    "objects-08": {
+      "zh": "/audio/objects-08.mp3?v=85dee176a8c41d42",
+      "en": "/audio-edge/en/objects-08.mp3?v=4514bcbfde68d550"
+    },
+    "objects-09": {
+      "zh": "/audio/objects-09.mp3?v=c025ead0f57b0164",
+      "en": "/audio-edge/en/objects-09.mp3?v=ccd280a336afb2e3"
+    },
+    "objects-10": {
+      "zh": "/audio/objects-10.mp3?v=483ba791c80d3c3f",
+      "en": "/audio-edge/en/objects-10.mp3?v=2f5838a38cf28ed5"
+    },
+    "objects-11": {
+      "zh": "/audio/objects-11.mp3?v=973e525213e6d4d3",
+      "en": "/audio-edge/en/objects-11.mp3?v=3d45af2c058a8543"
+    },
+    "objects-12": {
+      "zh": "/audio/objects-12.mp3?v=aab765e6dbdb527f",
+      "en": "/audio-edge/en/objects-12.mp3?v=a2a797568138e9d9"
+    },
+    "objects-13": {
+      "zh": "/audio/objects-13.mp3?v=e6d2a604614eddd5",
+      "en": "/audio-edge/en/objects-13.mp3?v=9425f34d785711aa"
+    },
+    "objects-14": {
+      "zh": "/audio/objects-14.mp3?v=1712ce3883fc2a8c",
+      "en": "/audio-edge/en/objects-14.mp3?v=e2466074fe2fe1ae"
+    },
+    "objects-15": {
+      "zh": "/audio/objects-15.mp3?v=fad86feb968dae54",
+      "en": "/audio-edge/en/objects-15.mp3?v=315d69be3352c11f"
+    },
+    "objects-16": {
+      "zh": "/audio/objects-16.mp3?v=83957bcdb6fe9044",
+      "en": "/audio-edge/en/objects-16.mp3?v=b1e0c0908d895eb5"
+    },
+    "objects-17": {
+      "zh": "/audio/objects-17.mp3?v=b2ce95e4fa8670c4",
+      "en": "/audio-edge/en/objects-17.mp3?v=3b7f983ac5f13551"
+    },
+    "objects-18": {
+      "zh": "/audio/objects-18.mp3?v=2f02547e15fbcb78",
+      "en": "/audio-edge/en/objects-18.mp3?v=410749023e3bcfdd"
+    },
+    "objects-19": {
+      "zh": "/audio/objects-19.mp3?v=224bacd45446bf29",
+      "en": "/audio-edge/en/objects-19.mp3?v=d3f2680f8746ab91"
+    },
+    "objects-20": {
+      "zh": "/audio/objects-20.mp3?v=a997cc777a97d818",
+      "en": "/audio-edge/en/objects-20.mp3?v=0df5bf15b15a0850"
+    },
+    "hanzi-01": {
+      "zh": "/audio/hanzi-01.mp3?v=0f641a3ac2fcbc7c",
+      "en": "/audio-edge/en/hanzi-01.mp3?v=2ba69ffa3a330524"
+    },
+    "hanzi-02": {
+      "zh": "/audio/hanzi-02.mp3?v=f253e2f29b705cd5",
+      "en": "/audio-edge/en/hanzi-02.mp3?v=4dbf74e7528c4b7a"
+    },
+    "hanzi-03": {
+      "zh": "/audio/hanzi-03.mp3?v=1bf650b6d61580c1",
+      "en": "/audio-edge/en/hanzi-03.mp3?v=a354e488279810b8"
+    },
+    "hanzi-04": {
+      "zh": "/audio/hanzi-04.mp3?v=f317a8d6f9334734",
+      "en": "/audio-edge/en/hanzi-04.mp3?v=b0a616c39cc734b9"
+    },
+    "hanzi-05": {
+      "zh": "/audio/hanzi-05.mp3?v=ab592311129f9758",
+      "en": "/audio-edge/en/hanzi-05.mp3?v=b0def813e7323322"
+    },
+    "hanzi-06": {
+      "zh": "/audio/hanzi-06.mp3?v=72db3425a3935fe0",
+      "en": "/audio-edge/en/hanzi-06.mp3?v=e347ee75b2f8de84"
+    },
+    "hanzi-07": {
+      "zh": "/audio/hanzi-07.mp3?v=d298c96b9ff2b2c8",
+      "en": "/audio-edge/en/hanzi-07.mp3?v=8cec3b7871137160"
+    },
+    "hanzi-08": {
+      "zh": "/audio/hanzi-08.mp3?v=a0ae7c2672f45c43",
+      "en": "/audio-edge/en/hanzi-08.mp3?v=3835a072348aa54a"
+    },
+    "hanzi-09": {
+      "zh": "/audio/hanzi-09.mp3?v=c60397ecea12fafa",
+      "en": "/audio-edge/en/hanzi-09.mp3?v=a65c6e8699ec54f4"
+    },
+    "hanzi-10": {
+      "zh": "/audio/hanzi-10.mp3?v=8c80b0457bd126c1",
+      "en": "/audio-edge/en/hanzi-10.mp3?v=98329524757d1862"
+    },
+    "hanzi-11": {
+      "zh": "/audio/hanzi-11.mp3?v=b390b7dd2ca77e42",
+      "en": "/audio-edge/en/hanzi-11.mp3?v=527d19702ed715d8"
+    },
+    "hanzi-12": {
+      "zh": "/audio/hanzi-12.mp3?v=e2808457212676d8",
+      "en": "/audio-edge/en/hanzi-12.mp3?v=3edaba373de39aaf"
+    },
+    "hanzi-13": {
+      "zh": "/audio/hanzi-13.mp3?v=19cd0cbd80d1ebbe",
+      "en": "/audio-edge/en/hanzi-13.mp3?v=8f75a8f839259212"
+    },
+    "hanzi-14": {
+      "zh": "/audio/hanzi-14.mp3?v=549b94eb3d551596",
+      "en": "/audio-edge/en/hanzi-14.mp3?v=5db2295e81b8b9ec"
+    },
+    "hanzi-15": {
+      "zh": "/audio/hanzi-15.mp3?v=5b99635b345b9d13",
+      "en": "/audio-edge/en/hanzi-15.mp3?v=36a63277054c1531"
+    },
+    "hanzi-16": {
+      "zh": "/audio/hanzi-16.mp3?v=bc8023be362f9046",
+      "en": "/audio-edge/en/hanzi-16.mp3?v=f43651d995495e42"
+    },
+    "hanzi-17": {
+      "zh": "/audio/hanzi-17.mp3?v=df08d3fe1b6862f8",
+      "en": "/audio-edge/en/hanzi-17.mp3?v=7269430040d11941"
+    },
+    "hanzi-18": {
+      "zh": "/audio/hanzi-18.mp3?v=3a75bd8a1f9407cd",
+      "en": "/audio-edge/en/hanzi-18.mp3?v=5688341dc79b3bdc"
+    },
+    "hanzi-19": {
+      "zh": "/audio-edge/zh/hanzi-19.mp3?v=bd9caba7eb87dd14",
+      "en": "/audio-edge/en/hanzi-19.mp3?v=c19687c6eaf5da32"
+    },
+    "hanzi-20": {
+      "zh": "/audio/hanzi-20.mp3?v=508e5ffb6491bdcd",
+      "en": "/audio-edge/en/hanzi-20.mp3?v=f51d3165241c6065"
+    },
+    "phrases-01": {
+      "zh": "/audio-edge/zh/phrases-01.mp3?v=58e43107a78b3938",
+      "en": "/audio-edge/en/phrases-01.mp3?v=e65d74572e0bf425"
+    },
+    "phrases-02": {
+      "zh": "/audio-edge/zh/phrases-02.mp3?v=42cb3714fdc8d2aa",
+      "en": "/audio-edge/en/phrases-02.mp3?v=80c6fab4e74e0222"
+    },
+    "phrases-03": {
+      "zh": "/audio-edge/zh/phrases-03.mp3?v=0acd939a12dd9d22",
+      "en": "/audio-edge/en/phrases-03.mp3?v=d53349f882284d28"
+    },
+    "phrases-04": {
+      "zh": "/audio-edge/zh/phrases-04.mp3?v=e8ec3be2354220b7",
+      "en": "/audio-edge/en/phrases-04.mp3?v=616b3bb3db090419"
+    },
+    "phrases-05": {
+      "zh": "/audio-edge/zh/phrases-05.mp3?v=788fb314493522b9",
+      "en": "/audio-edge/en/phrases-05.mp3?v=174ae1c15c9ac751"
+    },
+    "phrases-06": {
+      "zh": "/audio-edge/zh/phrases-06.mp3?v=6f849073d3836a50",
+      "en": "/audio-edge/en/phrases-06.mp3?v=c8321bde52baba27"
+    },
+    "phrases-07": {
+      "zh": "/audio-edge/zh/phrases-07.mp3?v=303c0d9c7f6c6119",
+      "en": "/audio-edge/en/phrases-07.mp3?v=8bbd757db6dcdbf9"
+    },
+    "phrases-08": {
+      "zh": "/audio-edge/zh/phrases-08.mp3?v=02aede41b9fbe4f5",
+      "en": "/audio-edge/en/phrases-08.mp3?v=5d839795798bad87"
+    },
+    "phrases-09": {
+      "zh": "/audio-edge/zh/phrases-09.mp3?v=9854e1cab6809984",
+      "en": "/audio-edge/en/phrases-09.mp3?v=f6a4eb4ef00aed17"
+    },
+    "phrases-10": {
+      "zh": "/audio-edge/zh/phrases-10.mp3?v=414837274393a01b",
+      "en": "/audio-edge/en/phrases-10.mp3?v=4aa6f5e5fe49c15e"
+    },
+    "phrases-11": {
+      "zh": "/audio-edge/zh/phrases-11.mp3?v=58d8f949a8f20140",
+      "en": "/audio-edge/en/phrases-11.mp3?v=1653919ddccf9b85"
+    },
+    "phrases-12": {
+      "zh": "/audio-edge/zh/phrases-12.mp3?v=97b631af57bf1675",
+      "en": "/audio-edge/en/phrases-12.mp3?v=60c2f1af396a13ad"
+    },
+    "phrases-13": {
+      "zh": "/audio-edge/zh/phrases-13.mp3?v=3cd88acafb82b39e",
+      "en": "/audio-edge/en/phrases-13.mp3?v=85eb98ef170d51b7"
+    },
+    "phrases-14": {
+      "zh": "/audio-edge/zh/phrases-14.mp3?v=b43b57a215818a8b",
+      "en": "/audio-edge/en/phrases-14.mp3?v=1c84973b63794693"
+    },
+    "phrases-15": {
+      "zh": "/audio-edge/zh/phrases-15.mp3?v=c8f3eb722237e2d6",
+      "en": "/audio-edge/en/phrases-15.mp3?v=65c2f7e9bb140f7d"
+    },
+    "phrases-16": {
+      "zh": "/audio-edge/zh/phrases-16.mp3?v=38d140244b192711",
+      "en": "/audio-edge/en/phrases-16.mp3?v=849b6d5e6698187d"
+    },
+    "phrases-17": {
+      "zh": "/audio-edge/zh/phrases-17.mp3?v=b62771fd8b61c0a1",
+      "en": "/audio-edge/en/phrases-17.mp3?v=d536fad7e028fede"
+    },
+    "phrases-18": {
+      "zh": "/audio-edge/zh/phrases-18.mp3?v=7afa324ccd5e82c9",
+      "en": "/audio-edge/en/phrases-18.mp3?v=af64389769562838"
+    },
+    "phrases-19": {
+      "zh": "/audio-edge/zh/phrases-19.mp3?v=d0bf15217b9abea8",
+      "en": "/audio-edge/en/phrases-19.mp3?v=3ea96af736cd2ecd"
+    },
+    "phrases-20": {
+      "zh": "/audio-edge/zh/phrases-20.mp3?v=0b204bcd0126d0e2",
+      "en": "/audio-edge/en/phrases-20.mp3?v=0c75d92243bd3dc5"
+    },
+    "numbers-1": {
+      "zh": "/audio-edge/zh/numbers-1.mp3?v=a9b983b61c1b0dcf",
+      "en": "/audio-edge/en/numbers-1.mp3?v=07e9545dc1390854"
+    },
+    "numbers-2": {
+      "zh": "/audio-edge/zh/numbers-2.mp3?v=4680d13278fcccda",
+      "en": "/audio-edge/en/numbers-2.mp3?v=ea1e950a9618ca31"
+    },
+    "numbers-3": {
+      "zh": "/audio-edge/zh/numbers-3.mp3?v=58f226b83b50665c",
+      "en": "/audio-edge/en/numbers-3.mp3?v=57efde6d66718a9f"
+    },
+    "numbers-4": {
+      "zh": "/audio-edge/zh/numbers-4.mp3?v=2a4aa649f73f0e4d",
+      "en": "/audio-edge/en/numbers-4.mp3?v=9feea4869eb65ea1"
+    },
+    "numbers-5": {
+      "zh": "/audio-edge/zh/numbers-5.mp3?v=cec29b42ef28df4a",
+      "en": "/audio-edge/en/numbers-5.mp3?v=f9e6cf32b927f9f8"
+    },
+    "numbers-6": {
+      "zh": "/audio-edge/zh/numbers-6.mp3?v=49adf05d4b65e095",
+      "en": "/audio-edge/en/numbers-6.mp3?v=a3a7e55fc70f9668"
+    },
+    "numbers-7": {
+      "zh": "/audio-edge/zh/numbers-7.mp3?v=242ad03e894698d0",
+      "en": "/audio-edge/en/numbers-7.mp3?v=927d8ec319ad6bc3"
+    },
+    "numbers-8": {
+      "zh": "/audio-edge/zh/numbers-8.mp3?v=8cb6db02a953e60f",
+      "en": "/audio-edge/en/numbers-8.mp3?v=507fed17e84b32ce"
+    },
+    "numbers-9": {
+      "zh": "/audio-edge/zh/numbers-9.mp3?v=a0e964207b85b69f",
+      "en": "/audio-edge/en/numbers-9.mp3?v=65a843745fa48615"
+    },
+    "numbers-10": {
+      "zh": "/audio-edge/zh/numbers-10.mp3?v=127dcdecc90748fb",
+      "en": "/audio-edge/en/numbers-10.mp3?v=250af3e5f860cc1f"
+    },
+    "numbers-11": {
+      "zh": "/audio-edge/zh/numbers-11.mp3?v=f10f048ecea8b825",
+      "en": "/audio-edge/en/numbers-11.mp3?v=2e1691f5f9ad71d0"
+    },
+    "numbers-12": {
+      "zh": "/audio-edge/zh/numbers-12.mp3?v=048c23370cfca2ae",
+      "en": "/audio-edge/en/numbers-12.mp3?v=53cd6bbecac1b5da"
+    },
+    "numbers-13": {
+      "zh": "/audio-edge/zh/numbers-13.mp3?v=baf9974ad0e8ab6a",
+      "en": "/audio-edge/en/numbers-13.mp3?v=c9c2d04591e2f632"
+    },
+    "numbers-14": {
+      "zh": "/audio-edge/zh/numbers-14.mp3?v=ebd4d82915ae393d",
+      "en": "/audio-edge/en/numbers-14.mp3?v=c8778c98a770ca1a"
+    },
+    "numbers-15": {
+      "zh": "/audio-edge/zh/numbers-15.mp3?v=8f7b575b9ad7ec20",
+      "en": "/audio-edge/en/numbers-15.mp3?v=80be7d35975ee16a"
+    },
+    "numbers-16": {
+      "zh": "/audio-edge/zh/numbers-16.mp3?v=0d2196d81b6b575f",
+      "en": "/audio-edge/en/numbers-16.mp3?v=9a7138aeeae68f7a"
+    },
+    "numbers-17": {
+      "zh": "/audio-edge/zh/numbers-17.mp3?v=53ce7c89e751de8d",
+      "en": "/audio-edge/en/numbers-17.mp3?v=1d5972c918f3d328"
+    },
+    "numbers-18": {
+      "zh": "/audio-edge/zh/numbers-18.mp3?v=79cf6ee5169793d6",
+      "en": "/audio-edge/en/numbers-18.mp3?v=2f4e811e29274e44"
+    },
+    "numbers-19": {
+      "zh": "/audio-edge/zh/numbers-19.mp3?v=53005887019368df",
+      "en": "/audio-edge/en/numbers-19.mp3?v=5a96c66d6a2eaba7"
+    },
+    "numbers-20": {
+      "zh": "/audio-edge/zh/numbers-20.mp3?v=d0b4f2a611454d1a",
+      "en": "/audio-edge/en/numbers-20.mp3?v=710e46407ae82a03"
+    },
+    "numbers-21": {
+      "zh": "/audio-edge/zh/numbers-21.mp3?v=eab09a1b29d25ae1",
+      "en": "/audio-edge/en/numbers-21.mp3?v=a925c2f14e44f000"
+    },
+    "numbers-22": {
+      "zh": "/audio-edge/zh/numbers-22.mp3?v=0d34a39029f26d79",
+      "en": "/audio-edge/en/numbers-22.mp3?v=86bbfb908da1f6d8"
+    },
+    "numbers-23": {
+      "zh": "/audio-edge/zh/numbers-23.mp3?v=572cbf8ed61540bd",
+      "en": "/audio-edge/en/numbers-23.mp3?v=44eee5b149482977"
+    },
+    "numbers-24": {
+      "zh": "/audio-edge/zh/numbers-24.mp3?v=06b2e9301b1f86a3",
+      "en": "/audio-edge/en/numbers-24.mp3?v=433258e4f785bcc8"
+    },
+    "numbers-25": {
+      "zh": "/audio-edge/zh/numbers-25.mp3?v=18e259921c2d7267",
+      "en": "/audio-edge/en/numbers-25.mp3?v=1d1d117836a901f3"
+    },
+    "numbers-26": {
+      "zh": "/audio-edge/zh/numbers-26.mp3?v=a14903332f876a88",
+      "en": "/audio-edge/en/numbers-26.mp3?v=89ed15ded358dd28"
+    },
+    "numbers-27": {
+      "zh": "/audio-edge/zh/numbers-27.mp3?v=a6732acd8edb8b09",
+      "en": "/audio-edge/en/numbers-27.mp3?v=8f5914751da43b7e"
+    },
+    "numbers-28": {
+      "zh": "/audio-edge/zh/numbers-28.mp3?v=42f0873d36cdb74a",
+      "en": "/audio-edge/en/numbers-28.mp3?v=1cffb98e75330691"
+    },
+    "numbers-29": {
+      "zh": "/audio-edge/zh/numbers-29.mp3?v=85ac12653e39dd8a",
+      "en": "/audio-edge/en/numbers-29.mp3?v=1b31ce92445a8591"
+    },
+    "numbers-30": {
+      "zh": "/audio-edge/zh/numbers-30.mp3?v=2cccacd03a0a762a",
+      "en": "/audio-edge/en/numbers-30.mp3?v=24235e05368d1170"
+    },
+    "numbers-31": {
+      "zh": "/audio-edge/zh/numbers-31.mp3?v=62a60f6584536e39",
+      "en": "/audio-edge/en/numbers-31.mp3?v=16ac79fe3204362d"
+    },
+    "numbers-32": {
+      "zh": "/audio-edge/zh/numbers-32.mp3?v=13ec2949c5016053",
+      "en": "/audio-edge/en/numbers-32.mp3?v=4f7614f9345b1f3d"
+    },
+    "numbers-33": {
+      "zh": "/audio-edge/zh/numbers-33.mp3?v=7381172182fa2d7a",
+      "en": "/audio-edge/en/numbers-33.mp3?v=3efdc332e18736b3"
+    },
+    "numbers-34": {
+      "zh": "/audio-edge/zh/numbers-34.mp3?v=87e45063aacbf7fe",
+      "en": "/audio-edge/en/numbers-34.mp3?v=6ffd5124a397329d"
+    },
+    "numbers-35": {
+      "zh": "/audio-edge/zh/numbers-35.mp3?v=4a7696910e247496",
+      "en": "/audio-edge/en/numbers-35.mp3?v=307eed16cd4b0b8b"
+    },
+    "numbers-36": {
+      "zh": "/audio-edge/zh/numbers-36.mp3?v=a2693ccf0f21b7eb",
+      "en": "/audio-edge/en/numbers-36.mp3?v=5b3ee08a7a5560b3"
+    },
+    "numbers-37": {
+      "zh": "/audio-edge/zh/numbers-37.mp3?v=a8ca78c813e2f7c1",
+      "en": "/audio-edge/en/numbers-37.mp3?v=996ac669cc968846"
+    },
+    "numbers-38": {
+      "zh": "/audio-edge/zh/numbers-38.mp3?v=952b008265e53398",
+      "en": "/audio-edge/en/numbers-38.mp3?v=856113b05a6b8560"
+    },
+    "numbers-39": {
+      "zh": "/audio-edge/zh/numbers-39.mp3?v=25a37d69eaeb6ae8",
+      "en": "/audio-edge/en/numbers-39.mp3?v=e6c619492b04a292"
+    },
+    "numbers-40": {
+      "zh": "/audio-edge/zh/numbers-40.mp3?v=940e95f48f5c7f85",
+      "en": "/audio-edge/en/numbers-40.mp3?v=3d108c74406b2e63"
+    },
+    "numbers-41": {
+      "zh": "/audio-edge/zh/numbers-41.mp3?v=7ab61d0e37d216a1",
+      "en": "/audio-edge/en/numbers-41.mp3?v=106a8529408cfdff"
+    },
+    "numbers-42": {
+      "zh": "/audio-edge/zh/numbers-42.mp3?v=6795a74c3b3ee030",
+      "en": "/audio-edge/en/numbers-42.mp3?v=e65a0f02a2c24622"
+    },
+    "numbers-43": {
+      "zh": "/audio-edge/zh/numbers-43.mp3?v=dab44c1924748230",
+      "en": "/audio-edge/en/numbers-43.mp3?v=16a2e959c747b247"
+    },
+    "numbers-44": {
+      "zh": "/audio-edge/zh/numbers-44.mp3?v=94bea54f9ee4f406",
+      "en": "/audio-edge/en/numbers-44.mp3?v=823e4391715f4516"
+    },
+    "numbers-45": {
+      "zh": "/audio-edge/zh/numbers-45.mp3?v=0f944d5f8fdf5527",
+      "en": "/audio-edge/en/numbers-45.mp3?v=c0b1598cd8bb4700"
+    },
+    "numbers-46": {
+      "zh": "/audio-edge/zh/numbers-46.mp3?v=470f5e2092988ef8",
+      "en": "/audio-edge/en/numbers-46.mp3?v=73267ab888986d27"
+    },
+    "numbers-47": {
+      "zh": "/audio-edge/zh/numbers-47.mp3?v=da8ed368526fea8f",
+      "en": "/audio-edge/en/numbers-47.mp3?v=8b61152819d099c1"
+    },
+    "numbers-48": {
+      "zh": "/audio-edge/zh/numbers-48.mp3?v=c229d1e9d7d8931a",
+      "en": "/audio-edge/en/numbers-48.mp3?v=21f99c7383140f25"
+    },
+    "numbers-49": {
+      "zh": "/audio-edge/zh/numbers-49.mp3?v=ac503cac3f5f62de",
+      "en": "/audio-edge/en/numbers-49.mp3?v=94f7eaefdb249085"
+    },
+    "numbers-50": {
+      "zh": "/audio-edge/zh/numbers-50.mp3?v=858445cfff38e33b",
+      "en": "/audio-edge/en/numbers-50.mp3?v=deba18ce97579568"
+    },
+    "numbers-51": {
+      "zh": "/audio-edge/zh/numbers-51.mp3?v=223f7346aa7a0b75",
+      "en": "/audio-edge/en/numbers-51.mp3?v=a6f8222374635bb6"
+    },
+    "numbers-52": {
+      "zh": "/audio-edge/zh/numbers-52.mp3?v=9f8d68874a0f59f5",
+      "en": "/audio-edge/en/numbers-52.mp3?v=479fc70124297a53"
+    },
+    "numbers-53": {
+      "zh": "/audio-edge/zh/numbers-53.mp3?v=2d63d241c9321a1e",
+      "en": "/audio-edge/en/numbers-53.mp3?v=1ca1f0e8b17c7b91"
+    },
+    "numbers-54": {
+      "zh": "/audio-edge/zh/numbers-54.mp3?v=a757da2b41987921",
+      "en": "/audio-edge/en/numbers-54.mp3?v=b019bc4ab0b822d9"
+    },
+    "numbers-55": {
+      "zh": "/audio-edge/zh/numbers-55.mp3?v=18a5bb91f2ce958e",
+      "en": "/audio-edge/en/numbers-55.mp3?v=4ab0f786e6222b81"
+    },
+    "numbers-56": {
+      "zh": "/audio-edge/zh/numbers-56.mp3?v=3d3d86b28acafa6c",
+      "en": "/audio-edge/en/numbers-56.mp3?v=aca12b57ded4ea51"
+    },
+    "numbers-57": {
+      "zh": "/audio-edge/zh/numbers-57.mp3?v=b9a30199bc95960a",
+      "en": "/audio-edge/en/numbers-57.mp3?v=eba0fc259635e8b9"
+    },
+    "numbers-58": {
+      "zh": "/audio-edge/zh/numbers-58.mp3?v=88eb681a4f1f30ff",
+      "en": "/audio-edge/en/numbers-58.mp3?v=77fca5f049f5d534"
+    },
+    "numbers-59": {
+      "zh": "/audio-edge/zh/numbers-59.mp3?v=a5fd89e9d5d68534",
+      "en": "/audio-edge/en/numbers-59.mp3?v=72beaa9e34cf91d3"
+    },
+    "numbers-60": {
+      "zh": "/audio-edge/zh/numbers-60.mp3?v=90082d4613e152cc",
+      "en": "/audio-edge/en/numbers-60.mp3?v=47afa2af0c4ac112"
+    },
+    "numbers-61": {
+      "zh": "/audio-edge/zh/numbers-61.mp3?v=bbdd07a6eef3c1d0",
+      "en": "/audio-edge/en/numbers-61.mp3?v=c5b75eb19f4b181a"
+    },
+    "numbers-62": {
+      "zh": "/audio-edge/zh/numbers-62.mp3?v=840ea7b4e63e2752",
+      "en": "/audio-edge/en/numbers-62.mp3?v=7388a2932aa502f5"
+    },
+    "numbers-63": {
+      "zh": "/audio-edge/zh/numbers-63.mp3?v=84a59d3d788906e6",
+      "en": "/audio-edge/en/numbers-63.mp3?v=0534feeef13546dd"
+    },
+    "numbers-64": {
+      "zh": "/audio-edge/zh/numbers-64.mp3?v=4d31bf0c7d9d018c",
+      "en": "/audio-edge/en/numbers-64.mp3?v=6264b854eb69cefc"
+    },
+    "numbers-65": {
+      "zh": "/audio-edge/zh/numbers-65.mp3?v=0f1f16e41145d0b4",
+      "en": "/audio-edge/en/numbers-65.mp3?v=3896f74e5967ed8c"
+    },
+    "numbers-66": {
+      "zh": "/audio-edge/zh/numbers-66.mp3?v=71496cc93aa09983",
+      "en": "/audio-edge/en/numbers-66.mp3?v=7b58ffebfec2ee8d"
+    },
+    "numbers-67": {
+      "zh": "/audio-edge/zh/numbers-67.mp3?v=0981d3e8116ffcb1",
+      "en": "/audio-edge/en/numbers-67.mp3?v=1bbd0b1aa96169cd"
+    },
+    "numbers-68": {
+      "zh": "/audio-edge/zh/numbers-68.mp3?v=392371006bf25dea",
+      "en": "/audio-edge/en/numbers-68.mp3?v=9cdd276d9d23592c"
+    },
+    "numbers-69": {
+      "zh": "/audio-edge/zh/numbers-69.mp3?v=fb760beda9b7a67f",
+      "en": "/audio-edge/en/numbers-69.mp3?v=c597aa6cf611cead"
+    },
+    "numbers-70": {
+      "zh": "/audio-edge/zh/numbers-70.mp3?v=d0afb2504af411eb",
+      "en": "/audio-edge/en/numbers-70.mp3?v=96beb76ab7828c60"
+    },
+    "numbers-71": {
+      "zh": "/audio-edge/zh/numbers-71.mp3?v=1721b01903c12ff4",
+      "en": "/audio-edge/en/numbers-71.mp3?v=3dd8f7ffb88a32d2"
+    },
+    "numbers-72": {
+      "zh": "/audio-edge/zh/numbers-72.mp3?v=7ec1ab6bdf2f6dca",
+      "en": "/audio-edge/en/numbers-72.mp3?v=32bdd36e4f1f33ea"
+    },
+    "numbers-73": {
+      "zh": "/audio-edge/zh/numbers-73.mp3?v=249aa9c764247ca5",
+      "en": "/audio-edge/en/numbers-73.mp3?v=f6bbddc5e0261dc5"
+    },
+    "numbers-74": {
+      "zh": "/audio-edge/zh/numbers-74.mp3?v=3e5a8eddcf2e354d",
+      "en": "/audio-edge/en/numbers-74.mp3?v=ccd8acc921acd728"
+    },
+    "numbers-75": {
+      "zh": "/audio-edge/zh/numbers-75.mp3?v=c283665db3872b7d",
+      "en": "/audio-edge/en/numbers-75.mp3?v=aeb303790f2eac9d"
+    },
+    "numbers-76": {
+      "zh": "/audio-edge/zh/numbers-76.mp3?v=c9dc1524b809f20e",
+      "en": "/audio-edge/en/numbers-76.mp3?v=34c756aa5ab6877b"
+    },
+    "numbers-77": {
+      "zh": "/audio-edge/zh/numbers-77.mp3?v=38ff741338193da5",
+      "en": "/audio-edge/en/numbers-77.mp3?v=286dac630af74646"
+    },
+    "numbers-78": {
+      "zh": "/audio-edge/zh/numbers-78.mp3?v=db7cc8167d10c666",
+      "en": "/audio-edge/en/numbers-78.mp3?v=5545bcf31acd28d7"
+    },
+    "numbers-79": {
+      "zh": "/audio-edge/zh/numbers-79.mp3?v=1997eacb9f95abbf",
+      "en": "/audio-edge/en/numbers-79.mp3?v=c4eb3bd2a98471cf"
+    },
+    "numbers-80": {
+      "zh": "/audio-edge/zh/numbers-80.mp3?v=97453c46b30a6793",
+      "en": "/audio-edge/en/numbers-80.mp3?v=81c7e21527bbbec6"
+    },
+    "numbers-81": {
+      "zh": "/audio-edge/zh/numbers-81.mp3?v=84a9f88cf335b5dc",
+      "en": "/audio-edge/en/numbers-81.mp3?v=353088317cf303ae"
+    },
+    "numbers-82": {
+      "zh": "/audio-edge/zh/numbers-82.mp3?v=ed7f00353ac2009f",
+      "en": "/audio-edge/en/numbers-82.mp3?v=77da9a06429d132d"
+    },
+    "numbers-83": {
+      "zh": "/audio-edge/zh/numbers-83.mp3?v=367b12598358781c",
+      "en": "/audio-edge/en/numbers-83.mp3?v=98a06d70fe2ee417"
+    },
+    "numbers-84": {
+      "zh": "/audio-edge/zh/numbers-84.mp3?v=2d8814b69eb3e6c2",
+      "en": "/audio-edge/en/numbers-84.mp3?v=1e7906f99f2becca"
+    },
+    "numbers-85": {
+      "zh": "/audio-edge/zh/numbers-85.mp3?v=aa4d6e56ffdb7e4d",
+      "en": "/audio-edge/en/numbers-85.mp3?v=a601145058075d1a"
+    },
+    "numbers-86": {
+      "zh": "/audio-edge/zh/numbers-86.mp3?v=33f2e42f697a4ba6",
+      "en": "/audio-edge/en/numbers-86.mp3?v=f9fc580c72648ba7"
+    },
+    "numbers-87": {
+      "zh": "/audio-edge/zh/numbers-87.mp3?v=210411bfe0128f3d",
+      "en": "/audio-edge/en/numbers-87.mp3?v=22ce004ae3efa10e"
+    },
+    "numbers-88": {
+      "zh": "/audio-edge/zh/numbers-88.mp3?v=f2a8566873d59f2e",
+      "en": "/audio-edge/en/numbers-88.mp3?v=65f876af9af6b329"
+    },
+    "numbers-89": {
+      "zh": "/audio-edge/zh/numbers-89.mp3?v=7c8e6385f9aa9696",
+      "en": "/audio-edge/en/numbers-89.mp3?v=3aafb1253bb6bec7"
+    },
+    "numbers-90": {
+      "zh": "/audio-edge/zh/numbers-90.mp3?v=37f41ff25a3f8d5d",
+      "en": "/audio-edge/en/numbers-90.mp3?v=e1bda14b634fee66"
+    },
+    "numbers-91": {
+      "zh": "/audio-edge/zh/numbers-91.mp3?v=94b79d943d46c9d6",
+      "en": "/audio-edge/en/numbers-91.mp3?v=87343a0a51a5ce67"
+    },
+    "numbers-92": {
+      "zh": "/audio-edge/zh/numbers-92.mp3?v=e17037ecf6320c9d",
+      "en": "/audio-edge/en/numbers-92.mp3?v=5ce4e7db223028ae"
+    },
+    "numbers-93": {
+      "zh": "/audio-edge/zh/numbers-93.mp3?v=83d7ed4d7952b569",
+      "en": "/audio-edge/en/numbers-93.mp3?v=493b974f57b9da10"
+    },
+    "numbers-94": {
+      "zh": "/audio-edge/zh/numbers-94.mp3?v=8590d3bb01a31edc",
+      "en": "/audio-edge/en/numbers-94.mp3?v=4097b33f52f4aed4"
+    },
+    "numbers-95": {
+      "zh": "/audio-edge/zh/numbers-95.mp3?v=a2e49a1e805bae50",
+      "en": "/audio-edge/en/numbers-95.mp3?v=763b0e5d0d9f9a75"
+    },
+    "numbers-96": {
+      "zh": "/audio-edge/zh/numbers-96.mp3?v=852221da3b17c5ba",
+      "en": "/audio-edge/en/numbers-96.mp3?v=f9bd31ff43aa350f"
+    },
+    "numbers-97": {
+      "zh": "/audio-edge/zh/numbers-97.mp3?v=fca2233370c716a0",
+      "en": "/audio-edge/en/numbers-97.mp3?v=038283d0bb1ac909"
+    },
+    "numbers-98": {
+      "zh": "/audio-edge/zh/numbers-98.mp3?v=d91a122b21b018c0",
+      "en": "/audio-edge/en/numbers-98.mp3?v=e3a90c26cea39934"
+    },
+    "numbers-99": {
+      "zh": "/audio-edge/zh/numbers-99.mp3?v=0a5304e9ed425196",
+      "en": "/audio-edge/en/numbers-99.mp3?v=6606a16fab19797a"
+    },
+    "numbers-100": {
+      "zh": "/audio-edge/zh/numbers-100.mp3?v=afa99f0ca1b71c83",
+      "en": "/audio-edge/en/numbers-100.mp3?v=8fe21d1608337ca1"
+    },
+    "letters-A": {
+      "zh": "/audio-edge/en/letters-A.mp3?v=1cea01019719849c",
+      "en": "/audio-edge/en/letters-A.mp3?v=1cea01019719849c"
+    },
+    "letters-B": {
+      "zh": "/audio-edge/en/letters-B.mp3?v=145eee83513a431c",
+      "en": "/audio-edge/en/letters-B.mp3?v=145eee83513a431c"
+    },
+    "letters-C": {
+      "zh": "/audio-edge/en/letters-C.mp3?v=4dc3670ccadc6f31",
+      "en": "/audio-edge/en/letters-C.mp3?v=4dc3670ccadc6f31"
+    },
+    "letters-D": {
+      "zh": "/audio-edge/en/letters-D.mp3?v=6880e3191d51576e",
+      "en": "/audio-edge/en/letters-D.mp3?v=6880e3191d51576e"
+    },
+    "letters-E": {
+      "zh": "/audio-edge/en/letters-E.mp3?v=f9e0a74d3636e968",
+      "en": "/audio-edge/en/letters-E.mp3?v=f9e0a74d3636e968"
+    },
+    "letters-F": {
+      "zh": "/audio-edge/en/letters-F.mp3?v=62749bdc3165b739",
+      "en": "/audio-edge/en/letters-F.mp3?v=62749bdc3165b739"
+    },
+    "letters-G": {
+      "zh": "/audio-edge/en/letters-G.mp3?v=2bcfcf956d1fe7bd",
+      "en": "/audio-edge/en/letters-G.mp3?v=2bcfcf956d1fe7bd"
+    },
+    "letters-H": {
+      "zh": "/audio-edge/en/letters-H.mp3?v=5a4bccde52e9cb3a",
+      "en": "/audio-edge/en/letters-H.mp3?v=5a4bccde52e9cb3a"
+    },
+    "letters-I": {
+      "zh": "/audio-edge/en/letters-I.mp3?v=e2a5527cb23925e6",
+      "en": "/audio-edge/en/letters-I.mp3?v=e2a5527cb23925e6"
+    },
+    "letters-J": {
+      "zh": "/audio-edge/en/letters-J.mp3?v=d31406f5fd6a2aa7",
+      "en": "/audio-edge/en/letters-J.mp3?v=d31406f5fd6a2aa7"
+    },
+    "letters-K": {
+      "zh": "/audio-edge/en/letters-K.mp3?v=2e0331da9694653f",
+      "en": "/audio-edge/en/letters-K.mp3?v=2e0331da9694653f"
+    },
+    "letters-L": {
+      "zh": "/audio-edge/en/letters-L.mp3?v=3ec8ba3b3420d33a",
+      "en": "/audio-edge/en/letters-L.mp3?v=3ec8ba3b3420d33a"
+    },
+    "letters-M": {
+      "zh": "/audio-edge/en/letters-M.mp3?v=2c8996f0578e82e5",
+      "en": "/audio-edge/en/letters-M.mp3?v=2c8996f0578e82e5"
+    },
+    "letters-N": {
+      "zh": "/audio-edge/en/letters-N.mp3?v=f147335469961f8b",
+      "en": "/audio-edge/en/letters-N.mp3?v=f147335469961f8b"
+    },
+    "letters-O": {
+      "zh": "/audio-edge/en/letters-O.mp3?v=3660c7ab3eca2ba0",
+      "en": "/audio-edge/en/letters-O.mp3?v=3660c7ab3eca2ba0"
+    },
+    "letters-P": {
+      "zh": "/audio-edge/en/letters-P.mp3?v=6244616cb4255129",
+      "en": "/audio-edge/en/letters-P.mp3?v=6244616cb4255129"
+    },
+    "letters-Q": {
+      "zh": "/audio-edge/en/letters-Q.mp3?v=4c879d711291323f",
+      "en": "/audio-edge/en/letters-Q.mp3?v=4c879d711291323f"
+    },
+    "letters-R": {
+      "zh": "/audio-edge/en/letters-R.mp3?v=85db896718e49a2a",
+      "en": "/audio-edge/en/letters-R.mp3?v=85db896718e49a2a"
+    },
+    "letters-S": {
+      "zh": "/audio-edge/en/letters-S.mp3?v=8b423a388490bd31",
+      "en": "/audio-edge/en/letters-S.mp3?v=8b423a388490bd31"
+    },
+    "letters-T": {
+      "zh": "/audio-edge/en/letters-T.mp3?v=4e758534bdc96a5a",
+      "en": "/audio-edge/en/letters-T.mp3?v=4e758534bdc96a5a"
+    },
+    "letters-U": {
+      "zh": "/audio-edge/en/letters-U.mp3?v=501fde90ad09eb94",
+      "en": "/audio-edge/en/letters-U.mp3?v=501fde90ad09eb94"
+    },
+    "letters-V": {
+      "zh": "/audio-edge/en/letters-V.mp3?v=7a9827c5b4c5ef1e",
+      "en": "/audio-edge/en/letters-V.mp3?v=7a9827c5b4c5ef1e"
+    },
+    "letters-W": {
+      "zh": "/audio-edge/en/letters-W.mp3?v=e48eeb9510ceb14d",
+      "en": "/audio-edge/en/letters-W.mp3?v=e48eeb9510ceb14d"
+    },
+    "letters-X": {
+      "zh": "/audio-edge/en/letters-X.mp3?v=80b1e74edb323330",
+      "en": "/audio-edge/en/letters-X.mp3?v=80b1e74edb323330"
+    },
+    "letters-Y": {
+      "zh": "/audio-edge/en/letters-Y.mp3?v=22eda6c9af5be350",
+      "en": "/audio-edge/en/letters-Y.mp3?v=22eda6c9af5be350"
+    },
+    "letters-Z": {
+      "zh": "/audio-edge/en/letters-Z.mp3?v=8105f75b36af91de",
+      "en": "/audio-edge/en/letters-Z.mp3?v=8105f75b36af91de"
+    }
+  }
+}

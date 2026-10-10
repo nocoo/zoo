@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "洗手。吃饭前，洗洗手。",
+  "rate": "+10%",
+  "sha256": "0acd939a12dd9d2258768c1be8c5e9408c187c25692634d31035d5a305d54cd4",
+  "bytes": 19872
+}

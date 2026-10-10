@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Eat a meal",
+  "rate": "+0%",
+  "sha256": "80c6fab4e74e0222b0835201744c97a17b0118e5469c11828f2e09d22445c319",
+  "bytes": 10368
+}

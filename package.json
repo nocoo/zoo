@@ -3,8 +3,9 @@
   "version": "1.0.1",
   "description": "A gentle Chinese picture-learning island for little explorers.",
   "scripts": {
+    "predev": "node scripts/build-media.mjs",
     "dev": "vite --host 127.0.0.1",
-    "build": "tsc --noEmit && vite build && node scripts/build-live.mjs && node scripts/build-pwa.mjs",
+    "build": "node scripts/build-media.mjs && tsc --noEmit && vite build && node scripts/build-live.mjs && node scripts/build-pwa.mjs",
     "check": "node --experimental-strip-types scripts/check.ts",
     "check:live": "node scripts/check-live.mjs",
     "preview": "vite preview --host 127.0.0.1 --port 7058",

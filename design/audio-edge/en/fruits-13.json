@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Blueberries",
+  "rate": "+0%",
+  "sha256": "01f7f87c868f0b462a9dff461582e0b4a844b5f9f6fa0be8200ceef6bd369a14",
+  "bytes": 10512
+}

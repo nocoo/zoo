@@ -54,3 +54,9 @@ Validation: content/swipe checks and production build passed. Isolated Chromium 
 ## 2026-10-10 - Isolated health checks
 
 The first local health check tried reserved port 17058 while an existing production preview already owned it. Wrangler exited instead of testing the new endpoint; no existing process was stopped. A reserved port is not an ownership guarantee. The health harness now lets the OS allocate HTTP and inspector ports, waits for its own Wrangler readiness output, uses a temporary configuration without production account/routes/bindings, and terminates only its child process before removing its own state. The installed workerd also supports compatibility dates only through 2026-10-08; the local fixture explicitly records this limitation rather than lowering the production date of 2026-10-09. Production behavior remains a separate release check.
+
+## 2026-10-10 - Temporary narration integration
+
+Do not turn incomplete Gemini generation into runtime system speech: the owner explicitly requested static temporary Edge MP3s while Gemini resumes tomorrow. Keep provider archives separate and select Gemini first at build time, without replacing approved files. Any new media directory must also be excluded from PWA shell precaching; otherwise adding temporary audio silently downloads the full collection during installation. The PWA check now covers the Edge directory and content-versioned image cache keys.
+
+The bounded neighbor helper initially added only one collection length before modulo; a one-card collection with offset -2 could produce a negative index. Normalize both backward offsets and keep runnable assertions for zero, one and two cards as well as normal wraparound.

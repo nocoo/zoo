@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Strawberry",
+  "rate": "+0%",
+  "sha256": "27efee67516bb3727e6f283f61d98d65f59207244702f08fddd4e46d3f00d0dd",
+  "bytes": 10368
+}
