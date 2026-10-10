@@ -5,6 +5,7 @@
 - Chinese picture-learning website for children aged 1.5-3, used with an adult.
 - React, TypeScript and Vite. `animal-island-ui` provides controls and styling; `naive-icons` provides UI icons.
 - Static application: no authentication, database, tracking or application API.
+- Build-time `GET /api/live` is a static deployment-health document, not an application backend. `scripts/build-live.mjs` emits `status: "ok"`, top-level package version and Git HEAD revision after Vite; `_headers` serves JSON with `Cache-Control: no-store`. It does not probe speech services. Build releases from committed source; preserve anonymous access and service-worker cache bypass.
 - `src/content.ts` owns 246 cards across eight categories. Numbers cover 1-100; letters cover A-Z; other categories have 20 cards each.
 - `src/useIsland.ts` owns interaction state, device-local favorites and playback. `src/App.tsx` renders the views.
 - `src/PictureViewer.tsx` uses a native modal dialog for full-viewport browsing, focus containment and restoration. It supports pointer swipes and arrow keys; the ordinary library Modal remains only for parent information.
@@ -18,6 +19,7 @@
 - `npm run dev`: Vite on loopback port 7058, strict port, Caddy hostname allowed.
 - `npm run build`: TypeScript check and production build to `dist/`.
 - `npm run check`: minimal content counts, unique IDs, image existence and number-reading checks.
+- `npm run check:live`: requires a current build; owns a temporary, local-only Worker with ephemeral HTTP/inspector ports and no account, routes or remote bindings. Verifies actual GET/HEAD JSON, version, revision and cache headers, then removes its own state. The installed workerd supports dates through 2026-10-08; the test fixture uses that date without changing production 2026-10-09, whose behavior must be verified after deployment.
 - `npm run preview`: production output on loopback 7058; stop the development server first.
 - `npm run deploy`: build and deploy the static Worker using repository-local Wrangler.
 - Follow the machine's registry policy when installing dependencies.
@@ -25,17 +27,17 @@
 ## PWA And iOS
 
 - Document title, manifest name/short name and Apple standalone title are exactly `小小动物岛` (five Chinese characters). `public/manifest.webmanifest` uses stable `/` identity, root scope/start URL and standalone display without an orientation lock.
-- Icons derive from the existing bear in `public/favicon.svg`, not new generated art. `node scripts/generate-icons.mjs` uses the already-installed Sharp transitive package to create opaque 180 px Apple Touch Icon, 192/512 px regular icons and a padded 512 px maskable icon. Do not pre-round Apple or maskable PNG corners; the OS applies its mask. No generation credentials are involved.
+- Icons derive from the approved physical-tool identity: transparent `logo.png` and square `public/assets/brand/icon.png`; `icon-rounded.png` is the README/display derivative only. `node scripts/generate-icons.mjs` uses the already-installed Sharp transitive package to create `public/favicon.png`, opaque 180 px Apple Touch Icon, 192/512 px regular icons and a padded 512 px maskable icon. Do not pre-round Apple or maskable PNG corners; the OS applies its mask. No generation credentials are involved in icon derivation. The previous bear SVG is preserved in the Hexly identity archive, not an active fallback.
 - Production builds run `scripts/build-pwa.mjs` after Vite to emit `dist/sw.js`, versioned by all build bytes and worker code. The native worker precaches the root HTML, bundled JS/CSS/fonts and install metadata only, never the full illustration/audio collection. Development does not register a worker. Use `vite preview` on reserved port 17058 for local offline tests rather than caching the development server.
 - The worker keeps one matching app-shell version until all old windows close; do not add unconditional `skipWaiting`, mix new HTML with old chunks, or reload mid-session. New builds change the worker version. Worker activation deletes only Zoo-owned obsolete caches. `/sw.js` and the manifest revalidate via `_headers`.
-- At most 48 successfully viewed image responses are cached on demand. Offline uncached images display a Chinese connection hint. Audio and Range requests bypass the worker; do not claim offline speech. Browser storage may be evicted, especially on iOS. No cache contains credentials, and there is no analytics or background sync.
+- At most 48 successfully viewed image responses are cached on demand. Offline uncached images display a Chinese connection hint. Audio, `/api/` and Range requests bypass the worker; health files never enter the precache. Do not claim offline speech. Browser storage may be evicted, especially on iOS. No cache contains credentials, and there is no analytics or background sync.
 - Preserve viewport zoom and safe-area padding on the main page and viewer. Speech stops on page hide/backgrounding. Parent information explains Safari Share > Add to Home Screen and offline/update limitations.
 - Validation: `npm run check`, `npm run build`, then `node scripts/check-pwa.mjs`. Isolated Chromium covers offline reopening/images; WebKit covers online mobile layout and navigation. WebKit's automation offline reload returned an internal error; physical iPhone Home Screen/status-bar and offline verification remain outstanding.
 
 ## Environments
 
 - Local browser URL: `https://zoo.dev.hexly.ai`, proxied to `127.0.0.1:7058`.
-- Reserved test ports: 17058 / 27058; no test servers currently configured.
+- Reserved browser test ports: 17058 / 27058. The health harness selects ephemeral loopback ports instead of taking over an existing preview.
 - Production URL: `https://zoo.hexly.ai`; Worker `zoo`; configuration `wrangler.jsonc`.
 - This repository has not migrated to `cf` project configuration. Use Wrangler for deployment; `cf` resource reads are supported.
 - User requested basic validation only. Build/content checks and Chromium responsive smoke checks are not evidence of a full 6DQ quality audit.
