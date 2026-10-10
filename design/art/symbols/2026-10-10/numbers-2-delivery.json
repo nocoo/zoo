@@ -1,0 +1,25 @@
+{
+  "source_sha256": "8aac6d3462306b03586e79881bee98120c12f0434b2f1d345d7dc84910757ba3",
+  "source": "design/art/symbol-studies/2026-10-10-162535/numbers-2/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/numbers-2-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1765026,
+      "sha256": "5b0793db0c94f79ba58d4bd0d5f01148f54e44abb67629c408eee53f9c50c3d6"
+    },
+    {
+      "path": "public/art/hd/numbers-2-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 187210,
+      "sha256": "a0b72b64b183abbca4338694aef50eb19094621efa0bdda59991b31fe39e60b0"
+    }
+  ]
+}

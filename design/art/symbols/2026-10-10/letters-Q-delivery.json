@@ -1,0 +1,25 @@
+{
+  "source_sha256": "3f122eb642451d8af8fb22b8ddf971ba194f1356c178b7dc5915d0b87b25e0a2",
+  "source": "design/art/symbols/2026-10-10/letters-Q/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-Q-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1735962,
+      "sha256": "9597f9c682390c7a0dcf2c55a2cebe1a57e398ded79e53085ef788513288e9ee"
+    },
+    {
+      "path": "public/art/hd/letters-Q-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 199036,
+      "sha256": "4cc545f1fb1223f08b5eeb6b3277934d0f1c8224bc65ae89cbc18a648447763c"
+    }
+  ]
+}

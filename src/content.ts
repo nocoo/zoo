@@ -8,8 +8,8 @@ export type Picture = {
   english: string;
   pronunciation: string;
   description: string;
-  image?: string;
-  imageLarge?: string;
+  image: string;
+  imageLarge: string;
   group?: string;
   value?: number;
   example?: string;
@@ -134,10 +134,12 @@ export const pictures: Picture[] = [
   }))),
   ...Array.from({ length: 30 }, (_, i) => ({
     id: `numbers-${i + 1}`, category: 'numbers' as const, name: String(i + 1), english: englishNumber(i + 1), value: i + 1,
-    pronunciation: chineseNumber(i + 1), description: `这是${chineseNumber(i + 1)}。和爸爸妈妈一起，数一数下面的小圆点。`,
+    image: `/art/hd/numbers-${i + 1}-thumb.webp`, imageLarge: `/art/hd/numbers-${i + 1}-full.webp`,
+    pronunciation: chineseNumber(i + 1), description: `这是${chineseNumber(i + 1)}。和爸爸妈妈一起，数一数图里的小伙伴。`,
   })),
   ...Array.from('ABCDEFGHIJKLMNOPQRSTUVWXYZ', (name) => ({
     id: `letters-${name}`, category: 'letters' as const, name, english: name, pronunciation: name.toLowerCase(),
+    image: `/art/hd/letters-${name}-thumb.webp`, imageLarge: `/art/hd/letters-${name}-full.webp`,
     description: `这是大写字母 ${name}，旁边是它的小写 ${name.toLowerCase()}。找一找，它们长得一样吗？`,
   })),
 ];

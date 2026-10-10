@@ -1,0 +1,25 @@
+{
+  "source_sha256": "e6062771d4730edd7f0e71d864e7df5d9aeba66eb4881a4f66adc6dca93f51d3",
+  "source": "design/art/symbols/2026-10-10/letters-F/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-F-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1749676,
+      "sha256": "8d01d10d5436b0d199bb2ef6bf13ba62163f96e9c05db7fbaf69772d5c52e451"
+    },
+    {
+      "path": "public/art/hd/letters-F-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 188948,
+      "sha256": "4676d7e8ebde06a5153bbc43ebb7c8d7940b5683da2ab18c5f31d18cd93c450f"
+    }
+  ]
+}

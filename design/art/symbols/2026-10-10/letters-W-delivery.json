@@ -1,0 +1,25 @@
+{
+  "source_sha256": "30d605870678b44a4acc7ad80b14de7876f1c3bb2e8998deebb41fee09a73d52",
+  "source": "design/art/symbols/2026-10-10/letters-W/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-W-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1474772,
+      "sha256": "b6ce7e30304d5a8c87927290cfc740d8c405128c29b74ab22a6a042db69691f7"
+    },
+    {
+      "path": "public/art/hd/letters-W-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 161656,
+      "sha256": "1277bcb36d5d35891c839bc4a40532b6b650edf1c3a0d86b8bfbfc9b1c413502"
+    }
+  ]
+}

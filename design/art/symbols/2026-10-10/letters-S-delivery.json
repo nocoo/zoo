@@ -1,0 +1,25 @@
+{
+  "source_sha256": "a4ff83f4abd6b7f6aea5c48ccf868731bc2e7f630532d8faefb2d92323608c57",
+  "source": "design/art/symbols/2026-10-10/letters-S/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-S-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1693504,
+      "sha256": "3c84a69984b74c94241ff1d6bf204fe165227c3affdd66516b41c44b223b32e2"
+    },
+    {
+      "path": "public/art/hd/letters-S-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 190338,
+      "sha256": "a74bcee46c4aa60cb50dbddc54bad2576e1468b71a6419ecc28cb498f8743e1a"
+    }
+  ]
+}

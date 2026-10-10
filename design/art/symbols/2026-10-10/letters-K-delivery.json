@@ -1,0 +1,25 @@
+{
+  "source_sha256": "909b41ecf64f829196cedb32f810f9eed9a3497857c355a1f421e3e4acf8dd76",
+  "source": "design/art/symbols/2026-10-10/letters-K/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-K-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1847314,
+      "sha256": "739e6da895f3f49f3f37f70b594f98ea82cf78e2b4524d72a182d6f398888ac1"
+    },
+    {
+      "path": "public/art/hd/letters-K-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 203106,
+      "sha256": "385b1e5388bd6527fbbe6d3c2f7512ba6354bfd8cd75833b97414c003c5ce11d"
+    }
+  ]
+}

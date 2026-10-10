@@ -46,12 +46,6 @@
 .food-note { display: block; color: var(--zoo-muted); font-size: 11px; margin-top: 4px; }
 .viewer-navigation { display: flex; align-items: center; justify-content: space-between; gap: 12px; max-width: 460px; margin: 8px auto 0; }
 .viewer-navigation > span { color: var(--zoo-muted); font-size: 12px; }
-.viewer-art .number-art.large { gap: 12px; padding: 12px; }
-.viewer-art .number-art.large > span { font-size: clamp(90px, 24vmin, 230px); line-height: 1; }
-.counting-dots { display: grid; grid-template-columns: repeat(10, 1fr); gap: 6px; width: min(240px, 55vw); }
-.counting-dots > i { width: 9px; height: 9px; background: var(--tile-ink); border-radius: 50%; }
-.viewer-art .letter-art.large > span:first-child { font-size: clamp(100px, 36vmin, 340px); }
-.viewer-art .letter-art.large > span:last-child { font-size: clamp(80px, 27vmin, 250px); }
 @keyframes viewer-arrive { from { opacity: .6; } to { opacity: 1; } }
 @media (min-width: 900px) {
   .viewer-navigation { position: absolute; inset: 50% 26px auto; max-width: none; margin: 0; pointer-events: none; }
@@ -68,9 +62,6 @@
   .viewer-caption p { font-size: 12px; }
   .viewer-navigation { position: static; margin-top: 8px; }
   .viewer-navigation > span { display: none; }
-  .viewer-art .number-art.large > span { font-size: 80px; }
-  .counting-dots { gap: 3px; width: 160px; }
-  .counting-dots > i { width: 6px; height: 6px; }
 }
 @media (max-width: 700px) {
   .viewer-caption p { font-size: 13px; }

@@ -108,13 +108,6 @@ h2 { margin: 7px 0; font-size: 24px; font-weight: 800; letter-spacing: .5px; }
 .save-button { position: absolute; right: 4px; top: 5px; z-index: 2; opacity: .78; }
 .save-button button { min-width: 44px; min-height: 44px; }
 .visited-mark { position: absolute; bottom: 5px; right: 8px; color: var(--zoo-green); }
-.number-art { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--tile-ink); }
-.number-art > span { font-size: 76px; font-weight: 900; line-height: 1.3; transform: rotate(-5deg); }
-.number-sprinkles { display: flex; gap: 8px; margin-top: 2px; }
-.number-sprinkles i { width: 8px; height: 8px; border-radius: 50%; background: currentColor; opacity: .4; }
-.letter-art { display: flex; align-items: baseline; justify-content: center; gap: 5px; color: var(--tile-ink); }
-.letter-art > span:first-child { font-size: 82px; font-weight: 900; transform: rotate(-7deg); }
-.letter-art > span:last-child { font-size: 60px; opacity: .65; font-weight: 800; }
 .section-footer { display: flex; justify-content: center; align-items: center; gap: 15px; padding: 29px 0; font-size: 12px; color: #a7997c; }
 .section-footer svg { color: #c8b985; }
 .parent-note { background: #eef1e5; border: 1px dashed #d4dac5; border-radius: 20px; padding: 18px 23px; display: flex; align-items: center; gap: 15px; margin: 4px 0 25px; }

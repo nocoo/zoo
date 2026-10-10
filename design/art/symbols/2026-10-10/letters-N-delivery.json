@@ -1,0 +1,25 @@
+{
+  "source_sha256": "4f1580c644c58a01ecc0a7a7c12ac8f32d700a07e327ddf1615f9ee2e76abace",
+  "source": "design/art/symbols/2026-10-10/letters-N/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-N-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1753986,
+      "sha256": "c30640231efe7d5c9f74a030b7015d37d0dc7f09d0f3789f491b2e9ec6b2e6de"
+    },
+    {
+      "path": "public/art/hd/letters-N-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 189720,
+      "sha256": "1d4cd364e0da6f5f9f7f928382e8bcd512fd8e710c7e3400afc0b3e650d30b01"
+    }
+  ]
+}

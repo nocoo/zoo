@@ -1,0 +1,454 @@
+{
+  "reviewer": "agent",
+  "scope": "All 56 originals inspected; number counts checked row by row. New outputs are batch-authorized, not individually owner-approved.",
+  "items": [
+    {
+      "id": "numbers-1",
+      "sha256": "5377f5570f5d38a1625fa8b1cb317883999dc4ec71ea8440b41f1d74e70962c8",
+      "owner_approved_sample": true,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 1,
+      "notes": ""
+    },
+    {
+      "id": "numbers-2",
+      "sha256": "8aac6d3462306b03586e79881bee98120c12f0434b2f1d345d7dc84910757ba3",
+      "owner_approved_sample": true,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 2,
+      "notes": ""
+    },
+    {
+      "id": "numbers-3",
+      "sha256": "13f6ff368e0355c58abc6a1022cf58b28d037624cc5ac6c467b87771b0c38bfa",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 3,
+      "notes": ""
+    },
+    {
+      "id": "numbers-4",
+      "sha256": "4f2c0c4450ba9f315d7cde7fea86b2b2bb358edbed0f728a7ec4b0e8af2efcb5",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 4,
+      "notes": ""
+    },
+    {
+      "id": "numbers-5",
+      "sha256": "a1fb6288bc1b8bf5c5906e3cf6e651063270dc623fee1c8374839a78a87b8ba8",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 5,
+      "notes": ""
+    },
+    {
+      "id": "numbers-6",
+      "sha256": "cc6bc5fcddd1dc3948ce7aa90b2f7856c3c4538ba9a07c83a642c92304d21772",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 6,
+      "notes": ""
+    },
+    {
+      "id": "numbers-7",
+      "sha256": "6f09eba63c33c6c9abe011fd6d7002357a047693f5e807bd2787a692759b7a28",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 7,
+      "notes": ""
+    },
+    {
+      "id": "numbers-8",
+      "sha256": "fed26fe02f3651aba60fb4099f71d2fc639423a0e333c6dda6f44a3f1e7e378d",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 8,
+      "notes": ""
+    },
+    {
+      "id": "numbers-9",
+      "sha256": "1353fbc3484b6499669d539627d8c3a994acb0fc8623304de3db505fb35ce763",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 9,
+      "notes": ""
+    },
+    {
+      "id": "numbers-10",
+      "sha256": "12e2abb9346e7b906449cb401ba2c18cd684ce64de0d385f5a5c6a53f13881d5",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 10,
+      "notes": ""
+    },
+    {
+      "id": "numbers-11",
+      "sha256": "0244486b3b7d8c2f0184e8f78059a79929d8dcb38b4d44967be7b1e7d0c2b06d",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 11,
+      "notes": ""
+    },
+    {
+      "id": "numbers-12",
+      "sha256": "d40557c07d8b9ca129b3f2ce7afe3abd0120b4c16cc3fd9ee58d9de0ff76e08f",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 12,
+      "notes": ""
+    },
+    {
+      "id": "numbers-13",
+      "sha256": "947f25dfd6441c5de627626d7e457741ef06431da78ed706d750abaee2f65ab4",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 13,
+      "notes": ""
+    },
+    {
+      "id": "numbers-14",
+      "sha256": "53bb277bc56512ba3515a553234a5cdbd3fa92350d3a5e51cbce0483da14a5a9",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 14,
+      "notes": ""
+    },
+    {
+      "id": "numbers-15",
+      "sha256": "24e75da4f81d7c3f05572b922d9bc5730b84e07ec108f365164121866b222edd",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 15,
+      "notes": ""
+    },
+    {
+      "id": "numbers-16",
+      "sha256": "8e2fa65f046404cb9065cb455985a8faebe099d6e752e84ca4df69a8f564bbfd",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 16,
+      "notes": ""
+    },
+    {
+      "id": "numbers-17",
+      "sha256": "a5faeb23600fc5fd83331799cc617c552f9e7012fc4d228b522291504cc34a9d",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 17,
+      "notes": ""
+    },
+    {
+      "id": "numbers-18",
+      "sha256": "dc5c23015eac2d0ff5cca147c98988eabe6886df23758f8f78badcf610f276cc",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 18,
+      "notes": ""
+    },
+    {
+      "id": "numbers-19",
+      "sha256": "ddc56a0dfeb8b7d47bc2763b6ba922a2873b62c69d2d92390db1336eb33c4292",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 19,
+      "notes": ""
+    },
+    {
+      "id": "numbers-20",
+      "sha256": "fdb42b539b1aa4a7850e4b7ac543d7224468426968016350578b566c7f113fa8",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 20,
+      "notes": ""
+    },
+    {
+      "id": "numbers-21",
+      "sha256": "1b4858262dbd0843df02a8fe3e83d02e9341270412fd6ad9cadec8b3dd00b1ba",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 21,
+      "notes": ""
+    },
+    {
+      "id": "numbers-22",
+      "sha256": "e74f4b7ad3e606d0791c2f619053b4fc6e1564ae95b48ec2eb410fcd8ffbd5ed",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 22,
+      "notes": ""
+    },
+    {
+      "id": "numbers-23",
+      "sha256": "814a54c2415f09523ec429ced1f33811cebcd2971dde3087fc19474d564928cb",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 23,
+      "notes": ""
+    },
+    {
+      "id": "numbers-24",
+      "sha256": "5c47299ece510fac4cad23c6b9288e952c9fc06ea9e6799f80d5b413bf6b71b5",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 24,
+      "notes": ""
+    },
+    {
+      "id": "numbers-25",
+      "sha256": "ae7cf8d329e051d437547e0387c7b1943de4a3ebcec73cb91961aef3532e9df1",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 25,
+      "notes": ""
+    },
+    {
+      "id": "numbers-26",
+      "sha256": "e6eef827c7b409a9be4638e27f619e1a41099cac027be08f87fe139be88741ab",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 26,
+      "notes": ""
+    },
+    {
+      "id": "numbers-27",
+      "sha256": "3551c8d4d8e20ce81b59ddcc2b3f7d48388bfebfbf1c4c23a47a2271c5b73410",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 27,
+      "notes": ""
+    },
+    {
+      "id": "numbers-28",
+      "sha256": "76ecb7e0bc8010e0bdd50332733ca844011fe79b39192af90b36b9d00f36716b",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 28,
+      "notes": ""
+    },
+    {
+      "id": "numbers-29",
+      "sha256": "e5142ab23e464357a17abbdb2958d58c983e8a9126a86017259d305efa5c0704",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 29,
+      "notes": ""
+    },
+    {
+      "id": "numbers-30",
+      "sha256": "d602045ed5e646533d5910ee068ee88ade19d4f2f31f298143cd3bd9965b6c49",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable glyph and exact object count",
+      "count": 30,
+      "notes": ""
+    },
+    {
+      "id": "letters-A",
+      "sha256": "8e3eabded488f097c663f4c2300af4148173bca78b1e0b235cf9c05aecbb17b9",
+      "owner_approved_sample": true,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": ""
+    },
+    {
+      "id": "letters-B",
+      "sha256": "9bc64998204b9ee1dc7d5df99908a660aba1f8d8f6152c768e1331f27deb9ff1",
+      "owner_approved_sample": true,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": "Approved original retained unchanged; ball slightly overlaps lower-right outside of b."
+    },
+    {
+      "id": "letters-C",
+      "sha256": "65e369299e7e5cb037df62c9264f65bb63c8e4fe5350221517b1a255450f1f2b",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": ""
+    },
+    {
+      "id": "letters-D",
+      "sha256": "0e2e0b6fa3cfd6fe4558d13bd3f0d64dca9f7b3289bbb906a13bf2bd2b6e92f2",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": ""
+    },
+    {
+      "id": "letters-E",
+      "sha256": "35ee61a0aee2c0ecf8ad565ae81455478fb010cd42f3ad46fcb0679c99104564",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": ""
+    },
+    {
+      "id": "letters-F",
+      "sha256": "e6062771d4730edd7f0e71d864e7df5d9aeba66eb4881a4f66adc6dca93f51d3",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": ""
+    },
+    {
+      "id": "letters-G",
+      "sha256": "479e48c03aecae64568db980eeb570e05f04d29d658b70298b1bfda1e8849e05",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": ""
+    },
+    {
+      "id": "letters-H",
+      "sha256": "46da9a163d018057126fe41a67d02581ed08c41ef2112470b7a22432a8068c3b",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": ""
+    },
+    {
+      "id": "letters-I",
+      "sha256": "4b1eef3bf2560399f9afd5e8af6b4530aa79a6bfee84cddf297a0d40603fcad1",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": ""
+    },
+    {
+      "id": "letters-J",
+      "sha256": "0a09126fac86f694cabf8b8f62f77729525199d563c168dfb91477d3dc36a266",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": ""
+    },
+    {
+      "id": "letters-K",
+      "sha256": "909b41ecf64f829196cedb32f810f9eed9a3497857c355a1f421e3e4acf8dd76",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": ""
+    },
+    {
+      "id": "letters-L",
+      "sha256": "d625723ee0510cd863e7a127933332528c508dd46812cadca3eb86e283dd1884",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": ""
+    },
+    {
+      "id": "letters-M",
+      "sha256": "61d782c0a855529f902b8046c9087ec2433c8f3118e78edb09347ff905d6da6c",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": ""
+    },
+    {
+      "id": "letters-N",
+      "sha256": "4f1580c644c58a01ecc0a7a7c12ac8f32d700a07e327ddf1615f9ee2e76abace",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": ""
+    },
+    {
+      "id": "letters-O",
+      "sha256": "a596cd4c5b512193a9a87b825c77252b4dc37a852fef61ac99fc7fa507fd4431",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": ""
+    },
+    {
+      "id": "letters-P",
+      "sha256": "af7b1964506c1065b801d2aa95270f7a3e45b4a7373c9e05681d3543c005dbb0",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": ""
+    },
+    {
+      "id": "letters-Q",
+      "sha256": "3f122eb642451d8af8fb22b8ddf971ba194f1356c178b7dc5915d0b87b25e0a2",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": ""
+    },
+    {
+      "id": "letters-R",
+      "sha256": "da441eef86a0206856523cfb1def1b1d4a55fd6ef08c86737eed575f1ebdfd07",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": ""
+    },
+    {
+      "id": "letters-S",
+      "sha256": "a4ff83f4abd6b7f6aea5c48ccf868731bc2e7f630532d8faefb2d92323608c57",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": ""
+    },
+    {
+      "id": "letters-T",
+      "sha256": "e000ac2fc5e10b981e780508d9013c7519f0704fac99429cde45387a635ac2c8",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": ""
+    },
+    {
+      "id": "letters-U",
+      "sha256": "7a7034f137f830efe37972b2c12f662079c9d6da0dce6b066530c0ffa5fce607",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": ""
+    },
+    {
+      "id": "letters-V",
+      "sha256": "32a4739fbf270dbddde582907172b6e0bcfe6223eaa135ba6769a617aa9ea9f0",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": ""
+    },
+    {
+      "id": "letters-W",
+      "sha256": "30d605870678b44a4acc7ad80b14de7876f1c3bb2e8998deebb41fee09a73d52",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": ""
+    },
+    {
+      "id": "letters-X",
+      "sha256": "fbfc3a78961ebcab3b239abbc39db37f8bb25c21c462ae269c9e92dbe24c275f",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": ""
+    },
+    {
+      "id": "letters-Y",
+      "sha256": "908ee4bea3cc2b60c4767b7a5b03f41b14100191c7c15cf8944f5661856338b1",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": ""
+    },
+    {
+      "id": "letters-Z",
+      "sha256": "738f1b7416ae23b4d3b4f126585ded2918a44163761cbae5a6415963a308d22e",
+      "owner_approved_sample": false,
+      "agent_visual_check": "Readable uppercase/lowercase pair and matching association",
+      "count": null,
+      "notes": ""
+    }
+  ]
+}

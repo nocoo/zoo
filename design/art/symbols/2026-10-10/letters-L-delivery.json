@@ -1,0 +1,25 @@
+{
+  "source_sha256": "d625723ee0510cd863e7a127933332528c508dd46812cadca3eb86e283dd1884",
+  "source": "design/art/symbols/2026-10-10/letters-L/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-L-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1667010,
+      "sha256": "64077c40fdf9e07679aef68657ad92305d81615a4efa4dee509831fc55dc7495"
+    },
+    {
+      "path": "public/art/hd/letters-L-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 182104,
+      "sha256": "510b098f1f5a96d4fa99247c97fa82808bd3083adf52227b18cea998f4664f16"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "source_sha256": "a596cd4c5b512193a9a87b825c77252b4dc37a852fef61ac99fc7fa507fd4431",
+  "source": "design/art/symbols/2026-10-10/letters-O/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-O-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1633912,
+      "sha256": "f10a1e255ef096ab2b4efa2e9517bd1d77a49839fdcd15f1f6bae992887b2fd7"
+    },
+    {
+      "path": "public/art/hd/letters-O-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 188348,
+      "sha256": "8d6c078ee9907f8f7721404fbf9c6d52ba288b7d6f12fe7c7c6db339214413c0"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "source_sha256": "738f1b7416ae23b4d3b4f126585ded2918a44163761cbae5a6415963a308d22e",
+  "source": "design/art/symbols/2026-10-10/letters-Z/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-Z-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1529430,
+      "sha256": "0f43a549c21e07d370d9dd3c893e5d693700018fcbf6384b3e694a4ef7c8f9f8"
+    },
+    {
+      "path": "public/art/hd/letters-Z-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 163100,
+      "sha256": "7dffd912779b4c69edefcbfa8dc6df35d1a776c9943f2aaccebfbe05a5a2b0b2"
+    }
+  ]
+}

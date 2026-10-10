@@ -14,7 +14,7 @@ Favorites stay in the current browser's local storage. There are no accounts, an
 - 176 cards across eight categories, with pinyin or letter case, a name and a short description.
 - Full-viewport pictures with swipes, previous/next controls and desktop arrow keys; Escape or Close restores focus to the original card.
 - Animal habitat filters, number pages, random exploration, device-local favorites and separate manual Mandarin/English playback buttons. Opening and switching cards stay silent.
-- Each of 120 illustrations has a 640 × 560 thumbnail and a native 2048 × 1792 full-screen WebP with the two previous and two next images preloaded in the viewer; numbers and letters use native text.
+- Each of 176 illustrations has a 640 × 560 thumbnail and a native 2048 × 1792 full-screen WebP with the two previous and two next images preloaded in the viewer; numbers include matching object counts and letters include familiar associations.
 - iPhone Home Screen installation, bounded offline use and a header link to the Hexly project archive.
 
 | Category | Cards |
@@ -89,7 +89,7 @@ Existing Chromium smoke checks cover category selection, filters, favorites pers
 - [HD illustration originals and export workflow](../design/art/hd/README.md)
 - [Hexly project archive](https://hexly.ai/projects/zoo)
 
-The 240 lossless delivery files in `public/art/hd/` total approximately 246 MiB; the initial page does not download the entire collection. `public/art/hero.webp` preserves the original hero; prior atlas-resolution assets are archived in `design/art/legacy-delivery/`. `design/art/` retains original PNG generations, prompts, row-major subject orders, processing scripts and contact sheets. Card illustrations were made with Azure OpenAI `gpt-image-2.5-sunburst` through the Workflow image-generation process. The UI library and icon package retain MIT notices in their distributions.
+The 176 illustrations in `public/art/hd/` each have full-size and thumbnail delivery files; the initial page does not download the entire collection. `public/art/hero.webp` preserves the original hero; prior atlas-resolution assets are archived in `design/art/legacy-delivery/`. `design/art/` retains original PNG generations, prompts, row-major subject orders, processing scripts and contact sheets. Card illustrations were made with Azure OpenAI `gpt-image-2.5-sunburst` through the Workflow image-generation process. The UI library and icon package retain MIT notices in their distributions.
 
 ## License
 

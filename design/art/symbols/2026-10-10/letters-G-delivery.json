@@ -1,0 +1,25 @@
+{
+  "source_sha256": "479e48c03aecae64568db980eeb570e05f04d29d658b70298b1bfda1e8849e05",
+  "source": "design/art/symbols/2026-10-10/letters-G/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-G-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1885482,
+      "sha256": "d5073edfa31d113d3588e007fdd5792aaaf468efddfd3aa91fd79b10eac6b7c5"
+    },
+    {
+      "path": "public/art/hd/letters-G-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 210684,
+      "sha256": "2ffbe4506f0a762eac7f31cd41642f168149b6ccdc0ebb4d1b64ac25fde17d9d"
+    }
+  ]
+}

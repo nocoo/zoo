@@ -1,0 +1,25 @@
+{
+  "source_sha256": "fed26fe02f3651aba60fb4099f71d2fc639423a0e333c6dda6f44a3f1e7e378d",
+  "source": "design/art/symbols/2026-10-10/numbers-8/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/numbers-8-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1709980,
+      "sha256": "76498bee02b85d9ea8e8dfced4d308b0f9b2ba665fcb55bc927b94b2da84ea8c"
+    },
+    {
+      "path": "public/art/hd/numbers-8-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 196500,
+      "sha256": "716e1b68562d2376bcd1c535992bc54f060b2b2aa680997016e49222a2e19101"
+    }
+  ]
+}

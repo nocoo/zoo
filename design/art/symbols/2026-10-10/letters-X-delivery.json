@@ -1,0 +1,25 @@
+{
+  "source_sha256": "fbfc3a78961ebcab3b239abbc39db37f8bb25c21c462ae269c9e92dbe24c275f",
+  "source": "design/art/symbols/2026-10-10/letters-X/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-X-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1634004,
+      "sha256": "352b32b029e179f851ee45fb30b3005ff88f1c6e8971c29a2137974ccf42d938"
+    },
+    {
+      "path": "public/art/hd/letters-X-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 185072,
+      "sha256": "395a5720f576aaadfa2fb659cf703664b9038791a5e57e99687f1d9d2a120b21"
+    }
+  ]
+}

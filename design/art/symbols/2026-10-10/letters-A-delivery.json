@@ -1,0 +1,25 @@
+{
+  "source_sha256": "8e3eabded488f097c663f4c2300af4148173bca78b1e0b235cf9c05aecbb17b9",
+  "source": "design/art/symbol-studies/2026-10-10-162535/letters-A/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-A-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1552626,
+      "sha256": "ee737033b15b518cab56358f227567e2f43205e8d0a80645133d7e4a53476a4d"
+    },
+    {
+      "path": "public/art/hd/letters-A-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 173434,
+      "sha256": "a56f3736a80302a1b4686573fcfdc0ec4d262c860e419d32ce3b7dd469f97918"
+    }
+  ]
+}

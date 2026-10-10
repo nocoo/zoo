@@ -1,0 +1,25 @@
+{
+  "source_sha256": "46da9a163d018057126fe41a67d02581ed08c41ef2112470b7a22432a8068c3b",
+  "source": "design/art/symbols/2026-10-10/letters-H/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-H-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1694370,
+      "sha256": "d83f94d4bb4e08102a2897792586eef83e66f5a2a31c0a74fb02799a9f327b5e"
+    },
+    {
+      "path": "public/art/hd/letters-H-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 180028,
+      "sha256": "9bb88ed7b53e7485d3bdbd58eb949440b1d302c79211ec1472a9f81594c1bfe5"
+    }
+  ]
+}

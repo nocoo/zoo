@@ -1,0 +1,25 @@
+{
+  "source_sha256": "e000ac2fc5e10b981e780508d9013c7519f0704fac99429cde45387a635ac2c8",
+  "source": "design/art/symbols/2026-10-10/letters-T/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-T-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1367640,
+      "sha256": "8082a4aefb257204d8bbe6c80de9b1ae4513fa9fe0380ac5feb909620671e04b"
+    },
+    {
+      "path": "public/art/hd/letters-T-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 147200,
+      "sha256": "58f8dcd4908ce8c64a5be088d1b3020b099919c3e1aba3c0d1c29fd0fbc8fc32"
+    }
+  ]
+}

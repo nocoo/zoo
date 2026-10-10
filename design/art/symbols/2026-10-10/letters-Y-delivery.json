@@ -1,0 +1,25 @@
+{
+  "source_sha256": "908ee4bea3cc2b60c4767b7a5b03f41b14100191c7c15cf8944f5661856338b1",
+  "source": "design/art/symbols/2026-10-10/letters-Y/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-Y-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1610462,
+      "sha256": "e0af9463a2291a7a962e1ac2fa0602f3a89172205620c3afd7bfe535aee8c24b"
+    },
+    {
+      "path": "public/art/hd/letters-Y-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 180880,
+      "sha256": "97818e84e2d401a2084abe79fc3728a51f18028474940ebef480a7c2f0340181"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "source_sha256": "0a09126fac86f694cabf8b8f62f77729525199d563c168dfb91477d3dc36a266",
+  "source": "design/art/symbols/2026-10-10/letters-J/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-J-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1674590,
+      "sha256": "50fff6af4222fcd351fd094d5cd054804f8f2d8620f6fb6091ca652fe161abb8"
+    },
+    {
+      "path": "public/art/hd/letters-J-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 186472,
+      "sha256": "b469233736d054c29737dbcd6f527cd87ec63029998f1b48405152b291059f35"
+    }
+  ]
+}

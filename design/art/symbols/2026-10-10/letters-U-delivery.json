@@ -1,0 +1,25 @@
+{
+  "source_sha256": "7a7034f137f830efe37972b2c12f662079c9d6da0dce6b066530c0ffa5fce607",
+  "source": "design/art/symbols/2026-10-10/letters-U/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-U-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1646350,
+      "sha256": "f49c971229aaa5623ae10694c67409bee13fc46245074bb980ddb73788c9552e"
+    },
+    {
+      "path": "public/art/hd/letters-U-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 182704,
+      "sha256": "17d63b09cdd3fc2613631bddb1429e1e4b912fee6badc523b5268c24a9e30f34"
+    }
+  ]
+}

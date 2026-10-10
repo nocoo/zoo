@@ -1,0 +1,25 @@
+{
+  "source_sha256": "4b1eef3bf2560399f9afd5e8af6b4530aa79a6bfee84cddf297a0d40603fcad1",
+  "source": "design/art/symbols/2026-10-10/letters-I/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-I-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1655776,
+      "sha256": "cf140b0ce53d9b5f4c824ba80826b65bf8f1f302e6646e2a95044555c66b5416"
+    },
+    {
+      "path": "public/art/hd/letters-I-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 183464,
+      "sha256": "f642e95ec9fbc6d7ccc960a91065e8db27b25b9126560c1c87455c7828ae1c0d"
+    }
+  ]
+}

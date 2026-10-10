@@ -24,3 +24,9 @@ uv run --with pillow python design/art/symbols/process.py --check
 Review all native glyphs and number counts before export. Number illustrations must show exactly their numeral's quantity; count row by row, especially 11-30. Alphabet cards show the standard uppercase/lowercase pair and an English association; do not confuse letters with objects or allow objects to obscure distinguishing strokes. Approved samples stay immutable even if later styles differ slightly.
 
 Exports reuse the established edge-connected cream-paper normalization, lossless native 2048 x 1792 WebP and 640 x 560 thumbnails. Delivery checksums live in the batch directory, not the original approved study. No upscaling or sharpening. Old audio files remain preserved; the active content limit automatically restricts future speech generation to 1-30.
+
+## Completion Evidence
+
+All 56 native originals are complete: 52 new generations, no retries or failures, plus four unchanged owner-approved PNGs verified against commit `a965ba2`. The agent checked number quantities row by row and every uppercase/lowercase pair; `visual-review.json` records this separately from owner approval. Ten review sheets preserve the overview. The 112 delivery files total approximately 104.30 MiB.
+
+Local integration uses the existing image renderer for all 176 active cards. Content, build, PWA, recorded-player and mocked schedule checks passed. Chromium and WebKit checked the three ten-card number pages, the 30-card ceiling, number 30 and letter Z native 2048 px image decoding, silent navigation, Mandarin/English audio, and 320/390/844/1440 px viewer layouts. This is basic validation, not a full quality audit. No production deployment was performed.

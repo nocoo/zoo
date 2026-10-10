@@ -1,0 +1,25 @@
+{
+  "source_sha256": "32a4739fbf270dbddde582907172b6e0bcfe6223eaa135ba6769a617aa9ea9f0",
+  "source": "design/art/symbols/2026-10-10/letters-V/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-V-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1515834,
+      "sha256": "9f217cc0773e044b802f25bf08af09d4676cc337d7d567baad328bd67b872aa9"
+    },
+    {
+      "path": "public/art/hd/letters-V-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 169110,
+      "sha256": "d3b48dfd4ed3302b5a0fcfcd020a237ced3b0f537624a8571e8a64c073f6fa92"
+    }
+  ]
+}

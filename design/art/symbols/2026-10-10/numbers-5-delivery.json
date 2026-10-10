@@ -1,0 +1,25 @@
+{
+  "source_sha256": "a1fb6288bc1b8bf5c5906e3cf6e651063270dc623fee1c8374839a78a87b8ba8",
+  "source": "design/art/symbols/2026-10-10/numbers-5/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/numbers-5-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1411492,
+      "sha256": "ca5da0402fc3ba315a8fda7546e56cf094377b7019bb8ec05ec20b0a14daf7a0"
+    },
+    {
+      "path": "public/art/hd/numbers-5-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 151954,
+      "sha256": "3bce31ac7cf9415d191a607b5a1ab64d7258323f1aa5a0b1f225d98e2e9e4ac5"
+    }
+  ]
+}

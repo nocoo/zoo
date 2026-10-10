@@ -14,7 +14,7 @@ Zoo 是一个静态网页应用，用纸感卡通插画帮助孩子认识身边�
 - 176 张认知卡，覆盖八个分类；卡片包含拼音或字母大小写、名称及简短介绍。
 - 全屏看图，支持左右滑动、前后翻页及电脑方向键；Escape 或关闭按钮返回原卡片并恢复焦点。
 - 动物生活环境筛选、数字分页、随机探索、本机收藏及独立的中英文点读按钮；打开或切换卡片不自动朗读。
-- 120 张插画分别提供 640 × 560 缩略图和原生 2048 × 1792 全屏 WebP，详情页预加载前后各两张图片；数字和字母使用原生文字。
+- 176 张插画分别提供 640 × 560 缩略图和原生 2048 × 1792 全屏 WebP，详情页预加载前后各两张图片；数字搭配对应数量的物品，字母搭配联想插画。
 - 可添加到 iPhone 主屏幕，有限离线使用；右上角提供 Hexly 项目档案入口。
 
 | 分类 | 卡片数量 |
@@ -89,7 +89,7 @@ npm run check:live
 - [高清插画原始记录与导出流程](design/art/hd/README.md)
 - [Hexly 项目档案](https://hexly.ai/projects/zoo)
 
-`public/art/hd/` 的 240 个无损交付文件合计约 246 MiB，首页不下载整个集合。`public/art/hero.webp` 保留原始主视觉；旧图集分辨率素材归档在 `design/art/legacy-delivery/`。`design/art/` 保留原始 PNG、提示词、行优先主题顺序、处理脚本和联系表。卡片插画由 Azure OpenAI `gpt-image-2.5-sunburst` 通过 Workflow 图像生成流程制作。UI 库和图标包在各自分发包中保留 MIT 声明。
+`public/art/hd/` 包含 176 张插画的高清图与缩略图，首页不下载整个集合。`public/art/hero.webp` 保留原始主视觉；旧图集分辨率素材归档在 `design/art/legacy-delivery/`。`design/art/` 保留原始 PNG、提示词、行优先主题顺序、处理脚本和联系表。卡片插画由 Azure OpenAI `gpt-image-2.5-sunburst` 通过 Workflow 图像生成流程制作。UI 库和图标包在各自分发包中保留 MIT 声明。
 
 ## 许可证
 

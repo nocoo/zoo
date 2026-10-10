@@ -1,0 +1,25 @@
+{
+  "source_sha256": "35ee61a0aee2c0ecf8ad565ae81455478fb010cd42f3ad46fcb0679c99104564",
+  "source": "design/art/symbols/2026-10-10/letters-E/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-E-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1614428,
+      "sha256": "429abcfd6af17f4c9db9739dbfad882867f75f44f997891ecba8d4a9665d43a5"
+    },
+    {
+      "path": "public/art/hd/letters-E-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 174260,
+      "sha256": "3de1f93c5c5abe95d7773252981e62a87a10b6b98df9043bee6033d8d018f69b"
+    }
+  ]
+}

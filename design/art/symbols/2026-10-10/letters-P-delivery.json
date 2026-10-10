@@ -1,0 +1,25 @@
+{
+  "source_sha256": "af7b1964506c1065b801d2aa95270f7a3e45b4a7373c9e05681d3543c005dbb0",
+  "source": "design/art/symbols/2026-10-10/letters-P/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-P-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1831792,
+      "sha256": "b4c99b9fd88cc1688cd25072c34c5bbde8feb2154f71818b42004e5d45df6482"
+    },
+    {
+      "path": "public/art/hd/letters-P-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 204448,
+      "sha256": "08da2c5bdd9fee4fcbfa359b5a370629e60a2a52d53f4db27a9c6a0baac15e1b"
+    }
+  ]
+}

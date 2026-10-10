@@ -1,0 +1,25 @@
+{
+  "source_sha256": "e74f4b7ad3e606d0791c2f619053b4fc6e1564ae95b48ec2eb410fcd8ffbd5ed",
+  "source": "design/art/symbols/2026-10-10/numbers-22/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/numbers-22-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1817590,
+      "sha256": "567c9a22898a3dc17309e98110e290bef94773f8c1e67a8ef1c22cadf2cae3cd"
+    },
+    {
+      "path": "public/art/hd/numbers-22-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 204860,
+      "sha256": "6ff29cdcffad36951236edd1b301d761e4d9d60dbc74f96eecb1090a59a2e55c"
+    }
+  ]
+}

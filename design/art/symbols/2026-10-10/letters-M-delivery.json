@@ -1,0 +1,25 @@
+{
+  "source_sha256": "61d782c0a855529f902b8046c9087ec2433c8f3118e78edb09347ff905d6da6c",
+  "source": "design/art/symbols/2026-10-10/letters-M/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-M-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1710916,
+      "sha256": "154996726d88ce37df5115c7c84ac4c5242353b10635e86f1a36b9ea66e80d7e"
+    },
+    {
+      "path": "public/art/hd/letters-M-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 188978,
+      "sha256": "192b5adb9c46b21b7d18450bddfa9b6dfd72db9f40efd2aa653b11b465fceec5"
+    }
+  ]
+}

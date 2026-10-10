@@ -1,0 +1,25 @@
+{
+  "source_sha256": "da441eef86a0206856523cfb1def1b1d4a55fd6ef08c86737eed575f1ebdfd07",
+  "source": "design/art/symbols/2026-10-10/letters-R/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-R-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1920956,
+      "sha256": "85043a335beae06b2b2e3580fc3ec3963733fe833d8af3a5e2d52a1b0bab1bbe"
+    },
+    {
+      "path": "public/art/hd/letters-R-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 208522,
+      "sha256": "67bfa27195f866f3774ca821d9ad62436c299710ff9b24ff5df65f1ddc1cad4e"
+    }
+  ]
+}

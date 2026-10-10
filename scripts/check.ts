@@ -36,8 +36,8 @@ for (const [value, label] of [[1, '一'], [10, '十'], [11, '十一'], [20, '二
 }
 assert.ok(!pictures.some(p => p.category === 'numbers' && p.value! > 30));
 assert.ok(existsSync('public/art/hero.webp'));
-assert.equal(pictures.filter(p => p.imageLarge).length, 120);
-assert.ok(pictures.every(p => p.category === 'numbers' || p.category === 'letters' || p.imageLarge));
+assert.equal(pictures.filter(p => p.imageLarge).length, 176);
+assert.ok(pictures.every(p => p.image && p.imageLarge));
 assert.equal(swipeStep(-90, 12), 1);
 assert.equal(swipeStep(90, 12), -1);
 assert.equal(swipeStep(30, 0), 0);
@@ -55,5 +55,6 @@ assert.deepEqual(neighborImages(animals, animals[0].id), [19, 1, 18, 2].map(i =>
 assert.deepEqual(neighborImages(animals.slice(0, 1), animals[0].id), []);
 assert.deepEqual(neighborImages(animals.slice(0, 2), animals[0].id), [animals[1].imageLarge]);
 assert.deepEqual(neighborImages([], 'missing'), []);
-assert.deepEqual(neighborImages(pictures.filter(p => p.category === 'numbers'), 'numbers-1'), []);
+const numbers = pictures.filter(p => p.category === 'numbers');
+assert.deepEqual(neighborImages(numbers, 'numbers-1'), [29, 1, 28, 2].map(i => numbers[i].imageLarge));
 console.log('检查通过：8 个分类、176 张内容卡、全部插画和数字读法。');

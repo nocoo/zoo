@@ -1,0 +1,25 @@
+{
+  "source_sha256": "9bc64998204b9ee1dc7d5df99908a660aba1f8d8f6152c768e1331f27deb9ff1",
+  "source": "design/art/symbol-studies/2026-10-10-162535/letters-B/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-B-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 2220298,
+      "sha256": "4159b3bd329fae9e3bff23a4e8962b44fd7e3a73a6e4f7af68be84f39a75c5ae"
+    },
+    {
+      "path": "public/art/hd/letters-B-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 240428,
+      "sha256": "679e05e1cf1cb781ddbbc987175d83721402f173e6abd2d15fa24c5c65789c0f"
+    }
+  ]
+}

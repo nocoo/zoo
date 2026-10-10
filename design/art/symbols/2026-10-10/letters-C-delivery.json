@@ -1,0 +1,25 @@
+{
+  "source_sha256": "65e369299e7e5cb037df62c9264f65bb63c8e4fe5350221517b1a255450f1f2b",
+  "source": "design/art/symbols/2026-10-10/letters-C/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-C-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1617052,
+      "sha256": "a876c2fc000af61b4509a692d367384fd6ea158f752126f0eb3b0df5a4844000"
+    },
+    {
+      "path": "public/art/hd/letters-C-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 182552,
+      "sha256": "c88e40ccee131d2bd32abcd55b5eb3291685aa48c3427aaf4096b9537db8c2ba"
+    }
+  ]
+}

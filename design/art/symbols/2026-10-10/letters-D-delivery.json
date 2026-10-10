@@ -1,0 +1,25 @@
+{
+  "source_sha256": "0e2e0b6fa3cfd6fe4558d13bd3f0d64dca9f7b3289bbb906a13bf2bd2b6e92f2",
+  "source": "design/art/symbols/2026-10-10/letters-D/raw/generated.png",
+  "processing": "Edge-connected paper normalization; native full-size lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/letters-D-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1855106,
+      "sha256": "5bde8747699ecadaf15a23a40d4fcd955b7f635b2a4816a24f921496b954529b"
+    },
+    {
+      "path": "public/art/hd/letters-D-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 206618,
+      "sha256": "394138f08cc2857f893cc91213f8247e7836712d396c020b247085ede38a3f0d"
+    }
+  ]
+}
