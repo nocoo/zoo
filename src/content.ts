@@ -1,8 +1,11 @@
+import { englishLabel, englishNumber } from './english.ts';
+
 export type CategoryId = 'animals' | 'numbers' | 'letters' | 'hanzi' | 'phrases' | 'weather' | 'objects' | 'fruits';
 export type Picture = {
   id: string;
   category: CategoryId;
   name: string;
+  english: string;
   pronunciation: string;
   description: string;
   image?: string;
@@ -120,16 +123,16 @@ export function chineseNumber(value: number): string {
 export const pictures: Picture[] = [
   ...Object.entries(rows).flatMap(([category, items]) => items.map(([name, pronunciation, description, group], index) => ({
     id: `${category}-${String(index + 1).padStart(2, '0')}`, category: category as CategoryId,
-    name, pronunciation, description, group,
+    name, english: englishLabel(category, index), pronunciation, description, group,
     image: `/art/hd/${category}-${String(index + 1).padStart(2, '0')}-thumb.webp`,
     imageLarge: `/art/hd/${category}-${String(index + 1).padStart(2, '0')}-full.webp`,
   }))),
   ...Array.from({ length: 100 }, (_, i) => ({
-    id: `numbers-${i + 1}`, category: 'numbers' as const, name: String(i + 1), value: i + 1,
+    id: `numbers-${i + 1}`, category: 'numbers' as const, name: String(i + 1), english: englishNumber(i + 1), value: i + 1,
     pronunciation: chineseNumber(i + 1), description: `这是${chineseNumber(i + 1)}。和爸爸妈妈一起，数一数下面的小圆点。`,
   })),
   ...Array.from('ABCDEFGHIJKLMNOPQRSTUVWXYZ', (name) => ({
-    id: `letters-${name}`, category: 'letters' as const, name, pronunciation: name.toLowerCase(),
+    id: `letters-${name}`, category: 'letters' as const, name, english: name, pronunciation: name.toLowerCase(),
     description: `这是大写字母 ${name}，旁边是它的小写 ${name.toLowerCase()}。找一找，它们长得一样吗？`,
   })),
 ];
