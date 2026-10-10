@@ -17,7 +17,7 @@ export type Picture = {
 
 export const categories: { id: CategoryId; name: string; subtitle: string; title: string; hint: string; tone: string }[] = [
   { id: 'animals', name: '动物朋友', subtitle: '认识可爱的新朋友', title: '今天，认识哪位动物朋友？', hint: '点一点小动物，听听它的名字吧', tone: 'mint' },
-  { id: 'numbers', name: '认识数字', subtitle: '一起数一数', title: '一、二、三，一起数一数！', hint: '从 1 到 100，慢慢发现数字的秘密', tone: 'peach' },
+  { id: 'numbers', name: '认识数字', subtitle: '一起数一数', title: '一、二、三，一起数一数！', hint: '从 1 到 30，慢慢发现数字的秘密', tone: 'peach' },
   { id: 'letters', name: '认识字母', subtitle: '字母也有好朋友', title: '和 ABC 交个朋友吧！', hint: '26 个字母，看看大写和小写有什么不同', tone: 'blue' },
   { id: 'hanzi', name: '汉字宝宝', subtitle: '小小汉字大世界', title: '在图画里，遇见汉字宝宝', hint: '看一看、指一指，不用急着记住哦', tone: 'rose' },
   { id: 'phrases', name: '开口说说', subtitle: '每天学说一句话', title: '把小小的想法，说出来', hint: '和爸爸妈妈一起，试着说一说', tone: 'yellow' },
@@ -132,7 +132,7 @@ export const pictures: Picture[] = [
     image: `/art/hd/${category}-${String(index + 1).padStart(2, '0')}-thumb.webp`,
     imageLarge: `/art/hd/${category}-${String(index + 1).padStart(2, '0')}-full.webp`,
   }))),
-  ...Array.from({ length: 100 }, (_, i) => ({
+  ...Array.from({ length: 30 }, (_, i) => ({
     id: `numbers-${i + 1}`, category: 'numbers' as const, name: String(i + 1), english: englishNumber(i + 1), value: i + 1,
     pronunciation: chineseNumber(i + 1), description: `这是${chineseNumber(i + 1)}。和爸爸妈妈一起，数一数下面的小圆点。`,
   })),

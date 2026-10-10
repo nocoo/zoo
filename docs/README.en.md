@@ -5,13 +5,13 @@
 
 ## What It Does
 
-Zoo is a static web app that introduces the everyday world through paper-textured cartoon illustrations. There are no quizzes, rankings, ads or login. Keep sessions short and shared with an adult; numbers 1–100, letters and Chinese characters are optional exploration, not developmental requirements for this age group.
+Zoo is a static web app that introduces the everyday world through paper-textured cartoon illustrations. There are no quizzes, rankings, ads or login. Keep sessions short and shared with an adult; numbers 1–30, letters and Chinese characters are optional exploration, not developmental requirements for this age group.
 
 Favorites stay in the current browser's local storage. There are no accounts, analytics, advertisements or microphone requests. Narration plays pregenerated MP3 files only. Completed Gemini recordings are preserved; temporary Edge recordings fill missing Mandarin and English audio. There is no browser speech synthesis or runtime TTS.
 
 ## Features
 
-- 246 cards across eight categories, with pinyin or letter case, a name and a short description.
+- 176 cards across eight categories, with pinyin or letter case, a name and a short description.
 - Full-viewport pictures with swipes, previous/next controls and desktop arrow keys; Escape or Close restores focus to the original card.
 - Animal habitat filters, number pages, random exploration, device-local favorites and separate manual Mandarin/English playback buttons. Opening and switching cards stay silent.
 - Each of 120 illustrations has a 640 × 560 thumbnail and a native 2048 × 1792 full-screen WebP with the two previous and two next images preloaded in the viewer; numbers and letters use native text.
@@ -20,7 +20,7 @@ Favorites stay in the current browser's local storage. There are no accounts, an
 | Category | Cards |
 | --- | ---: |
 | Animal friends | 20 |
-| Numbers | 100 |
+| Numbers | 30 |
 | Letters | 26 |
 | Chinese characters | 20 |
 | Everyday phrases | 20 |

@@ -47,7 +47,7 @@ export function useIsland() {
   const items = pictures.filter(p => collection ? favorites.includes(p.id) :
     p.category === category &&
     (category !== 'animals' || group === '全部朋友' || p.group === group) &&
-    (category !== 'numbers' || (p.value! > numberPage * 20 && p.value! <= (numberPage + 1) * 20)));
+    (category !== 'numbers' || (p.value! > numberPage * 10 && p.value! <= (numberPage + 1) * 10)));
 
   function speak(picture: Picture, language: 'zh' | 'en') {
     setMessage('');

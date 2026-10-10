@@ -75,7 +75,7 @@ export function App() {
 
         <section className="explore-section" id="explore" aria-labelledby="explore-heading">
           <div className="explore-heading-row">
-            <div><div className="section-eyebrow"><span className={`tiny-dot tone-${active.tone}`} />{island.collection ? '装进口袋里的喜欢' : active.name}<span className="count-badge">{island.collection ? island.items.length : island.category === 'numbers' ? 100 : island.category === 'letters' ? 26 : 20} 张认知卡</span></div>
+            <div><div className="section-eyebrow"><span className={`tiny-dot tone-${active.tone}`} />{island.collection ? '装进口袋里的喜欢' : active.name}<span className="count-badge">{island.collection ? island.items.length : island.category === 'numbers' ? 30 : island.category === 'letters' ? 26 : 20} 张认知卡</span></div>
               <h2 id="explore-heading">{island.collection ? '喜欢的朋友，都在这里' : active.title}</h2>
               <p>{island.collection ? '一点小小的喜欢，值得再看一次' : active.hint}</p></div>
             <Button type="default" icon={<StarIcon size={18} color="currentColor" />} disabled={!island.items.length} onClick={island.surprise}>随便认一个</Button>
@@ -85,7 +85,7 @@ export function App() {
             <div className="filter-buttons">{animalGroups.map(group => <Button key={group} size="small" type={island.group === group ? 'primary' : 'text'} aria-pressed={island.group === group} onClick={() => island.setGroup(group)}>{group}</Button>)}</div>
             <span className="gentle-note"><MusicIcon size={15} color="currentColor" /> 点击卡片，看图认朋友</span>
           </div>}
-          {!island.collection && island.category === 'numbers' && <div className="filter-row"><div className="filter-buttons">{Array.from({ length: 5 }, (_, index) => <Button key={index} size="small" type={island.numberPage === index ? 'primary' : 'text'} aria-pressed={island.numberPage === index} onClick={() => island.setNumberPage(index)}>{index * 20 + 1}–{(index + 1) * 20}</Button>)}</div><span className="gentle-note">先从 1–5 开始，不着急</span></div>}
+          {!island.collection && island.category === 'numbers' && <div className="filter-row"><div className="filter-buttons">{Array.from({ length: 3 }, (_, index) => <Button key={index} size="small" type={island.numberPage === index ? 'primary' : 'text'} aria-pressed={island.numberPage === index} onClick={() => island.setNumberPage(index)}>{index * 10 + 1}–{(index + 1) * 10}</Button>)}</div><span className="gentle-note">先从 1–5 开始，不着急</span></div>}
 
           <div className="picture-grid">
             {island.items.map((picture, index) => <article className={`picture-card tone-${['yellow', 'mint', 'rose', 'blue', 'peach'][index % 5]}`} key={picture.id} style={{ animationDelay: `${Math.min(index, 9) * 30}ms` }}>
@@ -111,7 +111,7 @@ export function App() {
       {island.selected && <PictureViewer island={island} />}
 
       <Modal open={island.parentOpen} variant="game" width="min(560px, 96vw)" title="给大朋友的小纸条" onClose={() => island.setParentOpen(false)} typewriter={false} footer={<Button type="primary" onClick={() => island.setParentOpen(false)}>知道啦，一起玩吧</Button>}>
-        <div className="parent-content"><p>这里不是小课堂，而是你和宝宝一起发现世界的小角落。</p><h3>慢一点，也很好</h3><p>1.5–2 岁以真实生活、亲子共读和实物为主；如果使用屏幕，请全程陪伴。2–3 岁也建议短时共同观看，每次 5–10 分钟，累了就休息。</p><h3>看一看，再找一找</h3><p>先从宝宝熟悉的动物、物品和 1–5 开始。数字 1–100、字母和汉字只是供探索，不是这个年龄必须掌握的目标。不测验、不排名。</p><p>打开和切换卡片保持安静，点击中文或英文按钮才播放对应录音。</p><h3>放到手机主屏幕</h3><p>在 iPhone 的 Safari 中点“分享”，选择“添加到主屏幕”，以后就能像打开 App 一样进入小岛。</p><p>联网打开过后，可以离线进入小岛并查看部分最近浏览的图片；没有保存的图片需要联网。系统可能自动清理缓存。更新后请关闭小岛的所有窗口再打开。</p><p className="privacy-note">无账号、无广告、无行为统计。收藏仅保存在这台设备。朗读播放预先生成的中英文录音，不使用浏览器实时合成。录音需联网加载。</p></div>
+        <div className="parent-content"><p>这里不是小课堂，而是你和宝宝一起发现世界的小角落。</p><h3>慢一点，也很好</h3><p>1.5–2 岁以真实生活、亲子共读和实物为主；如果使用屏幕，请全程陪伴。2–3 岁也建议短时共同观看，每次 5–10 分钟，累了就休息。</p><h3>看一看，再找一找</h3><p>先从宝宝熟悉的动物、物品和 1–5 开始。数字 1–30、字母和汉字只是供探索，不是这个年龄必须掌握的目标。不测验、不排名。</p><p>打开和切换卡片保持安静，点击中文或英文按钮才播放对应录音。</p><h3>放到手机主屏幕</h3><p>在 iPhone 的 Safari 中点“分享”，选择“添加到主屏幕”，以后就能像打开 App 一样进入小岛。</p><p>联网打开过后，可以离线进入小岛并查看部分最近浏览的图片；没有保存的图片需要联网。系统可能自动清理缓存。更新后请关闭小岛的所有窗口再打开。</p><p className="privacy-note">无账号、无广告、无行为统计。收藏仅保存在这台设备。朗读播放预先生成的中英文录音，不使用浏览器实时合成。录音需联网加载。</p></div>
       </Modal>
       {island.message && !island.selected && <div className="toast" role="status">{island.message}</div>}
     </>
