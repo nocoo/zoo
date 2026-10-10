@@ -1,0 +1,106 @@
+name: CI and Deploy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Check
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '26.10.0'
+          cache: npm
+      - run: npm ci
+      - name: Basic checks
+        run: |
+          npm run check
+          node --experimental-strip-types scripts/check-audio-player.ts
+          python3 scripts/check-audio-schedule.py
+      - name: Build and verify PWA
+        run: |
+          npm run build
+          node scripts/check-pwa.mjs
+          npm run check:live
+          ./node_modules/.bin/wrangler deploy --dry-run
+
+  deploy:
+    name: Deploy Production
+    needs: check
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    concurrency:
+      group: zoo-production
+      cancel-in-progress: false
+    environment:
+      name: production
+      url: https://zoo.hexly.ai
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Only deploy latest main
+        id: latest
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          latest=$(gh api "repos/$GITHUB_REPOSITORY/git/ref/heads/main" --jq '.object.sha')
+          if [ "$latest" = "$GITHUB_SHA" ]; then
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Skip superseded commit $GITHUB_SHA; main is $latest" >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Require deployment credential
+        if: steps.latest.outputs.deploy == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            echo '::error::Configure CLOUDFLARE_API_TOKEN in the production environment or repository Actions secrets.'
+            exit 1
+          fi
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        if: steps.latest.outputs.deploy == 'true'
+        with:
+          node-version: '26.10.0'
+          cache: npm
+      - if: steps.latest.outputs.deploy == 'true'
+        run: npm ci
+      - name: Build exact checked revision
+        if: steps.latest.outputs.deploy == 'true'
+        run: |
+          npm run build
+          node scripts/check-pwa.mjs
+      - name: Recheck latest main and deploy
+        if: steps.latest.outputs.deploy == 'true'
+        id: publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: d51a8fde361e4be31db17d8c56737c1f
+        run: |
+          latest=$(gh api "repos/$GITHUB_REPOSITORY/git/ref/heads/main" --jq '.object.sha')
+          if [ "$latest" != "$GITHUB_SHA" ]; then
+            echo "Skip superseded commit $GITHUB_SHA before upload" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          ./node_modules/.bin/wrangler deploy
+          echo "deployed=true" >> "$GITHUB_OUTPUT"
+      - name: Verify production revision and assets
+        if: steps.publish.outputs.deployed == 'true'
+        run: |
+          node scripts/verify-deployment.mjs https://zoo.hexly.ai "$GITHUB_SHA"
+          echo "Deployed and verified $GITHUB_SHA at https://zoo.hexly.ai" >> "$GITHUB_STEP_SUMMARY"
