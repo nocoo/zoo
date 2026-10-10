@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.1.1 - 2026-10-11
+
+- Limit number learning to 1-30 in three ten-card pages, with 176 active cards across all eight categories.
+- Replace native-text number and alphabet artwork with 56 matching paper-textured illustrations: retain the four approved samples and add 52 native 2048 x 1792 images with 640 x 560 thumbnails.
+- Pair numbers with exact matching object counts and uppercase/lowercase letters with familiar English associations; keep glyphs prominent in the immersive viewer.
+- Extend versioned image delivery and adjacent-image preloading to every number and letter, and remove the obsolete text-and-dot renderer.
+- Preserve all recorded audio and generation provenance; future scheduled Gemini runs follow the active 1-30 number range without regenerating archived clips.
+
 ## v1.1.0 - 2026-10-10
 
 - Add English labels and separate Mandarin/English playback controls across all 246 cards, with pinyin and Chinese number names in the immersive viewer.
