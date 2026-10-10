@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "鱼。小鱼摆摆尾巴，在水里游。",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 5.12,
+  "interaction_id": "v1_ChdEb2ZKYXN2TEctZUUwLWtQeU5DcnlRcxIXRG9mSmFzdkxHLWVFMC1rUHlOQ3J5UXM",
+  "origin": "generated",
+  "wav_sha256": "1d87f348d6efa7d1fe214224a4f0d7962b478df65f41430522f7eb46d3b6926c",
+  "mp3_sha256": "df08d3fe1b6862f81fcb7abd46275b4159846125eb9cb4b88799fe5a0b0bdac7"
+}
