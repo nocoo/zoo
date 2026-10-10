@@ -1,5 +1,11 @@
 # Retrospective
 
+## 2026-10-10 - HD production deployment
+
+Deployed application revision `c902fea` to `zoo.hexly.ai` using the existing assets-only Worker. Active Cloudflare version: `c97fd2cb-ece7-440d-9fbd-7af7b832096f`, deployed at 03:57 UTC. Wrangler uploaded 349 changed files after one internal upload retry. Content checks, all 120 image provenance checks, build and Wrangler dry run passed. Production Chromium checks decoded and navigated all 120 full-size images at 390 px / 3x and 1440 px / 2x without page errors or horizontal overflow. An actual image response returned HTTP 200 and `CF-Cache-Status: HIT`.
+
+The 120 full-size images total 221.78 MiB (median approximately 1.77 MiB, maximum 3.19 MiB); the 120 thumbnails total 23.92 MiB (median approximately 200 KiB). Retain Workers Static Assets: it already provides global caching and this fixed collection does not need independent object uploads. R2 would not reduce file sizes. Consider delivery compression separately if mobile transfer measurements justify it; consider R2 only for independently managed uploads or materially larger asset requirements. No bucket, DNS or billing change was made. Recorded speech remains incomplete (99/246) and the existing browser speech player remains in production; the daily local generation schedule is unchanged.
+
 ## 2026-10-10 - Image batch pacing
 
 A four-request image burst produced one Azure HTTP 429 even though the other three completed. Preserve both successful native images and the rejected request record, add explicit 35-second request-start spacing, and resume after cooling down. Bounded concurrency is not request-rate control; never repeat a batch wholesale or automatically retry an outcome-unknown paid generation.
