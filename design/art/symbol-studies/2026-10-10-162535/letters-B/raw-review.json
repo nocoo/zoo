@@ -1,0 +1,11 @@
+{
+  "status": "pending",
+  "imageSha256": "9bc64998204b9ee1dc7d5df99908a660aba1f8d8f6152c768e1331f27deb9ff1",
+  "recordedAt": "2026-10-10T08:32:04.827133+00:00",
+  "nextStep": "Show this untouched image to the owner immediately. Await confirmation before extraction, compositing, exports, or catalogue integration.",
+  "agentVisualReview": {
+    "glyphs": "Recognizable upright standard forms; large continuous strokes.",
+    "association": "One ball; slightly overlaps the lower-right outside of lowercase b.",
+    "ownerApproval": "pending"
+  }
+}

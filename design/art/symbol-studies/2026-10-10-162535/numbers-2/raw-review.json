@@ -1,0 +1,11 @@
+{
+  "status": "pending",
+  "imageSha256": "8aac6d3462306b03586e79881bee98120c12f0434b2f1d345d7dc84910757ba3",
+  "recordedAt": "2026-10-10T08:28:54.011422+00:00",
+  "nextStep": "Show this untouched image to the owner immediately. Await confirmation before extraction, compositing, exports, or catalogue integration.",
+  "agentVisualReview": {
+    "glyphs": "Recognizable upright standard forms; large continuous strokes.",
+    "association": "Exactly two separate ducks",
+    "ownerApproval": "pending"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "pending",
+  "imageSha256": "5377f5570f5d38a1625fa8b1cb317883999dc4ec71ea8440b41f1d74e70962c8",
+  "recordedAt": "2026-10-10T08:27:17.837728+00:00",
+  "nextStep": "Show this untouched image to the owner immediately. Await confirmation before extraction, compositing, exports, or catalogue integration.",
+  "agentVisualReview": {
+    "glyphs": "Recognizable upright standard forms; large continuous strokes.",
+    "association": "One apple",
+    "ownerApproval": "pending"
+  }
+}
