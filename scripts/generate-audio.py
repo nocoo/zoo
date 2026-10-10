@@ -1,13 +1,12 @@
 import argparse
 import base64
-from concurrent.futures import ThreadPoolExecutor
+import fcntl
 import hashlib
 import io
 import json
 from pathlib import Path
 import shutil
 import subprocess
-import threading
 import time
 import urllib.error
 import urllib.request
@@ -16,7 +15,6 @@ import wave
 ROOT = Path(__file__).resolve().parents[1]
 MODEL = "gemini-3.8-flash-tts"
 VOICE = "Sulafat"
-REQUEST_LOCK = threading.Lock()
 NEXT_REQUEST = 0.0
 STYLE = (
     "A gentle, warm adult female voice reading a picture book to a toddler. "
@@ -103,9 +101,8 @@ def generate(item, key, check_only):
                 data=json.dumps(payload).encode(),
                 headers={'x-goog-api-key': key, 'Content-Type': 'application/json'},
             )
-            with REQUEST_LOCK:
-                time.sleep(max(0, NEXT_REQUEST - time.monotonic()))
-                NEXT_REQUEST = time.monotonic() + 15
+            time.sleep(max(0, NEXT_REQUEST - time.monotonic()))
+            NEXT_REQUEST = time.monotonic() + 20
             try:
                 with urllib.request.urlopen(request, timeout=180) as response:
                     raw = response.read(16 * 1024 * 1024 + 1)
@@ -153,39 +150,85 @@ def generate(item, key, check_only):
     return identifier, f'/audio/{identifier}.mp3?v={digest[:12]}'
 
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--check', action='store_true', help='Validate existing files without credentials or writes')
-    args = parser.parse_args()
-    items = json.loads(subprocess.check_output([
-        'node', '--experimental-strip-types', '--input-type=module', '-e',
-        "import {pictures} from './src/content.ts'; import {audioTranscript} from './src/audio.ts'; "
-        "console.log(JSON.stringify(pictures.map(p=>({id:p.id,category:p.category,text:audioTranscript(p)}))))",
-    ], cwd=ROOT))
-    key = None
-    if not args.check:
-        if not shutil.which('ffmpeg'):
-            raise SystemExit('请先安装 ffmpeg。')
-        config = json.loads((Path.home() / '.config/his.fm/config.json').read_text())
-        key = config.get('speechKeys', {}).get('gemini')
-        if not key:
-            raise SystemExit('his.fm 未配置 Gemini Key。')
-        (ROOT / 'design/audio').mkdir(parents=True, exist_ok=True)
-        (ROOT / 'public/audio').mkdir(parents=True, exist_ok=True)
+def run_batch(items, key, check_only, max_new):
     manifest = {}
-    with ThreadPoolExecutor(max_workers=4) as executor:
-        for start in range(0, len(items), 4):
-            jobs = [executor.submit(generate, item, key, args.check) for item in items[start:start + 4]]
-            for job in jobs:
-                identifier, path = job.result()
-                manifest[identifier] = path
+    generated = 0
+    for item in items:
+        missing = not (ROOT / f"design/audio/{item['id']}.json").exists()
+        if missing and not check_only and generated >= max_new:
+            continue
+        identifier, path = generate(item, key, check_only)
+        manifest[identifier] = path
+        generated += int(missing)
+    if len(manifest) != len(items):
+        print(f'本轮完成，已校验 {len(manifest)}/{len(items)} 条；剩余留待下一轮。', flush=True)
+        return False
     path = ROOT / 'src/audio-manifest.json'
-    if args.check:
+    if check_only:
         if json.loads(path.read_text()) != manifest:
             raise ValueError('音频清单与文件不一致')
     else:
         atomic_write(path, (json.dumps(manifest, indent=2) + '\n').encode())
     print(f'全部 {len(manifest)} 条录音校验通过。', flush=True)
+    return True
+
+
+def scheduled_run(action, state_path, now):
+    state = json.loads(state_path.read_text()) if state_path.exists() else {}
+    if state.get('status') == 'complete' or now < state.get('next_run_after', 0):
+        print('定时任务无需运行：已完成或仍处于冷却期。', flush=True)
+        return
+    state = {'status': 'running', 'started_at': now, 'next_run_after': now + 23 * 3600}
+    atomic_write(state_path, (json.dumps(state, indent=2) + '\n').encode())
+    try:
+        state['status'] = 'complete' if action() else 'waiting'
+    except Exception:
+        state['status'] = 'failed'
+        raise
+    finally:
+        state['finished_at'] = time.time()
+        atomic_write(state_path, (json.dumps(state, indent=2) + '\n').encode())
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--check', action='store_true', help='Validate existing files without credentials or writes')
+    parser.add_argument('--scheduled', action='store_true', help='Generate up to 90 missing clips, once per 23 hours')
+    args = parser.parse_args()
+    if args.check and args.scheduled:
+        parser.error('--check and --scheduled cannot be combined')
+    items = json.loads(subprocess.check_output([
+        'node', '--experimental-strip-types', '--input-type=module', '-e',
+        "import {pictures} from './src/content.ts'; import {audioTranscript} from './src/audio.ts'; "
+        "console.log(JSON.stringify(pictures.map(p=>({id:p.id,category:p.category,text:audioTranscript(p)}))))",
+    ], cwd=ROOT))
+    if args.check:
+        run_batch(items, None, True, 0)
+        return
+
+    def action():
+        if not shutil.which('ffmpeg'):
+            raise ValueError('请先安装 ffmpeg。')
+        config = json.loads((Path.home() / '.config/his.fm/config.json').read_text())
+        key = config.get('speechKeys', {}).get('gemini')
+        if not key:
+            raise ValueError('his.fm 未配置 Gemini Key。')
+        (ROOT / 'design/audio').mkdir(parents=True, exist_ok=True)
+        (ROOT / 'public/audio').mkdir(parents=True, exist_ok=True)
+        return run_batch(items, key, False, 90 if args.scheduled else len(items))
+
+    runtime = ROOT / 'artifacts/audio-schedule'
+    runtime.mkdir(parents=True, exist_ok=True)
+    with (runtime / 'generation.lock').open('w') as lock:
+        try:
+            fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError:
+            print('已有语音生成进程在运行，本轮不重复启动。', flush=True)
+            return
+        if args.scheduled:
+            scheduled_run(action, runtime / 'state.json', time.time())
+        else:
+            action()
 
 
 if __name__ == '__main__':
