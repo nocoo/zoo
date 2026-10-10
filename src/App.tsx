@@ -28,7 +28,7 @@ export function App() {
       <header className="site-header">
         <div className="header-inner">
           <a className="brand" href="#" onClick={() => { island.chooseCategory('animals'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} aria-label="小小动物岛首页">
-            <span className="brand-mark"><BearIcon size={34} color="currentColor" /></span>
+            <img className="brand-mark" src="/icons/logo-80.png" width="51" height="51" alt="" />
             <span><strong>小小动物岛</strong><small>和好奇心一起长大</small></span>
           </a>
           <nav className="main-nav" aria-label="主导航">
