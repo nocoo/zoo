@@ -1,0 +1,338 @@
+[
+  {
+    "id": "numbers-1",
+    "source": "design/art/symbol-studies/2026-10-10-162535/numbers-1",
+    "approved": true,
+    "count": 1
+  },
+  {
+    "id": "numbers-2",
+    "source": "design/art/symbol-studies/2026-10-10-162535/numbers-2",
+    "approved": true,
+    "count": 2
+  },
+  {
+    "id": "numbers-3",
+    "source": "design/art/symbols/2026-10-10/numbers-3",
+    "approved": false,
+    "count": 3
+  },
+  {
+    "id": "numbers-4",
+    "source": "design/art/symbols/2026-10-10/numbers-4",
+    "approved": false,
+    "count": 4
+  },
+  {
+    "id": "numbers-5",
+    "source": "design/art/symbols/2026-10-10/numbers-5",
+    "approved": false,
+    "count": 5
+  },
+  {
+    "id": "numbers-6",
+    "source": "design/art/symbols/2026-10-10/numbers-6",
+    "approved": false,
+    "count": 6
+  },
+  {
+    "id": "numbers-7",
+    "source": "design/art/symbols/2026-10-10/numbers-7",
+    "approved": false,
+    "count": 7
+  },
+  {
+    "id": "numbers-8",
+    "source": "design/art/symbols/2026-10-10/numbers-8",
+    "approved": false,
+    "count": 8
+  },
+  {
+    "id": "numbers-9",
+    "source": "design/art/symbols/2026-10-10/numbers-9",
+    "approved": false,
+    "count": 9
+  },
+  {
+    "id": "numbers-10",
+    "source": "design/art/symbols/2026-10-10/numbers-10",
+    "approved": false,
+    "count": 10
+  },
+  {
+    "id": "numbers-11",
+    "source": "design/art/symbols/2026-10-10/numbers-11",
+    "approved": false,
+    "count": 11
+  },
+  {
+    "id": "numbers-12",
+    "source": "design/art/symbols/2026-10-10/numbers-12",
+    "approved": false,
+    "count": 12
+  },
+  {
+    "id": "numbers-13",
+    "source": "design/art/symbols/2026-10-10/numbers-13",
+    "approved": false,
+    "count": 13
+  },
+  {
+    "id": "numbers-14",
+    "source": "design/art/symbols/2026-10-10/numbers-14",
+    "approved": false,
+    "count": 14
+  },
+  {
+    "id": "numbers-15",
+    "source": "design/art/symbols/2026-10-10/numbers-15",
+    "approved": false,
+    "count": 15
+  },
+  {
+    "id": "numbers-16",
+    "source": "design/art/symbols/2026-10-10/numbers-16",
+    "approved": false,
+    "count": 16
+  },
+  {
+    "id": "numbers-17",
+    "source": "design/art/symbols/2026-10-10/numbers-17",
+    "approved": false,
+    "count": 17
+  },
+  {
+    "id": "numbers-18",
+    "source": "design/art/symbols/2026-10-10/numbers-18",
+    "approved": false,
+    "count": 18
+  },
+  {
+    "id": "numbers-19",
+    "source": "design/art/symbols/2026-10-10/numbers-19",
+    "approved": false,
+    "count": 19
+  },
+  {
+    "id": "numbers-20",
+    "source": "design/art/symbols/2026-10-10/numbers-20",
+    "approved": false,
+    "count": 20
+  },
+  {
+    "id": "numbers-21",
+    "source": "design/art/symbols/2026-10-10/numbers-21",
+    "approved": false,
+    "count": 21
+  },
+  {
+    "id": "numbers-22",
+    "source": "design/art/symbols/2026-10-10/numbers-22",
+    "approved": false,
+    "count": 22
+  },
+  {
+    "id": "numbers-23",
+    "source": "design/art/symbols/2026-10-10/numbers-23",
+    "approved": false,
+    "count": 23
+  },
+  {
+    "id": "numbers-24",
+    "source": "design/art/symbols/2026-10-10/numbers-24",
+    "approved": false,
+    "count": 24
+  },
+  {
+    "id": "numbers-25",
+    "source": "design/art/symbols/2026-10-10/numbers-25",
+    "approved": false,
+    "count": 25
+  },
+  {
+    "id": "numbers-26",
+    "source": "design/art/symbols/2026-10-10/numbers-26",
+    "approved": false,
+    "count": 26
+  },
+  {
+    "id": "numbers-27",
+    "source": "design/art/symbols/2026-10-10/numbers-27",
+    "approved": false,
+    "count": 27
+  },
+  {
+    "id": "numbers-28",
+    "source": "design/art/symbols/2026-10-10/numbers-28",
+    "approved": false,
+    "count": 28
+  },
+  {
+    "id": "numbers-29",
+    "source": "design/art/symbols/2026-10-10/numbers-29",
+    "approved": false,
+    "count": 29
+  },
+  {
+    "id": "numbers-30",
+    "source": "design/art/symbols/2026-10-10/numbers-30",
+    "approved": false,
+    "count": 30
+  },
+  {
+    "id": "letters-A",
+    "source": "design/art/symbol-studies/2026-10-10-162535/letters-A",
+    "approved": true,
+    "association": "apple"
+  },
+  {
+    "id": "letters-B",
+    "source": "design/art/symbol-studies/2026-10-10-162535/letters-B",
+    "approved": true,
+    "association": "ball"
+  },
+  {
+    "id": "letters-C",
+    "source": "design/art/symbols/2026-10-10/letters-C",
+    "approved": false,
+    "association": "one small cat"
+  },
+  {
+    "id": "letters-D",
+    "source": "design/art/symbols/2026-10-10/letters-D",
+    "approved": false,
+    "association": "one small friendly dog"
+  },
+  {
+    "id": "letters-E",
+    "source": "design/art/symbols/2026-10-10/letters-E",
+    "approved": false,
+    "association": "one small elephant"
+  },
+  {
+    "id": "letters-F",
+    "source": "design/art/symbols/2026-10-10/letters-F",
+    "approved": false,
+    "association": "one small fish"
+  },
+  {
+    "id": "letters-G",
+    "source": "design/art/symbols/2026-10-10/letters-G",
+    "approved": false,
+    "association": "one small giraffe"
+  },
+  {
+    "id": "letters-H",
+    "source": "design/art/symbols/2026-10-10/letters-H",
+    "approved": false,
+    "association": "one small sun hat"
+  },
+  {
+    "id": "letters-I",
+    "source": "design/art/symbols/2026-10-10/letters-I",
+    "approved": false,
+    "association": "one small ice cream cone"
+  },
+  {
+    "id": "letters-J",
+    "source": "design/art/symbols/2026-10-10/letters-J",
+    "approved": false,
+    "association": "one small jellyfish"
+  },
+  {
+    "id": "letters-K",
+    "source": "design/art/symbols/2026-10-10/letters-K",
+    "approved": false,
+    "association": "one small colorful kite with a short string"
+  },
+  {
+    "id": "letters-L",
+    "source": "design/art/symbols/2026-10-10/letters-L",
+    "approved": false,
+    "association": "one small lion"
+  },
+  {
+    "id": "letters-M",
+    "source": "design/art/symbols/2026-10-10/letters-M",
+    "approved": false,
+    "association": "one small crescent moon"
+  },
+  {
+    "id": "letters-N",
+    "source": "design/art/symbols/2026-10-10/letters-N",
+    "approved": false,
+    "association": "one small empty woven bird nest"
+  },
+  {
+    "id": "letters-O",
+    "source": "design/art/symbols/2026-10-10/letters-O",
+    "approved": false,
+    "association": "one small orange fruit"
+  },
+  {
+    "id": "letters-P",
+    "source": "design/art/symbols/2026-10-10/letters-P",
+    "approved": false,
+    "association": "one small panda"
+  },
+  {
+    "id": "letters-Q",
+    "source": "design/art/symbols/2026-10-10/letters-Q",
+    "approved": false,
+    "association": "one small friendly queen wearing a crown"
+  },
+  {
+    "id": "letters-R",
+    "source": "design/art/symbols/2026-10-10/letters-R",
+    "approved": false,
+    "association": "one small rabbit"
+  },
+  {
+    "id": "letters-S",
+    "source": "design/art/symbols/2026-10-10/letters-S",
+    "approved": false,
+    "association": "one small yellow sun"
+  },
+  {
+    "id": "letters-T",
+    "source": "design/art/symbols/2026-10-10/letters-T",
+    "approved": false,
+    "association": "one small green turtle"
+  },
+  {
+    "id": "letters-U",
+    "source": "design/art/symbols/2026-10-10/letters-U",
+    "approved": false,
+    "association": "one small open umbrella"
+  },
+  {
+    "id": "letters-V",
+    "source": "design/art/symbols/2026-10-10/letters-V",
+    "approved": false,
+    "association": "one small red van"
+  },
+  {
+    "id": "letters-W",
+    "source": "design/art/symbols/2026-10-10/letters-W",
+    "approved": false,
+    "association": "one small friendly blue whale"
+  },
+  {
+    "id": "letters-X",
+    "source": "design/art/symbols/2026-10-10/letters-X",
+    "approved": false,
+    "association": "one small colorful xylophone with two mallets"
+  },
+  {
+    "id": "letters-Y",
+    "source": "design/art/symbols/2026-10-10/letters-Y",
+    "approved": false,
+    "association": "one small ball of yarn with a short loose thread"
+  },
+  {
+    "id": "letters-Z",
+    "source": "design/art/symbols/2026-10-10/letters-Z",
+    "approved": false,
+    "association": "one small zebra"
+  }
+]
