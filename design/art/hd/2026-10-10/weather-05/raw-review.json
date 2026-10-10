@@ -1,6 +1,8 @@
 {
-	"status": "pending",
-	"imageSha256": "9d613eaba5afd62c63edae5cfe4a24864c2b7eac8275ad03f76eb091a5499180",
-	"recordedAt": "2026-10-09T23:06:50.119272+00:00",
-	"nextStep": "Show this untouched image to the owner immediately. Await confirmation before extraction, compositing, exports, or catalogue integration."
+  "status": "agent-reviewed",
+  "imageSha256": "9d613eaba5afd62c63edae5cfe4a24864c2b7eac8275ad03f76eb091a5499180",
+  "recordedAt": "2026-10-09T23:06:50.119272+00:00",
+  "nextStep": "Integrated locally under owner-authorized batch direction; no individual owner approval or deployment claimed.",
+  "reviewedOn": "2026-10-10",
+  "reviewMethod": "Category contact-sheet inspection for subject, style, completeness and framing; native dimensions and checksums verified."
 }

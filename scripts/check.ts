@@ -22,7 +22,8 @@ for (const [value, label] of [[1, '一'], [10, '十'], [11, '十一'], [20, '二
   assert.equal(chineseNumber(value), label);
 }
 assert.ok(existsSync('public/art/hero.webp'));
-assert.deepEqual(pictures.filter(p => p.imageLarge).map(p => p.id), ['animals-01', 'animals-02', 'animals-03']);
+assert.equal(pictures.filter(p => p.imageLarge).length, 120);
+assert.ok(pictures.every(p => p.category === 'numbers' || p.category === 'letters' || p.imageLarge));
 assert.equal(swipeStep(-90, 12), 1);
 assert.equal(swipeStep(90, 12), -1);
 assert.equal(swipeStep(30, 0), 0);

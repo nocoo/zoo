@@ -11,7 +11,7 @@
 - Keep card/viewer illustration surfaces on `--zoo-art-paper`. Card assets have a matching normalized background; do not restore multiply blending, colored letterboxing or nested pill geometry on image cards.
 - Preserve Chinese product copy and correct pinyin. Do not present advanced numbers or literacy as developmental requirements.
 - Images in `public/art/` are optimized delivery assets. Preserve generation originals, prompts and exact subject ordering under `design/art/`.
-- The owner approved the first three HD animals and authorized the remaining 117 redraws on 2026-10-10. The batch is in progress; the application still uses only the three approved HD cards until the full batch is verified. Use 640 x 560 thumbnails and native 2048 x 1792 full-screen WebP via `Picture.imageLarge`. Preserve reference-guided GPT Image 2.5 outputs under `design/art/hd/`; run `uv run --with pillow python design/art/hd/process.py` to reproduce completed delivery assets. See `design/art/hd/README.md`. Do not claim full HD coverage before verification.
+- All 120 illustrated cards use reference-guided GPT Image 2.5 redraws: 640 x 560 thumbnails and native 2048 x 1792 full-screen WebP via `Picture.imageLarge`. The owner approved the first three samples and authorized the rest on 2026-10-10. Preserve native outputs, exact references, prompts and request records under `design/art/hd/`. Run `uv run --with pillow python design/art/hd/process.py` to export missing derivatives; `--check` verifies all 120 records without writes. See `design/art/hd/README.md`. Numbers and letters remain native text; the hero is unchanged.
 
 ## Commands
 

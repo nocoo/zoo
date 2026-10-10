@@ -1,12 +1,12 @@
 # Artwork Archive
 
-The first three animal cards now use individual high-resolution redraw previews. See `hd/README.md` for native originals, prompts, derivation and review status. The atlas pipeline below remains the source of the other 117 cards.
+All 120 illustrated cards now use individual high-resolution redraws. See `hd/README.md` for native originals, prompts, derivation and review status. The atlas pipeline below is retained as historical source provenance, not active card delivery. The hero still uses its original generation.
 
 Generated on 2026-10-09 through the Workflow `agi-image-generation` CLI using Azure OpenAI `gpt-image-2.5-sunburst`, high quality, 1536 x 1024. Original PNG outputs are retained unchanged in `originals/`.
 
 Six atlases each contain twenty subjects in row-major order. The `*-order.txt` files and `*-prompt.txt` files record the exact subjects and generation instructions. The hero is a separate image.
 
-`process_atlas.py` produces 300 x 250 lossless WebP cards and a 1200-pixel-wide hero at quality 88. Generated subjects do not obey exact equal grid boundaries; the explicit crop edges follow visually inspected whitespace instead of blindly splitting the atlas into equal cells. Contact sheets provide a visual check of subject ordering and clipping.
+`process_atlas.py` produces approximately 300 x 250 lossless WebP cards in `legacy-delivery/` and a 1200-pixel-wide public hero at quality 88. Generated subjects do not obey exact equal grid boundaries; the explicit crop edges follow visually inspected whitespace instead of blindly splitting the atlas into equal cells. Contact sheets provide a visual check of subject ordering and clipping.
 
 Card backgrounds connected to the crop edges are normalized to the shared paper color `#faf6e8`. Flood filling only near-paper pixels connected to the perimeter preserves enclosed light-colored illustration details. Lossless delivery keeps that background exact, so `object-fit: contain` does not reveal a differently colored rectangle in the full-screen viewer. Original PNGs remain unchanged.
 

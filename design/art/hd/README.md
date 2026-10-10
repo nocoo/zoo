@@ -1,6 +1,6 @@
 # High-Resolution Redraws
 
-The owner approved the three-card preview and authorized all remaining 117 reference-guided redraws on 2026-10-10. All requests use individual native 2048 x 1792 images from Azure `gpt-image-2.5-sunburst`, high quality, through `/images/edits`. These are newly generated drawings, not recovered source detail or interpolated enlargements. The full batch is in progress; only the three approved animals are currently integrated in the application.
+The owner approved the three-card preview and authorized all remaining 117 reference-guided redraws on 2026-10-10. All 120 cards are generated and integrated locally, using native 2048 x 1792 images from Azure `gpt-image-2.5-sunburst`, high quality, through `/images/edits`. These are newly generated drawings, not recovered source detail or interpolated enlargements. Numbers, letters and the separate hero are unchanged.
 
 `2026-10-10/<card-id>/` preserves the original atlas crop, exact prompt, sanitized request/response, untouched generated PNG and delivery checksums. `generate_azure.py` is an unchanged snapshot of the reference-edit helper from `hexly.ai/artwork/logo-family/tools/`. Its `raw-review.json` distinguishes the three owner-approved samples from subsequent generated images; authorization of the batch is not individual owner approval. No logo workflow or catalogue adoption is involved.
 
@@ -24,7 +24,7 @@ uv run --with pillow python design/art/hd/process.py
 uv run --with pillow python design/art/hd/process.py --check
 ```
 
-The processor reuses edge-connected paper normalization from `process_atlas.py` with a tighter RGB tolerance of 8 to retain pale panda brushwork. It writes lossless WebP at native 2048 x 1792 and a downsampled 640 x 560 thumbnail to `public/art/hd/`. It verifies dimensions and corner color, and records SHA-256 hashes. No sharpening or enlargement is applied. List cards load only thumbnails; the full-screen viewer loads the native-size delivery image on opening.
+The processor reuses edge-connected paper normalization from `process_atlas.py` with a tighter RGB tolerance of 8 to retain pale panda brushwork. It writes lossless WebP at native 2048 x 1792 and a downsampled 640 x 560 thumbnail to `public/art/hd/`. New thumbnails are normalized again after resampling to remove one-value paper drift. It verifies dimensions and corner color, and records SHA-256 hashes. Existing validated derivatives are preserved. No sharpening or enlargement is applied. List cards load only thumbnails; the full-screen viewer loads the native-size delivery image on opening. The 240 delivery files total approximately 246 MiB, loaded on demand, not bundled into the initial page.
 
 ## Generate Another Take
 

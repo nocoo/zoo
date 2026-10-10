@@ -121,11 +121,8 @@ export const pictures: Picture[] = [
   ...Object.entries(rows).flatMap(([category, items]) => items.map(([name, pronunciation, description, group], index) => ({
     id: `${category}-${String(index + 1).padStart(2, '0')}`, category: category as CategoryId,
     name, pronunciation, description, group,
-    image: category === 'animals' && index < 3
-      ? `/art/hd/animals-${String(index + 1).padStart(2, '0')}-thumb.webp`
-      : `/art/${category}-${String(index + 1).padStart(2, '0')}.webp`,
-    imageLarge: category === 'animals' && index < 3
-      ? `/art/hd/animals-${String(index + 1).padStart(2, '0')}-full.webp` : undefined,
+    image: `/art/hd/${category}-${String(index + 1).padStart(2, '0')}-thumb.webp`,
+    imageLarge: `/art/hd/${category}-${String(index + 1).padStart(2, '0')}-full.webp`,
   }))),
   ...Array.from({ length: 100 }, (_, i) => ({
     id: `numbers-${i + 1}`, category: 'numbers' as const, name: String(i + 1), value: i + 1,

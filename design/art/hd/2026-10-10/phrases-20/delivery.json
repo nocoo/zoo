@@ -1,0 +1,24 @@
+{
+  "source_sha256": "3f0a6e14d4f11eb71e8ac0cc8dab7e4bb55e7461cf89c9827f24dd75cf1d0403",
+  "processing": "Edge-connected paper normalization (RGB tolerance 8); lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/phrases-20-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1907306,
+      "sha256": "0c27f412e0e44518a19c57ada44f5994315072f58cedc83881709ce4fa54ba72"
+    },
+    {
+      "path": "public/art/hd/phrases-20-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 210054,
+      "sha256": "fe8c65e054f623c1ec5cb9789fdf6a56a8a5d36b99f97cb52e9d4d80e5237e2b"
+    }
+  ]
+}

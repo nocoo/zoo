@@ -1,0 +1,24 @@
+{
+  "source_sha256": "4b636585736ff0363bf89f601fba63c26e5170dbc2f6d0d71ad10ab1dd7b36ef",
+  "processing": "Edge-connected paper normalization (RGB tolerance 8); lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/hd/hanzi-12-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 3349408,
+      "sha256": "c51e8b4e98d3fa9ba6b1c0c7f20338b7813f4965978515b51b64d8599c6f8090"
+    },
+    {
+      "path": "public/art/hd/hanzi-12-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 395062,
+      "sha256": "e7940b4eae3201b2d19ed225cfd20df6ca20d593ab1dbb76ee33efabb1e5b503"
+    }
+  ]
+}

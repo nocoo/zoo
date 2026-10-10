@@ -59,11 +59,13 @@ def process_atlas(category, source):
         for index, _item in enumerate(items):
             box = crop_box(category, index)
             cell = normalize_paper(atlas.crop(box))
-            cell.save(PUBLIC / f"{category}-{index + 1:02}.webp", "WEBP", lossless=True, method=6)
+            legacy = ARCHIVE / 'legacy-delivery'
+            legacy.mkdir(exist_ok=True)
+            cell.save(legacy / f"{category}-{index + 1:02}.webp", "WEBP", lossless=True, method=6)
 
     thumbs = []
     for index in range(20):
-        with Image.open(PUBLIC / f"{category}-{index + 1:02}.webp") as image:
+        with Image.open(ARCHIVE / 'legacy-delivery' / f"{category}-{index + 1:02}.webp") as image:
             thumbs.append(image.convert("RGB").resize((180, 150), Image.Resampling.LANCZOS))
     gap, margin = 14, 14
     sheet = Image.new("RGB", (margin * 2 + 5 * 180 + 4 * gap, margin * 2 + 4 * 150 + 3 * gap), "#fff5dc")

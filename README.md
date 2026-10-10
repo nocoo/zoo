@@ -47,8 +47,8 @@ The assets-only Cloudflare Worker is named `zoo`; `wrangler.jsonc` configures `z
 
 ## Artwork / 插画
 
-- `public/art/`: 120 individual lossless WebP cards and one hero image, about 5.6 MB total; cards load lazily.
-- `public/art/hd/`: local high-resolution previews for lion, panda and rabbit, with 640 px list thumbnails and separate native 2048 x 1792 full-screen images. Reference-guided redraw originals and prompts are archived in `design/art/hd/`; the remaining 117 illustrations are still atlas-resolution.
+- `public/art/hd/`: all 120 illustrated cards, each with a lazy-loaded 640 x 560 thumbnail and a separate native 2048 x 1792 full-screen WebP loaded on opening. The 240 lossless assets total approximately 246 MiB; the initial page does not download the full collection.
+- `public/art/hero.webp`: the original hero illustration. Previous atlas-resolution cards remain archived under `design/art/legacy-delivery/`, not as active website assets.
 - `design/art/`: original PNG generations, prompts, row-major subject orders, processing script and visual contact sheets.
 - Model: Azure OpenAI `gpt-image-2.5-sunburst`, called through the Workflow image-generation skill.
 - UI icons: `naive-icons`; the reference UI library and icon package retain their MIT notices in their distributions.
