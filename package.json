@@ -4,8 +4,9 @@
   "description": "A gentle Chinese picture-learning island for little explorers.",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
-    "build": "tsc --noEmit && vite build && node scripts/build-pwa.mjs",
+    "build": "tsc --noEmit && vite build && node scripts/build-live.mjs && node scripts/build-pwa.mjs",
     "check": "node --experimental-strip-types scripts/check.ts",
+    "check:live": "node scripts/check-live.mjs",
     "preview": "vite preview --host 127.0.0.1 --port 7058",
     "deploy": "npm run build && wrangler deploy"
   },

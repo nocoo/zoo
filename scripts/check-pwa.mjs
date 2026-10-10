@@ -23,7 +23,7 @@ let online = true;
 const worker = await readFile('dist/sw.js', 'utf8');
 const shell = JSON.parse(worker.match(/const SHELL = (.*);/)[1]);
 assert.ok(shell.includes('/'));
-assert.ok(!shell.some(url => /^\/(art|audio|voice-preview)\//.test(url)));
+assert.ok(!shell.some(url => /^\/(api|art|audio|voice-preview)\//.test(url)));
 for (const url of shell) assert.ok((await stat(`dist${url === '/' ? '/index.html' : url}`)).isFile());
 vm.runInNewContext(worker, {
   caches, URL, Response,
@@ -49,6 +49,8 @@ assert.ok((await request('/')).ok);
 assert.equal(await (await request('/art/54.webp')).text(), 'image');
 assert.match(await (await request('/art/unseen.webp')).text(), /联网/);
 assert.equal(await request('/audio/test.mp3'), undefined);
+assert.equal(await request('/api/live'), undefined);
+assert.equal(await request('/api/live', 'navigate'), undefined);
 assert.equal(await request('/art/54.webp', 'cors', new Headers({ Range: 'bytes=0-10' })), undefined);
 assert.ok((await request('/assets/' + shell.find(url => url.endsWith('.js')).split('/').pop())).ok);
 console.log('PWA 检查通过：应用文件齐全、图片缓存上限、离线入口、未缓存提示和音频 Range 排除。');

@@ -31,7 +31,7 @@ function storeImage(request, response) {
 self.addEventListener('fetch', event => {
   const { request } = event;
   const url = new URL(request.url);
-  if (request.method !== 'GET' || url.origin !== self.location.origin || request.headers.has('range')) return;
+  if (request.method !== 'GET' || url.origin !== self.location.origin || request.headers.has('range') || url.pathname.startsWith('/api/')) return;
   if (request.mode === 'navigate') {
     if (url.pathname !== '/') return;
     event.respondWith(caches.open(APP_CACHE).then(async cache => (await cache.match('/')) || fetch(request)));
