@@ -35,6 +35,14 @@ ENGLISH_STYLE = (
     "Do not spell words, add explanations, repeat the letter, whisper, stretch vowels or sing. "
     "No extra words, music or effects."
 )
+ENGLISH_EXPLANATION_STYLE = (
+    "A gentle, warm adult female voice reading a picture book to a toddler. "
+    "Use clear, natural standard American English with a lightly smiling tone. "
+    "Read the name and the complete explanation verbatim at a natural conversational pace, "
+    "about 150 words per minute, with only a brief pause after the name. "
+    "Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. "
+    "No extra words, commentary, music or effects."
+)
 
 
 def sha(data):
@@ -66,8 +74,13 @@ def generate(item, key, check_only):
     wav_path = archive / f'{identifier}.wav'
     meta_path = archive / f'{identifier}.json'
     mp3_path = output / f'{identifier}.mp3'
-    style = ENGLISH_STYLE if item['category'] == 'letters' else STYLE
+    style = ENGLISH_EXPLANATION_STYLE if item.get('language') == 'en' else ENGLISH_STYLE if item['category'] == 'letters' else STYLE
+    if not check_only:
+        wav_path.parent.mkdir(parents=True, exist_ok=True)
+        mp3_path.parent.mkdir(parents=True, exist_ok=True)
     request_info = {'model': MODEL, 'voice': VOICE, 'text': item['text'], 'style': style}
+    if item.get('language') == 'en':
+        request_info['language'] = 'en'
     if meta_path.exists():
         metadata = json.loads(meta_path.read_text())
         if any(metadata.get(k) != v for k, v in request_info.items()):
@@ -194,16 +207,28 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--check', action='store_true', help='Validate existing files without credentials or writes')
     parser.add_argument('--scheduled', action='store_true', help='Generate up to 90 missing clips, once per 23 hours')
+    parser.add_argument('--english-card', help='Generate only one card name and English explanation')
     args = parser.parse_args()
     if args.check and args.scheduled:
         parser.error('--check and --scheduled cannot be combined')
+    if args.english_card and args.scheduled:
+        parser.error('--english-card and --scheduled cannot be combined')
     items = json.loads(subprocess.check_output([
         'node', '--experimental-strip-types', '--input-type=module', '-e',
-        "import {pictures} from './src/content.ts'; import {audioTranscript} from './src/audio.ts'; "
-        "console.log(JSON.stringify(pictures.map(p=>({id:p.id,category:p.category,text:audioTranscript(p)}))))",
+        "import {pictures} from './src/content.ts'; import {audioTranscript,englishAudioTranscript} from './src/audio.ts'; "
+        "console.log(JSON.stringify(pictures.map(p=>({id:p.id,category:p.category,text:audioTranscript(p),englishText:p.englishDescription?englishAudioTranscript(p):null}))))",
     ], cwd=ROOT))
+    if args.english_card:
+        selected = next((item for item in items if item['id'] == args.english_card), None)
+        if not selected or not selected['englishText']:
+            parser.error('Select an existing card with an English explanation')
+        items = [{**selected, 'id': f"en/{selected['id']}", 'text': selected['englishText'], 'language': 'en'}]
     if args.check:
-        run_batch(items, None, True, 0)
+        if args.english_card:
+            generate(items[0], None, True)
+            print('英文名称与解释录音校验通过。')
+        else:
+            run_batch(items, None, True, 0)
         return
 
     def action():
@@ -215,6 +240,9 @@ def main():
             raise ValueError('his.fm 未配置 Gemini Key。')
         (ROOT / 'design/audio').mkdir(parents=True, exist_ok=True)
         (ROOT / 'public/audio').mkdir(parents=True, exist_ok=True)
+        if args.english_card:
+            generate(items[0], key, False)
+            return
         return run_batch(items, key, False, 90 if args.scheduled else len(items))
 
     runtime = ROOT / 'artifacts/audio-schedule'

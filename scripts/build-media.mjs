@@ -2,7 +2,7 @@ import { createHash } from 'node:crypto';
 import { readFile, writeFile, readdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { pictures } from '../src/content.ts';
-import { audioTranscript } from '../src/audio.ts';
+import { audioTranscript, englishAudioTranscript } from '../src/audio.ts';
 
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const images = {};
@@ -14,12 +14,13 @@ const audio = {};
 for (const picture of pictures) {
   audio[picture.id] = {};
   for (const language of ['zh', 'en']) {
-    const useGemini = (language === 'zh' || picture.category === 'letters') && existsSync(`design/audio/${picture.id}.json`);
+    const geminiId = language === 'en' && picture.category !== 'letters' ? `en/${picture.id}` : picture.id;
+    const useGemini = existsSync(`design/audio/${geminiId}.json`);
     const sourceLanguage = picture.category === 'letters' ? 'en' : language;
-    const metadataPath = useGemini ? `design/audio/${picture.id}.json` : `design/audio-edge/${sourceLanguage}/${picture.id}.json`;
-    const path = useGemini ? `/audio/${picture.id}.mp3` : `/audio-edge/${sourceLanguage}/${picture.id}.mp3`;
+    const metadataPath = useGemini ? `design/audio/${geminiId}.json` : `design/audio-edge/${sourceLanguage}/${picture.id}.json`;
+    const path = useGemini ? `/audio/${geminiId}.mp3` : `/audio-edge/${sourceLanguage}/${picture.id}.mp3`;
     const metadata = JSON.parse(await readFile(metadataPath, 'utf8'));
-    const text = useGemini || sourceLanguage === 'zh' ? audioTranscript(picture) : picture.english;
+    const text = useGemini && language === 'en' ? englishAudioTranscript(picture) : useGemini || sourceLanguage === 'zh' ? audioTranscript(picture) : picture.english;
     if (metadata.text !== text) throw new Error(`Narration text differs: ${metadataPath}`);
     const digest = hash(await readFile(`public${path}`));
     if (digest !== (useGemini ? metadata.mp3_sha256 : metadata.sha256)) throw new Error(`Audio checksum differs: ${path}`);

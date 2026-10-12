@@ -4,7 +4,7 @@ import { categories, chineseNumber, numberPinyin, pictures } from '../src/conten
 import { englishNumber } from '../src/english.ts';
 import { neighborImages } from '../src/neighbors.ts';
 import { swipeStep } from '../src/swipe.ts';
-import { audioTranscript } from '../src/audio.ts';
+import { audioTranscript, englishAudioTranscript } from '../src/audio.ts';
 
 assert.equal(pictures.length, 176);
 const manifest = JSON.parse(readFileSync('public/manifest.webmanifest', 'utf8'));
@@ -46,6 +46,9 @@ assert.equal(swipeStep(60, 40), 0);
 assert.equal(audioTranscript(pictures.find(p => p.id === 'animals-01')!), '狮子。狮子有一圈蓬松的鬃毛，像戴着小围巾。');
 assert.equal(pictures.find(p => p.id === 'animals-01')!.englishDescription, 'The lion has a fluffy mane around his neck, like a little scarf.');
 assert.equal(pictures.filter(p => p.englishDescription).length, 1);
+assert.equal(englishAudioTranscript(pictures.find(p => p.id === 'animals-01')!), 'Lion. The lion has a fluffy mane around his neck, like a little scarf.');
+assert.equal(englishAudioTranscript(pictures.find(p => p.id === 'letters-A')!), 'A');
+assert.throws(() => englishAudioTranscript(pictures.find(p => p.id === 'animals-02')!), /Missing English explanation/);
 assert.equal(audioTranscript(pictures.find(p => p.id === 'numbers-30')!), '三十');
 assert.equal(audioTranscript(pictures.find(p => p.id === 'letters-A')!), 'A');
 assert.equal(englishNumber(21), 'Twenty-one');

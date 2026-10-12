@@ -1,5 +1,6 @@
 import importlib.util
 import json
+import sys
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from unittest.mock import patch
@@ -40,4 +41,13 @@ with TemporaryDirectory() as temporary:
         assert audio.run_batch(items, None, False, 3)
         assert len(json.loads((root / 'src/audio-manifest.json').read_text())) == 3
 
-print('定时检查通过：冷却、完成后停止、失败后等待、单轮上限、已完成文件复用。')
+with patch.object(sys, 'argv', ['generate-audio.py', '--check', '--english-card', 'animals-01']), patch.object(audio, 'generate') as generate, patch.object(audio, 'run_batch') as batch:
+    audio.main()
+    generate.assert_called_once()
+    item, key, check_only = generate.call_args.args
+    assert item['id'] == 'en/animals-01' and item['language'] == 'en'
+    assert item['text'] == 'Lion. The lion has a fluffy mane around his neck, like a little scarf.'
+    assert key is None and check_only
+    batch.assert_not_called()
+
+print('定时检查通过：冷却、完成后停止、失败后等待、单轮上限、已完成文件复用、单条英文隔离。')

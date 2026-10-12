@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Lion. The lion has a fluffy mane around his neck, like a little scarf.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.8,
+  "interaction_id": "v1_ChdUaWpNYXRicklaLXoycm9Qb0pEaHlRbxIXVGlqTWF0YnJJWi16MnJvUG9KRGh5UW8",
+  "origin": "generated",
+  "wav_sha256": "e5a1fd3c1702a49579917ccc8574b49bbec150ed52f75dd55340a5485d5ea2c5",
+  "mp3_sha256": "0ccd12dc298879a209111eb39cb43fb654fa982f7bc622b7ee21c1365a7c1d13"
+}

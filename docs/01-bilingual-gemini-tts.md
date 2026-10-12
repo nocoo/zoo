@@ -1,10 +1,10 @@
 # Complete Gemini Narration In Both Languages
 
-Status: revised plan, requested on 2026-10-12; implementation and generation have not started under this plan.
+Status: full bilingual batch pending; one authorized lion English sample generated locally on 2026-10-12, awaiting listening approval.
 
 ## Completion Contract
 
-Every active card must use Gemini for every visible playback language. A card is not complete merely because its Mandarin recording is ready. For example, `animals-01` has approved Gemini Mandarin, but its English `Lion` still uses Edge and is pending.
+Every active card must use Gemini for every visible playback language. A card is not complete merely because its Mandarin recording is ready. At the baseline, `animals-01` had approved Gemini Mandarin but name-only Edge English. The local sample now replaces its English with Gemini name-plus-explanation; production remains unchanged.
 
 - Retain 150 non-alphabet cards with separate Mandarin and English recordings.
 - Retain 26 alphabet cards with one American English letter-name recording shared by both manifest entries.
@@ -57,13 +57,15 @@ Use the existing basic validation scope, not a new full 6DQ rollout. All automat
 
 ## Current Boundary
 
-This document changes the plan only. The current generator still covers Mandarin and shared alphabet recordings, not the additional 150 English words/phrases. Its existing schedule is unchanged. No new generation or deployment is authorized merely by writing this plan. Credentials remain in the existing private His.fm configuration and must never be copied into documentation, code, logs or public assets.
+The scheduled batch still covers Mandarin and shared alphabet recordings, not the additional 150 English jobs. A separate `--english-card` command now generates one explicitly selected sample; it shares the exclusive lock, never updates the batch manifest and cannot combine with scheduled mode. The existing schedule is unchanged. No further generation or deployment is authorized by this document. Credentials remain in the existing private His.fm configuration and must never be copied into documentation, code, logs or public assets.
 
 ## Lion Copy Preview (2026-10-12)
 
 - Chinese name: 狮子
 - Chinese explanation, unchanged: 狮子有一圈蓬松的鬃毛，像戴着小围巾。
 - English name: Lion
-- Proposed English explanation: The lion has a fluffy mane around his neck, like a little scarf.
-- Only the lion has an English explanation for now. The local viewer displays both paragraphs. Existing audio and generation transcripts are unchanged; the old English MP3 still reads only the name, and the dev viewer explicitly says so. Await copy approval before expanding to other cards or generating the new English recording.
+- English explanation: The lion has a fluffy mane around his neck, like a little scarf.
+- Only the lion has an English explanation for now. Per the owner's layout revision, the viewer displays only the English explanation below borderless language controls, with pinyin above Chinese; it removes the Chinese explanation and development disclaimer from the UI, not the Mandarin transcript.
+- One authorized Gemini request produced `design/audio/en/animals-01.wav` and matching JSON, with `public/audio/en/animals-01.mp3` selected locally. Transcript: `Lion. The lion has a fluffy mane around his neck, like a little scarf.` Model: `gemini-3.8-flash-tts`; voice: `Sulafat`; duration: 6.80 seconds. Metadata records language, exact text/style, interaction ID and hashes. All previous Gemini and Edge recordings are preserved.
+- Run `python3 scripts/generate-audio.py --check --english-card animals-01` for offline validation. The owner must approve voice and pace before more English generation. At this sample boundary, 100 unique Gemini recordings are complete locally and 226 remain (51 Mandarin + 149 English + 26 shared alphabet). Production still has the baseline 99 until a separately authorized publication.
 - The existing scheduled generator still covers the old Mandarin/alphabet scope. No timer configuration is changed by this preview.
