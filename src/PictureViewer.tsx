@@ -66,7 +66,7 @@ export function PictureViewer({ island }: { island: ReturnType<typeof useIsland>
     if (step && island.items.length > 1) island.move(step);
   }
 
-  return <dialog ref={dialog} className="picture-viewer" aria-labelledby="viewer-name" aria-describedby="viewer-description"
+  return <dialog ref={dialog} className="picture-viewer" aria-labelledby="viewer-name" aria-describedby={picture.englishDescription ? 'viewer-description' : undefined}
     onCancel={event => { event.preventDefault(); close(); }}
     onKeyDown={event => {
       if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
@@ -100,22 +100,22 @@ export function PictureViewer({ island }: { island: ReturnType<typeof useIsland>
     </div>
     <footer className="viewer-footer">
       <div className="viewer-caption" aria-live="polite">
-        <span className="viewer-pronunciation">{picture.category === 'letters' ? '大写和小写' : picture.category === 'numbers' ? numberPinyin(picture.value!) : picture.pronunciation}</span>
         <div className="viewer-readings">
-          <Button type="text" className="reading-button" aria-label={`播放${picture.category === 'letters' ? '字母' : '中文'}：${picture.name}`} onClick={() => island.speak(picture, 'zh')}>
-            <span className="reading-label">{picture.category === 'letters' ? '字母' : '中文'} <MusicIcon size={17} color="currentColor" /></span>
-            <span id="viewer-name" className="reading-name">{picture.category === 'letters' ? `${picture.name} ${picture.pronunciation}` : picture.category === 'numbers' ? picture.pronunciation : picture.name}</span>
-          </Button>
-          {picture.category !== 'letters' && <Button type="text" className="reading-button english-reading" aria-label={`播放英文：${picture.english}`} onClick={() => island.speak(picture, 'en')}>
-            <span className="reading-label">English <MusicIcon size={17} color="currentColor" /></span>
-            <span className="reading-name" lang="en">{picture.english}</span>
-          </Button>}
+          <div className="reading-column">
+            <span className="viewer-pronunciation">{picture.category === 'letters' ? '大写和小写' : picture.category === 'numbers' ? numberPinyin(picture.value!) : picture.pronunciation}</span>
+            <Button type="text" className="reading-button" aria-label={`播放${picture.category === 'letters' ? '字母' : '中文'}：${picture.name}`} onClick={() => island.speak(picture, 'zh')}>
+              <span className="reading-label">{picture.category === 'letters' ? '字母' : '中文'} <MusicIcon size={17} color="currentColor" /></span>
+              <span id="viewer-name" className="reading-name">{picture.category === 'letters' ? `${picture.name} ${picture.pronunciation}` : picture.category === 'numbers' ? picture.pronunciation : picture.name}</span>
+            </Button>
+          </div>
+          {picture.category !== 'letters' && <div className="reading-column">
+            <Button type="text" className="reading-button english-reading" aria-label={`播放英文：${picture.english}`} onClick={() => island.speak(picture, 'en')}>
+              <span className="reading-label">English <MusicIcon size={17} color="currentColor" /></span>
+              <span className="reading-name" lang="en">{picture.english}</span>
+            </Button>
+          </div>}
         </div>
-        <div id="viewer-description">
-          <p lang="zh-CN">{picture.description}</p>
-          {picture.englishDescription && <p lang="en">{picture.englishDescription}</p>}
-        </div>
-        {import.meta.env.DEV && picture.englishDescription && <small className="food-note">英文解释文案预览，现有英文录音仍只读名称。</small>}
+        {picture.englishDescription && <p id="viewer-description" lang="en">{picture.englishDescription}</p>}
         {picture.category === 'fruits' && <small className="food-note">请家长去核、切成适龄小块后再食用。</small>}
       </div>
       <nav className="viewer-navigation" aria-label="切换认知卡片">
