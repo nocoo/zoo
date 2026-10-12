@@ -85,6 +85,7 @@ npm run check:live
 
 ## 文档
 
+- [文档目录与双语 Gemini 录音计划](docs/README.md)
 - [维护约定与本地语音任务](AGENTS.md)
 - [高清插画原始记录与导出流程](design/art/hd/README.md)
 - [Hexly 项目档案](https://hexly.ai/projects/zoo)
