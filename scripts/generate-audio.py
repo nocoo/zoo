@@ -220,8 +220,8 @@ def main():
     ], cwd=ROOT))
     if args.english_card:
         selected = next((item for item in items if item['id'] == args.english_card), None)
-        if not selected or not selected['englishText']:
-            parser.error('Select an existing card with an English explanation')
+        if not selected or selected['category'] == 'letters' or not selected['englishText']:
+            parser.error('Select an existing non-alphabet card with an English explanation')
         items = [{**selected, 'id': f"en/{selected['id']}", 'text': selected['englishText'], 'language': 'en'}]
     if args.check:
         if args.english_card:

@@ -50,4 +50,12 @@ with patch.object(sys, 'argv', ['generate-audio.py', '--check', '--english-card'
     assert key is None and check_only
     batch.assert_not_called()
 
-print('定时检查通过：冷却、完成后停止、失败后等待、单轮上限、已完成文件复用、单条英文隔离。')
+with patch.object(sys, 'argv', ['generate-audio.py', '--check', '--english-card', 'letters-A']), patch.object(audio, 'generate') as generate:
+    try:
+        audio.main()
+        raise AssertionError('Alphabet recordings must not be duplicated as English explanation jobs')
+    except SystemExit as error:
+        assert error.code == 2
+    generate.assert_not_called()
+
+print('定时检查通过：冷却、完成后停止、失败后等待、单轮上限、已完成文件复用、单条英文隔离、禁止重复字母任务。')

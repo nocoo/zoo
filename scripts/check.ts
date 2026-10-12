@@ -23,7 +23,8 @@ for (const category of categories) {
   const items = pictures.filter(p => p.category === category.id);
   assert.equal(items.length, category.id === 'numbers' ? 30 : category.id === 'letters' ? 26 : 20);
   for (const item of items) {
-    assert.ok(item.name && item.pronunciation && item.description && item.english);
+    assert.ok(item.name && item.pronunciation && item.description && item.english && item.englishDescription);
+    assert.equal(englishAudioTranscript(item), item.category === 'letters' ? item.name : `${item.english}. ${item.englishDescription}`);
     if (item.image) assert.ok(existsSync(`public${item.image}`), `Missing ${item.image}`);
     if (item.imageLarge) {
       assert.ok(existsSync(`public${item.imageLarge}`), `Missing ${item.imageLarge}`);
@@ -45,10 +46,10 @@ assert.equal(swipeStep(80, 100), 0);
 assert.equal(swipeStep(60, 40), 0);
 assert.equal(audioTranscript(pictures.find(p => p.id === 'animals-01')!), '狮子。狮子有一圈蓬松的鬃毛，像戴着小围巾。');
 assert.equal(pictures.find(p => p.id === 'animals-01')!.englishDescription, 'The lion has a fluffy mane around his neck, like a little scarf.');
-assert.equal(pictures.filter(p => p.englishDescription).length, 1);
+assert.equal(pictures.filter(p => p.englishDescription).length, 176);
 assert.equal(englishAudioTranscript(pictures.find(p => p.id === 'animals-01')!), 'Lion. The lion has a fluffy mane around his neck, like a little scarf.');
 assert.equal(englishAudioTranscript(pictures.find(p => p.id === 'letters-A')!), 'A');
-assert.throws(() => englishAudioTranscript(pictures.find(p => p.id === 'animals-02')!), /Missing English explanation/);
+assert.equal(englishAudioTranscript(pictures.find(p => p.id === 'animals-02')!), 'Panda. The panda has a black and white coat and loves to eat bamboo.');
 assert.equal(audioTranscript(pictures.find(p => p.id === 'numbers-30')!), '三十');
 assert.equal(audioTranscript(pictures.find(p => p.id === 'letters-A')!), 'A');
 assert.equal(englishNumber(21), 'Twenty-one');
