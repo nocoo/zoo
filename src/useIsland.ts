@@ -14,7 +14,6 @@ function readSaved(): string[] {
 export function useIsland() {
   const [category, setCategory] = useState<CategoryId>('animals');
   const [group, setGroup] = useState('全部朋友');
-  const [numberPage, setNumberPage] = useState(0);
   const [collection, setCollection] = useState(false);
   const [favorites, setFavorites] = useState(readSaved);
   const [selected, setSelected] = useState<Picture | null>(null);
@@ -53,8 +52,7 @@ export function useIsland() {
 
   const items = pictures.filter(p => collection ? favorites.includes(p.id) :
     p.category === category &&
-    (category !== 'animals' || group === '全部朋友' || p.group === group) &&
-    (category !== 'numbers' || (p.value! > numberPage * 10 && p.value! <= (numberPage + 1) * 10)));
+    (category !== 'animals' || group === '全部朋友' || p.group === group));
   const viewerItems = (browseOrder ?? items).filter(picture => items.includes(picture));
 
   function speak(picture: Picture, language: 'zh' | 'en') {
@@ -88,7 +86,7 @@ export function useIsland() {
   }
 
   function chooseCategory(id: CategoryId) {
-    closePicture(); setCategory(id); setCollection(false); setGroup('全部朋友'); setNumberPage(0);
+    closePicture(); setCategory(id); setCollection(false); setGroup('全部朋友');
   }
 
   function toggleFavorite(id: string) {
@@ -107,7 +105,7 @@ export function useIsland() {
   }
 
   return {
-    category, group, setGroup, numberPage, setNumberPage, collection, setCollection,
+    category, group, setGroup, collection, setCollection,
     favorites, selected, message, visited, parentOpen, setParentOpen, items, viewerItems, narration,
     chooseCategory, openPicture, closePicture, toggleFavorite, speak, stopSpeech, move, surprise,
   };

@@ -85,7 +85,6 @@ export function App() {
             <div className="filter-buttons">{animalGroups.map(group => <Button key={group} size="small" type={island.group === group ? 'primary' : 'text'} aria-pressed={island.group === group} onClick={() => island.setGroup(group)}>{group}</Button>)}</div>
             <span className="gentle-note"><MusicIcon size={15} color="currentColor" /> 点击卡片，看图认朋友</span>
           </div>}
-          {!island.collection && island.category === 'numbers' && <div className="filter-row"><div className="filter-buttons">{Array.from({ length: 3 }, (_, index) => <Button key={index} size="small" type={island.numberPage === index ? 'primary' : 'text'} aria-pressed={island.numberPage === index} onClick={() => island.setNumberPage(index)}>{index * 10 + 1}–{(index + 1) * 10}</Button>)}</div><span className="gentle-note">先从 1–5 开始，不着急</span></div>}
 
           <div className="picture-grid">
             {island.items.map((picture, index) => <article className={`picture-card tone-${['yellow', 'mint', 'rose', 'blue', 'peach'][index % 5]}`} key={picture.id} style={{ animationDelay: `${Math.min(index, 9) * 30}ms` }}>
