@@ -1,6 +1,6 @@
 # Complete Gemini Narration In Both Languages
 
-Status: copy and execution plan prepared on 2026-10-12; awaiting owner approval. This pass does not authorize or execute speech generation, schedule repair, publication or deployment.
+Status: copy and execution plan prepared on 2026-10-12; awaiting owner approval. This pass does not authorize or execute speech generation, timer installation, publication or deployment. The owner separately authorized removal of the old timer; it is now uninstalled.
 
 ## Copy Approval
 
@@ -46,7 +46,7 @@ This completes all 51 missing Mandarin recordings before any new English request
 
 ## Estimated Rounds
 
-At most 90 new clips per scheduled attempt; at least 20 seconds between request starts and at least 23 hours between scheduled attempts. The observed provider limit was 100 requests per day, shared with other His.fm usage. Respect the actual error/reset response; do not rotate keys, retry automatically, change models or upgrade billing to bypass limits.
+At most 90 new clips per approved batch attempt; at least 20 seconds between request starts and at least 23 hours between batch attempts. The observed provider limit was 100 requests per day, shared with other His.fm usage. Respect the actual error/reset response; do not rotate keys, retry automatically, change models or upgrade billing to bypass limits.
 
 | Round | Planned work | New clips |
 | --- | --- | ---: |
@@ -58,7 +58,7 @@ These are at least three fully available quota rounds, not a promise of three ca
 
 ## Implementation Required After Approval
 
-The current generator still has a legacy Mandarin/alphabet scheduled batch and an isolated `--english-card` command; the complete bilingual queue and round allocation above are a plan, not an implemented scheduler.
+The current generator still has a legacy Mandarin/alphabet batch with an optional budget/cooldown wrapper and an isolated `--english-card` command; the complete bilingual queue and round allocation above are a plan, not an implemented bilingual batch runner; no timer is installed.
 
 1. Enumerate explicit unique language jobs from the approved source. Keep Mandarin/alphabet paths unchanged and English originals in `design/audio/en/<id>.wav|json`, delivery in `public/audio/en/<id>.mp3`. Forbid duplicate alphabet jobs through the English-card command.
 2. Keep `gemini-3.8-flash-tts`, `Sulafat`, the exact approved Mandarin style and the lion's natural American English style. No runtime TTS. Record exact text/style/language, interaction ID, duration and hashes without secrets.
@@ -67,11 +67,11 @@ The current generator still has a legacy Mandarin/alphabet scheduled batch and a
 5. Validate the queue order, shared-letter deduplication, preservation, cooldown, per-run ceiling and stale completion handling with local/mocked checks before provider access. Run the existing content, build, player and schedule checks; no new comprehensive test framework is required.
 6. Generate only within a fresh explicit approval, retain successful outputs immediately, stop on provider errors and report generated/selected/deployed coverage separately. Commit and deploy only through separately authorized work.
 
-## Existing Timer And Approval Boundary
+## Removed Timer And Approval Boundary
 
-Read-only inspection on 2026-10-12 found `ai.hexly.zoo.audio` still loaded for 08:30 daily, with zero active instances, one recorded launch and last exit code 78 (`EX_CONFIG`). Its JSON state still records the earlier failed attempt; logs include a previous daily-quota 429 and a later network failure. This does not prove a current quota limit, and the exact launch failure cause is not yet established.
+On 2026-10-12 the owner explicitly requested removal of timed generation and asked to approve all bilingual copy before deciding whether audio generation is needed. The `ai.hexly.zoo.audio` LaunchAgent was unloaded, its installed plist and repository source were removed, and `launchctl print` confirmed the service no longer exists. No generation process held the shared lock at removal.
 
-No timer, cooldown, credential or generation configuration was changed in this pass. A loaded timer is not a reliable approval hold: before leaving generation unattended, obtain authorization to suspend the legacy job while awaiting copy approval. Do not repair/re-enable it or manually trigger a batch as part of this planning task. After explicit approval, inspect its launch failure and install the approved bilingual queue without bypassing cooldown.
+All existing recordings, quota state, logs and credentials are preserved. No provider call was made. The optional legacy `--scheduled` CLI mode does not run by itself; do not invoke it or reinstall any timer without fresh authorization. Review the complete copy ledger first; approval of wording does not by itself authorize generation, publication or deployment.
 
 Credentials stay in the existing private His.fm configuration. Never copy or print the key in code, documentation, process arguments, logs or browser assets.
 

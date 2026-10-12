@@ -1,6 +1,6 @@
 # Bilingual Copy Approval Ledger
 
-Status: draft for owner approval, 2026-10-12. All 176 cards have Chinese and English descriptions. No new speech was generated for this copy pass. Existing Chinese text, pinyin, English labels and the approved lion English explanation are unchanged.
+Status: draft for owner approval, 2026-10-12. All 176 cards have Chinese and English descriptions. No new speech was generated for this copy pass. The old automatic speech task has been uninstalled at the owner's request; generation awaits a separate decision after copy review. Existing Chinese text, pinyin, English labels and the approved lion English explanation are unchanged.
 
 ## Reading Contract
 
@@ -232,4 +232,4 @@ Status: draft for owner approval, 2026-10-12. All 176 cards have Chinese and Eng
 
 ## Approval Gate
 
-Confirm wording and the number/alphabet narration exceptions before proceeding. Corrections belong in src/content.ts; rebuild this ledger after edits. No generation command, schedule repair, batch execution, push or deployment is authorized by this ledger.
+Confirm wording and the number/alphabet narration exceptions before proceeding. Corrections belong in src/content.ts; rebuild this ledger after edits. No generation command, timer installation, batch execution, push or deployment is authorized by this ledger.
