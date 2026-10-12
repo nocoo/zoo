@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.2.0 - 2026-10-12
+
+- Add complete bilingual descriptions for all 176 cards and 90 new Gemini recordings, bringing coverage to 189 unique clips: all 120 non-number Mandarin narrations and 69 English name-plus-explanation narrations. Preserve existing recordings and temporary Edge playback for unfinished items.
+- Reveal the exact recorded transcript only after a language-button click, with whole-caption animation and reserved space that keeps the illustration and controls stable. Place pinyin above Chinese and use equal-height, single-line playback pills.
+- Shuffle the entire filtered collection for each random browsing session, keeping forward/backward navigation and neighboring-image preloads in the same shuffled order.
+- Remove number subgroup controls and show all 30 number cards together, including sequential and random browsing.
+- Add explicit five-card Mandarin review batches and a Mandarin-first bilingual queue with a persistent 90-attempt daily safety budget. Exclude numbers and letters from the current generation queue, stop on errors, and remove the automatic speech timer.
+
 ## v1.1.1 - 2026-10-11
 
 - Limit number learning to 1-30 in three ten-card pages, with 176 active cards across all eight categories.
