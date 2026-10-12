@@ -134,5 +134,30 @@ with TemporaryDirectory() as temporary:
         with patch.object(audio, 'generate') as generate:
             audio.run_bilingual_day(items, None, True)
             generate.assert_not_called()
+        def stop_after_one(item, key, check_only, *, provider_limit=False):
+            assert provider_limit
+            audio.reserve_request(item['id'], provider_limit)
+            if item['id'] == 'phrases-01':
+                raise ValueError('HTTP 429')
+        with patch.object(audio, 'generate', side_effect=stop_after_one) as generate:
+            try:
+                audio.run_bilingual_day(items, 'test-only', False, True)
+                raise AssertionError('Approved cap override must still stop at the first error')
+            except ValueError:
+                pass
+            assert [call.args[0]['id'] for call in generate.call_args_list] == ['animals-01', 'phrases-01']
+        _, ledger, today = audio.request_budget()
+        entry = ledger[today]
+        assert len(entry['seeded_from_local_wavs']) + len(entry['attempts']) == 92
+        assert all(attempt['owner_approved_local_cap_override'] for attempt in entry['attempts'][-2:])
+        assert audio.remaining_requests() == 0
+
+with patch.object(sys, 'argv', ['generate-audio.py', '--until-provider-error']), patch.object(audio, 'generate') as generate:
+    try:
+        audio.main()
+        raise AssertionError('Cap override must require the number/alphabet-excluding bilingual mode')
+    except SystemExit as error:
+        assert error.code == 2
+    generate.assert_not_called()
 
 print('检查通过：冷却、失败停止、文件复用、五条隔离、双语中文优先、排除数字字母、持久化每日请求上限。')

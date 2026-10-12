@@ -88,12 +88,14 @@ def remaining_requests():
     return max(0, 90 - len(entry['seeded_from_local_wavs']) - len(entry['attempts']))
 
 
-def reserve_request(identifier):
+def reserve_request(identifier, provider_limit=False):
     path, ledger, today = request_budget()
     entry = ledger[today]
-    if len(entry['seeded_from_local_wavs']) + len(entry['attempts']) >= 90:
+    if not provider_limit and len(entry['seeded_from_local_wavs']) + len(entry['attempts']) >= 90:
         raise ValueError('今日 Zoo 的 90 次保守请求预算已用完；不再请求。')
     entry['attempts'].append({'id': identifier, 'started_at': datetime.now().astimezone().isoformat()})
+    if provider_limit:
+        entry['attempts'][-1]['owner_approved_local_cap_override'] = True
     atomic_write(path, (json.dumps(ledger, indent=2) + '\n').encode())
 
 
@@ -105,7 +107,7 @@ def bilingual_jobs(items):
                       for item in ordered]
 
 
-def run_bilingual_day(items, key, check_only):
+def run_bilingual_day(items, key, check_only, provider_limit=False):
     jobs = bilingual_jobs(items)
     pending = []
     for item in jobs:
@@ -117,17 +119,23 @@ def run_bilingual_day(items, key, check_only):
             pending.append(item)
     remaining = remaining_requests()
     print(f'非数字/字母：已完成 {len(jobs) - len(pending)}/{len(jobs)}；待生成 {len(pending)}；今日本地预算剩余 {remaining} 次。', flush=True)
+    if provider_limit:
+        remaining = len(pending)
+        print('已显式授权继续至首次 API 错误或当前队列完成；保留请求计数，不自动重试。', flush=True)
     if check_only:
         print('下一批顺序：' + ', '.join(item['id'] for item in pending[:remaining]), flush=True)
         return
     generated = 0
     for item in pending[:remaining]:
-        generate(item, key, False)
+        if provider_limit:
+            generate(item, key, False, provider_limit=True)
+        else:
+            generate(item, key, False)
         generated += 1
     print(f'本轮新增 {generated} 条，剩余 {len(pending) - generated} 条；已停止。', flush=True)
 
 
-def generate(item, key, check_only):
+def generate(item, key, check_only, *, provider_limit=False):
     global NEXT_REQUEST
     identifier = item['id']
     archive = ROOT / 'design/audio'
@@ -177,7 +185,7 @@ def generate(item, key, check_only):
             )
             time.sleep(max(0, NEXT_REQUEST - time.monotonic()))
             NEXT_REQUEST = time.monotonic() + 20
-            reserve_request(identifier)
+            reserve_request(identifier, provider_limit)
             try:
                 with urllib.request.urlopen(request, timeout=180) as response:
                     raw = response.read(16 * 1024 * 1024 + 1)
@@ -269,11 +277,14 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--check', action='store_true', help='Validate existing files without credentials or writes')
     parser.add_argument('--scheduled', action='store_true', help='Generate up to 90 missing clips, once per 23 hours')
+    parser.add_argument('--until-provider-error', action='store_true', help='Explicitly approved bilingual continuation beyond local budget; stop at first error or queue completion')
     selection = parser.add_mutually_exclusive_group()
     selection.add_argument('--english-card', help='Generate only one card name and English explanation')
     selection.add_argument('--mandarin-cards', nargs='+', help='Process 1-5 explicit Mandarin cards, excluding numbers and letters')
     selection.add_argument('--bilingual-day', action='store_true', help='Fill Mandarin then English, excluding numbers/letters, within the local 90-request daily budget')
     args = parser.parse_args()
+    if args.until_provider_error and not args.bilingual_day:
+        parser.error('--until-provider-error requires --bilingual-day and fresh owner approval')
     if args.check and args.scheduled:
         parser.error('--check and --scheduled cannot be combined')
     if (args.english_card or args.mandarin_cards or args.bilingual_day) and args.scheduled:
@@ -298,7 +309,7 @@ def main():
         items = [by_id[identifier] for identifier in identifiers]
     if args.check:
         if args.bilingual_day:
-            run_bilingual_day(items, None, True)
+            run_bilingual_day(items, None, True, args.until_provider_error)
         elif args.english_card or args.mandarin_cards:
             for item in items:
                 generate(item, None, True)
@@ -321,7 +332,7 @@ def main():
             state = json.loads(state_path.read_text()) if state_path.exists() else {}
             if time.time() < state.get('next_run_after', 0):
                 raise ValueError('历史任务仍处于冷却期；本轮不请求。')
-            return run_bilingual_day(items, key, False)
+            return run_bilingual_day(items, key, False, args.until_provider_error)
         if args.english_card or args.mandarin_cards:
             for item in items:
                 generate(item, key, False)
