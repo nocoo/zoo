@@ -58,4 +58,41 @@ with patch.object(sys, 'argv', ['generate-audio.py', '--check', '--english-card'
         assert error.code == 2
     generate.assert_not_called()
 
-print('定时检查通过：冷却、完成后停止、失败后等待、单轮上限、已完成文件复用、单条英文隔离、禁止重复字母任务。')
+approved = ['hanzi-19', 'phrases-01', 'phrases-02', 'phrases-03', 'phrases-04']
+with patch.object(sys, 'argv', ['generate-audio.py', '--check', '--mandarin-cards', *approved]), patch.object(audio, 'generate') as generate, patch.object(audio, 'run_batch') as batch:
+    audio.main()
+    assert [call.args[0]['id'] for call in generate.call_args_list] == approved
+    assert all(call.args[1:] == (None, True) for call in generate.call_args_list)
+    assert all(call.args[0]['category'] not in ('numbers', 'letters') for call in generate.call_args_list)
+    batch.assert_not_called()
+
+for identifiers in [approved + ['phrases-05'], ['hanzi-19', 'hanzi-19'], ['numbers-1'], ['letters-A'], ['unknown']]:
+    with patch.object(sys, 'argv', ['generate-audio.py', '--check', '--mandarin-cards', *identifiers]), patch.object(audio, 'generate') as generate:
+        try:
+            audio.main()
+            raise AssertionError('Invalid Mandarin selection must fail before generation')
+        except SystemExit as error:
+            assert error.code == 2
+        generate.assert_not_called()
+
+with TemporaryDirectory() as temporary:
+    root = Path(temporary)
+    config = root / '.config/his.fm/config.json'
+    config.parent.mkdir(parents=True)
+    config.write_text(json.dumps({'speechKeys': {'gemini': 'test-only'}}))
+    with patch.object(sys, 'argv', ['generate-audio.py', '--mandarin-cards', *approved]), patch.object(audio, 'ROOT', root), patch.object(audio.Path, 'home', return_value=root), patch.object(audio.subprocess, 'check_output', return_value=json.dumps([{'id': identifier, 'category': 'phrases'} for identifier in approved]).encode()), patch.object(audio.shutil, 'which', return_value='/mock/ffmpeg'), patch.object(audio, 'generate') as generate, patch.object(audio, 'run_batch') as batch:
+        audio.main()
+        assert [call.args[0]['id'] for call in generate.call_args_list] == approved
+        assert all(call.args[1:] == ('test-only', False) for call in generate.call_args_list)
+        batch.assert_not_called()
+        assert not (root / 'src/audio-manifest.json').exists()
+        generate.reset_mock()
+        generate.side_effect = ValueError('HTTP 429')
+        try:
+            audio.main()
+            raise AssertionError('Provider errors must stop the selected batch')
+        except ValueError:
+            pass
+        assert generate.call_count == 1
+
+print('检查通过：冷却、完成后停止、失败后等待、单轮上限、已完成文件复用、英文隔离、中文最多5条、禁止数字字母和重复任务。')

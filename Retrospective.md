@@ -64,3 +64,7 @@ The bounded neighbor helper initially added only one collection length before mo
 ## 2026-10-12 - Caption layout stability
 
 The first on-demand caption implementation inserted text into an auto-sized footer, moving the illustration and controls when playback started. Separate button columns also allowed different heights, especially with viewport-sized typography in a narrow landscape sidebar. Reserve space for both possible transcripts before playback, align both buttons in one shared grid row, and size their text against the actual control container. The owner rejected approximate word timing; remove the segmenter and progress callbacks rather than leaving an unused feature path. Browser checks now compare geometry before and after both language clicks, wait for entrance animations to finish before measuring, and include long English labels as well as the lion sample.
+
+## 2026-10-12 - Inventory wording and number assertions
+
+Calling an Edge-backed card "missing audio" confused usable playback coverage with Gemini replacement coverage. Report both separately and trace the actual served file to its provider metadata when challenged. A number-navigation smoke assertion also expected the gallery's Arabic numeral in the viewer, which intentionally displays the Chinese number name; check the target view's rendering contract before asserting labels. Neither issue required changing existing recordings or number labels.

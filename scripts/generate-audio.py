@@ -207,12 +207,14 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--check', action='store_true', help='Validate existing files without credentials or writes')
     parser.add_argument('--scheduled', action='store_true', help='Generate up to 90 missing clips, once per 23 hours')
-    parser.add_argument('--english-card', help='Generate only one card name and English explanation')
+    selection = parser.add_mutually_exclusive_group()
+    selection.add_argument('--english-card', help='Generate only one card name and English explanation')
+    selection.add_argument('--mandarin-cards', nargs='+', help='Process 1-5 explicit Mandarin cards, excluding numbers and letters')
     args = parser.parse_args()
     if args.check and args.scheduled:
         parser.error('--check and --scheduled cannot be combined')
-    if args.english_card and args.scheduled:
-        parser.error('--english-card and --scheduled cannot be combined')
+    if (args.english_card or args.mandarin_cards) and args.scheduled:
+        parser.error('Explicit card selection and --scheduled cannot be combined')
     items = json.loads(subprocess.check_output([
         'node', '--experimental-strip-types', '--input-type=module', '-e',
         "import {pictures} from './src/content.ts'; import {audioTranscript,englishAudioTranscript} from './src/audio.ts'; "
@@ -223,10 +225,19 @@ def main():
         if not selected or selected['category'] == 'letters' or not selected['englishText']:
             parser.error('Select an existing non-alphabet card with an English explanation')
         items = [{**selected, 'id': f"en/{selected['id']}", 'text': selected['englishText'], 'language': 'en'}]
+    if args.mandarin_cards:
+        identifiers = args.mandarin_cards
+        if not 1 <= len(identifiers) <= 5 or len(set(identifiers)) != len(identifiers):
+            parser.error('Select 1-5 distinct Mandarin cards')
+        by_id = {item['id']: item for item in items}
+        if any(identifier not in by_id or by_id[identifier]['category'] in ('numbers', 'letters') for identifier in identifiers):
+            parser.error('Select existing Mandarin cards excluding numbers and letters')
+        items = [by_id[identifier] for identifier in identifiers]
     if args.check:
-        if args.english_card:
-            generate(items[0], None, True)
-            print('英文名称与解释录音校验通过。')
+        if args.english_card or args.mandarin_cards:
+            for item in items:
+                generate(item, None, True)
+            print(f'所选 {len(items)} 条录音校验通过。')
         else:
             run_batch(items, None, True, 0)
         return
@@ -240,8 +251,10 @@ def main():
             raise ValueError('his.fm 未配置 Gemini Key。')
         (ROOT / 'design/audio').mkdir(parents=True, exist_ok=True)
         (ROOT / 'public/audio').mkdir(parents=True, exist_ok=True)
-        if args.english_card:
-            generate(items[0], key, False)
+        if args.english_card or args.mandarin_cards:
+            for item in items:
+                generate(item, key, False)
+            print(f'所选 {len(items)} 条处理完毕；已停止，不继续其他条目。', flush=True)
             return
         return run_batch(items, key, False, 90 if args.scheduled else len(items))
 
