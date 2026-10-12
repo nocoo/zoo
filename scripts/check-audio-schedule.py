@@ -95,4 +95,44 @@ with TemporaryDirectory() as temporary:
             pass
         assert generate.call_count == 1
 
-print('检查通过：冷却、完成后停止、失败后等待、单轮上限、已完成文件复用、英文隔离、中文最多5条、禁止数字字母和重复任务。')
+with TemporaryDirectory() as temporary:
+    root = Path(temporary)
+    (root / 'design/audio').mkdir(parents=True)
+    (root / 'artifacts/audio-schedule').mkdir(parents=True)
+    (root / 'design/audio/saved.wav').write_bytes(b'fixture')
+    (root / 'design/audio/saved.json').write_text(json.dumps({'origin': 'generated'}))
+    items = [{'id': 'phrases-01', 'category': 'phrases', 'text': 'ZH phrase', 'englishText': 'EN phrase explanation'},
+             {'id': 'animals-01', 'category': 'animals', 'text': 'ZH animal', 'englishText': 'EN animal explanation'},
+             {'id': 'numbers-1', 'category': 'numbers'}, {'id': 'letters-A', 'category': 'letters'}]
+    with patch.object(audio, 'ROOT', root):
+        jobs = audio.bilingual_jobs(items)
+        assert [item['id'] for item in jobs] == ['animals-01', 'phrases-01', 'en/animals-01', 'en/phrases-01']
+        assert jobs[-1]['text'] == 'EN phrase explanation' and jobs[-1]['language'] == 'en'
+        assert audio.remaining_requests() == 89
+        for i in range(87):
+            audio.reserve_request(f'fixture-{i}')
+        assert audio.remaining_requests() == 2
+        with patch.object(audio, 'generate', side_effect=lambda item, *_: audio.reserve_request(item['id'])) as generate:
+            audio.run_bilingual_day(items, 'test-only', False)
+            assert [call.args[0]['id'] for call in generate.call_args_list] == ['animals-01', 'phrases-01']
+            generate.reset_mock()
+            audio.run_bilingual_day(items, 'test-only', False)
+            generate.assert_not_called()
+        try:
+            audio.reserve_request('over-budget')
+            raise AssertionError('Daily request budget must persist across invocations')
+        except ValueError:
+            pass
+        assert not (root / 'src/audio-manifest.json').exists()
+        with patch.object(audio, 'remaining_requests', return_value=4), patch.object(audio, 'generate', side_effect=ValueError('HTTP 429')) as generate:
+            try:
+                audio.run_bilingual_day(items, 'test-only', False)
+                raise AssertionError('Bilingual generation must stop on the first provider error')
+            except ValueError:
+                pass
+            assert generate.call_count == 1
+        with patch.object(audio, 'generate') as generate:
+            audio.run_bilingual_day(items, None, True)
+            generate.assert_not_called()
+
+print('检查通过：冷却、失败停止、文件复用、五条隔离、双语中文优先、排除数字字母、持久化每日请求上限。')
