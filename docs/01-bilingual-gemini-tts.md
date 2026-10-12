@@ -1,6 +1,6 @@
 # Complete Gemini Narration In Both Languages
 
-Status: copy and execution plan prepared on 2026-10-12; awaiting owner approval. This pass does not authorize or execute speech generation, timer installation, publication or deployment. The owner separately authorized removal of the old timer; it is now uninstalled.
+Status: copy and execution plan prepared on 2026-10-12. One separately approved five-clip Mandarin batch is complete locally; further generation awaits owner listening approval. This pass does not authorize or execute speech generation, timer installation, publication or deployment. The owner separately authorized removal of the old timer; it is now uninstalled.
 
 ## Copy Approval
 
@@ -14,7 +14,7 @@ Status: copy and execution plan prepared on 2026-10-12; awaiting owner approval.
 
 ## Verified Local Inventory
 
-Audited on 2026-10-12 after the copy pass, without provider calls. Every completed file matches its target transcript, Gemini model, Sulafat voice, WAV SHA-256 and MP3 SHA-256; the committed media URLs select those files. All original Chinese/Edge recordings and the lion English take remain unchanged.
+Audited after the copy pass, then updated after the separately authorized five-clip batch on 2026-10-12. Every completed file matches its target transcript, Gemini model, Sulafat voice, WAV SHA-256 and MP3 SHA-256; the committed media URLs select those files. All original Chinese/Edge recordings and the lion English take remain unchanged.
 
 | Category | Mandarin complete | Mandarin pending | English complete | English pending | Shared alphabet pending |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -22,15 +22,15 @@ Audited on 2026-10-12 after the copy pass, without provider calls. Every complet
 | Fruit | 20 | 0 | 0 | 20 | 0 |
 | Weather | 20 | 0 | 0 | 20 | 0 |
 | Objects | 20 | 0 | 0 | 20 | 0 |
-| Chinese characters | 19 | 1 | 0 | 20 | 0 |
-| Phrases | 0 | 20 | 0 | 20 | 0 |
+| Chinese characters | 20 | 0 | 0 | 20 | 0 |
+| Phrases | 4 | 16 | 0 | 20 | 0 |
 | Numbers 1-30 | 0 | 30 | 0 | 30 | 0 |
 | Alphabet A-Z | 0 | 0 | 0 | 0 | 26 |
-| Total | 99 | 51 | 1 | 149 | 26 |
+| Total | 104 | 46 | 1 | 149 | 26 |
 
-100 unique Gemini recordings are complete locally; 226 remain. Lion English is local only. The last separately verified production baseline was v1.1.1 with 99 Gemini recordings; this pass neither rechecks nor changes production. Do not describe local coverage as deployed coverage.
+105 unique Gemini recordings are complete locally; 221 remain. These pending items already have Edge playback; they are pending Gemini replacement, not absent audio. Lion English is local only. The last separately verified production baseline was v1.1.1 with 99 Gemini recordings; this pass neither rechecks nor changes production. Do not describe local coverage as deployed coverage.
 
-## Mandarin-First Queue
+## Original Full-Coverage Queue (Reference Only)
 
 Content drafting can fan out; provider requests must remain sequential under one shared lock and budget. After approval, use this deterministic queue, skipping any already validated recording:
 
@@ -44,7 +44,7 @@ Content drafting can fan out; provider requests must remain sequential under one
 
 This completes all 51 missing Mandarin recordings before any new English request. If the owner wants to review Mandarin before English begins, stop after step 3 even when quota remains.
 
-## Estimated Rounds
+## Original Full-Coverage Estimate (Superseded Execution Scope)
 
 At most 90 new clips per approved batch attempt; at least 20 seconds between request starts and at least 23 hours between batch attempts. The observed provider limit was 100 requests per day, shared with other His.fm usage. Respect the actual error/reset response; do not rotate keys, retry automatically, change models or upgrade billing to bypass limits.
 
@@ -56,7 +56,7 @@ At most 90 new clips per approved batch attempt; at least 20 seconds between req
 
 These are at least three fully available quota rounds, not a promise of three calendar days. Network failures, remaining shared quota, approval pauses and incomplete earlier rounds change the boundaries. Recount successful files and resume at the first pending queue item; never regenerate a completed take merely to fill a batch. A successful model-list connectivity check does not establish generation quota.
 
-## Implementation Required After Approval
+## Full Bilingual Implementation Deferred
 
 The current generator still has a legacy Mandarin/alphabet batch with an optional budget/cooldown wrapper and an isolated `--english-card` command; the complete bilingual queue and round allocation above are a plan, not an implemented bilingual batch runner; no timer is installed.
 
@@ -80,3 +80,19 @@ Credentials stay in the existing private His.fm configuration. Never copy or pri
 The owner approved the stable subtitle layout and requested whole-caption motion only. Captions appear on a language click above pinyin in reserved space; the entire line fades/slides in gently without moving the illustration or controls. Both pill buttons stay 64 px tall with single-line names; they share a row when space allows, otherwise the entire English pill moves to the next row. Reduced-motion preference disables the caption animation. There is no word highlighting or timing estimation.
 
 The retained lion English sample reads: `Lion. The lion has a fluffy mane around his neck, like a little scarf.` Duration: 6.80 seconds; model: `gemini-3.8-flash-tts`; voice: `Sulafat`. Validate offline with `python3 scripts/generate-audio.py --check --english-card animals-01`.
+
+## Five-Clip Mandarin Review Batch: 2026-10-12
+
+The owner authorized exactly five Mandarin replacements, excluding all numbers and letters, then a mandatory listening stop. No English generation, timer, push or deployment was authorized. The process completed and exited after these five:
+
+| Card | Exact transcript | Seconds |
+| --- | --- | ---: |
+| hanzi-19 | 牛。小牛哞哞叫，低头吃青草。 | 6.36 |
+| phrases-01 | 喝水。我想喝水。 | 3.32 |
+| phrases-02 | 吃饭。我要吃饭啦。 | 3.16 |
+| phrases-03 | 洗手。吃饭前，洗洗手。 | 4.60 |
+| phrases-04 | 刷牙。我们一起刷牙。 | 3.60 |
+
+All five use the approved Gemini model, Sulafat voice and unchanged Mandarin style. Their WAV/MP3 hashes and exact metadata validate; FFmpeg decodes each MP3 fully. All 1,035 pre-existing audio/archive files are byte-identical. The media builder selects the five new Gemini recordings locally. Automated checks do not establish listening quality.
+
+Within the current non-number/non-alphabet Mandarin scope, 16 phrase recordings remain (phrases-05 through phrases-20). Only if separately approved, future review batches would be 5 + 5 + 5 + 1, each followed by a stop. The original 90-clip estimates above are not the active execution plan. Numbers, letters and English remain excluded.

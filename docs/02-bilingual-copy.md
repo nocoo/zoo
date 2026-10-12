@@ -1,6 +1,6 @@
 # Bilingual Copy Approval Ledger
 
-Status: draft for owner approval, 2026-10-12. All 176 cards have Chinese and English descriptions. No new speech was generated for this copy pass. The old automatic speech task has been uninstalled at the owner's request; generation awaits a separate decision after copy review. Existing Chinese text, pinyin, English labels and the approved lion English explanation are unchanged.
+Status: draft for owner approval, 2026-10-12. All 176 cards have Chinese and English descriptions. No speech was generated during the copy pass. A separately authorized five-clip Mandarin batch completed on 2026-10-12; those local statuses are updated here and await listening review. The old automatic speech task has been uninstalled at the owner's request; generation awaits a separate decision after copy review. Existing Chinese text, pinyin, English labels and the approved lion English explanation are unchanged.
 
 ## Reading Contract
 
@@ -12,7 +12,7 @@ Status: draft for owner approval, 2026-10-12. All 176 cards have Chinese and Eng
 
 ## Totals
 
-176 cards; 326 unique target recordings; 100 complete locally, 226 pending. See [the Mandarin-first plan](01-bilingual-gemini-tts.md) before any generation.
+176 cards; 326 unique target recordings; 105 complete locally, 221 pending. See [the Mandarin-first plan](01-bilingual-gemini-tts.md) before any generation.
 
 ## 动物朋友 (20)
 
@@ -127,17 +127,17 @@ Status: draft for owner approval, 2026-10-12. All 176 cards have Chinese and Eng
 | hanzi-16 | 鸟 / niǎo | 小鸟长着羽毛和翅膀。 | Bird | A little bird has feathers and wings. | Gemini complete / Pending |
 | hanzi-17 | 鱼 / yú | 小鱼摆摆尾巴，在水里游。 | Fish | The little fish wiggles its tail and swims in the water. | Gemini complete / Pending |
 | hanzi-18 | 马 / mǎ | 小马有四条腿，跑得快。 | Horse | A horse has four legs and can run fast. | Gemini complete / Pending |
-| hanzi-19 | 牛 / niú | 小牛哞哞叫，低头吃青草。 | Cow | The cow says moo and lowers its head to eat green grass. | Pending / Pending |
+| hanzi-19 | 牛 / niú | 小牛哞哞叫，低头吃青草。 | Cow | The cow says moo and lowers its head to eat green grass. | Gemini complete / Pending |
 | hanzi-20 | 羊 / yáng | 小羊咩咩叫，身上长着毛。 | Sheep | The sheep says baa and has a woolly coat. | Gemini complete / Pending |
 
 ## 开口说说 (20)
 
 | ID | Chinese name / Pinyin | Chinese explanation | English name | English explanation | Local Gemini ZH / EN |
 | --- | --- | --- | --- | --- | --- |
-| phrases-01 | 喝水 / hē shuǐ | 我想喝水。 | Drink water | I would like some water. | Pending / Pending |
-| phrases-02 | 吃饭 / chī fàn | 我要吃饭啦。 | Eat a meal | I am ready to eat! | Pending / Pending |
-| phrases-03 | 洗手 / xǐ shǒu | 吃饭前，洗洗手。 | Wash your hands | Let's wash our hands before we eat. | Pending / Pending |
-| phrases-04 | 刷牙 / shuā yá | 我们一起刷牙。 | Brush your teeth | Let's brush our teeth together. | Pending / Pending |
+| phrases-01 | 喝水 / hē shuǐ | 我想喝水。 | Drink water | I would like some water. | Gemini complete / Pending |
+| phrases-02 | 吃饭 / chī fàn | 我要吃饭啦。 | Eat a meal | I am ready to eat! | Gemini complete / Pending |
+| phrases-03 | 洗手 / xǐ shǒu | 吃饭前，洗洗手。 | Wash your hands | Let's wash our hands before we eat. | Gemini complete / Pending |
+| phrases-04 | 刷牙 / shuā yá | 我们一起刷牙。 | Brush your teeth | Let's brush our teeth together. | Gemini complete / Pending |
 | phrases-05 | 洗脸 / xǐ liǎn | 洗洗小脸，真干净。 | Wash your face | Wash your little face. Now it is nice and clean! | Pending / Pending |
 | phrases-06 | 穿鞋 / chuān xié | 我要穿鞋子。 | Put on your shoes | I want to put on my shoes. | Pending / Pending |
 | phrases-07 | 戴帽子 / dài mào zi | 出门啦，戴好帽子。 | Put on your hat | We are going outside. Let's put on a hat. | Pending / Pending |
