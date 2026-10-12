@@ -111,7 +111,11 @@ export function PictureViewer({ island }: { island: ReturnType<typeof useIsland>
             <span className="reading-name" lang="en">{picture.english}</span>
           </Button>}
         </div>
-        <p id="viewer-description">{picture.description}</p>
+        <div id="viewer-description">
+          <p lang="zh-CN">{picture.description}</p>
+          {picture.englishDescription && <p lang="en">{picture.englishDescription}</p>}
+        </div>
+        {import.meta.env.DEV && picture.englishDescription && <small className="food-note">英文解释文案预览，现有英文录音仍只读名称。</small>}
         {picture.category === 'fruits' && <small className="food-note">请家长去核、切成适龄小块后再食用。</small>}
       </div>
       <nav className="viewer-navigation" aria-label="切换认知卡片">

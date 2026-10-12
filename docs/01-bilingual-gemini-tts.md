@@ -32,7 +32,7 @@ As of 2026-10-12 approximately 08:02 Asia/Shanghai, local recordings, the commit
 
 ## Implementation
 
-1. Extend `src/audio.ts` to enumerate explicit card/language recording jobs. Mandarin keeps the existing approved transcript. English reads exactly `Picture.english` from `src/content.ts` and `src/english.ts`, without translating or reading the Chinese description. Alphabet jobs read the letter name once.
+1. Extend `src/audio.ts` to enumerate explicit card/language recording jobs. Mandarin keeps the existing approved transcript. English reads the English name followed by an approved English explanation corresponding to the Chinese description. Store the explanation as `Picture.englishDescription` in `src/content.ts`; translate naturally for toddlers, not mechanically word for word. Review both displayed languages before generating. Do not treat an English name-only clip as complete. Alphabet jobs read the letter name once.
 2. Extend `scripts/generate-audio.py` to process that complete job list. Keep the existing Mandarin/alphabet paths unchanged; new non-alphabet English originals and metadata use `design/audio/en/<id>.wav|json` and MP3s use `public/audio/en/<id>.mp3`. Record the language, exact text/style, model, voice and hashes. Preserve the existing validated recordings and provenance; do not regenerate them to change directory layout.
 3. Keep `gemini-3.8-flash-tts` and the warm female `Sulafat` voice. Preserve the approved Mandarin direction. Add a separate natural, clear American English word/phrase style, without slow spelling, phonics substitutions, exaggerated vowel stretching or extra commentary. Do not reuse the single-letter instruction for words like `Lion`.
 4. Extend `scripts/build-media.mjs` to select validated Gemini recordings independently for `zh` and `en`; use the corresponding temporary Edge file only while that language is incomplete. Preserve content-versioned URLs. The existing `/audio/*` cache header and PWA audio exclusion must also cover `/audio/en/`.
@@ -41,7 +41,7 @@ As of 2026-10-12 approximately 08:02 Asia/Shanghai, local recordings, the commit
 
 ## Execution Sequence And Quota
 
-- First implement and validate without provider calls. Then generate an English `Lion` sample for listening approval before the English batch. Count the approved sample toward the 150 English jobs; never generate it twice.
+- First preview and approve the lion bilingual name-plus-explanation copy in the local browser, without generating audio. Then implement and validate without provider calls. Only after explicit approval, generate an English lion name-plus-explanation sample for listening approval before the English batch. Count the approved sample toward the 150 English jobs; never generate it twice.
 - Prioritize completing animals in both languages, then work through remaining card/language jobs in a deterministic order. Completed recordings always skip generation.
 - Share one budget across both languages: at most 90 new jobs per scheduled run, at least 20 seconds between request starts, one exclusive lock, and at least 23 hours between scheduled attempts. Preserve successful results immediately; stop on rate limits or network errors without automatic retries or credential rotation.
 - At the verified baseline, the 227 pending jobs require at least three fully available 90-job rounds (90 + 90 + 47). Other His.fm usage, sample approval, provider limits and failures can require more runs; this is not a promised three-day completion date.
@@ -58,3 +58,12 @@ Use the existing basic validation scope, not a new full 6DQ rollout. All automat
 ## Current Boundary
 
 This document changes the plan only. The current generator still covers Mandarin and shared alphabet recordings, not the additional 150 English words/phrases. Its existing schedule is unchanged. No new generation or deployment is authorized merely by writing this plan. Credentials remain in the existing private His.fm configuration and must never be copied into documentation, code, logs or public assets.
+
+## Lion Copy Preview (2026-10-12)
+
+- Chinese name: 狮子
+- Chinese explanation, unchanged: 狮子有一圈蓬松的鬃毛，像戴着小围巾。
+- English name: Lion
+- Proposed English explanation: The lion has a fluffy mane around his neck, like a little scarf.
+- Only the lion has an English explanation for now. The local viewer displays both paragraphs. Existing audio and generation transcripts are unchanged; the old English MP3 still reads only the name, and the dev viewer explicitly says so. Await copy approval before expanding to other cards or generating the new English recording.
+- The existing scheduled generator still covers the old Mandarin/alphabet scope. No timer configuration is changed by this preview.

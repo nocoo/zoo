@@ -8,6 +8,7 @@ export type Picture = {
   english: string;
   pronunciation: string;
   description: string;
+  englishDescription?: string;
   image: string;
   imageLarge: string;
   group?: string;
@@ -26,10 +27,10 @@ export const categories: { id: CategoryId; name: string; subtitle: string; title
   { id: 'fruits', name: '缤纷水果', subtitle: '甜甜的彩虹味道', title: '水果篮里，装着小彩虹', hint: '认一认颜色，再说说你喜欢哪一个', tone: 'rose' },
 ];
 
-type Row = [string, string, string, string?];
+type Row = [string, string, string, string?, string?];
 const rows: Record<Exclude<CategoryId, 'numbers' | 'letters'>, Row[]> = {
   animals: [
-    ['狮子', 'shī zi', '狮子有一圈蓬松的鬃毛，像戴着小围巾。', '森林草原'],
+    ['狮子', 'shī zi', '狮子有一圈蓬松的鬃毛，像戴着小围巾。', '森林草原', 'The lion has a fluffy mane around his neck, like a little scarf.'],
     ['熊猫', 'xióng māo', '熊猫穿着黑白衣服，最爱吃竹子。', '森林草原'],
     ['兔子', 'tù zi', '兔子的耳朵长长的，蹦蹦跳跳真可爱。', '农场伙伴'],
     ['大象', 'dà xiàng', '大象的鼻子长长的，可以卷起食物。', '森林草原'],
@@ -126,9 +127,9 @@ export function numberPinyin(value: number): string {
 }
 
 export const pictures: Picture[] = [
-  ...Object.entries(rows).flatMap(([category, items]) => items.map(([name, pronunciation, description, group], index) => ({
+  ...Object.entries(rows).flatMap(([category, items]) => items.map(([name, pronunciation, description, group, englishDescription], index) => ({
     id: `${category}-${String(index + 1).padStart(2, '0')}`, category: category as CategoryId,
-    name, english: englishLabel(category, index), pronunciation, description, group,
+    name, english: englishLabel(category, index), pronunciation, description, group, englishDescription,
     image: `/art/hd/${category}-${String(index + 1).padStart(2, '0')}-thumb.webp`,
     imageLarge: `/art/hd/${category}-${String(index + 1).padStart(2, '0')}-full.webp`,
   }))),

@@ -44,6 +44,8 @@ assert.equal(swipeStep(30, 0), 0);
 assert.equal(swipeStep(80, 100), 0);
 assert.equal(swipeStep(60, 40), 0);
 assert.equal(audioTranscript(pictures.find(p => p.id === 'animals-01')!), '狮子。狮子有一圈蓬松的鬃毛，像戴着小围巾。');
+assert.equal(pictures.find(p => p.id === 'animals-01')!.englishDescription, 'The lion has a fluffy mane around his neck, like a little scarf.');
+assert.equal(pictures.filter(p => p.englishDescription).length, 1);
 assert.equal(audioTranscript(pictures.find(p => p.id === 'numbers-30')!), '三十');
 assert.equal(audioTranscript(pictures.find(p => p.id === 'letters-A')!), 'A');
 assert.equal(englishNumber(21), 'Twenty-one');
