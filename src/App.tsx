@@ -78,7 +78,7 @@ export function App() {
             <div><div className="section-eyebrow"><span className={`tiny-dot tone-${active.tone}`} />{island.collection ? '装进口袋里的喜欢' : active.name}<span className="count-badge">{island.collection ? island.items.length : island.category === 'numbers' ? 30 : island.category === 'letters' ? 26 : 20} 张认知卡</span></div>
               <h2 id="explore-heading">{island.collection ? '喜欢的朋友，都在这里' : active.title}</h2>
               <p>{island.collection ? '一点小小的喜欢，值得再看一次' : active.hint}</p></div>
-            <Button type="default" icon={<StarIcon size={18} color="currentColor" />} disabled={!island.items.length} onClick={island.surprise}>随便认一个</Button>
+            <Button type="default" icon={<StarIcon size={18} color="currentColor" />} disabled={!island.items.length} onClick={island.surprise}>随机开始</Button>
           </div>
 
           {!island.collection && island.category === 'animals' && <div className="filter-row" aria-label="动物生活环境">

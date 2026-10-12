@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { pictures, type CategoryId, type Picture } from './content';
 import { createRecordedAudio } from './recordedAudio';
 import media from './media.json';
+import { shuffle } from './shuffle';
 
 function readSaved(): string[] {
   try {
@@ -17,6 +18,7 @@ export function useIsland() {
   const [collection, setCollection] = useState(false);
   const [favorites, setFavorites] = useState(readSaved);
   const [selected, setSelected] = useState<Picture | null>(null);
+  const [browseOrder, setBrowseOrder] = useState<Picture[] | null>(null);
   const [message, setMessage] = useState('');
   const [visited, setVisited] = useState<string[]>([]);
   const [parentOpen, setParentOpen] = useState(false);
@@ -53,6 +55,7 @@ export function useIsland() {
     p.category === category &&
     (category !== 'animals' || group === '全部朋友' || p.group === group) &&
     (category !== 'numbers' || (p.value! > numberPage * 10 && p.value! <= (numberPage + 1) * 10)));
+  const viewerItems = (browseOrder ?? items).filter(picture => items.includes(picture));
 
   function speak(picture: Picture, language: 'zh' | 'en') {
     setMessage('');
@@ -62,36 +65,50 @@ export function useIsland() {
     player.current!.play(recordings[picture.id][language]);
   }
 
-  function openPicture(picture: Picture) {
+  function showPicture(picture: Picture) {
     stopSpeech();
     setSelected(picture);
     setVisited(ids => ids.includes(picture.id) ? ids : [...ids, picture.id]);
   }
 
+  function openPicture(picture: Picture) {
+    setBrowseOrder(null);
+    showPicture(picture);
+  }
+
+  function closePicture() {
+    stopSpeech(); setSelected(null); setBrowseOrder(null);
+  }
+
+  function surprise() {
+    if (!items.length) return;
+    const shuffled = shuffle(items);
+    setBrowseOrder(shuffled);
+    showPicture(shuffled[0]);
+  }
+
   function chooseCategory(id: CategoryId) {
-    stopSpeech(); setCategory(id); setCollection(false); setGroup('全部朋友'); setNumberPage(0);
+    closePicture(); setCategory(id); setCollection(false); setGroup('全部朋友'); setNumberPage(0);
   }
 
   function toggleFavorite(id: string) {
     const next = favorites.includes(id) ? favorites.filter(value => value !== id) : [...favorites, id];
     setFavorites(next);
     if (collection && selected?.id === id && !next.includes(id)) {
-      stopSpeech(); setSelected(null);
+      closePicture();
     }
     try { localStorage.setItem('zoo-favorites', JSON.stringify(next)); }
     catch { setMessage('已暂存到本次浏览，浏览器未允许保存到设备。'); }
   }
 
   function move(step: number) {
-    const index = items.findIndex(p => p.id === selected?.id);
-    if (items.length) openPicture(items[(index + step + items.length) % items.length]);
+    const index = viewerItems.findIndex(p => p.id === selected?.id);
+    if (viewerItems.length) showPicture(viewerItems[(index + step + viewerItems.length) % viewerItems.length]);
   }
 
   return {
     category, group, setGroup, numberPage, setNumberPage, collection, setCollection,
-    favorites, selected, message, visited, parentOpen, setParentOpen, items, narration,
-    chooseCategory, openPicture, toggleFavorite, speak, stopSpeech, move,
-    closePicture: () => { stopSpeech(); setSelected(null); },
-    surprise: () => { if (items.length) openPicture(items[Math.floor(Math.random() * items.length)]); },
+    favorites, selected, message, visited, parentOpen, setParentOpen, items, viewerItems, narration,
+    chooseCategory, openPicture, closePicture, toggleFavorite, speak, stopSpeech, move, surprise,
   };
 }

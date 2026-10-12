@@ -18,8 +18,8 @@ export function PictureViewer({ island }: { island: ReturnType<typeof useIsland>
   const picture = island.selected!;
   const narration = island.narration;
   const transcripts: Record<string, { zh: string; en: string }> = media.transcripts;
-  const index = island.items.findIndex(item => item.id === picture.id);
-  const adjacent = neighborImages(island.items, picture.id).join('|');
+  const index = island.viewerItems.findIndex(item => item.id === picture.id);
+  const adjacent = neighborImages(island.viewerItems, picture.id).join('|');
 
   useEffect(() => {
     const images: Record<string, string> = media.images;
@@ -65,7 +65,7 @@ export function PictureViewer({ island }: { island: ReturnType<typeof useIsland>
     gesture.current = null;
     setOffset(0);
     const step = swipeStep(event.clientX - start.x, event.clientY - start.y);
-    if (step && island.items.length > 1) island.move(step);
+    if (step && island.viewerItems.length > 1) island.move(step);
   }
 
   return <dialog ref={dialog} className="picture-viewer" aria-labelledby="viewer-name" aria-describedby={narration ? 'viewer-description' : undefined}
@@ -77,7 +77,7 @@ export function PictureViewer({ island }: { island: ReturnType<typeof useIsland>
     }}>
     <header className="viewer-toolbar">
       <Button type="text" autoFocus aria-label="关闭认知卡片" onClick={close} icon={<CloseIcon size={25} color="currentColor" />} />
-      <span className="viewer-page"><LeafIcon size={16} color="currentColor" /> 小小发现 <b>{index + 1} / {island.items.length}</b></span>
+      <span className="viewer-page"><LeafIcon size={16} color="currentColor" /> 小小发现 <b>{index + 1} / {island.viewerItems.length}</b></span>
       <Button type="text" aria-label={island.favorites.includes(picture.id) ? '取消收藏' : '收藏'} aria-pressed={island.favorites.includes(picture.id)} onClick={() => island.toggleFavorite(picture.id)} icon={<HeartIcon size={24} color="currentColor" fill={island.favorites.includes(picture.id) ? 'currentColor' : 'none'} />} />
     </header>
     <div className="viewer-stage"
@@ -106,12 +106,14 @@ export function PictureViewer({ island }: { island: ReturnType<typeof useIsland>
           {(['zh', 'en'] as const).map(language => <p key={language} className="subtitle-reserve" lang={language === 'zh' ? 'zh-CN' : 'en'} aria-hidden="true">{transcripts[picture.id][language]}</p>)}
           {narration && <p key={`${picture.id}-${narration.language}`} id="viewer-description" lang={narration.language === 'zh' ? 'zh-CN' : 'en'}>{narration.text}</p>}
         </div>
-        <div className={`viewer-readings${picture.category === 'letters' ? ' single-reading' : ''}`}>
-          <span className="viewer-pronunciation">{picture.category === 'letters' ? '大写和小写' : picture.category === 'numbers' ? numberPinyin(picture.value!) : picture.pronunciation}</span>
-          <Button type="default" className="reading-button" aria-pressed={narration?.language === 'zh'} aria-label={`播放${picture.category === 'letters' ? '字母' : '中文'}：${picture.name}`} onClick={() => island.speak(picture, 'zh')}>
-            <span id="viewer-name" className="reading-name">{picture.category === 'letters' ? `${picture.name} ${picture.pronunciation}` : picture.category === 'numbers' ? picture.pronunciation : picture.name}</span>
-            <MusicIcon size={20} color="currentColor" />
-          </Button>
+        <div className="viewer-readings">
+          <div className="reading-column">
+            <span className="viewer-pronunciation">{picture.category === 'letters' ? '大写和小写' : picture.category === 'numbers' ? numberPinyin(picture.value!) : picture.pronunciation}</span>
+            <Button type="default" className="reading-button" aria-pressed={narration?.language === 'zh'} aria-label={`播放${picture.category === 'letters' ? '字母' : '中文'}：${picture.name}`} onClick={() => island.speak(picture, 'zh')}>
+              <span id="viewer-name" className="reading-name">{picture.category === 'letters' ? `${picture.name} ${picture.pronunciation}` : picture.category === 'numbers' ? picture.pronunciation : picture.name}</span>
+              <MusicIcon size={20} color="currentColor" />
+            </Button>
+          </div>
           {picture.category !== 'letters' && <Button type="default" className="reading-button english-reading" aria-pressed={narration?.language === 'en'} aria-label={`播放英文：${picture.english}`} onClick={() => island.speak(picture, 'en')}>
             <span className="reading-name" lang="en">{picture.english}</span>
             <MusicIcon size={20} color="currentColor" />
@@ -120,9 +122,9 @@ export function PictureViewer({ island }: { island: ReturnType<typeof useIsland>
         {picture.category === 'fruits' && <small className="food-note">请家长去核、切成适龄小块后再食用。</small>}
       </div>
       <nav className="viewer-navigation" aria-label="切换认知卡片">
-        <Button type="text" aria-label="上一个" disabled={island.items.length < 2} onClick={() => island.move(-1)} icon={<ArrowLeftIcon size={23} color="currentColor" />} />
+        <Button type="text" aria-label="上一个" disabled={island.viewerItems.length < 2} onClick={() => island.move(-1)} icon={<ArrowLeftIcon size={23} color="currentColor" />} />
         <span>左右滑动，认识新朋友</span>
-        <Button type="text" aria-label="下一个" disabled={island.items.length < 2} onClick={() => island.move(1)} icon={<ArrowRightIcon size={23} color="currentColor" />} />
+        <Button type="text" aria-label="下一个" disabled={island.viewerItems.length < 2} onClick={() => island.move(1)} icon={<ArrowRightIcon size={23} color="currentColor" />} />
       </nav>
     </footer>
     {island.message && <div className="toast" role="status">{island.message}</div>}

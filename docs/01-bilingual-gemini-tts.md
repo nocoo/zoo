@@ -77,6 +77,6 @@ Credentials stay in the existing private His.fm configuration. Never copy or pri
 
 ## Current Viewer And Sample
 
-The owner approved the stable subtitle layout and requested whole-caption motion only. Captions appear on a language click above pinyin in reserved space; the entire line fades/slides in gently without moving the illustration or controls. Both pill buttons share a row and height. Reduced-motion preference disables the caption animation. There is no word highlighting or timing estimation.
+The owner approved the stable subtitle layout and requested whole-caption motion only. Captions appear on a language click above pinyin in reserved space; the entire line fades/slides in gently without moving the illustration or controls. Both pill buttons stay 64 px tall with single-line names; they share a row when space allows, otherwise the entire English pill moves to the next row. Reduced-motion preference disables the caption animation. There is no word highlighting or timing estimation.
 
 The retained lion English sample reads: `Lion. The lion has a fluffy mane around his neck, like a little scarf.` Duration: 6.80 seconds; model: `gemini-3.8-flash-tts`; voice: `Sulafat`. Validate offline with `python3 scripts/generate-audio.py --check --english-card animals-01`.

@@ -5,6 +5,7 @@ import { englishNumber } from '../src/english.ts';
 import { neighborImages } from '../src/neighbors.ts';
 import { swipeStep } from '../src/swipe.ts';
 import { audioTranscript, englishAudioTranscript } from '../src/audio.ts';
+import { shuffle } from '../src/shuffle.ts';
 
 assert.equal(pictures.length, 176);
 const manifest = JSON.parse(readFileSync('public/manifest.webmanifest', 'utf8'));
@@ -63,4 +64,19 @@ assert.deepEqual(neighborImages(animals.slice(0, 2), animals[0].id), [animals[1]
 assert.deepEqual(neighborImages([], 'missing'), []);
 const numbers = pictures.filter(p => p.category === 'numbers');
 assert.deepEqual(neighborImages(numbers, 'numbers-1'), [29, 1, 28, 2].map(i => numbers[i].imageLarge));
+const originalRandom = Math.random;
+try {
+  Math.random = () => 0;
+  const source = [1, 2, 3, 4];
+  assert.deepEqual(shuffle(source), [2, 3, 4, 1]);
+  assert.deepEqual(source, [1, 2, 3, 4]);
+  assert.deepEqual(shuffle([]), []);
+  assert.deepEqual(shuffle([1]), [1]);
+  const shuffled = shuffle(animals);
+  assert.equal(new Set(shuffled).size, animals.length);
+  assert.deepEqual(new Set(shuffled), new Set(animals));
+  assert.deepEqual(neighborImages(shuffled, shuffled[0].id), [19, 1, 18, 2].map(i => shuffled[i].imageLarge));
+} finally {
+  Math.random = originalRandom;
+}
 console.log('检查通过：8 个分类、176 张内容卡、全部插画和数字读法。');
