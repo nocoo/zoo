@@ -17,6 +17,7 @@ export function PictureViewer({ island }: { island: ReturnType<typeof useIsland>
   const exitAnimation = useRef<Animation | null>(null);
   const picture = island.selected!;
   const narration = island.narration;
+  const transcripts: Record<string, { zh: string; en: string }> = media.transcripts;
   const index = island.items.findIndex(item => item.id === picture.id);
   const adjacent = neighborImages(island.items, picture.id).join('|');
 
@@ -101,24 +102,21 @@ export function PictureViewer({ island }: { island: ReturnType<typeof useIsland>
     </div>
     <footer className="viewer-footer">
       <div className="viewer-caption" aria-live="polite">
-        <div className="viewer-readings">
-          <div className="reading-column">
-            <span className="viewer-pronunciation">{picture.category === 'letters' ? '大写和小写' : picture.category === 'numbers' ? numberPinyin(picture.value!) : picture.pronunciation}</span>
-            <Button type="default" className="reading-button" aria-pressed={narration?.language === 'zh'} aria-label={`播放${picture.category === 'letters' ? '字母' : '中文'}：${picture.name}`} onClick={() => island.speak(picture, 'zh')}>
-              <span id="viewer-name" className="reading-name">{picture.category === 'letters' ? `${picture.name} ${picture.pronunciation}` : picture.category === 'numbers' ? picture.pronunciation : picture.name}</span>
-              <MusicIcon size={20} color="currentColor" />
-            </Button>
-          </div>
-          {picture.category !== 'letters' && <div className="reading-column">
-            <Button type="default" className="reading-button english-reading" aria-pressed={narration?.language === 'en'} aria-label={`播放英文：${picture.english}`} onClick={() => island.speak(picture, 'en')}>
-              <span className="reading-name" lang="en">{picture.english}</span>
-              <MusicIcon size={20} color="currentColor" />
-            </Button>
-          </div>}
+        <div className="viewer-subtitle">
+          {(['zh', 'en'] as const).map(language => <p key={language} className="subtitle-reserve" lang={language === 'zh' ? 'zh-CN' : 'en'} aria-hidden="true">{transcripts[picture.id][language]}</p>)}
+          {narration && <p id="viewer-description" lang={narration.language === 'zh' ? 'zh-CN' : 'en'}>{narration.text}</p>}
         </div>
-        {narration && <p id="viewer-description" lang={narration.language === 'zh' ? 'zh-CN' : 'en'} aria-live="off">
-          {narration.segments.map((part, index) => <span key={index} className={narration.progress !== null && narration.progress >= part.start && narration.progress < part.end ? 'narration-current' : undefined}>{part.text}</span>)}
-        </p>}
+        <div className={`viewer-readings${picture.category === 'letters' ? ' single-reading' : ''}`}>
+          <span className="viewer-pronunciation">{picture.category === 'letters' ? '大写和小写' : picture.category === 'numbers' ? numberPinyin(picture.value!) : picture.pronunciation}</span>
+          <Button type="default" className="reading-button" aria-pressed={narration?.language === 'zh'} aria-label={`播放${picture.category === 'letters' ? '字母' : '中文'}：${picture.name}`} onClick={() => island.speak(picture, 'zh')}>
+            <span id="viewer-name" className="reading-name">{picture.category === 'letters' ? `${picture.name} ${picture.pronunciation}` : picture.category === 'numbers' ? picture.pronunciation : picture.name}</span>
+            <MusicIcon size={20} color="currentColor" />
+          </Button>
+          {picture.category !== 'letters' && <Button type="default" className="reading-button english-reading" aria-pressed={narration?.language === 'en'} aria-label={`播放英文：${picture.english}`} onClick={() => island.speak(picture, 'en')}>
+            <span className="reading-name" lang="en">{picture.english}</span>
+            <MusicIcon size={20} color="currentColor" />
+          </Button>}
+        </div>
         {picture.category === 'fruits' && <small className="food-note">请家长去核、切成适龄小块后再食用。</small>}
       </div>
       <nav className="viewer-navigation" aria-label="切换认知卡片">

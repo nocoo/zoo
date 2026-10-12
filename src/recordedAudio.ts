@@ -5,23 +5,16 @@ export function createRecordedAudio(onError: (message: string) => void) {
     const previous = active;
     active = null;
     if (previous) {
-      previous.ontimeupdate = previous.onplaying = previous.onended = null;
       previous.pause();
       previous.removeAttribute('src');
       previous.load();
     }
   }
 
-  function play(url: string, onProgress: (progress: number | null) => void) {
+  function play(url: string) {
     stop();
     const audio = new Audio(url);
     active = audio;
-    const update = () => {
-      if (active !== audio) return;
-      onProgress(!audio.ended && Number.isFinite(audio.duration) && audio.duration > 0
-        ? Math.min(1, Math.max(0, audio.currentTime / audio.duration)) : null);
-    };
-    audio.ontimeupdate = audio.onplaying = audio.onended = update;
     audio.play().catch(error => {
       if (active !== audio) return;
       stop();

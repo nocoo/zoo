@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react';
 import { pictures, type CategoryId, type Picture } from './content';
 import { createRecordedAudio } from './recordedAudio';
 import media from './media.json';
-import { narrationSegments } from './narration';
 
 function readSaved(): string[] {
   try {
@@ -23,8 +22,7 @@ export function useIsland() {
   const [parentOpen, setParentOpen] = useState(false);
   const [narration, setNarration] = useState<{
     language: 'zh' | 'en';
-    segments: ReturnType<typeof narrationSegments>;
-    progress: number | null;
+    text: string;
   } | null>(null);
   const player = useRef<ReturnType<typeof createRecordedAudio> | null>(null);
   if (!player.current) player.current = createRecordedAudio(error => { setMessage(error); setNarration(null); });
@@ -60,10 +58,8 @@ export function useIsland() {
     setMessage('');
     const recordings: Record<string, { zh: string; en: string }> = media.audio;
     const transcripts: Record<string, { zh: string; en: string }> = media.transcripts;
-    setNarration({ language, segments: narrationSegments(transcripts[picture.id][language], language), progress: null });
-    player.current!.play(recordings[picture.id][language], progress => {
-      setNarration(current => current && { ...current, progress });
-    });
+    setNarration({ language, text: transcripts[picture.id][language] });
+    player.current!.play(recordings[picture.id][language]);
   }
 
   function openPicture(picture: Picture) {
