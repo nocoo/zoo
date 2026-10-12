@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Table. A table can hold books and drawing paper.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.08,
+  "interaction_id": "v1_ChZhbFBNYW9YYUpiZmxyZmNQMDl1clVBEhZhbFBNYW9YYUpiZmxyZmNQMDl1clVB",
+  "origin": "generated",
+  "wav_sha256": "c95ce51a539915a574107413db36b41f1c9313d2062f683e7f733c319b2deab7",
+  "mp3_sha256": "558788fd6b4fd4982d006f78d2bcb4cf7e1339215c58c4a42769cfdd6bfdb9f9"
+}

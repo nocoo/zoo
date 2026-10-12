@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Chair. Sit on the little chair and take a rest.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.72,
+  "interaction_id": "v1_ChZWbFBNYXA2R0xLS00xZThQd0ptX2NBEhZWbFBNYXA2R0xLS00xZThQd0ptX2NB",
+  "origin": "generated",
+  "wav_sha256": "3c9feb2b27f2dd41deb2c0d00012b31e3aa9bd175e87e1a3e2f466c848e868e0",
+  "mp3_sha256": "44cbd8e7375973a4b6e5bd69bd284e365fa3bf5eaf16ee9bcc8e9e586a5fe63a"
+}

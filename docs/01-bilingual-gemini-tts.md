@@ -1,6 +1,6 @@
 # Bilingual Gemini Narration
 
-Status: the owner-approved 2026-10-12 daily batch is complete and stopped. All 84 new recordings succeeded; with six earlier requests, today's conservative Zoo budget of 90 requests is exhausted. No timer, push or deployment occurred. Further generation needs renewed authorization and available quota.
+Status: the owner explicitly approved continuing beyond the conservative local cap on 2026-10-12. Eleven more object English clips succeeded, then en/hanzi-01 returned HTTP 429 and the process stopped without retry. The API requested a 20h32m25s wait, approximately until 2026-10-13 08:00 Asia/Shanghai. Successful additions are included in the v1.2.1 release scope; no timer is installed. Further generation needs fresh approval and available quota.
 
 ## Reading Contract
 
@@ -21,16 +21,16 @@ Updated after the 2026-10-12 continuation. Completed recordings match their targ
 | Animals | 20 | 0 | 20 | 0 | 0 |
 | Fruit | 20 | 0 | 20 | 0 | 0 |
 | Weather | 20 | 0 | 20 | 0 | 0 |
-| Objects | 20 | 0 | 9 | 11 | 0 |
+| Objects | 20 | 0 | 20 | 0 | 0 |
 | Chinese characters | 20 | 0 | 0 | 20 | 0 |
 | Phrases | 20 | 0 | 0 | 20 | 0 |
 | Numbers 1-30 (excluded) | 0 | 30 | 0 | 30 | 0 |
 | Alphabet A-Z (excluded) | 0 | 0 | 0 | 0 | 26 |
-| Total | 120 | 30 | 69 | 81 | 26 |
+| Total | 120 | 30 | 80 | 70 | 26 |
 
-189/326 unique Gemini targets are complete locally; 137 remain across the full catalogue. Within the currently eligible scope, 189/240 are complete and only 51 English replacements remain. Every pending item already has Edge playback; this is provider/transcript replacement coverage, not a count of missing playable files.
+200/326 unique Gemini targets are complete locally; 126 remain across the full catalogue. Within the currently eligible scope, 200/240 are complete and only 40 English replacements remain. Every pending item already has Edge playback; this is provider/transcript replacement coverage, not a count of missing playable files.
 
-These numbers are local, not deployed coverage. The last separately verified production baseline was v1.1.1 with 99 Gemini recordings. This batch did not deploy or re-audit production coverage.
+These inventory numbers describe validated local files. The preceding v1.2.0 deployment was verified at commit 7d2cc595827ba1a8055b55787aa4e632fca34821 with 189 recordings. The v1.2.1 release adds the eleven object English recordings; exact deployment evidence must come from its CI and online verification, not this inventory.
 
 ## Completed On 2026-10-12
 
@@ -49,15 +49,22 @@ These numbers are local, not deployed coverage. The last separately verified pro
 
 The continuation preserved all 1,050 pre-existing audio/archive files byte-for-byte and added exactly 84 WAV/JSON/MP3 sets. Every new MP3 decoded fully with FFmpeg. Content and production-build checks passed. Local browser checks sample every newly generated category, silent navigation, exact language URLs and full captions; automated checks do not establish pronunciation quality of every sentence.
 
+## Provider-Limited Continuation
+
+After explicit approval to continue until an API error, `--bilingual-day --until-provider-error` generated objects-10 through objects-20 in English (11 clips), then stopped at the first error: HTTP 429 on en/hanzi-01. No retry, key change, quota change or number/alphabet request occurred. All 1,302 pre-existing audio files remained byte-identical; each of the eleven new MP3s decoded fully.
+
+The local ledger records 102 attempts today: six seeded successes, 84 successful daily-batch requests, then eleven more successes and one rejected request. This differs from the provider's reported 100/day limit; local-day accounting is not the provider quota window and the exact discrepancy is not established. Do not rewrite counts to force agreement. The reported retry deadline is approximately 2026-10-13 08:00 Asia/Shanghai; it is recorded in the preserved local cooldown state, not scheduled for automatic execution.
+
+The explicit continuation flag is allowed only with the number/alphabet-excluding bilingual queue, keeps counting all attempts with an approval marker, stops on any error or queue exhaustion, and never changes the default 90-attempt cap. Do not use it again without fresh approval.
+
 ## Next Queue, Not Yet Authorized
 
 Numbers and letters remain excluded. After fresh approval and available quota, resume English only in this order:
 
-1. `objects-10` through `objects-20`: 11.
-2. `hanzi-01` through `hanzi-20`: 20.
-3. `phrases-01` through `phrases-20`: 20.
+1. `hanzi-01` through `hanzi-20`: 20.
+2. `phrases-01` through `phrases-20`: 20.
 
-These 51 fit within one fully available conservative quota round, but shared usage and provider failures can shorten a run. Do not start automatically tomorrow, restart a timer, regenerate completed clips or fill the remaining budget with excluded categories.
+These 40 fit within one fully available conservative quota round, but shared usage and provider failures can shorten a run. Do not start automatically tomorrow, restart a timer, regenerate completed clips or fill the remaining budget with excluded categories.
 
 ## Execution And Budget
 

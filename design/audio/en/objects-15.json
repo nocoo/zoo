@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Building blocks. Stack big building blocks to make a little house.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.2,
+  "interaction_id": "v1_ChdMbFBNYXIzWklhSGpyZmNQNkpLVThBbxIXTGxQTWFyM1pJYUhqcmZjUDZKS1U4QW8",
+  "origin": "generated",
+  "wav_sha256": "7d08a534c7958cefe389781a32b83979c5cd3d2fe6088f1c82b3b3a55d774309",
+  "mp3_sha256": "e576e0b462c4aa384512b764c2bb2a27d8e3314f27538984efabce447d87fe2f"
+}

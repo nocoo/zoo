@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Clock. A clock tells us what time it is.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 3.36,
+  "interaction_id": "v1_ChdrbFBNYXBXakxLWFoycm9QdmQzQ3NRTRIXa2xQTWFwV2pMS1haMnJvUHZkM0NzUU0",
+  "origin": "generated",
+  "wav_sha256": "fa1e5369d19de60ddf744a0562609894fdb6939465420064ab3e64a6f3d40ca5",
+  "mp3_sha256": "b3876afaefe0d543e6ac0d802a02c12272ec4f5de7e907b3d207f7bed214bc71"
+}

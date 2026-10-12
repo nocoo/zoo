@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Picture book. Open a picture book and explore the story together.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.4,
+  "interaction_id": "v1_ChZRbFBNYXVMWUk0ZU4xZThQZ2JQdWFREhZRbFBNYXVMWUk0ZU4xZThQZ2JQdWFR",
+  "origin": "generated",
+  "wav_sha256": "cd405a3882255f5bdafd1a04a8377002457b6def4b5ae61d2b7907fe1ae5cbe8",
+  "mp3_sha256": "19c18cbe02f2ecc5b2b5659ecc6d33c4cd1bd8851aae87433b893f6a39cd6acb"
+}

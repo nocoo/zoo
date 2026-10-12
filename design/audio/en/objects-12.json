@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Schoolbag. A little schoolbag holds books and small things.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.88,
+  "interaction_id": "v1_Chc4bExNYXN1c0hlVDExZThQN2Fua3lRSRIXOGxMTWFzdXNIZVQxMWU4UDdhbmt5UUk",
+  "origin": "generated",
+  "wav_sha256": "bb30dfa6416a2f11de77a1a636c520aaccc1a2bb0d062db470980e98d5f08abd",
+  "mp3_sha256": "fb4c461e32686932074050b37f4c6eee13e87c1cfbc25e522748bdde37ff447d"
+}

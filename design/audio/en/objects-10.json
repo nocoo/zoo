@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Shirt. Stretch out your arms and put on a clean shirt.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.24,
+  "interaction_id": "v1_Chd5bExNYXJqRUtJNld2cjBQajVuM2dBURIXeWxMTWFyakVLSTZXdnIwUGo1bjNnQVE",
+  "origin": "generated",
+  "wav_sha256": "85bb2b947f2308b38dcfcdf32b0cd593e9755558c670eae1fb4b662bfcd64ffe",
+  "mp3_sha256": "73c30148466989a7f05bf277c504f996638f19d9701173e28f19504141f5921b"
+}

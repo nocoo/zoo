@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Toy car. Give the little toy car a push, and it rolls forward.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.12,
+  "interaction_id": "v1_ChdHbFBNYXVTdElyUGtyZmNQNlpQMTJBOBIXR2xQTWF1U3RJclBrcmZjUDZaUDEyQTg",
+  "origin": "generated",
+  "wav_sha256": "d612cfd9acf7000264fbfed5d5a225b9983e784041687bb0e24e0644ba0b000c",
+  "mp3_sha256": "de4a01aae45b710bb3a7ce42e16dc45e6d6b5ed5658fe520149d37e8b6b76008"
+}

@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Bed. Lie down in your little bed and have a peaceful sleep.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.84,
+  "interaction_id": "v1_ChZmbFBNYXRfS0xOeWMycm9QNWFya01REhZmbFBNYXRfS0xOeWMycm9QNWFya01R",
+  "origin": "generated",
+  "wav_sha256": "7fb11b939736a45253c125221284604d4669ce4e65bad9b12ebbae77f0ed441c",
+  "mp3_sha256": "f8c869499f5db153c1c12075d8ef9cbeaf0a9a5a1fe7bd63a7329c18133eec57"
+}

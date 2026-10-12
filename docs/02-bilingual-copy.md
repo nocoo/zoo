@@ -1,6 +1,6 @@
 # Bilingual Copy Approval Ledger
 
-Status: updated after the owner-approved 2026-10-12 daily batch. All 176 cards have Chinese and English descriptions. The owner approved the five Mandarin samples, then authorized Mandarin-first generation through today's conservative budget, excluding numbers and letters. Generation has stopped at 90 locally recorded requests today. No timer, push or deployment occurred. Existing copy and earlier recordings remain unchanged.
+Status: updated after the owner-approved 2026-10-12 daily batch. All 176 cards have Chinese and English descriptions. The owner approved the five Mandarin samples, then authorized Mandarin-first generation through today's conservative budget, excluding numbers and letters. The later explicitly approved continuation added 11 object English clips and stopped on HTTP 429 at en/hanzi-01. No timer, push or deployment occurred. Existing copy and earlier recordings remain unchanged.
 
 ## Reading Contract
 
@@ -12,7 +12,7 @@ Status: updated after the owner-approved 2026-10-12 daily batch. All 176 cards h
 
 ## Totals
 
-176 cards; 326 unique target recordings; 189 complete locally, 137 pending. See [the Mandarin-first plan](01-bilingual-gemini-tts.md) before any generation.
+176 cards; 326 unique target recordings; 200 complete locally, 126 pending. See [the Mandarin-first plan](01-bilingual-gemini-tts.md) before any generation.
 
 ## 动物朋友 (20)
 
@@ -193,17 +193,17 @@ Status: updated after the owner-approved 2026-10-12 daily batch. All 176 cards h
 | objects-07 | 鞋子 / xié zi | 穿上合脚的鞋子，保护我们的小脚。 | Shoes | Shoes that fit well help protect your little feet. | Gemini complete / Gemini complete |
 | objects-08 | 袜子 / wà zi | 小袜子，套在脚上暖暖的。 | Socks | Put socks on your feet to keep them warm. | Gemini complete / Gemini complete |
 | objects-09 | 帽子 / mào zi | 小帽子，戴在头顶上。 | Hat | A little hat goes on your head. | Gemini complete / Gemini complete |
-| objects-10 | 上衣 / shàng yī | 伸伸手，穿上干净的小上衣。 | Shirt | Stretch out your arms and put on a clean shirt. | Gemini complete / Pending |
-| objects-11 | 裤子 / kù zi | 小裤子，有两个裤腿。 | Pants | A pair of pants has two legs. | Gemini complete / Pending |
-| objects-12 | 书包 / shū bāo | 小书包，可以装下书和小物品。 | Schoolbag | A little schoolbag holds books and small things. | Gemini complete / Pending |
-| objects-13 | 皮球 / pí qiú | 圆圆的皮球，拍一拍，跳起来。 | Ball | Pat the round ball and watch it bounce. | Gemini complete / Pending |
-| objects-14 | 玩具车 / wán jù chē | 小小玩具车，推一推，向前走。 | Toy car | Give the little toy car a push, and it rolls forward. | Gemini complete / Pending |
-| objects-15 | 积木 / jī mù | 把大块积木叠起来，搭一座小房子。 | Building blocks | Stack big building blocks to make a little house. | Gemini complete / Pending |
-| objects-16 | 图画书 / tú huà shū | 翻开图画书，一起看看里面的故事。 | Picture book | Open a picture book and explore the story together. | Gemini complete / Pending |
-| objects-17 | 椅子 / yǐ zi | 小椅子，坐下来休息一下。 | Chair | Sit on the little chair and take a rest. | Gemini complete / Pending |
-| objects-18 | 桌子 / zhuō zi | 桌子上，可以放书和画纸。 | Table | A table can hold books and drawing paper. | Gemini complete / Pending |
-| objects-19 | 小床 / xiǎo chuáng | 躺在小床上，安安静静睡个好觉。 | Bed | Lie down in your little bed and have a peaceful sleep. | Gemini complete / Pending |
-| objects-20 | 时钟 / shí zhōng | 时钟告诉我们，现在是什么时间。 | Clock | A clock tells us what time it is. | Gemini complete / Pending |
+| objects-10 | 上衣 / shàng yī | 伸伸手，穿上干净的小上衣。 | Shirt | Stretch out your arms and put on a clean shirt. | Gemini complete / Gemini complete |
+| objects-11 | 裤子 / kù zi | 小裤子，有两个裤腿。 | Pants | A pair of pants has two legs. | Gemini complete / Gemini complete |
+| objects-12 | 书包 / shū bāo | 小书包，可以装下书和小物品。 | Schoolbag | A little schoolbag holds books and small things. | Gemini complete / Gemini complete |
+| objects-13 | 皮球 / pí qiú | 圆圆的皮球，拍一拍，跳起来。 | Ball | Pat the round ball and watch it bounce. | Gemini complete / Gemini complete |
+| objects-14 | 玩具车 / wán jù chē | 小小玩具车，推一推，向前走。 | Toy car | Give the little toy car a push, and it rolls forward. | Gemini complete / Gemini complete |
+| objects-15 | 积木 / jī mù | 把大块积木叠起来，搭一座小房子。 | Building blocks | Stack big building blocks to make a little house. | Gemini complete / Gemini complete |
+| objects-16 | 图画书 / tú huà shū | 翻开图画书，一起看看里面的故事。 | Picture book | Open a picture book and explore the story together. | Gemini complete / Gemini complete |
+| objects-17 | 椅子 / yǐ zi | 小椅子，坐下来休息一下。 | Chair | Sit on the little chair and take a rest. | Gemini complete / Gemini complete |
+| objects-18 | 桌子 / zhuō zi | 桌子上，可以放书和画纸。 | Table | A table can hold books and drawing paper. | Gemini complete / Gemini complete |
+| objects-19 | 小床 / xiǎo chuáng | 躺在小床上，安安静静睡个好觉。 | Bed | Lie down in your little bed and have a peaceful sleep. | Gemini complete / Gemini complete |
+| objects-20 | 时钟 / shí zhōng | 时钟告诉我们，现在是什么时间。 | Clock | A clock tells us what time it is. | Gemini complete / Gemini complete |
 
 ## 缤纷水果 (20)
 
