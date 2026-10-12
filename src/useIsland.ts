@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { pictures, type CategoryId, type Picture } from './content';
 import { createRecordedAudio } from './recordedAudio';
 import media from './media.json';
+import { narrationSegments } from './narration';
 
 function readSaved(): string[] {
   try {
@@ -20,8 +21,13 @@ export function useIsland() {
   const [message, setMessage] = useState('');
   const [visited, setVisited] = useState<string[]>([]);
   const [parentOpen, setParentOpen] = useState(false);
+  const [narration, setNarration] = useState<{
+    language: 'zh' | 'en';
+    segments: ReturnType<typeof narrationSegments>;
+    progress: number | null;
+  } | null>(null);
   const player = useRef<ReturnType<typeof createRecordedAudio> | null>(null);
-  if (!player.current) player.current = createRecordedAudio(setMessage);
+  if (!player.current) player.current = createRecordedAudio(error => { setMessage(error); setNarration(null); });
 
   useEffect(() => {
     if (!message) return;
@@ -31,6 +37,7 @@ export function useIsland() {
 
   function stopSpeech() {
     player.current?.stop();
+    setNarration(null);
   }
 
   useEffect(() => {
@@ -52,7 +59,11 @@ export function useIsland() {
   function speak(picture: Picture, language: 'zh' | 'en') {
     setMessage('');
     const recordings: Record<string, { zh: string; en: string }> = media.audio;
-    player.current!.play(recordings[picture.id][language]);
+    const transcripts: Record<string, { zh: string; en: string }> = media.transcripts;
+    setNarration({ language, segments: narrationSegments(transcripts[picture.id][language], language), progress: null });
+    player.current!.play(recordings[picture.id][language], progress => {
+      setNarration(current => current && { ...current, progress });
+    });
   }
 
   function openPicture(picture: Picture) {
@@ -82,7 +93,7 @@ export function useIsland() {
 
   return {
     category, group, setGroup, numberPage, setNumberPage, collection, setCollection,
-    favorites, selected, message, visited, parentOpen, setParentOpen, items,
+    favorites, selected, message, visited, parentOpen, setParentOpen, items, narration,
     chooseCategory, openPicture, toggleFavorite, speak, stopSpeech, move,
     closePicture: () => { stopSpeech(); setSelected(null); },
     surprise: () => { if (items.length) openPicture(items[Math.floor(Math.random() * items.length)]); },

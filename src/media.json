@@ -1058,5 +1058,711 @@
       "zh": "/audio-edge/en/letters-Z.mp3?v=8105f75b36af91de",
       "en": "/audio-edge/en/letters-Z.mp3?v=8105f75b36af91de"
     }
+  },
+  "transcripts": {
+    "animals-01": {
+      "zh": "狮子。狮子有一圈蓬松的鬃毛，像戴着小围巾。",
+      "en": "Lion. The lion has a fluffy mane around his neck, like a little scarf."
+    },
+    "animals-02": {
+      "zh": "熊猫。熊猫穿着黑白衣服，最爱吃竹子。",
+      "en": "Panda"
+    },
+    "animals-03": {
+      "zh": "兔子。兔子的耳朵长长的，蹦蹦跳跳真可爱。",
+      "en": "Rabbit"
+    },
+    "animals-04": {
+      "zh": "大象。大象的鼻子长长的，可以卷起食物。",
+      "en": "Elephant"
+    },
+    "animals-05": {
+      "zh": "长颈鹿。长颈鹿的脖子长长的，能吃到高处的树叶。",
+      "en": "Giraffe"
+    },
+    "animals-06": {
+      "zh": "小猫。小猫喵喵叫，嘴边长着细细的胡须。",
+      "en": "Cat"
+    },
+    "animals-07": {
+      "zh": "小狗。小狗汪汪叫，摇摇尾巴来问好。",
+      "en": "Dog"
+    },
+    "animals-08": {
+      "zh": "老虎。老虎的身上有一道道黑色的条纹。",
+      "en": "Tiger"
+    },
+    "animals-09": {
+      "zh": "猴子。猴子会爬树，用小手抓住树枝。",
+      "en": "Monkey"
+    },
+    "animals-10": {
+      "zh": "斑马。斑马穿着黑白条纹的衣服。",
+      "en": "Zebra"
+    },
+    "animals-11": {
+      "zh": "小熊。小熊的身体胖胖的，耳朵圆圆的。",
+      "en": "Bear"
+    },
+    "animals-12": {
+      "zh": "狐狸。狐狸的尾巴蓬蓬的，耳朵尖尖的。",
+      "en": "Fox"
+    },
+    "animals-13": {
+      "zh": "松鼠。松鼠有一条大尾巴，喜欢在树上活动。",
+      "en": "Squirrel"
+    },
+    "animals-14": {
+      "zh": "考拉。考拉抱着树枝，吃桉树的叶子。",
+      "en": "Koala"
+    },
+    "animals-15": {
+      "zh": "河马。河马的嘴巴大大的，喜欢待在水里。",
+      "en": "Hippopotamus"
+    },
+    "animals-16": {
+      "zh": "企鹅。企鹅摇摇摆摆走路，在水里游得很快。",
+      "en": "Penguin"
+    },
+    "animals-17": {
+      "zh": "鸭子。鸭子嘎嘎叫，小脚像一把把小扇子。",
+      "en": "Duck"
+    },
+    "animals-18": {
+      "zh": "猫头鹰。猫头鹰的眼睛大大的，很多猫头鹰夜里活动。",
+      "en": "Owl"
+    },
+    "animals-19": {
+      "zh": "海豚。海豚在海里游泳，会到水面上呼吸。",
+      "en": "Dolphin"
+    },
+    "animals-20": {
+      "zh": "乌龟。乌龟背着硬硬的壳，慢慢地向前爬。",
+      "en": "Turtle"
+    },
+    "fruits-01": {
+      "zh": "苹果。苹果圆圆的，咬一口脆脆的。",
+      "en": "Apple"
+    },
+    "fruits-02": {
+      "zh": "香蕉。香蕉弯弯的，像一轮小月亮。",
+      "en": "Banana"
+    },
+    "fruits-03": {
+      "zh": "橙子。橙子穿着橙色的外衣，果汁甜甜酸酸。",
+      "en": "Orange"
+    },
+    "fruits-04": {
+      "zh": "葡萄。一颗颗葡萄聚在一起，变成一串。",
+      "en": "Grapes"
+    },
+    "fruits-05": {
+      "zh": "草莓。草莓红红的，身上有好多小点点。",
+      "en": "Strawberry"
+    },
+    "fruits-06": {
+      "zh": "西瓜。西瓜外面绿绿的，里面的果肉水分多。",
+      "en": "Watermelon"
+    },
+    "fruits-07": {
+      "zh": "梨。梨的肚子圆圆的，吃起来脆脆甜甜。",
+      "en": "Pear"
+    },
+    "fruits-08": {
+      "zh": "桃子。桃子粉粉的，有的外皮有细细的绒毛。",
+      "en": "Peach"
+    },
+    "fruits-09": {
+      "zh": "菠萝。菠萝头上长着一簇尖尖的绿叶。",
+      "en": "Pineapple"
+    },
+    "fruits-10": {
+      "zh": "芒果。芒果的果肉金黄，闻起来香香的。",
+      "en": "Mango"
+    },
+    "fruits-11": {
+      "zh": "猕猴桃。猕猴桃切开后，能看见一圈小种子。",
+      "en": "Kiwi"
+    },
+    "fruits-12": {
+      "zh": "樱桃。樱桃小小圆圆的，连着细细的果柄。",
+      "en": "Cherries"
+    },
+    "fruits-13": {
+      "zh": "蓝莓。蓝莓是一颗颗蓝紫色的小果子。",
+      "en": "Blueberries"
+    },
+    "fruits-14": {
+      "zh": "柠檬。柠檬黄黄的，尝起来酸酸的。",
+      "en": "Lemon"
+    },
+    "fruits-15": {
+      "zh": "火龙果。火龙果的果肉里，藏着好多黑色小种子。",
+      "en": "Dragon fruit"
+    },
+    "fruits-16": {
+      "zh": "椰子。椰子的外壳硬硬的，里面有椰子水。",
+      "en": "Coconut"
+    },
+    "fruits-17": {
+      "zh": "柿子。成熟的柿子橙红橙红，像一盏小灯笼。",
+      "en": "Persimmon"
+    },
+    "fruits-18": {
+      "zh": "石榴。石榴里面藏着一颗颗亮亮的小果粒。",
+      "en": "Pomegranate"
+    },
+    "fruits-19": {
+      "zh": "荔枝。荔枝剥开外皮，果肉白白的。",
+      "en": "Lychee"
+    },
+    "fruits-20": {
+      "zh": "哈密瓜。哈密瓜的果肉甜甜的，外皮常有网纹。",
+      "en": "Cantaloupe"
+    },
+    "weather-01": {
+      "zh": "晴天。太阳出来啦，暖暖的阳光洒下来。",
+      "en": "Sunny"
+    },
+    "weather-02": {
+      "zh": "白云。白云飘在天空，像软软的棉花。",
+      "en": "Cloud"
+    },
+    "weather-03": {
+      "zh": "下雨。滴答滴答，小雨点从天空落下来。",
+      "en": "Rain"
+    },
+    "weather-04": {
+      "zh": "下雪。小雪花飘下来，给大地盖上白被子。",
+      "en": "Snow"
+    },
+    "weather-05": {
+      "zh": "彩虹。雨后有时能看见彩虹，弯弯的，颜色真多。",
+      "en": "Rainbow"
+    },
+    "weather-06": {
+      "zh": "刮风。风吹过来，树叶轻轻摇。",
+      "en": "Wind"
+    },
+    "weather-07": {
+      "zh": "闪电。天空闪了一下！雷雨时和大人待在安全的室内。",
+      "en": "Lightning"
+    },
+    "weather-08": {
+      "zh": "雾。雾像薄薄的白纱，远处的东西看不清。",
+      "en": "Fog"
+    },
+    "weather-09": {
+      "zh": "阴天。云把太阳遮住了，天空灰灰的。",
+      "en": "Cloudy"
+    },
+    "weather-10": {
+      "zh": "星星。夜晚的天空，有好多亮亮的星星。",
+      "en": "Stars"
+    },
+    "weather-11": {
+      "zh": "月亮。月亮有时圆圆的，有时弯弯的。",
+      "en": "Moon"
+    },
+    "weather-12": {
+      "zh": "日出。早晨，太阳慢慢从天边升起来。",
+      "en": "Sunrise"
+    },
+    "weather-13": {
+      "zh": "晚霞。傍晚的云，有时会变成粉红色和橙色。",
+      "en": "Sunset glow"
+    },
+    "weather-14": {
+      "zh": "露珠。早晨的叶子上，挂着小小的露珠。",
+      "en": "Dew"
+    },
+    "weather-15": {
+      "zh": "霜。很冷的早晨，草叶上可能有白白的霜。",
+      "en": "Frost"
+    },
+    "weather-16": {
+      "zh": "冰。水遇到足够冷的天气，就会结成冰。",
+      "en": "Ice"
+    },
+    "weather-17": {
+      "zh": "雨伞。下雨时撑起小伞，挡住落下的雨点。",
+      "en": "Umbrella"
+    },
+    "weather-18": {
+      "zh": "雨靴。下雨天穿雨靴，让小脚保持干爽。",
+      "en": "Rain boots"
+    },
+    "weather-19": {
+      "zh": "遮阳帽。阳光强的时候，出门记得戴上遮阳帽。",
+      "en": "Sun hat"
+    },
+    "weather-20": {
+      "zh": "雪人。和大人一起，把白白的雪堆成雪人。",
+      "en": "Snowman"
+    },
+    "objects-01": {
+      "zh": "杯子。小杯子，装好水，口渴了喝一口。",
+      "en": "Cup"
+    },
+    "objects-02": {
+      "zh": "勺子。小勺子，可以舀起饭菜。",
+      "en": "Spoon"
+    },
+    "objects-03": {
+      "zh": "碗。小碗里装着香香的饭。",
+      "en": "Bowl"
+    },
+    "objects-04": {
+      "zh": "盘子。盘子平平的，可以放好吃的食物。",
+      "en": "Plate"
+    },
+    "objects-05": {
+      "zh": "牙刷。小牙刷，每天帮我们清洁牙齿。",
+      "en": "Toothbrush"
+    },
+    "objects-06": {
+      "zh": "毛巾。软软的毛巾，擦擦小手和小脸。",
+      "en": "Towel"
+    },
+    "objects-07": {
+      "zh": "鞋子。穿上合脚的鞋子，保护我们的小脚。",
+      "en": "Shoes"
+    },
+    "objects-08": {
+      "zh": "袜子。小袜子，套在脚上暖暖的。",
+      "en": "Socks"
+    },
+    "objects-09": {
+      "zh": "帽子。小帽子，戴在头顶上。",
+      "en": "Hat"
+    },
+    "objects-10": {
+      "zh": "上衣。伸伸手，穿上干净的小上衣。",
+      "en": "Shirt"
+    },
+    "objects-11": {
+      "zh": "裤子。小裤子，有两个裤腿。",
+      "en": "Pants"
+    },
+    "objects-12": {
+      "zh": "书包。小书包，可以装下书和小物品。",
+      "en": "Schoolbag"
+    },
+    "objects-13": {
+      "zh": "皮球。圆圆的皮球，拍一拍，跳起来。",
+      "en": "Ball"
+    },
+    "objects-14": {
+      "zh": "玩具车。小小玩具车，推一推，向前走。",
+      "en": "Toy car"
+    },
+    "objects-15": {
+      "zh": "积木。把大块积木叠起来，搭一座小房子。",
+      "en": "Building blocks"
+    },
+    "objects-16": {
+      "zh": "图画书。翻开图画书，一起看看里面的故事。",
+      "en": "Picture book"
+    },
+    "objects-17": {
+      "zh": "椅子。小椅子，坐下来休息一下。",
+      "en": "Chair"
+    },
+    "objects-18": {
+      "zh": "桌子。桌子上，可以放书和画纸。",
+      "en": "Table"
+    },
+    "objects-19": {
+      "zh": "小床。躺在小床上，安安静静睡个好觉。",
+      "en": "Bed"
+    },
+    "objects-20": {
+      "zh": "时钟。时钟告诉我们，现在是什么时间。",
+      "en": "Clock"
+    },
+    "hanzi-01": {
+      "zh": "日。日，就是太阳。太阳出来了！",
+      "en": "Sun"
+    },
+    "hanzi-02": {
+      "zh": "月。月，就是月亮。月亮挂在天上。",
+      "en": "Moon"
+    },
+    "hanzi-03": {
+      "zh": "山。山，有高高的山峰。",
+      "en": "Mountain"
+    },
+    "hanzi-04": {
+      "zh": "水。水，可以流进小河里。",
+      "en": "Water"
+    },
+    "hanzi-05": {
+      "zh": "木。木，让我们想到一棵树。",
+      "en": "Tree"
+    },
+    "hanzi-06": {
+      "zh": "人。你和我，都是人。",
+      "en": "Person"
+    },
+    "hanzi-07": {
+      "zh": "口。张开口，说一句你好。",
+      "en": "Mouth"
+    },
+    "hanzi-08": {
+      "zh": "手。伸出小手，挥一挥。",
+      "en": "Hand"
+    },
+    "hanzi-09": {
+      "zh": "足。足，就是脚。小脚慢慢走。",
+      "en": "Foot"
+    },
+    "hanzi-10": {
+      "zh": "目。目，就是眼睛。用眼睛看世界。",
+      "en": "Eye"
+    },
+    "hanzi-11": {
+      "zh": "耳。耳朵听一听，小鸟在唱歌。",
+      "en": "Ear"
+    },
+    "hanzi-12": {
+      "zh": "田。田里可以种庄稼。",
+      "en": "Field"
+    },
+    "hanzi-13": {
+      "zh": "火。火很烫，只能远远地看，不可以碰。",
+      "en": "Fire"
+    },
+    "hanzi-14": {
+      "zh": "石。石头硬硬的，有大也有小。",
+      "en": "Stone"
+    },
+    "hanzi-15": {
+      "zh": "花。花儿开了，颜色真漂亮。",
+      "en": "Flower"
+    },
+    "hanzi-16": {
+      "zh": "鸟。小鸟长着羽毛和翅膀。",
+      "en": "Bird"
+    },
+    "hanzi-17": {
+      "zh": "鱼。小鱼摆摆尾巴，在水里游。",
+      "en": "Fish"
+    },
+    "hanzi-18": {
+      "zh": "马。小马有四条腿，跑得快。",
+      "en": "Horse"
+    },
+    "hanzi-19": {
+      "zh": "牛。小牛哞哞叫，低头吃青草。",
+      "en": "Cow"
+    },
+    "hanzi-20": {
+      "zh": "羊。小羊咩咩叫，身上长着毛。",
+      "en": "Sheep"
+    },
+    "phrases-01": {
+      "zh": "喝水。我想喝水。",
+      "en": "Drink water"
+    },
+    "phrases-02": {
+      "zh": "吃饭。我要吃饭啦。",
+      "en": "Eat a meal"
+    },
+    "phrases-03": {
+      "zh": "洗手。吃饭前，洗洗手。",
+      "en": "Wash your hands"
+    },
+    "phrases-04": {
+      "zh": "刷牙。我们一起刷牙。",
+      "en": "Brush your teeth"
+    },
+    "phrases-05": {
+      "zh": "洗脸。洗洗小脸，真干净。",
+      "en": "Wash your face"
+    },
+    "phrases-06": {
+      "zh": "穿鞋。我要穿鞋子。",
+      "en": "Put on your shoes"
+    },
+    "phrases-07": {
+      "zh": "戴帽子。出门啦，戴好帽子。",
+      "en": "Put on your hat"
+    },
+    "phrases-08": {
+      "zh": "睡觉。晚安，我要睡觉了。",
+      "en": "Go to sleep"
+    },
+    "phrases-09": {
+      "zh": "起床。早上好，我起床啦。",
+      "en": "Wake up"
+    },
+    "phrases-10": {
+      "zh": "看书。我们一起看书吧。",
+      "en": "Read a book"
+    },
+    "phrases-11": {
+      "zh": "拍皮球。小皮球，拍一拍。",
+      "en": "Bounce a ball"
+    },
+    "phrases-12": {
+      "zh": "抱一抱。妈妈，我想抱一抱。",
+      "en": "Give me a hug"
+    },
+    "phrases-13": {
+      "zh": "你好。你好，很高兴见到你。",
+      "en": "Hello"
+    },
+    "phrases-14": {
+      "zh": "再见。挥挥手，我们下次见。",
+      "en": "Goodbye"
+    },
+    "phrases-15": {
+      "zh": "谢谢。谢谢你帮我。",
+      "en": "Thank you"
+    },
+    "phrases-16": {
+      "zh": "对不起。对不起，我不是故意的。",
+      "en": "Sorry"
+    },
+    "phrases-17": {
+      "zh": "慢慢走。小脚慢慢走，不着急。",
+      "en": "Walk slowly"
+    },
+    "phrases-18": {
+      "zh": "收玩具。玩好啦，把玩具送回家。",
+      "en": "Put away your toys"
+    },
+    "phrases-19": {
+      "zh": "看花花。看，花花真漂亮。",
+      "en": "Look at the flowers"
+    },
+    "phrases-20": {
+      "zh": "听音乐。听一听，音乐真好听。",
+      "en": "Listen to music"
+    },
+    "numbers-1": {
+      "zh": "一",
+      "en": "One"
+    },
+    "numbers-2": {
+      "zh": "二",
+      "en": "Two"
+    },
+    "numbers-3": {
+      "zh": "三",
+      "en": "Three"
+    },
+    "numbers-4": {
+      "zh": "四",
+      "en": "Four"
+    },
+    "numbers-5": {
+      "zh": "五",
+      "en": "Five"
+    },
+    "numbers-6": {
+      "zh": "六",
+      "en": "Six"
+    },
+    "numbers-7": {
+      "zh": "七",
+      "en": "Seven"
+    },
+    "numbers-8": {
+      "zh": "八",
+      "en": "Eight"
+    },
+    "numbers-9": {
+      "zh": "九",
+      "en": "Nine"
+    },
+    "numbers-10": {
+      "zh": "十",
+      "en": "Ten"
+    },
+    "numbers-11": {
+      "zh": "十一",
+      "en": "Eleven"
+    },
+    "numbers-12": {
+      "zh": "十二",
+      "en": "Twelve"
+    },
+    "numbers-13": {
+      "zh": "十三",
+      "en": "Thirteen"
+    },
+    "numbers-14": {
+      "zh": "十四",
+      "en": "Fourteen"
+    },
+    "numbers-15": {
+      "zh": "十五",
+      "en": "Fifteen"
+    },
+    "numbers-16": {
+      "zh": "十六",
+      "en": "Sixteen"
+    },
+    "numbers-17": {
+      "zh": "十七",
+      "en": "Seventeen"
+    },
+    "numbers-18": {
+      "zh": "十八",
+      "en": "Eighteen"
+    },
+    "numbers-19": {
+      "zh": "十九",
+      "en": "Nineteen"
+    },
+    "numbers-20": {
+      "zh": "二十",
+      "en": "Twenty"
+    },
+    "numbers-21": {
+      "zh": "二十一",
+      "en": "Twenty-one"
+    },
+    "numbers-22": {
+      "zh": "二十二",
+      "en": "Twenty-two"
+    },
+    "numbers-23": {
+      "zh": "二十三",
+      "en": "Twenty-three"
+    },
+    "numbers-24": {
+      "zh": "二十四",
+      "en": "Twenty-four"
+    },
+    "numbers-25": {
+      "zh": "二十五",
+      "en": "Twenty-five"
+    },
+    "numbers-26": {
+      "zh": "二十六",
+      "en": "Twenty-six"
+    },
+    "numbers-27": {
+      "zh": "二十七",
+      "en": "Twenty-seven"
+    },
+    "numbers-28": {
+      "zh": "二十八",
+      "en": "Twenty-eight"
+    },
+    "numbers-29": {
+      "zh": "二十九",
+      "en": "Twenty-nine"
+    },
+    "numbers-30": {
+      "zh": "三十",
+      "en": "Thirty"
+    },
+    "letters-A": {
+      "zh": "A",
+      "en": "A"
+    },
+    "letters-B": {
+      "zh": "B",
+      "en": "B"
+    },
+    "letters-C": {
+      "zh": "C",
+      "en": "C"
+    },
+    "letters-D": {
+      "zh": "D",
+      "en": "D"
+    },
+    "letters-E": {
+      "zh": "E",
+      "en": "E"
+    },
+    "letters-F": {
+      "zh": "F",
+      "en": "F"
+    },
+    "letters-G": {
+      "zh": "G",
+      "en": "G"
+    },
+    "letters-H": {
+      "zh": "H",
+      "en": "H"
+    },
+    "letters-I": {
+      "zh": "I",
+      "en": "I"
+    },
+    "letters-J": {
+      "zh": "J",
+      "en": "J"
+    },
+    "letters-K": {
+      "zh": "K",
+      "en": "K"
+    },
+    "letters-L": {
+      "zh": "L",
+      "en": "L"
+    },
+    "letters-M": {
+      "zh": "M",
+      "en": "M"
+    },
+    "letters-N": {
+      "zh": "N",
+      "en": "N"
+    },
+    "letters-O": {
+      "zh": "O",
+      "en": "O"
+    },
+    "letters-P": {
+      "zh": "P",
+      "en": "P"
+    },
+    "letters-Q": {
+      "zh": "Q",
+      "en": "Q"
+    },
+    "letters-R": {
+      "zh": "R",
+      "en": "R"
+    },
+    "letters-S": {
+      "zh": "S",
+      "en": "S"
+    },
+    "letters-T": {
+      "zh": "T",
+      "en": "T"
+    },
+    "letters-U": {
+      "zh": "U",
+      "en": "U"
+    },
+    "letters-V": {
+      "zh": "V",
+      "en": "V"
+    },
+    "letters-W": {
+      "zh": "W",
+      "en": "W"
+    },
+    "letters-X": {
+      "zh": "X",
+      "en": "X"
+    },
+    "letters-Y": {
+      "zh": "Y",
+      "en": "Y"
+    },
+    "letters-Z": {
+      "zh": "Z",
+      "en": "Z"
+    }
   }
 }

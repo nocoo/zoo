@@ -16,6 +16,7 @@ export function PictureViewer({ island }: { island: ReturnType<typeof useIsland>
   const closing = useRef(false);
   const exitAnimation = useRef<Animation | null>(null);
   const picture = island.selected!;
+  const narration = island.narration;
   const index = island.items.findIndex(item => item.id === picture.id);
   const adjacent = neighborImages(island.items, picture.id).join('|');
 
@@ -66,7 +67,7 @@ export function PictureViewer({ island }: { island: ReturnType<typeof useIsland>
     if (step && island.items.length > 1) island.move(step);
   }
 
-  return <dialog ref={dialog} className="picture-viewer" aria-labelledby="viewer-name" aria-describedby={picture.englishDescription ? 'viewer-description' : undefined}
+  return <dialog ref={dialog} className="picture-viewer" aria-labelledby="viewer-name" aria-describedby={narration ? 'viewer-description' : undefined}
     onCancel={event => { event.preventDefault(); close(); }}
     onKeyDown={event => {
       if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
@@ -103,19 +104,21 @@ export function PictureViewer({ island }: { island: ReturnType<typeof useIsland>
         <div className="viewer-readings">
           <div className="reading-column">
             <span className="viewer-pronunciation">{picture.category === 'letters' ? '大写和小写' : picture.category === 'numbers' ? numberPinyin(picture.value!) : picture.pronunciation}</span>
-            <Button type="text" className="reading-button" aria-label={`播放${picture.category === 'letters' ? '字母' : '中文'}：${picture.name}`} onClick={() => island.speak(picture, 'zh')}>
-              <span className="reading-label">{picture.category === 'letters' ? '字母' : '中文'} <MusicIcon size={17} color="currentColor" /></span>
+            <Button type="default" className="reading-button" aria-pressed={narration?.language === 'zh'} aria-label={`播放${picture.category === 'letters' ? '字母' : '中文'}：${picture.name}`} onClick={() => island.speak(picture, 'zh')}>
               <span id="viewer-name" className="reading-name">{picture.category === 'letters' ? `${picture.name} ${picture.pronunciation}` : picture.category === 'numbers' ? picture.pronunciation : picture.name}</span>
+              <MusicIcon size={20} color="currentColor" />
             </Button>
           </div>
           {picture.category !== 'letters' && <div className="reading-column">
-            <Button type="text" className="reading-button english-reading" aria-label={`播放英文：${picture.english}`} onClick={() => island.speak(picture, 'en')}>
-              <span className="reading-label">English <MusicIcon size={17} color="currentColor" /></span>
+            <Button type="default" className="reading-button english-reading" aria-pressed={narration?.language === 'en'} aria-label={`播放英文：${picture.english}`} onClick={() => island.speak(picture, 'en')}>
               <span className="reading-name" lang="en">{picture.english}</span>
+              <MusicIcon size={20} color="currentColor" />
             </Button>
           </div>}
         </div>
-        {picture.englishDescription && <p id="viewer-description" lang="en">{picture.englishDescription}</p>}
+        {narration && <p id="viewer-description" lang={narration.language === 'zh' ? 'zh-CN' : 'en'} aria-live="off">
+          {narration.segments.map((part, index) => <span key={index} className={narration.progress !== null && narration.progress >= part.start && narration.progress < part.end ? 'narration-current' : undefined}>{part.text}</span>)}
+        </p>}
         {picture.category === 'fruits' && <small className="food-note">请家长去核、切成适龄小块后再食用。</small>}
       </div>
       <nav className="viewer-navigation" aria-label="切换认知卡片">

@@ -35,14 +35,17 @@
 .viewer-decor { z-index: 1; }
 .viewer-footer { padding: 0 max(20px, env(safe-area-inset-right)) max(10px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left)); text-align: center; }
 .viewer-pronunciation { display: inline-block; color: var(--zoo-muted); font-size: 16px; letter-spacing: 2px; padding: 4px 16px; border-top: 2px solid var(--zoo-line); border-radius: 50%; }
-.viewer-readings { display: flex; justify-content: center; align-items: stretch; gap: 8px; max-width: 640px; margin: 0 auto; }
+.viewer-readings { display: flex; justify-content: center; align-items: stretch; gap: 12px; max-width: 480px; margin: 0 auto; }
 .reading-column { flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; }
-.viewer-readings .reading-button { width: 100%; min-width: 0; height: auto; min-height: 64px; padding: 4px 10px; white-space: normal; color: var(--zoo-ink); border: 0; }
-.reading-button > span { display: flex; flex-direction: column; align-items: center; gap: 2px; }
-.reading-label { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 12px; font-weight: 500; color: var(--zoo-green); }
+.viewer-readings .reading-button { width: 100%; min-width: 0; height: auto; min-height: 56px; padding: 8px 12px; white-space: normal; color: var(--zoo-ink); background: var(--zoo-white); border: 1px solid var(--zoo-muted); border-radius: 16px; box-shadow: 0 3px 0 var(--zoo-line); }
+.reading-button > span { display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 10px; }
+.reading-button svg { flex-shrink: 0; color: var(--zoo-green); }
+.viewer-readings .reading-button[aria-pressed="true"] { border-color: var(--zoo-green); background: var(--zoo-mint); }
+.viewer-readings .reading-button:active { transform: translateY(2px); box-shadow: none; }
 .reading-name { font-size: clamp(24px, 4vw, 38px); font-weight: 700; line-height: 1.2; overflow-wrap: anywhere; }
 .english-reading .reading-name { font-size: clamp(20px, 3vw, 30px); }
 .viewer-caption p { font-size: 14px; line-height: 1.7; margin: 6px auto 4px; max-width: 640px; }
+.narration-current { color: var(--zoo-art-paper); background: var(--zoo-green); border-radius: 4px; box-shadow: 0 0 0 2px var(--zoo-green); }
 .food-note { display: block; color: var(--zoo-muted); font-size: 11px; margin-top: 4px; }
 .viewer-navigation { display: flex; align-items: center; justify-content: space-between; gap: 12px; max-width: 460px; margin: 8px auto 0; }
 .viewer-navigation > span { color: var(--zoo-muted); font-size: 12px; }

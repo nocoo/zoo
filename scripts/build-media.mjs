@@ -11,8 +11,10 @@ for (const name of await readdir('public/art/hd')) {
   images[path] = `${path}?v=${hash(await readFile(`public${path}`)).slice(0, 16)}`;
 }
 const audio = {};
+const transcripts = {};
 for (const picture of pictures) {
   audio[picture.id] = {};
+  transcripts[picture.id] = {};
   for (const language of ['zh', 'en']) {
     const geminiId = language === 'en' && picture.category !== 'letters' ? `en/${picture.id}` : picture.id;
     const useGemini = existsSync(`design/audio/${geminiId}.json`);
@@ -25,7 +27,8 @@ for (const picture of pictures) {
     const digest = hash(await readFile(`public${path}`));
     if (digest !== (useGemini ? metadata.mp3_sha256 : metadata.sha256)) throw new Error(`Audio checksum differs: ${path}`);
     audio[picture.id][language] = `${path}?v=${digest.slice(0, 16)}`;
+    transcripts[picture.id][language] = metadata.text;
   }
 }
-await writeFile('src/media.json', JSON.stringify({ images, audio }, null, 2) + '\n');
+await writeFile('src/media.json', JSON.stringify({ images, audio, transcripts }, null, 2) + '\n');
 console.log('媒体清单已生成：图片内容版本号、Gemini 优先的中英文静态录音。');
