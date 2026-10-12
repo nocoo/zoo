@@ -104,7 +104,7 @@ export function PictureViewer({ island }: { island: ReturnType<typeof useIsland>
       <div className="viewer-caption" aria-live="polite">
         <div className="viewer-subtitle">
           {(['zh', 'en'] as const).map(language => <p key={language} className="subtitle-reserve" lang={language === 'zh' ? 'zh-CN' : 'en'} aria-hidden="true">{transcripts[picture.id][language]}</p>)}
-          {narration && <p id="viewer-description" lang={narration.language === 'zh' ? 'zh-CN' : 'en'}>{narration.text}</p>}
+          {narration && <p key={`${picture.id}-${narration.language}`} id="viewer-description" lang={narration.language === 'zh' ? 'zh-CN' : 'en'}>{narration.text}</p>}
         </div>
         <div className={`viewer-readings${picture.category === 'letters' ? ' single-reading' : ''}`}>
           <span className="viewer-pronunciation">{picture.category === 'letters' ? '大写和小写' : picture.category === 'numbers' ? numberPinyin(picture.value!) : picture.pronunciation}</span>

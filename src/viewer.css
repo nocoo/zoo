@@ -48,10 +48,12 @@
 .viewer-subtitle { display: grid; align-items: end; min-height: 3lh; font-size: 14px; line-height: 1.7; margin: 0 auto 10px; max-width: 640px; }
 .viewer-subtitle p { grid-area: 1 / 1; margin: 0; }
 .subtitle-reserve { visibility: hidden; }
+#viewer-description { animation: subtitle-arrive .24s ease-out both; }
 .food-note { display: block; color: var(--zoo-muted); font-size: 11px; margin-top: 4px; }
 .viewer-navigation { display: flex; align-items: center; justify-content: space-between; gap: 12px; max-width: 460px; margin: 8px auto 0; }
 .viewer-navigation > span { color: var(--zoo-muted); font-size: 12px; }
 @keyframes viewer-arrive { from { opacity: .6; } to { opacity: 1; } }
+@keyframes subtitle-arrive { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
 @media (min-width: 900px) {
   .viewer-navigation { position: absolute; inset: 50% 26px auto; max-width: none; margin: 0; pointer-events: none; }
   .viewer-navigation button { pointer-events: auto; }
@@ -72,4 +74,4 @@
   .viewer-subtitle { font-size: 13px; }
   .viewer-pronunciation { font-size: 14px; }
 }
-@media (prefers-reduced-motion: reduce) { .viewer-art { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .viewer-art, #viewer-description { animation: none; } }
