@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.2.1 - 2026-10-12
+
+- Complete the object category's English name-plus-explanation recordings with 11 new Gemini clips, bringing verified coverage to 200 unique recordings. Keep all earlier audio unchanged and retain Edge playback for the 40 remaining eligible English items.
+- Allow an explicitly approved bilingual continuation beyond the conservative local request cap while retaining the request ledger, number/alphabet exclusions and immediate stop on the first provider error. The default daily cap is unchanged; this run stopped on HTTP 429 without retrying.
+
 ## v1.2.0 - 2026-10-12
 
 - Add complete bilingual descriptions for all 176 cards and 90 new Gemini recordings, bringing coverage to 189 unique clips: all 120 non-number Mandarin narrations and 69 English name-plus-explanation narrations. Preserve existing recordings and temporary Edge playback for unfinished items.
