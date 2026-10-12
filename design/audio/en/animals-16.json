@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Penguin. The penguin waddles when it walks and swims fast in the water.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.0,
+  "interaction_id": "v1_ChZTRGJNYXMyWUJMYU0xZThQMk42d1lREhZTRGJNYXMyWUJMYU0xZThQMk42d1lR",
+  "origin": "generated",
+  "wav_sha256": "0296b3a6422f4f77d4fb3a163019e89cedad97a35e93643674663f6bb395c130",
+  "mp3_sha256": "f1a4f81a08bb3e86a60a9e9ff59986337b6b6531485c6d6f16bf9c6837586b12"
+}

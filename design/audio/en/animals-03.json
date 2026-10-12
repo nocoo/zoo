@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Rabbit. The rabbit has long ears and hops along so sweetly.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.92,
+  "interaction_id": "v1_ChdRelhNYXBEY05QS3kycm9QakpMQzJRdxIXUXpYTWFwRGNOUEt5MnJvUGpKTEMyUXc",
+  "origin": "generated",
+  "wav_sha256": "ded50d5f25ed74bd2f7399fe6394f066e9b7eb4b10339e75b07c2a221582f328",
+  "mp3_sha256": "1022483f122fb990e9040dc7b0d7b128f9827820fccf51b239162da91849ec9d"
+}

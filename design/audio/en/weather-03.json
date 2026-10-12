@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Rain. Pitter-patter! Little raindrops fall from the sky.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.12,
+  "interaction_id": "v1_ChZaVGpNYXRJMXdvVFY3d19iM0lENERnEhZaVGpNYXRJMXdvVFY3d19iM0lENERn",
+  "origin": "generated",
+  "wav_sha256": "5934dadc209e133bd22b12aa7d87e15a24d66d43b756a7666a83471765d8932b",
+  "mp3_sha256": "81bda9c17aad515284e2e215337ac327f3ead3e6e0fce9b8a831122dc83e19af"
+}

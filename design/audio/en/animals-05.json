@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Giraffe. The giraffe has a long neck that helps it reach leaves high in the trees.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.84,
+  "interaction_id": "v1_ChZhelhNYXJMT01abi0xZThQNjR2a0NREhZhelhNYXJMT01abi0xZThQNjR2a0NR",
+  "origin": "generated",
+  "wav_sha256": "b826d57a98f9e23b5fcc9dddb0089d018d1a325ff4228e47605f9a411b2c3526",
+  "mp3_sha256": "0fb33a208eb667bbc1e5c65bf363acaecf233ddb8dc696db72de362b7d3e9882"
+}

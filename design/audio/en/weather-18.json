@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Rain boots. Wear rain boots on rainy days to keep your feet dry.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.24,
+  "interaction_id": "v1_ChdrVG5NYXFyOUs5amVyZmNQaGFlWjhRbxIXa1RuTWFxcjlLOWplcmZjUGhhZVo4UW8",
+  "origin": "generated",
+  "wav_sha256": "915a651dce4bb8bb0fd51463f93b64239578ad03593003973ef078551c9a6c16",
+  "mp3_sha256": "e35abbf0a4686ad66630045cfaddb67c852d52333854ae7d943d15bd9051b8bd"
+}

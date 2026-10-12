@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Spoon. A little spoon helps you scoop up food.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.8,
+  "interaction_id": "v1_ChQ0am5NYXJoT3RvelY3d19ZM3JCaBIUNGpuTWFyaE90b3pWN3dfWTNyQmg",
+  "origin": "generated",
+  "wav_sha256": "aec82d4e594e9d6573416f10064ec65f230c3a4a427d74bc1903d8c5f5db4506",
+  "mp3_sha256": "7abd179889249d19893f529cd4debbff42daab417d4b5458fdac7339f830b862"
+}

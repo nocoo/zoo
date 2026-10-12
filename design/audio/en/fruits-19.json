@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Lychee. Under its skin, a lychee is white inside.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.84,
+  "interaction_id": "v1_ChZGRGpNYXBxOUs4blo5dE1QeF9DeVlBEhZGRGpNYXBxOUs4blo5dE1QeF9DeVlB",
+  "origin": "generated",
+  "wav_sha256": "2a9dd5b9ebefae7552da623d54c6b1b83f45b1b29f02b89b01438a15109642eb",
+  "mp3_sha256": "a921534639bfab6be9c2601ec7cd936ec5f43b75d681a4d966fc71fedc87b534"
+}

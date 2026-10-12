@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Apple. An apple is round and crunchy to eat.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.72,
+  "interaction_id": "v1_ChdyRGJNYXF5bUV0dXgxZThQNWUyaDJRURIXckRiTWFxeW1FdHV4MWU4UDVlMmgyUVE",
+  "origin": "generated",
+  "wav_sha256": "a4ea80e84d0347880fdc987eb0e1915e1235514a3afbd89c39dcc96af1be001a",
+  "mp3_sha256": "403f866e6fb75dda0b4b1fb73a3cb897fc99264957669d94a3c5461c29bfc612"
+}

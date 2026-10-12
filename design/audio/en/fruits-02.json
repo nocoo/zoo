@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Banana. A banana is curved like a little moon.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.68,
+  "interaction_id": "v1_Chd3RGJNYXFLeUUtbktyZmNQaF9HbDZRNBIXd0RiTWFxS3lFLW5LcmZjUGhfR2w2UTQ",
+  "origin": "generated",
+  "wav_sha256": "af0c9add8054b2597182bd306283bca570b22a78fb7ec7c52d83ea23df4c824a",
+  "mp3_sha256": "4015ff20995e0f3e703f4ddb2be7d6ab2069a5aba0d59564e386a88449d14c59"
+}

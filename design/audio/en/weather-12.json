@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Sunrise. In the morning, the sun slowly rises at the edge of the sky.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.48,
+  "interaction_id": "v1_ChdHVG5NYXFtNUhmS3kycm9QakpMQzJRdxIXR1RuTWFxbTVIZkt5MnJvUGpKTEMyUXc",
+  "origin": "generated",
+  "wav_sha256": "132e88f5e0d7aa04a2b907ee445bb2a19cabf0fb1327f98d60aa5c093278fbdd",
+  "mp3_sha256": "4e04ff67eef23cb0881c5ccb4e914144e0a46b01aa32fc915eb85f9caa3cacac"
+}

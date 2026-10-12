@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Cantaloupe. A cantaloupe is sweet inside, and its skin often has a net-like pattern.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.36,
+  "interaction_id": "v1_ChdLRGpNYXB2Mk42ZS0xZThQeWZmaHlRSRIXS0RqTWFwdjJONmUtMWU4UHlmZmh5UUk",
+  "origin": "generated",
+  "wav_sha256": "6ed361d5e1ed826e5949f575f97dbd2ba3461039a876fbc6a7bccd4ce0d5cd66",
+  "mp3_sha256": "963535f67afdf1d9aa0816851ea704a57f22172a98508b9b91b11e3570d7e8b9"
+}

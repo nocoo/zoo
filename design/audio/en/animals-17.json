@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Duck. The duck says quack, and its little feet look like little fans.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.0,
+  "interaction_id": "v1_ChdYRGJNYXAtRkJzU3ExZThQekxXSWtRRRIXWERiTWFwLUZCc1NxMWU4UHpMV0lrUUU",
+  "origin": "generated",
+  "wav_sha256": "b9a5e956673fc32ca8898fd2bb7b1da5521303358f7cd8d6137a617b573875a9",
+  "mp3_sha256": "716f2e5326bd0c98d1bc990d67b6da32ffe114dba9d7ed85c83db9467bc04032"
+}

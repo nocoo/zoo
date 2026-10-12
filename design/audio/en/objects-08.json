@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Socks. Put socks on your feet to keep them warm.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.28,
+  "interaction_id": "v1_ChdXanJNYW95UkdkQ3oxZThQXzRERWtBRRIXV2pyTWFveVJHZEN6MWU4UF80REVrQUU",
+  "origin": "generated",
+  "wav_sha256": "69311f94082c5cc4ffc65f0d03ac9fe4db4d05dba349d9526089a3ad94652fc7",
+  "mp3_sha256": "7e37ca3426e9a0541bb15f7acfb5bfd1d5ea123d8bd354612188789ab714b323"
+}

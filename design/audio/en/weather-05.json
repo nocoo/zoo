@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Rainbow. Sometimes a colorful, curved rainbow appears after the rain.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.04,
+  "interaction_id": "v1_ChdqVGpNYW9DTkJJaW0ycm9QX3Q3WC1BTRIXalRqTWFvQ05CSWltMnJvUF90N1gtQU0",
+  "origin": "generated",
+  "wav_sha256": "20fb2c6b201e65262aed69a01f0242e3a10a116fc72c93ddb11688813dd6c40c",
+  "mp3_sha256": "7b3cbf741262be8c3c74a8193e1886a51a89a686bfd5676ce0e92b78a86eccf2"
+}

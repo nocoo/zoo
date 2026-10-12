@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Fox. The fox has a fluffy tail and pointy ears.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.6,
+  "interaction_id": "v1_ChYtRFhNYXJqbkZwR052cjBQbHVYaVlBEhYtRFhNYXJqbkZwR052cjBQbHVYaVlB",
+  "origin": "generated",
+  "wav_sha256": "358f34e4cded0bae0a2dbabb74781c5401c6b03215dab98648880c82ce292418",
+  "mp3_sha256": "ec48e80d834bd7e833f673e89dd8ef10d8ec1b32496c10b3f03c811ab9a3421f"
+}

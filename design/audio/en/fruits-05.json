@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Strawberry. A strawberry is red with lots of tiny dots.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.48,
+  "interaction_id": "v1_ChdfRGJNYXFxZkZidWo5dE1QNDlUcWlRTRIXX0RiTWFxcWZGYnVqOXRNUDQ5VHFpUU0",
+  "origin": "generated",
+  "wav_sha256": "b141cdbf3f9c013fd88709eb68b29fa64922e0e2a71e0ba4be9beabe373ef33c",
+  "mp3_sha256": "46c064ca222d7cd7693db524d786838854e8186718ed077c7a878cc5602cfdc3"
+}

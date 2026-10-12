@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "睡觉。晚安，我要睡觉了。",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 3.96,
+  "interaction_id": "v1_ChdLelRNYXI3ZEk4alAxZThQcl8zWjBRSRIXS3pUTWFyN2RJOGpQMWU4UHJfM1owUUk",
+  "origin": "generated",
+  "wav_sha256": "9a0e34588a9b90c5f271e0d19fd292c13970e0d0f8ecbbe3e6932bd80647838a",
+  "mp3_sha256": "79bac7fc4cb813bc29bfbe715cdc3980360885844941b95225b1780d661dd039"
+}

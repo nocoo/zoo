@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Plate. A plate is flat and holds yummy food.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.28,
+  "interaction_id": "v1_ChdDanJNYXZUUkJ1dkUxZThQdWVybzJBSRIXQ2pyTWF2VFJCdXZFMWU4UHVlcm8yQUk",
+  "origin": "generated",
+  "wav_sha256": "b59c654a1b4dc850c9d991c4ca636fcc33342bc3ad5269e93cc987e4c2d4aa4d",
+  "mp3_sha256": "14e0bfe327859809b507ee791a87359b1f996bb1caf9b7a1da8f31db96f80d7e"
+}

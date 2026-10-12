@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Dew. In the morning, tiny drops of dew sit on the leaves.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.64,
+  "interaction_id": "v1_ChZRVG5NYXFuaEpQN1k5dE1QeXZqTFlBEhZRVG5NYXFuaEpQN1k5dE1QeXZqTFlB",
+  "origin": "generated",
+  "wav_sha256": "09726332e7c50cc60a5df8ce331caa6b4bf3268dd08314c980dc01747d5122a0",
+  "mp3_sha256": "7a9f34bbe32fb0606aa9205a95ae034b7d8fe542300125f472e3983f4009c8ab"
+}

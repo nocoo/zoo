@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Pineapple. A pineapple has a bunch of pointy green leaves on top.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.0,
+  "interaction_id": "v1_ChdURGZNYXRYR0dfYU4wLWtQMy02am9RTRIXVERmTWF0WEdHX2FOMC1rUDMtNmpvUU0",
+  "origin": "generated",
+  "wav_sha256": "346f0b11eca22f4effccd5a43df121690893cf306e59532c21bbc367e0d6fc5f",
+  "mp3_sha256": "73a444daa5ea70f1a5a93869fa39195ed7f7e782672f2e7eb40fd6aabb1e8a65"
+}

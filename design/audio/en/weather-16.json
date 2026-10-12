@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Ice. When it gets cold enough, water freezes into ice.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.8,
+  "interaction_id": "v1_ChdhVG5NYXAtLUpQN18xZThQOE8yRTZRSRIXYVRuTWFwLS1KUDdfMWU4UDhPMkU2UUk",
+  "origin": "generated",
+  "wav_sha256": "abfd941ba6bde18f39a8bd21b34da8ae924d1a2b669ca75f62530052ca1cd3d0",
+  "mp3_sha256": "9f8ceca2f3c36dcb29826409f187ed49d77525e10974821dc3a3f9f9814eb5df"
+}

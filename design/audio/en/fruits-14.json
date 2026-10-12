@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Lemon. A lemon is yellow and tastes sour.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.52,
+  "interaction_id": "v1_ChdzRGZNYXRQaUliXzAxZThQcjhmQXNRSRIXc0RmTWF0UGlJYl8wMWU4UHI4ZkFzUUk",
+  "origin": "generated",
+  "wav_sha256": "1feb56cd0ad6b55e7db43e78cbb9f7ed9fd054ed2693cee8f803f1f48008b838",
+  "mp3_sha256": "4e8414ffcd97ffc8d1861ac30140d62be46e7230a5c0c0130be0d01bd37c009e"
+}

@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Panda. The panda has a black and white coat and loves to eat bamboo.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.88,
+  "interaction_id": "v1_ChdMelhNYXV1Q01yUGFyZmNQMHZLNnlBOBIXTHpYTWF1dUNNclBhcmZjUDB2SzZ5QTg",
+  "origin": "generated",
+  "wav_sha256": "f03262b82533c4b9d7194d0c0546fba5932f2df6292360321048a83ce40797f8",
+  "mp3_sha256": "5e91b642a047bb90e673b92c407286aa34f72f62d187f7110ae5f6306038d851"
+}

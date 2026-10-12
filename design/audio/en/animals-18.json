@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Owl. Owls have big eyes, and many owls are active at night.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.32,
+  "interaction_id": "v1_ChZjRGJNYXNTNERiZmxyZmNQMDl1clVBEhZjRGJNYXNTNERiZmxyZmNQMDl1clVB",
+  "origin": "generated",
+  "wav_sha256": "756626fca987293bfe9dbbcebfe47bae8834fda7b6b8cf2e93bfb7c8face14f4",
+  "mp3_sha256": "0fbce0b42d67326d7b33cf2277540b83d87b316cd854c1d94c679d083fdda212"
+}

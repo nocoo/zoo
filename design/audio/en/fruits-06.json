@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Watermelon. A watermelon is green on the outside and juicy on the inside.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.8,
+  "interaction_id": "v1_ChZFRGZNYXV2bUdMLXUxZThQOFAyNllREhZFRGZNYXV2bUdMLXUxZThQOFAyNllR",
+  "origin": "generated",
+  "wav_sha256": "b1a0b48b64a51c501296b273855a50fc31377d8da0f211060af28916ef7592a6",
+  "mp3_sha256": "745970169344c9af22fc853237c608cf7a38552dc3fa7ca089148da07bbbaff9"
+}

@@ -1,6 +1,6 @@
 # Bilingual Copy Approval Ledger
 
-Status: draft for owner approval, 2026-10-12. All 176 cards have Chinese and English descriptions. No speech was generated during the copy pass. A separately authorized five-clip Mandarin batch completed on 2026-10-12; those local statuses are updated here and await listening review. The old automatic speech task has been uninstalled at the owner's request; generation awaits a separate decision after copy review. Existing Chinese text, pinyin, English labels and the approved lion English explanation are unchanged.
+Status: updated after the owner-approved 2026-10-12 daily batch. All 176 cards have Chinese and English descriptions. The owner approved the five Mandarin samples, then authorized Mandarin-first generation through today's conservative budget, excluding numbers and letters. Generation has stopped at 90 locally recorded requests today. No timer, push or deployment occurred. Existing copy and earlier recordings remain unchanged.
 
 ## Reading Contract
 
@@ -12,32 +12,32 @@ Status: draft for owner approval, 2026-10-12. All 176 cards have Chinese and Eng
 
 ## Totals
 
-176 cards; 326 unique target recordings; 105 complete locally, 221 pending. See [the Mandarin-first plan](01-bilingual-gemini-tts.md) before any generation.
+176 cards; 326 unique target recordings; 189 complete locally, 137 pending. See [the Mandarin-first plan](01-bilingual-gemini-tts.md) before any generation.
 
 ## 动物朋友 (20)
 
 | ID | Chinese name / Pinyin | Chinese explanation | English name | English explanation | Local Gemini ZH / EN |
 | --- | --- | --- | --- | --- | --- |
 | animals-01 | 狮子 / shī zi | 狮子有一圈蓬松的鬃毛，像戴着小围巾。 | Lion | The lion has a fluffy mane around his neck, like a little scarf. | Gemini complete / Gemini complete |
-| animals-02 | 熊猫 / xióng māo | 熊猫穿着黑白衣服，最爱吃竹子。 | Panda | The panda has a black and white coat and loves to eat bamboo. | Gemini complete / Pending |
-| animals-03 | 兔子 / tù zi | 兔子的耳朵长长的，蹦蹦跳跳真可爱。 | Rabbit | The rabbit has long ears and hops along so sweetly. | Gemini complete / Pending |
-| animals-04 | 大象 / dà xiàng | 大象的鼻子长长的，可以卷起食物。 | Elephant | The elephant has a long trunk that can pick up food. | Gemini complete / Pending |
-| animals-05 | 长颈鹿 / cháng jǐng lù | 长颈鹿的脖子长长的，能吃到高处的树叶。 | Giraffe | The giraffe has a long neck that helps it reach leaves high in the trees. | Gemini complete / Pending |
-| animals-06 | 小猫 / xiǎo māo | 小猫喵喵叫，嘴边长着细细的胡须。 | Cat | The cat says meow and has fine whiskers beside its mouth. | Gemini complete / Pending |
-| animals-07 | 小狗 / xiǎo gǒu | 小狗汪汪叫，摇摇尾巴来问好。 | Dog | The dog says woof and wags its tail to say hello. | Gemini complete / Pending |
-| animals-08 | 老虎 / lǎo hǔ | 老虎的身上有一道道黑色的条纹。 | Tiger | The tiger has black stripes on its body. | Gemini complete / Pending |
-| animals-09 | 猴子 / hóu zi | 猴子会爬树，用小手抓住树枝。 | Monkey | The monkey climbs trees and holds the branches with its little hands. | Gemini complete / Pending |
-| animals-10 | 斑马 / bān mǎ | 斑马穿着黑白条纹的衣服。 | Zebra | The zebra has a coat with black and white stripes. | Gemini complete / Pending |
-| animals-11 | 小熊 / xiǎo xióng | 小熊的身体胖胖的，耳朵圆圆的。 | Bear | The little bear has a plump body and round ears. | Gemini complete / Pending |
-| animals-12 | 狐狸 / hú li | 狐狸的尾巴蓬蓬的，耳朵尖尖的。 | Fox | The fox has a fluffy tail and pointy ears. | Gemini complete / Pending |
-| animals-13 | 松鼠 / sōng shǔ | 松鼠有一条大尾巴，喜欢在树上活动。 | Squirrel | The squirrel has a big tail and likes to move around in the trees. | Gemini complete / Pending |
-| animals-14 | 考拉 / kǎo lā | 考拉抱着树枝，吃桉树的叶子。 | Koala | The koala holds on to a branch and eats eucalyptus leaves. | Gemini complete / Pending |
-| animals-15 | 河马 / hé mǎ | 河马的嘴巴大大的，喜欢待在水里。 | Hippopotamus | The hippopotamus has a big mouth and likes to stay in the water. | Gemini complete / Pending |
-| animals-16 | 企鹅 / qǐ é | 企鹅摇摇摆摆走路，在水里游得很快。 | Penguin | The penguin waddles when it walks and swims fast in the water. | Gemini complete / Pending |
-| animals-17 | 鸭子 / yā zi | 鸭子嘎嘎叫，小脚像一把把小扇子。 | Duck | The duck says quack, and its little feet look like little fans. | Gemini complete / Pending |
-| animals-18 | 猫头鹰 / māo tóu yīng | 猫头鹰的眼睛大大的，很多猫头鹰夜里活动。 | Owl | Owls have big eyes, and many owls are active at night. | Gemini complete / Pending |
-| animals-19 | 海豚 / hǎi tún | 海豚在海里游泳，会到水面上呼吸。 | Dolphin | The dolphin swims in the sea and comes up to the surface to breathe. | Gemini complete / Pending |
-| animals-20 | 乌龟 / wū guī | 乌龟背着硬硬的壳，慢慢地向前爬。 | Turtle | The turtle has a hard shell on its back and crawls along slowly. | Gemini complete / Pending |
+| animals-02 | 熊猫 / xióng māo | 熊猫穿着黑白衣服，最爱吃竹子。 | Panda | The panda has a black and white coat and loves to eat bamboo. | Gemini complete / Gemini complete |
+| animals-03 | 兔子 / tù zi | 兔子的耳朵长长的，蹦蹦跳跳真可爱。 | Rabbit | The rabbit has long ears and hops along so sweetly. | Gemini complete / Gemini complete |
+| animals-04 | 大象 / dà xiàng | 大象的鼻子长长的，可以卷起食物。 | Elephant | The elephant has a long trunk that can pick up food. | Gemini complete / Gemini complete |
+| animals-05 | 长颈鹿 / cháng jǐng lù | 长颈鹿的脖子长长的，能吃到高处的树叶。 | Giraffe | The giraffe has a long neck that helps it reach leaves high in the trees. | Gemini complete / Gemini complete |
+| animals-06 | 小猫 / xiǎo māo | 小猫喵喵叫，嘴边长着细细的胡须。 | Cat | The cat says meow and has fine whiskers beside its mouth. | Gemini complete / Gemini complete |
+| animals-07 | 小狗 / xiǎo gǒu | 小狗汪汪叫，摇摇尾巴来问好。 | Dog | The dog says woof and wags its tail to say hello. | Gemini complete / Gemini complete |
+| animals-08 | 老虎 / lǎo hǔ | 老虎的身上有一道道黑色的条纹。 | Tiger | The tiger has black stripes on its body. | Gemini complete / Gemini complete |
+| animals-09 | 猴子 / hóu zi | 猴子会爬树，用小手抓住树枝。 | Monkey | The monkey climbs trees and holds the branches with its little hands. | Gemini complete / Gemini complete |
+| animals-10 | 斑马 / bān mǎ | 斑马穿着黑白条纹的衣服。 | Zebra | The zebra has a coat with black and white stripes. | Gemini complete / Gemini complete |
+| animals-11 | 小熊 / xiǎo xióng | 小熊的身体胖胖的，耳朵圆圆的。 | Bear | The little bear has a plump body and round ears. | Gemini complete / Gemini complete |
+| animals-12 | 狐狸 / hú li | 狐狸的尾巴蓬蓬的，耳朵尖尖的。 | Fox | The fox has a fluffy tail and pointy ears. | Gemini complete / Gemini complete |
+| animals-13 | 松鼠 / sōng shǔ | 松鼠有一条大尾巴，喜欢在树上活动。 | Squirrel | The squirrel has a big tail and likes to move around in the trees. | Gemini complete / Gemini complete |
+| animals-14 | 考拉 / kǎo lā | 考拉抱着树枝，吃桉树的叶子。 | Koala | The koala holds on to a branch and eats eucalyptus leaves. | Gemini complete / Gemini complete |
+| animals-15 | 河马 / hé mǎ | 河马的嘴巴大大的，喜欢待在水里。 | Hippopotamus | The hippopotamus has a big mouth and likes to stay in the water. | Gemini complete / Gemini complete |
+| animals-16 | 企鹅 / qǐ é | 企鹅摇摇摆摆走路，在水里游得很快。 | Penguin | The penguin waddles when it walks and swims fast in the water. | Gemini complete / Gemini complete |
+| animals-17 | 鸭子 / yā zi | 鸭子嘎嘎叫，小脚像一把把小扇子。 | Duck | The duck says quack, and its little feet look like little fans. | Gemini complete / Gemini complete |
+| animals-18 | 猫头鹰 / māo tóu yīng | 猫头鹰的眼睛大大的，很多猫头鹰夜里活动。 | Owl | Owls have big eyes, and many owls are active at night. | Gemini complete / Gemini complete |
+| animals-19 | 海豚 / hǎi tún | 海豚在海里游泳，会到水面上呼吸。 | Dolphin | The dolphin swims in the sea and comes up to the surface to breathe. | Gemini complete / Gemini complete |
+| animals-20 | 乌龟 / wū guī | 乌龟背着硬硬的壳，慢慢地向前爬。 | Turtle | The turtle has a hard shell on its back and crawls along slowly. | Gemini complete / Gemini complete |
 
 ## 认识数字 (30)
 
@@ -138,61 +138,61 @@ Status: draft for owner approval, 2026-10-12. All 176 cards have Chinese and Eng
 | phrases-02 | 吃饭 / chī fàn | 我要吃饭啦。 | Eat a meal | I am ready to eat! | Gemini complete / Pending |
 | phrases-03 | 洗手 / xǐ shǒu | 吃饭前，洗洗手。 | Wash your hands | Let's wash our hands before we eat. | Gemini complete / Pending |
 | phrases-04 | 刷牙 / shuā yá | 我们一起刷牙。 | Brush your teeth | Let's brush our teeth together. | Gemini complete / Pending |
-| phrases-05 | 洗脸 / xǐ liǎn | 洗洗小脸，真干净。 | Wash your face | Wash your little face. Now it is nice and clean! | Pending / Pending |
-| phrases-06 | 穿鞋 / chuān xié | 我要穿鞋子。 | Put on your shoes | I want to put on my shoes. | Pending / Pending |
-| phrases-07 | 戴帽子 / dài mào zi | 出门啦，戴好帽子。 | Put on your hat | We are going outside. Let's put on a hat. | Pending / Pending |
-| phrases-08 | 睡觉 / shuì jiào | 晚安，我要睡觉了。 | Go to sleep | Good night. I am going to sleep. | Pending / Pending |
-| phrases-09 | 起床 / qǐ chuáng | 早上好，我起床啦。 | Wake up | Good morning. I am up! | Pending / Pending |
-| phrases-10 | 看书 / kàn shū | 我们一起看书吧。 | Read a book | Let's read a book together. | Pending / Pending |
-| phrases-11 | 拍皮球 / pāi pí qiú | 小皮球，拍一拍。 | Bounce a ball | Let's bounce the little ball. | Pending / Pending |
-| phrases-12 | 抱一抱 / bào yi bào | 妈妈，我想抱一抱。 | Give me a hug | Mommy, I would like a hug. | Pending / Pending |
-| phrases-13 | 你好 / nǐ hǎo | 你好，很高兴见到你。 | Hello | Hello, it is nice to see you. | Pending / Pending |
-| phrases-14 | 再见 / zài jiàn | 挥挥手，我们下次见。 | Goodbye | Wave goodbye. See you next time! | Pending / Pending |
-| phrases-15 | 谢谢 / xiè xie | 谢谢你帮我。 | Thank you | Thank you for helping me. | Pending / Pending |
-| phrases-16 | 对不起 / duì bu qǐ | 对不起，我不是故意的。 | Sorry | I am sorry. I did not mean to do that. | Pending / Pending |
-| phrases-17 | 慢慢走 / màn màn zǒu | 小脚慢慢走，不着急。 | Walk slowly | Take slow little steps. There is no hurry. | Pending / Pending |
-| phrases-18 | 收玩具 / shōu wán jù | 玩好啦，把玩具送回家。 | Put away your toys | We are done playing. Let's put the toys back where they belong. | Pending / Pending |
-| phrases-19 | 看花花 / kàn huā hua | 看，花花真漂亮。 | Look at the flowers | Look at the beautiful flowers! | Pending / Pending |
-| phrases-20 | 听音乐 / tīng yīn yuè | 听一听，音乐真好听。 | Listen to music | Listen to the music. It sounds lovely. | Pending / Pending |
+| phrases-05 | 洗脸 / xǐ liǎn | 洗洗小脸，真干净。 | Wash your face | Wash your little face. Now it is nice and clean! | Gemini complete / Pending |
+| phrases-06 | 穿鞋 / chuān xié | 我要穿鞋子。 | Put on your shoes | I want to put on my shoes. | Gemini complete / Pending |
+| phrases-07 | 戴帽子 / dài mào zi | 出门啦，戴好帽子。 | Put on your hat | We are going outside. Let's put on a hat. | Gemini complete / Pending |
+| phrases-08 | 睡觉 / shuì jiào | 晚安，我要睡觉了。 | Go to sleep | Good night. I am going to sleep. | Gemini complete / Pending |
+| phrases-09 | 起床 / qǐ chuáng | 早上好，我起床啦。 | Wake up | Good morning. I am up! | Gemini complete / Pending |
+| phrases-10 | 看书 / kàn shū | 我们一起看书吧。 | Read a book | Let's read a book together. | Gemini complete / Pending |
+| phrases-11 | 拍皮球 / pāi pí qiú | 小皮球，拍一拍。 | Bounce a ball | Let's bounce the little ball. | Gemini complete / Pending |
+| phrases-12 | 抱一抱 / bào yi bào | 妈妈，我想抱一抱。 | Give me a hug | Mommy, I would like a hug. | Gemini complete / Pending |
+| phrases-13 | 你好 / nǐ hǎo | 你好，很高兴见到你。 | Hello | Hello, it is nice to see you. | Gemini complete / Pending |
+| phrases-14 | 再见 / zài jiàn | 挥挥手，我们下次见。 | Goodbye | Wave goodbye. See you next time! | Gemini complete / Pending |
+| phrases-15 | 谢谢 / xiè xie | 谢谢你帮我。 | Thank you | Thank you for helping me. | Gemini complete / Pending |
+| phrases-16 | 对不起 / duì bu qǐ | 对不起，我不是故意的。 | Sorry | I am sorry. I did not mean to do that. | Gemini complete / Pending |
+| phrases-17 | 慢慢走 / màn màn zǒu | 小脚慢慢走，不着急。 | Walk slowly | Take slow little steps. There is no hurry. | Gemini complete / Pending |
+| phrases-18 | 收玩具 / shōu wán jù | 玩好啦，把玩具送回家。 | Put away your toys | We are done playing. Let's put the toys back where they belong. | Gemini complete / Pending |
+| phrases-19 | 看花花 / kàn huā hua | 看，花花真漂亮。 | Look at the flowers | Look at the beautiful flowers! | Gemini complete / Pending |
+| phrases-20 | 听音乐 / tīng yīn yuè | 听一听，音乐真好听。 | Listen to music | Listen to the music. It sounds lovely. | Gemini complete / Pending |
 
 ## 天气自然 (20)
 
 | ID | Chinese name / Pinyin | Chinese explanation | English name | English explanation | Local Gemini ZH / EN |
 | --- | --- | --- | --- | --- | --- |
-| weather-01 | 晴天 / qíng tiān | 太阳出来啦，暖暖的阳光洒下来。 | Sunny | The sun is out, and its light feels warm. | Gemini complete / Pending |
-| weather-02 | 白云 / bái yún | 白云飘在天空，像软软的棉花。 | Cloud | White clouds float in the sky like soft cotton. | Gemini complete / Pending |
-| weather-03 | 下雨 / xià yǔ | 滴答滴答，小雨点从天空落下来。 | Rain | Pitter-patter! Little raindrops fall from the sky. | Gemini complete / Pending |
-| weather-04 | 下雪 / xià xuě | 小雪花飘下来，给大地盖上白被子。 | Snow | Snowflakes float down and cover the ground like a white blanket. | Gemini complete / Pending |
-| weather-05 | 彩虹 / cǎi hóng | 雨后有时能看见彩虹，弯弯的，颜色真多。 | Rainbow | Sometimes a colorful, curved rainbow appears after the rain. | Gemini complete / Pending |
-| weather-06 | 刮风 / guā fēng | 风吹过来，树叶轻轻摇。 | Wind | The wind blows, and the leaves sway gently. | Gemini complete / Pending |
-| weather-07 | 闪电 / shǎn diàn | 天空闪了一下！雷雨时和大人待在安全的室内。 | Lightning | A bright flash lights up the sky! Stay safely indoors with a grown-up during a thunderstorm. | Gemini complete / Pending |
-| weather-08 | 雾 / wù | 雾像薄薄的白纱，远处的东西看不清。 | Fog | Fog is like a thin white curtain that makes faraway things hard to see. | Gemini complete / Pending |
-| weather-09 | 阴天 / yīn tiān | 云把太阳遮住了，天空灰灰的。 | Cloudy | Clouds cover the sun, and the sky looks gray. | Gemini complete / Pending |
-| weather-10 | 星星 / xīng xing | 夜晚的天空，有好多亮亮的星星。 | Stars | Lots of bright stars shine in the night sky. | Gemini complete / Pending |
-| weather-11 | 月亮 / yuè liang | 月亮有时圆圆的，有时弯弯的。 | Moon | Sometimes the moon looks round, and sometimes it looks like a curve. | Gemini complete / Pending |
-| weather-12 | 日出 / rì chū | 早晨，太阳慢慢从天边升起来。 | Sunrise | In the morning, the sun slowly rises at the edge of the sky. | Gemini complete / Pending |
-| weather-13 | 晚霞 / wǎn xiá | 傍晚的云，有时会变成粉红色和橙色。 | Sunset glow | In the evening, clouds sometimes turn pink and orange. | Gemini complete / Pending |
-| weather-14 | 露珠 / lù zhū | 早晨的叶子上，挂着小小的露珠。 | Dew | In the morning, tiny drops of dew sit on the leaves. | Gemini complete / Pending |
-| weather-15 | 霜 / shuāng | 很冷的早晨，草叶上可能有白白的霜。 | Frost | On a very cold morning, white frost may cover the grass. | Gemini complete / Pending |
-| weather-16 | 冰 / bīng | 水遇到足够冷的天气，就会结成冰。 | Ice | When it gets cold enough, water freezes into ice. | Gemini complete / Pending |
-| weather-17 | 雨伞 / yǔ sǎn | 下雨时撑起小伞，挡住落下的雨点。 | Umbrella | Open an umbrella when it rains to keep the raindrops off. | Gemini complete / Pending |
-| weather-18 | 雨靴 / yǔ xuē | 下雨天穿雨靴，让小脚保持干爽。 | Rain boots | Wear rain boots on rainy days to keep your feet dry. | Gemini complete / Pending |
-| weather-19 | 遮阳帽 / zhē yáng mào | 阳光强的时候，出门记得戴上遮阳帽。 | Sun hat | Remember to wear a sun hat outside when the sun is bright. | Gemini complete / Pending |
-| weather-20 | 雪人 / xuě rén | 和大人一起，把白白的雪堆成雪人。 | Snowman | Build a snowman out of white snow with a grown-up. | Gemini complete / Pending |
+| weather-01 | 晴天 / qíng tiān | 太阳出来啦，暖暖的阳光洒下来。 | Sunny | The sun is out, and its light feels warm. | Gemini complete / Gemini complete |
+| weather-02 | 白云 / bái yún | 白云飘在天空，像软软的棉花。 | Cloud | White clouds float in the sky like soft cotton. | Gemini complete / Gemini complete |
+| weather-03 | 下雨 / xià yǔ | 滴答滴答，小雨点从天空落下来。 | Rain | Pitter-patter! Little raindrops fall from the sky. | Gemini complete / Gemini complete |
+| weather-04 | 下雪 / xià xuě | 小雪花飘下来，给大地盖上白被子。 | Snow | Snowflakes float down and cover the ground like a white blanket. | Gemini complete / Gemini complete |
+| weather-05 | 彩虹 / cǎi hóng | 雨后有时能看见彩虹，弯弯的，颜色真多。 | Rainbow | Sometimes a colorful, curved rainbow appears after the rain. | Gemini complete / Gemini complete |
+| weather-06 | 刮风 / guā fēng | 风吹过来，树叶轻轻摇。 | Wind | The wind blows, and the leaves sway gently. | Gemini complete / Gemini complete |
+| weather-07 | 闪电 / shǎn diàn | 天空闪了一下！雷雨时和大人待在安全的室内。 | Lightning | A bright flash lights up the sky! Stay safely indoors with a grown-up during a thunderstorm. | Gemini complete / Gemini complete |
+| weather-08 | 雾 / wù | 雾像薄薄的白纱，远处的东西看不清。 | Fog | Fog is like a thin white curtain that makes faraway things hard to see. | Gemini complete / Gemini complete |
+| weather-09 | 阴天 / yīn tiān | 云把太阳遮住了，天空灰灰的。 | Cloudy | Clouds cover the sun, and the sky looks gray. | Gemini complete / Gemini complete |
+| weather-10 | 星星 / xīng xing | 夜晚的天空，有好多亮亮的星星。 | Stars | Lots of bright stars shine in the night sky. | Gemini complete / Gemini complete |
+| weather-11 | 月亮 / yuè liang | 月亮有时圆圆的，有时弯弯的。 | Moon | Sometimes the moon looks round, and sometimes it looks like a curve. | Gemini complete / Gemini complete |
+| weather-12 | 日出 / rì chū | 早晨，太阳慢慢从天边升起来。 | Sunrise | In the morning, the sun slowly rises at the edge of the sky. | Gemini complete / Gemini complete |
+| weather-13 | 晚霞 / wǎn xiá | 傍晚的云，有时会变成粉红色和橙色。 | Sunset glow | In the evening, clouds sometimes turn pink and orange. | Gemini complete / Gemini complete |
+| weather-14 | 露珠 / lù zhū | 早晨的叶子上，挂着小小的露珠。 | Dew | In the morning, tiny drops of dew sit on the leaves. | Gemini complete / Gemini complete |
+| weather-15 | 霜 / shuāng | 很冷的早晨，草叶上可能有白白的霜。 | Frost | On a very cold morning, white frost may cover the grass. | Gemini complete / Gemini complete |
+| weather-16 | 冰 / bīng | 水遇到足够冷的天气，就会结成冰。 | Ice | When it gets cold enough, water freezes into ice. | Gemini complete / Gemini complete |
+| weather-17 | 雨伞 / yǔ sǎn | 下雨时撑起小伞，挡住落下的雨点。 | Umbrella | Open an umbrella when it rains to keep the raindrops off. | Gemini complete / Gemini complete |
+| weather-18 | 雨靴 / yǔ xuē | 下雨天穿雨靴，让小脚保持干爽。 | Rain boots | Wear rain boots on rainy days to keep your feet dry. | Gemini complete / Gemini complete |
+| weather-19 | 遮阳帽 / zhē yáng mào | 阳光强的时候，出门记得戴上遮阳帽。 | Sun hat | Remember to wear a sun hat outside when the sun is bright. | Gemini complete / Gemini complete |
+| weather-20 | 雪人 / xuě rén | 和大人一起，把白白的雪堆成雪人。 | Snowman | Build a snowman out of white snow with a grown-up. | Gemini complete / Gemini complete |
 
 ## 身边物品 (20)
 
 | ID | Chinese name / Pinyin | Chinese explanation | English name | English explanation | Local Gemini ZH / EN |
 | --- | --- | --- | --- | --- | --- |
-| objects-01 | 杯子 / bēi zi | 小杯子，装好水，口渴了喝一口。 | Cup | Fill your little cup with water and take a sip when you feel thirsty. | Gemini complete / Pending |
-| objects-02 | 勺子 / sháo zi | 小勺子，可以舀起饭菜。 | Spoon | A little spoon helps you scoop up food. | Gemini complete / Pending |
-| objects-03 | 碗 / wǎn | 小碗里装着香香的饭。 | Bowl | The little bowl holds yummy rice. | Gemini complete / Pending |
-| objects-04 | 盘子 / pán zi | 盘子平平的，可以放好吃的食物。 | Plate | A plate is flat and holds yummy food. | Gemini complete / Pending |
-| objects-05 | 牙刷 / yá shuā | 小牙刷，每天帮我们清洁牙齿。 | Toothbrush | A little toothbrush helps us clean our teeth every day. | Gemini complete / Pending |
-| objects-06 | 毛巾 / máo jīn | 软软的毛巾，擦擦小手和小脸。 | Towel | A soft towel wipes your little hands and face. | Gemini complete / Pending |
-| objects-07 | 鞋子 / xié zi | 穿上合脚的鞋子，保护我们的小脚。 | Shoes | Shoes that fit well help protect your little feet. | Gemini complete / Pending |
-| objects-08 | 袜子 / wà zi | 小袜子，套在脚上暖暖的。 | Socks | Put socks on your feet to keep them warm. | Gemini complete / Pending |
-| objects-09 | 帽子 / mào zi | 小帽子，戴在头顶上。 | Hat | A little hat goes on your head. | Gemini complete / Pending |
+| objects-01 | 杯子 / bēi zi | 小杯子，装好水，口渴了喝一口。 | Cup | Fill your little cup with water and take a sip when you feel thirsty. | Gemini complete / Gemini complete |
+| objects-02 | 勺子 / sháo zi | 小勺子，可以舀起饭菜。 | Spoon | A little spoon helps you scoop up food. | Gemini complete / Gemini complete |
+| objects-03 | 碗 / wǎn | 小碗里装着香香的饭。 | Bowl | The little bowl holds yummy rice. | Gemini complete / Gemini complete |
+| objects-04 | 盘子 / pán zi | 盘子平平的，可以放好吃的食物。 | Plate | A plate is flat and holds yummy food. | Gemini complete / Gemini complete |
+| objects-05 | 牙刷 / yá shuā | 小牙刷，每天帮我们清洁牙齿。 | Toothbrush | A little toothbrush helps us clean our teeth every day. | Gemini complete / Gemini complete |
+| objects-06 | 毛巾 / máo jīn | 软软的毛巾，擦擦小手和小脸。 | Towel | A soft towel wipes your little hands and face. | Gemini complete / Gemini complete |
+| objects-07 | 鞋子 / xié zi | 穿上合脚的鞋子，保护我们的小脚。 | Shoes | Shoes that fit well help protect your little feet. | Gemini complete / Gemini complete |
+| objects-08 | 袜子 / wà zi | 小袜子，套在脚上暖暖的。 | Socks | Put socks on your feet to keep them warm. | Gemini complete / Gemini complete |
+| objects-09 | 帽子 / mào zi | 小帽子，戴在头顶上。 | Hat | A little hat goes on your head. | Gemini complete / Gemini complete |
 | objects-10 | 上衣 / shàng yī | 伸伸手，穿上干净的小上衣。 | Shirt | Stretch out your arms and put on a clean shirt. | Gemini complete / Pending |
 | objects-11 | 裤子 / kù zi | 小裤子，有两个裤腿。 | Pants | A pair of pants has two legs. | Gemini complete / Pending |
 | objects-12 | 书包 / shū bāo | 小书包，可以装下书和小物品。 | Schoolbag | A little schoolbag holds books and small things. | Gemini complete / Pending |
@@ -209,26 +209,26 @@ Status: draft for owner approval, 2026-10-12. All 176 cards have Chinese and Eng
 
 | ID | Chinese name / Pinyin | Chinese explanation | English name | English explanation | Local Gemini ZH / EN |
 | --- | --- | --- | --- | --- | --- |
-| fruits-01 | 苹果 / píng guǒ | 苹果圆圆的，咬一口脆脆的。 | Apple | An apple is round and crunchy to eat. | Gemini complete / Pending |
-| fruits-02 | 香蕉 / xiāng jiāo | 香蕉弯弯的，像一轮小月亮。 | Banana | A banana is curved like a little moon. | Gemini complete / Pending |
-| fruits-03 | 橙子 / chéng zi | 橙子穿着橙色的外衣，果汁甜甜酸酸。 | Orange | An orange has orange skin and sweet, tangy juice. | Gemini complete / Pending |
-| fruits-04 | 葡萄 / pú tao | 一颗颗葡萄聚在一起，变成一串。 | Grapes | Grapes grow together in a bunch. | Gemini complete / Pending |
-| fruits-05 | 草莓 / cǎo méi | 草莓红红的，身上有好多小点点。 | Strawberry | A strawberry is red with lots of tiny dots. | Gemini complete / Pending |
-| fruits-06 | 西瓜 / xī guā | 西瓜外面绿绿的，里面的果肉水分多。 | Watermelon | A watermelon is green on the outside and juicy on the inside. | Gemini complete / Pending |
-| fruits-07 | 梨 / lí | 梨的肚子圆圆的，吃起来脆脆甜甜。 | Pear | A pear has a round belly and tastes sweet and crunchy. | Gemini complete / Pending |
-| fruits-08 | 桃子 / táo zi | 桃子粉粉的，有的外皮有细细的绒毛。 | Peach | Peaches are pink, and some have soft fuzz on their skin. | Gemini complete / Pending |
-| fruits-09 | 菠萝 / bō luó | 菠萝头上长着一簇尖尖的绿叶。 | Pineapple | A pineapple has a bunch of pointy green leaves on top. | Gemini complete / Pending |
-| fruits-10 | 芒果 / máng guǒ | 芒果的果肉金黄，闻起来香香的。 | Mango | A mango is golden inside and smells sweet. | Gemini complete / Pending |
-| fruits-11 | 猕猴桃 / mí hóu táo | 猕猴桃切开后，能看见一圈小种子。 | Kiwi | Inside a cut kiwi, you can see a ring of tiny seeds. | Gemini complete / Pending |
-| fruits-12 | 樱桃 / yīng táo | 樱桃小小圆圆的，连着细细的果柄。 | Cherries | Cherries are small and round, with thin stems. | Gemini complete / Pending |
-| fruits-13 | 蓝莓 / lán méi | 蓝莓是一颗颗蓝紫色的小果子。 | Blueberries | Blueberries are little blue-purple fruits. | Gemini complete / Pending |
-| fruits-14 | 柠檬 / níng méng | 柠檬黄黄的，尝起来酸酸的。 | Lemon | A lemon is yellow and tastes sour. | Gemini complete / Pending |
-| fruits-15 | 火龙果 / huǒ lóng guǒ | 火龙果的果肉里，藏着好多黑色小种子。 | Dragon fruit | A dragon fruit has lots of tiny black seeds inside. | Gemini complete / Pending |
-| fruits-16 | 椰子 / yē zi | 椰子的外壳硬硬的，里面有椰子水。 | Coconut | A coconut has a hard shell with coconut water inside. | Gemini complete / Pending |
-| fruits-17 | 柿子 / shì zi | 成熟的柿子橙红橙红，像一盏小灯笼。 | Persimmon | A ripe persimmon is orange-red, like a little lantern. | Gemini complete / Pending |
-| fruits-18 | 石榴 / shí liu | 石榴里面藏着一颗颗亮亮的小果粒。 | Pomegranate | A pomegranate has lots of shiny little seeds inside. | Gemini complete / Pending |
-| fruits-19 | 荔枝 / lì zhī | 荔枝剥开外皮，果肉白白的。 | Lychee | Under its skin, a lychee is white inside. | Gemini complete / Pending |
-| fruits-20 | 哈密瓜 / hā mì guā | 哈密瓜的果肉甜甜的，外皮常有网纹。 | Cantaloupe | A cantaloupe is sweet inside, and its skin often has a net-like pattern. | Gemini complete / Pending |
+| fruits-01 | 苹果 / píng guǒ | 苹果圆圆的，咬一口脆脆的。 | Apple | An apple is round and crunchy to eat. | Gemini complete / Gemini complete |
+| fruits-02 | 香蕉 / xiāng jiāo | 香蕉弯弯的，像一轮小月亮。 | Banana | A banana is curved like a little moon. | Gemini complete / Gemini complete |
+| fruits-03 | 橙子 / chéng zi | 橙子穿着橙色的外衣，果汁甜甜酸酸。 | Orange | An orange has orange skin and sweet, tangy juice. | Gemini complete / Gemini complete |
+| fruits-04 | 葡萄 / pú tao | 一颗颗葡萄聚在一起，变成一串。 | Grapes | Grapes grow together in a bunch. | Gemini complete / Gemini complete |
+| fruits-05 | 草莓 / cǎo méi | 草莓红红的，身上有好多小点点。 | Strawberry | A strawberry is red with lots of tiny dots. | Gemini complete / Gemini complete |
+| fruits-06 | 西瓜 / xī guā | 西瓜外面绿绿的，里面的果肉水分多。 | Watermelon | A watermelon is green on the outside and juicy on the inside. | Gemini complete / Gemini complete |
+| fruits-07 | 梨 / lí | 梨的肚子圆圆的，吃起来脆脆甜甜。 | Pear | A pear has a round belly and tastes sweet and crunchy. | Gemini complete / Gemini complete |
+| fruits-08 | 桃子 / táo zi | 桃子粉粉的，有的外皮有细细的绒毛。 | Peach | Peaches are pink, and some have soft fuzz on their skin. | Gemini complete / Gemini complete |
+| fruits-09 | 菠萝 / bō luó | 菠萝头上长着一簇尖尖的绿叶。 | Pineapple | A pineapple has a bunch of pointy green leaves on top. | Gemini complete / Gemini complete |
+| fruits-10 | 芒果 / máng guǒ | 芒果的果肉金黄，闻起来香香的。 | Mango | A mango is golden inside and smells sweet. | Gemini complete / Gemini complete |
+| fruits-11 | 猕猴桃 / mí hóu táo | 猕猴桃切开后，能看见一圈小种子。 | Kiwi | Inside a cut kiwi, you can see a ring of tiny seeds. | Gemini complete / Gemini complete |
+| fruits-12 | 樱桃 / yīng táo | 樱桃小小圆圆的，连着细细的果柄。 | Cherries | Cherries are small and round, with thin stems. | Gemini complete / Gemini complete |
+| fruits-13 | 蓝莓 / lán méi | 蓝莓是一颗颗蓝紫色的小果子。 | Blueberries | Blueberries are little blue-purple fruits. | Gemini complete / Gemini complete |
+| fruits-14 | 柠檬 / níng méng | 柠檬黄黄的，尝起来酸酸的。 | Lemon | A lemon is yellow and tastes sour. | Gemini complete / Gemini complete |
+| fruits-15 | 火龙果 / huǒ lóng guǒ | 火龙果的果肉里，藏着好多黑色小种子。 | Dragon fruit | A dragon fruit has lots of tiny black seeds inside. | Gemini complete / Gemini complete |
+| fruits-16 | 椰子 / yē zi | 椰子的外壳硬硬的，里面有椰子水。 | Coconut | A coconut has a hard shell with coconut water inside. | Gemini complete / Gemini complete |
+| fruits-17 | 柿子 / shì zi | 成熟的柿子橙红橙红，像一盏小灯笼。 | Persimmon | A ripe persimmon is orange-red, like a little lantern. | Gemini complete / Gemini complete |
+| fruits-18 | 石榴 / shí liu | 石榴里面藏着一颗颗亮亮的小果粒。 | Pomegranate | A pomegranate has lots of shiny little seeds inside. | Gemini complete / Gemini complete |
+| fruits-19 | 荔枝 / lì zhī | 荔枝剥开外皮，果肉白白的。 | Lychee | Under its skin, a lychee is white inside. | Gemini complete / Gemini complete |
+| fruits-20 | 哈密瓜 / hā mì guā | 哈密瓜的果肉甜甜的，外皮常有网纹。 | Cantaloupe | A cantaloupe is sweet inside, and its skin often has a net-like pattern. | Gemini complete / Gemini complete |
 
 ## Approval Gate
 

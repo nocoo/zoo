@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Pomegranate. A pomegranate has lots of shiny little seeds inside.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.72,
+  "interaction_id": "v1_ChdBRGpNYW95VExzU3gxZThQaE1pSW1RRRIXQURqTWFveVRMc1N4MWU4UGhNaUltUUU",
+  "origin": "generated",
+  "wav_sha256": "b8cb9b4e6842ea3d9b4b8272de9d15cfa8cfd0e26d92cd0678c8f3d3d672cafd",
+  "mp3_sha256": "471b02b1cca547dc91c6ebeb8ccb8079008848d732403416da69d1bd5ff4ac9b"
+}

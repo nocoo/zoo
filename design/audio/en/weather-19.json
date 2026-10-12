@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Sun hat. Remember to wear a sun hat outside when the sun is bright.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.92,
+  "interaction_id": "v1_ChZwVG5NYXNfTUxKTEpyZmNQbU9HOFNREhZwVG5NYXNfTUxKTEpyZmNQbU9HOFNR",
+  "origin": "generated",
+  "wav_sha256": "e3f9cec73ecbf34eed294f7c986252988b5092249a5ba50aa8971c2c9087b092",
+  "mp3_sha256": "b7785c63065981ceb80ce64596af7424f85a48680ed7aa5cd360f5ef0b40bcc4"
+}

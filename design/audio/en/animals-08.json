@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Tiger. The tiger has black stripes on its body.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.92,
+  "interaction_id": "v1_ChdwelhNYXA3eE01TDgxZThQd0xpN3VBRRIXcHpYTWFwN3hNNUw4MWU4UHdMaTd1QUU",
+  "origin": "generated",
+  "wav_sha256": "6d8304e0012810f0a04814e444c5b4e04a63dd57fe49c103687297327f5069a9",
+  "mp3_sha256": "f565235b44178c2df846b6d22a21a19c48abbfde68919efd62537c9224d30958"
+}

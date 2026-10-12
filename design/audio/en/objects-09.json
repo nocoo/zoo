@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Hat. A little hat goes on your head.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.56,
+  "interaction_id": "v1_ChdianJNYXR1eUhfRy0xZThQOWRucTBBSRIXYmpyTWF0dXlIX0ctMWU4UDlkbnEwQUk",
+  "origin": "generated",
+  "wav_sha256": "83cb5fe7618e1838d078dbc9d2f4836f68458bac79efe88ba8173eb793207248",
+  "mp3_sha256": "34ab1701b75c531abc6fd995585206bc2d3d7b76ca7919f1c34237f4cb4df4e0"
+}

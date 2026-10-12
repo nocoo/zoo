@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Snowman. Build a snowman out of white snow with a grown-up.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.64,
+  "interaction_id": "v1_ChZ1VG5NYXZtTE5PbU0xZThQMXNTRGFREhZ1VG5NYXZtTE5PbU0xZThQMXNTRGFR",
+  "origin": "generated",
+  "wav_sha256": "f5a0854a02ede4b77358c919ed624cb49e4c7099954f5be226b8cb79af2e3d1d",
+  "mp3_sha256": "5e7132b001e4d647986bddac62b64ba0677fc9dab8efc6b0e4adfbeec495bd62"
+}

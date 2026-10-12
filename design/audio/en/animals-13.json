@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Squirrel. The squirrel has a big tail and likes to move around in the trees.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.2,
+  "interaction_id": "v1_ChdERGJNYXZyMUFlWEEwLWtQaF9PaXFRTRIXRERiTWF2cjFBZVhBMC1rUGhfT2lxUU0",
+  "origin": "generated",
+  "wav_sha256": "9235e6cd8bda2ef87fee70e68564b6333bf14a6c32d1a375434365d9eda17c26",
+  "mp3_sha256": "5aeb2b6ab71781279ee7fccf8c8c57a96e071adb08f3257243b16da2b3c53c13"
+}

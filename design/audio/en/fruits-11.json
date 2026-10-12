@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Kiwi. Inside a cut kiwi, you can see a ring of tiny seeds.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.2,
+  "interaction_id": "v1_ChdkRGZNYXVlakhfYkxyZmNQM2JyRHlBbxIXZERmTWF1ZWpIX2JMcmZjUDNickR5QW8",
+  "origin": "generated",
+  "wav_sha256": "9b62a49e7636c8aacef52bd735a4b977801efeea7bf278065c7eebeaa4c58753",
+  "mp3_sha256": "2be92e37ab68c73ca0da22681d1c09bd38c88cf90c656c4aaf182b59b5888582"
+}

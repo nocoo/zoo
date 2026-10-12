@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Peach. Peaches are pink, and some have soft fuzz on their skin.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.08,
+  "interaction_id": "v1_ChdPRGZNYXIteEh2N18xZThQOE8yRTZRSRIXT0RmTWFyLXhIdjdfMWU4UDhPMkU2UUk",
+  "origin": "generated",
+  "wav_sha256": "c8a43760eafe0f5bea548c65df08ac3a294cdd5ea2da2a83caf3ad78f4de05c9",
+  "mp3_sha256": "fe66d1d1f90fece016c6334ab460191d4f86d2c6361c0a40041cd737ead5c349"
+}

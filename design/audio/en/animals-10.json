@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Zebra. The zebra has a coat with black and white stripes.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.6,
+  "interaction_id": "v1_Chd6elhNYXZUNU9vYW92cjBQel83bzJRSRIXenpYTWF2VDVPb2FvdnIwUHpfN28yUUk",
+  "origin": "generated",
+  "wav_sha256": "6a30ead811acda03d7a58d6cef80dbfff4c6dab2e76ea778d0b735ee0b2bfa78",
+  "mp3_sha256": "9268c45bd95a707839c779993b61a3e2a29bcb083f192636e74e12cbcc135fb1"
+}

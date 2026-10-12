@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Bear. The little bear has a plump body and round ears.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.4,
+  "interaction_id": "v1_Chc0elhNYXBDUE80N3cycm9QMF9XeW1RTRIXNHpYTWFwQ1BPNDd3MnJvUDBfV3ltUU0",
+  "origin": "generated",
+  "wav_sha256": "a6e8c2da847fb011542b0121cc762d0d59046bc37eddf0697526488e4fa9c6ef",
+  "mp3_sha256": "c5bde128c25d894e748e7ce01408c7226b18177f58654efc8a713cef4e4f09fb"
+}

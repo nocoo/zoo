@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Grapes. Grapes grow together in a bunch.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.08,
+  "interaction_id": "v1_ChY2RGJNYW96YUZzYnMxZThQbkl1VmNBEhY2RGJNYW96YUZzYnMxZThQbkl1VmNB",
+  "origin": "generated",
+  "wav_sha256": "aadabb7b5c98cd2048fbb9650092a841f6c81c9d7ad985bbb984bb11dfb532ff",
+  "mp3_sha256": "3d34993e2aaa281672b1aff5dffbbc1e43e9fe4d0e9d8078caaa3e03333f83c6"
+}

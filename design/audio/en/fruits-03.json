@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Orange. An orange has orange skin and sweet, tangy juice.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.44,
+  "interaction_id": "v1_ChcxRGJNYXByTEVjZjkxZThQcU9LN2tRRRIXMURiTWFwckxFY2Y5MWU4UHFPSzdrUUU",
+  "origin": "generated",
+  "wav_sha256": "97b4877305209d952bcd518fea5027f395e3458608ddc2a8c0c6d021e8541e39",
+  "mp3_sha256": "5310fdf3480b77ae8121e62d4768985d0f58323d36c569bbc90d0fe4fd4e2791"
+}

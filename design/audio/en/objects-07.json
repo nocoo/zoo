@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Shoes. Shoes that fit well help protect your little feet.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.68,
+  "interaction_id": "v1_ChZSanJNYXY3eEVfN1k5dE1QeXZqTFlBEhZSanJNYXY3eEVfN1k5dE1QeXZqTFlB",
+  "origin": "generated",
+  "wav_sha256": "9d7061f7cc2994a4adf5a2ba1746c6b47447792a00063053808159fa1314acf2",
+  "mp3_sha256": "410b2875f4911e5c4476631f0ff3f452d87d2e05ea52d80158b6139f9e48ea9c"
+}

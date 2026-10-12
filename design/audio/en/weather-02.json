@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Cloud. White clouds float in the sky like soft cotton.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.8,
+  "interaction_id": "v1_ChdVRGpNYXJMeU9vZkcycm9QcG9hdTJBcxIXVURqTWFyTHlPb2ZHMnJvUHBvYXUyQXM",
+  "origin": "generated",
+  "wav_sha256": "cb65a73027db7703482c3256b39128fb2a37d4ca86106880da2ceac4d7d42b0d",
+  "mp3_sha256": "18ae32ef3a1c76e67d9d92795f2ef5f51a68ff27d83f0d6e7d5a8b3a6070f291"
+}

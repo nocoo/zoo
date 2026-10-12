@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Koala. The koala holds on to a branch and eats eucalyptus leaves.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.6,
+  "interaction_id": "v1_ChdJRGJNYXJTckFfN18xZThQOE8yRTZRSRIXSURiTWFyU3JBXzdfMWU4UDhPMkU2UUk",
+  "origin": "generated",
+  "wav_sha256": "4bc0fdba19fc584e51e9ef45f1b0cc150f2053aba7a9c910f5f4f84a2599267c",
+  "mp3_sha256": "80ba3e5a487640c68e63d8ec6ec6c40ad971ab35c6def7d44acea8e74b1c7f45"
+}

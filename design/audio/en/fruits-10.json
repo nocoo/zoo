@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Mango. A mango is golden inside and smells sweet.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.24,
+  "interaction_id": "v1_ChZZRGZNYXFYZEpPeXMxZThQM3ZIQldREhZZRGZNYXFYZEpPeXMxZThQM3ZIQldR",
+  "origin": "generated",
+  "wav_sha256": "d25761eec7dcfdcd41ae232a5cdff381d755346f94d427d7c56806698cb27946",
+  "mp3_sha256": "dd3b6a9a9e7a388ec4c47c0b75ce76da62517fea6a50d8444edda8d780036db1"
+}

@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Frost. On a very cold morning, white frost may cover the grass.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.04,
+  "interaction_id": "v1_ChdWVG5NYXNQcEpZTy12cjBQNk52aHFRRRIXVlRuTWFzUHBKWU8tdnIwUDZOdmhxUUU",
+  "origin": "generated",
+  "wav_sha256": "565c2cdfc094acfd4275729c464520d8a936f09196f88464f54baca8a61ddbfd",
+  "mp3_sha256": "b915ba22dcfedceea13e0ca4241e834fbcf8ac686a29419366cb6e418addc169"
+}

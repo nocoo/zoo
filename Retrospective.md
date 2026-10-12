@@ -68,3 +68,7 @@ The first on-demand caption implementation inserted text into an auto-sized foot
 ## 2026-10-12 - Inventory wording and number assertions
 
 Calling an Edge-backed card "missing audio" confused usable playback coverage with Gemini replacement coverage. Report both separately and trace the actual served file to its provider metadata when challenged. A number-navigation smoke assertion also expected the gallery's Arabic numeral in the viewer, which intentionally displays the Chinese number name; check the target view's rendering contract before asserting labels. Neither issue required changing existing recordings or number labels.
+
+## 2026-10-12 - Daily narration smoke harness
+
+The first daily playback check passed a relative audio URL to Playwright's request context without configuring a base URL, so the harness failed before checking delivery. Resolve asset URLs against the local site explicitly. Some isolated Chrome starts also timed out before the category button became available; a fresh run completed all five category samples and four viewport checks. Do not mistake an automation startup failure for failed audio generation, and do not regenerate paid recordings to retry browser checks. File hashes, decoded audio and selected browser URLs are separate evidence from listening-based pronunciation approval.

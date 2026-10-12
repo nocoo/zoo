@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Cherries. Cherries are small and round, with thin stems.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.84,
+  "interaction_id": "v1_ChdpRGZNYXZxckl2WDMycm9Qa3RlSWtRURIXaURmTWF2cXJJdlgzMnJvUGt0ZUlrUVE",
+  "origin": "generated",
+  "wav_sha256": "0f369865deb4701f3e7219b4cb403ebac98dcd9b4ab47e10bb58e4a14b061230",
+  "mp3_sha256": "d6941e7234197ee286f80ac4ba6714bdfa6cea06cfc3ee1041eabcd2b22d9aa7"
+}

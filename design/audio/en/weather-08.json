@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Fog. Fog is like a thin white curtain that makes faraway things hard to see.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.28,
+  "interaction_id": "v1_ChZ5VGpNYXFISUNwYm1yZmNQbWNXLU1REhZ5VGpNYXFISUNwYm1yZmNQbWNXLU1R",
+  "origin": "generated",
+  "wav_sha256": "9672a3114a94192fcb3cdb326d08ffefd43cb97011001ddaef72f5e1a1586545",
+  "mp3_sha256": "759c2527f817bea11b1d4b7a3f1966b5b95dbf686eedaed473bf260fc2041b19"
+}

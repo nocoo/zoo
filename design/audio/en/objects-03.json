@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Bowl. The little bowl holds yummy rice.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.4,
+  "interaction_id": "v1_Chc5am5NYXZhLUI0VHZyZmNQbmZ6UDhBbxIXOWpuTWF2YS1CNFR2cmZjUG5melA4QW8",
+  "origin": "generated",
+  "wav_sha256": "4c82a3873eb4744ef6b75ad2adc4d62dee8fd610d16c5802788ed32f514e2024",
+  "mp3_sha256": "c9dab6e86f77b8cf54f38b608f468a53ca9aee77ac9df7e4b5e0c7fdad382410"
+}

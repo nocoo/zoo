@@ -1,98 +1,78 @@
-# Complete Gemini Narration In Both Languages
+# Bilingual Gemini Narration
 
-Status: copy and execution plan prepared on 2026-10-12. One separately approved five-clip Mandarin batch is complete locally; further generation awaits owner listening approval. This pass does not authorize or execute speech generation, timer installation, publication or deployment. The owner separately authorized removal of the old timer; it is now uninstalled.
+Status: the owner-approved 2026-10-12 daily batch is complete and stopped. All 84 new recordings succeeded; with six earlier requests, today's conservative Zoo budget of 90 requests is exhausted. No timer, push or deployment occurred. Further generation needs renewed authorization and available quota.
 
-## Copy Approval
+## Reading Contract
 
-[Review all 176 bilingual cards](02-bilingual-copy.md). `src/content.ts` contains every Chinese and English description. Existing Chinese names, pinyin, descriptions, English labels and the approved lion English explanation are unchanged.
+[Review all 176 bilingual cards and their local status](02-bilingual-copy.md). `src/content.ts` owns the copy. Existing Chinese names, pinyin, descriptions, English labels and the approved lion explanation are unchanged.
 
-- 120 picture/character/phrase cards: each language reads its name followed by its full explanation.
-- 30 numbers: Mandarin keeps its existing number-name-only contract. English reads the number name plus its counting explanation. The Chinese explanation remains editorial copy unless the owner explicitly changes this contract.
-- 26 letters: retain a single American English alphabet-name recording, shared by both playback entries. Both descriptions are editorial copy only; do not generate phonics, explanations or a second alphabet recording.
-- Total: 326 unique recordings for 176 cards, not 352. No numbers above 30.
-- Temporary English Edge files still read only their names. Runtime captions must continue to show the exact selected recording transcript, not new unrecorded draft explanations.
+- 120 picture/character/phrase cards: each language reads the name plus the full explanation.
+- 30 numbers: Mandarin retains number-name-only narration; English targets name plus counting explanation. Both languages are excluded from current generation.
+- 26 letters: one American English alphabet-name clip is shared by both playback entries. Descriptions are editorial, not narration. Letters are excluded from current generation.
+- Total full-coverage target: 326 unique recordings, not 352. Current eligible scope: 240 recordings for 120 non-number/non-alphabet cards.
+- Captions always match the selected recording. Pending English Edge clips still read and caption only their names, not unrecorded explanations.
 
 ## Verified Local Inventory
 
-Audited after the copy pass, then updated after the separately authorized five-clip batch on 2026-10-12. Every completed file matches its target transcript, Gemini model, Sulafat voice, WAV SHA-256 and MP3 SHA-256; the committed media URLs select those files. All original Chinese/Edge recordings and the lion English take remain unchanged.
+Updated after the 2026-10-12 continuation. Completed recordings match their target transcript, model, Sulafat voice, style and WAV/MP3 hashes. `src/media.json` selects these local recordings.
 
 | Category | Mandarin complete | Mandarin pending | English complete | English pending | Shared alphabet pending |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Animals | 20 | 0 | 1 | 19 | 0 |
-| Fruit | 20 | 0 | 0 | 20 | 0 |
-| Weather | 20 | 0 | 0 | 20 | 0 |
-| Objects | 20 | 0 | 0 | 20 | 0 |
+| Animals | 20 | 0 | 20 | 0 | 0 |
+| Fruit | 20 | 0 | 20 | 0 | 0 |
+| Weather | 20 | 0 | 20 | 0 | 0 |
+| Objects | 20 | 0 | 9 | 11 | 0 |
 | Chinese characters | 20 | 0 | 0 | 20 | 0 |
-| Phrases | 4 | 16 | 0 | 20 | 0 |
-| Numbers 1-30 | 0 | 30 | 0 | 30 | 0 |
-| Alphabet A-Z | 0 | 0 | 0 | 0 | 26 |
-| Total | 104 | 46 | 1 | 149 | 26 |
+| Phrases | 20 | 0 | 0 | 20 | 0 |
+| Numbers 1-30 (excluded) | 0 | 30 | 0 | 30 | 0 |
+| Alphabet A-Z (excluded) | 0 | 0 | 0 | 0 | 26 |
+| Total | 120 | 30 | 69 | 81 | 26 |
 
-105 unique Gemini recordings are complete locally; 221 remain. These pending items already have Edge playback; they are pending Gemini replacement, not absent audio. Lion English is local only. The last separately verified production baseline was v1.1.1 with 99 Gemini recordings; this pass neither rechecks nor changes production. Do not describe local coverage as deployed coverage.
+189/326 unique Gemini targets are complete locally; 137 remain across the full catalogue. Within the currently eligible scope, 189/240 are complete and only 51 English replacements remain. Every pending item already has Edge playback; this is provider/transcript replacement coverage, not a count of missing playable files.
 
-## Original Full-Coverage Queue (Reference Only)
+These numbers are local, not deployed coverage. The last separately verified production baseline was v1.1.1 with 99 Gemini recordings. This batch did not deploy or re-audit production coverage.
 
-Content drafting can fan out; provider requests must remain sequential under one shared lock and budget. After approval, use this deterministic queue, skipping any already validated recording:
+## Completed On 2026-10-12
 
-1. Mandarin `hanzi-19` (cow): 1 clip.
-2. Mandarin `phrases-01` through `phrases-20`: 20 clips.
-3. Mandarin `numbers-1` through `numbers-30`, numeric order: 30 clips.
-4. English `animals-02` through `animals-20`: 19 clips; retain the approved lion take.
-5. English fruit, weather, objects, Chinese characters and phrases: 20 clips per category, ID order.
-6. English numbers 1-30, numeric order: 30 clips.
-7. Shared alphabet A-Z: 26 clips, each letter once.
+1. Approved lion English sample: one request, retained unchanged.
+2. Five-clip Mandarin review: `hanzi-19`, `phrases-01` through `phrases-04`. The owner listened and approved before continuation.
+3. Daily continuation: 84 successful requests, with no retries or provider errors:
 
-This completes all 51 missing Mandarin recordings before any new English request. If the owner wants to review Mandarin before English begins, stop after step 3 even when quota remains.
-
-## Original Full-Coverage Estimate (Superseded Execution Scope)
-
-At most 90 new clips per approved batch attempt; at least 20 seconds between request starts and at least 23 hours between batch attempts. The observed provider limit was 100 requests per day, shared with other His.fm usage. Respect the actual error/reset response; do not rotate keys, retry automatically, change models or upgrade billing to bypass limits.
-
-| Round | Planned work | New clips |
+| Scope | IDs | New clips |
 | --- | --- | ---: |
-| 1 | 51 Mandarin, 19 animal English, 20 fruit English | 90 |
-| 2 | 20 weather English, 20 object English, 20 character English, 20 phrase English, English numbers 1-10 | 90 |
-| 3 | English numbers 11-30 and shared alphabet A-Z | 46 |
+| Mandarin phrases | phrases-05 through phrases-20 | 16 |
+| English animals | animals-02 through animals-20 | 19 |
+| English fruit | fruits-01 through fruits-20 | 20 |
+| English weather | weather-01 through weather-20 | 20 |
+| English objects | objects-01 through objects-09 | 9 |
+| Total continuation | Mandarin first, then English | 84 |
 
-These are at least three fully available quota rounds, not a promise of three calendar days. Network failures, remaining shared quota, approval pauses and incomplete earlier rounds change the boundaries. Recount successful files and resume at the first pending queue item; never regenerate a completed take merely to fill a batch. A successful model-list connectivity check does not establish generation quota.
+The continuation preserved all 1,050 pre-existing audio/archive files byte-for-byte and added exactly 84 WAV/JSON/MP3 sets. Every new MP3 decoded fully with FFmpeg. Content and production-build checks passed. Local browser checks sample every newly generated category, silent navigation, exact language URLs and full captions; automated checks do not establish pronunciation quality of every sentence.
 
-## Full Bilingual Implementation Deferred
+## Next Queue, Not Yet Authorized
 
-The current generator still has a legacy Mandarin/alphabet batch with an optional budget/cooldown wrapper and an isolated `--english-card` command; the complete bilingual queue and round allocation above are a plan, not an implemented bilingual batch runner; no timer is installed.
+Numbers and letters remain excluded. After fresh approval and available quota, resume English only in this order:
 
-1. Enumerate explicit unique language jobs from the approved source. Keep Mandarin/alphabet paths unchanged and English originals in `design/audio/en/<id>.wav|json`, delivery in `public/audio/en/<id>.mp3`. Forbid duplicate alphabet jobs through the English-card command.
-2. Keep `gemini-3.8-flash-tts`, `Sulafat`, the exact approved Mandarin style and the lion's natural American English style. No runtime TTS. Record exact text/style/language, interaction ID, duration and hashes without secrets.
-3. Replace legacy completion detection with actual coverage of all 326 unique jobs. Use the same lock and shared daily budget across languages. Preserve cooldown state; do not let an old 176-item completion flag hide pending English work.
-4. Media selection already supports independent English Gemini clips and exact selected transcripts. Preserve all existing Gemini and Edge files. If approved copy changes an existing recording, archive its old WAV/JSON/MP3 together before generating a replacement; never silently overwrite it.
-5. Validate the queue order, shared-letter deduplication, preservation, cooldown, per-run ceiling and stale completion handling with local/mocked checks before provider access. Run the existing content, build, player and schedule checks; no new comprehensive test framework is required.
-6. Generate only within a fresh explicit approval, retain successful outputs immediately, stop on provider errors and report generated/selected/deployed coverage separately. Commit and deploy only through separately authorized work.
+1. `objects-10` through `objects-20`: 11.
+2. `hanzi-01` through `hanzi-20`: 20.
+3. `phrases-01` through `phrases-20`: 20.
 
-## Removed Timer And Approval Boundary
+These 51 fit within one fully available conservative quota round, but shared usage and provider failures can shorten a run. Do not start automatically tomorrow, restart a timer, regenerate completed clips or fill the remaining budget with excluded categories.
 
-On 2026-10-12 the owner explicitly requested removal of timed generation and asked to approve all bilingual copy before deciding whether audio generation is needed. The `ai.hexly.zoo.audio` LaunchAgent was unloaded, its installed plist and repository source were removed, and `launchctl print` confirmed the service no longer exists. No generation process held the shared lock at removal.
+## Execution And Budget
 
-All existing recordings, quota state, logs and credentials are preserved. No provider call was made. The optional legacy `--scheduled` CLI mode does not run by itself; do not invoke it or reinstall any timer without fresh authorization. Review the complete copy ledger first; approval of wording does not by itself authorize generation, publication or deployment.
+- Approved provider/model: Gemini Interactions API, `gemini-3.8-flash-tts`; voice: `Sulafat`. Preserve the approved faster Mainland Mandarin style and natural American English explanation style in `scripts/generate-audio.py`.
+- Authorized daily continuation: `python3 scripts/generate-audio.py --bilingual-day`. This constructs all eligible Mandarin jobs before English, in category order animals, fruits, weather, objects, hanzi, phrases. Existing matching recordings are validated without rewriting them; only pending jobs use the provider. Number and alphabet jobs are never included.
+- Offline inventory/queue check: `python3 scripts/generate-audio.py --check --bilingual-day`. No keys, network, writes or full-coverage requirement; missing eligible jobs are reported as pending. This is not a pronunciation review.
+- Generation is sequential, with at least 20 seconds between request starts, under the existing exclusive filesystem lock. Each result is saved immediately. Any provider/file error stops the run; there is no automatic retry, fallback model, key rotation or billing change.
+- `artifacts/audio-schedule/request-budget.json` records a conservative local-calendar-day maximum of 90 attempts across all generator modes. Each request is reserved before network access, so failed attempts count. The first entry for a date seeds known successes from that day's generated WAV modification dates; on 2026-10-12 six were verified before the ledger began. Preserve the ledger and old cooldown history.
+- This ledger is not a provider quota meter: historical errors reported 100 requests/day on Tier 1, shared with His.fm. File timestamps cannot reveal other-device/shared usage or failed requests before the ledger existed. The local date boundary is not a provider reset contract. Respect actual provider errors/reset instructions.
+- The daily mode does not use the obsolete all-catalogue completion flag or write a partial `src/audio-manifest.json`. `scripts/build-media.mjs` selects exact-transcript, hash-validated Gemini files independently by language and writes `src/media.json` for dev/build. Builds never invoke a speech provider.
+- Originals remain in `design/audio/<id>.wav|json`, with English under `design/audio/en/`; MP3 delivery follows the same structure in `public/audio/`. Keep all Edge files and prior approved takes. Archive old WAV/JSON/MP3 together before any separately authorized changed-text replacement.
+- Credentials remain private in the existing His.fm configuration. Never print or copy the key into code, documentation, arguments, metadata, browser assets or logs.
 
-Credentials stay in the existing private His.fm configuration. Never copy or print the key in code, documentation, process arguments, logs or browser assets.
+## Timer And Publication Boundary
 
-## Current Viewer And Sample
+The owner removed the old `ai.hexly.zoo.audio` LaunchAgent on 2026-10-12. It was unloaded and both installed and repository plist files were removed. Keep it disabled. The dormant legacy `--scheduled` CLI is not a registered task and is not part of the daily continuation.
 
-The owner approved the stable subtitle layout and requested whole-caption motion only. Captions appear on a language click above pinyin in reserved space; the entire line fades/slides in gently without moving the illustration or controls. Both pill buttons stay 64 px tall with single-line names; they share a row when space allows, otherwise the entire English pill moves to the next row. Reduced-motion preference disables the caption animation. There is no word highlighting or timing estimation.
-
-The retained lion English sample reads: `Lion. The lion has a fluffy mane around his neck, like a little scarf.` Duration: 6.80 seconds; model: `gemini-3.8-flash-tts`; voice: `Sulafat`. Validate offline with `python3 scripts/generate-audio.py --check --english-card animals-01`.
-
-## Five-Clip Mandarin Review Batch: 2026-10-12
-
-The owner authorized exactly five Mandarin replacements, excluding all numbers and letters, then a mandatory listening stop. No English generation, timer, push or deployment was authorized. The process completed and exited after these five:
-
-| Card | Exact transcript | Seconds |
-| --- | --- | ---: |
-| hanzi-19 | 牛。小牛哞哞叫，低头吃青草。 | 6.36 |
-| phrases-01 | 喝水。我想喝水。 | 3.32 |
-| phrases-02 | 吃饭。我要吃饭啦。 | 3.16 |
-| phrases-03 | 洗手。吃饭前，洗洗手。 | 4.60 |
-| phrases-04 | 刷牙。我们一起刷牙。 | 3.60 |
-
-All five use the approved Gemini model, Sulafat voice and unchanged Mandarin style. Their WAV/MP3 hashes and exact metadata validate; FFmpeg decodes each MP3 fully. All 1,035 pre-existing audio/archive files are byte-identical. The media builder selects the five new Gemini recordings locally. Automated checks do not establish listening quality.
-
-Within the current non-number/non-alphabet Mandarin scope, 16 phrase recordings remain (phrases-05 through phrases-20). Only if separately approved, future review batches would be 5 + 5 + 5 + 1, each followed by a stop. The original 90-clip estimates above are not the active execution plan. Numbers, letters and English remain excluded.
+Speech authorization does not authorize publication. No automatic commits, push or deployment are performed by the generator; source/media changes are reviewed and committed separately. Future generation requires a fresh instruction even after the daily counter resets.

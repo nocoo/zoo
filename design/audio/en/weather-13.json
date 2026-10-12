@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Sunset glow. In the evening, clouds sometimes turn pink and orange.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.84,
+  "interaction_id": "v1_ChdMVG5NYXZMa0h2Ry0xZThQbHBYcWtBRRIXTFRuTWF2TGtIdkctMWU4UGxwWHFrQUU",
+  "origin": "generated",
+  "wav_sha256": "188c81bca1c0311908ab8f5db132fb1d472a8db0e16b14de3dbb30ae4b19e0cf",
+  "mp3_sha256": "b97b97af0394eb183ee9e1718904e082db6b753c6e72fa34af9cc7f08dca1faf"
+}

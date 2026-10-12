@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Persimmon. A ripe persimmon is orange-red, like a little lantern.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.64,
+  "interaction_id": "v1_Chc3RGZNYXFpQUo3UGFyZmNQblppbzhBbxIXN0RmTWFxaUFKN1BhcmZjUG5aaW84QW8",
+  "origin": "generated",
+  "wav_sha256": "2ad24177050bf317678dc4082d07483954cd48c983eaa09c7e98c2148471742b",
+  "mp3_sha256": "35f0dd55d6aaa1fd405a876247ca85bc3e616c8af707f6249b0e8ad131548040"
+}

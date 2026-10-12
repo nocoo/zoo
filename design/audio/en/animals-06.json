@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Cat. The cat says meow and has fine whiskers beside its mouth.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.6,
+  "interaction_id": "v1_ChdmelhNYXBySE0tQ2o5dE1QMU5peTJBNBIXZnpYTWFwckhNLUNqOXRNUDFOaXkyQTQ",
+  "origin": "generated",
+  "wav_sha256": "ed49393bed235800481e77f3af3f525108037a71fbb29f82376e3f47b4cb3b1d",
+  "mp3_sha256": "23b099ca4de76eaaeb353811ab0ad3d6f47dfbff6a1fde146c406b02f342a99a"
+}

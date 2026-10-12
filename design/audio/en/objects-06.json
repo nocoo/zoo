@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Towel. A soft towel wipes your little hands and face.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.72,
+  "interaction_id": "v1_ChdNanJNYXVteUQtRG1yZmNQcnVhbzhRdxIXTWpyTWF1bXlELURtcmZjUHJ1YW84UXc",
+  "origin": "generated",
+  "wav_sha256": "2b9a24b2bac3bca85dea4eb4d58b5d81abfe76d9c9987db9063c9f39051b5def",
+  "mp3_sha256": "e28dbd86ff9e2c34c5c9e60af801391cd3cf9c9c667643fcefb30ca227250894"
+}

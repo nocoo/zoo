@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Monkey. The monkey climbs trees and holds the branches with its little hands.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.6,
+  "interaction_id": "v1_Chd1elhNYXYzVk5mLUQycm9Qd01MSDhBbxIXdXpYTWF2M1ZOZi1EMnJvUHdNTEg4QW8",
+  "origin": "generated",
+  "wav_sha256": "927ee1edc7003abd1104729ad77822d370c23b8ebdc16c1e1e683ff208274228",
+  "mp3_sha256": "9b91c93b032cbe0ac930540f5cbc58b4d9a80fae05fda8300d3e1f42600731e2"
+}

@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Sunny. The sun is out, and its light feels warm.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.0,
+  "interaction_id": "v1_ChdQRGpNYXVxS05MUGFyZmNQblppbzhBbxIXUERqTWF1cUtOTFBhcmZjUG5aaW84QW8",
+  "origin": "generated",
+  "wav_sha256": "1c628f3ce0f95b02c7ea33524dfc34707c115d572ac7cd1b2ab279132632794e",
+  "mp3_sha256": "697be286cee079fddd15f6a037084cb0403cf28aa024fda867ad1d3cca9d95d7"
+}

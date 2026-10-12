@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Snow. Snowflakes float down and cover the ground like a white blanket.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.04,
+  "interaction_id": "v1_ChdlVGpNYXBiZEE0SDgxZThQOXVhYXFRRRIXZVRqTWFwYmRBNEg4MWU4UDl1YWFxUUU",
+  "origin": "generated",
+  "wav_sha256": "6f6cfe51a5f4a5fc12e6014dde1b3035f19f6a3eb256de5355cedb69b9948200",
+  "mp3_sha256": "dc6be0004eb7dc2b5ac97dc1b6d7b658cef31edd6f519a00fd4215529477ef05"
+}

@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Turtle. The turtle has a hard shell on its back and crawls along slowly.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.76,
+  "interaction_id": "v1_ChdtRGJNYXJEaERQWDMycm9QNjlYLS1BbxIXbURiTWFyRGhEUFgzMnJvUDY5WC0tQW8",
+  "origin": "generated",
+  "wav_sha256": "ff66fa46545e83759ca678d3ca5cbafcbda8330e4ae13fe2eafce9c935728c39",
+  "mp3_sha256": "3da3bac6c526329fa6e93334b4de02141ac0bb8de5c131444b87aa65f5fda9e4"
+}

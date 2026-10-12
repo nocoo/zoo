@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Moon. Sometimes the moon looks round, and sometimes it looks like a curve.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.68,
+  "interaction_id": "v1_ChdCVG5NYXJ5OUVzRGdyZmNQZzRXSzhBbxIXQlRuTWFyeTlFc0RncmZjUGc0V0s4QW8",
+  "origin": "generated",
+  "wav_sha256": "fda4befb55878c68621a28c496a7aa32a07e133c9f7f5ea87ef119f14b406c75",
+  "mp3_sha256": "fa646b50b1c1f9495f741ba38fe48944a75079971ba6af96cf6cbd1f95095639"
+}
