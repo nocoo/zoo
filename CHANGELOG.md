@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.3.0 - 2026-10-14
+
+- Complete the remaining 40 English name-plus-explanation recordings for Chinese characters and everyday phrases with the approved Gemini model and Sulafat voice.
+- Reach 240/240 eligible Gemini recordings: all 120 picture, character and phrase cards now have full Mandarin and English narration with matching captions. Numbers and alphabet recordings remain excluded and retain Edge playback.
+- Preserve all earlier recordings and generation archives unchanged; retain the forty new original WAVs, request metadata, hashes and MP3 deliveries. Generation completed without errors or retries, and no automatic speech task is installed.
+
 ## v1.2.1 - 2026-10-12
 
 - Complete the object category's English name-plus-explanation recordings with 11 new Gemini clips, bringing verified coverage to 200 unique recordings. Keep all earlier audio unchanged and retain Edge playback for the 40 remaining eligible English items.
