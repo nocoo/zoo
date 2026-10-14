@@ -72,3 +72,7 @@ Calling an Edge-backed card "missing audio" confused usable playback coverage wi
 ## 2026-10-12 - Daily narration smoke harness
 
 The first daily playback check passed a relative audio URL to Playwright's request context without configuring a base URL, so the harness failed before checking delivery. Resolve asset URLs against the local site explicitly. Some isolated Chrome starts also timed out before the category button became available; a fresh run completed all five category samples and four viewport checks. Do not mistake an automation startup failure for failed audio generation, and do not regenerate paid recordings to retry browser checks. File hashes, decoded audio and selected browser URLs are separate evidence from listening-based pronunciation approval.
+
+## 2026-10-14 - Release smoke geometry readiness
+
+The first production playback smoke check measured the viewer before its fonts and image had finished loading, then reported an illustration-height change during playback. Waiting for `document.fonts.ready` and decoding the dialog images before taking the baseline made the unchanged application pass in Chromium and WebKit across all eight categories, number 30 and the final character/phrase cards. Wait for asset readiness as well as animation completion before comparing interaction geometry; do not weaken the assertion or regenerate paid audio to fix a harness timing error. The v1.3.0 release commit and deployed assets were not changed by this correction.
