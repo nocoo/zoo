@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Person. You and I are both people.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 3.8,
+  "interaction_id": "v1_ChdNeERQYXJDQ0U2UzUwLWtQdnVxY3lBZxIXTXhEUGFyQ0NFNlM1MC1rUHZ1cWN5QWc",
+  "origin": "generated",
+  "wav_sha256": "3a9482c49d814434d7c3e4b578704c54e7abfdcc4d292c914a19bbf7a4049f75",
+  "mp3_sha256": "f2e9c84bb881c751652c7dabeb0f414d3be978fa8810cc3e5175556d6d73d0c7"
+}

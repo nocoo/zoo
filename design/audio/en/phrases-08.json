@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Go to sleep. Good night. I am going to sleep.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.0,
+  "interaction_id": "v1_Chc3QkhQYXZITEJlM0gycm9QaWRTTXlBaxIXN0JIUGF2SExCZTNIMnJvUGlkU015QWs",
+  "origin": "generated",
+  "wav_sha256": "c4a052f9caa4ea9809d271e16640c48c1435b92baf657050646553a22b5c100b",
+  "mp3_sha256": "578c956817c48970d4ac24c12cd87e1bab4cd5816417ff42278cf3ffd0a22042"
+}

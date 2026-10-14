@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Flower. The flowers are blooming in beautiful colors.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.16,
+  "interaction_id": "v1_Chc1eERQYXBhV0tkcXoycm9QdTlpbnNBMBIXNXhEUGFwYVdLZHF6MnJvUHU5aW5zQTA",
+  "origin": "generated",
+  "wav_sha256": "6443f4865ca6e4fe662535895ca2f783f0c6fac888292531ed70e9fcf91566f2",
+  "mp3_sha256": "3f71837fd41cec86581f9b28367e2045cf1b8e456a3c9041baabeab126dbd644"
+}

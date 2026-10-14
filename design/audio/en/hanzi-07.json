@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Mouth. Open your mouth and say hello.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.32,
+  "interaction_id": "v1_ChdSeERQYXMtU0dKVGI5dE1QZ2NTeG9BYxIXUnhEUGFzLVNHSlRiOXRNUGdjU3hvQWM",
+  "origin": "generated",
+  "wav_sha256": "9f89af74ebaad71ae6ef1f4a07dccaa6fca81fa7db1894f6b241e9a4a5c52725",
+  "mp3_sha256": "220e3dc2d2eb22fed177c5fa5a925fed4b76e1dd64e8d02618a3e2e0d211fc87"
+}

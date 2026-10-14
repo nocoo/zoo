@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Fire. Fire is very hot. Stay far away and never touch it.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.8,
+  "interaction_id": "v1_Chd2eERQYXFUNklOdTIycm9Qb016dTBBYxIXdnhEUGFxVDZJTnUyMnJvUG9NenUwQWM",
+  "origin": "generated",
+  "wav_sha256": "32c247660cd7dc33851e5c31ad428546526ac8fdcbf5fda304cfa7581a25d6fe",
+  "mp3_sha256": "2896bda8c1057968f65efb33cf13a57b575a2eb7747abba019b4febf06000e77"
+}

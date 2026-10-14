@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Eat a meal. I am ready to eat!",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 3.72,
+  "interaction_id": "v1_ChZjeEhQYXF1Y05mamlvc1VQeUxLUlFBEhZjeEhQYXF1Y05mamlvc1VQeUxLUlFB",
+  "origin": "generated",
+  "wav_sha256": "5f62197e8b987ea0a65013431b99a41f97dd1d159c522d6f35566d69fed494ce",
+  "mp3_sha256": "5f6b008c490c23273b39f7de7966b3028486ad16a2580b63fabc778b66c60981"
+}

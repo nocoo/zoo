@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Eye. We use our eyes to see the world.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.48,
+  "interaction_id": "v1_ChdneERQYW8yN0hkU18xZThQa3BQSnNBcxIXZ3hEUGFvMjdIZFNfMWU4UGtwUEpzQXM",
+  "origin": "generated",
+  "wav_sha256": "ca2c95c2f704df1a1efa7fdef02e69d26fd85bdcf34c8f56172f7a47957ac028",
+  "mp3_sha256": "cb22173ecc5554d2a084fa687d207e94c2cf42073be4b1d0f95afd11ef056f62"
+}

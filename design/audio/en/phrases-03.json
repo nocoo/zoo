@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Wash your hands. Let's wash our hands before we eat.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.6,
+  "interaction_id": "v1_ChdoeEhQYW95blBQN3cycm9QbUxYQTZBdxIXaHhIUGFveW5QUDd3MnJvUG1MWEE2QXc",
+  "origin": "generated",
+  "wav_sha256": "962acd420312ac949fc07c2c1c2d52e7b9ac0e0692d6e22611284a7bcf7d65b8",
+  "mp3_sha256": "4babb853ad783bdce7cf24567ff79249ee56f27c5a1a365778a8e20a9904a0fd"
+}

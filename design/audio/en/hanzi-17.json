@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Fish. The little fish wiggles its tail and swims in the water.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.8,
+  "interaction_id": "v1_ChdEeEhQYXFEUU1fdXM5dE1Qak9yenNRURIXRHhIUGFxRFFNX3VzOXRNUGpPcnpzUVE",
+  "origin": "generated",
+  "wav_sha256": "6454fa64f690561f08d59288d09af14aa627532a62c941e451a2b2f2f4c69af1",
+  "mp3_sha256": "bb03f2a43e1330b649810be5a282a0236b42f296d85e1fb2f23d8331e99520eb"
+}

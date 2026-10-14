@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Bounce a ball. Let's bounce the little ball.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 3.76,
+  "interaction_id": "v1_ChdLQkxQYXY3ZkNySHRyZmNQMHNUSWtBOBIXS0JMUGF2N2ZDckh0cmZjUDBzVElrQTg",
+  "origin": "generated",
+  "wav_sha256": "37e11a8d467c7de37f9afb0abf6e72ded3e66a60c61a5c284e0fa31883344aec",
+  "mp3_sha256": "77a21d91be4ea15af817095d82ef326a3be8dd3c2fe3b9f3e63b42cff619f200"
+}

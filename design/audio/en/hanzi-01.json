@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Sun. The sun is out!",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 3.0,
+  "interaction_id": "v1_Chd6Z19QYXVMVk1hUzUwLWtQdnVxY3lBZxIXemdfUGF1TFZNYVM1MC1rUHZ1cWN5QWc",
+  "origin": "generated",
+  "wav_sha256": "924aa2abd82cbb91eaa4d6ade416796a727c9dc3697744fb292b0bfa5bc712d7",
+  "mp3_sha256": "78531030997df1ec3aae063ecf15e073deb475f99f207dfb7ee41143f5774db1"
+}

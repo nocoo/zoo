@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Tree. This character makes us think of a tree.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 3.92,
+  "interaction_id": "v1_ChdIeERQYXZqa0M4bnUycm9Qci0tVDBBNBIXSHhEUGF2amtDOG51MnJvUHItLVQwQTQ",
+  "origin": "generated",
+  "wav_sha256": "2c0fe6fbab52e582e1fad4489cfa6be57319622fb31ade9bcdae5ed5e7cceb7d",
+  "mp3_sha256": "61118213d47c9099a879365c8c0d3acc7d45845564c553287fb924af0eac6011"
+}

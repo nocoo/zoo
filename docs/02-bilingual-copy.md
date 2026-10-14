@@ -1,6 +1,6 @@
 # Bilingual Copy Approval Ledger
 
-Status: updated after the owner-approved 2026-10-12 daily batch. All 176 cards have Chinese and English descriptions. The owner approved the five Mandarin samples, then authorized Mandarin-first generation through today's conservative budget, excluding numbers and letters. The later explicitly approved continuation added 11 object English clips and stopped on HTTP 429 at en/hanzi-01. No timer, push or deployment occurred. Existing copy and earlier recordings remain unchanged.
+Status: updated after the owner-approved 2026-10-14 completion. All 176 cards have Chinese and English descriptions; all 120 eligible cards now have both Gemini recordings. The forty remaining English character/phrase narrations completed without errors or retries. Numbers and letters remain excluded. Existing copy and earlier recordings are unchanged. The owner separately authorized a v1.3.0 release after validation; no speech timer is installed.
 
 ## Reading Contract
 
@@ -8,11 +8,11 @@ Status: updated after the owner-approved 2026-10-12 daily batch. All 176 cards h
 - Numbers 1-30: Chinese number name only (unchanged); English number name + English explanation. The Chinese explanation remains editorial copy, not part of the current recording contract.
 - Alphabet A-Z: one American English letter-name clip shared by both playback entries. Both descriptions are editorial copy, not narration; no phonics or extra English alphabet clip.
 - The website still captions the exact selected recording, not unrecorded draft text. Pending English clips still play their existing Edge name-only files until new recordings are approved.
-- Status columns describe local Gemini files and their validated transcript/hash, not production deployment. Production has not been updated by this work.
+- Status columns describe local Gemini files and their validated transcript/hash, not production deployment. Release deployment requires separate exact-revision CI and online verification.
 
 ## Totals
 
-176 cards; 326 unique target recordings; 200 complete locally, 126 pending. See [the Mandarin-first plan](01-bilingual-gemini-tts.md) before any generation.
+176 cards; 326 unique target recordings; 240 complete locally, 86 pending and explicitly excluded. Eligible scope: 240/240 complete, zero pending. See [the Mandarin-first plan](01-bilingual-gemini-tts.md) before any generation.
 
 ## 动物朋友 (20)
 
@@ -109,51 +109,51 @@ Status: updated after the owner-approved 2026-10-12 daily batch. All 176 cards h
 
 | ID | Chinese name / Pinyin | Chinese explanation | English name | English explanation | Local Gemini ZH / EN |
 | --- | --- | --- | --- | --- | --- |
-| hanzi-01 | 日 / rì | 日，就是太阳。太阳出来了！ | Sun | The sun is out! | Gemini complete / Pending |
-| hanzi-02 | 月 / yuè | 月，就是月亮。月亮挂在天上。 | Moon | The moon is up in the sky. | Gemini complete / Pending |
-| hanzi-03 | 山 / shān | 山，有高高的山峰。 | Mountain | A mountain has tall peaks. | Gemini complete / Pending |
-| hanzi-04 | 水 / shuǐ | 水，可以流进小河里。 | Water | Water can flow into a river. | Gemini complete / Pending |
-| hanzi-05 | 木 / mù | 木，让我们想到一棵树。 | Tree | This character makes us think of a tree. | Gemini complete / Pending |
-| hanzi-06 | 人 / rén | 你和我，都是人。 | Person | You and I are both people. | Gemini complete / Pending |
-| hanzi-07 | 口 / kǒu | 张开口，说一句你好。 | Mouth | Open your mouth and say hello. | Gemini complete / Pending |
-| hanzi-08 | 手 / shǒu | 伸出小手，挥一挥。 | Hand | Hold up your little hand and wave. | Gemini complete / Pending |
-| hanzi-09 | 足 / zú | 足，就是脚。小脚慢慢走。 | Foot | Take slow steps with your little feet. | Gemini complete / Pending |
-| hanzi-10 | 目 / mù | 目，就是眼睛。用眼睛看世界。 | Eye | We use our eyes to see the world. | Gemini complete / Pending |
-| hanzi-11 | 耳 / ěr | 耳朵听一听，小鸟在唱歌。 | Ear | Listen with your ears. A little bird is singing. | Gemini complete / Pending |
-| hanzi-12 | 田 / tián | 田里可以种庄稼。 | Field | We can grow crops in a field. | Gemini complete / Pending |
-| hanzi-13 | 火 / huǒ | 火很烫，只能远远地看，不可以碰。 | Fire | Fire is very hot. Stay far away and never touch it. | Gemini complete / Pending |
-| hanzi-14 | 石 / shí | 石头硬硬的，有大也有小。 | Stone | Stones are hard. Some are big, and some are small. | Gemini complete / Pending |
-| hanzi-15 | 花 / huā | 花儿开了，颜色真漂亮。 | Flower | The flowers are blooming in beautiful colors. | Gemini complete / Pending |
-| hanzi-16 | 鸟 / niǎo | 小鸟长着羽毛和翅膀。 | Bird | A little bird has feathers and wings. | Gemini complete / Pending |
-| hanzi-17 | 鱼 / yú | 小鱼摆摆尾巴，在水里游。 | Fish | The little fish wiggles its tail and swims in the water. | Gemini complete / Pending |
-| hanzi-18 | 马 / mǎ | 小马有四条腿，跑得快。 | Horse | A horse has four legs and can run fast. | Gemini complete / Pending |
-| hanzi-19 | 牛 / niú | 小牛哞哞叫，低头吃青草。 | Cow | The cow says moo and lowers its head to eat green grass. | Gemini complete / Pending |
-| hanzi-20 | 羊 / yáng | 小羊咩咩叫，身上长着毛。 | Sheep | The sheep says baa and has a woolly coat. | Gemini complete / Pending |
+| hanzi-01 | 日 / rì | 日，就是太阳。太阳出来了！ | Sun | The sun is out! | Gemini complete / Gemini complete |
+| hanzi-02 | 月 / yuè | 月，就是月亮。月亮挂在天上。 | Moon | The moon is up in the sky. | Gemini complete / Gemini complete |
+| hanzi-03 | 山 / shān | 山，有高高的山峰。 | Mountain | A mountain has tall peaks. | Gemini complete / Gemini complete |
+| hanzi-04 | 水 / shuǐ | 水，可以流进小河里。 | Water | Water can flow into a river. | Gemini complete / Gemini complete |
+| hanzi-05 | 木 / mù | 木，让我们想到一棵树。 | Tree | This character makes us think of a tree. | Gemini complete / Gemini complete |
+| hanzi-06 | 人 / rén | 你和我，都是人。 | Person | You and I are both people. | Gemini complete / Gemini complete |
+| hanzi-07 | 口 / kǒu | 张开口，说一句你好。 | Mouth | Open your mouth and say hello. | Gemini complete / Gemini complete |
+| hanzi-08 | 手 / shǒu | 伸出小手，挥一挥。 | Hand | Hold up your little hand and wave. | Gemini complete / Gemini complete |
+| hanzi-09 | 足 / zú | 足，就是脚。小脚慢慢走。 | Foot | Take slow steps with your little feet. | Gemini complete / Gemini complete |
+| hanzi-10 | 目 / mù | 目，就是眼睛。用眼睛看世界。 | Eye | We use our eyes to see the world. | Gemini complete / Gemini complete |
+| hanzi-11 | 耳 / ěr | 耳朵听一听，小鸟在唱歌。 | Ear | Listen with your ears. A little bird is singing. | Gemini complete / Gemini complete |
+| hanzi-12 | 田 / tián | 田里可以种庄稼。 | Field | We can grow crops in a field. | Gemini complete / Gemini complete |
+| hanzi-13 | 火 / huǒ | 火很烫，只能远远地看，不可以碰。 | Fire | Fire is very hot. Stay far away and never touch it. | Gemini complete / Gemini complete |
+| hanzi-14 | 石 / shí | 石头硬硬的，有大也有小。 | Stone | Stones are hard. Some are big, and some are small. | Gemini complete / Gemini complete |
+| hanzi-15 | 花 / huā | 花儿开了，颜色真漂亮。 | Flower | The flowers are blooming in beautiful colors. | Gemini complete / Gemini complete |
+| hanzi-16 | 鸟 / niǎo | 小鸟长着羽毛和翅膀。 | Bird | A little bird has feathers and wings. | Gemini complete / Gemini complete |
+| hanzi-17 | 鱼 / yú | 小鱼摆摆尾巴，在水里游。 | Fish | The little fish wiggles its tail and swims in the water. | Gemini complete / Gemini complete |
+| hanzi-18 | 马 / mǎ | 小马有四条腿，跑得快。 | Horse | A horse has four legs and can run fast. | Gemini complete / Gemini complete |
+| hanzi-19 | 牛 / niú | 小牛哞哞叫，低头吃青草。 | Cow | The cow says moo and lowers its head to eat green grass. | Gemini complete / Gemini complete |
+| hanzi-20 | 羊 / yáng | 小羊咩咩叫，身上长着毛。 | Sheep | The sheep says baa and has a woolly coat. | Gemini complete / Gemini complete |
 
 ## 开口说说 (20)
 
 | ID | Chinese name / Pinyin | Chinese explanation | English name | English explanation | Local Gemini ZH / EN |
 | --- | --- | --- | --- | --- | --- |
-| phrases-01 | 喝水 / hē shuǐ | 我想喝水。 | Drink water | I would like some water. | Gemini complete / Pending |
-| phrases-02 | 吃饭 / chī fàn | 我要吃饭啦。 | Eat a meal | I am ready to eat! | Gemini complete / Pending |
-| phrases-03 | 洗手 / xǐ shǒu | 吃饭前，洗洗手。 | Wash your hands | Let's wash our hands before we eat. | Gemini complete / Pending |
-| phrases-04 | 刷牙 / shuā yá | 我们一起刷牙。 | Brush your teeth | Let's brush our teeth together. | Gemini complete / Pending |
-| phrases-05 | 洗脸 / xǐ liǎn | 洗洗小脸，真干净。 | Wash your face | Wash your little face. Now it is nice and clean! | Gemini complete / Pending |
-| phrases-06 | 穿鞋 / chuān xié | 我要穿鞋子。 | Put on your shoes | I want to put on my shoes. | Gemini complete / Pending |
-| phrases-07 | 戴帽子 / dài mào zi | 出门啦，戴好帽子。 | Put on your hat | We are going outside. Let's put on a hat. | Gemini complete / Pending |
-| phrases-08 | 睡觉 / shuì jiào | 晚安，我要睡觉了。 | Go to sleep | Good night. I am going to sleep. | Gemini complete / Pending |
-| phrases-09 | 起床 / qǐ chuáng | 早上好，我起床啦。 | Wake up | Good morning. I am up! | Gemini complete / Pending |
-| phrases-10 | 看书 / kàn shū | 我们一起看书吧。 | Read a book | Let's read a book together. | Gemini complete / Pending |
-| phrases-11 | 拍皮球 / pāi pí qiú | 小皮球，拍一拍。 | Bounce a ball | Let's bounce the little ball. | Gemini complete / Pending |
-| phrases-12 | 抱一抱 / bào yi bào | 妈妈，我想抱一抱。 | Give me a hug | Mommy, I would like a hug. | Gemini complete / Pending |
-| phrases-13 | 你好 / nǐ hǎo | 你好，很高兴见到你。 | Hello | Hello, it is nice to see you. | Gemini complete / Pending |
-| phrases-14 | 再见 / zài jiàn | 挥挥手，我们下次见。 | Goodbye | Wave goodbye. See you next time! | Gemini complete / Pending |
-| phrases-15 | 谢谢 / xiè xie | 谢谢你帮我。 | Thank you | Thank you for helping me. | Gemini complete / Pending |
-| phrases-16 | 对不起 / duì bu qǐ | 对不起，我不是故意的。 | Sorry | I am sorry. I did not mean to do that. | Gemini complete / Pending |
-| phrases-17 | 慢慢走 / màn màn zǒu | 小脚慢慢走，不着急。 | Walk slowly | Take slow little steps. There is no hurry. | Gemini complete / Pending |
-| phrases-18 | 收玩具 / shōu wán jù | 玩好啦，把玩具送回家。 | Put away your toys | We are done playing. Let's put the toys back where they belong. | Gemini complete / Pending |
-| phrases-19 | 看花花 / kàn huā hua | 看，花花真漂亮。 | Look at the flowers | Look at the beautiful flowers! | Gemini complete / Pending |
-| phrases-20 | 听音乐 / tīng yīn yuè | 听一听，音乐真好听。 | Listen to music | Listen to the music. It sounds lovely. | Gemini complete / Pending |
+| phrases-01 | 喝水 / hē shuǐ | 我想喝水。 | Drink water | I would like some water. | Gemini complete / Gemini complete |
+| phrases-02 | 吃饭 / chī fàn | 我要吃饭啦。 | Eat a meal | I am ready to eat! | Gemini complete / Gemini complete |
+| phrases-03 | 洗手 / xǐ shǒu | 吃饭前，洗洗手。 | Wash your hands | Let's wash our hands before we eat. | Gemini complete / Gemini complete |
+| phrases-04 | 刷牙 / shuā yá | 我们一起刷牙。 | Brush your teeth | Let's brush our teeth together. | Gemini complete / Gemini complete |
+| phrases-05 | 洗脸 / xǐ liǎn | 洗洗小脸，真干净。 | Wash your face | Wash your little face. Now it is nice and clean! | Gemini complete / Gemini complete |
+| phrases-06 | 穿鞋 / chuān xié | 我要穿鞋子。 | Put on your shoes | I want to put on my shoes. | Gemini complete / Gemini complete |
+| phrases-07 | 戴帽子 / dài mào zi | 出门啦，戴好帽子。 | Put on your hat | We are going outside. Let's put on a hat. | Gemini complete / Gemini complete |
+| phrases-08 | 睡觉 / shuì jiào | 晚安，我要睡觉了。 | Go to sleep | Good night. I am going to sleep. | Gemini complete / Gemini complete |
+| phrases-09 | 起床 / qǐ chuáng | 早上好，我起床啦。 | Wake up | Good morning. I am up! | Gemini complete / Gemini complete |
+| phrases-10 | 看书 / kàn shū | 我们一起看书吧。 | Read a book | Let's read a book together. | Gemini complete / Gemini complete |
+| phrases-11 | 拍皮球 / pāi pí qiú | 小皮球，拍一拍。 | Bounce a ball | Let's bounce the little ball. | Gemini complete / Gemini complete |
+| phrases-12 | 抱一抱 / bào yi bào | 妈妈，我想抱一抱。 | Give me a hug | Mommy, I would like a hug. | Gemini complete / Gemini complete |
+| phrases-13 | 你好 / nǐ hǎo | 你好，很高兴见到你。 | Hello | Hello, it is nice to see you. | Gemini complete / Gemini complete |
+| phrases-14 | 再见 / zài jiàn | 挥挥手，我们下次见。 | Goodbye | Wave goodbye. See you next time! | Gemini complete / Gemini complete |
+| phrases-15 | 谢谢 / xiè xie | 谢谢你帮我。 | Thank you | Thank you for helping me. | Gemini complete / Gemini complete |
+| phrases-16 | 对不起 / duì bu qǐ | 对不起，我不是故意的。 | Sorry | I am sorry. I did not mean to do that. | Gemini complete / Gemini complete |
+| phrases-17 | 慢慢走 / màn màn zǒu | 小脚慢慢走，不着急。 | Walk slowly | Take slow little steps. There is no hurry. | Gemini complete / Gemini complete |
+| phrases-18 | 收玩具 / shōu wán jù | 玩好啦，把玩具送回家。 | Put away your toys | We are done playing. Let's put the toys back where they belong. | Gemini complete / Gemini complete |
+| phrases-19 | 看花花 / kàn huā hua | 看，花花真漂亮。 | Look at the flowers | Look at the beautiful flowers! | Gemini complete / Gemini complete |
+| phrases-20 | 听音乐 / tīng yīn yuè | 听一听，音乐真好听。 | Listen to music | Listen to the music. It sounds lovely. | Gemini complete / Gemini complete |
 
 ## 天气自然 (20)
 

@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Stone. Stones are hard. Some are big, and some are small.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.12,
+  "interaction_id": "v1_ChcweERQYW9MZUt2T3l2cjBQN05XWGtBSRIXMHhEUGFvTGVLdk95dnIwUDdOV1hrQUk",
+  "origin": "generated",
+  "wav_sha256": "d302a36153fa171c30a13d8f6587a71baacfb9a26765218fe7a63c5ba6dcb62e",
+  "mp3_sha256": "7594f6c3ad0f1be4c17fad73ff89a18c0d19463e6ed18fe0b1aea1f9cbe093b3"
+}

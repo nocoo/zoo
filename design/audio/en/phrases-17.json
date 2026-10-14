@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Walk slowly. Take slow little steps. There is no hurry.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.2,
+  "interaction_id": "v1_ChdvQkxQYXEtZUc5LXcycm9QX1lIMm9BURIXb0JMUGFxLWVHOS13MnJvUF9ZSDJvQVE",
+  "origin": "generated",
+  "wav_sha256": "45a5a30b3fdd06ecb9464ac56dd9912698c4a5f6695fd80ad719d462334127a9",
+  "mp3_sha256": "35671c805f06d3577978063c07a66d2819e8c37a15878854aa65ece7e13aacb0"
+}

@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Read a book. Let's read a book together.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 3.28,
+  "interaction_id": "v1_ChdGQkxQYXViM0FvTzIxZThQdG92WHdBURIXRkJMUGF1YjNBb08yMWU4UHRvdlh3QVE",
+  "origin": "generated",
+  "wav_sha256": "b6b1adb66665b445865e8ffefc783cfb83ea9acf7a21b618ca65306296946ca6",
+  "mp3_sha256": "a2ce2c4fbed219b323e42a91b7c3519c29a4920ab28916d59b9e7b3339ee9645"
+}

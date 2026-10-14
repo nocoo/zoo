@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Cow. The cow says moo and lowers its head to eat green grass.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.72,
+  "interaction_id": "v1_ChdOeEhQYXIyRU1kcl8xZThQcXZfMXdBaxIXTnhIUGFyMkVNZHJfMWU4UHF2XzF3QWs",
+  "origin": "generated",
+  "wav_sha256": "3fd32376f4bb19ec81a3f54e8725ad7ae60039f4230931790af040a3b6d3fbba",
+  "mp3_sha256": "3d03ed0903f25ca8c77c652ef3a0e661668af8608f5133331a575058c5caa3ae"
+}

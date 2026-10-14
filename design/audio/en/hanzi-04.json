@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Water. Water can flow into a river.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.28,
+  "interaction_id": "v1_ChdDeERQYXFXMEJlLVM5dE1QaUxlTndBaxIXQ3hEUGFxVzBCZS1TOXRNUGlMZU53QWs",
+  "origin": "generated",
+  "wav_sha256": "58b796a800b7e5c5530e0ce98ac31e367b360cf6cff66825fd1bd42fede82452",
+  "mp3_sha256": "f1fd6f63a802eb2a914e562c53b0cd46d8951508bcb144ff4275ea06c351ce63"
+}

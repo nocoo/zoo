@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Sheep. The sheep says baa and has a woolly coat.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.64,
+  "interaction_id": "v1_ChdTeEhQYXZfdk5ienQycm9QdE9HbWtRRRIXU3hIUGF2X3ZOYnp0MnJvUHRPR21rUUU",
+  "origin": "generated",
+  "wav_sha256": "dac2f868ea5a8cde7b59b4b0b90f340cf3467734b94da9dfb14a607df296d38f",
+  "mp3_sha256": "73a6be3ef0d993a9dc0eb2aebc15edab300c50953c6016efbc54026b4fb6c334"
+}

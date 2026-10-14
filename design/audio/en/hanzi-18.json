@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Horse. A horse has four legs and can run fast.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.44,
+  "interaction_id": "v1_ChdJeEhQYXNyTk04S0hvc1VQOWI2ajhROBIXSXhIUGFzck5NOEtIb3NVUDliNmo4UTg",
+  "origin": "generated",
+  "wav_sha256": "1070baafb9d8d08ea90099fea238531b7ad198129e4492ddaf96548b497ffa5a",
+  "mp3_sha256": "68848c78770ca23ed5545a7f0bcbd0062c3606a4f34cd92c106b2c1b81b0e30a"
+}

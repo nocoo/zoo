@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Put on your hat. We are going outside. Let's put on a hat.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.96,
+  "interaction_id": "v1_ChcyQkhQYXNqM0N0LXcycm9QN0tYMnNBURIXMkJIUGFzajNDdC13MnJvUDdLWDJzQVE",
+  "origin": "generated",
+  "wav_sha256": "d2071a371ad69299896d191d27316f373b9187d9692182695f8fb997df17603c",
+  "mp3_sha256": "7c2e28dabd2c5a21663015e34a2bb44ef1e9588432cba436a0b7924a8cb15624"
+}

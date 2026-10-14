@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Look at the flowers. Look at the beautiful flowers!",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.76,
+  "interaction_id": "v1_Chd5QkxQYXJPd0hMdk1yZmNQall2UWdBURIXeUJMUGFyT3dITHZNcmZjUGpZdlFnQVE",
+  "origin": "generated",
+  "wav_sha256": "608c4d8e2828a338532e11027fd864ef111e17d20acab9c3b11f53e3e23defe0",
+  "mp3_sha256": "e4b0074bf7e2993f1250cf46ee1a4b9c18368f84370c8a83971652d65dfa487c"
+}

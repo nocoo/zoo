@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Bird. A little bird has feathers and wings.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.44,
+  "interaction_id": "v1_ChcteERQYXBfdE42VGFyZmNQeHFpMmlBZxIXLXhEUGFwX3RONlRhcmZjUHhxaTJpQWc",
+  "origin": "generated",
+  "wav_sha256": "19601547ce31c80effac49fb1298b69abaaeeabc519dd7b4e00a52d4eaf07cac",
+  "mp3_sha256": "6c0b86da707e8682f66d1fc7fde9d046c428baf5c452c60d0496df51bf2c80c6"
+}

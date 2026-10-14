@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Wake up. Good morning. I am up!",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.64,
+  "interaction_id": "v1_ChdBQkxQYXR1TEItLVM5dE1QaUxlTndBaxIXQUJMUGF0dUxCLS1TOXRNUGlMZU53QWs",
+  "origin": "generated",
+  "wav_sha256": "fd892ccbc513d66de487768c1cc7924f07a9962fab29c51874be55ae9d5587ba",
+  "mp3_sha256": "5fe226eb08a736c118de3bb86cdb9e0939dbbfb586cc7cbef677f45506991cc1"
+}

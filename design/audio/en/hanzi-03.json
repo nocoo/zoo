@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Mountain. A mountain has tall peaks.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.0,
+  "interaction_id": "v1_Chc5Z19QYW9XRU50U18xZThQbFpUSnNBcxIXOWdfUGFvV0VOdFNfMWU4UGxaVEpzQXM",
+  "origin": "generated",
+  "wav_sha256": "b4238b435a9d2c8426d68c9e8c2c320dc7503a039e41af86c73709c892d35c9c",
+  "mp3_sha256": "c49f119e5f6db19f417008d73e2da9f826a29b766cef0475ffc55b0be933cf49"
+}

@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Field. We can grow crops in a field.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 3.28,
+  "interaction_id": "v1_ChdxeERQYXVLMUhveUMycm9QdjQyWS1BTRIXcXhEUGF1SzFIb3lDMnJvUHY0MlktQU0",
+  "origin": "generated",
+  "wav_sha256": "cbcd08e84e52b419c0fc53da0d278e9c93e1e0c37269ba9e389d776516853c7d",
+  "mp3_sha256": "56e4c8a9c019c547b5e47337ae0c3224628bc048b02811592a6617b11741cef4"
+}

@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Ear. Listen with your ears. A little bird is singing.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.08,
+  "interaction_id": "v1_ChdseERQYXFxX0hfLWcwLWtQNFluMjZBURIXbHhEUGFxcV9IXy1nMC1rUDRZbjI2QVE",
+  "origin": "generated",
+  "wav_sha256": "52ee1d6032d781c2dcb533f0f475382ac71ff0e8db0178e42766c4bd4d195679",
+  "mp3_sha256": "1a2b8e2ac725379ff5809abfd4db869ae3e1bb645adf661f4156245ff6d66f71"
+}

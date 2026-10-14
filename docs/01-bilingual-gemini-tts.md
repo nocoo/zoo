@@ -1,6 +1,6 @@
 # Bilingual Gemini Narration
 
-Status: the owner explicitly approved continuing beyond the conservative local cap on 2026-10-12. Eleven more object English clips succeeded, then en/hanzi-01 returned HTTP 429 and the process stopped without retry. The API requested a 20h32m25s wait, approximately until 2026-10-13 08:00 Asia/Shanghai. Successful additions are included in the v1.2.1 release scope; no timer is installed. Further generation needs fresh approval and available quota.
+Status: on 2026-10-14 the owner explicitly approved the remaining 40 English replacements, confirmed that numbers and letters stay excluded, and requested a Y+1 release after completion. All 40 recordings completed without errors or retries using the existing Gemini model, Sulafat voice and approved copy. Eligible coverage is now 240/240. No timer is installed; any further generation needs fresh approval.
 
 ## Reading Contract
 
@@ -14,7 +14,7 @@ Status: the owner explicitly approved continuing beyond the conservative local c
 
 ## Verified Local Inventory
 
-Updated after the 2026-10-12 continuation. Completed recordings match their target transcript, model, Sulafat voice, style and WAV/MP3 hashes. `src/media.json` selects these local recordings.
+Updated after the 2026-10-14 completion. Completed recordings match their target transcript, model, Sulafat voice, style and WAV/MP3 hashes. `src/media.json` selects these local recordings.
 
 | Category | Mandarin complete | Mandarin pending | English complete | English pending | Shared alphabet pending |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -22,15 +22,21 @@ Updated after the 2026-10-12 continuation. Completed recordings match their targ
 | Fruit | 20 | 0 | 20 | 0 | 0 |
 | Weather | 20 | 0 | 20 | 0 | 0 |
 | Objects | 20 | 0 | 20 | 0 | 0 |
-| Chinese characters | 20 | 0 | 0 | 20 | 0 |
-| Phrases | 20 | 0 | 0 | 20 | 0 |
+| Chinese characters | 20 | 0 | 20 | 0 | 0 |
+| Phrases | 20 | 0 | 20 | 0 | 0 |
 | Numbers 1-30 (excluded) | 0 | 30 | 0 | 30 | 0 |
 | Alphabet A-Z (excluded) | 0 | 0 | 0 | 0 | 26 |
-| Total | 120 | 30 | 80 | 70 | 26 |
+| Total | 120 | 30 | 120 | 30 | 26 |
 
-200/326 unique Gemini targets are complete locally; 126 remain across the full catalogue. Within the currently eligible scope, 200/240 are complete and only 40 English replacements remain. Every pending item already has Edge playback; this is provider/transcript replacement coverage, not a count of missing playable files.
+240/326 unique Gemini targets are complete locally; the remaining 86 are excluded number/alphabet recordings. All 240 currently eligible recordings are complete, with full name-plus-explanation narration in both languages. Every excluded item retains existing Edge playback.
 
-These inventory numbers describe validated local files. The preceding v1.2.0 deployment was verified at commit 7d2cc595827ba1a8055b55787aa4e632fca34821 with 189 recordings. The v1.2.1 release adds the eleven object English recordings; exact deployment evidence must come from its CI and online verification, not this inventory.
+These inventory numbers describe validated local files, not production deployment. The v1.3.0 release includes the forty new English recordings; exact deployment evidence comes from its release-commit CI and online verification.
+
+## Completed On 2026-10-14
+
+The owner confirmed the original remaining scope: `en/hanzi-01` through `en/hanzi-20`, then `en/phrases-01` through `en/phrases-20`. The standard `--bilingual-day` mode completed all 40 requests within the conservative daily cap, with no provider errors, retries, cap override, copy/style changes or number/alphabet requests.
+
+All 1,349 pre-existing audio/archive files remain byte-identical. Exactly forty WAV/JSON/MP3 sets were added, with original provider output, request metadata and hashes preserved. Every new MP3 decoded fully with FFmpeg. The offline eligible inventory check reports 240/240 complete and zero pending. The local ledger records 40 attempts for 2026-10-14, leaving 50 unused; this is not permission to generate more or evidence of the provider's remaining quota. Automated validation does not establish pronunciation accuracy of every sentence.
 
 ## Completed On 2026-10-12
 
@@ -57,14 +63,9 @@ The local ledger records 102 attempts today: six seeded successes, 84 successful
 
 The explicit continuation flag is allowed only with the number/alphabet-excluding bilingual queue, keeps counting all attempts with an approval marker, stops on any error or queue exhaustion, and never changes the default 90-attempt cap. Do not use it again without fresh approval.
 
-## Next Queue, Not Yet Authorized
+## Remaining Scope
 
-Numbers and letters remain excluded. After fresh approval and available quota, resume English only in this order:
-
-1. `hanzi-01` through `hanzi-20`: 20.
-2. `phrases-01` through `phrases-20`: 20.
-
-These 40 fit within one fully available conservative quota round, but shared usage and provider failures can shorten a run. Do not start automatically tomorrow, restart a timer, regenerate completed clips or fill the remaining budget with excluded categories.
+No eligible jobs remain. The 30 Mandarin number recordings, 30 English number recordings and 26 shared alphabet recordings remain excluded and use Edge playback. Do not start them, reinstall a timer or regenerate any completed recording without fresh explicit approval.
 
 ## Execution And Budget
 
@@ -82,4 +83,4 @@ These 40 fit within one fully available conservative quota round, but shared usa
 
 The owner removed the old `ai.hexly.zoo.audio` LaunchAgent on 2026-10-12. It was unloaded and both installed and repository plist files were removed. Keep it disabled. The dormant legacy `--scheduled` CLI is not a registered task and is not part of the daily continuation.
 
-Speech authorization does not authorize publication. No automatic commits, push or deployment are performed by the generator; source/media changes are reviewed and committed separately. Future generation requires a fresh instruction even after the daily counter resets.
+Speech authorization alone does not authorize publication. The owner separately authorized the v1.3.0 release and deployment on 2026-10-14 after completing and validating these forty recordings. The generator performs no automatic commits, push or deployment; source/media changes are reviewed and committed separately. Future generation requires a fresh instruction even after the daily counter resets.

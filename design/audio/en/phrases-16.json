@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Sorry. I am sorry. I did not mean to do that.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.56,
+  "interaction_id": "v1_ChdqQkxQYXJ2NkU4TDgxZThQbWFmMm1BbxIXakJMUGFydjZFOEw4MWU4UG1hZjJtQW8",
+  "origin": "generated",
+  "wav_sha256": "240a9ceb15852e5c2e4f1645cc22d8aaf05aa0802d4efb49780bc3b0e8c8c5fd",
+  "mp3_sha256": "74b09bfa2fea6caf779951501d9a913cf5a0dd737ef42df2c0424e673615b2c5"
+}

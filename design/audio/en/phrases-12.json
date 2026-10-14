@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Give me a hug. Mommy, I would like a hug.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.48,
+  "interaction_id": "v1_ChdQQkxQYXJPLUVJU2MwLWtQb19DcG1BaxIXUEJMUGFyTy1FSVNjMC1rUG9fQ3BtQWs",
+  "origin": "generated",
+  "wav_sha256": "70481c3f855fd4231d5986f7cde6667c3030d55b1d62d4b8c91ae69b330e55f5",
+  "mp3_sha256": "766047d3b0ec2f5c2bbd43644fee35f6da9615d2bd71735a3503bc8e4023ae17"
+}
