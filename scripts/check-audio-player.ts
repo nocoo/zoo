@@ -7,12 +7,17 @@ class FakeAudio {
   removed = false;
   reloaded = false;
   src: string;
+  error: unknown = null;
+  resolve!: () => void;
   reject!: (error: Error) => void;
+  onError?: () => void;
   constructor(src: string) { this.src = src; created.push(this); }
-  play() { return new Promise<void>((_resolve, reject) => { this.reject = reject; }); }
+  play() { return new Promise<void>((resolve, reject) => { this.resolve = resolve; this.reject = reject; }); }
   pause() { this.paused = true; }
   removeAttribute() { this.removed = true; }
   load() { this.reloaded = true; }
+  addEventListener(type: string, handler: () => void) { if (type === 'error') this.onError = handler; }
+  emitError() { this.error = new Error('media'); this.onError?.(); }
 }
 Object.assign(globalThis, { Audio: FakeAudio });
 const errors: string[] = [];
@@ -35,4 +40,22 @@ player.play('/fourth.mp3');
 created[3].reject(new Error('network'));
 await Promise.resolve();
 assert.match(errors[1], /加载失败/);
-console.log('录音播放器检查通过：独占播放、停止、过期错误隔离、失败提示。');
+player.play('/fifth.mp3');
+created[4].resolve();
+await Promise.resolve();
+assert.equal(errors.length, 2);
+created[4].emitError();
+assert.match(errors[2], /加载失败/);
+assert.ok(created[4].paused && created[4].removed);
+player.play('/sixth.mp3');
+player.stop();
+created[5].emitError();
+await Promise.resolve();
+assert.equal(errors.length, 3);
+player.play('/seventh.mp3');
+created[6].reject(new Error('network'));
+created[6].emitError();
+await Promise.resolve();
+assert.equal(errors.length, 4);
+assert.match(errors[3], /加载失败/);
+console.log('录音播放器检查通过：独占播放、停止、过期错误隔离、失败提示、播放后媒体错误不重复。');
