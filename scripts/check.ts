@@ -6,6 +6,7 @@ import { neighborImages } from '../src/neighbors.ts';
 import { swipeStep } from '../src/swipe.ts';
 import { audioTranscript, englishAudioTranscript } from '../src/audio.ts';
 import { shuffle } from '../src/shuffle.ts';
+import './check-expansion.ts';
 
 assert.equal(pictures.length, 176);
 const manifest = JSON.parse(readFileSync('public/manifest.webmanifest', 'utf8'));

@@ -15,6 +15,12 @@
 - Images in `public/art/` are optimized delivery assets. Preserve generation originals, prompts and exact subject ordering under `design/art/`.
 - All 120 illustrated cards use reference-guided GPT Image 2.5 redraws: 640 x 560 thumbnails and native 2048 x 1792 full-screen WebP via `Picture.imageLarge`. The owner approved the first three samples and authorized the rest on 2026-10-10. Preserve native outputs, exact references, prompts and request records under `design/art/hd/`. Run `uv run --with pillow python design/art/hd/process.py` to export missing derivatives; `--check` verifies all 120 records without writes. See `design/art/hd/README.md`. Numbers and letters now have a separate approved-style illustration series under `design/art/symbols/`; the hero is unchanged.
 
+## Content Expansion
+
+- Draft cards live only in `src/expansion.ts` (77). Playable `src/content.ts` stays at 176 with existing media unchanged. The local review page reads this module for owner copy review and does not change playback.
+- Phase gate: review page and bilingual copy first. Owner approval is required before Edge speech, GPT Image generation, playable integration, version bump or deploy. Gemini replacements come last under a fresh scope and budget. See `docs/03-content-expansion.md`.
+- `npm run check` includes expansion inventory, unique IDs and name isolation. These drafts are not developmental requirements.
+
 ## Commands
 
 - `npm run dev`: Vite on loopback port 7058, strict port, Caddy hostname allowed.
