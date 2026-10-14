@@ -10,7 +10,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 from unittest.mock import patch
 
-from PIL import Image
+from PIL import Image, ImageDraw
 
 HERE = Path(__file__).resolve().parent
 if str(HERE) not in sys.path:
@@ -467,6 +467,41 @@ with TemporaryDirectory() as temporary:
         }}}
         assert (run / 'transport-contact.jpg').is_file()
         assert not (root / 'public/art/expansion/transport-02-full.webp').exists()
+
+with TemporaryDirectory() as temporary:
+    root = Path(temporary)
+    run, items = tree(root, ids2)
+    with patched(root, run, ids2):
+        write_success(run / 'transport-01', items[0], root)
+        native = Image.new('RGB', (2048, 1792), proc.atlas.PAPER)
+        ImageDraw.Draw(native).rectangle((2000, 1744, 2046, 1790), fill=(10, 200, 30))
+        for point in ((0, 0), (2047, 0), (0, 1791), (2047, 1791)):
+            native.putpixel(point, proc.atlas.PAPER)
+        source = run / 'transport-01/raw/generated.png'
+        native.save(source, 'PNG')
+        digest = hashlib.sha256(source.read_bytes()).hexdigest()
+        (run / 'transport-01/response.json').write_text(json.dumps({
+            'status': 'succeeded',
+            'output': {'sha256': digest, 'width': 2048, 'height': 1792},
+        }) + '\n')
+        with Image.open(source) as raw:
+            image = proc.atlas.normalize_paper(raw.convert('RGB'), tolerance=8)
+            drifted = image.resize((640, 560), Image.Resampling.LANCZOS)
+            corner = drifted.getpixel((639, 559))
+            assert corner != proc.atlas.PAPER
+            assert max(abs(corner[i] - proc.atlas.PAPER[i]) for i in range(3)) > 8
+            again = proc.atlas.normalize_paper(drifted, tolerance=8)
+            assert again.getpixel((639, 559)) != proc.atlas.PAPER
+            restored = proc.resample(image, (640, 560))
+            for point in ((0, 0), (639, 0), (0, 559), (639, 559)):
+                assert restored.getpixel(point) == proc.atlas.PAPER
+        records = proc.collect(items, False)
+        assert len(records) == 1
+        thumb = root / 'public/art/expansion/transport-01-thumb.webp'
+        with Image.open(thumb) as saved:
+            saved = saved.convert('RGB')
+            for point in ((0, 0), (639, 0), (0, 559), (639, 559)):
+                assert saved.getpixel(point) == proc.atlas.PAPER
         again = proc.collect(items, True)
         assert len(again) == 1
         (root / 'public/art/expansion/orphan.webp').write_bytes(b'nope')

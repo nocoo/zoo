@@ -92,3 +92,7 @@ The first production playback smoke check measured the viewer before its fonts a
 ## 2026-10-14 - Preservation harness hashlib.file_digest
 
 The root preservation harness first called `hashlib.file_digest`, which exists only on Python 3.11+, against system Python 3.9. Replace it with `hashlib.sha256(path.read_bytes())`. The snapshot then hashed 3,332 files successfully. Check the runtime before using a new standard-library API.
+
+## 2026-10-14 - Expansion thumbnail LANCZOS paper-corner drift
+
+Export of 46 expansion deliveries halted before writing `src/expansion-art.json` when `vegetables-04-thumb.webp` failed the exact paper-corner check. After RGB-tolerance-8 edge-connected normalize at 2048×1792, LANCZOS downsampling to 640×560 mixed the bottom-right corner to distance 9, so the second normalize could not flood-fill it. Unrecorded full/thumb were copied to ignored `artifacts/expansion-art/halted-vegetables-04/` with SHA-256 recorded, then removed from `public/art/expansion/`; no blind delete. Processing still uses tolerance 8 and does not touch natives. After thumbnail resample it now restores the four exact paper-corner pixels. Re-export completed 46/77. Existing `delivery.json` records were not rewritten. This does not explain the `places-05` provider timeout.

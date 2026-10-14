@@ -12,7 +12,7 @@ spec = importlib.util.spec_from_file_location('atlas', Path(__file__).resolve().
 atlas = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(atlas)
 
-PROCESSING = 'Edge-connected paper normalization (RGB tolerance 8); lossless WebP; thumbnail downsampling only.'
+PROCESSING = 'Edge-connected paper normalization (RGB tolerance 8); lossless WebP; thumbnail downsampling only; restore four thumbnail corner pixels to exact paper after resample.'
 SIZES = [('full', (2048, 1792)), ('thumb', (640, 560))]
 
 
@@ -34,6 +34,20 @@ def public_file(item, suffix):
 
 def expected_names(items):
     return {f"{item['id']}-{suffix}.webp" for item in items for suffix, _ in SIZES}
+
+
+def paper_corners(image):
+    width, height = image.size
+    for point in ((0, 0), (width - 1, 0), (0, height - 1), (width - 1, height - 1)):
+        image.putpixel(point, atlas.PAPER)
+    return image
+
+
+def resample(image, size):
+    if image.size == size:
+        return image
+    out = atlas.normalize_paper(image.resize(size, Image.Resampling.LANCZOS), tolerance=8)
+    return paper_corners(out)
 
 
 def verify_record(item, record, digest):
@@ -100,8 +114,7 @@ def export_item(item):
     public_dir().mkdir(parents=True, exist_ok=True)
     files = []
     for suffix, size in SIZES:
-        derivative = image if image.size == size else atlas.normalize_paper(
-            image.resize(size, Image.Resampling.LANCZOS), tolerance=8)
+        derivative = resample(image, size)
         path = public_file(item, suffix)
         derivative.save(path, 'WEBP', lossless=True, method=6)
         with Image.open(path) as saved:
