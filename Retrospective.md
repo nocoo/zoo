@@ -88,3 +88,7 @@ Independent review found a latent gap in `createRecordedAudio`: only `play()` pr
 ## 2026-10-14 - Release smoke geometry readiness
 
 The first production playback smoke check measured the viewer before its fonts and image had finished loading, then reported an illustration-height change during playback. Waiting for `document.fonts.ready` and decoding the dialog images before taking the baseline made the unchanged application pass in Chromium and WebKit across all eight categories, number 30 and the final character/phrase cards. Wait for asset readiness as well as animation completion before comparing interaction geometry; do not weaken the assertion or regenerate paid audio to fix a harness timing error. The v1.3.0 release commit and deployed assets were not changed by this correction.
+
+## 2026-10-14 - Preservation harness hashlib.file_digest
+
+The root preservation harness first called `hashlib.file_digest`, which exists only on Python 3.11+, against system Python 3.9. Replace it with `hashlib.sha256(path.read_bytes())`. The snapshot then hashed 3,332 files successfully. Check the runtime before using a new standard-library API.

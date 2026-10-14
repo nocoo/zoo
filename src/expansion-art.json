@@ -1,0 +1,16 @@
+{
+  "images": {
+    "transport-01": {
+      "image": "/art/expansion/transport-01-thumb.webp?v=7cc2d760cc4a526b",
+      "imageLarge": "/art/expansion/transport-01-full.webp?v=fd0bd7098d1cc286"
+    },
+    "vegetables-01": {
+      "image": "/art/expansion/vegetables-01-thumb.webp?v=d9ec9b4f7a39b748",
+      "imageLarge": "/art/expansion/vegetables-01-full.webp?v=3242c8f2bf6997f1"
+    },
+    "phrases-21": {
+      "image": "/art/expansion/phrases-21-thumb.webp?v=75f3689d5ab2ae9a",
+      "imageLarge": "/art/expansion/phrases-21-full.webp?v=2de673c4323ed0c4"
+    }
+  }
+}

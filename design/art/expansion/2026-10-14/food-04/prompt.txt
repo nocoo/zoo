@@ -1,0 +1,16 @@
+Use case: illustration-story, toddler picture-learning website for children aged 1.5-3 with an adult.
+Create ONE finished native 2048x1792 illustration, not a grid, contact sheet, collage, mockup or interface.
+
+The attached native PNG image(s) are STYLE references only. Match their paint, paper grain, rounded proportions, palette and cream paper. Do not copy the old subject, pose, identity, toy-scale context or composition.
+
+STYLE: charming flat gouache with layered painted-paper shapes, rounded child-friendly forms, tiny dark dot eyes and gentle peach blush only where a face naturally suits, fine organic painted-paper texture, and rich but restrained mint, ochre, coral and sky accents.
+
+CONCEPTUAL SOURCE (meaning only; do not write, letter, number, label or caption any of this in the image):
+Chinese: 包子。包子圆圆鼓鼓的，里面藏着香香的馅。
+English: Bao. A bao is round and puffy, with a tasty filling inside.
+
+Paint this new subject in the same picture-book family as the attached native illustrations.
+SUBJECT: 包子, bao with filling.
+A round puffy bao with gathered pleats on top and a tasty filling hidden inside. Pleats are essential. A small bite or a hint of filling in the gathered top may show it is stuffed. Distinct from the plain unpleated 馒头: this one has pleats and filling.
+
+COMPOSITION: one complete centered subject or activity vignette, its longest dimension occupying approximately 82 percent of the canvas, with comfortable clean cream margin around every part. Flat uniform warm cream background, exact sRGB #faf6e8 right to every edge; no vignette, gradient, frame, corner shapes, colored letterbox or cast shadow. No text, letters, numbers, signage words, watermark, grid or extra panels. No 3D, photorealism or heavy outlines.

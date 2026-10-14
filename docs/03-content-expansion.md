@@ -1,6 +1,6 @@
 # Content Expansion Drafts
 
-Status: owner approved bilingual copy at commit `c6344b5` on 2026-10-14. Phase 3 Edge generation ran once with `uv run --with edge-tts==7.2.8 python scripts/generate-edge-audio.py --expansion` and stopped on the first pair: `transport-01` zh and en both failed `WSServerHandshakeError` HTTP 403. Completed expansion recordings: 0/154. The application did not retry and did not schedule later pairs. `edge-tts==7.2.8` itself handles HTTP 403 then retries the websocket once per `Communicate.stream` call, so underlying handshakes were not a single attempt. Root cause of the 403 is unknown. Do not change the pinned package, endpoint or credentials. Do not rerun without a fresh grant. Playable `src/content.ts` stays at 176 with existing media unchanged. The review UI stays without expansion playback (`src/expansion-media.json` is `{ "audio": {} }`). Do not claim generated files or pronunciation. GPT Image, playable integration, version bump, deploy and Gemini replacements remain later stages. These drafts are not developmental requirements.
+Status: owner approved bilingual copy at commit `c6344b5` on 2026-10-14. Owner authorized generating all 77 expansion illustrations on 2026-10-14: Workflow Azure `gpt-image-2.5-sunburst`, native 2048 × 1792, existing-card style, at most three in-flight requests, 40 seconds between starts, no automatic retries. Phase 3 Edge recordings remain 0/154 and are deferred; do not rerun without a fresh grant. Playable `src/content.ts` stays at 176 with existing media unchanged. The review page previews expansion art from `src/expansion-art.json` and keeps honest pending audio controls (`src/expansion-media.json` is `{ "audio": {} }`). Manifest image counts are pending delivery, not owner art approval or a completed set. Do not claim generated files, pronunciation or approved illustrations. Playable integration, version bump, deploy and Gemini replacements remain later stages. These drafts are not developmental requirements.
 
 Approved expansion narration reads the name plus the description in each language (`ZH name。description`; `EN name. description`).
 
@@ -27,9 +27,17 @@ New-category titles are the approved product names above. Additions reuse the li
 1. **Review first.** Owner reads the local review page at https://zoo.dev.hexly.ai/?review=expansion. Copy may change. No speech or image provider requests.
 2. **Owner approval.** Explicit sign-off on the draft list and wording. Approval of copy is not authorization to generate media, bump a version, or deploy.
 3. **Edge bilingual generation.** (stopped, 0/154) Temporary Mandarin and English recordings for the approved drafts. The authorized run failed on the first pair. Existing Gemini and live Edge files stay untouched. Fresh approval is required before any further provider call.
-4. **Workflow GPT image generation.** Approved illustrations for the new cards, under a fresh explicit grant. Live art under `public/art/` and `design/art/` stays untouched until that grant.
+4. **Workflow GPT image generation.** (in progress) Owner authorized all 77 expansion illustrations on 2026-10-14. Native 2048 × 1792 Azure `gpt-image-2.5-sunburst` through the Workflow environment, existing-card style, at most three in-flight requests, 40 seconds between starts, no automatic retries. The review page previews thumbnails from `src/expansion-art.json`; missing cards show 待生成. Live art for the 176 playable cards stays untouched. Review preview is not owner art approval or playable integration.
 5. **Validation and owner-authorized release.** Content, media, playback and release checks, then a separately authorized production release. Playable integration into `src/content.ts` happens in this stage, not before.
 6. **Gemini replacements.** Mandarin first, then English, under a fresh scope and budget. No timer, leftover budget, or earlier grant is authorization.
+
+## Phase 4 review page
+
+The local review URL still reads `src/expansion.ts`. It shows optional thumbnails from `src/expansion-art.json` in this generated static schema:
+
+`{ "images": { "<id>": { "image": "/art/expansion/<id>-thumb.webp?v=<16-hex>", "imageLarge": "/art/expansion/<id>-full.webp?v=<16-hex>" } } }`
+
+Missing IDs show 待生成, with no placeholder illustration. A present thumbnail may open `imageLarge` in a new tab with `rel="noopener"`. That URL is the normalized 2048 × 1792 delivery WebP, not the untouched provider PNG. Generation originals stay under `design/art/` and are not the review-page web link. Progress is the number of manifest thumbnails among 77 and does not mean the owner approved the art. Audio controls stay honest at 0/154. The page does not request speech or fall back to TTS, and does not integrate drafts into the playable app.
 
 ## Phase 3 commands
 
@@ -57,4 +65,4 @@ Isolation: no Gemini, no credentials, no images, no `src/expansion.ts` copy edit
 
 Verified after the stopped generation (coordinator, no provider rerun): `python3 scripts/check-edge-expansion.py`, `python3 scripts/generate-edge-audio.py --check` (legacy live Edge files), `node --experimental-strip-types scripts/check-audio-player.ts`, `npm run check`, `npm run build`, `node scripts/check-pwa.mjs`, and `npm run check:live` all passed. `python3 scripts/generate-edge-audio.py --check --expansion` still fails because all 154 expansion recordings are missing (0 completed); that is the intended missing-file check, not a passing generation result. Chromium and WebKit at 320/390/844/1440 px passed the empty-manifest review page (77 cards, 9 filters, 154 disabled controls) and the live root (8 categories, 20 cards in the default view). Root mocked-`Audio` browser tests passed exclusive play, manual clicks, filter change, pagehide, backgrounding, stale errors, and post-`play()` media errors. These are not real speech or listening approval.
 
-Skipped: image generation, deploy, version bump. Add when the owner opens the matching later stage.
+Skipped: Edge rerun, playable integration, deploy, version bump. Art generation is authorized and pending; review preview is not completion.

@@ -2,10 +2,42 @@ import { useState } from 'react';
 import { Button } from 'animal-island-ui';
 import { expansionCategories, type ExpansionCard, type ExpansionCategory } from './expansion';
 import { useExpansionAudio, type ExpansionLanguage } from './useExpansionAudio';
+import expansionArt from './expansion-art.json';
 import './expansion-review.css';
+
+type ExpansionArt = { image?: string; imageLarge?: string };
+
+const images = (expansionArt as { images: Record<string, ExpansionArt> }).images;
 
 function cardCount(groups: ExpansionCategory[]) {
   return groups.reduce((total, group) => total + group.cards.length, 0);
+}
+
+function CardArt({ card }: { card: ExpansionCard }) {
+  const art = images[card.id];
+  if (!art?.image) {
+    return <div className="review-art is-pending">待生成</div>;
+  }
+
+  const picture = (
+    <img src={art.image} alt={card.name} loading="lazy" width={640} height={560} />
+  );
+
+  if (!art.imageLarge) {
+    return <div className="review-art">{picture}</div>;
+  }
+
+  return (
+    <a
+      className="review-art"
+      href={art.imageLarge}
+      target="_blank"
+      rel="noopener"
+      aria-label={`在新标签打开${card.name}高清图`}
+    >
+      {picture}
+    </a>
+  );
 }
 
 function ListenButton({
@@ -62,6 +94,7 @@ function Group({
               <code className="review-id">{card.id}</code>
               <span className={`review-kind tone-${category.kind === 'new' ? 'mint' : 'peach'}`}>{category.kind === 'new' ? '新增' : '补充'}</span>
             </div>
+            <CardArt card={card} />
             <h4 id={`${card.id}-name`}>{card.name}</h4>
             <p className="review-pinyin">{card.pronunciation}</p>
             <p className="review-english" lang="en">{card.english}</p>
@@ -93,6 +126,7 @@ export function ExpansionReview() {
   const cards = expansionCategories.flatMap(group => group.cards);
   const zhReady = cards.filter(card => audio.urlFor(card.id, 'zh')).length;
   const enReady = cards.filter(card => audio.urlFor(card.id, 'en')).length;
+  const artReady = cards.filter(card => images[card.id]?.image).length;
 
   function chooseFilter(next: string) {
     if (next !== filter) audio.stop();
@@ -101,7 +135,7 @@ export function ExpansionReview() {
 
   return (
     <div className="expansion-review">
-      <a className="skip-link" href="#review-copy">跳到试听正文</a>
+      <a className="skip-link" href="#review-copy">跳到审稿正文</a>
       <header className="review-header">
         <div className="review-header-inner">
           <div className="review-brand">
@@ -116,9 +150,9 @@ export function ExpansionReview() {
       </header>
 
       <main className="review-main" id="review-copy">
-        <h1>第三阶段：试听临时录音</h1>
-        <p className="review-lead">77 张扩展开卡片的中英文文案已经确认。可以用下面的按钮试听临时 Edge 录音。小岛上正在用的 176 张卡片、图片和录音都没有改动。现在还没有新插画，这些卡片也不能在小岛上点开。</p>
-        <p className="review-status" role="status">临时 Edge 录音进度：中文 {zhReady}/{total}，英文 {enReady}/{total}。没有录音地址的按钮会标明「待录音」，不能播放。</p>
+        <h1>第四阶段：预览扩展插画</h1>
+        <p className="review-lead">77 张扩展卡片的中英文文案已经确认。本页用来预览正在生成的插画。有图时可以点缩略图，在新标签查看高清图。小岛上正在用的 176 张卡片、图片和录音都没有改动。这些扩展卡片还不能在小岛上点开。临时 Edge 录音仍是 0/154，本页不会请求语音。</p>
+        <p className="review-status" role="status">插画清单进度：{artReady}/{total}。没有图的卡片会标明「待生成」。这个数字只表示清单里有没有图，不表示家长已经认可画风。临时 Edge 录音进度：中文 {zhReady}/{total}，英文 {enReady}/{total}。没有录音地址的按钮会标明「待录音」，不能播放。</p>
 
         <div className="review-toolbar">
           <nav className="review-filters" aria-label="按分类查看">

@@ -1,0 +1,15 @@
+Use case: illustration-story, toddler picture-learning website for children aged 1.5-3 with an adult.
+Create ONE finished native 2048x1792 illustration, not a grid, contact sheet, collage, mockup or interface.
+
+Image 1 is the same toddler character to keep: a short child with a dark bob and bangs, tiny dark eyes, peach cheeks, coral shirt and teal overalls. Preserve that recognizable child. Image 2 supports pose, adult, or prop style. Change only the new action named below. Do not copy the old activity from the references.
+
+STYLE: charming flat gouache with layered painted-paper shapes, rounded child-friendly forms, tiny dark dot eyes and gentle peach blush only where a face naturally suits, fine organic painted-paper texture, and rich but restrained mint, ochre, coral and sky accents.
+
+CONCEPTUAL SOURCE (meaning only; do not write, letter, number, label or caption any of this in the image):
+Chinese: 我很开心。我很开心。
+English: I am happy. I am so happy.
+
+SUBJECT: I am happy.
+The same toddler shows happy feeling: open smile, arms open or hands to cheeks, grounded on her feet. This is a feeling portrait of joy, not a jump, not a clap, not a wave-hello.
+
+COMPOSITION: one complete centered subject or activity vignette, its longest dimension occupying approximately 82 percent of the canvas, with comfortable clean cream margin around every part. Flat uniform warm cream background, exact sRGB #faf6e8 right to every edge; no vignette, gradient, frame, corner shapes, colored letterbox or cast shadow. No text, letters, numbers, signage words, watermark, grid or extra panels. No 3D, photorealism or heavy outlines.
