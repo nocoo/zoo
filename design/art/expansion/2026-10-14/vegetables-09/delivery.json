@@ -1,0 +1,25 @@
+{
+  "source_sha256": "ba63fda783a0e8ab3bc056bccada5df3456a6d0fa542fb3525eea952b95c6b09",
+  "source": "design/art/expansion/2026-10-14/vegetables-09/raw/generated.png",
+  "processing": "Edge-connected paper normalization (RGB tolerance 8); lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/expansion/vegetables-09-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1957762,
+      "sha256": "aeadbd4095a7bb01df7665a080613f22931001fb2f404f5e0088a5931252fa22"
+    },
+    {
+      "path": "public/art/expansion/vegetables-09-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 216248,
+      "sha256": "9354e4d30b5ff8cc5294856d7753343c62a64f26e6a3b4031ca7796965651e16"
+    }
+  ]
+}

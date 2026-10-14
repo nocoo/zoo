@@ -1,0 +1,25 @@
+{
+  "source_sha256": "a42a2d9cd779b9bdd8d1c7975c3cdd31ffd434a19f226da28503c786f079ffcb",
+  "source": "design/art/expansion/2026-10-14/food-07/raw/generated.png",
+  "processing": "Edge-connected paper normalization (RGB tolerance 8); lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/expansion/food-07-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1634762,
+      "sha256": "814f505ca7f0909c105c9c6ac6dedd6fe3a21436f7c753ece99d1dbb72b9cb4a"
+    },
+    {
+      "path": "public/art/expansion/food-07-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 172676,
+      "sha256": "90f632ee2302707c7996852ec5f07037b976730c288677c8324d155d1b772700"
+    }
+  ]
+}

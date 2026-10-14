@@ -1,0 +1,25 @@
+{
+  "source_sha256": "6bd57739523edfcd656711021f446f08786b601bdbb3981377217fa045e93584",
+  "source": "design/art/expansion/2026-10-14/objects-22/raw/generated.png",
+  "processing": "Edge-connected paper normalization (RGB tolerance 8); lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/expansion/objects-22-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 2055002,
+      "sha256": "3b95f293625a35ab380afbdbf4df1c06a2ea4aaf6982c0b82ea2c90f87cb75f6"
+    },
+    {
+      "path": "public/art/expansion/objects-22-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 214488,
+      "sha256": "f82250b79156f806a6d67a9e6f47ec4e8c21bf5f44eb05f8b2a7e0c92e8bfc76"
+    }
+  ]
+}

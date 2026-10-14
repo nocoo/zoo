@@ -1,0 +1,25 @@
+{
+  "source_sha256": "f870cdfb0647e4d3219048bcc9412c5ec5d3c49ae7fb529cb854c0de266627f3",
+  "source": "design/art/expansion/2026-10-14/places-07/raw/generated.png",
+  "processing": "Edge-connected paper normalization (RGB tolerance 8); lossless WebP; thumbnail downsampling only.",
+  "files": [
+    {
+      "path": "public/art/expansion/places-07-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 3256728,
+      "sha256": "8639bdfced3291f71b6fd39fbe0a32cf6243badf89def5861b9d182f6cee27e3"
+    },
+    {
+      "path": "public/art/expansion/places-07-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 359094,
+      "sha256": "bc678bfdb060ed6f5199e34bb953b393a47326f60c7ed9a60543f530e2b167d8"
+    }
+  ]
+}

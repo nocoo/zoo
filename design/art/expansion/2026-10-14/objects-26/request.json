@@ -1,0 +1,35 @@
+{
+	"startedAt": "2026-10-14T09:34:15.326857+00:00",
+	"provider": "Azure OpenAI / Foundry",
+	"endpoint": "https://bingviz-data-analysis-api.openai.azure.com/openai/v1/images/edits",
+	"method": "POST",
+	"contentType": "multipart/form-data",
+	"parameters": {
+		"model": "gpt-image-2.5-sunburst",
+		"size": "2048x1792",
+		"quality": "high",
+		"n": "1",
+		"background": "opaque",
+		"output_format": "png"
+	},
+	"promptFile": "prompt.txt",
+	"promptSha256": "eca0635d9e050c76a6e7556ee46631ac23c04d12bc3b183b9e5dca0d1f8dd226",
+	"images": [
+		{
+			"index": 1,
+			"path": "../../../hd/2026-10-10/objects-12/raw/generated.png",
+			"sha256": "56a16ce9715f7065eea61a48b8780fd5ba9e20eb227e58318114e9c0bada7e20",
+			"bytes": 4068199,
+			"mime": "image/png"
+		},
+		{
+			"index": 2,
+			"path": "../../../hd/2026-10-10/objects-14/raw/generated.png",
+			"sha256": "6ef5a59e6173ac17825e056e8ccbbfebdbe1ff192097c30ceff6b0ee424e9c55",
+			"bytes": 3084863,
+			"mime": "image/png"
+		}
+	],
+	"transportReference": "workflow/agents/skills/agi-image-generation/scripts/generate.py",
+	"documentation": "https://developers.openai.com/api/docs/guides/image-generation"
+}
