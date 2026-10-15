@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.4.1 - 2026-10-15
+
+- Replace 55 new Mandarin Edge narrations with approved-style Gemini/Sulafat recordings: animals, fruits, weather, everyday objects, phrases, transport and the first five vegetables.
+- Reach 295/394 eligible Gemini recordings. The batch stops on HTTP 429 at attempt 56; the remaining 22 Mandarin and 77 English recordings retain complete Edge playback. Preserve the provider cooldown without retries or timers.
+- Retain all new WAV originals, metadata and MP3 deliveries, with all 1,777 pre-run audio/archive files unchanged. Keep existing transcripts, illustrations and playback interactions intact.
+
 ## v1.4.0 - 2026-10-15
 
 - Add 77 approved cards for 253 cards across 12 categories: introduce transport, vegetables, table food and places to visit, and expand animals, everyday objects, phrases, weather and fruits.
