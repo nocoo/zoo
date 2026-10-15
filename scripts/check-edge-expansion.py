@@ -41,7 +41,9 @@ assert expansion_jobs[1][0]['english'] == 'Car. A car has four wheels and can ta
 assert expansion_jobs[-2][1] == 'zh' and expansion_jobs[-1][1] == 'en'
 assert expansion_jobs[-1][0]['id'] == 'fruits-26'
 assert expansion_jobs[-1][0]['english'] == 'Bayberry. A bayberry is red with a bumpy surface, and it tastes sweet and tart.'
-assert not {item['id'] for item in expansion_items} & {item['id'] for item in active_items}
+assert len(active_items) == 253
+active_by_id = {item['id']: item for item in active_items}
+assert all(item == active_by_id[item['id']] for item in expansion_items)
 
 lion = next(item for item in active_items if item['id'] == 'animals-01')
 assert lion['english'] == 'Lion'
@@ -49,10 +51,24 @@ assert lion['text'].startswith('狮子。')
 active_zh = {item['id'] for item, language in active_jobs if language == 'zh'}
 active_en = {item['id'] for item, language in active_jobs if language == 'en'}
 assert 'animals-01' not in active_zh
-assert 'animals-01' in active_en
+assert 'animals-01' not in active_en
 assert 'letters-A' not in active_zh
 assert 'letters-A' in active_en
-assert all(item['id'] not in {card['id'] for card in expansion_items} for item, _ in active_jobs)
+expansion_ids = {item['id'] for item in expansion_items}
+assert active_zh & expansion_ids == {identifier for identifier in expansion_ids if not (ROOT / f'design/audio/{identifier}.json').exists()}
+assert active_en & expansion_ids == {identifier for identifier in expansion_ids if not (ROOT / f'design/audio/en/{identifier}.json').exists()}
+with TemporaryDirectory() as temporary:
+    with patch.object(edge, 'ROOT', Path(temporary)):
+        assert edge.jobs_for(expansion_items, False) == expansion_jobs
+        saved = Path(temporary) / f'design/audio/{expansion_items[0]["id"]}.json'
+        saved.parent.mkdir(parents=True)
+        saved.write_text('{}')
+        assert edge.jobs_for(expansion_items, False) == expansion_jobs[1:]
+        assert edge.jobs_for(expansion_items, True) == expansion_jobs
+for item, language in active_jobs:
+    if item['id'] in expansion_ids:
+        assert edge.info_for(item, language) == edge.info_for(next(card for card in expansion_items if card['id'] == item['id']), language)
+assert edge.info_for(lion, 'en')['text'] == 'Lion'
 
 
 def write_recording(item, language, *, text=None, empty=False, missing=None):
@@ -255,9 +271,10 @@ with TemporaryDirectory() as temporary:
 
 manifest = json.loads((ROOT / 'src/expansion-media.json').read_text())
 assert set(manifest) == {'audio'}
+assert set(manifest['audio']) == {item['id'] for item in expansion_items}
 for identifier, entry in manifest['audio'].items():
     assert identifier in {item['id'] for item in expansion_items}
-    assert set(entry) <= {'zh', 'en'} and entry
+    assert set(entry) == {'zh', 'en'}
     for language, url in entry.items():
         assert url.startswith(f'/audio-edge/{language}/{identifier}.mp3?v=')
 

@@ -1,4 +1,6 @@
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { pictures } from '../src/content.ts';
 import { expansionCategories } from '../src/expansion.ts';
 
@@ -14,7 +16,7 @@ const expected = [
   { id: 'fruits', name: '缤纷水果', kind: 'existing', start: 21, names: ['橘子', '柚子', '杏', '李子', '山竹', '杨梅'] },
 ] as const;
 
-assert.equal(pictures.length, 176);
+assert.equal(pictures.length, 253);
 assert.equal(expansionCategories.length, expected.length);
 
 const expansionCards = expansionCategories.flatMap(category => category.cards);
@@ -48,11 +50,35 @@ assert.equal(new Set(expansionNames).size, 77);
 assert.equal(expansionCategories.filter(category => category.kind === 'new').flatMap(category => category.cards).length, 37);
 assert.equal(expansionCategories.filter(category => category.kind === 'existing').flatMap(category => category.cards).length, 40);
 
-const activeIds = new Set(pictures.map(picture => picture.id));
-const activeNames = new Set(pictures.map(picture => picture.name));
-assert.equal(activeIds.size, 176);
-for (const id of expansionIds) assert.ok(!activeIds.has(id), id);
-for (const name of expansionNames) assert.ok(!activeNames.has(name), name);
-assert.equal(pictures.length, 176);
-
-console.log('检查通过：77 张扩展草稿，与 176 张正式内容互不重叠。');
+const legacy = pictures.filter(picture => !expansionIds.includes(picture.id));
+assert.equal(legacy.length, 176);
+const legacyIds = new Set(legacy.map(picture => picture.id));
+const legacyNames = new Set(legacy.map(picture => picture.name));
+const art = JSON.parse(readFileSync('src/expansion-art.json', 'utf8')).images;
+const media = JSON.parse(readFileSync('src/media.json', 'utf8'));
+assert.equal(Object.keys(art).length, 77);
+for (const category of expansionCategories) {
+  for (const card of category.cards) {
+    assert.ok(!legacyIds.has(card.id), card.id);
+    assert.ok(!legacyNames.has(card.name), card.name);
+    const playable = pictures.find(picture => picture.id === card.id)!;
+    for (const field of fields) assert.equal(playable[field], card[field], `${card.id} ${field}`);
+    assert.equal(playable.category, category.id);
+    for (const field of ['image', 'imageLarge'] as const) {
+      assert.equal(media.images[playable[field]], art[card.id][field]);
+    }
+  }
+}
+const digest = (value: unknown) => createHash('sha256').update(JSON.stringify(value)).digest('hex');
+assert.equal(digest(legacy), '3122ccf7aa66d863c7baee05fdefe64212aef6b508caa171b966225acc1baf5c');
+const legacyDigests = {
+  images: '9ff19a57b62ca33985a53bbd9195fd8f72c9e893b05af4175a01fdc6963095eb',
+  audio: 'b6a6c11c56485da5145507f586bedb8f35a293ed28bab70041e6bdc32b4ef0ab',
+  transcripts: '168766bdeb05c8a8a2191c77132d44f2ceb0a1d600fa937ac3584e16323772ad',
+};
+for (const field of ['images', 'audio', 'transcripts'] as const) {
+  const keys = field === 'images' ? legacy.flatMap(picture => [picture.image, picture.imageLarge]) : [...legacyIds];
+  const entries = keys.map(key => [key, media[field][key]] as const).sort(([a], [b]) => a.localeCompare(b, 'en'));
+  assert.equal(digest(entries), legacyDigests[field], `Legacy ${field} changed`);
+}
+console.log('检查通过：77 张扩展卡已集成，原 176 张媒体 URL 与字幕完整保留。');

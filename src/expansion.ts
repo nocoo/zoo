@@ -1,3 +1,5 @@
+import type { CategoryId } from './content.ts';
+
 export type ExpansionCard = {
   id: string;
   name: string;
@@ -5,10 +7,11 @@ export type ExpansionCard = {
   pronunciation: string;
   description: string;
   englishDescription: string;
+  group?: string;
 };
 
 export type ExpansionCategory = {
-  id: string;
+  id: CategoryId;
   name: string;
   kind: 'new' | 'existing';
   cards: ExpansionCard[];
@@ -103,15 +106,15 @@ export const expansionCategories: ExpansionCategory[] = [
     name: '动物朋友',
     kind: 'existing',
     cards: [
-      { id: 'animals-21', name: '小猪', english: 'Pig', pronunciation: 'xiǎo zhū', description: '小猪的鼻子圆圆的，身上粉粉的，会哼哼叫。', englishDescription: 'A pig has a round nose and a pink body, and it says oink.' },
-      { id: 'animals-22', name: '小鸡', english: 'Chick', pronunciation: 'xiǎo jī', description: '小鸡圆滚滚的，身上是软软的黄羽毛，会唧唧叫。', englishDescription: 'A chick is round and fluffy, with soft yellow down, and it says peep.' },
-      { id: 'animals-23', name: '鹅', english: 'Goose', pronunciation: 'é', description: '鹅的脖子长长的，走路一摇一摆。', englishDescription: 'A goose has a long neck and waddles as it walks.' },
-      { id: 'animals-24', name: '蝴蝶', english: 'Butterfly', pronunciation: 'hú dié', description: '蝴蝶有两对翅膀，会在花旁边轻轻飞。', englishDescription: 'A butterfly has two pairs of wings and flutters beside the flowers.' },
-      { id: 'animals-25', name: '蜗牛', english: 'Snail', pronunciation: 'wō niú', description: '蜗牛背上顶着小壳，走起路来慢慢的。', englishDescription: 'A snail carries a little shell on its back and moves very slowly.' },
-      { id: 'animals-26', name: '蚂蚁', english: 'Ant', pronunciation: 'mǎ yǐ', description: '蚂蚁小小的，常常排着队往前走。', englishDescription: 'Ants are tiny and often walk forward in a line.' },
-      { id: 'animals-27', name: '蜜蜂', english: 'Bee', pronunciation: 'mì fēng', description: '蜜蜂嗡嗡飞，停在花上采花蜜。', englishDescription: 'A bee buzzes and stops on flowers to gather nectar.' },
-      { id: 'animals-28', name: '瓢虫', english: 'Ladybug', pronunciation: 'piáo chóng', description: '瓢虫圆圆的，背上常有黑色小点点。', englishDescription: 'A ladybug is round, and its back often has little black spots.' },
-      { id: 'animals-29', name: '毛毛虫', english: 'Caterpillar', pronunciation: 'máo mao chóng', description: '毛毛虫圆滚滚的，一拱一拱地往前走。', englishDescription: 'A caterpillar is plump and scooches forward in little arches.' },
+      { id: 'animals-21', group: '农场伙伴', name: '小猪', english: 'Pig', pronunciation: 'xiǎo zhū', description: '小猪的鼻子圆圆的，身上粉粉的，会哼哼叫。', englishDescription: 'A pig has a round nose and a pink body, and it says oink.' },
+      { id: 'animals-22', group: '农场伙伴', name: '小鸡', english: 'Chick', pronunciation: 'xiǎo jī', description: '小鸡圆滚滚的，身上是软软的黄羽毛，会唧唧叫。', englishDescription: 'A chick is round and fluffy, with soft yellow down, and it says peep.' },
+      { id: 'animals-23', group: '农场伙伴', name: '鹅', english: 'Goose', pronunciation: 'é', description: '鹅的脖子长长的，走路一摇一摆。', englishDescription: 'A goose has a long neck and waddles as it walks.' },
+      { id: 'animals-24', group: '花园小伙伴', name: '蝴蝶', english: 'Butterfly', pronunciation: 'hú dié', description: '蝴蝶有两对翅膀，会在花旁边轻轻飞。', englishDescription: 'A butterfly has two pairs of wings and flutters beside the flowers.' },
+      { id: 'animals-25', group: '花园小伙伴', name: '蜗牛', english: 'Snail', pronunciation: 'wō niú', description: '蜗牛背上顶着小壳，走起路来慢慢的。', englishDescription: 'A snail carries a little shell on its back and moves very slowly.' },
+      { id: 'animals-26', group: '花园小伙伴', name: '蚂蚁', english: 'Ant', pronunciation: 'mǎ yǐ', description: '蚂蚁小小的，常常排着队往前走。', englishDescription: 'Ants are tiny and often walk forward in a line.' },
+      { id: 'animals-27', group: '花园小伙伴', name: '蜜蜂', english: 'Bee', pronunciation: 'mì fēng', description: '蜜蜂嗡嗡飞，停在花上采花蜜。', englishDescription: 'A bee buzzes and stops on flowers to gather nectar.' },
+      { id: 'animals-28', group: '花园小伙伴', name: '瓢虫', english: 'Ladybug', pronunciation: 'piáo chóng', description: '瓢虫圆圆的，背上常有黑色小点点。', englishDescription: 'A ladybug is round, and its back often has little black spots.' },
+      { id: 'animals-29', group: '花园小伙伴', name: '毛毛虫', english: 'Caterpillar', pronunciation: 'máo mao chóng', description: '毛毛虫圆滚滚的，一拱一拱地往前走。', englishDescription: 'A caterpillar is plump and scooches forward in little arches.' },
     ],
   },
   {

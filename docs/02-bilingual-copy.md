@@ -1,18 +1,18 @@
 # Bilingual Copy Approval Ledger
 
-Status: updated after the owner-approved 2026-10-14 completion. All 176 cards have Chinese and English descriptions; all 120 eligible cards now have both Gemini recordings. The forty remaining English character/phrase narrations completed without errors or retries. Numbers and letters remain excluded. Existing copy and earlier recordings are unchanged. The owner separately authorized a v1.3.0 release after validation; no speech timer is installed.
+Status: 2026-10-15 integration, before the newly authorized Gemini run. All 253 cards have approved Chinese and English descriptions. The original 176 cards below retain their exact copy and recordings; 120 have both Gemini clips. The 77 additions retain their approved per-card bilingual copy in [`src/expansion.ts`](../src/expansion.ts), with inventory and provenance in [the expansion record](03-content-expansion.md); all 154 full bilingual Edge clips are complete. Gemini replacements for only these 154 targets are authorized after v1.4.0 deployment, Mandarin first, stopping on the first error. Root records actual generation/release results. Numbers and letters remain excluded; no speech timer is installed.
 
 ## Reading Contract
 
 - Picture, character and phrase cards: Chinese name + Chinese explanation; English name + English explanation.
 - Numbers 1-30: Chinese number name only (unchanged); English number name + English explanation. The Chinese explanation remains editorial copy, not part of the current recording contract.
 - Alphabet A-Z: one American English letter-name clip shared by both playback entries. Both descriptions are editorial copy, not narration; no phonics or extra English alphabet clip.
-- The website still captions the exact selected recording, not unrecorded draft text. Pending English clips still play their existing Edge name-only files until new recordings are approved.
+- The website still captions the exact selected recording, not unrecorded draft text. Original Edge English clips retain name-only narration; expansion Edge English clips already read the full name and explanation. Gemini replacements use the same approved full transcript.
 - Status columns describe local Gemini files and their validated transcript/hash, not production deployment. Release deployment requires separate exact-revision CI and online verification.
 
 ## Totals
 
-176 cards; 326 unique target recordings; 240 complete locally, 86 pending and explicitly excluded. Eligible scope: 240/240 complete, zero pending. See [the Mandarin-first plan](01-bilingual-gemini-tts.md) before any generation.
+253 cards; 480 unique Gemini target recordings; 240 complete locally, 154 eligible pending and 86 excluded number/alphabet targets. Eligible scope: 240/394 complete; all 77 pending Mandarin jobs precede all 77 pending English jobs. The per-card tables below preserve the original 176-card ledger; the linked expansion source contains the other 77 approved entries. See [the Mandarin-first plan](01-bilingual-gemini-tts.md) before any generation.
 
 ## 动物朋友 (20)
 

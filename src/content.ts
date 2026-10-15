@@ -1,6 +1,7 @@
 import { englishLabel, englishNumber } from './english.ts';
+import { expansionCategories } from './expansion.ts';
 
-export type CategoryId = 'animals' | 'numbers' | 'letters' | 'hanzi' | 'phrases' | 'weather' | 'objects' | 'fruits';
+export type CategoryId = 'animals' | 'numbers' | 'letters' | 'hanzi' | 'phrases' | 'weather' | 'objects' | 'fruits' | 'transport' | 'vegetables' | 'food' | 'places';
 export type Picture = {
   id: string;
   category: CategoryId;
@@ -25,10 +26,14 @@ export const categories: { id: CategoryId; name: string; subtitle: string; title
   { id: 'weather', name: '天气自然', subtitle: '抬头看看天空', title: '今天的天空，是什么样子？', hint: '风、雨、阳光，都是大自然的礼物', tone: 'blue' },
   { id: 'objects', name: '身边物品', subtitle: '发现生活小宝藏', title: '这些东西，你在哪里见过？', hint: '找一找，家里也有它们吗', tone: 'peach' },
   { id: 'fruits', name: '缤纷水果', subtitle: '甜甜的彩虹味道', title: '水果篮里，装着小彩虹', hint: '认一认颜色，再说说你喜欢哪一个', tone: 'rose' },
+  { id: 'transport', name: '交通工具', subtitle: '一起看看怎么出发', title: '今天，坐什么去看看世界？', hint: '和大人一起，找找路上的交通工具', tone: 'blue' },
+  { id: 'vegetables', name: '蔬菜', subtitle: '菜篮里的小发现', title: '菜篮里，有哪些新朋友？', hint: '看看颜色和形状，再去厨房找一找', tone: 'mint' },
+  { id: 'food', name: '饭桌食物', subtitle: '饭桌上的好朋友', title: '今天，饭桌上有什么？', hint: '和大人一起，认一认熟悉的食物', tone: 'yellow' },
+  { id: 'places', name: '一起出门', subtitle: '牵着大手看世界', title: '牵好大手，一起去哪里？', hint: '认一认这些地方，和大人一起去看看', tone: 'peach' },
 ];
 
 type Row = [string, string, string, string | undefined, string];
-const rows: Record<Exclude<CategoryId, 'numbers' | 'letters'>, Row[]> = {
+const rows: Record<'animals' | 'fruits' | 'weather' | 'objects' | 'hanzi' | 'phrases', Row[]> = {
   animals: [
     ['狮子', 'shī zi', '狮子有一圈蓬松的鬃毛，像戴着小围巾。', '森林草原', 'The lion has a fluffy mane around his neck, like a little scarf.'],
     ['熊猫', 'xióng māo', '熊猫穿着黑白衣服，最爱吃竹子。', '森林草原', 'The panda has a black and white coat and loves to eat bamboo.'],
@@ -145,6 +150,11 @@ export const pictures: Picture[] = [
     englishDescription: `This is uppercase ${name}, and beside it is lowercase ${name.toLowerCase()}. Do they look the same?`,
     description: `这是大写字母 ${name}，旁边是它的小写 ${name.toLowerCase()}。找一找，它们长得一样吗？`,
   })),
+  ...expansionCategories.flatMap(category => category.cards.map(card => ({
+    ...card, category: category.id,
+    image: `/art/expansion/${card.id}-thumb.webp`,
+    imageLarge: `/art/expansion/${card.id}-full.webp`,
+  }))),
 ];
 
-export const animalGroups = ['全部朋友', '森林草原', '农场伙伴', '水边伙伴'];
+export const animalGroups = ['全部朋友', '森林草原', '农场伙伴', '水边伙伴', '花园小伙伴'];

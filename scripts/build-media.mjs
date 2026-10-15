@@ -1,10 +1,10 @@
 import { createHash } from 'node:crypto';
-import { readFile, writeFile, readdir } from 'node:fs/promises';
+import { readFile, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { pictures } from '../src/content.ts';
-import { audioTranscript, englishAudioTranscript } from '../src/audio.ts';
+import { audioTranscript, englishAudioTranscript, edgeEnglishAudioTranscript } from '../src/audio.ts';
 import { expansionCategories } from '../src/expansion.ts';
 
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
@@ -44,8 +44,7 @@ export async function expansionAudio(root = '.') {
 
 async function buildActive() {
   const images = {};
-  for (const name of await readdir('public/art/hd')) {
-    const path = `/art/hd/${name}`;
+  for (const path of pictures.flatMap(picture => [picture.image, picture.imageLarge]).sort()) {
     images[path] = `${path}?v=${hash(await readFile(`public${path}`)).slice(0, 16)}`;
   }
   const audio = {};
@@ -60,7 +59,7 @@ async function buildActive() {
       const metadataPath = useGemini ? `design/audio/${geminiId}.json` : `design/audio-edge/${sourceLanguage}/${picture.id}.json`;
       const path = useGemini ? `/audio/${geminiId}.mp3` : `/audio-edge/${sourceLanguage}/${picture.id}.mp3`;
       const metadata = JSON.parse(await readFile(metadataPath, 'utf8'));
-      const text = useGemini && language === 'en' ? englishAudioTranscript(picture) : useGemini || sourceLanguage === 'zh' ? audioTranscript(picture) : picture.english;
+      const text = useGemini && language === 'en' ? englishAudioTranscript(picture) : useGemini || sourceLanguage === 'zh' ? audioTranscript(picture) : edgeEnglishAudioTranscript(picture);
       if (metadata.text !== text) throw new Error(`Narration text differs: ${metadataPath}`);
       const digest = hash(await readFile(`public${path}`));
       if (digest !== (useGemini ? metadata.mp3_sha256 : metadata.sha256)) throw new Error(`Audio checksum differs: ${path}`);

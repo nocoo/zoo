@@ -18,30 +18,20 @@ def sha(data):
 
 
 def load_cards(expansion):
-    if expansion:
-        source = (
-            "import {expansionCategories} from './src/expansion.ts';"
-            "import {pictures} from './src/content.ts';"
-            "const cards = expansionCategories.flatMap(c => c.cards);"
-            "console.log(JSON.stringify({"
-            "active: pictures.map(p => p.id),"
-            "cards: cards.map(p => ({id: p.id, text: `${p.name}。${p.description}`, english: `${p.english}. ${p.englishDescription}`}))"
-            "}))"
-        )
-    else:
-        source = (
-            "import {pictures} from './src/content.ts'; import {audioTranscript} from './src/audio.ts';"
-            "console.log(JSON.stringify(pictures.map(p=>({...p,text:audioTranscript(p)}))))"
-        )
-    payload = json.loads(subprocess.check_output([
+    source = (
+        "import {pictures} from './src/content.ts';"
+        "import {expansionCategories} from './src/expansion.ts';"
+        "import {audioTranscript,edgeEnglishAudioTranscript} from './src/audio.ts';"
+        "const byId = new Map(pictures.map(p => [p.id, p]));"
+        "const cards = " + ("expansionCategories.flatMap(c => c.cards.map(p => byId.get(p.id)))" if expansion else "pictures") + ";"
+        "console.log(JSON.stringify(cards.map(p=>({...p,text:audioTranscript(p),english:edgeEnglishAudioTranscript(p)}))))"
+    )
+    cards = json.loads(subprocess.check_output([
         'node', '--experimental-strip-types', '--input-type=module', '-e', source,
     ], cwd=ROOT))
-    if not expansion:
-        return payload
-    cards = payload['cards']
     ids = [card['id'] for card in cards]
-    if len(cards) != 77 or len(set(ids)) != 77 or set(ids) & set(payload['active']):
-        raise ValueError('扩展卡片必须为 77 张且与正式内容互不重叠。')
+    if expansion and (len(cards) != 77 or len(set(ids)) != 77):
+        raise ValueError('扩展卡片必须为 77 张且 ID 唯一。')
     return cards
 
 
@@ -50,9 +40,10 @@ def jobs_for(items, expansion):
     for item in items:
         for language in ('zh', 'en'):
             if not expansion:
-                if language == 'zh' and (ROOT / f"design/audio/{item['id']}.json").exists():
-                    continue
                 if item.get('category') == 'letters' and language == 'zh':
+                    continue
+                gemini_id = f"en/{item['id']}" if language == 'en' and item.get('category') != 'letters' else item['id']
+                if (ROOT / f'design/audio/{gemini_id}.json').exists():
                     continue
             jobs.append((item, language))
     if expansion and len(jobs) != 154:

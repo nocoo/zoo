@@ -1,5 +1,6 @@
 import importlib.util
 import json
+import subprocess
 import sys
 from pathlib import Path
 from tempfile import TemporaryDirectory
@@ -160,4 +161,59 @@ with patch.object(sys, 'argv', ['generate-audio.py', '--until-provider-error']),
         assert error.code == 2
     generate.assert_not_called()
 
-print('检查通过：冷却、失败停止、文件复用、五条隔离、双语中文优先、排除数字字母、持久化每日请求上限。')
+payload = json.loads(subprocess.check_output([
+    'node', '--experimental-strip-types', '--input-type=module', '-e',
+    "import {pictures} from './src/content.ts'; import {expansionCategories} from './src/expansion.ts';"
+    "import {audioTranscript,englishAudioTranscript} from './src/audio.ts';"
+    "console.log(JSON.stringify({items:pictures.map(p=>({id:p.id,category:p.category,text:audioTranscript(p),englishText:englishAudioTranscript(p)})),"
+    "expansionIds:expansionCategories.flatMap(c=>c.cards.map(p=>p.id))}))",
+], cwd=audio.ROOT))
+items = payload['items']
+expansion_ids = set(payload['expansionIds'])
+legacy_ids = {f'{category}-{index:02d}' for category in ('animals', 'fruits', 'weather', 'objects', 'hanzi', 'phrases') for index in range(1, 21)}
+legacy_complete_ids = legacy_ids | {f'en/{identifier}' for identifier in legacy_ids}
+expansion_target_ids = expansion_ids | {f'en/{identifier}' for identifier in expansion_ids}
+jobs = audio.bilingual_jobs(items)
+assert len(jobs) == 394 and len(expansion_ids) == 77
+assert len(legacy_complete_ids) == 240 and len(expansion_target_ids) == 154
+assert not legacy_complete_ids & expansion_target_ids
+assert {item['id'] for item in jobs} == legacy_complete_ids | expansion_target_ids
+
+with TemporaryDirectory() as temporary:
+    root = Path(temporary)
+    for identifier in legacy_complete_ids:
+        path = root / f'design/audio/{identifier}.json'
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text('{}')
+    with patch.object(audio, 'ROOT', root), patch.object(audio, 'remaining_requests', return_value=0), patch.object(audio, 'generate') as generate:
+        audio.run_bilingual_day(items, 'test-only', False, True)
+        validated = [call.args[0] for call in generate.call_args_list if call.args[2]]
+        requested = [call.args[0] for call in generate.call_args_list if not call.args[2]]
+        assert {item['id'] for item in validated} == legacy_complete_ids
+        assert len(requested) == 154
+        assert {item['id'] for item in requested[:77]} == expansion_ids
+        assert all(item.get('language') != 'en' for item in requested[:77])
+        assert {item['id'] for item in requested[77:]} == {f'en/{identifier}' for identifier in expansion_ids}
+        assert all(item['language'] == 'en' for item in requested[77:])
+        assert all(call.kwargs.get('provider_limit') for call in generate.call_args_list if not call.args[2])
+        assert {category: sum(item['category'] == category for item in requested[:77]) for category in ('transport', 'vegetables', 'food', 'places')} == {'transport': 10, 'vegetables': 9, 'food': 10, 'places': 8}
+        first = requested[0]['id']
+        (root / f'design/audio/{first}.json').write_text('{}')
+        generate.reset_mock()
+        audio.run_bilingual_day(items, 'test-only', False, True)
+        assert {call.args[0]['id'] for call in generate.call_args_list if call.args[2]} == legacy_complete_ids | {first}
+        resumed = [call.args[0]['id'] for call in generate.call_args_list if not call.args[2]]
+        assert resumed == [item['id'] for item in requested[1:]]
+        assert len(resumed) == 153
+        assert not (root / 'artifacts/audio-schedule/request-budget.json').exists()
+
+complete = [item for item in jobs if (audio.ROOT / f"design/audio/{item['id']}.json").exists()]
+pending = [item for item in jobs if not (audio.ROOT / f"design/audio/{item['id']}.json").exists()]
+assert {item['id'] for item in complete} >= legacy_complete_ids
+assert {item['id'] for item in pending} <= expansion_target_ids
+assert len(complete) + len(pending) == 394
+with patch.object(audio.urllib.request, 'urlopen', side_effect=AssertionError('Offline regression must not call a provider')):
+    for item in complete:
+        audio.generate(item, None, True)
+
+print(f'检查通过：预算/冷却与隔离队列 394/240/154、77 中文优先、完成 1 条后续传；真实文件 {len(complete)} 完成/{len(pending)} 待补。')
