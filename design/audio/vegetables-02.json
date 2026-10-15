@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "黄瓜。黄瓜绿绿长长的，咬一口清清脆脆。",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 7.4,
+  "interaction_id": "v1_ChdrY1hRYXVmYUJMckV2cjBQdHBpVW1BbxIXa2NYUWF1ZmFCTHJFdnIwUHRwaVVtQW8",
+  "origin": "generated",
+  "wav_sha256": "f6027054b7a9d92f8e24e7b0b8b91194194278965464f6fa297c2c4b3c831d3a",
+  "mp3_sha256": "9cfa876c16047170f6c815eb0064f4ce3f18b71b1691dd0110992697154f6f1e"
+}

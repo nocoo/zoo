@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "电风扇。电风扇的叶子转起来，送来一阵凉风。",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 6.72,
+  "interaction_id": "v1_ChdkY1BRYXZiZkRkZTAycm9QNDQtcmlROBIXZGNQUWF2YmZEZGUwMnJvUDQ0LXJpUTg",
+  "origin": "generated",
+  "wav_sha256": "7366683a7959309671f834cb4c915f5344d3d0c63de4dde6484fefe8fccdc292",
+  "mp3_sha256": "6ee097e75e6e7d8c0aedfa328085707ce9f8bf7c30daea009c9a660c6a8a910e"
+}

@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "沙发。沙发软软的，坐上去可以靠一靠。",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 6.08,
+  "interaction_id": "v1_ChdzTVBRYXJxOU9KZXgycm9QZ3ZpXy1BdxIXc01QUWFycTlPSmV4MnJvUGd2aV8tQXc",
+  "origin": "generated",
+  "wav_sha256": "92dae2defe0f1d7794021678360a492a18ca1d263688473ed85d10f789c9b0ae",
+  "mp3_sha256": "b1c18a63f3585a8dcf6f5b62dfde8fbcf588d489274429ec4d996b292ad92a47"
+}

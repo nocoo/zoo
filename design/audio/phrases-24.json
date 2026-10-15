@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "我来试试。我来试试。",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 2.76,
+  "interaction_id": "v1_ChZQTVRRYXRIZ09PdUIxZThQdmVPMkFREhZQTVRRYXRIZ09PdUIxZThQdmVPMkFR",
+  "origin": "generated",
+  "wav_sha256": "437f417a8fe8b9d210c58a737a2800d7b804d76d652c623fd2141331cddfd5fb",
+  "mp3_sha256": "81857805848aa6e2f2e6951e37afbe4dd735c2fb18f86c42f7622385385a9da8"
+}

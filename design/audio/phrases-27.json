@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "我很开心。我很开心。",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 3.44,
+  "interaction_id": "v1_ChdlTVRRYXFydU02djgycm9QaXJLXzRBNBIXZU1UUWFxcnVNNnY4MnJvUGlyS180QTQ",
+  "origin": "generated",
+  "wav_sha256": "31f850ba579d3084ba863c579550c7e918e251131322bd2e5cf85a1b7707e266",
+  "mp3_sha256": "ab0979249a7f7b232c2b915b9e46d1fbaf82dc2ac498ab29f2ff1deda222f1b1"
+}

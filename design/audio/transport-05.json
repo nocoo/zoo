@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "地铁。地铁在地下跑，到站就会打开车门。",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 6.12,
+  "interaction_id": "v1_ChdCY1hRYXFQUEI5VFY5dE1QdVoyLXlBYxIXQmNYUWFxUFBCOVRWOXRNUHVaMi15QWM",
+  "origin": "generated",
+  "wav_sha256": "b7bbfae0013ed371f6b53eb55c4037cd488aedc1074745f16f0549bb4f637c41",
+  "mp3_sha256": "ef83c97f9d7ac21aa6cd2ef48bc2e5a3cd2eb1bc6657ad3ee71fb9c9cede17f4"
+}

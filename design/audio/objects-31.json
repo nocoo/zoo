@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "被子。被子软软厚厚的，盖在身上暖暖的。",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 6.6,
+  "interaction_id": "v1_Chc3Y1BRYW91RUFxUzUwLWtQemVhY3lBZxIXN2NQUWFvdUVBcVM1MC1rUHplYWN5QWc",
+  "origin": "generated",
+  "wav_sha256": "c6d759940830f92465051097b7c4054481d407a428c466b6d3bc2f4807eec447",
+  "mp3_sha256": "2bced3da82da3c909fba592e4786fb59bab9385de03ec198e7167a652e4cfca3"
+}

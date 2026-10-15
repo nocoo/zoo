@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "西红柿。西红柿圆圆红红的，里面有小小的籽。",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 7.16,
+  "interaction_id": "v1_ChZwY1hRYXVSWWpaWDIwdy1QaUtlNERREhZwY1hRYXVSWWpaWDIwdy1QaUtlNERR",
+  "origin": "generated",
+  "wav_sha256": "33588fb90ca3691c1503dd9bd307dbb9962bdaf7c956048c7392b7f9bcc7286c",
+  "mp3_sha256": "1f52f9687235a22ee1cb31b59468c7e0d868058153c2fe4ccec7e4631049ddd2"
+}

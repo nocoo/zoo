@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "蚂蚁。蚂蚁小小的，常常排着队往前走。",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 5.84,
+  "interaction_id": "v1_ChctTUhRYW8tekhlZVU5dE1QbE9PenNRZxIXLU1IUWFvLXpIZWVVOXRNUGxPT3pzUWc",
+  "origin": "generated",
+  "wav_sha256": "db17669e9a8b3b29f5d509f4171ee1248418b5cd24d0a51b149066fe31c1b6c4",
+  "mp3_sha256": "f70131eb3f6a90c02fc0541a59b279861a5cf9179684235feb840c22bbff85b6"
+}
