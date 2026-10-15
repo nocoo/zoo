@@ -1,0 +1,15 @@
+Use case: illustration-story, toddler picture-learning website for children aged 1.5-3 with an adult.
+Create ONE finished native 2048x1792 illustration, not a grid, contact sheet, collage, mockup or interface.
+
+The attached native PNG image(s) are STYLE references only. Match their paint, paper grain, rounded proportions, palette and cream paper. Do not copy the old subject, pose, identity, toy-scale context or composition.
+
+STYLE: charming flat gouache with layered painted-paper shapes, rounded child-friendly forms, tiny dark dot eyes and gentle peach blush only where a face naturally suits, fine organic painted-paper texture, and rich but restrained mint, ochre, coral and sky accents.
+
+CONCEPTUAL SOURCE (meaning only; do not write, letter, number, label or caption any of this in the image):
+Chinese: 小鸡。小鸡圆滚滚的，身上是软软的黄羽毛，会唧唧叫。
+English: Chick. A chick is round and fluffy, with soft yellow down, and it says peep.
+
+SUBJECT: chick, a baby chicken.
+A round fluffy yellow chick with soft down and a tiny beak, peeping. Baby bird, not an adult hen, not a duck: no broad orange bill, no adult tail. Small wings tucked, two little legs.
+
+COMPOSITION: one complete centered subject or activity vignette, its longest dimension occupying approximately 82 percent of the canvas, with comfortable clean cream margin around every part. Flat uniform warm cream background, exact sRGB #faf6e8 right to every edge; no vignette, gradient, frame, corner shapes, colored letterbox or cast shadow. No text, letters, numbers, signage words, watermark, grid or extra panels. No 3D, photorealism or heavy outlines.

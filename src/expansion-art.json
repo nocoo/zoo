@@ -132,6 +132,10 @@
       "image": "/art/expansion/places-04-thumb.webp?v=04420db95fbd36ee",
       "imageLarge": "/art/expansion/places-04-full.webp?v=c296a510971ffc3b"
     },
+    "places-05": {
+      "image": "/art/expansion/places-05-thumb.webp?v=43abbecbfbab030d",
+      "imageLarge": "/art/expansion/places-05-full.webp?v=165d426bb979e9b7"
+    },
     "places-06": {
       "image": "/art/expansion/places-06-thumb.webp?v=162e884afa9abc37",
       "imageLarge": "/art/expansion/places-06-full.webp?v=d7aa759304efdd7b"
@@ -180,9 +184,129 @@
       "image": "/art/expansion/objects-29-thumb.webp?v=ac3ee4144f4b1dec",
       "imageLarge": "/art/expansion/objects-29-full.webp?v=093aebfd46de15c2"
     },
+    "objects-30": {
+      "image": "/art/expansion/objects-30-thumb.webp?v=a6dac11e104851b4",
+      "imageLarge": "/art/expansion/objects-30-full.webp?v=848f2fb6cb2784ea"
+    },
+    "objects-31": {
+      "image": "/art/expansion/objects-31-thumb.webp?v=f2742061343fc20b",
+      "imageLarge": "/art/expansion/objects-31-full.webp?v=9b8efb9d08e95e60"
+    },
+    "animals-21": {
+      "image": "/art/expansion/animals-21-thumb.webp?v=7a228f4a8672fbb3",
+      "imageLarge": "/art/expansion/animals-21-full.webp?v=1962d8f1caf74fd4"
+    },
+    "animals-22": {
+      "image": "/art/expansion/animals-22-thumb.webp?v=fc74b52edcf1308d",
+      "imageLarge": "/art/expansion/animals-22-full.webp?v=f8668ad35237fc41"
+    },
+    "animals-23": {
+      "image": "/art/expansion/animals-23-thumb.webp?v=8def9ed9362d45c5",
+      "imageLarge": "/art/expansion/animals-23-full.webp?v=e5c0981a7ba6e4b5"
+    },
+    "animals-24": {
+      "image": "/art/expansion/animals-24-thumb.webp?v=b6e2e5027a027246",
+      "imageLarge": "/art/expansion/animals-24-full.webp?v=de0553032f56a14a"
+    },
+    "animals-25": {
+      "image": "/art/expansion/animals-25-thumb.webp?v=cf6f70a1afa2b5e9",
+      "imageLarge": "/art/expansion/animals-25-full.webp?v=eaea3e5ca8fd65c6"
+    },
+    "animals-26": {
+      "image": "/art/expansion/animals-26-thumb.webp?v=a7fdb4ce65fb4c7b",
+      "imageLarge": "/art/expansion/animals-26-full.webp?v=61b3391277f43e53"
+    },
+    "animals-27": {
+      "image": "/art/expansion/animals-27-thumb.webp?v=105fe1472de566ae",
+      "imageLarge": "/art/expansion/animals-27-full.webp?v=a7b0440ce3156b89"
+    },
+    "animals-28": {
+      "image": "/art/expansion/animals-28-thumb.webp?v=3ec645f1a494d56c",
+      "imageLarge": "/art/expansion/animals-28-full.webp?v=468ce7bc6a1adc9a"
+    },
+    "animals-29": {
+      "image": "/art/expansion/animals-29-thumb.webp?v=caa0ec84df592690",
+      "imageLarge": "/art/expansion/animals-29-full.webp?v=4702ca89d30a237d"
+    },
     "phrases-21": {
       "image": "/art/expansion/phrases-21-thumb.webp?v=75f3689d5ab2ae9a",
       "imageLarge": "/art/expansion/phrases-21-full.webp?v=2de673c4323ed0c4"
+    },
+    "phrases-22": {
+      "image": "/art/expansion/phrases-22-thumb.webp?v=eed7773fba84f1a7",
+      "imageLarge": "/art/expansion/phrases-22-full.webp?v=4a89267050216259"
+    },
+    "phrases-23": {
+      "image": "/art/expansion/phrases-23-thumb.webp?v=5c32a8eccac196af",
+      "imageLarge": "/art/expansion/phrases-23-full.webp?v=fa1e399183deb0af"
+    },
+    "phrases-24": {
+      "image": "/art/expansion/phrases-24-thumb.webp?v=5b4505cd6f070907",
+      "imageLarge": "/art/expansion/phrases-24-full.webp?v=e41ced69fa00526c"
+    },
+    "phrases-25": {
+      "image": "/art/expansion/phrases-25-thumb.webp?v=2d4481eb23253519",
+      "imageLarge": "/art/expansion/phrases-25-full.webp?v=b8732de0911bddca"
+    },
+    "phrases-26": {
+      "image": "/art/expansion/phrases-26-thumb.webp?v=5504479281d90bc5",
+      "imageLarge": "/art/expansion/phrases-26-full.webp?v=2b2169be20c82536"
+    },
+    "phrases-27": {
+      "image": "/art/expansion/phrases-27-thumb.webp?v=e0260ccc5eb7e4cc",
+      "imageLarge": "/art/expansion/phrases-27-full.webp?v=febdfcdf8db2d410"
+    },
+    "phrases-28": {
+      "image": "/art/expansion/phrases-28-thumb.webp?v=fa0a48f3bec2c31e",
+      "imageLarge": "/art/expansion/phrases-28-full.webp?v=dab52a77acda5cdb"
+    },
+    "phrases-29": {
+      "image": "/art/expansion/phrases-29-thumb.webp?v=1e7c038391d0d652",
+      "imageLarge": "/art/expansion/phrases-29-full.webp?v=ce630f7ced176a30"
+    },
+    "weather-21": {
+      "image": "/art/expansion/weather-21-thumb.webp?v=e5156650a50d07e3",
+      "imageLarge": "/art/expansion/weather-21-full.webp?v=89ce59bef40844c7"
+    },
+    "weather-22": {
+      "image": "/art/expansion/weather-22-thumb.webp?v=9da92c31f9f2fd16",
+      "imageLarge": "/art/expansion/weather-22-full.webp?v=94dda91be527e246"
+    },
+    "weather-23": {
+      "image": "/art/expansion/weather-23-thumb.webp?v=31a3fb76486211af",
+      "imageLarge": "/art/expansion/weather-23-full.webp?v=38b543e9df069706"
+    },
+    "weather-24": {
+      "image": "/art/expansion/weather-24-thumb.webp?v=243b3f6acc58f584",
+      "imageLarge": "/art/expansion/weather-24-full.webp?v=7ebd0b3c7481e581"
+    },
+    "weather-25": {
+      "image": "/art/expansion/weather-25-thumb.webp?v=de1d81febb95eafd",
+      "imageLarge": "/art/expansion/weather-25-full.webp?v=a034aa548bb4e554"
+    },
+    "fruits-21": {
+      "image": "/art/expansion/fruits-21-thumb.webp?v=89161b274b9f5c63",
+      "imageLarge": "/art/expansion/fruits-21-full.webp?v=7c62c676105fec3e"
+    },
+    "fruits-22": {
+      "image": "/art/expansion/fruits-22-thumb.webp?v=b3d1a719b97618bb",
+      "imageLarge": "/art/expansion/fruits-22-full.webp?v=2e11033f42b21bb9"
+    },
+    "fruits-23": {
+      "image": "/art/expansion/fruits-23-thumb.webp?v=a2a31c7ca9d3e0bc",
+      "imageLarge": "/art/expansion/fruits-23-full.webp?v=9092ca1b888713f9"
+    },
+    "fruits-24": {
+      "image": "/art/expansion/fruits-24-thumb.webp?v=7c9447f2a666faf2",
+      "imageLarge": "/art/expansion/fruits-24-full.webp?v=f12a445990f18195"
+    },
+    "fruits-25": {
+      "image": "/art/expansion/fruits-25-thumb.webp?v=e28cf26dc98c574f",
+      "imageLarge": "/art/expansion/fruits-25-full.webp?v=7fc9bbb8e3ebf364"
+    },
+    "fruits-26": {
+      "image": "/art/expansion/fruits-26-thumb.webp?v=22359d9951caf6f8",
+      "imageLarge": "/art/expansion/fruits-26-full.webp?v=549d6cafd22f8e79"
     }
   }
 }

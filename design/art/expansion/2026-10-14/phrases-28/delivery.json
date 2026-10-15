@@ -1,0 +1,25 @@
+{
+  "source_sha256": "de7f932122d63003971ba3d671ed16ca96cda5a6fb29fca9790a30149b5835f0",
+  "source": "design/art/expansion/2026-10-14/phrases-28/raw/generated.png",
+  "processing": "Edge-connected paper normalization (RGB tolerance 8); lossless WebP; thumbnail downsampling only; restore four thumbnail corner pixels to exact paper after resample.",
+  "files": [
+    {
+      "path": "public/art/expansion/phrases-28-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1982758,
+      "sha256": "dab52a77acda5cdb7b669fe94d989f9bbb1e6354aa4c3e9f9d3797689484cc74"
+    },
+    {
+      "path": "public/art/expansion/phrases-28-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 216432,
+      "sha256": "fa0a48f3bec2c31ef5fac07d933b65552d852f47aa4b22a59cc868ec49ab83d8"
+    }
+  ]
+}

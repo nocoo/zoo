@@ -1,0 +1,55 @@
+{
+  "authorization": "Owner explicitly permitted retry on 2026-10-15 after two reported read timeouts. One manual retry each; no automatic retries.",
+  "recordedAt": "2026-10-15T01:01:44.135476+00:00",
+  "requestPathResolution": "Resolve original request relative image paths against each originalPath parent, not the archive directory. Archived request bytes are unchanged.",
+  "files": [
+    {
+      "originalPath": "design/art/expansion/2026-10-14/places-05/prompt.txt",
+      "archivePath": "design/art/expansion/attempts/2026-10-15-authorized-retry/places-05/prompt.txt",
+      "sha256": "aba3b0a5b55c73a381b04080d37391f03954109a5963684c7266d331cfc2bff0",
+      "keptActive": true
+    },
+    {
+      "originalPath": "design/art/expansion/2026-10-14/places-05/request.json",
+      "archivePath": "design/art/expansion/attempts/2026-10-15-authorized-retry/places-05/request.json",
+      "sha256": "1451e8756feeafbd4a0d092a002bf4bc552fc7de3355a7f857307d5f6812df71",
+      "keptActive": false
+    },
+    {
+      "originalPath": "design/art/expansion/2026-10-14/places-05/response.json",
+      "archivePath": "design/art/expansion/attempts/2026-10-15-authorized-retry/places-05/response.json",
+      "sha256": "361b4c73c0f68efaac671c453dcb453535fc9c1acf28b87262133af1c6eda289",
+      "keptActive": false
+    },
+    {
+      "originalPath": "design/art/expansion/2026-10-14/places-05/generation.log",
+      "archivePath": "design/art/expansion/attempts/2026-10-15-authorized-retry/places-05/generation.log",
+      "sha256": "0f442abfc483be85470e86e8d8c1a549510d270431379696fb40ff8200094e60",
+      "keptActive": false
+    },
+    {
+      "originalPath": "design/art/expansion/2026-10-14/animals-22/prompt.txt",
+      "archivePath": "design/art/expansion/attempts/2026-10-15-authorized-retry/animals-22/prompt.txt",
+      "sha256": "5a8e95680949a2429e5834e1035132d4c63f8028f206fd06e731e3b8c1e1be6a",
+      "keptActive": true
+    },
+    {
+      "originalPath": "design/art/expansion/2026-10-14/animals-22/request.json",
+      "archivePath": "design/art/expansion/attempts/2026-10-15-authorized-retry/animals-22/request.json",
+      "sha256": "cb819c1168a293cff131ed3a7726345b34767eb277ae07f6ab2fb835e0e48700",
+      "keptActive": false
+    },
+    {
+      "originalPath": "design/art/expansion/2026-10-14/animals-22/response.json",
+      "archivePath": "design/art/expansion/attempts/2026-10-15-authorized-retry/animals-22/response.json",
+      "sha256": "b682ae82b291d7754d5f299a5c356bec0fabe4fef323ac2ab79985b6f29ff314",
+      "keptActive": false
+    },
+    {
+      "originalPath": "design/art/expansion/2026-10-14/animals-22/generation.log",
+      "archivePath": "design/art/expansion/attempts/2026-10-15-authorized-retry/animals-22/generation.log",
+      "sha256": "0f442abfc483be85470e86e8d8c1a549510d270431379696fb40ff8200094e60",
+      "keptActive": false
+    }
+  ]
+}

@@ -100,3 +100,7 @@ Export of 46 expansion deliveries halted before writing `src/expansion-art.json`
 ## 2026-10-15 - Expansion --ids progress scanned the full queue
 
 The owner authorized only the 30 never-requested expansion images. `generate.py --ids` built that pending queue correctly, then computed `done = len(items) - len(pending_items(items))` against all 77 cards. `pending_items` raises on outcome-unknown `places-05`, so the process exited before any helper `Popen`. Progress reporting is not a queue gate. Count completed cards with `complete()` and keep `pending_items` on the selected subset. A default whole-run still refuses unknown cards. The offline mocked `--ids` of a pending card with unknown outside now launches only that card. No provider call, retry, or `places-05` resume.
+
+## 2026-10-15 - Preservation exclusions and zsh URL query
+
+The 77-delivery preservation compare excluded two intentionally modified scripts and two docs from the preexisting SHA set. Archived unknown-attempt files were compared through the retry manifest original paths and hashes, not by requiring those timeout records to remain in the active card folders. Quote zsh URL queries: an unquoted `curl` with `?review=expansion` ran no request because the shell ate the query; quoting the URL issued the request.
