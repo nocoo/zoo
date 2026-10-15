@@ -151,7 +151,7 @@ export function ExpansionReview() {
 
       <main className="review-main" id="review-copy">
         <h1>第四阶段：预览扩展插画</h1>
-        <p className="review-lead">77 张扩展卡片的中英文文案已经确认。本页用来预览正在生成的插画。有图时可以点缩略图，在新标签查看高清图。小岛上正在用的 176 张卡片、图片和录音都没有改动。这些扩展卡片还不能在小岛上点开。临时 Edge 录音仍是 0/154，本页不会请求语音。</p>
+        <p className="review-lead">77 张扩展卡片的中英文文案已经确认。本页用来预览已生成的插画及待生成项目。有图时可以点缩略图，在新标签查看高清图。小岛上正在用的 176 张卡片、图片和录音都没有改动。这些扩展卡片还不能在小岛上点开。临时 Edge 录音仍是 0/154，本页不会请求语音。</p>
         <p className="review-status" role="status">插画清单进度：{artReady}/{total}。没有图的卡片会标明「待生成」。这个数字只表示清单里有没有图，不表示家长已经认可画风。临时 Edge 录音进度：中文 {zhReady}/{total}，英文 {enReady}/{total}。没有录音地址的按钮会标明「待录音」，不能播放。</p>
 
         <div className="review-toolbar">
