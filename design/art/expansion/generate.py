@@ -268,7 +268,7 @@ def main():
     for item in chosen:
         require_prompt(item)
     pending = pending_items(chosen)
-    done = len(items) - len(pending_items(items))
+    done = sum(1 for item in items if complete(item))
     print(f'原图完成 {done}/{len(items)}；本次待生成 {len(pending)}。', flush=True)
     run(pending)
 

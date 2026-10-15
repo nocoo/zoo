@@ -327,6 +327,39 @@ with TemporaryDirectory() as temporary:
 
 with TemporaryDirectory() as temporary:
     root = Path(temporary)
+    ids3 = ('transport-01', 'places-05', 'objects-30')
+    run, items = tree(root, ids3)
+    with patched(root, run, ids3):
+        write_success(run / 'transport-01', items[0], root)
+        write_success(run / 'places-05', items[1], root)
+        (run / 'places-05/response.json').unlink()
+        (run / 'places-05/raw/generated.png').unlink()
+        assert gen.outcome(items[1]) == 'blocked'
+        assert gen.complete(items[0]) is True
+        assert gen.complete(items[1]) is False
+        with patch.object(gen.subprocess, 'Popen') as launcher, patch.object(sys, 'argv', ['generate.py']):
+            try:
+                gen.main()
+                raise AssertionError('default whole-run must block unknown')
+            except ValueError as error:
+                assert 'Outcome unknown' in str(error)
+                assert 'places-05' in str(error)
+            launcher.assert_not_called()
+        calls = []
+
+        def capture(command, **kwargs):
+            calls.append(Path(command[command.index('--run-dir') + 1]).name)
+            return popen_ok(command)
+
+        with patch.object(gen.subprocess, 'Popen', capture), \
+                patch.object(sys, 'argv', ['generate.py', '--ids', 'objects-30']):
+            gen.main()
+        assert calls == ['objects-30']
+        assert gen.complete(items[2]) is True
+        assert gen.outcome(items[1]) == 'blocked'
+
+with TemporaryDirectory() as temporary:
+    root = Path(temporary)
     run, items = tree(root, ids2)
     sleeps = []
     clock = [1000.0]
