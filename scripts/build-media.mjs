@@ -47,6 +47,15 @@ async function buildActive() {
   for (const path of pictures.flatMap(picture => [picture.image, picture.imageLarge]).sort()) {
     images[path] = `${path}?v=${hash(await readFile(`public${path}`)).slice(0, 16)}`;
   }
+  const approved = JSON.parse(await readFile('src/expansion-art.json', 'utf8')).images;
+  for (const card of expansionCategories.flatMap(category => category.cards)) {
+    const picture = pictures.find(picture => picture.id === card.id);
+    for (const field of ['image', 'imageLarge']) {
+      if (images[picture[field]] !== approved[card.id]?.[field]) {
+        throw new Error(`Expansion illustration differs: ${card.id}/${field}`);
+      }
+    }
+  }
   const audio = {};
   const transcripts = {};
   for (const picture of pictures) {

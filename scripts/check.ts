@@ -7,6 +7,7 @@ import { swipeStep } from '../src/swipe.ts';
 import { audioTranscript, englishAudioTranscript, edgeEnglishAudioTranscript } from '../src/audio.ts';
 import { shuffle } from '../src/shuffle.ts';
 import './check-expansion.ts';
+import './check-expansion-media.mjs';
 
 assert.equal(pictures.length, 253);
 assert.equal(categories.length, 12);
