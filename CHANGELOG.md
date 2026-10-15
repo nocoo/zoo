@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.4.0 - 2026-10-15
+
+- Add 77 approved cards for 253 cards across 12 categories: introduce transport, vegetables, table food and places to visit, and expand animals, everyday objects, phrases, weather and fruits.
+- Deliver all 77 new illustrations as 640 x 560 thumbnails and 2048 x 1792 full-size WebP, retaining generation originals and authorized retry provenance.
+- Add 154 full name-plus-description Mandarin and English recordings using Edge TTS 7.3.1. Preserve the original 176 cards, media URLs and 1,469 existing audio/archive files unchanged.
+- Integrate the additions into browsing, animal groups, favorites and explicit bilingual playback; remove the completed draft review UI. Extend the Mandarin-first Gemini replacement queue to all ten eligible categories without changing quota safeguards or enabling timers.
+
 ## v1.3.0 - 2026-10-14
 
 - Complete the remaining 40 English name-plus-explanation recordings for Chinese characters and everyday phrases with the approved Gemini model and Sulafat voice.
