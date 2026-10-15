@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "菜市场。菜市场很热闹，摊上摆着新鲜的菜。",
+  "rate": "+10%",
+  "sha256": "ac0a5880c77442df10dcf46ac27fd0e07decf1d3df6dc4a31596d549ce6e7966",
+  "bytes": 27792
+}

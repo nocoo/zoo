@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Excavator. An excavator has a long metal arm that can dig dirt.",
+  "rate": "+0%",
+  "sha256": "f4f3216981d2f6dfab06308e14185681e41a5cde72f1c48580eb6e9ce39bcb3c",
+  "bytes": 33264
+}

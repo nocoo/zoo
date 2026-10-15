@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "洗衣机。洗衣机转动起来，衣服在水里转圈圈。",
+  "rate": "+10%",
+  "sha256": "f46c03c6905bb82194e424cbc18b976db55801cef549e9d8e3f209a72c8bd29c",
+  "bytes": 28656
+}

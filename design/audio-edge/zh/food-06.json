@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "面包。面包松松软软，可以撕成小块。",
+  "rate": "+10%",
+  "sha256": "234093a50f9df8a6e8ab077d7f58a014cb63a5a80c88c9a70d2ae762ec14c768",
+  "bytes": 24192
+}

@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Caterpillar. A caterpillar is plump and scooches forward in little arches.",
+  "rate": "+0%",
+  "sha256": "b4a00f7c5d032bafd9028a8150481a74c05ffe69d5c3113b00f3288dbb711ae8",
+  "bytes": 35280
+}

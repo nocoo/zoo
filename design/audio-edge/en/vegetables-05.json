@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Pumpkin. A pumpkin is round with thick orange skin.",
+  "rate": "+0%",
+  "sha256": "891889f82c2d0c649ff48421c4bbebe6db972c362136723fe5169fc0420c40e0",
+  "bytes": 27936
+}

@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Park. A park has trees, paths, and open space to play.",
+  "rate": "+0%",
+  "sha256": "d840692de223b99e49cd8b7460088800fbe1672bd80b7e453782fb835b86d854",
+  "bytes": 33696
+}

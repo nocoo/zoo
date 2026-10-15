@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "牛奶。牛奶白白的，倒进杯子里小口喝。",
+  "rate": "+10%",
+  "sha256": "e6d67085417aa2387c828928731952a54659ddaf46d23511bbe11972a2f99394",
+  "bytes": 25920
+}

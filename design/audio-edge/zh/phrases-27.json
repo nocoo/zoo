@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "我很开心。我很开心。",
+  "rate": "+10%",
+  "sha256": "d84e0cacf39c0e146fa18565db4aac55138efb2ac779ce80d70c4369fd0f7ded",
+  "bytes": 16560
+}

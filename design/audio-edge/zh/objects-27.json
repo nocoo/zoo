@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "台灯。台灯站在桌子上，亮起来光是柔柔的。",
+  "rate": "+10%",
+  "sha256": "5d9fa7ae49cf9769ceba9eec24424a0b9fce041ba79cae7bb12bd1fc59c400a3",
+  "bytes": 28224
+}

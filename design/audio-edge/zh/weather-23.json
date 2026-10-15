@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "瀑布。瀑布从高处落下来，溅起白白的水花。",
+  "rate": "+10%",
+  "sha256": "5ab9a6944a89baadedbd2991d5ec9813683d7d798f461827b42af5d988d05138",
+  "bytes": 27504
+}

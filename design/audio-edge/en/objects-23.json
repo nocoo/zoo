@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Refrigerator. A refrigerator is cool inside and keeps food fresh.",
+  "rate": "+0%",
+  "sha256": "a5eeefb863e0c9b1c7f4ff1bbe81a0d6504e3a61bcdad802b8a38de1b90db901",
+  "bytes": 34848
+}

@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Amusement park. An amusement park has little rides and bright lights to look at with a grown-up.",
+  "rate": "+0%",
+  "sha256": "74d1bae1282df2cbf1ccc0c1c6e8a0d58836eda4a23ab9125ee3e981b435f366",
+  "bytes": 40176
+}

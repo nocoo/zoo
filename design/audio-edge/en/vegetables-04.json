@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Potato. A potato has light brown skin and turns soft when it is cooked.",
+  "rate": "+0%",
+  "sha256": "9cae3b3cf9d6faee1ac1fe523a2ada3ad434b6bf515863f4a9f7dbb3ed8f97aa",
+  "bytes": 36000
+}

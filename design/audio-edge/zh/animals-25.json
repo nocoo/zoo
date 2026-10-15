@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "蜗牛。蜗牛背上顶着小壳，走起路来慢慢的。",
+  "rate": "+10%",
+  "sha256": "44a4fc0731e87900e93d23d6dea7482a5ad70ce24109e3cb17bdb9aa1159878d",
+  "bytes": 27648
+}

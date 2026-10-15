@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "黄瓜。黄瓜绿绿长长的，咬一口清清脆脆。",
+  "rate": "+10%",
+  "sha256": "a76f08e0143ac9667e9f1d745b709412138c07a2fc3fc9b50a1478b864db13ce",
+  "bytes": 27216
+}

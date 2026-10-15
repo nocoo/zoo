@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "杏。杏圆圆的，熟了黄黄的，中间有一颗硬核。",
+  "rate": "+10%",
+  "sha256": "6492f6497bf619a0a48437fc7cbc9160da94e4d22767fe6639149e72d039ef55",
+  "bytes": 29376
+}

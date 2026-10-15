@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Milk. Milk is white. Pour it into a cup and take little sips.",
+  "rate": "+0%",
+  "sha256": "20ef49ad5acb5674ea6c4e6923bc9453b279e61648d2b1f477f45d65a485e3aa",
+  "bytes": 37584
+}

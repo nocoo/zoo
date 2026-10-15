@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "I am a little scared. I feel a little scared.",
+  "rate": "+0%",
+  "sha256": "29fc3e36464630bfd518dd1e9cae7d19d15f234c2dfaac4acb4500ca825e9bd6",
+  "bytes": 25056
+}

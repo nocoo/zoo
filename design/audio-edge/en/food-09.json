@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Rice porridge. Rice porridge is rice cooked until it is very soft.",
+  "rate": "+0%",
+  "sha256": "fd301e2c30bf24f9f51b4e4eff744ef4350e06afa9b8da2a5e9e82c758e234f7",
+  "bytes": 33408
+}

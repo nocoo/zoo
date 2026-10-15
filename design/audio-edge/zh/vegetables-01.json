@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "胡萝卜。胡萝卜橙橙的，长得像一根小棍子。",
+  "rate": "+10%",
+  "sha256": "24427073afcf13d25f6a2ca0c599a1dca9cea692bfe4760e292e130dd8376f4f",
+  "bytes": 26496
+}

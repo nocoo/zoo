@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Bao. A bao is round and puffy, with a tasty filling inside.",
+  "rate": "+0%",
+  "sha256": "51c9e4c63fb1908c363d30803769c0a2d568e2a553c6c986cc611c619d551cfd",
+  "bytes": 32544
+}

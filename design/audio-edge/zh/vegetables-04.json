@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "土豆。土豆圆圆的，外皮浅棕色，做熟了软软的。",
+  "rate": "+10%",
+  "sha256": "a0fdad9a1087a807ce924a8bfc996ed9371ebf742ddda0e1a960cad4b5b7dc95",
+  "bytes": 30672
+}

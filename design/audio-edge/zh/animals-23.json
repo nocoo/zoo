@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "鹅。鹅的脖子长长的，走路一摇一摆。",
+  "rate": "+10%",
+  "sha256": "a95d6881fe671ad21dad839db0bb17edee24dd157e931bab47262edc07e516f7",
+  "bytes": 23184
+}

@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "小鸡。小鸡圆滚滚的，身上是软软的黄羽毛，会唧唧叫。",
+  "rate": "+10%",
+  "sha256": "cf5651681da04f4c95ca9d66ea28c1c98cb3fb7bbf94e32abe9a109565c4d2ec",
+  "bytes": 34704
+}

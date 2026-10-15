@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "超市。超市里一排排货架，装着吃的和用的。",
+  "rate": "+10%",
+  "sha256": "6f57e37ef5e23fdf4bd374169c01dca79d7ca9b25d67377e593724c73a9934a6",
+  "bytes": 27072
+}

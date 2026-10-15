@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "自行车。自行车有两个轮子，脚踩踏板就会走。",
+  "rate": "+10%",
+  "sha256": "98988d1f70c120b803a3fe4b892f5981d967be1e9b067e211ad6313cd9ab8876",
+  "bytes": 28944
+}

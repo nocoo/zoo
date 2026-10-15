@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Ambulance. An ambulance is white and takes people who need help to the hospital.",
+  "rate": "+0%",
+  "sha256": "b6bc1fad8a72e7694fcc7516cda7279c90aba0c178c320857af1349633091c65",
+  "bytes": 36144
+}

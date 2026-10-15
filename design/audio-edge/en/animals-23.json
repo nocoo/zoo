@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Goose. A goose has a long neck and waddles as it walks.",
+  "rate": "+0%",
+  "sha256": "d311a175e570cfa1dfb816482e8a2d416fbae4944fa507a4a82781af0fe9d467",
+  "bytes": 29664
+}

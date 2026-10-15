@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Library. A library has lots of books, and we can look at them quietly.",
+  "rate": "+0%",
+  "sha256": "16f760ee66de5985e5589d73e8253a015da52bdb2a553579fb18461f9f5c6af0",
+  "bytes": 35712
+}

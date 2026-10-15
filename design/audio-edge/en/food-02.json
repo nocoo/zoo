@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Noodles. Noodles are long and thin, served warm in a bowl.",
+  "rate": "+0%",
+  "sha256": "eb85b62ca05818e1e5bcaa9436c158bd58ab4853da8a4966229626403fea9b69",
+  "bytes": 30816
+}

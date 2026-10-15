@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "飞机。飞机有大大的翅膀，能飞上高高的天空。",
+  "rate": "+10%",
+  "sha256": "2564170638b5692ae19198141897902e6aff794406a9ef7bfcb834dc2ea7e2c7",
+  "bytes": 28224
+}

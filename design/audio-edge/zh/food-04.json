@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "包子。包子圆圆鼓鼓的，里面藏着香香的馅。",
+  "rate": "+10%",
+  "sha256": "c1b0fd4ef2352d533425dfddb2c7ac8fac0370119a98b1f9536f6118546c2178",
+  "bytes": 28368
+}

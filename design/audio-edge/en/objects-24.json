@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Washing machine. A washing machine turns, and the clothes spin around in the water.",
+  "rate": "+0%",
+  "sha256": "6bf0b4497d436ec7831100c0ee2c2bfdc1a36a6ec93b950fdbbd557a057b785a",
+  "bytes": 37296
+}

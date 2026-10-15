@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "馒头。馒头白白软软，圆圆的，里面没有馅。",
+  "rate": "+10%",
+  "sha256": "763995e1d5d4d7bbb9dd6d4481e4c9788810a53619e3284ffe7945bb492fae21",
+  "bytes": 27648
+}

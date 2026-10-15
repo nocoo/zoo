@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "李子。李子圆圆的，皮光滑，咬一口汁水很多。",
+  "rate": "+10%",
+  "sha256": "9e1d52518c0479b0f47a6bae67e9171c9c950b20021ae47187c93137b103c7e4",
+  "bytes": 28512
+}

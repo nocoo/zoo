@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Fan. A fan's blades spin and send a cool breeze.",
+  "rate": "+0%",
+  "sha256": "7d6cbfdb75e1df9a7e162b4abd4685adfee98e175c8eab930d090a47dcf6da8d",
+  "bytes": 29232
+}

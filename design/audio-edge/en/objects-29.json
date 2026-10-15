@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Mirror. A mirror is shiny and flat, and we can see our little face in it.",
+  "rate": "+0%",
+  "sha256": "e31104336643109212223083760cb60b6d285bd0de0886ef76a8d5ca21f9d618",
+  "bytes": 35136
+}

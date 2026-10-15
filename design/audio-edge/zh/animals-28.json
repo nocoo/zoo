@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "瓢虫。瓢虫圆圆的，背上常有黑色小点点。",
+  "rate": "+10%",
+  "sha256": "3ac61e12b26c4185b506f92693dc98fdc33aa1db707966473695d7e2488c64d8",
+  "bytes": 29088
+}

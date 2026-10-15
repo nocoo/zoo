@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Chinese cabbage. Chinese cabbage has layered leaves with white stems and green tops.",
+  "rate": "+0%",
+  "sha256": "ab0c4741d7b98cedc45a2d26519a845e21374811eab69ffbb21f6cd4101e58cb",
+  "bytes": 39312
+}

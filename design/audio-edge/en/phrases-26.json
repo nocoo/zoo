@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "I don't want this. I don't want this.",
+  "rate": "+0%",
+  "sha256": "df083865f49ce34593465255d0fbba317fcde741952a6340094f85ac81011ce4",
+  "bytes": 23328
+}

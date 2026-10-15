@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "沙滩。沙滩软软的，细沙子可以漏过手指缝。",
+  "rate": "+10%",
+  "sha256": "1c79445dceb6acdeadff660b0e9bff3554cc7147fe9e0389a3e7cf569b5e751a",
+  "bytes": 29376
+}

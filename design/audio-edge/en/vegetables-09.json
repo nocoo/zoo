@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Corn. Corn is golden, with kernels lined up in neat rows.",
+  "rate": "+0%",
+  "sha256": "04e0139e0d56db78ec99c293c3e39dd3569aeac47ae87ef95c27dfa17b48214d",
+  "bytes": 31392
+}

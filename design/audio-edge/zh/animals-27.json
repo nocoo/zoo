@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "蜜蜂。蜜蜂嗡嗡飞，停在花上采花蜜。",
+  "rate": "+10%",
+  "sha256": "e803ae016844522b1229be1e3bccb91a8d5b88f89ab1ae5e975d3154f91ac09c",
+  "bytes": 24768
+}

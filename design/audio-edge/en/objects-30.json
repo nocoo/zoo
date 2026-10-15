@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Comb. A comb has a row of thin teeth and can gently smooth hair.",
+  "rate": "+0%",
+  "sha256": "1f0830fd1355526939a5edb593ef4aac8fd2d9c27dd28c616ae7c0721af0598a",
+  "bytes": 32256
+}

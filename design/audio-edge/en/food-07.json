@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Egg. A cooked egg is oval; peel it to find the white and the yellow yolk.",
+  "rate": "+0%",
+  "sha256": "0262cd1838593f7c73ba455a216a4f60b966eaaa2e2888f13a77ff4c113d8485",
+  "bytes": 35280
+}

@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Butterfly. A butterfly has two pairs of wings and flutters beside the flowers.",
+  "rate": "+0%",
+  "sha256": "6b5570b863d82b3b92c734fb70107043d857f9f8b51f511510f7ff87b77b3fc3",
+  "bytes": 37584
+}

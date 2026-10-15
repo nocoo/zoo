@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Clap your hands. Let's clap our hands.",
+  "rate": "+0%",
+  "sha256": "6e7b14619a31aab4f44538b273ca8aaf4005b99a83acf96b7e8c680720d0958e",
+  "bytes": 24624
+}

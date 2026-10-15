@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Bus. A bus is long and stops so people can get on.",
+  "rate": "+0%",
+  "sha256": "8ae94d4df305ccd900e9018c5df84d4af1d959e4e6d81f40e2bc7988ce43b347",
+  "bytes": 29232
+}

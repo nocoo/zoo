@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "梳子。梳子有一排细齿，可以轻轻梳头发。",
+  "rate": "+10%",
+  "sha256": "81a9e544f6fab29e8c4c741021fa5cc001e2fd02329455ca0ac7b5b3d405f79c",
+  "bytes": 26064
+}

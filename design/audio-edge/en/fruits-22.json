@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Pomelo. A pomelo is big and round, with a thick peel and juicy segments.",
+  "rate": "+0%",
+  "sha256": "fe0f8eda96f154a8a3acd722395e8891f6624bb4e54900c9f4431c006eea33e1",
+  "bytes": 37728
+}

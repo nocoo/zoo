@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "大海。大海蓝蓝的，浪花一层层拍在岸边。",
+  "rate": "+10%",
+  "sha256": "b4667d86dbf236a3b5541b09b2bb6cc550a6c55ea7b10d5e2cd8801733a158a8",
+  "bytes": 27360
+}

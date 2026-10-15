@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Broccoli. Broccoli is green, and the top looks like a tiny tree.",
+  "rate": "+0%",
+  "sha256": "13a496fe2fdb2ddc456742b7b6a78474c4f71e0451882a760560665306824ac8",
+  "bytes": 33408
+}

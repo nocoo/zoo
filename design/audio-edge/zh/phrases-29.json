@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "我想休息。我想休息一下。",
+  "rate": "+10%",
+  "sha256": "d89e94b165ca6eae33e60a14300c04cd112193d25ecd3de1853b5e05845ee12a",
+  "bytes": 17856
+}

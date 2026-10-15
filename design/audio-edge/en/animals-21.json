@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Pig. A pig has a round nose and a pink body, and it says oink.",
+  "rate": "+0%",
+  "sha256": "8c8641496a0dcafe02e90cc5cac774d431996b01e0fdc4b25abd86351c9d1f32",
+  "bytes": 34416
+}

@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Plum. A plum is round and smooth, and it is very juicy inside.",
+  "rate": "+0%",
+  "sha256": "ccae9b38987443bc6d4151aba67f403c12507a700595fd9d6857d4bcab6f3623",
+  "bytes": 33408
+}

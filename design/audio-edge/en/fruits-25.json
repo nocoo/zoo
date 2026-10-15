@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Mangosteen. A mangosteen is purple; under the thick peel, the fruit is white.",
+  "rate": "+0%",
+  "sha256": "393535195d9af537b736dd2b64ec10508e7bdd5f70110d28b288450ef4292036",
+  "bytes": 38160
+}

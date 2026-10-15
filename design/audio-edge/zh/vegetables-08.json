@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "茄子。茄子紫亮紫亮，身子长长的。",
+  "rate": "+10%",
+  "sha256": "89357658a77c26a87a166c3559b25bbc68f4251c98114b43344be6a1d0f801e3",
+  "bytes": 24048
+}

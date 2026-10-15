@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Snail. A snail carries a little shell on its back and moves very slowly.",
+  "rate": "+0%",
+  "sha256": "2b98b3610bcd7f3622b85d2623be18e9704510512a7d4d3a66088746cb09020c",
+  "bytes": 35136
+}

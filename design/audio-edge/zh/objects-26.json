@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "吸尘器。吸尘器嗡嗡响，把地上的灰尘吸进去。",
+  "rate": "+10%",
+  "sha256": "1165d51064c917f6ab79e5fe81e6227ef5cca17af0ee54f0122d769d3bb93949",
+  "bytes": 28800
+}

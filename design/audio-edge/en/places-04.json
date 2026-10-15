@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Hospital. A hospital is where doctors work, with quiet hallways inside.",
+  "rate": "+0%",
+  "sha256": "dea47f5a8ff49fdcfecf9392e5fec6e6080f8efdb90211acebe38c804c82cde1",
+  "bytes": 37152
+}

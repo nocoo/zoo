@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Computer. A computer has a bright screen that can show pictures.",
+  "rate": "+0%",
+  "sha256": "54d54a77d17768083f6ee77c4b7586bb1edfa35c4f2dde7d28dfa19561c21090",
+  "bytes": 32400
+}

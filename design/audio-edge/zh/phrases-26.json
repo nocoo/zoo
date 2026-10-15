@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "我不要。我不要这个。",
+  "rate": "+10%",
+  "sha256": "45e7604b5af9e0a1469fc168d00bb09c0ab081b89df4b82cfba309ea50f8a8b8",
+  "bytes": 15840
+}

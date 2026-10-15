@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "蚂蚁。蚂蚁小小的，常常排着队往前走。",
+  "rate": "+10%",
+  "sha256": "1811651fca5f6670b51d14d3e51e442b7292d0e974c0ece799dd791e0d16cdb3",
+  "bytes": 25344
+}

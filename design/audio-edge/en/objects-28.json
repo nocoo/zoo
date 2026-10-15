@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Sofa. A sofa is soft, and we can sit down and lean back.",
+  "rate": "+0%",
+  "sha256": "6f801f6197e272b2f3a82cbd40530bbf94e980439f6433b50fafdbd9b6f906ad",
+  "bytes": 33696
+}

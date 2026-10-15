@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Let me try. Let me try.",
+  "rate": "+0%",
+  "sha256": "29db6ddec3d9daeb041a9117e8078d5b5cef8cc24bb04361296611abd4ad724a",
+  "bytes": 21024
+}

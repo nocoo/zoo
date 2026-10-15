@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Mandarin orange. A mandarin orange is small, with juicy segments under its peel.",
+  "rate": "+0%",
+  "sha256": "228ed148392542b01de1505be0bd77b0523e842b8e601c5e2de8fb7f51df06d9",
+  "bytes": 38592
+}

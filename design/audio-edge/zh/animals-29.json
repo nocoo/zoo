@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "毛毛虫。毛毛虫圆滚滚的，一拱一拱地往前走。",
+  "rate": "+10%",
+  "sha256": "e62f47bde14771303639d6692c6a7d23320757dc1b2a4d3117da0c29844d9780",
+  "bytes": 28080
+}

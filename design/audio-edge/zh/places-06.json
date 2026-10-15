@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "图书馆。图书馆里有好多书，我们可以轻轻地看。",
+  "rate": "+10%",
+  "sha256": "550e88d0858a3544c55720d6c84f7e86bc5d9b2a0759ea9ff70e1bd56023664e",
+  "bytes": 27504
+}

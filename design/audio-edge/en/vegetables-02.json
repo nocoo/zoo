@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Cucumber. A cucumber is green and long, and it tastes cool and crunchy.",
+  "rate": "+0%",
+  "sha256": "2c8ad5f74cf3f3e92948560a5300bb0814510a9e9390782f618ff50bf5a3a98b",
+  "bytes": 37008
+}

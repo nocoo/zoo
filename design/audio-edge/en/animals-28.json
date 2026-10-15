@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Ladybug. A ladybug is round, and its back often has little black spots.",
+  "rate": "+0%",
+  "sha256": "38bfd49a3b12e64fe96f8ea3f0457ab1978a9dd3ce1c3e85de22201a58e44e69",
+  "bytes": 37440
+}

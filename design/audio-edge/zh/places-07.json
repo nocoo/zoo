@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "幼儿园。幼儿园里有小朋友，大家一起玩、听故事。",
+  "rate": "+10%",
+  "sha256": "7f7617f4fe00731f04986cc19c16c57370c7e24bb7fe9a8b467a747495221fb2",
+  "bytes": 30384
+}
