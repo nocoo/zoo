@@ -1,6 +1,6 @@
 # CI And Automatic Deployment
 
-`.github/workflows/ci.yml` runs on main pushes, pull requests targeting main and manual dispatch. The Check job installs the lockfile with Node 26.10.0, runs the existing content/audio/PWA checks, builds, checks the local health endpoint and performs a Wrangler dry run. These are basic project checks, not a comprehensive 6DQ suite. PR jobs receive no deployment credentials.
+`.github/workflows/ci.yml` runs on main pushes, pull requests targeting main and manual dispatch. The Check job installs the lockfile with Node 26.12.1, runs the existing content/audio/PWA checks, builds, checks the local health endpoint and performs a Wrangler dry run. These are basic project checks, not a comprehensive 6DQ suite. PR jobs receive no deployment credentials.
 
 After Check succeeds, the main-only Deploy Production job builds the same commit and deploys the existing `zoo` Worker. Deployment is serialized without canceling an active upload. It checks remote main before setup and again before uploading, skipping superseded commits. Never deploy a pull-request branch or use `pull_request_target` to run untrusted code with secrets.
 
