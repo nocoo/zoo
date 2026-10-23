@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.4.2 - 2026-10-23
+
+- Replace 94 Edge narrations with approved-style Gemini/Sulafat recordings: the 22 remaining Mandarin clips (vegetables, food and places) and 72 expansion English clips. Reach 389/394 eligible Gemini recordings; the last five English places recordings keep complete Edge playback.
+- The authorized run stopped on HTTP 429 at `en/places-04` when the shared provider Tier 1 limit of 100 requests/day was exhausted. No retry, timer, model fallback or credential change followed.
+- Raise the local daily request ceiling from 90 to 100 and read the provider credential from the gitignored repository `.env`. Retain every earlier WAV, metadata file and MP3 unchanged.
+
 ## v1.4.1 - 2026-10-15
 
 - Replace 55 new Mandarin Edge narrations with approved-style Gemini/Sulafat recordings: animals, fruits, weather, everyday objects, phrases, transport and the first five vegetables.
