@@ -107,8 +107,8 @@ with TemporaryDirectory() as temporary:
         jobs = audio.bilingual_jobs(items)
         assert [item['id'] for item in jobs] == ['animals-01', 'phrases-01', 'en/animals-01', 'en/phrases-01']
         assert jobs[-1]['text'] == 'EN phrase explanation' and jobs[-1]['language'] == 'en'
-        assert audio.remaining_requests() == 89
-        for i in range(87):
+        assert audio.remaining_requests() == 99
+        for i in range(97):
             audio.reserve_request(f'fixture-{i}')
         assert audio.remaining_requests() == 2
         with patch.object(audio, 'generate', side_effect=lambda item, *_: audio.reserve_request(item['id'])) as generate:
@@ -147,7 +147,7 @@ with TemporaryDirectory() as temporary:
             assert [call.args[0]['id'] for call in generate.call_args_list] == ['animals-01', 'phrases-01']
         _, ledger, today = audio.request_budget()
         entry = ledger[today]
-        assert len(entry['seeded_from_local_wavs']) + len(entry['attempts']) == 92
+        assert len(entry['seeded_from_local_wavs']) + len(entry['attempts']) == 102
         assert all(attempt['owner_approved_local_cap_override'] for attempt in entry['attempts'][-2:])
         assert audio.remaining_requests() == 0
 

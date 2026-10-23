@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MODEL = "gemini-3.8-flash-tts"
 VOICE = "Sulafat"
 NEXT_REQUEST = 0.0
+DAILY_REQUEST_LIMIT = 100
 STYLE = (
     "A gentle, warm adult female voice reading a picture book to a toddler. "
     "Use clear, standard Mainland Chinese Putonghua with precise four tones, "
@@ -93,14 +94,14 @@ def request_budget():
 def remaining_requests():
     _, ledger, today = request_budget()
     entry = ledger[today]
-    return max(0, 90 - len(entry['seeded_from_local_wavs']) - len(entry['attempts']))
+    return max(0, DAILY_REQUEST_LIMIT - len(entry['seeded_from_local_wavs']) - len(entry['attempts']))
 
 
 def reserve_request(identifier, provider_limit=False):
     path, ledger, today = request_budget()
     entry = ledger[today]
-    if not provider_limit and len(entry['seeded_from_local_wavs']) + len(entry['attempts']) >= 90:
-        raise ValueError('今日 Zoo 的 90 次保守请求预算已用完；不再请求。')
+    if not provider_limit and len(entry['seeded_from_local_wavs']) + len(entry['attempts']) >= DAILY_REQUEST_LIMIT:
+        raise ValueError(f'今日 Zoo 的 {DAILY_REQUEST_LIMIT} 次请求预算已用完；不再请求。')
     entry['attempts'].append({'id': identifier, 'started_at': datetime.now().astimezone().isoformat()})
     if provider_limit:
         entry['attempts'][-1]['owner_approved_local_cap_override'] = True
@@ -284,12 +285,12 @@ def scheduled_run(action, state_path, now):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--check', action='store_true', help='Validate existing files without credentials or writes')
-    parser.add_argument('--scheduled', action='store_true', help='Generate up to 90 missing clips, once per 23 hours')
+    parser.add_argument('--scheduled', action='store_true', help=f'Generate up to {DAILY_REQUEST_LIMIT} missing clips, once per 23 hours')
     parser.add_argument('--until-provider-error', action='store_true', help='Explicitly approved bilingual continuation beyond local budget; stop at first error or queue completion')
     selection = parser.add_mutually_exclusive_group()
     selection.add_argument('--english-card', help='Generate only one card name and English explanation')
     selection.add_argument('--mandarin-cards', nargs='+', help='Process 1-5 explicit Mandarin cards, excluding numbers and letters')
-    selection.add_argument('--bilingual-day', action='store_true', help='Fill Mandarin then English, excluding numbers/letters, within the local 90-request daily budget')
+    selection.add_argument('--bilingual-day', action='store_true', help=f'Fill Mandarin then English, excluding numbers/letters, within the local {DAILY_REQUEST_LIMIT}-request daily budget')
     args = parser.parse_args()
     if args.until_provider_error and not args.bilingual_day:
         parser.error('--until-provider-error requires --bilingual-day and fresh owner approval')
@@ -343,7 +344,7 @@ def main():
                 generate(item, key, False)
             print(f'所选 {len(items)} 条处理完毕；已停止，不继续其他条目。', flush=True)
             return
-        return run_batch(items, key, False, 90 if args.scheduled else len(items))
+        return run_batch(items, key, False, DAILY_REQUEST_LIMIT if args.scheduled else len(items))
 
     runtime = ROOT / 'artifacts/audio-schedule'
     runtime.mkdir(parents=True, exist_ok=True)
