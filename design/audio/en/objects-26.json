@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Vacuum cleaner. A vacuum cleaner hums and sucks up dust from the floor.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.0,
+  "interaction_id": "v1_ChdKRVhiYXJucEx1akR2cjBQeE9LbWlBOBIXSkVYYmFybnBMdWpEdnIwUHhPS21pQTg",
+  "origin": "generated",
+  "wav_sha256": "702d05c7401fbd72717175f742bf6b1dc965609ab9754caeb3b543506854b51e",
+  "mp3_sha256": "b254d8df0111cb3affe9d7dc8843683800fe663633f9a29f8aab007c39c799f4"
+}

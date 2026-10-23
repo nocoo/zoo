@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Pomelo. A pomelo is big and round, with a thick peel and juicy segments.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 8.32,
+  "interaction_id": "v1_ChctRVBiYXRXTEpwYWl2cjBQcGRmS3VRNBIXLUVQYmF0V0xKcGFpdnIwUHBkZkt1UTQ",
+  "origin": "generated",
+  "wav_sha256": "1ff796bdb16455ce8b68e9848795ad195f162e296143ca566ea351b163b78120",
+  "mp3_sha256": "8100de61c36031039b07f541627a3d8ef9d65df64c2d73c4d596d184e8ff8b17"
+}

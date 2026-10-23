@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Bee. A bee buzzes and stops on flowers to gather nectar.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.2,
+  "interaction_id": "v1_ChdxRVBiYXZiVkY3cmY5dE1QNXZYRG9BOBIXcUVQYmF2YlZGN3JmOXRNUDV2WERvQTg",
+  "origin": "generated",
+  "wav_sha256": "11bd8cb0a6518d3743ff465292697586bfde80ede95c94d2fc336e99a5080375",
+  "mp3_sha256": "9b8959f702702c3d83fbe38f5d67b6fa9cc18f2e728a017343a5308274b69ef8"
+}

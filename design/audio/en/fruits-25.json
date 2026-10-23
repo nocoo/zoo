@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Mangosteen. A mangosteen is purple; under the thick peel, the fruit is white.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.68,
+  "interaction_id": "v1_ChdORVRiYXI2R0l1cncxZThQdmY2cThRTRIXTkVUYmFyNkdJdXJ3MWU4UHZmNnE4UU0",
+  "origin": "generated",
+  "wav_sha256": "26fcb22b3604a7b20ac24028b59841ddd99c73ee0e8734757251a07b48f09f90",
+  "mp3_sha256": "371debb624fafe457e9d54367fb1cf498cdf8faa110b9a360bdfabff0dfcd05f"
+}

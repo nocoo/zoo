@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Egg. A cooked egg is oval; peel it to find the white and the yellow yolk.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.08,
+  "interaction_id": "v1_ChdSRWpiYXBUbk5jS3E5dE1QcmZ1MXlRZxIXUkVqYmFwVG5OY0txOXRNUHJmdTF5UWc",
+  "origin": "generated",
+  "wav_sha256": "40437af2e8ee2506ca6a61843af211d4bb644e10bb7d7f1a8a220adc3a0f1d5d",
+  "mp3_sha256": "a685a1b0a9d43931f184bbf11dda48411f5678819e0067b316089bf3e3b1601f"
+}

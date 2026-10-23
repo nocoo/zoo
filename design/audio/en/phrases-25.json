@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Help me. Please help me.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 2.76,
+  "interaction_id": "v1_Chc3RVhiYW9DbkthcVcwLWtQcXV2Qm1BOBIXN0VYYmFvQ25LYXFXMC1rUHF1dkJtQTg",
+  "origin": "generated",
+  "wav_sha256": "9448a43622d8efd77a05c0d08f91e78402608efd38aa06fd4e6a049381818ab0",
+  "mp3_sha256": "e6808e445edb8c7ef5a527b9140dff9888f24d5f973db96dd10f10ba3b2ebaf9"
+}

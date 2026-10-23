@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Cucumber. A cucumber is green and long, and it tastes cool and crunchy.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.8,
+  "interaction_id": "v1_ChdMRWZiYXJyRU9NRE9yZmNQcWZpNGdBNBIXTEVmYmFyckVPTURPcmZjUHFmaTRnQTQ",
+  "origin": "generated",
+  "wav_sha256": "ba76a855143daebcee2f3b2702b7aa5db98cfbeab74ccd8bbeafc934fee6d77e",
+  "mp3_sha256": "862e68a6d9396463b7699e4f574e823083a49601fd750badf3b118152c55219f"
+}

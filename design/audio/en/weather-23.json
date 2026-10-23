@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Waterfall. A waterfall pours down from high up and makes white splashes.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.32,
+  "interaction_id": "v1_ChdoRVRiYXItbEpzSzEycm9QMXV6N3NBNBIXaEVUYmFyLWxKc0sxMnJvUDF1ejdzQTQ",
+  "origin": "generated",
+  "wav_sha256": "6355db96176112748cf3d535758c32c0f15a3f398bf59388f4bd4d6163c2c9bc",
+  "mp3_sha256": "3aa3a8de1e69559eac37c5699cc71f78fa0a412902d149b6dadb8b336e216af2"
+}

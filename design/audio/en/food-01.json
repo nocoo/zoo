@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Rice. Rice is white, with little grains served in a bowl.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.0,
+  "interaction_id": "v1_Chd6RWZiYXZLRE52SGE5dE1Qd0lDWmlRNBIXekVmYmF2S0ROdkhhOXRNUHdJQ1ppUTQ",
+  "origin": "generated",
+  "wav_sha256": "7ebdfddb559fb4ade1b19d6902a74a90cc3fdc402881449d89d866bf301326a3",
+  "mp3_sha256": "6e11d220a3d3c2cba342c3cf6a4c467cfbbb171bee1ebfdebc5f88499ad11802"
+}

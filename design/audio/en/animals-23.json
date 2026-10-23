@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Goose. A goose has a long neck and waddles as it walks.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.6,
+  "interaction_id": "v1_ChdXRVBiYXQtdExNUGFyZmNQOWJXRDJBMBIXV0VQYmF0LXRMTVBhcmZjUDliV0QyQTA",
+  "origin": "generated",
+  "wav_sha256": "747d4c052490a748985c9925c7adea2bdaa7eb0a1f85d789c83ea86fd214652c",
+  "mp3_sha256": "b1f3963a37cf082ece4677af8d3d013914df576a3114d925cb8f87e0ed587445"
+}

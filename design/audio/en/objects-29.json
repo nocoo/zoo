@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Mirror. A mirror is shiny and flat, and we can see our little face in it.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.56,
+  "interaction_id": "v1_ChdZRVhiYXBqTkp2dXUycm9QdXJXX3VRTRIXWUVYYmFwak5KdnV1MnJvUHVyV191UU0",
+  "origin": "generated",
+  "wav_sha256": "19ce1f4e74f3384f985fb9669e541a29406dd9ab767b2337611c4aa6d25be5f4",
+  "mp3_sha256": "d9656ee839218490c0362539f621181a196a2bfbf5c3605ae2e37dff3ee613e2"
+}

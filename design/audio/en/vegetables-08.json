@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Eggplant. An eggplant is shiny purple and has a long body.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.56,
+  "interaction_id": "v1_ChdwRWZiYXBEME01M2Y5dE1QMnU3VHVROBIXcEVmYmFwRDBNNTNmOXRNUDJ1N1R1UTg",
+  "origin": "generated",
+  "wav_sha256": "f3174c80fec575f185d71282c62a677f8482dc537cbe577ad6ee5b8e8e94864b",
+  "mp3_sha256": "b3c27b8d85a00319cdb748ffae6d353f3b37d3d74b918a34072bf83532f94538"
+}

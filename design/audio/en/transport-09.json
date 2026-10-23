@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Ambulance. An ambulance is white and takes people who need help to the hospital.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.76,
+  "interaction_id": "v1_Chc4RWJiYXMzSkxvdWgycm9QOXQzZzBROBIXOEViYmFzM0pMb3VoMnJvUDl0M2cwUTg",
+  "origin": "generated",
+  "wav_sha256": "2bc76da8625ac65958dc6537546f37b3a3e5a6058ffb2e045288d81045b468bf",
+  "mp3_sha256": "b4f1c790bb37dbb6c6ed66b7011db6a16b5363f7f9e38f5786e4d134f4fd934c"
+}

@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Excavator. An excavator has a long metal arm that can dig dirt.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.52,
+  "interaction_id": "v1_ChdCRWZiYXU2Z0xyR3B2cjBQNVk3TnNROBIXQkVmYmF1NmdMckdwdnIwUDVZN05zUTg",
+  "origin": "generated",
+  "wav_sha256": "4a7521f13b4fe8b1e2db9d6e4e6f2e97e90c60a5b833fc803f2782ee283cba50",
+  "mp3_sha256": "8ab266578f268c9ad8f6120a0eabd3473b7051b415e8a3a26d592df459b3f52c"
+}

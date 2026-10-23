@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Potato. A potato has light brown skin and turns soft when it is cooked.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.56,
+  "interaction_id": "v1_ChdWRWZiYXFyWU5QbXo5dE1QXzd5SHNRTRIXVkVmYmFxcllOUG16OXRNUF83eUhzUU0",
+  "origin": "generated",
+  "wav_sha256": "cb5832114e09aa8ead740056d0e96eea4b262132803c99f097a94d118b159a64",
+  "mp3_sha256": "2c048a8ece5b3a81a3c7e5e6096f7837bb628ff51905cfc04cb11e84d6e53377"
+}

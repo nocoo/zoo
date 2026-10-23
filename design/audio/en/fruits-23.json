@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Apricot. An apricot is round and turns yellow when ripe, with a hard pit in the middle.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.68,
+  "interaction_id": "v1_ChdERVRiYXBHMkpmM2xyZmNQalk2NG1ROBIXREVUYmFwRzJKZjNscmZjUGpZNjRtUTg",
+  "origin": "generated",
+  "wav_sha256": "ea70f5c6a20afc10361f1fc0f808946abefee9b413fcae1703584e1f73d8ee72",
+  "mp3_sha256": "6eccb55fb4fc73c1af31d3f518f8b0de82aa898d975e6e63b14076456d30e937"
+}

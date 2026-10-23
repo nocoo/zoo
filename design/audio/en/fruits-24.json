@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Plum. A plum is round and smooth, and it is very juicy inside.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.2,
+  "interaction_id": "v1_ChdJRVRiYXA2RkhzN2VyZmNQdjltMG9BaxIXSUVUYmFwNkZIczdlcmZjUHY5bTBvQWs",
+  "origin": "generated",
+  "wav_sha256": "cde4a66e3b7c6b76b4749fe3b3a461b59e86fa87ff8ca713791ce7ea29400046",
+  "mp3_sha256": "c96400b8d5ec3a186f74d99a88d016699fa29b8622824109fbfd9f0a44b8fa39"
+}

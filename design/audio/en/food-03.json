@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Steamed bun. A steamed bun is white and soft, with no filling inside.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.24,
+  "interaction_id": "v1_ChY5RWZiYXVpaE5jR20xZThQb29iWEVREhY5RWZiYXVpaE5jR20xZThQb29iWEVR",
+  "origin": "generated",
+  "wav_sha256": "fe9751fe55982e5ad2f10dd885af7b0f3812612b5b50db1438f2cf35365a9c02",
+  "mp3_sha256": "be6fa972c1799e5399fb7fbcbd5334cc639ca9a578ca7631cf3baf5d37213992"
+}

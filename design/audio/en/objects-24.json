@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Washing machine. A washing machine turns, and the clothes spin around in the water.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.8,
+  "interaction_id": "v1_ChdfRVRiYXBXVkxLQzB2cjBQMDhHUjJBNBIXX0VUYmFwV1ZMS0MwdnIwUDA4R1IyQTQ",
+  "origin": "generated",
+  "wav_sha256": "dceb7e8503a0d02595648797d184b93e02269e27f3969acddcf06888c193ff3d",
+  "mp3_sha256": "68116a15a97ac575b68295159ab806a4d4009fb2c0e33c1d2ef1591ae30668f0"
+}

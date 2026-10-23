@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Bicycle. A bicycle has two wheels and moves when we pedal.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.32,
+  "interaction_id": "v1_ChdlRWJiYXI2UE1JZVg5dE1QdkpuSnVRZxIXZUViYmFyNlBNSWVYOXRNUHZKbkp1UWc",
+  "origin": "generated",
+  "wav_sha256": "4ca09690ddebfbd1907771c4181a680d1993330dca65b3e35c5c7463331a956d",
+  "mp3_sha256": "b0cb2d2389770f10fb0dcd8f3bb28beaf82e44b6fcaf92b3927c87f6299085cf"
+}

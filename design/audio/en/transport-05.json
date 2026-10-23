@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Subway. A subway train runs underground and opens its doors at the station.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.44,
+  "interaction_id": "v1_ChdvRWJiYXI3aU5PSDMycm9QLWFEMDJRWRIXb0ViYmFyN2lOT0gzMnJvUC1hRDAyUVk",
+  "origin": "generated",
+  "wav_sha256": "345a461795bd550a44fc4d86909990f7b657599faa6d6e731bde2ea03649c66a",
+  "mp3_sha256": "547bb060d8ef441e03c53dec4823d9def321ecf1f127450eeb1b7e5aa5816ad1"
+}

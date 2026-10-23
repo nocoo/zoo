@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Bayberry. A bayberry is red with a bumpy surface, and it tastes sweet and tart.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.96,
+  "interaction_id": "v1_ChdTRVRiYXN5c0lZQzIwLWtQb3ZqMG1BbxIXU0VUYmFzeXNJWUMyMC1rUG92ajBtQW8",
+  "origin": "generated",
+  "wav_sha256": "6e6acea1a6a45d4ef09fbed6de1c9fa1dd8bf8b4bec325a9bb7f01a89330715c",
+  "mp3_sha256": "bb82e86c214bc7baa6e4240743fe293d31a4b3b7d2d1f08977080d8e95c173cd"
+}

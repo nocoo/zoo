@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Clap your hands. Let's clap our hands.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 3.96,
+  "interaction_id": "v1_ChdzRVhiYXNPSkxlelgxZThQbXFfb3FRTRIXc0VYYmFzT0pMZXpYMWU4UG1xX29xUU0",
+  "origin": "generated",
+  "wav_sha256": "67d3364c244486a977730ccdfdf934e7f2ef973c759f99a282624ce778c14f78",
+  "mp3_sha256": "c9c6fd7d2d8174cb5fc6ba57e1a946696bd92f56a705c066cf5f51e475073e89"
+}

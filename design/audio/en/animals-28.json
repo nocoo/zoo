@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Ladybug. A ladybug is round, and its back often has little black spots.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.48,
+  "interaction_id": "v1_Chd2RVBiYXZMTUpvQ3cwLWtQMFB1eG9BOBIXdkVQYmF2TE1Kb0N3MC1rUDBQdXhvQTg",
+  "origin": "generated",
+  "wav_sha256": "eb13a87bac7d561dc6204a8bc291aba7d9514fb7024ec144f8a56777642f1e69",
+  "mp3_sha256": "ea4bb45f0e06ad4eafd2ebc65c07ed79b5d515604aae0e9db798f104df501d7d"
+}

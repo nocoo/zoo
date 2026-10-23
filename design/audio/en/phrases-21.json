@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Jump. Let's take a little jump together.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 3.76,
+  "interaction_id": "v1_ChduRVhiYXJ6YktmbXo5dE1QXzd5SHNRTRIXbkVYYmFyemJLZm16OXRNUF83eUhzUU0",
+  "origin": "generated",
+  "wav_sha256": "d5594a25d277afa6a7fd2fe2aee19dcb4bf9f71947d233800510889951d0f6c0",
+  "mp3_sha256": "f7c2f5e5131c251cac4b1734a3e8270594582e031afee11dfc9cfa93f76fc9dc"
+}

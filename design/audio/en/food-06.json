@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Bread. Bread is soft and fluffy, and we can tear off a little piece.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.72,
+  "interaction_id": "v1_ChdNRWpiYXJXbE81R1c5dE1QZ295WDJRTRIXTUVqYmFyV2xPNUdXOXRNUGdveVgyUU0",
+  "origin": "generated",
+  "wav_sha256": "baee54e440990f3e3eaea8fd72fbb774f96c81b5dd668149d4e4124d0e5bbf6f",
+  "mp3_sha256": "8e9099fcf7f102d762c96413a7922a05ebaa0de06fee6a156d7d55fdd92c5617"
+}

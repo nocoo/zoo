@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Train. A train is cars linked together, rolling along the tracks.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.44,
+  "interaction_id": "v1_ChdqRWJiYXE3Vkw3YlUxZThQOGZxZTZBTRIXakViYmFxN1ZMN2JVMWU4UDhmcWU2QU0",
+  "origin": "generated",
+  "wav_sha256": "426491280da95b226db47323123d788b705edc29fe7463ac851069b30ec414bf",
+  "mp3_sha256": "deba6afff5678fc2e00abd52b76cf3ff208ec03539e063c579e03afb35dae8a7"
+}

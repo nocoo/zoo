@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Carrot. A carrot is orange and shaped like a little stick.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.36,
+  "interaction_id": "v1_ChdHRWZiYXM2T05yRDYycm9QNnZuVDhBWRIXR0VmYmFzNk9OckQ2MnJvUDZ2blQ4QVk",
+  "origin": "generated",
+  "wav_sha256": "f528a318bef0896575de3782ebec6a25dfcf72ebcca3cfb1925c9d78ede0f1d7",
+  "mp3_sha256": "4dc095615d5133d0c4766c91fbb8e5352c13a974e4f05b88a1f11410eda72d8e"
+}

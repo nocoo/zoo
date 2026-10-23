@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Bao. A bao is round and puffy, with a tasty filling inside.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.04,
+  "interaction_id": "v1_ChdDVWpiYXZ5OEF0Mk4xZThQMi1IbmlBcxIXQ1VqYmF2eThBdDJOMWU4UDItSG5pQXM",
+  "origin": "generated",
+  "wav_sha256": "2ec662e4a1561c860fc58f0d23f8302c6a4f7aa1827e060a1b1fb3f7cf34909c",
+  "mp3_sha256": "b44c0c2c502b50744a732e30ef4dd0b71df4202bf66f3700a6f399491c297421"
+}

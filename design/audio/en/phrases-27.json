@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "I am happy. I am so happy.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.44,
+  "interaction_id": "v1_ChdGRWJiYXJENE1LQzB2cjBQMDhHUjJBNBIXRkViYmFyRDRNS0MwdnIwUDA4R1IyQTQ",
+  "origin": "generated",
+  "wav_sha256": "eafd424c9587ee4675036c5cd1650bbb300b531990a361489e51ad8d46b1dacc",
+  "mp3_sha256": "898ce6c4839a70e0b3f0dec254809f709f92127bdea3371609cebd1fdc901e7b"
+}

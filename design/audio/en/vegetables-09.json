@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Corn. Corn is golden, with kernels lined up in neat rows.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.56,
+  "interaction_id": "v1_Chd1RWZiYXM3RE4telgxZThQbXFfb3FRTRIXdUVmYmFzN0ROLXpYMWU4UG1xX29xUU0",
+  "origin": "generated",
+  "wav_sha256": "d5f4c73d2bb5ba4f6b628df74601d8e6949de229a5aa4b6fc1263ebeb0d2da55",
+  "mp3_sha256": "04ec87c0494c0dc4455080c9e04cff7fbab8205ed80062c5dadce92ed2a1376e"
+}

@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Rice porridge. Rice porridge is rice cooked until it is very soft.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.2,
+  "interaction_id": "v1_ChdiVWpiYXRub0JPU3cycm9QcHZ2SnFBZxIXYlVqYmF0bm9CT1N3MnJvUHB2dkpxQWc",
+  "origin": "generated",
+  "wav_sha256": "918cfd96dd3f413a5fc0f8a421361724d6202eaac3ea664073bc784a865d5b92",
+  "mp3_sha256": "4758728d25965679857e1f173eafb179b0f1ea369f46f6abd24a891d0b08ac99"
+}

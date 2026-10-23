@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Sofa. A sofa is soft, and we can sit down and lean back.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.92,
+  "interaction_id": "v1_ChdURVhiYXFyWUxZeUIwLWtQbEphcXdBOBIXVEVYYmFxcllMWXlCMC1rUGxKYXF3QTg",
+  "origin": "generated",
+  "wav_sha256": "bb31780644abc557046ec3e183284f3b603c61d34d05d479cd904b3c50f0b88d",
+  "mp3_sha256": "7d8c02ab713fd9851c604ead72dadca0e794fecd405c25a6ee778124446a23ad"
+}

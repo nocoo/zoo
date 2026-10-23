@@ -1,6 +1,6 @@
 # Bilingual Gemini Narration
 
-Status: 2026-10-15: v1.4.0 (`52a03f8`) is deployed and exact-revision CI [38731313717](https://github.com/nocoo/zoo/actions/runs/38731313717) passed. The authorized Gemini continuation then completed 55 Mandarin clips and stopped on attempt 56 at `vegetables-06` with HTTP 429 (Tier 1, 100 requests/day). Eligible coverage is 295/394; 22 Mandarin and 77 English targets remain on intact Edge recordings. No retry or timer is authorized. The provider reported 11h35m58s until reset; the preserved cooldown is approximately 2026-10-16 08:00 Asia/Shanghai, not permission to restart. v1.4.1 contains the 55 completed replacements; its exact-revision deployment must be verified separately.
+Status: 2026-10-23: the owner approved one Mandarin sample plus continuation of the remaining queue until completion or the first provider error, and raised the local daily ceiling from 90 to 100. That run completed 22 Mandarin and 72 English clips (94 today, including the reviewed `vegetables-06` sample) and stopped at `en/places-04` with HTTP 429 (Tier 1, 100 requests/day). Eligible coverage is 389/394; the last five English targets, `en/places-04`..`08`, remain on intact Edge recordings. The provider reported 19h14m38s until reset; the preserved cooldown is approximately 2026-10-24 15:00 Asia/Shanghai, not permission to restart. No retry or timer is authorized.
 
 ## Reading Contract
 
@@ -14,27 +14,33 @@ Status: 2026-10-15: v1.4.0 (`52a03f8`) is deployed and exact-revision CI [387313
 
 ## Verified Local Inventory
 
-Updated after the stopped 2026-10-15 batch. Completed recordings match their exact transcript, model, Sulafat voice, style and WAV/MP3 hashes. All 55 new MP3s decoded fully with FFmpeg. `src/media.json` selects these recordings; all 1,777 pre-run audio/archive files remain byte-identical.
+Updated after the stopped 2026-10-23 batch. Completed recordings match their exact transcript, model, Sulafat voice, style and WAV/MP3 hashes. All 94 new MP3s decoded fully with FFmpeg. `src/media.json` selects these recordings; every pre-existing audio/archive file remains byte-identical.
 
 | Category | Mandarin complete | Mandarin pending | English complete | English pending | Shared alphabet pending |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Animals | 29 | 0 | 20 | 9 | 0 |
-| Fruit | 26 | 0 | 20 | 6 | 0 |
-| Weather | 25 | 0 | 20 | 5 | 0 |
-| Objects | 31 | 0 | 20 | 11 | 0 |
+| Animals | 29 | 0 | 29 | 0 | 0 |
+| Fruit | 26 | 0 | 26 | 0 | 0 |
+| Weather | 25 | 0 | 25 | 0 | 0 |
+| Objects | 31 | 0 | 31 | 0 | 0 |
 | Chinese characters | 20 | 0 | 20 | 0 | 0 |
-| Phrases | 29 | 0 | 20 | 9 | 0 |
-| Transport | 10 | 0 | 0 | 10 | 0 |
-| Vegetables | 5 | 4 | 0 | 9 | 0 |
-| Food | 0 | 10 | 0 | 10 | 0 |
-| Places | 0 | 8 | 0 | 8 | 0 |
+| Phrases | 29 | 0 | 29 | 0 | 0 |
+| Transport | 10 | 0 | 10 | 0 | 0 |
+| Vegetables | 9 | 0 | 9 | 0 | 0 |
+| Food | 10 | 0 | 10 | 0 | 0 |
+| Places | 8 | 0 | 3 | 5 | 0 |
 | Numbers 1-30 (excluded) | 0 | 30 | 0 | 30 | 0 |
 | Alphabet A-Z (excluded) | 0 | 0 | 0 | 0 | 26 |
-| Total | 175 | 52 | 120 | 107 | 26 |
+| Total | 197 | 0 | 192 | 5 | 26 |
 
-295/480 unique Gemini targets are complete locally. Of the 185 missing Gemini targets, 99 are the remaining eligible expansion recordings and 86 remain excluded number/alphabet recordings. Every card already has both playback URLs; pending Gemini is not missing audio.
+389/480 unique Gemini targets are complete locally. Of the 91 missing Gemini targets, 5 are the remaining eligible expansion recordings and 86 remain excluded number/alphabet recordings. Every card already has both playback URLs; pending Gemini is not missing audio.
 
 These inventory numbers describe validated local files, not production deployment. The v1.3.0 release includes the forty new English recordings; exact deployment evidence comes from its release-commit CI and online verification.
+
+## Stopped On 2026-10-23
+
+The owner reviewed the `vegetables-06` sample and approved continuing the whole queue until completion or the first error, and raised the local daily ceiling from 90 to 100 attempts. `--bilingual-day --until-provider-error` then completed the remaining 21 Mandarin clips (vegetables-07..09, food-01..10, places-01..08) and 72 English clips (all 77 expansion English recordings except places-04..08). Attempt 96 at `en/places-04` returned HTTP 429; no retry, model fallback, key rotation or billing change followed. The local ledger holds 95 attempts for the day, so the difference from the provider's 100/day limit is shared His.fm or other-device usage. The provider reported 19h14m38s until reset, recorded in the preserved cooldown state without a timer.
+
+The local ledger for 2026-10-23 needed one manual correction: a fresh checkout had restored every WAV with that day's mtime, which the seeder would have counted as 90 completed requests. No provider call preceded the run, so the day's seeded list is empty and the entry records why. Every pre-existing WAV/JSON/MP3 stayed byte-identical; each new MP3 decoded fully.
 
 ## Stopped On 2026-10-15
 

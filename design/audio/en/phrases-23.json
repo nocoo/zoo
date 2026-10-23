@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Squat down. Let's squat down slowly.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.32,
+  "interaction_id": "v1_Chd4RVhiYXNpNExZQ3M5dE1QMW9TcXdBZxIXeEVYYmFzaTRMWUNzOXRNUDFvU3F3QWc",
+  "origin": "generated",
+  "wav_sha256": "4e61a1d93dfb29749640856f18ca7ea1603172391dfef231a24607718528514c",
+  "mp3_sha256": "91ad5a290c73eaa3214f8c77113450f731360ea17918cc1509346638821ba958"
+}

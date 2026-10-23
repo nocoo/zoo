@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Chinese cabbage. Chinese cabbage has layered leaves with white stems and green tops.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 8.24,
+  "interaction_id": "v1_ChdmRWZiYXJ6cE1fLTJ2cjBQMHRHbXNBTRIXZkVmYmFyenBNXy0ydnIwUDB0R21zQU0",
+  "origin": "generated",
+  "wav_sha256": "669a6f6966d91ec47d83c703ec5658fb9c2cd5702cb0a3fe17c511fbd4f5f8ff",
+  "mp3_sha256": "2a88935cb3b60d3f1c0bfeee91902fd353e326a3b9a632d0a29bdf919575f747"
+}

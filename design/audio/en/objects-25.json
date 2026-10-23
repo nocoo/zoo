@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Fan. A fan's blades spin and send a cool breeze.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.08,
+  "interaction_id": "v1_ChdFRVhiYXJtcklfM3ByZmNQb3RHWTRBMBIXRUVYYmFybXJJXzNwcmZjUG90R1k0QTA",
+  "origin": "generated",
+  "wav_sha256": "f8e6cc07417cdf72ea1811652451eeb49d3c4304484577180fa1b1081ffe0893",
+  "mp3_sha256": "61b01e8364ce81323ecfb9c9473c4a993a8a8628180ca4f185116db5d3031fc7"
+}

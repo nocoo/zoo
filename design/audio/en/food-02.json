@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Noodles. Noodles are long and thin, served warm in a bowl.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.52,
+  "interaction_id": "v1_Chc0RWZiYXBuZk9vbWExZThQMkp1V3dBTRIXNEVmYmFwbmZPb21hMWU4UDJKdVd3QU0",
+  "origin": "generated",
+  "wav_sha256": "9939d5c41d3e7b6555b4ef4aa7f124ace9f3c63d7120b135bc4b319a5500b04c",
+  "mp3_sha256": "f49471a3111cb9d7077090f1384b3233cca47fb0c5b57d1fe79eb05061edfbaf"
+}

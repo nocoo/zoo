@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Comb. A comb has a row of thin teeth and can gently smooth hair.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.96,
+  "interaction_id": "v1_ChdkRVhiYXRDbEtPMnY5dE1QNVlIanNBNBIXZEVYYmF0Q2xLTzJ2OXRNUDVZSGpzQTQ",
+  "origin": "generated",
+  "wav_sha256": "fd7d1426f84a857ac7866f2e2592e6ff0fa03515be0a8a84c5b835ee426d9d22",
+  "mp3_sha256": "6107446442cc34296847b1d732352a8b1accb6a50dc7699a00ace13d184bedc2"
+}

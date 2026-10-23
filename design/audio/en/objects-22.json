@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Phone. A phone carries voices so we can talk with someone far away.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.92,
+  "interaction_id": "v1_ChcxRVRiYXNiLUphalY5dE1QNThYVnVRZxIXMUVUYmFzYi1KYWpWOXRNUDU4WFZ1UWc",
+  "origin": "generated",
+  "wav_sha256": "fc62de84d3aa013af910dbd60d8f6552540bbfb81984470e97b6e75d648aecf8",
+  "mp3_sha256": "8fe33dd466768410ddc8950799158562b97ecd255ab805c24732e1ba99342044"
+}

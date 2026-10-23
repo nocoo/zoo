@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Pumpkin. A pumpkin is round with thick orange skin.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.44,
+  "interaction_id": "v1_ChdhRWZiYXIzTE9aYU0xZThQajRudjZROBIXYUVmYmFyM0xPWmFNMWU4UGo0bnY2UTg",
+  "origin": "generated",
+  "wav_sha256": "f0613b0029c2e7dc2ba4ae528f6ad96eccd0d1f9e747428694881be40004a29c",
+  "mp3_sha256": "f3a3251f20167791925b4831c9dbfebca73f40a7fa7d26ec7f0414110d850eb3"
+}

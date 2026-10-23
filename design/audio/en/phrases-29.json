@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "I want to rest. I would like to rest.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 3.32,
+  "interaction_id": "v1_ChdQRWJiYXBQQktwUGM5dE1QNk9pN3VRTRIXUEViYmFwUEJLcFBjOXRNUDZPaTd1UU0",
+  "origin": "generated",
+  "wav_sha256": "5a0a7e1dc01d99d6f72218c01663987256f7e663e5aab28da450ac064a319fb5",
+  "mp3_sha256": "b5d99d8931ac1cf5b43df268779d2b6e6e089ff0ddcaa110b2682d4a99c8ccf9"
+}

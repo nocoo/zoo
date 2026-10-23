@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Bus. A bus is long and stops so people can get on.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.2,
+  "interaction_id": "v1_ChdaRWJiYXJUUk1vNlg5dE1QdzRLNnNRTRIXWkViYmFyVFJNbzZYOXRNUHc0SzZzUU0",
+  "origin": "generated",
+  "wav_sha256": "70d20e9c7a875196572946832f59d547e20c52a8333792aa28b892bb75e28148",
+  "mp3_sha256": "efd7760c5512696d8589e646755811b0a8b34a7cc390f15d1073b98ff80dc92f"
+}

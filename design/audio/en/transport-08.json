@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Fire truck. A fire truck is red and carries long hoses.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.24,
+  "interaction_id": "v1_ChczRWJiYXByeU1QUHMycm9Qb2ZPUzBRNBIXM0ViYmFwcnlNUFBzMnJvUG9mT1MwUTQ",
+  "origin": "generated",
+  "wav_sha256": "0c21fd2778456757c71d19a14e6632ad46ff73795f427c75586af85d8a92ef5f",
+  "mp3_sha256": "7bf25619a70f8c3f313fafaef6ee5ad2979e8483a1ff40f941e95a0535f87575"
+}

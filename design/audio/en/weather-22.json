@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Stream. A stream flows gently around the stones.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.24,
+  "interaction_id": "v1_ChdjRVRiYXJfQ0lmdlU5dE1QZ2JpQXVRZxIXY0VUYmFyX0NJZnZVOXRNUGdiaUF1UWc",
+  "origin": "generated",
+  "wav_sha256": "2e5e296ad07b4b911e479a73323b8a28693529b3dd87288d3cafcc3081f06221",
+  "mp3_sha256": "107d72098954e4bbe1abf58dd154dfbb827d5bca16cdb0bd059df7ca3387fa84"
+}

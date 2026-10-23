@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Grass. The grass is green and soft, with little blades standing side by side.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.12,
+  "interaction_id": "v1_ChdyRVRiYXZtMUl1NnYycm9QMGE2RXlBOBIXckVUYmF2bTFJdTZ2MnJvUDBhNkV5QTg",
+  "origin": "generated",
+  "wav_sha256": "539994f1ccb85634788b6797ac4325fde3925bc45bfd2d4346f065cd1b26a039",
+  "mp3_sha256": "d2aac566929d42608d57dea081b2dcb8a5c6c2ff4ace4fefc054d3966acea023"
+}

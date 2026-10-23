@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Caterpillar. A caterpillar is plump and scooches forward in little arches.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.56,
+  "interaction_id": "v1_ChcwRVBiYXUtU0hJYXU5dE1QeV8zdHVRZxIXMEVQYmF1LVNISWF1OXRNUHlfM3R1UWc",
+  "origin": "generated",
+  "wav_sha256": "3df96b3eb9702b3bbc5cf843b623f7f06aca070e8d02a479ef9c54843fa94f3a",
+  "mp3_sha256": "c405c4866077092a261f019c456ea226de83fa0996f872440a834ea77b62616f"
+}

@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "幼儿园。幼儿园里有小朋友，大家一起玩、听故事。",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 6.88,
+  "interaction_id": "v1_ChdDRVBiYXVuSEpaenJyZmNQNTZUTTJBMBIXQ0VQYmF1bkhKWnpycmZjUDU2VE0yQTA",
+  "origin": "generated",
+  "wav_sha256": "6265c2c8318ff05fe27c225b99c83df6174623ee6eb2286ef8bd06536a20079c",
+  "mp3_sha256": "4ffdf80ed7b5a9e5d94ae82437166aee62b239a69d7d439b13099ba36c71fa3e"
+}

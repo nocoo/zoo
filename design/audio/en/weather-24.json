@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Beach. A beach has soft sand that can slip through your fingers.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.8,
+  "interaction_id": "v1_ChdtRVRiYXMySUk0LTMwLWtQdl9qUzJRZxIXbUVUYmFzMklJNC0zMC1rUHZfalMyUWc",
+  "origin": "generated",
+  "wav_sha256": "323305706f1cd9d2cfab10f565b791f08106b7d8fe3392101d23041af881b3b0",
+  "mp3_sha256": "dc61033cb4ae62d80b984921def4f90d71ce98d4854182aa338a7676e7ba7495"
+}

@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Chick. A chick is round and fluffy, with soft yellow down, and it says peep.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 8.2,
+  "interaction_id": "v1_ChdSRVBiYXR5VkdyZTUwLWtQcGMzQjRBOBIXUkVQYmF0eVZHcmU1MC1rUHBjM0I0QTg",
+  "origin": "generated",
+  "wav_sha256": "aabb9ff391f53e92ec2854317a3b8e2a2fef5a757c5ad8f4c19c33cf0c4dc84a",
+  "mp3_sha256": "20983d07e3ca5f15e80c1317e869c06dc5cca2ad18da743348adad93be720fcd"
+}

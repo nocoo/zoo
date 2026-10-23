@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Broccoli. Broccoli is green, and the top looks like a tiny tree.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.96,
+  "interaction_id": "v1_ChdrRWZiYXZQOU1vN1oxZThQcjk3VnVBNBIXa0VmYmF2UDlNbzdaMWU4UHI5N1Z1QTQ",
+  "origin": "generated",
+  "wav_sha256": "903ef3dd01c02f6c2d8159125385b8d333a113e3bb11b75af3da8fc2c0d68b1f",
+  "mp3_sha256": "a0de3a1fd51abae0fad7fad160665eead4c4faaac0ee7efbbf0114a5b2b23f16"
+}

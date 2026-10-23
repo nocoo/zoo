@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Mandarin orange. A mandarin orange is small, with juicy segments under its peel.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.04,
+  "interaction_id": "v1_Chc1RVBiYXVfckpLSGpyZmNQN2RIYXdBRRIXNUVQYmF1X3JKS0hqcmZjUDdkSGF3QUU",
+  "origin": "generated",
+  "wav_sha256": "231b6ed8e52a63e2257ccf0c82d6af14c37e82583102d792f9bb683f2e230802",
+  "mp3_sha256": "3cb0c5effe4c78e55229a7de3582706f4ab3cdd65989c402b89b20f0c3a97de7"
+}

@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Supermarket. A supermarket has long shelves of food and things we use at home.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.32,
+  "interaction_id": "v1_ChdxRWpiYXZXMU81ZmdyZmNQcUxYVDJBMBIXcUVqYmF2VzFPNWZncmZjUHFMWFQyQTA",
+  "origin": "generated",
+  "wav_sha256": "c02347749c4a8e3ee3b5e5a029871900d4125fefb8cd126382e78dcb65cf1320",
+  "mp3_sha256": "9586275de2d21dd7df59d7c1bb0a41a2385b4be4fce95a6eb593d1304356be4b"
+}

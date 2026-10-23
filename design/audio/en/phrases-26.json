@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "I don't want this. I don't want this.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.0,
+  "interaction_id": "v1_ChdBRWJiYXRfVk1jMzYxZThQMTdDbzRRNBIXQUViYmF0X1ZNYzM2MWU4UDE3Q280UTQ",
+  "origin": "generated",
+  "wav_sha256": "d6f189896ee52377d123cd01086e301dc001596e0c7e7ebb8c04ef4449884a4c",
+  "mp3_sha256": "f844773353444a2f6d815efad160d91f55f284aed777e6253742750d6ed84e51"
+}

@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Airplane. An airplane has big wings and flies high in the sky.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.12,
+  "interaction_id": "v1_Chd0RWJiYXVQa05yQ0MxZThQdF9uUjRBNBIXdEViYmF1UGtOckNDMWU4UHRfblI0QTQ",
+  "origin": "generated",
+  "wav_sha256": "933d517647a492d08439bc63f1ab8691a16cdf840147a5ff2b8d57da2e038425",
+  "mp3_sha256": "b55ccc55f0432e3c087ecf94519df67cdf7390686b20eeec7dae9b590d4f904e"
+}

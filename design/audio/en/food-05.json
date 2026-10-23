@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Dumpling. A dumpling is a little pocket with filling inside a thin skin.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.8,
+  "interaction_id": "v1_ChdIRWpiYXNhc09PU3Q5dE1QX3ZfR3VBZxIXSEVqYmFzYXNPT1N0OXRNUF92X0d1QWc",
+  "origin": "generated",
+  "wav_sha256": "164b8e45111b9c113e6eea6e7ab9f075c827177447f4b2dc1db282fb1527c39e",
+  "mp3_sha256": "4fd70197bfc6c696675b295e6632c8a67ee845a62a5d511873a5b11618405f92"
+}

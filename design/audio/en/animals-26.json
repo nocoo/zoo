@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Ant. Ants are tiny and often walk forward in a line.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.48,
+  "interaction_id": "v1_ChdsRVBiYXJ2M0lZdWgycm9QOXQzZzBROBIXbEVQYmFydjNJWXVoMnJvUDl0M2cwUTg",
+  "origin": "generated",
+  "wav_sha256": "e1948161ac3c6f13ef1be719c32fe1c2cef262e6ff3a157e1354bda160d82947",
+  "mp3_sha256": "080cb6f40c5337d23d73fc6a459ff5146c30088d1933023ee430f50673f5d841"
+}

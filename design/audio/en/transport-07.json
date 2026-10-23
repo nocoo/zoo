@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Ship. A ship is big and moves slowly on the water.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.44,
+  "interaction_id": "v1_Chd5RWJiYXBxTU5OcTB2cjBQNXRfNzBBZxIXeUViYmFwcU1OTnEwdnIwUDV0XzcwQWc",
+  "origin": "generated",
+  "wav_sha256": "ea008a0bd6a5332263f25c985fa6ad801774156fd7df79d615d85d3a7c676d03",
+  "mp3_sha256": "33f5fb644df7114f2fab8e2ec694e8a85deca65b119afe77f48d0ca4f0eced26"
+}

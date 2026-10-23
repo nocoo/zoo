@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Lamp. A lamp stands on the table and gives a soft light.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.16,
+  "interaction_id": "v1_ChdPRVhiYXNlbEpOR012cjBQdnRIWGlBOBIXT0VYYmFzZWxKTkdNdnIwUHZ0SFhpQTg",
+  "origin": "generated",
+  "wav_sha256": "04ec0306eff92b360e7a3d8860c1a1858c75977dc07dd68eeca398ba970afeb0",
+  "mp3_sha256": "c63fbddb6fb6382aab00ae0c682f979204892e78d729a9eaec158d18ff87f33e"
+}
