@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.5.0 - 2026-10-23
+
+- Add 43 picture cards across the eight noun categories, bringing the library to 296 cards: fish, frog, crab, sheep, deer and hedgehog; mushroom, green beans, spinach and onion; meat, fish, soup, crackers, cake and candy; balloon, kite, crayon, key, pillow and broom; police car, motorcycle, water truck, garbage truck and hot-air balloon; zoo, seaside, restaurant and hair salon; the four seasons; and eight everyday phrases for greetings, manners and self-care.
+- Draw all 43 illustrations with the approved reference-guided Azure `gpt-image-2.5-sunburst` pipeline at native 2048 x 1792 plus 640 x 560 thumbnails, keeping every prompt, reference, request record and native original under `design/art/expansion/2026-10-23/`.
+- Add 86 bilingual Edge TTS recordings, one Mandarin and one English clip per card, narrated as name plus full description and served through `src/media.json`. No Gemini request, timer or quota change was involved.
+- Extend the illustration and audio tooling to address dated batches (`--run`, `--art`, `--additions`) while keeping the 2026-10-14 expansion batch, its delivery map and every earlier recording unchanged.
+
 ## v1.4.2 - 2026-10-23
 
 - Replace 94 Edge narrations with approved-style Gemini/Sulafat recordings: the 22 remaining Mandarin clips (vegetables, food and places) and 72 expansion English clips. Reach 389/394 eligible Gemini recordings; the last five English places recordings keep complete Edge playback.
