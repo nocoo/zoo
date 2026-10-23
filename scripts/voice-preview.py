@@ -29,11 +29,16 @@ SAMPLES = [
 ]
 
 
+def gemini_key():
+    for line in (ROOT / ".env").read_text().splitlines():
+        name, _, value = line.partition("=")
+        if name.strip() == "GEMINI_API_KEY" and value.strip():
+            return value.strip().strip('"').strip("'")
+    raise SystemExit("项目 .env 未配置 GEMINI_API_KEY。")
+
+
 def main():
-    config = json.loads((Path.home() / ".config/his.fm/config.json").read_text())
-    key = config.get("speechKeys", {}).get("gemini")
-    if not key:
-        raise SystemExit("his.fm 未配置 Gemini Key。")
+    key = gemini_key()
     output = ROOT / "public/voice-preview" / TAKE
     archive = ROOT / "design/voice-preview" / TAKE
     output.mkdir(parents=True, exist_ok=True)

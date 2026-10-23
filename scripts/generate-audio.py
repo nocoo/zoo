@@ -67,6 +67,14 @@ def atomic_write(path, data):
     temporary.replace(path)
 
 
+def gemini_key():
+    for line in (ROOT / '.env').read_text().splitlines():
+        name, _, value = line.partition('=')
+        if name.strip() == 'GEMINI_API_KEY' and value.strip():
+            return value.strip().strip('"').strip("'")
+    raise ValueError('项目 .env 未配置 GEMINI_API_KEY。')
+
+
 def request_budget():
     path = ROOT / 'artifacts/audio-schedule/request-budget.json'
     ledger = json.loads(path.read_text()) if path.exists() else {}
@@ -321,10 +329,7 @@ def main():
     def action():
         if not shutil.which('ffmpeg'):
             raise ValueError('请先安装 ffmpeg。')
-        config = json.loads((Path.home() / '.config/his.fm/config.json').read_text())
-        key = config.get('speechKeys', {}).get('gemini')
-        if not key:
-            raise ValueError('his.fm 未配置 Gemini Key。')
+        key = gemini_key()
         (ROOT / 'design/audio').mkdir(parents=True, exist_ok=True)
         (ROOT / 'public/audio').mkdir(parents=True, exist_ok=True)
         if args.bilingual_day:

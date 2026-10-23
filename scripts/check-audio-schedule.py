@@ -78,10 +78,8 @@ for identifiers in [approved + ['phrases-05'], ['hanzi-19', 'hanzi-19'], ['numbe
 
 with TemporaryDirectory() as temporary:
     root = Path(temporary)
-    config = root / '.config/his.fm/config.json'
-    config.parent.mkdir(parents=True)
-    config.write_text(json.dumps({'speechKeys': {'gemini': 'test-only'}}))
-    with patch.object(sys, 'argv', ['generate-audio.py', '--mandarin-cards', *approved]), patch.object(audio, 'ROOT', root), patch.object(audio.Path, 'home', return_value=root), patch.object(audio.subprocess, 'check_output', return_value=json.dumps([{'id': identifier, 'category': 'phrases'} for identifier in approved]).encode()), patch.object(audio.shutil, 'which', return_value='/mock/ffmpeg'), patch.object(audio, 'generate') as generate, patch.object(audio, 'run_batch') as batch:
+    (root / '.env').write_text('GEMINI_API_KEY=test-only\n')
+    with patch.object(sys, 'argv', ['generate-audio.py', '--mandarin-cards', *approved]), patch.object(audio, 'ROOT', root), patch.object(audio.subprocess, 'check_output', return_value=json.dumps([{'id': identifier, 'category': 'phrases'} for identifier in approved]).encode()), patch.object(audio.shutil, 'which', return_value='/mock/ffmpeg'), patch.object(audio, 'generate') as generate, patch.object(audio, 'run_batch') as batch:
         audio.main()
         assert [call.args[0]['id'] for call in generate.call_args_list] == approved
         assert all(call.args[1:] == ('test-only', False) for call in generate.call_args_list)
