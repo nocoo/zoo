@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "警车。警车会闪灯，提醒大家让一让。",
+  "rate": "+10%",
+  "sha256": "561e29bca3aeb3f2453c7ca7b952033c77bbfc9b25606c5abe8fcf18cb5dc04d",
+  "bytes": 24624
+}

@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Police car. A police car flashes its lights to remind everyone to make way.",
+  "rate": "+0%",
+  "sha256": "469427e0fa2f4878b453a72a44fe3675855bb41de680a87d2a89c5e493cbc21c",
+  "bytes": 37152
+}

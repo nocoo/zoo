@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "不客气。别人说谢谢的时候，可以回一句不客气。",
+  "rate": "+10%",
+  "sha256": "2495a477d85d4809fd77d1e35a386a922815a858183761987a9d1c8b291d4b0a",
+  "bytes": 26928
+}

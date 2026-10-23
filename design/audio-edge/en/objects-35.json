@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Key. A key goes into the lock and turns to open the door.",
+  "rate": "+0%",
+  "sha256": "72802472c81a0d28cf8a2e0c679d87a2487522f1673a228f26a00afdeba9a694",
+  "bytes": 29376
+}

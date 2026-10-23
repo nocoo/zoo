@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Restaurant. In a restaurant we sit down to eat and the waiter brings the food.",
+  "rate": "+0%",
+  "sha256": "48ca0b86d539dd9b20019367d40ccbe46e8a41b38da355f7c7b84844dd6becaf",
+  "bytes": 34128
+}

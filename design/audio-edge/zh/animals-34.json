@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "小鹿。小鹿头上长着小角，跑起来很轻快。",
+  "rate": "+10%",
+  "sha256": "b88dbc0d7de8ac67901a1425d0d892ae334fc79822647d4ed9aefee63a7aba76",
+  "bytes": 27072
+}

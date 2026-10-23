@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "海边。海边有沙子和小浪花，可以光脚踩水。",
+  "rate": "+10%",
+  "sha256": "4bfd4e71a36f72f8e943fed25cd7e05f269594f5583a50b49fcc6a1153315729",
+  "bytes": 27648
+}

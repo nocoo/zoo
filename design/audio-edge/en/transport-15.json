@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Hot-air balloon. A hot-air balloon is big and round, and it rises slowly into the sky.",
+  "rate": "+0%",
+  "sha256": "4d823c286c3ad9b56994b62cbb3b2c75c3dbae81a0fd6d8507dac19d2e22a1ee",
+  "bytes": 39600
+}

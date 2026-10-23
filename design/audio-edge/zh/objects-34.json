@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "蜡笔。蜡笔能画出彩色的线，盖好笔帽不容易干。",
+  "rate": "+10%",
+  "sha256": "39f1d059db6c9ae46123ae3fe5f1a4b8d89b97a39a2c4006d9efbb4747863a6a",
+  "bytes": 29952
+}

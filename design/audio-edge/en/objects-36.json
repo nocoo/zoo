@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Pillow. A pillow is soft and goes under our head when we sleep.",
+  "rate": "+0%",
+  "sha256": "bbab5dd0e2d5690f09280fe9828552c6b8e58eb546544de6ab9fcdb0b1d953b0",
+  "bytes": 30528
+}

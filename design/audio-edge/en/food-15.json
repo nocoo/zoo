@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Cake. Cake is soft and topped with sweet cream.",
+  "rate": "+0%",
+  "sha256": "5255d5a938ce6a5d8706ee767c5a2e15e643c6d8644bb926a0b6df6f9a9783e9",
+  "bytes": 26640
+}

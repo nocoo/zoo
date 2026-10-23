@@ -1,5 +1,6 @@
 import { englishLabel, englishNumber } from './english.ts';
 import { expansionCategories } from './expansion.ts';
+import { additionCategories } from './additions.ts';
 
 export type CategoryId = 'animals' | 'numbers' | 'letters' | 'hanzi' | 'phrases' | 'weather' | 'objects' | 'fruits' | 'transport' | 'vegetables' | 'food' | 'places';
 export type Picture = {
@@ -151,6 +152,11 @@ export const pictures: Picture[] = [
     description: `这是大写字母 ${name}，旁边是它的小写 ${name.toLowerCase()}。找一找，它们长得一样吗？`,
   })),
   ...expansionCategories.flatMap(category => category.cards.map(card => ({
+    ...card, category: category.id,
+    image: `/art/expansion/${card.id}-thumb.webp`,
+    imageLarge: `/art/expansion/${card.id}-full.webp`,
+  }))),
+  ...additionCategories.flatMap(category => category.cards.map(card => ({
     ...card, category: category.id,
     image: `/art/expansion/${card.id}-thumb.webp`,
     imageLarge: `/art/expansion/${card.id}-full.webp`,

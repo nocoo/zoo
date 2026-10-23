@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Hedgehog. A hedgehog has little spines on its back and rolls up when it feels unsafe.",
+  "rate": "+0%",
+  "sha256": "8df657e55ae2e812fc1c0aef768d4e72737a05f1cdb732afc6f28f823bdd13b0",
+  "bytes": 38592
+}

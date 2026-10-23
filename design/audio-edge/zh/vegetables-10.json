@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "蘑菇。蘑菇像一把小伞，有圆圆的伞盖。",
+  "rate": "+10%",
+  "sha256": "3b4e2dafd669a223af60c420c7417b19d91ea680490b5a21c4ea78b8996fd20b",
+  "bytes": 24336
+}

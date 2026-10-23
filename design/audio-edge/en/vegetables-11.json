@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Green beans. Green beans are long and have small beans inside.",
+  "rate": "+0%",
+  "sha256": "50924387b8982d3313b7b25dc6e9d5acb2d2029059ab7f309419c4ad52094b64",
+  "bytes": 32400
+}

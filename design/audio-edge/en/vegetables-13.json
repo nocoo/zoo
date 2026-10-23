@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Onion. An onion has layer after layer, and cutting it can make our eyes water.",
+  "rate": "+0%",
+  "sha256": "f8bfd22de44e884cf5495e660476eedc3b794b58618e5dfb818960d8acb17647",
+  "bytes": 37008
+}

@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Mushroom. A mushroom looks like a little umbrella with a round cap.",
+  "rate": "+0%",
+  "sha256": "60dbf0033bef0c24f9e286d85a94267bba61f01d466cfabc1371b98bba926174",
+  "bytes": 32256
+}

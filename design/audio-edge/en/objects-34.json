@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Crayon. Crayons draw colorful lines, and putting the caps back keeps them from drying out.",
+  "rate": "+0%",
+  "sha256": "8f5198a7eb2cf194905461eab14b3942090af42e688018e9917fae12289d3966",
+  "bytes": 41760
+}

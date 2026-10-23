@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "洒水车。洒水车一边开一边洒水，把路面冲干净。",
+  "rate": "+10%",
+  "sha256": "3151fb8437f4badf48ecb6e58dd8fcc76b533397a2e9595636dce1076ff1eb60",
+  "bytes": 31104
+}

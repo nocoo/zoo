@@ -1,0 +1,6 @@
+{
+	"status": "pending",
+	"imageSha256": "3752ace934d0b71ee92ca6dec3b45bca22e7e8e01d6bc74ff9cf471739b8f505",
+	"recordedAt": "2026-10-23T21:57:02.934754+00:00",
+	"nextStep": "Show this untouched image to the owner immediately. Await confirmation before extraction, compositing, exports, or catalogue integration."
+}

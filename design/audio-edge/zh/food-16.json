@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "糖果。糖果甜甜的，吃完要记得刷牙。",
+  "rate": "+10%",
+  "sha256": "986826288cbe1ed6bd6400038dc47cafa9c494d094085d0b55b592bd0eac09ed",
+  "bytes": 24768
+}

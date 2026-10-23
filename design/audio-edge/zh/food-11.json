@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "肉。肉煮熟了香香的，可以撕成小块。",
+  "rate": "+10%",
+  "sha256": "ddc1dec7783406f7d2063eeae6112de25971535d2ebf84d80ec28a0666483fea",
+  "bytes": 23904
+}

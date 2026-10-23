@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Fish. Fish is soft, and a grown-up takes out the bones before we eat.",
+  "rate": "+0%",
+  "sha256": "d7188d6282da671aa64593f109967055168eb0f3de6fbd7f22d54b885be24490",
+  "bytes": 35136
+}

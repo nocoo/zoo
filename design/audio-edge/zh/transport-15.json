@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "热气球。热气球鼓得大大的，慢慢升上天空。",
+  "rate": "+10%",
+  "sha256": "3bbdf61c9a8f73882025de61f7b7a6230d100dd6f83f9c6b22d3947a4cc15ff3",
+  "bytes": 28080
+}

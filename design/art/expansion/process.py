@@ -20,8 +20,11 @@ def public_dir():
     return gen.ROOT / 'public/art/expansion'
 
 
+ART = 'src/expansion-art.json'
+
+
 def art_path():
-    return gen.ROOT / 'src/expansion-art.json'
+    return gen.ROOT / ART
 
 
 def delivery_path(item):
@@ -73,12 +76,13 @@ def verify_record(item, record, digest):
 def orphans(items):
     folder = public_dir()
     allowed = expected_names(items)
+    own = tuple(f"{item['id']}-" for item in items)
     if not folder.exists():
         return
     for path in folder.iterdir():
         if path.name.startswith('.'):
             continue
-        if path.name not in allowed:
+        if path.name not in allowed and path.name.startswith(own):
             raise ValueError(f'Orphan expansion art: {path}')
 
 
@@ -191,7 +195,7 @@ def collect(items, check):
     current = json.loads(art_path().read_text())
     if check:
         if current != expected:
-            raise ValueError('src/expansion-art.json does not match delivered expansion images')
+            raise ValueError(f'{ART} does not match delivered images')
         return records
     art_path().write_text(json.dumps(expected, indent=2) + '\n')
     write_sheets(items)
@@ -201,10 +205,15 @@ def collect(items, check):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--check', action='store_true', help='Read-only validation; no writes or network')
+    parser.add_argument('--run', default='2026-10-14')
+    parser.add_argument('--art', default='src/expansion-art.json')
     args = parser.parse_args()
+    global ART
+    ART = args.art
+    gen.set_run(args.run)
     items = gen.load_items()
     records = collect(items, args.check)
-    print(f'扩展插画已校验：{len(records)}/{len(items)}。', flush=True)
+    print(f'插画已校验：{len(records)}/{len(items)}（{ART}）。', flush=True)
 
 
 if __name__ == '__main__':

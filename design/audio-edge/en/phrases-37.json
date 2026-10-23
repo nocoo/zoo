@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Careful. When we walk or carry water, a grown-up says careful.",
+  "rate": "+0%",
+  "sha256": "09b80252a566904edcdcfbc9f5fcd769a4442306b748d76300836c76232763a5",
+  "bytes": 32544
+}

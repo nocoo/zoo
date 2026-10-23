@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "春天。春天花开了，小草从土里钻出来。",
+  "rate": "+10%",
+  "sha256": "30707cdbb1fd2afef87b841d7bcb0d078bcbc979e40f140d6436e321c676aefb",
+  "bytes": 26064
+}

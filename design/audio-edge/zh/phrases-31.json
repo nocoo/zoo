@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "晚安。睡觉前轻轻说一句晚安。",
+  "rate": "+10%",
+  "sha256": "a5c994a9e0bd2c0c20c193a906417b7c8064a68982fba892dc64e7e4c5b62825",
+  "bytes": 20592
+}

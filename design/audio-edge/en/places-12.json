@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Hair salon. At the hair salon we get a haircut, and the scissors go snip snip.",
+  "rate": "+0%",
+  "sha256": "4e93e2a322e0745ec138ca57b2feae96f98fc0381546d472af483387abf139b7",
+  "bytes": 37728
+}

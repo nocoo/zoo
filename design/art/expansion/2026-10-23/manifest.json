@@ -1,0 +1,389 @@
+[
+  {
+    "id": "animals-30",
+    "category": "animals",
+    "subject": "one small fish",
+    "references": [
+      "design/art/hd/2026-10-10/animals-19/raw/generated.png",
+      "design/art/hd/2026-10-10/animals-20/raw/generated.png"
+    ]
+  },
+  {
+    "id": "animals-31",
+    "category": "animals",
+    "subject": "one small green frog sitting calmly on a single round lily pad",
+    "references": [
+      "design/art/hd/2026-10-10/animals-20/raw/generated.png",
+      "design/art/expansion/2026-10-14/animals-25/raw/generated.png"
+    ]
+  },
+  {
+    "id": "animals-32",
+    "category": "animals",
+    "subject": "one small round red-orange crab seen from the front",
+    "references": [
+      "design/art/hd/2026-10-10/animals-20/raw/generated.png",
+      "design/art/hd/2026-10-10/animals-19/raw/generated.png"
+    ]
+  },
+  {
+    "id": "animals-33",
+    "category": "animals",
+    "subject": "one fluffy white sheep standing quietly in side view",
+    "references": [
+      "design/art/expansion/2026-10-14/animals-21/raw/generated.png",
+      "design/art/expansion/2026-10-14/animals-23/raw/generated.png"
+    ]
+  },
+  {
+    "id": "animals-34",
+    "category": "animals",
+    "subject": "one gentle young deer standing in side view",
+    "references": [
+      "design/art/expansion/2026-10-14/animals-21/raw/generated.png",
+      "design/art/hd/2026-10-10/animals-05/raw/generated.png"
+    ]
+  },
+  {
+    "id": "animals-35",
+    "category": "animals",
+    "subject": "one small round hedgehog in side view",
+    "references": [
+      "design/art/hd/2026-10-10/animals-20/raw/generated.png",
+      "design/art/expansion/2026-10-14/animals-29/raw/generated.png"
+    ]
+  },
+  {
+    "id": "vegetables-10",
+    "category": "vegetables",
+    "subject": "one single mushroom standing upright: a rounded coral-red cap with a few pale spots and a short thick cream stem",
+    "references": [
+      "design/art/expansion/2026-10-14/vegetables-08/raw/generated.png",
+      "design/art/expansion/2026-10-14/vegetables-09/raw/generated.png"
+    ]
+  },
+  {
+    "id": "vegetables-11",
+    "category": "vegetables",
+    "subject": "three long slender green beans lying together in a small tidy bundle",
+    "references": [
+      "design/art/expansion/2026-10-14/vegetables-02/raw/generated.png",
+      "design/art/expansion/2026-10-14/vegetables-09/raw/generated.png"
+    ]
+  },
+  {
+    "id": "vegetables-12",
+    "category": "vegetables",
+    "subject": "one small bunch of fresh spinach leaves gathered like a little bouquet: rounded soft green blades with slightly wavy edges and short pale stems tied together at the base",
+    "references": [
+      "design/art/expansion/2026-10-14/vegetables-07/raw/generated.png",
+      "design/art/expansion/2026-10-14/vegetables-03/raw/generated.png"
+    ]
+  },
+  {
+    "id": "vegetables-13",
+    "category": "vegetables",
+    "subject": "one whole onion with a rounded bulb",
+    "references": [
+      "design/art/expansion/2026-10-14/vegetables-04/raw/generated.png",
+      "design/art/expansion/2026-10-14/vegetables-01/raw/generated.png"
+    ]
+  },
+  {
+    "id": "food-11",
+    "category": "food",
+    "subject": "one small cooked piece of tender meat with a soft glossy browned surface and a few gentle painted texture lines",
+    "references": [
+      "design/art/expansion/2026-10-14/food-03/raw/generated.png",
+      "design/art/expansion/2026-10-14/food-01/raw/generated.png"
+    ]
+  },
+  {
+    "id": "food-12",
+    "category": "food",
+    "subject": "one cooked boneless fish fillet",
+    "references": [
+      "design/art/expansion/2026-10-14/food-03/raw/generated.png",
+      "design/art/expansion/2026-10-14/food-07/raw/generated.png"
+    ]
+  },
+  {
+    "id": "food-13",
+    "category": "food",
+    "subject": "one simple shallow cream bowl filled with warm golden soup and a few small soft floating pieces of vegetable",
+    "references": [
+      "design/art/expansion/2026-10-14/food-10/raw/generated.png",
+      "design/art/expansion/2026-10-14/food-09/raw/generated.png"
+    ]
+  },
+  {
+    "id": "food-14",
+    "category": "food",
+    "subject": "two round golden crackers",
+    "references": [
+      "design/art/expansion/2026-10-14/food-06/raw/generated.png",
+      "design/art/expansion/2026-10-14/food-08/raw/generated.png"
+    ]
+  },
+  {
+    "id": "food-15",
+    "category": "food",
+    "subject": "one small round cake with a soft cream-colored top and a gentle swirl of cream on the center",
+    "references": [
+      "design/art/expansion/2026-10-14/food-06/raw/generated.png",
+      "design/art/expansion/2026-10-14/food-03/raw/generated.png"
+    ]
+  },
+  {
+    "id": "food-16",
+    "category": "food",
+    "subject": "two wrapped candies side by side",
+    "references": [
+      "design/art/expansion/2026-10-14/food-05/raw/generated.png",
+      "design/art/expansion/2026-10-14/food-08/raw/generated.png"
+    ]
+  },
+  {
+    "id": "objects-32",
+    "category": "objects",
+    "subject": "one round inflated balloon in soft coral red",
+    "references": [
+      "design/art/hd/2026-10-10/objects-13/raw/generated.png",
+      "design/art/hd/2026-10-10/objects-14/raw/generated.png"
+    ]
+  },
+  {
+    "id": "objects-33",
+    "category": "objects",
+    "subject": "one diamond-shaped kite with a simple two-tone painted sail",
+    "references": [
+      "design/art/hd/2026-10-10/objects-16/raw/generated.png",
+      "design/art/hd/2026-10-10/objects-09/raw/generated.png"
+    ]
+  },
+  {
+    "id": "objects-34",
+    "category": "objects",
+    "subject": "three crayons of different colors lying side by side in a small fan",
+    "references": [
+      "design/art/hd/2026-10-10/objects-05/raw/generated.png",
+      "design/art/hd/2026-10-10/objects-16/raw/generated.png"
+    ]
+  },
+  {
+    "id": "objects-35",
+    "category": "objects",
+    "subject": "one simple metal key seen flat: a rounded bow with a small hole",
+    "references": [
+      "design/art/hd/2026-10-10/objects-20/raw/generated.png",
+      "design/art/hd/2026-10-10/objects-02/raw/generated.png"
+    ]
+  },
+  {
+    "id": "objects-36",
+    "category": "objects",
+    "subject": "one plump pillow with rounded corners and a gentle dent in the middle",
+    "references": [
+      "design/art/hd/2026-10-10/objects-19/raw/generated.png",
+      "design/art/hd/2026-10-10/objects-06/raw/generated.png"
+    ]
+  },
+  {
+    "id": "objects-37",
+    "category": "objects",
+    "subject": "one simple broom leaning slightly: a long warm wooden handle and a fan-shaped head of soft straw bristles bound with a painted band",
+    "references": [
+      "design/art/expansion/2026-10-14/objects-25/raw/generated.png",
+      "design/art/hd/2026-10-10/objects-18/raw/generated.png"
+    ]
+  },
+  {
+    "id": "transport-11",
+    "category": "transport",
+    "subject": "one small friendly police car in three-quarter view",
+    "references": [
+      "design/art/expansion/2026-10-14/transport-08/raw/generated.png",
+      "design/art/expansion/2026-10-14/transport-01/raw/generated.png"
+    ]
+  },
+  {
+    "id": "transport-12",
+    "category": "transport",
+    "subject": "one simple motorcycle standing in side view: two round wheels",
+    "references": [
+      "design/art/expansion/2026-10-14/transport-03/raw/generated.png",
+      "design/art/expansion/2026-10-14/transport-01/raw/generated.png"
+    ]
+  },
+  {
+    "id": "transport-13",
+    "category": "transport",
+    "subject": "one water truck in side view with a rounded cylindrical tank on the back",
+    "references": [
+      "design/art/expansion/2026-10-14/transport-08/raw/generated.png",
+      "design/art/expansion/2026-10-14/transport-02/raw/generated.png"
+    ]
+  },
+  {
+    "id": "transport-14",
+    "category": "transport",
+    "subject": "one garbage truck in side view with a boxy cabin and a rounded rear loader body",
+    "references": [
+      "design/art/expansion/2026-10-14/transport-02/raw/generated.png",
+      "design/art/expansion/2026-10-14/transport-10/raw/generated.png"
+    ]
+  },
+  {
+    "id": "transport-15",
+    "category": "transport",
+    "subject": "one hot-air balloon: a large rounded striped envelope with soft vertical panels of coral",
+    "references": [
+      "design/art/expansion/2026-10-14/transport-06/raw/generated.png",
+      "design/art/expansion/2026-10-14/transport-07/raw/generated.png"
+    ]
+  },
+  {
+    "id": "places-09",
+    "category": "places",
+    "subject": "a small zoo vignette: a low rounded wooden fence with three posts in front",
+    "references": [
+      "design/art/expansion/2026-10-14/places-01/raw/generated.png",
+      "design/art/expansion/2026-10-14/places-08/raw/generated.png"
+    ]
+  },
+  {
+    "id": "places-10",
+    "category": "places",
+    "subject": "a gentle seaside vignette: warm sand across the lower part",
+    "references": [
+      "design/art/expansion/2026-10-14/weather-24/raw/generated.png",
+      "design/art/expansion/2026-10-14/weather-21/raw/generated.png"
+    ]
+  },
+  {
+    "id": "places-11",
+    "category": "places",
+    "subject": "a simple restaurant vignette: a round table with a soft cream cloth",
+    "references": [
+      "design/art/expansion/2026-10-14/places-02/raw/generated.png",
+      "design/art/expansion/2026-10-14/places-07/raw/generated.png"
+    ]
+  },
+  {
+    "id": "places-12",
+    "category": "places",
+    "subject": "a simple hair salon vignette: one salon chair with a rounded back",
+    "references": [
+      "design/art/expansion/2026-10-14/places-04/raw/generated.png",
+      "design/art/expansion/2026-10-14/places-02/raw/generated.png"
+    ]
+  },
+  {
+    "id": "weather-26",
+    "category": "weather",
+    "subject": "a spring vignette: three soft pink blossoms with pale yellow centers on short green stems",
+    "references": [
+      "design/art/expansion/2026-10-14/weather-25/raw/generated.png",
+      "design/art/hd/2026-10-10/weather-01/raw/generated.png"
+    ]
+  },
+  {
+    "id": "weather-27",
+    "category": "weather",
+    "subject": "a summer vignette: one bright round sun with soft painted rays",
+    "references": [
+      "design/art/expansion/2026-10-14/weather-25/raw/generated.png",
+      "design/art/hd/2026-10-10/weather-01/raw/generated.png"
+    ]
+  },
+  {
+    "id": "weather-28",
+    "category": "weather",
+    "subject": "an autumn vignette: a short bare branch with three ochre and coral leaves still attached and four more leaves drifting down below it",
+    "references": [
+      "design/art/expansion/2026-10-14/weather-25/raw/generated.png",
+      "design/art/hd/2026-10-10/weather-01/raw/generated.png"
+    ]
+  },
+  {
+    "id": "weather-29",
+    "category": "weather",
+    "subject": "a winter vignette: one small tree with a soft rounded crown of pale snow",
+    "references": [
+      "design/art/hd/2026-10-10/weather-04/raw/generated.png",
+      "design/art/hd/2026-10-10/weather-20/raw/generated.png"
+    ]
+  },
+  {
+    "id": "phrases-30",
+    "category": "phrases",
+    "subject": "one small cheerful toddler standing and waving one hand high in greeting",
+    "references": [
+      "design/art/hd/2026-10-10/phrases-13/raw/generated.png",
+      "design/art/hd/2026-10-10/phrases-15/raw/generated.png"
+    ]
+  },
+  {
+    "id": "phrases-31",
+    "category": "phrases",
+    "subject": "one small toddler lying in a simple bed with a soft blanket up to the chin",
+    "references": [
+      "design/art/hd/2026-10-10/phrases-09/raw/generated.png",
+      "design/art/hd/2026-10-10/phrases-10/raw/generated.png"
+    ]
+  },
+  {
+    "id": "phrases-32",
+    "category": "phrases",
+    "subject": "one small toddler standing with a warm smile and both hands open and turned slightly outward in a kind",
+    "references": [
+      "design/art/hd/2026-10-10/phrases-15/raw/generated.png",
+      "design/art/hd/2026-10-10/phrases-13/raw/generated.png"
+    ]
+  },
+  {
+    "id": "phrases-33",
+    "category": "phrases",
+    "subject": "one small toddler standing beside a simple closed pale door with a round knob",
+    "references": [
+      "design/art/hd/2026-10-10/phrases-03/raw/generated.png",
+      "design/art/hd/2026-10-10/phrases-05/raw/generated.png"
+    ]
+  },
+  {
+    "id": "phrases-34",
+    "category": "phrases",
+    "subject": "one small toddler sitting on a low stool",
+    "references": [
+      "design/art/hd/2026-10-10/phrases-06/raw/generated.png",
+      "design/art/hd/2026-10-10/phrases-07/raw/generated.png"
+    ]
+  },
+  {
+    "id": "phrases-35",
+    "category": "phrases",
+    "subject": "one small toddler standing and holding up one open palm toward the viewer at chest height",
+    "references": [
+      "design/art/hd/2026-10-10/phrases-11/raw/generated.png",
+      "design/art/hd/2026-10-10/phrases-01/raw/generated.png"
+    ]
+  },
+  {
+    "id": "phrases-36",
+    "category": "phrases",
+    "subject": "one small toddler caught mid-jump with both arms up and a wide happy smile",
+    "references": [
+      "design/art/expansion/2026-10-14/phrases-21/raw/generated.png",
+      "design/art/hd/2026-10-10/phrases-11/raw/generated.png"
+    ]
+  },
+  {
+    "id": "phrases-37",
+    "category": "phrases",
+    "subject": "one small toddler walking slowly while carrying a small cup in both hands",
+    "references": [
+      "design/art/hd/2026-10-10/phrases-01/raw/generated.png",
+      "design/art/hd/2026-10-10/phrases-17/raw/generated.png"
+    ]
+  }
+]

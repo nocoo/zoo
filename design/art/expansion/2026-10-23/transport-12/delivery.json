@@ -1,0 +1,25 @@
+{
+  "source_sha256": "df6262510d77c149ad07fcbd1fed36c876764c3b57b81df8d13c23b1c1a1fe6d",
+  "source": "design/art/expansion/2026-10-23/transport-12/raw/generated.png",
+  "processing": "Edge-connected paper normalization (RGB tolerance 8); lossless WebP; thumbnail downsampling only; restore four thumbnail corner pixels to exact paper after resample.",
+  "files": [
+    {
+      "path": "public/art/expansion/transport-12-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1844312,
+      "sha256": "763cce14094d3331d900d97e3e626dc57ead69d26493a5e032baeebd912bc818"
+    },
+    {
+      "path": "public/art/expansion/transport-12-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 207590,
+      "sha256": "569a1e4c791d41f6c8fcb53ae44b8ea09ea0878e6dfc730943457b11e3d880bc"
+    }
+  ]
+}

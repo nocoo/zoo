@@ -13,7 +13,9 @@ const build = () => spawnSync(process.execPath, [join(repository, 'scripts/build
 const outputs = ['src/media.json', 'src/expansion-media.json'];
 try {
   await mkdir(join(root, 'src'));
-  await copyFile(join(repository, 'src/expansion-art.json'), join(root, 'src/expansion-art.json'));
+  for (const map of ['src/expansion-art.json', 'src/additions-art.json']) {
+    await copyFile(join(repository, map), join(root, map));
+  }
   for (const path of pictures.flatMap(picture => [picture.image, picture.imageLarge])) {
     const destination = join(root, `public${path}`);
     await mkdir(dirname(destination), { recursive: true });
@@ -34,7 +36,7 @@ try {
     }
     const swapped = build();
     assert.notEqual(swapped.status, 0);
-    assert.ok(swapped.stderr.includes(`Expansion illustration differs: ${first.id}/${field}`), swapped.stderr);
+    assert.ok(swapped.stderr.includes(`Illustration differs: ${first.id}/${field}`), swapped.stderr);
     for (const [index, path] of outputs.entries()) assert.deepEqual(await readFile(join(root, path)), before[index]);
     for (const picture of [first, second]) {
       await unlink(join(root, `public${picture[field]}`));
@@ -46,7 +48,7 @@ try {
   await symlink(join(repository, `public${second.image}`), join(root, `public${first.image}`));
   const missingOutput = build();
   assert.notEqual(missingOutput.status, 0);
-  assert.ok(missingOutput.stderr.includes(`Expansion illustration differs: ${first.id}/image`), missingOutput.stderr);
+  assert.ok(missingOutput.stderr.includes(`Illustration differs: ${first.id}/image`), missingOutput.stderr);
   for (const path of outputs) assert.ok(!existsSync(join(root, path)));
 } finally {
   await rm(root, { recursive: true, force: true });

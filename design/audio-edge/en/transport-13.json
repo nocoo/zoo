@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Water truck. A water truck sprays water as it drives and washes the road.",
+  "rate": "+0%",
+  "sha256": "a5657d2e32f6c4e318b819c52780faf074bcf074a65a69c5676482b68e7099b0",
+  "bytes": 35712
+}

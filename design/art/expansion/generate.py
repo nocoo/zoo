@@ -34,6 +34,26 @@ APPROVED_IDS = (
     + tuple(f'weather-{index:02d}' for index in range(21, 26))
     + tuple(f'fruits-{index:02d}' for index in range(21, 27))
 )
+ADDITION_IDS = (
+    tuple(f'animals-{index:02d}' for index in range(30, 36))
+    + tuple(f'vegetables-{index:02d}' for index in range(10, 14))
+    + tuple(f'food-{index:02d}' for index in range(11, 17))
+    + tuple(f'objects-{index:02d}' for index in range(32, 38))
+    + tuple(f'transport-{index:02d}' for index in range(11, 16))
+    + tuple(f'places-{index:02d}' for index in range(9, 13))
+    + tuple(f'weather-{index:02d}' for index in range(26, 30))
+    + tuple(f'phrases-{index:02d}' for index in range(30, 38))
+)
+RUN_IDS = {'2026-10-14': APPROVED_IDS, '2026-10-23': ADDITION_IDS}
+APPROVED = APPROVED_IDS
+
+
+def set_run(name):
+    global RUN, APPROVED
+    if name not in RUN_IDS:
+        raise ValueError(f'Unknown run: {name}')
+    RUN = HERE / name
+    APPROVED = RUN_IDS[name]
 LOCK = threading.Lock()
 NEXT = 0.0
 FAILED = threading.Event()
@@ -117,10 +137,10 @@ def load_items():
     path = RUN / 'manifest.json'
     items = json.loads(path.read_text())
     if not isinstance(items, list):
-        raise ValueError('Manifest must be an array of 77 records')
+        raise ValueError('Manifest must be an array of approved records')
     ids = tuple(item['id'] for item in items)
-    if ids != tuple(APPROVED_IDS):
-        raise ValueError(f'Manifest IDs must be the approved {len(APPROVED_IDS)} expansion cards in source order')
+    if ids != tuple(APPROVED):
+        raise ValueError(f'Manifest IDs must be the approved {len(APPROVED)} cards in source order')
     for item in items:
         if not REQUIRED <= set(item):
             raise ValueError(f'Manifest record missing fields: {item.get("id")}')
@@ -242,10 +262,12 @@ def run(pending):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--check', action='store_true', help='Read-only validation; no writes or provider requests')
+    parser.add_argument('--run', default='2026-10-14')
     parser.add_argument('--ids', default='')
     args = parser.parse_args()
     if not HELPER.is_file():
         raise ValueError('Missing unchanged helper design/art/hd/2026-10-10/generate_azure.py')
+    set_run(args.run)
     items = load_items()
     chosen = select(items, args.ids)
     if args.check:

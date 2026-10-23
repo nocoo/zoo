@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Motorcycle. A motorcycle has two wheels and sounds loud when it goes.",
+  "rate": "+0%",
+  "sha256": "b04290220af031328604fc32f528ee8191be5a34da2a388ebf672caa03a78c40",
+  "bytes": 35568
+}

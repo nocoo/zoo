@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Sheep. The sheep has curly wool like a little cloud.",
+  "rate": "+0%",
+  "sha256": "0455d32b6a6c6448cdb0f559ac96125f35798f92acbfacaf3c15beb799000507",
+  "bytes": 26640
+}

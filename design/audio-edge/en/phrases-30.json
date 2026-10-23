@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Good morning. In the morning we can say good morning to a grown-up.",
+  "rate": "+0%",
+  "sha256": "733fd41625395e026aae6f4cbecb2bc09c5e59003315b42eed20e97f51063f9c",
+  "bytes": 29808
+}

@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Balloon. A balloon is puffy and flies up when we let go.",
+  "rate": "+0%",
+  "sha256": "92846f1d2e052130ef68b8b5bdf19c7861b03e1c564b79e836c0587c5f865bdb",
+  "bytes": 30528
+}

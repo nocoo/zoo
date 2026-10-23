@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "我要上厕所。想上厕所的时候说出来，大人就能帮忙。",
+  "rate": "+10%",
+  "sha256": "2ea6721b4c19eeb7777b9620b866516754e69a1b5f6106f011853d3fe602fc15",
+  "bytes": 30384
+}

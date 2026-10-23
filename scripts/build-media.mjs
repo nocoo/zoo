@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { pictures } from '../src/content.ts';
 import { audioTranscript, englishAudioTranscript, edgeEnglishAudioTranscript } from '../src/audio.ts';
 import { expansionCategories } from '../src/expansion.ts';
+import { additionCategories } from '../src/additions.ts';
 
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const EDGE_VOICE = { zh: ['zh-CN-XiaoxiaoNeural', '+10%'], en: ['en-US-JennyNeural', '+0%'] };
@@ -47,12 +48,14 @@ async function buildActive() {
   for (const path of pictures.flatMap(picture => [picture.image, picture.imageLarge]).sort()) {
     images[path] = `${path}?v=${hash(await readFile(`public${path}`)).slice(0, 16)}`;
   }
-  const approved = JSON.parse(await readFile('src/expansion-art.json', 'utf8')).images;
-  for (const card of expansionCategories.flatMap(category => category.cards)) {
-    const picture = pictures.find(picture => picture.id === card.id);
-    for (const field of ['image', 'imageLarge']) {
-      if (images[picture[field]] !== approved[card.id]?.[field]) {
-        throw new Error(`Expansion illustration differs: ${card.id}/${field}`);
+  for (const [map, groups] of [['src/expansion-art.json', expansionCategories], ['src/additions-art.json', additionCategories]]) {
+    const approved = JSON.parse(await readFile(map, 'utf8')).images;
+    for (const card of groups.flatMap(category => category.cards)) {
+      const picture = pictures.find(picture => picture.id === card.id);
+      for (const field of ['image', 'imageLarge']) {
+        if (images[picture[field]] !== approved[card.id]?.[field]) {
+          throw new Error(`Illustration differs: ${card.id}/${field} (${map})`);
+        }
       }
     }
   }

@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "蛋糕。蛋糕软软的，上面抹着甜甜的奶油。",
+  "rate": "+10%",
+  "sha256": "064ca32e5930d8a01871bcca782fc46c7579c87e2769165c102252a66fab86d1",
+  "bytes": 26640
+}

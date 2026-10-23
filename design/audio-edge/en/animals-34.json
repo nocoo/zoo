@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Deer. The little deer has small antlers and runs lightly.",
+  "rate": "+0%",
+  "sha256": "56121c3ec1b8a138ba4b7e6e2d1ab22e1a02f19da6373b4635bfb3c72fb05772",
+  "bytes": 29376
+}

@@ -1,0 +1,25 @@
+{
+  "source_sha256": "e9572e8500fe4c749949db65bb8ee844fb4a7701876869da71c9c19ebf21a903",
+  "source": "design/art/expansion/2026-10-23/weather-26/raw/generated.png",
+  "processing": "Edge-connected paper normalization (RGB tolerance 8); lossless WebP; thumbnail downsampling only; restore four thumbnail corner pixels to exact paper after resample.",
+  "files": [
+    {
+      "path": "public/art/expansion/weather-26-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 2621202,
+      "sha256": "4048d00ccc332ea1aa751c11676384e1dbcd2a3be60f07856fe3ddd7cb2eab6c"
+    },
+    {
+      "path": "public/art/expansion/weather-26-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 293782,
+      "sha256": "76304c73434e0828ae028852514cc9a227315bdf775d97e2c4cfd7feea9bf537"
+    }
+  ]
+}

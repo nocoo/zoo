@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "等一下。还没做完的时候，可以说等一下。",
+  "rate": "+10%",
+  "sha256": "06d314857bc3e7a20782fcd9e2433fe3ffe6f77fa689c7f3a39329848b7e713e",
+  "bytes": 23472
+}

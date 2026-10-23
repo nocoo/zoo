@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Spinach. Spinach has green leaves and turns soft when cooked.",
+  "rate": "+0%",
+  "sha256": "3383dd4239bd635fb37b7522bcae97d3fcc0d812cbcea64ac01b00cf89b90dd3",
+  "bytes": 31392
+}

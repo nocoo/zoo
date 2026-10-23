@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "洋葱。洋葱一层一层包着，切开时有点辣眼睛。",
+  "rate": "+10%",
+  "sha256": "70594c61ed2d4747d990fe6e53e5d8752f2bbb56d723223deceb861c178a30b9",
+  "bytes": 28944
+}

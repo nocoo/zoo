@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "扫把。扫把能把地上的碎屑扫到一起。",
+  "rate": "+10%",
+  "sha256": "04680115199f3d334a4da6b9f346b47641ce3d3a045c6163a7417d2633e51ea0",
+  "bytes": 23904
+}
