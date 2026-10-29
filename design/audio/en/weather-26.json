@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Spring. In spring the flowers open and the grass comes up.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.92,
+  "interaction_id": "v1_ChdIRGZqYXJmeEFvSHZyZmNQc2JMbDhBMBIXSERmamFyZnhBb0h2cmZjUHNiTGw4QTA",
+  "origin": "generated",
+  "wav_sha256": "57a731d4890cc643632f3ff8b367919f8f99d825154bfa1d5f7211de24c7c27f",
+  "mp3_sha256": "5af706fabb2d3e39e55788731a9e2b73160141dc15569aaa41347b2e36245aa3"
+}

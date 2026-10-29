@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Good morning. In the morning we can say good morning to a grown-up.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.8,
+  "interaction_id": "v1_ChY0emZqYXFUS04tcmdyZmNQbUlXN1lREhY0emZqYXFUS04tcmdyZmNQbUlXN1lR",
+  "origin": "generated",
+  "wav_sha256": "0a6443871e947639f94dbfcb895c775e12cf50f759aefe8f3d1f24de24dc0a1a",
+  "mp3_sha256": "e9c68fb170f0cb73f97729ddb6094b047e9a371e5d01f8950d9ea7744977889e"
+}

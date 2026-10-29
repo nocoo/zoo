@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Autumn. In autumn the leaves turn yellow and fall one by one.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.84,
+  "interaction_id": "v1_ChdRemZqYXFyME5NVFByZmNQZzVTRTZRMBIXUXpmamFxcjBOTVRQcmZjUGc1U0U2UTA",
+  "origin": "generated",
+  "wav_sha256": "921aac6ffb7c67bc54a50136503a7e06ec5b6159ab7fe9188df6bb90f5053b4f",
+  "mp3_sha256": "be9b7146195a3e3ae79348ceb98b0c8c4e38df946542faad28d278e7ce6656b1"
+}

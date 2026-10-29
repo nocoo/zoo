@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Sheep. The sheep has curly wool like a little cloud.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.56,
+  "interaction_id": "v1_ChYzemJqYXFlRk8tcmdyZmNQbUlXN1lREhYzemJqYXFlRk8tcmdyZmNQbUlXN1lR",
+  "origin": "generated",
+  "wav_sha256": "b926f634040210b65b116c0ff369e37ca3449f4be72beb7ae232640ea6551e2a",
+  "mp3_sha256": "f874665463b1e5068e3d8857e0892b2699761139d0ebba98fc327f669745af83"
+}

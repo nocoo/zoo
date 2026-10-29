@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Green beans. Green beans are long and have small beans inside.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.96,
+  "interaction_id": "v1_ChdfempqYXNyb09yVHByZmNQdFp5VXNRcxIXX3pqamFzcm9PclRwcmZjUHRaeVVzUXM",
+  "origin": "generated",
+  "wav_sha256": "247afcd008b7dab0442b928875b8b7bed114c56990e39e7383546dc78fdc26bf",
+  "mp3_sha256": "c829e60413851826ffe1044fbc7eb4981231f88bd07fb86b04e07dbbcd36d6a5"
+}

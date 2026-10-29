@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Spinach. Spinach has green leaves and turns soft when cooked.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.92,
+  "interaction_id": "v1_ChdFem5qYXZQbE5hX01yZmNQal9LZzhBcxIXRXpuamF2UGxOYV9NcmZjUGpfS2c4QXM",
+  "origin": "generated",
+  "wav_sha256": "6738fb4909d3882a9454bc9254d19370f6d0f019d512ff689955c18ec57680fa",
+  "mp3_sha256": "fe98eb9ea9268df9ffd1e44ee15e3af7c066bf102ba536be604a450a5071cafd"
+}

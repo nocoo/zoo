@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "I need the toilet. When we need the toilet, saying it lets a grown-up help.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.72,
+  "interaction_id": "v1_ChdJRGpqYW9uTkNOcXcwLWtQNGZlMm9BRRIXSURqamFvbk5DTnF3MC1rUDRmZTJvQUU",
+  "origin": "generated",
+  "wav_sha256": "0ecaaa27a64d1d19ac93d051607868da49f86eab4c6829dfc7ac8d6d4e1cb786",
+  "mp3_sha256": "f834675ddb5e36fb9d77fd2da448175fa89477962dd3f5916134912ae155fe7a"
+}

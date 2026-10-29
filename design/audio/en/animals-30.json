@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Fish. A little fish swims in the water and wags its tail.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.48,
+  "interaction_id": "v1_ChdwRGJqYXNTdEFzVFByZmNQZ3BTRTZRMBIXcERiamFzU3RBc1RQcmZjUGdwU0U2UTA",
+  "origin": "generated",
+  "wav_sha256": "8b0bf43831b29d292e7436c5d42cff109876b84104d95483856078a3e55eafb4",
+  "mp3_sha256": "8ef44d6c74b351446247cd5139e386bc90446d57296cd073602229458b2c8ea3"
+}

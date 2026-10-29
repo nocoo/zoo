@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Deer. The little deer has small antlers and runs lightly.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.2,
+  "interaction_id": "v1_ChY4emJqYXFpbk5PcmdyZmNQbUlXN1lREhY4emJqYXFpbk5PcmdyZmNQbUlXN1lR",
+  "origin": "generated",
+  "wav_sha256": "3718b5189fa3ee23da41f7c51e80d3238eac74f93817dd80264840ad201c4d3c",
+  "mp3_sha256": "cc6688bc5dd80acefc3056dd69a2f54c856c4efec17656e6081029d0e7db385b"
+}

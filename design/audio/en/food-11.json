@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Meat. Cooked meat smells good and can be torn into small pieces.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.92,
+  "interaction_id": "v1_ChdPem5qYXNfbU5xZTF2cjBQajVyYTBBMBIXT3puamFzX21OcWUxdnIwUGo1cmEwQTA",
+  "origin": "generated",
+  "wav_sha256": "450222d66b6db72df356d4ed8f9797def6f351fa5ea662a23a5e70763df28bb6",
+  "mp3_sha256": "58427379c5184bbe91f8af5a1a5a7db7292f9c93fc01ba20dd501b4aa3b4cc22"
+}

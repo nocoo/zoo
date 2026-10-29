@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Motorcycle. A motorcycle has two wheels and sounds loud when it goes.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.64,
+  "interaction_id": "v1_ChduRGpqYXVtbkdPMm12cjBQanRTNDJBMBIXbkRqamF1bW5HTzJtdnIwUGp0UzQyQTA",
+  "origin": "generated",
+  "wav_sha256": "3f8b7365c77e1eca46d9d257a07a16b5d6605c61661b4bf582918906b2647eb1",
+  "mp3_sha256": "f12eab04022650652f5fb7a438a99bb67df001ae5f657443ca00347d1be621cc"
+}

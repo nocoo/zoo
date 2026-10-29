@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Zoo. At the zoo we can see many animals from behind the railing.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.28,
+  "interaction_id": "v1_ChdGenJqYXEzVk9jSE1yZmNQd1pYRGtRMBIXRnpyamFxM1ZPY0hNcmZjUHdaWERrUTA",
+  "origin": "generated",
+  "wav_sha256": "11361590a1af6a3527f682f6ec7da97f202da7760b3533ef3c86e7e76524af38",
+  "mp3_sha256": "534910f740857c9c0671f8e8d2ccbe3e7955745590c392feca79f09532a05c80"
+}

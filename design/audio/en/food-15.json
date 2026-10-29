@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Cake. Cake is soft and topped with sweet cream.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.32,
+  "interaction_id": "v1_Chdpem5qYXRMTU45enVyZmNQdU1MeDhBMBIXaXpuamF0TE1OOXp1cmZjUHVNTHg4QTA",
+  "origin": "generated",
+  "wav_sha256": "259a965efea4322c4ad67131abf330cb4e554e62614dc2b9030476347bf3d838",
+  "mp3_sha256": "eb204fd447ca7709ef91f63ff87f432814297401098c809b6145ed911abaa5f1"
+}

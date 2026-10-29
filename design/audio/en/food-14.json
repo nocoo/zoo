@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Cracker. A cracker is small and crunches when we bite it.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.84,
+  "interaction_id": "v1_Chdkem5qYXJLQU44VGFyZmNQNXNUSTJRSRIXZHpuamFyS0FOOFRhcmZjUDVzVEkyUUk",
+  "origin": "generated",
+  "wav_sha256": "fba3deb514e312ae2e66ccb74b9043d4ce7214509e06971a42eb3965b57a59a3",
+  "mp3_sha256": "24594c10a5ff886a9f40c7b71836908298e625522cda3efd82eb032404f8d192"
+}

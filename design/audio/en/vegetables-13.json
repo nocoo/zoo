@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Onion. An onion has layer after layer, and cutting it can make our eyes water.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.52,
+  "interaction_id": "v1_ChdLRG5qYW9XTEJZRGpyZmNQdE9tSjhBMBIXS0RuamFvV0xCWURqcmZjUHRPbUo4QTA",
+  "origin": "generated",
+  "wav_sha256": "bab36425b4b75a3005f2ceeb89141753c427dc551f867a1e3b91a9c833f23f7a",
+  "mp3_sha256": "b68302ee8b89dbb0e4ebcf7396a1d99a2a64ebabb77bcc99cc0f22e323d7e182"
+}

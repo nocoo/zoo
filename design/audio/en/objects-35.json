@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Key. A key goes into the lock and turns to open the door.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.88,
+  "interaction_id": "v1_ChdxRGZqYXFyWUJMLVQxZThQdTY2VzJRMBIXcURmamFxcllCTC1UMWU4UHU2NlcyUTA",
+  "origin": "generated",
+  "wav_sha256": "d2171d4020f9e537d32bc2d92d32e3848b8c3ac687d947d1e13b31636cdcbb98",
+  "mp3_sha256": "bf809794ecef8fc91f1f0ce8cf68dd1f3357e2bcfa3f376aa7922f791251b56e"
+}

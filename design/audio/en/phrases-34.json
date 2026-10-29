@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "I will do it myself. When we want to try alone, we can say I will do it myself.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.04,
+  "interaction_id": "v1_ChdNempqYXJ1Uk92TEtyZmNQbnFqaG1RaxIXTXpqamFydVJPdkxLcmZjUG5xamhtUWs",
+  "origin": "generated",
+  "wav_sha256": "70b8b7fcc77742e002408caa7166e766b4618678e68ea42ecbcf32be38fa62a3",
+  "mp3_sha256": "efd4130e85ee91743f4dd03cd245b98dff71c3b7c5d443443c479f5203f3c6b7"
+}

@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "洒水车。洒水车一边开一边洒水，把路面冲干净。",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 7.48,
+  "interaction_id": "v1_ChdUelhqYXBLLU52M3VyZmNQMnN2U29RcxIXVHpYamFwSy1OdjN1cmZjUDJzdlNvUXM",
+  "origin": "generated",
+  "wav_sha256": "6b5f06d9c3f6bfd5865e4f666d76865c8e2510bd53a9dc5ddcf6aa52f7fe6893",
+  "mp3_sha256": "8693dcdd905a69ab465613b362c9f55ef6dd5ac96e3a1958de5bd31aeeed7591"
+}

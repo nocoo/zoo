@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Crab. The crab walks sideways and holds up two big claws.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.2,
+  "interaction_id": "v1_Chd5emJqYXBtSE5kQzd2cjBQN0lhNzRBMBIXeXpiamFwbUhOZEM3dnIwUDdJYTc0QTA",
+  "origin": "generated",
+  "wav_sha256": "b4154dc98650a34c0a60af340b73cb9fda539e9a8155f8ff5873eeebf1581f35",
+  "mp3_sha256": "6ae74714f49fed4067bf1a4067509a65ec33fa6f0bfc9d6278533299a9d218ee"
+}

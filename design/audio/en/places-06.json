@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Library. A library has lots of books, and we can look at them quietly.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.44,
+  "interaction_id": "v1_ChczRG5qYXVqMEF0cXcwLWtQNGZlMm9BRRIXM0RuamF1ajBBdHF3MC1rUDRmZTJvQUU",
+  "origin": "generated",
+  "wav_sha256": "037bf423381ed823a9060fc777262a12088304222a593fe82f15b4c1d5a973b9",
+  "mp3_sha256": "91936a8d0afcc2313cb67cb61b048c94c319418d277df540f4c2129452d8ee75"
+}

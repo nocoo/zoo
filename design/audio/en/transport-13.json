@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Water truck. A water truck sprays water as it drives and washes the road.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.12,
+  "interaction_id": "v1_ChdyempqYXVqVUxaNkwwLWtQb0kzQ2dRdxIXcnpqamF1alVMWjZMMC1rUG9JM0NnUXc",
+  "origin": "generated",
+  "wav_sha256": "26620012c12a738a5b82e7ad5b241c024b153f7323df14402dded67c3555f0f5",
+  "mp3_sha256": "dee09132866143dd162797437c052d94c94dcd3887481acc344f139dfc077a71"
+}

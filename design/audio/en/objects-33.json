@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Kite. A kite has a long string and flies high when it is windy.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.24,
+  "interaction_id": "v1_ChdnRGZqYXUtQUJyYnUycm9QbWRxMmlBdxIXZ0RmamF1LUFCcmJ1MnJvUG1kcTJpQXc",
+  "origin": "generated",
+  "wav_sha256": "f2ab2a80ba5c42502e2c09aa4d63d9e96a82a644c213b1ed7d49f97979d3f084",
+  "mp3_sha256": "90ce2949e82baf48529f824e8793667667d811925a92236781c460141c64509b"
+}

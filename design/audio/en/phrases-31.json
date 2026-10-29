@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Good night. Before sleep we say good night softly.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.52,
+  "interaction_id": "v1_Chc5emZqYXBTSk9LdWZyZmNQbTdMX3NBMBIXOXpmamFwU0pPS3VmcmZjUG03TF9zQTA",
+  "origin": "generated",
+  "wav_sha256": "ada1291aefa1871b962f7554e8b6ab003da371a24721f92229a8109c5c7293f7",
+  "mp3_sha256": "e4e749818a6f23c8a146aa64bc491e28eefd2f3b78eab0e4620d4eabdd17a06d"
+}

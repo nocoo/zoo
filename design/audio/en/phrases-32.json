@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "You're welcome. When someone says thank you, we can answer you are welcome.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.88,
+  "interaction_id": "v1_ChdERGpqYW91M0EtMkExZThQaDc3aS1BMBIXRERqamFvdTNBLTJBMWU4UGg3N2ktQTA",
+  "origin": "generated",
+  "wav_sha256": "2b389158a4cba3855c9dffb3056d0e9b535e65351804453889cdb26d52c78cfe",
+  "mp3_sha256": "a28f103ed5b3302e1a409b6659e9555fe1c511aca46f23ee674a42924758920a"
+}

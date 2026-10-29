@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Hedgehog. A hedgehog has little spines on its back and rolls up when it feels unsafe.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.4,
+  "interaction_id": "v1_ChdCemZqYXRLa000ZVkwLWtQdWVHQnlRNBIXQnpmamF0S2tNNGVZMC1rUHVlR0J5UTQ",
+  "origin": "generated",
+  "wav_sha256": "ff24949da377bdf3c4a8965e25ad5d93c0d527ef404b90af74400529ca700697",
+  "mp3_sha256": "fd1488ca084900521301f0336c196f0478286ee8821d70ebe405907a0060cf98"
+}

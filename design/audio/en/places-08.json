@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Amusement park. An amusement park has little rides and bright lights to look at with a grown-up.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.32,
+  "interaction_id": "v1_ChdBenJqYXRPSE9yelU5dE1QLTVEVHFRNBIXQXpyamF0T0hPcnpVOXRNUC01RFRxUTQ",
+  "origin": "generated",
+  "wav_sha256": "ab0319ef42e6b0cda95c23bda305b23f0f72cfae889ba62f8e49e33b026e4b2d",
+  "mp3_sha256": "e4e82c0d28493eb78cb1936963fb77a3439a789d42d8023d62ccfbde3729dc14"
+}

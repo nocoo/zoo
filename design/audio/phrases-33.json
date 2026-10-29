@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "我要上厕所。想上厕所的时候说出来，大人就能帮忙。",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 6.92,
+  "interaction_id": "v1_Chd3elRqYXRMa01vZVkwLWtQdWVHQnlRNBIXd3pUamF0TGtNb2VZMC1rUHVlR0J5UTQ",
+  "origin": "generated",
+  "wav_sha256": "ca54fc8f88a5b6667ed16ea916231ce62ff2c343973d06c95807efe3baad17fa",
+  "mp3_sha256": "698e3db35ac03a1422ea0c6d77549e072230c9750ec7a04b0283fd6b088ed96b"
+}

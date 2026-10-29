@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Seaside. At the seaside there is sand and gentle waves, and we can paddle barefoot.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.4,
+  "interaction_id": "v1_ChdMRHJqYXVueENKeW52cjBQak9mVm1ROBIXTERyamF1bnhDSnludnIwUGpPZlZtUTg",
+  "origin": "generated",
+  "wav_sha256": "bf505afc5fdfd82c28f706186c50392812df21f342875882ee7b02bab17c56db",
+  "mp3_sha256": "1a45505cf7a5d7648dc799fda23d73b9e32889b0599e9a6894e2c74001793a6f"
+}

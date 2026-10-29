@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Station. A station is where we wait, then get on with a grown-up.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.72,
+  "interaction_id": "v1_ChR5RG5qYXFUNkJaSE5yZmNQNnJOWRIUeURuamFxVDZCWkhOcmZjUDZyTlk",
+  "origin": "generated",
+  "wav_sha256": "a3bfdc68a8751cb55c4d97f58cd227c8cff01d9035ac1e4b64b163f187477aca",
+  "mp3_sha256": "1f8782090f6a1ee818ae3de3be8bb988a6ddc81573ef4cc83800a73e5aa5017f"
+}

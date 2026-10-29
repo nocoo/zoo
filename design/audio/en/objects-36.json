@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Pillow. A pillow is soft and goes under our head when we sleep.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.56,
+  "interaction_id": "v1_Chd1emZqYXFTSU5zYkR2cjBQb0p2MDhRMBIXdXpmamFxU0lOc2JEdnIwUG9KdjA4UTA",
+  "origin": "generated",
+  "wav_sha256": "bee48e374fe08c1551656002607d0f4a5571a7df8ae1ea767fa9551c0bd190ba",
+  "mp3_sha256": "f815b46a96eff92ef50f6f03d2a76979745484edf97a4b3b1c6ccff29f122b40"
+}

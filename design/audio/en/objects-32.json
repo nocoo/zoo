@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Balloon. A balloon is puffy and flies up when we let go.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.68,
+  "interaction_id": "v1_ChdhemZqYXA3RFBQdkpyZmNQd0xhZWtROBIXYXpmamFwN0RQUHZKcmZjUHdMYWVrUTg",
+  "origin": "generated",
+  "wav_sha256": "d24b70dc93c72d7a5a9ed358acb43f5f0ed54b3f9a0324fd20f7426d027cda30",
+  "mp3_sha256": "dc1baa9be50cc4989307ecd56978d7238079550e7bd5f35a818b740af3b5f9be"
+}

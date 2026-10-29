@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "钥匙。钥匙插进锁孔一转，门就开了。",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 5.88,
+  "interaction_id": "v1_ChZTelRqYXZELU52TEtyZmNQcGVhY2FREhZTelRqYXZELU52TEtyZmNQcGVhY2FR",
+  "origin": "generated",
+  "wav_sha256": "c58c680114028e1cc940e1e19babe2647cb5812ec671632609d31852c33fee80",
+  "mp3_sha256": "b768c50a66021b9c76c11636c5ed0bf0c7e08aa76204c7f4ec1848d4853ff798"
+}

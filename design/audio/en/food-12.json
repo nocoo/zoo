@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Fish. Fish is soft, and a grown-up takes out the bones before we eat.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.48,
+  "interaction_id": "v1_ChdUem5qYXFHeU05dktyZmNQNGZlMS1BMBIXVHpuamFxR3lNOXZLcmZjUDRmZTEtQTA",
+  "origin": "generated",
+  "wav_sha256": "bd1ab249bf8e473f990dfffab619134a969047e08531d41f1c59d2ae1f1450de",
+  "mp3_sha256": "8b105362a1f373d050cf424b8f2dd489dc42b2f9c10e2a0540853ad1aa7f0213"
+}

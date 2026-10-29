@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Garbage truck. A garbage truck takes the rubbish away and keeps the street clean.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.28,
+  "interaction_id": "v1_Chd3empqYXZMTE11bnAycm9Qb2UtaW9ROBIXd3pqamF2TExNdW5wMnJvUG9lLWlvUTg",
+  "origin": "generated",
+  "wav_sha256": "c0c8e9dba529112e36a66075753a50ea77b259c0d7314c5d2551262252fce322",
+  "mp3_sha256": "4723486048bd3873c246200e1c61a014eca0f23d680817acce87f223c3007928"
+}

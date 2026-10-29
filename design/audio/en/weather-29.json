@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Winter. Winter is cold, and we wear thick clothes when we go out.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.96,
+  "interaction_id": "v1_ChdWemZqYXJLYlBNaWo5dE1QLWJfemtRSRIXVnpmamFyS2JQTWlqOXRNUC1iX3prUUk",
+  "origin": "generated",
+  "wav_sha256": "2d9871f0723343cd9814ffbb2df486671c1b082488a6985796f67fc02e1741d6",
+  "mp3_sha256": "1f616c967116bdba6613e30c5bfe50916845663b353f0dcaaf340d94994e6516"
+}

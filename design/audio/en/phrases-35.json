@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Just a moment. When we are not finished yet, we can say just a moment.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.92,
+  "interaction_id": "v1_ChdSempqYXF6d09NaWo5dE1QLWJfemtRSRIXUnpqamFxendPTWlqOXRNUC1iX3prUUk",
+  "origin": "generated",
+  "wav_sha256": "13ce68861392e1a378b71878c52b77f67470f193b3d12738b5d1b4f1df8398dc",
+  "mp3_sha256": "a4d1f90e50d3a75ef1172cf1464c679a7a9aaa98f26f558016ec90a9d9a7007b"
+}

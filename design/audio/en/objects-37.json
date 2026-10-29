@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Broom. A broom sweeps the crumbs on the floor into a pile.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.0,
+  "interaction_id": "v1_Chd6emZqYXZ5dU9jVFByZmNQMTVTRTZRMBIXenpmamF2eXVPY1RQcmZjUDE1U0U2UTA",
+  "origin": "generated",
+  "wav_sha256": "23aef8b526be6911f63ca75f1efb26b9d891e5bbef3804d2f37a777c9c0bda46",
+  "mp3_sha256": "6e3ada98ea672aa01faf211a3cc00aaa8a86b0aa402fda43ead9b8003949e166"
+}

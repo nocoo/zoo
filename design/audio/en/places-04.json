@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Hospital. A hospital is where doctors work, with quiet hallways inside.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.12,
+  "interaction_id": "v1_Chdzem5qYXVXb05zVExyZmNQeW9PTC1RcxIXc3puamF1V29Oc1RMcmZjUHlvT0wtUXM",
+  "origin": "generated",
+  "wav_sha256": "f64ac3b6a3fdd9eca7882b8efbe8aa4de7532c52ac87a2861164b42cbd4eb89f",
+  "mp3_sha256": "a2c92ea20c8f80ce640c65c55903822201413bd930df0b0c50a538e11a4c3180"
+}

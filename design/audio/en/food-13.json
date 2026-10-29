@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Soup. Soup is served in a bowl and feels warm to drink.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.4,
+  "interaction_id": "v1_ChdZem5qYXU2X01kX0xyZmNQOC1TZzhBOBIXWXpuamF1Nl9NZF9McmZjUDgtU2c4QTg",
+  "origin": "generated",
+  "wav_sha256": "d0ffb6ec9dd8a2429ee8c52255a789ceb5ab952537d5e5b40f13b47121e5b439",
+  "mp3_sha256": "0a0787c98c748b5d380f96fdc0a67dfc26fa357777ed9e6b9299bc599d8594f7"
+}

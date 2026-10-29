@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "动物园。动物园里有好多动物，要隔着栏杆看。",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 5.88,
+  "interaction_id": "v1_ChdWVGJqYXR6aUE5U3gycm9QNDVhOGtBNBIXVlRiamF0emlBOVN4MnJvUDQ1YThrQTQ",
+  "origin": "generated",
+  "wav_sha256": "28a2e9134c4df4aad498d75b09c46ed62ebfd8eb809ce0486c0973b8c703af54",
+  "mp3_sha256": "b77e9d68f466cacb2350c631d4d57f912c3192948a05533d5b8146bc41bd8069"
+}

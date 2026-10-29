@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Careful. When we walk or carry water, a grown-up says careful.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.32,
+  "interaction_id": "v1_ChdjRGpqYXZla0JOdktyZmNQNGZlMS1BMBIXY0RqamF2ZWtCTnZLcmZjUDRmZTEtQTA",
+  "origin": "generated",
+  "wav_sha256": "e343c8605ed97cf4f8a59092b43fad1dc1ca8b52e7f8c84491ba07dfd997aef5",
+  "mp3_sha256": "5d8b74e4cf88f20878b22303a039dd6a91a81e79ef441a99c3bb49f72eab0628"
+}

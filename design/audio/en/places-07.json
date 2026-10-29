@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Kindergarten. Kindergarten has little friends who play and listen to stories together.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.0,
+  "interaction_id": "v1_ChQ4RG5qYXU3eUE1SE5yZmNQNnJOWRIUOERuamF1N3lBNUhOcmZjUDZyTlk",
+  "origin": "generated",
+  "wav_sha256": "f3e8f19fc61aee8c79d86407a44f36bdd404ead4c3a934fc839e00969d7061a0",
+  "mp3_sha256": "27cde8f196914e28b0f18cd87ee25d80410f9231bc7486973883705d45d44c7d"
+}

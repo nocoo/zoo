@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Again please. For a game we enjoy, we can say again please.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.8,
+  "interaction_id": "v1_ChdYRGpqYXFLY0JPdUUwLWtQZ0xXUWdBMBIXWERqamFxS2NCT3VFMC1rUGdMV1FnQTA",
+  "origin": "generated",
+  "wav_sha256": "bcab2fd60d1994d7df8bea82525bc5aa0959463f684b1dcf283888181e789dcc",
+  "mp3_sha256": "6958971583e24217b2101c153e801c231c5873ae4ce45dafb7884ce8013008d3"
+}
