@@ -87,7 +87,7 @@ The explicit continuation flag is allowed only with the number/alphabet-excludin
 
 ## Remaining Scope
 
-The stopped queue has 99 new targets remaining: 22 Mandarin, then 77 English. The prior grant is consumed; do not resume without fresh explicit approval. The 30 Mandarin number recordings, 30 English number recordings and 26 shared alphabet recordings remain excluded and use Edge playback. Do not start them, reinstall a timer, retry a stopped run or regenerate any completed recording without fresh explicit approval.
+Nothing remains eligible. As of 2026-10-29 the queue is empty at 480/480, and the 30 Mandarin number recordings, 30 English number recordings and 26 shared alphabet recordings stay excluded on Edge playback. Do not start them, reinstall a timer, retry a stopped run or regenerate any completed recording without fresh explicit approval.
 
 ## Execution And Budget
 
