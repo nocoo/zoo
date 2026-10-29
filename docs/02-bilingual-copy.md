@@ -1,6 +1,6 @@
 # Bilingual Copy Approval Ledger
 
-Status: 2026-10-29: every eligible Gemini recording is complete — 480/480 for the 240 non-number/non-alphabet cards, including all 77 expansion cards and the 43 cards added on 2026-10-23. The last 91 clips finished in one sequential run with no errors; the batch used 91 of 100 local attempts and emptied the queue. Commit `ada8689`; `npm run check` and `npm run build` pass. v1.5.1 (`6d02fd5`) is deployed; exact-revision CI [40874646579](https://github.com/nocoo/zoo/actions/runs/40874646579) passed and `/api/live` reports version `1.5.1` and revision `6d02fd5`. Numbers and letters remain excluded and keep their Edge recordings. The approved copy below is unchanged.
+Status: 2026-10-29: every eligible Gemini recording is complete — 480/480 for the 240 non-number/non-alphabet cards, including all 77 expansion cards and the 43 cards added on 2026-10-23. The last 91 clips finished in one sequential run with no errors; the batch used 91 of 100 local attempts and emptied the queue. Commit `ada8689`; `npm run check` and `npm run build` pass. v1.5.1 (`6d02fd5`) is deployed; exact-revision CI [40874646579](https://github.com/nocoo/zoo/actions/runs/40874646579) passed and `/api/live` reports version `1.5.1`. Numbers and letters remain excluded and keep their Edge recordings. The approved copy below is unchanged.
 
 ## Reading Contract
 
