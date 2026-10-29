@@ -1,6 +1,6 @@
 # Bilingual Copy Approval Ledger
 
-Status: 2026-10-15: v1.4.0 (`52a03f8`) is deployed and exact-revision CI [38731313717](https://github.com/nocoo/zoo/actions/runs/38731313717) passed. The authorized Gemini continuation then completed 55 Mandarin clips and stopped on attempt 56 at `vegetables-06` with HTTP 429 (Tier 1, 100 requests/day). Eligible coverage is 295/394; 22 Mandarin and 77 English targets remain on intact Edge recordings. No retry or timer is authorized. The provider reported 11h35m58s until reset; the preserved cooldown is approximately 2026-10-16 08:00 Asia/Shanghai, not permission to restart. v1.4.1 contains the 55 completed replacements; its exact-revision deployment must be verified separately. The original 176-card ledger below and the approved expansion source retain their exact bilingual copy. Numbers and letters remain excluded.
+Status: 2026-10-29: every eligible Gemini recording is complete — 480/480 for the 240 non-number/non-alphabet cards, including all 77 expansion cards and the 43 cards added on 2026-10-23. The last 91 clips finished in one sequential run with no errors; the batch used 91 of 100 local attempts and emptied the queue. Commit `ada8689`; `npm run check` and `npm run build` pass. v1.5.0 (`aeef853`) is deployed but predates these clips. Numbers and letters remain excluded and keep their Edge recordings. The approved copy below is unchanged.
 
 ## Reading Contract
 
@@ -12,7 +12,7 @@ Status: 2026-10-15: v1.4.0 (`52a03f8`) is deployed and exact-revision CI [387313
 
 ## Totals
 
-253 cards; 480 unique Gemini targets; 295 complete locally, 99 eligible pending and 86 excluded number/alphabet targets. Eligible scope: 295/394 complete. Remaining order is 22 Mandarin then 77 English, but fresh approval is required before any request. Every card retains both playback URLs.
+253 cards in the original and expansion scope; 480 unique Gemini targets; 480 complete locally with zero eligible pending and zero excluded number/alphabet targets awaiting Gemini. Every card retains both playback URLs.
 
 ## 动物朋友 (20)
 
@@ -234,83 +234,83 @@ Status: 2026-10-15: v1.4.0 (`52a03f8`) is deployed and exact-revision CI [387313
 
 | ID | Chinese name | Local Gemini ZH / EN |
 | --- | --- | --- |
-| transport-01 | 小汽车 | Gemini complete / Edge; Gemini pending |
-| transport-02 | 公交车 | Gemini complete / Edge; Gemini pending |
-| transport-03 | 自行车 | Gemini complete / Edge; Gemini pending |
-| transport-04 | 火车 | Gemini complete / Edge; Gemini pending |
-| transport-05 | 地铁 | Gemini complete / Edge; Gemini pending |
-| transport-06 | 飞机 | Gemini complete / Edge; Gemini pending |
-| transport-07 | 轮船 | Gemini complete / Edge; Gemini pending |
-| transport-08 | 消防车 | Gemini complete / Edge; Gemini pending |
-| transport-09 | 救护车 | Gemini complete / Edge; Gemini pending |
-| transport-10 | 挖掘机 | Gemini complete / Edge; Gemini pending |
-| vegetables-01 | 胡萝卜 | Gemini complete / Edge; Gemini pending |
-| vegetables-02 | 黄瓜 | Gemini complete / Edge; Gemini pending |
-| vegetables-03 | 西红柿 | Gemini complete / Edge; Gemini pending |
-| vegetables-04 | 土豆 | Gemini complete / Edge; Gemini pending |
-| vegetables-05 | 南瓜 | Gemini complete / Edge; Gemini pending |
-| vegetables-06 | 白菜 | Edge; Gemini pending / Edge; Gemini pending |
-| vegetables-07 | 西兰花 | Edge; Gemini pending / Edge; Gemini pending |
-| vegetables-08 | 茄子 | Edge; Gemini pending / Edge; Gemini pending |
-| vegetables-09 | 玉米 | Edge; Gemini pending / Edge; Gemini pending |
-| food-01 | 米饭 | Edge; Gemini pending / Edge; Gemini pending |
-| food-02 | 面条 | Edge; Gemini pending / Edge; Gemini pending |
-| food-03 | 馒头 | Edge; Gemini pending / Edge; Gemini pending |
-| food-04 | 包子 | Edge; Gemini pending / Edge; Gemini pending |
-| food-05 | 饺子 | Edge; Gemini pending / Edge; Gemini pending |
-| food-06 | 面包 | Edge; Gemini pending / Edge; Gemini pending |
-| food-07 | 鸡蛋 | Edge; Gemini pending / Edge; Gemini pending |
-| food-08 | 豆腐 | Edge; Gemini pending / Edge; Gemini pending |
-| food-09 | 粥 | Edge; Gemini pending / Edge; Gemini pending |
-| food-10 | 牛奶 | Edge; Gemini pending / Edge; Gemini pending |
-| places-01 | 公园 | Edge; Gemini pending / Edge; Gemini pending |
-| places-02 | 超市 | Edge; Gemini pending / Edge; Gemini pending |
-| places-03 | 菜市场 | Edge; Gemini pending / Edge; Gemini pending |
-| places-04 | 医院 | Edge; Gemini pending / Edge; Gemini pending |
-| places-05 | 车站 | Edge; Gemini pending / Edge; Gemini pending |
-| places-06 | 图书馆 | Edge; Gemini pending / Edge; Gemini pending |
-| places-07 | 幼儿园 | Edge; Gemini pending / Edge; Gemini pending |
-| places-08 | 游乐场 | Edge; Gemini pending / Edge; Gemini pending |
-| objects-21 | 电脑 | Gemini complete / Edge; Gemini pending |
-| objects-22 | 电话 | Gemini complete / Edge; Gemini pending |
-| objects-23 | 冰箱 | Gemini complete / Edge; Gemini pending |
-| objects-24 | 洗衣机 | Gemini complete / Edge; Gemini pending |
-| objects-25 | 电风扇 | Gemini complete / Edge; Gemini pending |
-| objects-26 | 吸尘器 | Gemini complete / Edge; Gemini pending |
-| objects-27 | 台灯 | Gemini complete / Edge; Gemini pending |
-| objects-28 | 沙发 | Gemini complete / Edge; Gemini pending |
-| objects-29 | 镜子 | Gemini complete / Edge; Gemini pending |
-| objects-30 | 梳子 | Gemini complete / Edge; Gemini pending |
-| objects-31 | 被子 | Gemini complete / Edge; Gemini pending |
-| animals-21 | 小猪 | Gemini complete / Edge; Gemini pending |
-| animals-22 | 小鸡 | Gemini complete / Edge; Gemini pending |
-| animals-23 | 鹅 | Gemini complete / Edge; Gemini pending |
-| animals-24 | 蝴蝶 | Gemini complete / Edge; Gemini pending |
-| animals-25 | 蜗牛 | Gemini complete / Edge; Gemini pending |
-| animals-26 | 蚂蚁 | Gemini complete / Edge; Gemini pending |
-| animals-27 | 蜜蜂 | Gemini complete / Edge; Gemini pending |
-| animals-28 | 瓢虫 | Gemini complete / Edge; Gemini pending |
-| animals-29 | 毛毛虫 | Gemini complete / Edge; Gemini pending |
-| phrases-21 | 跳一跳 | Gemini complete / Edge; Gemini pending |
-| phrases-22 | 拍拍手 | Gemini complete / Edge; Gemini pending |
-| phrases-23 | 蹲下来 | Gemini complete / Edge; Gemini pending |
-| phrases-24 | 我来试试 | Gemini complete / Edge; Gemini pending |
-| phrases-25 | 帮帮我 | Gemini complete / Edge; Gemini pending |
-| phrases-26 | 我不要 | Gemini complete / Edge; Gemini pending |
-| phrases-27 | 我很开心 | Gemini complete / Edge; Gemini pending |
-| phrases-28 | 我有点害怕 | Gemini complete / Edge; Gemini pending |
-| phrases-29 | 我想休息 | Gemini complete / Edge; Gemini pending |
-| weather-21 | 大海 | Gemini complete / Edge; Gemini pending |
-| weather-22 | 小溪 | Gemini complete / Edge; Gemini pending |
-| weather-23 | 瀑布 | Gemini complete / Edge; Gemini pending |
-| weather-24 | 沙滩 | Gemini complete / Edge; Gemini pending |
-| weather-25 | 草地 | Gemini complete / Edge; Gemini pending |
-| fruits-21 | 橘子 | Gemini complete / Edge; Gemini pending |
-| fruits-22 | 柚子 | Gemini complete / Edge; Gemini pending |
-| fruits-23 | 杏 | Gemini complete / Edge; Gemini pending |
-| fruits-24 | 李子 | Gemini complete / Edge; Gemini pending |
-| fruits-25 | 山竹 | Gemini complete / Edge; Gemini pending |
-| fruits-26 | 杨梅 | Gemini complete / Edge; Gemini pending |
+| transport-01 | 小汽车 | Gemini complete / Gemini complete |
+| transport-02 | 公交车 | Gemini complete / Gemini complete |
+| transport-03 | 自行车 | Gemini complete / Gemini complete |
+| transport-04 | 火车 | Gemini complete / Gemini complete |
+| transport-05 | 地铁 | Gemini complete / Gemini complete |
+| transport-06 | 飞机 | Gemini complete / Gemini complete |
+| transport-07 | 轮船 | Gemini complete / Gemini complete |
+| transport-08 | 消防车 | Gemini complete / Gemini complete |
+| transport-09 | 救护车 | Gemini complete / Gemini complete |
+| transport-10 | 挖掘机 | Gemini complete / Gemini complete |
+| vegetables-01 | 胡萝卜 | Gemini complete / Gemini complete |
+| vegetables-02 | 黄瓜 | Gemini complete / Gemini complete |
+| vegetables-03 | 西红柿 | Gemini complete / Gemini complete |
+| vegetables-04 | 土豆 | Gemini complete / Gemini complete |
+| vegetables-05 | 南瓜 | Gemini complete / Gemini complete |
+| vegetables-06 | 白菜 | Gemini complete / Gemini complete |
+| vegetables-07 | 西兰花 | Gemini complete / Gemini complete |
+| vegetables-08 | 茄子 | Gemini complete / Gemini complete |
+| vegetables-09 | 玉米 | Gemini complete / Gemini complete |
+| food-01 | 米饭 | Gemini complete / Gemini complete |
+| food-02 | 面条 | Gemini complete / Gemini complete |
+| food-03 | 馒头 | Gemini complete / Gemini complete |
+| food-04 | 包子 | Gemini complete / Gemini complete |
+| food-05 | 饺子 | Gemini complete / Gemini complete |
+| food-06 | 面包 | Gemini complete / Gemini complete |
+| food-07 | 鸡蛋 | Gemini complete / Gemini complete |
+| food-08 | 豆腐 | Gemini complete / Gemini complete |
+| food-09 | 粥 | Gemini complete / Gemini complete |
+| food-10 | 牛奶 | Gemini complete / Gemini complete |
+| places-01 | 公园 | Gemini complete / Gemini complete |
+| places-02 | 超市 | Gemini complete / Gemini complete |
+| places-03 | 菜市场 | Gemini complete / Gemini complete |
+| places-04 | 医院 | Gemini complete / Gemini complete |
+| places-05 | 车站 | Gemini complete / Gemini complete |
+| places-06 | 图书馆 | Gemini complete / Gemini complete |
+| places-07 | 幼儿园 | Gemini complete / Gemini complete |
+| places-08 | 游乐场 | Gemini complete / Gemini complete |
+| objects-21 | 电脑 | Gemini complete / Gemini complete |
+| objects-22 | 电话 | Gemini complete / Gemini complete |
+| objects-23 | 冰箱 | Gemini complete / Gemini complete |
+| objects-24 | 洗衣机 | Gemini complete / Gemini complete |
+| objects-25 | 电风扇 | Gemini complete / Gemini complete |
+| objects-26 | 吸尘器 | Gemini complete / Gemini complete |
+| objects-27 | 台灯 | Gemini complete / Gemini complete |
+| objects-28 | 沙发 | Gemini complete / Gemini complete |
+| objects-29 | 镜子 | Gemini complete / Gemini complete |
+| objects-30 | 梳子 | Gemini complete / Gemini complete |
+| objects-31 | 被子 | Gemini complete / Gemini complete |
+| animals-21 | 小猪 | Gemini complete / Gemini complete |
+| animals-22 | 小鸡 | Gemini complete / Gemini complete |
+| animals-23 | 鹅 | Gemini complete / Gemini complete |
+| animals-24 | 蝴蝶 | Gemini complete / Gemini complete |
+| animals-25 | 蜗牛 | Gemini complete / Gemini complete |
+| animals-26 | 蚂蚁 | Gemini complete / Gemini complete |
+| animals-27 | 蜜蜂 | Gemini complete / Gemini complete |
+| animals-28 | 瓢虫 | Gemini complete / Gemini complete |
+| animals-29 | 毛毛虫 | Gemini complete / Gemini complete |
+| phrases-21 | 跳一跳 | Gemini complete / Gemini complete |
+| phrases-22 | 拍拍手 | Gemini complete / Gemini complete |
+| phrases-23 | 蹲下来 | Gemini complete / Gemini complete |
+| phrases-24 | 我来试试 | Gemini complete / Gemini complete |
+| phrases-25 | 帮帮我 | Gemini complete / Gemini complete |
+| phrases-26 | 我不要 | Gemini complete / Gemini complete |
+| phrases-27 | 我很开心 | Gemini complete / Gemini complete |
+| phrases-28 | 我有点害怕 | Gemini complete / Gemini complete |
+| phrases-29 | 我想休息 | Gemini complete / Gemini complete |
+| weather-21 | 大海 | Gemini complete / Gemini complete |
+| weather-22 | 小溪 | Gemini complete / Gemini complete |
+| weather-23 | 瀑布 | Gemini complete / Gemini complete |
+| weather-24 | 沙滩 | Gemini complete / Gemini complete |
+| weather-25 | 草地 | Gemini complete / Gemini complete |
+| fruits-21 | 橘子 | Gemini complete / Gemini complete |
+| fruits-22 | 柚子 | Gemini complete / Gemini complete |
+| fruits-23 | 杏 | Gemini complete / Gemini complete |
+| fruits-24 | 李子 | Gemini complete / Gemini complete |
+| fruits-25 | 山竹 | Gemini complete / Gemini complete |
+| fruits-26 | 杨梅 | Gemini complete / Gemini complete |
 
 ## Approval Gate
 

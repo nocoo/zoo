@@ -1,40 +1,46 @@
 # Bilingual Gemini Narration
 
-Status: 2026-10-23: the owner approved one Mandarin sample plus continuation of the remaining queue until completion or the first provider error, and raised the local daily ceiling from 90 to 100. That run completed 22 Mandarin and 72 English clips (94 today, including the reviewed `vegetables-06` sample) and stopped at `en/places-04` with HTTP 429 (Tier 1, 100 requests/day). Eligible coverage is 389/394; the last five English targets, `en/places-04`..`08`, remain on intact Edge recordings. The provider reported 19h14m38s until reset; the preserved cooldown is approximately 2026-10-24 15:00 Asia/Shanghai, not permission to restart. No retry or timer is authorized. v1.4.2 (`42da9bf`) is deployed; exact-revision CI [40021803639](https://github.com/nocoo/zoo/actions/runs/40021803639) passed, `/api/live` reports version `1.4.2` and revision `42da9bf`, and the new Gemini MP3 URLs serve byte-identical sizes from production.
+Status: 2026-10-29, complete. All 480 eligible Gemini recordings are finished — 240 Mandarin plus 240 English for every non-number/non-alphabet card. The owner asked to continue the queue in order until the day's budget was spent; the 2026-10-24 15:00 cooldown had elapsed, so plain `--bilingual-day` ran with the 100-attempt local ceiling as the stop rule. It completed the remaining 91 clips (43 Mandarin and 43 English for the 2026-10-23 additions, plus `en/places-04`..`08`) in one sequential pass with no errors, using 91 of 100 attempts and emptying the queue. Commit `ada8689`; `npm run check` and `npm run build` pass. v1.5.0 (`aeef853`) is deployed but predates these clips, so publishing them needs a separate release authorization. The 2026-10-23 quota stop is kept below as history.
 
 ## Reading Contract
 
 [Review bilingual copy and local status](02-bilingual-copy.md). `src/content.ts` assembles all 253 cards, including the 77 approved additions from `src/expansion.ts`. Existing Chinese names, pinyin, descriptions, English labels and the approved lion explanation are unchanged.
 
-- 197 picture/character/phrase cards: each language reads the name plus the full explanation.
+- 240 picture/character/phrase cards: each language reads the name plus the full explanation.
 - 30 numbers: Mandarin retains number-name-only narration; English targets name plus counting explanation. Both languages are excluded from current generation.
 - 26 letters: one American English alphabet-name clip is shared by both playback entries. Descriptions are editorial, not narration. Letters are excluded from current generation.
-- Total full-coverage target: 480 unique recordings, not 506 (letters share clips). Current eligible scope: 394 recordings for 197 non-number/non-alphabet cards.
+- Total full-coverage target: 480 unique recordings, not 506 (letters share clips). Current eligible scope: 480 recordings for 240 non-number/non-alphabet cards, all complete.
 - Captions always match the selected recording. Original Edge English clips retain name-only narration; the 77 expansion English clips already include full explanations. Gemini has priority independently in both languages.
 
 ## Verified Local Inventory
 
-Updated after the stopped 2026-10-23 batch. Completed recordings match their exact transcript, model, Sulafat voice, style and WAV/MP3 hashes. All 94 new MP3s decoded fully with FFmpeg. `src/media.json` selects these recordings; every pre-existing audio/archive file remains byte-identical.
+Updated after the completed 2026-10-29 batch. Completed recordings match their exact transcript, model, Sulafat voice, style and WAV/MP3 hashes. `src/media.json` selects these recordings; every pre-existing audio/archive file remains byte-identical.
 
 | Category | Mandarin complete | Mandarin pending | English complete | English pending | Shared alphabet pending |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Animals | 29 | 0 | 29 | 0 | 0 |
+| Animals | 35 | 0 | 35 | 0 | 0 |
 | Fruit | 26 | 0 | 26 | 0 | 0 |
-| Weather | 25 | 0 | 25 | 0 | 0 |
-| Objects | 31 | 0 | 31 | 0 | 0 |
+| Weather | 29 | 0 | 29 | 0 | 0 |
+| Objects | 37 | 0 | 37 | 0 | 0 |
 | Chinese characters | 20 | 0 | 20 | 0 | 0 |
-| Phrases | 29 | 0 | 29 | 0 | 0 |
-| Transport | 10 | 0 | 10 | 0 | 0 |
-| Vegetables | 9 | 0 | 9 | 0 | 0 |
-| Food | 10 | 0 | 10 | 0 | 0 |
-| Places | 8 | 0 | 3 | 5 | 0 |
+| Phrases | 37 | 0 | 37 | 0 | 0 |
+| Transport | 15 | 0 | 15 | 0 | 0 |
+| Vegetables | 13 | 0 | 13 | 0 | 0 |
+| Food | 16 | 0 | 16 | 0 | 0 |
+| Places | 12 | 0 | 12 | 0 | 0 |
 | Numbers 1-30 (excluded) | 0 | 30 | 0 | 30 | 0 |
 | Alphabet A-Z (excluded) | 0 | 0 | 0 | 0 | 26 |
-| Total | 197 | 0 | 192 | 5 | 26 |
+| Total | 240 | 0 | 240 | 0 | 26 |
 
-389/480 unique Gemini targets are complete locally. Of the 91 missing Gemini targets, 5 are the remaining eligible expansion recordings and 86 remain excluded number/alphabet recordings. Every card already has both playback URLs; pending Gemini is not missing audio.
+480/480 unique Gemini targets are complete locally, with no pending eligible slot. Numbers and alphabet remain excluded and keep their existing Edge recordings; the shared alphabet clip is unchanged. Every card already has both playback URLs.
 
-These inventory numbers describe validated local files, not production deployment. The v1.3.0 release includes the forty new English recordings; exact deployment evidence comes from its release-commit CI and online verification.
+These inventory numbers describe validated local files, not production deployment. The last 91 clips are committed but not released.
+
+## Completed On 2026-10-29
+
+The owner asked to resume the queue in order and continue until the day's budget was spent. The recorded cooldown had already passed and no generator held the lock, so plain `--bilingual-day` ran without `--until-provider-error`, keeping the 100-attempt local ceiling as the stop rule rather than exceeding it. The run completed all 91 remaining targets — 43 Mandarin (animals-30..35, weather-26..29, objects-32..37, phrases-30..37, transport-11..15, vegetables-10..13, food-11..16, places-09..12) and 43 matching English clips, then `en/places-04`..`08` — with 20-second spacing, no retry and no provider error. 91 of 100 attempts were used; the queue emptied before the ceiling, so the unused nine were never requested.
+
+`python3 scripts/generate-audio.py --check --bilingual-day --until-provider-error` reports 480/480 with an empty next batch. `npm run check` and `npm run build` pass. Commit `ada8689` holds 182 `design/audio` files, 91 `public/audio` MP3s and the regenerated `src/media.json`.
 
 ## Stopped On 2026-10-23
 
