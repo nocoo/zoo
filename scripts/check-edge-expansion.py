@@ -14,10 +14,11 @@ edge = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(edge)
 assert 'edge_tts' not in sys.modules
 
-expansion_items = edge.load_cards(True)
-active_items = edge.load_cards(False)
-expansion_jobs = edge.jobs_for(expansion_items, True)
-active_jobs = edge.jobs_for(active_items, False)
+expansion_batch = {'cards': 'expansionCategories', 'cards_expected': 77, 'jobs_expected': 154}
+expansion_items = edge.load_cards(expansion_batch)
+active_items = edge.load_cards(None)
+expansion_jobs = edge.jobs_for(expansion_items, expansion_batch)
+active_jobs = edge.jobs_for(active_items, None)
 assert 'edge_tts' not in sys.modules
 
 assert len(expansion_items) == 77
@@ -41,7 +42,7 @@ assert expansion_jobs[1][0]['english'] == 'Car. A car has four wheels and can ta
 assert expansion_jobs[-2][1] == 'zh' and expansion_jobs[-1][1] == 'en'
 assert expansion_jobs[-1][0]['id'] == 'fruits-26'
 assert expansion_jobs[-1][0]['english'] == 'Bayberry. A bayberry is red with a bumpy surface, and it tastes sweet and tart.'
-assert len(active_items) == 253
+assert len(active_items) == 296
 active_by_id = {item['id']: item for item in active_items}
 assert all(item == active_by_id[item['id']] for item in expansion_items)
 
@@ -59,12 +60,12 @@ assert active_zh & expansion_ids == {identifier for identifier in expansion_ids 
 assert active_en & expansion_ids == {identifier for identifier in expansion_ids if not (ROOT / f'design/audio/en/{identifier}.json').exists()}
 with TemporaryDirectory() as temporary:
     with patch.object(edge, 'ROOT', Path(temporary)):
-        assert edge.jobs_for(expansion_items, False) == expansion_jobs
+        assert edge.jobs_for(expansion_items, None) == expansion_jobs
         saved = Path(temporary) / f'design/audio/{expansion_items[0]["id"]}.json'
         saved.parent.mkdir(parents=True)
         saved.write_text('{}')
-        assert edge.jobs_for(expansion_items, False) == expansion_jobs[1:]
-        assert edge.jobs_for(expansion_items, True) == expansion_jobs
+        assert edge.jobs_for(expansion_items, None) == expansion_jobs[1:]
+        assert edge.jobs_for(expansion_items, expansion_batch) == expansion_jobs
 for item, language in active_jobs:
     if item['id'] in expansion_ids:
         assert edge.info_for(item, language) == edge.info_for(next(card for card in expansion_items if card['id'] == item['id']), language)
