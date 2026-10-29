@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Ice",
-  "rate": "+0%",
-  "sha256": "f32b2442a9f78494f3ab56ab65128b308cefc7e2ee405496e2e525f4cb16584b",
-  "bytes": 8784
-}

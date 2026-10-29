@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "电脑。电脑有亮亮的屏幕，上面会显示图画。",
-  "rate": "+10%",
-  "sha256": "6a85c5f234ef17211d06ee6afd05bd8bfaf1005082e8fcd4b1fe0699c9651e86",
-  "bytes": 27216
-}

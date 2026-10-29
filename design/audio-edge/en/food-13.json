@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Soup. Soup is served in a bowl and feels warm to drink.",
-  "rate": "+0%",
-  "sha256": "f5f332ade8716407fbe9aa4f9d19d1bf5a47bfb09df3b1224f89ffedb01136d5",
-  "bytes": 29520
-}

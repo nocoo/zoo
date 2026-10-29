@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "被子。被子软软厚厚的，盖在身上暖暖的。",
-  "rate": "+10%",
-  "sha256": "6a15a7cc418dc44e18e630cc820769b0fd0875a426caa8bcc1ff3083c2b73845",
-  "bytes": 26064
-}

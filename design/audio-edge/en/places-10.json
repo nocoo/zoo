@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Seaside. At the seaside there is sand and gentle waves, and we can paddle barefoot.",
-  "rate": "+0%",
-  "sha256": "08cb9f3d14daba1b6403b459e5a48ce6aa9a9fc28fffde3e17ada193e44a296c",
-  "bytes": 38880
-}

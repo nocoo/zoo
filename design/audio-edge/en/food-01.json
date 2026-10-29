@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Rice. Rice is white, with little grains served in a bowl.",
-  "rate": "+0%",
-  "sha256": "60bc5de42d6d58851b0fe92df9029941f82c28026a6d466d21587952b51ecea7",
-  "bytes": 31248
-}

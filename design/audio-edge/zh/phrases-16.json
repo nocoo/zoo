@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "对不起。对不起，我不是故意的。",
-  "rate": "+10%",
-  "sha256": "38d140244b192711001d0c1bc1ccc1a21c8baee785802f509a6f49b7cd47e409",
-  "bytes": 20736
-}

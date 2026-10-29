@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Vacuum cleaner. A vacuum cleaner hums and sucks up dust from the floor.",
-  "rate": "+0%",
-  "sha256": "8c9a54089623ce3e1a0726c94be5ec7bb5784467dea54d967c228246be592f81",
-  "bytes": 35280
-}

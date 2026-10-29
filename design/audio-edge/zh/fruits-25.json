@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "山竹。山竹紫紫的，剥开厚皮是白白的果肉。",
-  "rate": "+10%",
-  "sha256": "e720763ee9dc81ade884b0ff6cddf1b901589376703562cc791a3b2edf1e1510",
-  "bytes": 29664
-}

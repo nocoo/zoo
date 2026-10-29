@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Sunset glow",
-  "rate": "+0%",
-  "sha256": "1bdbb356b409e08347ac9a0e63baa8aa5ff70d516e1d47b2bf580730fe9d51cc",
-  "bytes": 11952
-}

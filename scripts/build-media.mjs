@@ -9,39 +9,6 @@ import { expansionCategories } from '../src/expansion.ts';
 import { additionCategories } from '../src/additions.ts';
 
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
-const EDGE_VOICE = { zh: ['zh-CN-XiaoxiaoNeural', '+10%'], en: ['en-US-JennyNeural', '+0%'] };
-
-export function expansionTranscript(card, language) {
-  return language === 'zh' ? `${card.name}。${card.description}` : `${card.english}. ${card.englishDescription}`;
-}
-
-export async function expansionAudio(root = '.') {
-  const audio = {};
-  for (const card of expansionCategories.flatMap(category => category.cards)) {
-    const entry = {};
-    for (const language of ['zh', 'en']) {
-      const metadataPath = `${root}/design/audio-edge/${language}/${card.id}.json`;
-      const filePath = `${root}/public/audio-edge/${language}/${card.id}.mp3`;
-      const hasMeta = existsSync(metadataPath);
-      const hasFile = existsSync(filePath);
-      if (!hasMeta && !hasFile) continue;
-      if (hasMeta !== hasFile) throw new Error(`Orphan expansion audio: ${language}/${card.id}`);
-      const metadata = JSON.parse(await readFile(metadataPath, 'utf8'));
-      const [voice, rate] = EDGE_VOICE[language];
-      const text = expansionTranscript(card, language);
-      if (metadata.provider !== 'edge-tts' || metadata.voice !== voice || metadata.rate !== rate || metadata.text !== text) {
-        throw new Error(`Expansion narration differs: ${metadataPath}`);
-      }
-      const bytes = await readFile(filePath);
-      if (!bytes.length || bytes.length !== metadata.bytes) throw new Error(`Expansion audio size differs: ${filePath}`);
-      const digest = hash(bytes);
-      if (digest !== metadata.sha256) throw new Error(`Audio checksum differs: ${filePath}`);
-      entry[language] = `/audio-edge/${language}/${card.id}.mp3?v=${digest.slice(0, 16)}`;
-    }
-    if (Object.keys(entry).length) audio[card.id] = entry;
-  }
-  return audio;
-}
 
 async function buildActive() {
   const images = {};
@@ -80,12 +47,9 @@ async function buildActive() {
     }
   }
   await writeFile('src/media.json', JSON.stringify({ images, audio, transcripts }, null, 2) + '\n');
-  console.log('媒体清单已生成：图片内容版本号、Gemini 优先的中英文静态录音。');
+  console.log('媒体清单已生成：图片内容版本号、Gemini 优先的中英文静态录音，数字与字母保留 Edge 录音。');
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1])) {
   await buildActive();
-  const audio = await expansionAudio();
-  await writeFile('src/expansion-media.json', JSON.stringify({ audio }, null, 2) + '\n');
-  console.log('扩展录音清单已写入 src/expansion-media.json。');
 }

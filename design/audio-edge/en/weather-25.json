@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Grass. The grass is green and soft, with little blades standing side by side.",
-  "rate": "+0%",
-  "sha256": "2b5b9b19eb016f3b664cb2039fbd3a2c3d2a7130f86564000e6ce759a79a030c",
-  "bytes": 38736
-}

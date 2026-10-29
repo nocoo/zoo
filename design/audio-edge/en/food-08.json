@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Tofu. Tofu is white and tender, and it feels soft on the spoon.",
-  "rate": "+0%",
-  "sha256": "c46ae5e0bbf67309eb9bf9af4db5d1e72214bc9dc76e79c808952e85c20265fa",
-  "bytes": 33552
-}

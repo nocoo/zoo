@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Wash your hands",
-  "rate": "+0%",
-  "sha256": "d53349f882284d28f86a2623f3446c71982c204df12be1543cd27a19e8a15abe",
-  "bytes": 11952
-}

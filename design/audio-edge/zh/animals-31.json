@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "青蛙。青蛙蹲在荷叶上，跳起来又远又稳。",
-  "rate": "+10%",
-  "sha256": "6c2748557ecbaf55b72659c26c3f2049b6c4ff73f7753c666d46f9273cc7d511",
-  "bytes": 26784
-}

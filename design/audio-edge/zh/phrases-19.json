@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "看花花。看，花花真漂亮。",
-  "rate": "+10%",
-  "sha256": "d0bf15217b9abea8454a5f030863855c888ebc964a68d7462904877a38b60231",
-  "bytes": 20016
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Jump. Let's take a little jump together.",
-  "rate": "+0%",
-  "sha256": "79ecd55e9aa9aad5de28554cd3f802097972ed90b2d755132f154e073578fea2",
-  "bytes": 23472
-}

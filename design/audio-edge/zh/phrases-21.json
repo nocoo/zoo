@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "跳一跳。我们一起跳一跳。",
-  "rate": "+10%",
-  "sha256": "9edbc190d8f67c0eb63dd3b0c879d7a1f329229e37d6d5cd9e35f0ad9328f20e",
-  "bytes": 17424
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "饺子。饺子像小口袋，薄皮包着馅。",
-  "rate": "+10%",
-  "sha256": "4a295b2171c19f511d7cf63b5436d8b7daee241de942e88c3cb26d95a5295968",
-  "bytes": 23472
-}

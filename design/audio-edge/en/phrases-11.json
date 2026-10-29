@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Bounce a ball",
-  "rate": "+0%",
-  "sha256": "1653919ddccf9b85e623b7f7bd413d3ae6ee433d1d62c94035d38d62fa0b2738",
-  "bytes": 10944
-}

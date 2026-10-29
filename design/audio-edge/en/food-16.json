@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Candy. Candy is sweet, and we brush our teeth after eating it.",
-  "rate": "+0%",
-  "sha256": "b93c0a4e34cac7b476f5621125d35643b6977cc9f4d95f43a2fa88c65c0e93b4",
-  "bytes": 32256
-}

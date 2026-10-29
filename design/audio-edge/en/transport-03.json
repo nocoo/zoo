@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Bicycle. A bicycle has two wheels and moves when we pedal.",
-  "rate": "+0%",
-  "sha256": "591db06a72ff52514e23de16eb4d7a1d0c7b3e32021ad37e79af49ba5823a288",
-  "bytes": 31104
-}

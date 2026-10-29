@@ -75,8 +75,8 @@ npm run build
 node scripts/check-pwa.mjs
 node --experimental-strip-types scripts/check-audio-player.ts
 python3 -B scripts/check-audio-schedule.py
-python3 -B scripts/check-edge-expansion.py
-python3 -B scripts/generate-edge-audio.py --check --expansion
+python3 -B scripts/generate-edge-audio.py --check
+python3 -B scripts/generate-audio.py --check --bilingual-day --until-provider-error
 npm run check:live
 ```
 

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "拍皮球。小皮球，拍一拍。",
-  "rate": "+10%",
-  "sha256": "58d8f949a8f201404c6bbb0afc3fe7e5499ccdd6a41c011bbd274dc3ca409825",
-  "bytes": 20304
-}

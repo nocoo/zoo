@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "看书。我们一起看书吧。",
-  "rate": "+10%",
-  "sha256": "414837274393a01bf66187e5ebfb045ceb13b7149c5117ff9a87f12dfb445d93",
-  "bytes": 17136
-}

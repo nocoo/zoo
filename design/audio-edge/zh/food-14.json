@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "饼干。饼干小小的，咬一口嘎吱响。",
-  "rate": "+10%",
-  "sha256": "a32862ab6cfb403168ec2b8429484a4ff6068b8fdbe208e81eccdf0fd6936af2",
-  "bytes": 22896
-}

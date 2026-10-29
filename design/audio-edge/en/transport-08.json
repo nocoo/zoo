@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Fire truck. A fire truck is red and carries long hoses.",
-  "rate": "+0%",
-  "sha256": "4d886a08fcb236976967d6474426fe07ee25c2b0169d458eeb5a3c36117e73ee",
-  "bytes": 32976
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "小鱼。小鱼在水里游，尾巴一摆一摆。",
-  "rate": "+10%",
-  "sha256": "a1d47a80117caf75f707370171782084908c5cc6a160952b303ec96bd9fac4de",
-  "bytes": 23760
-}

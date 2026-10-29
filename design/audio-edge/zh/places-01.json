@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "公园。公园里有树和小路，还有可以玩的空地。",
-  "rate": "+10%",
-  "sha256": "ccd127331e5a2e4cb2c8d97f5917d1c2c9598d663f32160ace2621db7de83f2a",
-  "bytes": 26928
-}

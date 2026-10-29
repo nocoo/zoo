@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Schoolbag",
-  "rate": "+0%",
-  "sha256": "a2a797568138e9d9237104b0dec3f3d32f017fd05df2587525c29300de49c28b",
-  "bytes": 10512
-}

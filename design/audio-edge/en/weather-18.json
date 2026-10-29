@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Rain boots",
-  "rate": "+0%",
-  "sha256": "eae0542aaea918963de7182705a5db55b1f2ef8ce41871c05679f8f4d49a0c24",
-  "bytes": 10800
-}

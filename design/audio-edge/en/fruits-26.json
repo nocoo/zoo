@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Bayberry. A bayberry is red with a bumpy surface, and it tastes sweet and tart.",
-  "rate": "+0%",
-  "sha256": "5b8faed6283f49ba2bf9c8349952d325547123c8d2440a7704220992dc7dc203",
-  "bytes": 38160
-}

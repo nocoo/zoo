@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "蝴蝶。蝴蝶有两对翅膀，会在花旁边轻轻飞。",
-  "rate": "+10%",
-  "sha256": "dd9220574692f36b26427553cedfa9e37e7face0e865f1081aee37be575d4ce6",
-  "bytes": 28368
-}

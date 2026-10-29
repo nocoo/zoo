@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "我有点害怕。我有点害怕。",
-  "rate": "+10%",
-  "sha256": "da6c4081d1d8727777cb97bb5081154e13ae868554bbf1e53fda8396f0db65e8",
-  "bytes": 17856
-}

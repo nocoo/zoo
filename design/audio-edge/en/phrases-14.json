@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Goodbye",
-  "rate": "+0%",
-  "sha256": "1c84973b63794693116dc6d755a543c8644691549ebfc0cec1503be5090d37f8",
-  "bytes": 9216
-}

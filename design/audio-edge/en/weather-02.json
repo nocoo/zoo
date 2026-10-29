@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Cloud",
-  "rate": "+0%",
-  "sha256": "4b17f6ff105c3ac880919f41dbd5622904b59eaa0aa00c35acb43158c48d8c1f",
-  "bytes": 9072
-}

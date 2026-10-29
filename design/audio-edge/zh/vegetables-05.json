@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "南瓜。南瓜圆圆的，穿着橙橙的厚外衣。",
-  "rate": "+10%",
-  "sha256": "a9d59a76704133ffecc9120bca577bb16a929800c982d803b09dfd673b74c190",
-  "bytes": 25488
-}

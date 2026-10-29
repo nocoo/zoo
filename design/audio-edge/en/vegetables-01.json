@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Carrot. A carrot is orange and shaped like a little stick.",
-  "rate": "+0%",
-  "sha256": "6a2e7367b1c30b5298001b7dd8eb25a0deff583fd62f5fd5d3b21764d27e7469",
-  "bytes": 29376
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "你好。你好，很高兴见到你。",
-  "rate": "+10%",
-  "sha256": "3cd88acafb82b39e5149e6301887f263fc0e01ab799069b965d1f8280f0d6770",
-  "bytes": 19584
-}

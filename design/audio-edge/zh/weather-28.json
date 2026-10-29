@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "秋天。秋天树叶变黄，一片一片落下来。",
-  "rate": "+10%",
-  "sha256": "81160c2403856adce8e3979e4f23e6df0264750ef6128077540be06c7094a115",
-  "bytes": 25488
-}

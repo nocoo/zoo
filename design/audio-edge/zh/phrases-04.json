@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "刷牙。我们一起刷牙。",
-  "rate": "+10%",
-  "sha256": "e8ec3be2354220b7c507017dbeccea27087bfcd23fd39aaeaed607ec03bb096d",
-  "bytes": 16848
-}

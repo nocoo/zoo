@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "螃蟹。螃蟹横着走路，举着两只大钳子。",
-  "rate": "+10%",
-  "sha256": "ffb6494d44ced83801ffea3bb4b75037127fb736f128589faa0a4fb80debd9ef",
-  "bytes": 25920
-}

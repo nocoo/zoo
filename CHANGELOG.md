@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.5.1 - 2026-10-29
+
+- Replace the last 91 temporary Edge narrations with approved-style Gemini/Sulafat recordings: the 43 Mandarin and 43 English clips for the cards added on 2026-10-23, plus `en/places-04`..`08`. Eligible Gemini coverage reaches 480/480 with no pending slot.
+- The authorized run used plain `--bilingual-day` under the existing 100-attempt daily ceiling, completed 91 of 100 requests with 20-second spacing, hit no provider error and emptied the queue before the cap. No retry, model fallback, credential change or timer was involved.
+- Delete 521 obsolete Edge clips and their metadata, freeing 9.5 MiB. Keep only the 86 recordings still referenced: `numbers-1..30` in both languages and `en/letters-A..Z`, which have no Gemini equivalent. Remove `src/expansion-media.json`, its build step and `scripts/check-edge-expansion.py`; `scripts/generate-edge-audio.py` now covers the number and alphabet gap only.
+- Keep every Gemini original WAV, metadata file and MP3 unchanged, along with all illustrations and playback interactions.
+
 ## v1.5.0 - 2026-10-23
 
 - Add 43 picture cards across the eight noun categories, bringing the library to 296 cards: fish, frog, crab, sheep, deer and hedgehog; mushroom, green beans, spinach and onion; meat, fish, soup, crackers, cake and candy; balloon, kite, crayon, key, pillow and broom; police car, motorcycle, water truck, garbage truck and hot-air balloon; zoo, seaside, restaurant and hair salon; the four seasons; and eight everyday phrases for greetings, manners and self-care.

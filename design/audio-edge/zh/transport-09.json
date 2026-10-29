@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "救护车。救护车白白的，把需要帮助的人送到医院。",
-  "rate": "+10%",
-  "sha256": "0b378ece40636cc1a7907f0329560e5b6e2674a7a1b7b37a18df939f6cfdccf3",
-  "bytes": 29520
-}

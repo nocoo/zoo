@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Garbage truck. A garbage truck takes the rubbish away and keeps the street clean.",
-  "rate": "+0%",
-  "sha256": "47b7e7c00bf32a9d6d549fe63277a1baa0d552c48a4785f852c0688ae80135de",
-  "bytes": 37296
-}

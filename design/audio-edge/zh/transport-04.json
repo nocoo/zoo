@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "火车。火车一节连着一节，沿着铁轨往前开。",
-  "rate": "+10%",
-  "sha256": "f338ca9c5c359efc92dc4ac7f554e0aa952df57d6698da297d74465b573c337e",
-  "bytes": 29520
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Walk slowly",
-  "rate": "+0%",
-  "sha256": "d536fad7e028fede82f6db6e1e33218d2e7f74c081af8cd5bdae46478486ebb2",
-  "bytes": 11520
-}

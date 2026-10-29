@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "枕头。枕头软软的，睡觉的时候垫在头下面。",
-  "rate": "+10%",
-  "sha256": "f7afcdc0f0defbe6ad733eb3a17b8abe75798f54bc5e065d13fd8bdf1999bf61",
-  "bytes": 28800
-}

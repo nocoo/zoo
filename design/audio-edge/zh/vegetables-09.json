@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "玉米。玉米金黄金黄，一颗颗玉米粒排得齐齐的。",
-  "rate": "+10%",
-  "sha256": "6e2427058dc49c9e2304bc5af35261de7a41790a47ce18c3179a9cd91afb0c39",
-  "bytes": 30816
-}

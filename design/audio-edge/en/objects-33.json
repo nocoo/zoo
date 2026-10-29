@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Kite. A kite has a long string and flies high when it is windy.",
-  "rate": "+0%",
-  "sha256": "b5694576ce198cc9d9607a391a400d0c7e73e528398d87791f10661a12ad1a16",
-  "bytes": 31968
-}

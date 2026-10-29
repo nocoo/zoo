@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Bird",
-  "rate": "+0%",
-  "sha256": "f43651d995495e428464b0dc0ed7c7ec44778770783cb5dace1a02d29daa1452",
-  "bytes": 8352
-}

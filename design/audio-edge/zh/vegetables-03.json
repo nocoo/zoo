@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "西红柿。西红柿圆圆红红的，里面有小小的籽。",
-  "rate": "+10%",
-  "sha256": "af2fb95a33e04a0a5d02a87e5216c8bbfc71a33ae836098b160f54af0598e17c",
-  "bytes": 28512
-}

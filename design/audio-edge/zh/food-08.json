@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "豆腐。豆腐白白嫩嫩，一晃一晃软软的。",
-  "rate": "+10%",
-  "sha256": "5daa62cfb0f1bf2a4b83ad34368c788c8cadd7db69578dea140ca099ce81d373",
-  "bytes": 24912
-}

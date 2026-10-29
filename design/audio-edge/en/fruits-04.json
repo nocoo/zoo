@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Grapes",
-  "rate": "+0%",
-  "sha256": "ec85ba2d327b3095576581b6122ba328c5b1d254c6cb400ce6aef684278c92bf",
-  "bytes": 9504
-}

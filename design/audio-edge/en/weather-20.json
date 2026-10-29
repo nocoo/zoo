@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Snowman",
-  "rate": "+0%",
-  "sha256": "c5a72891ee22d141f984a1def52f9f7872e590006db66f7b1fe93b1324a9f5be",
-  "bytes": 10080
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "拍拍手。大家拍拍手。",
-  "rate": "+10%",
-  "sha256": "f4f1fefc10bfe525a7234aa5d54a3593969081bccbf493468d8f74404f89c62f",
-  "bytes": 16992
-}

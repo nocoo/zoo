@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "鸡蛋。鸡蛋椭圆椭圆的，煮熟剥开有蛋白和蛋黄。",
-  "rate": "+10%",
-  "sha256": "fc3b3f4bef70e3222b97d56b047feacffa490058b00a7ffdb1c39d1ac16ee34c",
-  "bytes": 30528
-}

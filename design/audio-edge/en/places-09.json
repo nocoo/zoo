@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Zoo. At the zoo we can see many animals from behind the railing.",
-  "rate": "+0%",
-  "sha256": "0623df8e47e65b52dfb80c8de237c5aa486fe9e830df4b15c41edd3a070b4675",
-  "bytes": 31536
-}

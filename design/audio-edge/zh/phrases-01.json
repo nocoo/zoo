@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "喝水。我想喝水。",
-  "rate": "+10%",
-  "sha256": "58e43107a78b393847d261e01ac835bf07203e6a4d9c0333c2c7611d05f8cd51",
-  "bytes": 15840
-}

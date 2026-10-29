@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "I want to rest. I would like to rest.",
-  "rate": "+0%",
-  "sha256": "2e8b990c97d732019a4118ef39f9f468a278fcdfbeaabcc5275a7fc4e1f59554",
-  "bytes": 24048
-}

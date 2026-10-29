@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "小心。走路或者端水的时候，大人会说小心。",
-  "rate": "+10%",
-  "sha256": "772b6317616038627b306e063fcd6b05190321e489833102e799c5fafd6c9468",
-  "bytes": 27360
-}

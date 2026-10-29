@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Rain",
-  "rate": "+0%",
-  "sha256": "d89786691cc39ee3a22d3c16ce6d310f397f66e588f96d09613602b330e35f96",
-  "bytes": 8640
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Winter. Winter is cold, and we wear thick clothes when we go out.",
-  "rate": "+0%",
-  "sha256": "47588fbd90d4413e6497d56a17476347c86100f03964d59b47ae27e9de607c3a",
-  "bytes": 32832
-}

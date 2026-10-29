@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Shoes",
-  "rate": "+0%",
-  "sha256": "ba87d3b2c3483292d4debb431556d0d4a29c11f1d77123b9ba9346d05d93133c",
-  "bytes": 9360
-}

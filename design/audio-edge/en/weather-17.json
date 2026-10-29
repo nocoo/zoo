@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Umbrella",
-  "rate": "+0%",
-  "sha256": "04e71d1a4f35890a44184a00a9dfb6207d94c479811c16a4fc75e8338668a510",
-  "bytes": 9792
-}

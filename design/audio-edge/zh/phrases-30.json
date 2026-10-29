@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "早上好。早上见到大人，可以说一句早上好。",
-  "rate": "+10%",
-  "sha256": "5d400173e202ea9d18d25f0681a9d1279568b736e23817b67effb3eb11e646ff",
-  "bytes": 27360
-}

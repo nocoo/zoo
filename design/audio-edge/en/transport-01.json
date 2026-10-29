@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Car. A car has four wheels and can take us out.",
-  "rate": "+0%",
-  "sha256": "242502e57c4ecdc1d99dd829e35a7e0cb3ab37df7e669cb4178dfcf8ea664160",
-  "bytes": 28080
-}

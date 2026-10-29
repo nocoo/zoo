@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Cow",
-  "rate": "+0%",
-  "sha256": "c19687c6eaf5da32cd635c6d5bbed729ce551ad77a03cec8e1c90516d98eaf96",
-  "bytes": 8352
-}

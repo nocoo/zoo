@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "小溪。小溪的水绕过石头，轻轻地往前流。",
-  "rate": "+10%",
-  "sha256": "fabb2c60c7b8e88ea307d3d55434c937f4f2a61279a253dd7e9be6499a925180",
-  "bytes": 26784
-}

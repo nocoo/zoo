@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "消防车。消防车红红的，带着长长的水管。",
-  "rate": "+10%",
-  "sha256": "bfccfadc7973b498c673d54572323d0774506d64178896d0798404d28052616b",
-  "bytes": 27072
-}

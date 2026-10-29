@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "电风扇。电风扇的叶子转起来，送来一阵凉风。",
-  "rate": "+10%",
-  "sha256": "39946033684348d4a634abce49b9773cf35b100276c956963725cc00b4609a72",
-  "bytes": 27792
-}

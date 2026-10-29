@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Tomato. A tomato is round and red, with tiny seeds inside.",
-  "rate": "+0%",
-  "sha256": "e40d1fe501004f84fcb66c67ebd92a384ff598dfc776b99a97407b7d0b866365",
-  "bytes": 34128
-}

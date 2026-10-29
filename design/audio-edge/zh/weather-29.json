@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "冬天。冬天很冷，出门要穿厚厚的衣服。",
-  "rate": "+10%",
-  "sha256": "d05808c10fad7fc9d9ebeb22151afc10989a2be03eeb87b8d1d2261b9f2a65d9",
-  "bytes": 25488
-}

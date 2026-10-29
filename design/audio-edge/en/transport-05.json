@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Subway. A subway train runs underground and opens its doors at the station.",
-  "rate": "+0%",
-  "sha256": "b5a30d62806aa65d56b18d89479239da2015bc7d9a53d044bfe6cc94defb9702",
-  "bytes": 35424
-}

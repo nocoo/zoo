@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Autumn. In autumn the leaves turn yellow and fall one by one.",
-  "rate": "+0%",
-  "sha256": "1f329261d58cb44579738dadfcb5a28896fa8789652db8df4011eeb1c9007dcb",
-  "bytes": 30240
-}

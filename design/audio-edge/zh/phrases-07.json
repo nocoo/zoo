@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "戴帽子。出门啦，戴好帽子。",
-  "rate": "+10%",
-  "sha256": "303c0d9c7f6c6119826a5cd45bbe5b793aa3feb47a1ec6911abdaaf0a7d01fcc",
-  "bytes": 20448
-}

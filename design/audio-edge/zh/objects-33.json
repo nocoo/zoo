@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "风筝。风筝有一根长长的线，有风的时候能飞很高。",
-  "rate": "+10%",
-  "sha256": "61d43c123750f9f3848c285bca1beed4c60f455bcde686516c4e65e0c6781932",
-  "bytes": 30672
-}

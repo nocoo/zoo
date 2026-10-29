@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Apple",
-  "rate": "+0%",
-  "sha256": "533b63ac7d08d9351c1146f03a352b1927a587149ce603e85cbac259df4cf58b",
-  "bytes": 8928
-}

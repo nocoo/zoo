@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Good night. Before sleep we say good night softly.",
-  "rate": "+0%",
-  "sha256": "31fdd181db1110172bebb024b257172f8ab6c29d03158fc4ee13ddbf1bd40581",
-  "bytes": 27936
-}

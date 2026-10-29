@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Broom. A broom sweeps the crumbs on the floor into a pile.",
-  "rate": "+0%",
-  "sha256": "5bb3c7ee6567491563221a746a1b34504672b1b3ad189bc22aa91834d65bf32e",
-  "bytes": 29376
-}

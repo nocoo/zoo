@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "刺猬。刺猬背上长满小刺，遇到危险就缩成一团。",
-  "rate": "+10%",
-  "sha256": "7719f5903cb0b1793ae1fd490cdba20bf7a8fb96b6805157d3862fd996f3ea19",
-  "bytes": 31248
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "鱼肉。鱼肉软软的，吃之前大人会帮我们把刺挑出来。",
-  "rate": "+10%",
-  "sha256": "d4b881b73de7c358ec41a9e02a30ef331cc76e7ac07f86946b2d929ee69b3c6b",
-  "bytes": 31680
-}

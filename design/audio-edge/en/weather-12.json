@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Sunrise",
-  "rate": "+0%",
-  "sha256": "94ae185f4df86f8acb69dc53996f33aad874a9463b7e7a9241e7dea54991581c",
-  "bytes": 10656
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Spring. In spring the flowers open and the grass comes up.",
-  "rate": "+0%",
-  "sha256": "9dfbbf97af3af361b041d28c98ff9f5bfc2cfce00b801b3ac1541a12dd410b55",
-  "bytes": 30384
-}

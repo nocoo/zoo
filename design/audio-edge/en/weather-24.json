@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Beach. A beach has soft sand that can slip through your fingers.",
-  "rate": "+0%",
-  "sha256": "38e84fcaa3864edba1ffd748601e7eade3b23e7b313351b767be2c616e5876a2",
-  "bytes": 30672
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Dew",
-  "rate": "+0%",
-  "sha256": "bbe0e698f5c427bcdd76a53e22e139751b9d4d6d0ef897e95203b20f89d2f414",
-  "bytes": 8784
-}

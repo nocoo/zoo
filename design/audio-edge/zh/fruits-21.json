@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "橘子。橘子小小的，皮下面是一瓣一瓣的果肉。",
-  "rate": "+10%",
-  "sha256": "1de61a1656e5ed67a9e5db13de30ff29264b70377a2437858099463084aab6a3",
-  "bytes": 28944
-}

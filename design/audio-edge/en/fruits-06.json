@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Watermelon",
-  "rate": "+0%",
-  "sha256": "19c6c2d4485405ab3b3aad2533539f910c64c6d611f5c92fef6b42dbe5ffb8c8",
-  "bytes": 10800
-}

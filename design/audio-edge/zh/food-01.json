@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "米饭。米饭白白的，一粒一粒盛在小碗里。",
-  "rate": "+10%",
-  "sha256": "d7a50d14fa6024e538b6287ed6a5c679891b7060b457f244532f55ecdfd7c137",
-  "bytes": 25776
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "菠菜。菠菜的叶子绿绿的，煮熟以后软软的。",
-  "rate": "+10%",
-  "sha256": "e9cf0de68109435db02a1ce254681382c5bf841954e350c95ee96f53dce8f5ce",
-  "bytes": 26496
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Dog",
-  "rate": "+0%",
-  "sha256": "d17eb2746d02b7766346f019f51e5c41df59e03e1237aa0fad8352cd2ff78069",
-  "bytes": 8784
-}

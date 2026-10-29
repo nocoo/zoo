@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "汤。汤盛在碗里，喝起来暖暖的。",
-  "rate": "+10%",
-  "sha256": "b1ca1788f33a2892dad4c297848e590093c81711ae2d92bb293f3ac4e55532e6",
-  "bytes": 22176
-}

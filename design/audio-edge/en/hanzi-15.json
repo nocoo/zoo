@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Flower",
-  "rate": "+0%",
-  "sha256": "36a63277054c1531eac5c7137d06898402188dae80a23053fc317e4b1e9a46b7",
-  "bytes": 9648
-}

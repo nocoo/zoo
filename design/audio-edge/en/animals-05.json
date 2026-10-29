@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Giraffe",
-  "rate": "+0%",
-  "sha256": "9689e34c1677462ce66211d353964ce8736978b6d3eccdd54b6f001c73b4f455",
-  "bytes": 9648
-}

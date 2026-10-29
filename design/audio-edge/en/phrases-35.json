@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Just a moment. When we are not finished yet, we can say just a moment.",
-  "rate": "+0%",
-  "sha256": "d04cd59dcaaa1eb2e1a00ff86392c9c5c15a8dd5f490849d3feb7d8b86a37936",
-  "bytes": 34272
-}

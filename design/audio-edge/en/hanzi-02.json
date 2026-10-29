@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Moon",
-  "rate": "+0%",
-  "sha256": "4dbf74e7528c4b7a7ad470a66568ba55a3ce4d7eedcbc9db378eaa2569018018",
-  "bytes": 8784
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Put away your toys",
-  "rate": "+0%",
-  "sha256": "af6438976956283833aa31f737cdb724c02663f94ab93ad56be13d78603b9203",
-  "bytes": 13104
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "沙发。沙发软软的，坐上去可以靠一靠。",
-  "rate": "+10%",
-  "sha256": "7b880e2226395f3ce9fcdf92bb546e407aa631faa39a9b7c4296caac6051400d",
-  "bytes": 25920
-}

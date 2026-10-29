@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "再来一次。遇到喜欢的游戏，可以说再来一次。",
-  "rate": "+10%",
-  "sha256": "9efdccb169cd7be4dda9d403e574ed23643443cefb9ef2fe82d7be438077ace1",
-  "bytes": 26640
-}

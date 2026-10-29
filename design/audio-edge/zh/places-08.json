@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "游乐场。游乐场里有旋转的小设施，灯亮亮的很好看。",
-  "rate": "+10%",
-  "sha256": "5b5658d2418bf1dd5255ba20dbe0005ddcc0887e276cc0e98f14490ae0da37a3",
-  "bytes": 32976
-}

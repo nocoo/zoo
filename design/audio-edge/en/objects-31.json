@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Blanket. A blanket is soft and thick, and it keeps us warm.",
-  "rate": "+0%",
-  "sha256": "2d17e53b534c6d7371cd5524093e0e8f2cdb25c903ffc4ee27c40828bd7e6e3b",
-  "bytes": 33120
-}

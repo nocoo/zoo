@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Bread. Bread is soft and fluffy, and we can tear off a little piece.",
-  "rate": "+0%",
-  "sha256": "78113f3acb07a2c37226334a12fadede3d1ec194522dc3d43358cd4c68f1f75a",
-  "bytes": 33408
-}

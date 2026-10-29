@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "I am happy. I am so happy.",
-  "rate": "+0%",
-  "sha256": "8dac6b4159875873a27f86f4ba5a3319880aeab1081d7b543cdd9df3af50f042",
-  "bytes": 22176
-}

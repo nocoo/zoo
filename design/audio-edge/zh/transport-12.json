@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "摩托车。摩托车有两个轮子，跑起来声音很响。",
-  "rate": "+10%",
-  "sha256": "e5219e017ad0577580865f36b52860ac1323f8b925209bcb4163620e23141519",
-  "bytes": 28080
-}

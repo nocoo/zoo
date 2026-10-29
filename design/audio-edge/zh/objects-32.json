@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "气球。气球鼓鼓的，一松手就往天上飞。",
-  "rate": "+10%",
-  "sha256": "51329d3d9386c5163259df20117eec299170bb73bb0475cd543280c086dd9332",
-  "bytes": 26352
-}

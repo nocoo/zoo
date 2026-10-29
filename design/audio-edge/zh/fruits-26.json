@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "杨梅。杨梅红红的，表面一颗颗小凸起，酸酸甜甜。",
-  "rate": "+10%",
-  "sha256": "2aad90501690b0bef422a8825d8bda69247e6d19c9b446fc235e56648a29c5f6",
-  "bytes": 32688
-}

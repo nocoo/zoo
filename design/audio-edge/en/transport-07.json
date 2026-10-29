@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Ship. A ship is big and moves slowly on the water.",
-  "rate": "+0%",
-  "sha256": "5a0dac6d5ffcb1d4ade11445a21ece39d758843a96d358e9fe38cec285f93c7d",
-  "bytes": 27216
-}

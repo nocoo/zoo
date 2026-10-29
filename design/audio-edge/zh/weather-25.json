@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "草地。草地绿绿软软的，小草一棵挨着一棵。",
-  "rate": "+10%",
-  "sha256": "0c9123c3db3704ebee8ee1296029905a8b42aca733326bda59ca0de05091aaf7",
-  "bytes": 27216
-}

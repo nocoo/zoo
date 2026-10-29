@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "洗脸。洗洗小脸，真干净。",
-  "rate": "+10%",
-  "sha256": "788fb314493522b91d4c3680424d130823e6e8049a4ff893a8890b0a3a216a71",
-  "bytes": 20592
-}

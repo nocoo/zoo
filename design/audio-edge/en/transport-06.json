@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Airplane. An airplane has big wings and flies high in the sky.",
-  "rate": "+0%",
-  "sha256": "a4a97234f746d9af357c01109742c466dfd7eb5b4a318f57128968a90e64b609",
-  "bytes": 31968
-}

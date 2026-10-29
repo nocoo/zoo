@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Phone. A phone carries voices so we can talk with someone far away.",
-  "rate": "+0%",
-  "sha256": "033342af09f6a869aeb50c2d9d884cfe6da542831bd9abd2a5235f6f0001e720",
-  "bytes": 32544
-}

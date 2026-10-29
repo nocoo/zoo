@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Bee. A bee buzzes and stops on flowers to gather nectar.",
-  "rate": "+0%",
-  "sha256": "b79e87792510c28510b1bf74cf72f6aca0806d8171cf831171fe2da1243239a7",
-  "bytes": 30240
-}

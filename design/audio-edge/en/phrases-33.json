@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "I need the toilet. When we need the toilet, saying it lets a grown-up help.",
-  "rate": "+0%",
-  "sha256": "cafa11eb4c60946ca9999c3ebc4bcdb198d59402549b759d246d3a4e95bb63c4",
-  "bytes": 34416
-}

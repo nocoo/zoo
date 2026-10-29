@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Supermarket. A supermarket has long shelves of food and things we use at home.",
-  "rate": "+0%",
-  "sha256": "92a18bf8cf5b44674c1ee9696b73fe845555a28d3dd4a3bc4017e2cb51eb9e7f",
-  "bytes": 37584
-}

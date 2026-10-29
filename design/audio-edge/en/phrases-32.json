@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "You're welcome. When someone says thank you, we can answer you are welcome.",
-  "rate": "+0%",
-  "sha256": "72ae924dce9a326b5fc5ec6847e44832048db07e6612d3bc91fee7f58f8f3127",
-  "bytes": 33408
-}

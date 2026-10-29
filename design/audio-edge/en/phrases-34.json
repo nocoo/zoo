@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "I will do it myself. When we want to try alone, we can say I will do it myself.",
-  "rate": "+0%",
-  "sha256": "cc4da9308853b3845ac0b52810df33582606aaefa6a0bd1e05243ea887a6fe06",
-  "bytes": 37872
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "起床。早上好，我起床啦。",
-  "rate": "+10%",
-  "sha256": "9854e1cab680998438845ebfd2d5372acc0264ee9c59e552b513577e11efe62e",
-  "bytes": 19296
-}

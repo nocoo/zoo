@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "豆角。豆角长长的，里面有小小的豆子。",
-  "rate": "+10%",
-  "sha256": "81eeb6453d5fd162bed35f398d60f3d6b95d8e799b877a512f240efa4c9dc1d5",
-  "bytes": 25056
-}

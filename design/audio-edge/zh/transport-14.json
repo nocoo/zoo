@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "垃圾车。垃圾车把垃圾收走，让街道保持干净。",
-  "rate": "+10%",
-  "sha256": "8b8b888776a3cdef30e7bb3ef33e01396713b546347fd4c6c1a90cb008179e4f",
-  "bytes": 28800
-}

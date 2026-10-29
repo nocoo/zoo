@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Socks",
-  "rate": "+0%",
-  "sha256": "4514bcbfde68d55001714c83d2ddfb56fe0f0a978f1e92c3ce56485075e57699",
-  "bytes": 9936
-}

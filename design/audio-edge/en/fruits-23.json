@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Apricot. An apricot is round and turns yellow when ripe, with a hard pit in the middle.",
-  "rate": "+0%",
-  "sha256": "6d99e903daa0a516c3889c5fae62eac44b45772bfe9c8935d9967b36ab37cb8c",
-  "bytes": 39888
-}

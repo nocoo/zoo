@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Steamed bun. A steamed bun is white and soft, with no filling inside.",
-  "rate": "+0%",
-  "sha256": "1d7e4517609ebdeddda76627798309a6bac43912f4cc84917b29898cd5fbc81e",
-  "bytes": 36000
-}

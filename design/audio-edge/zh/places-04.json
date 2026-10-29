@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "医院。医院是医生工作的地方，楼里有安静的走廊。",
-  "rate": "+10%",
-  "sha256": "b3af2c648c95c99ad32e24af7695f044965fa4308f0f6ac584c53ceaf14766d7",
-  "bytes": 30240
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "理发店。理发店可以剪头发，剪刀咔嚓咔嚓响。",
-  "rate": "+10%",
-  "sha256": "6ba88a658296e333707017694172d3a8b934be87863c0792e2f285d0c25f68ef",
-  "bytes": 28656
-}

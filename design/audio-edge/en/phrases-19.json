@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Look at the flowers",
-  "rate": "+0%",
-  "sha256": "3ea96af736cd2ecd694d4546aa554180e19041f40391e7b006d07a154c159bb9",
-  "bytes": 12672
-}

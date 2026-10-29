@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "夏天。夏天很热，可以吃西瓜、玩水。",
-  "rate": "+10%",
-  "sha256": "a83d32371dd3c3bdf75f5074cb2588980f59daa409c6199a1663c6945ddfa436",
-  "bytes": 26064
-}

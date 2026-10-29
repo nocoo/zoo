@@ -10,7 +10,7 @@ import { pictures } from '../src/content.ts';
 const repository = fileURLToPath(new URL('../', import.meta.url));
 const root = await mkdtemp(join(tmpdir(), 'zoo-expansion-media-'));
 const build = () => spawnSync(process.execPath, [join(repository, 'scripts/build-media.mjs')], { cwd: root, encoding: 'utf8' });
-const outputs = ['src/media.json', 'src/expansion-media.json'];
+const outputs = ['src/media.json'];
 try {
   await mkdir(join(root, 'src'));
   for (const map of ['src/expansion-art.json', 'src/additions-art.json']) {

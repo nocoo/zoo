@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Frog. The frog sits on a lily pad and jumps far and steady.",
-  "rate": "+0%",
-  "sha256": "1428dc0a5b7d51c7318c72faec498d398ddf80a33ef20e7b68e66eccdb601210",
-  "bytes": 31968
-}

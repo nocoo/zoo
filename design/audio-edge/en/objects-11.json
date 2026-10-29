@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Pants",
-  "rate": "+0%",
-  "sha256": "3d45af2c058a85432bf2ece477cc8772175e64823d1931c52d4bd03e1b329c6e",
-  "bytes": 9216
-}

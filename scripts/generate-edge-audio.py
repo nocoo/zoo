@@ -17,42 +17,27 @@ def sha(data):
     return hashlib.sha256(data).hexdigest()
 
 
-BATCHES = {'expansion': ('expansionCategories', 77, 154), 'additions': ('additionCategories', 43, 86)}
-
-
-def load_cards(batch):
+def load_cards():
     source = (
         "import {pictures} from './src/content.ts';"
-        "import {expansionCategories} from './src/expansion.ts';"
-        "import {additionCategories} from './src/additions.ts';"
         "import {audioTranscript,edgeEnglishAudioTranscript} from './src/audio.ts';"
-        "const byId = new Map(pictures.map(p => [p.id, p]));"
-        "const groups = {expansion: expansionCategories, additions: additionCategories};"
-        "const cards = " + (f"{batch['cards']}.flatMap(c => c.cards.map(p => byId.get(p.id)))" if batch else "pictures") + ";"
-        "console.log(JSON.stringify(cards.map(p=>({...p,text:audioTranscript(p),english:edgeEnglishAudioTranscript(p)}))))"
+        "console.log(JSON.stringify(pictures.map(p=>({...p,text:audioTranscript(p),english:edgeEnglishAudioTranscript(p)}))))"
     )
-    cards = json.loads(subprocess.check_output([
+    return json.loads(subprocess.check_output([
         'node', '--experimental-strip-types', '--input-type=module', '-e', source,
     ], cwd=ROOT))
-    ids = [card['id'] for card in cards]
-    if batch and (len(cards) != batch['cards_expected'] or len(set(ids)) != len(cards)):
-        raise ValueError(f"该批次必须为 {batch['cards_expected']} 张且 ID 唯一。")
-    return cards
 
 
-def jobs_for(items, batch):
+def jobs_for(items):
     jobs = []
     for item in items:
         for language in ('zh', 'en'):
-            if not batch:
-                if item.get('category') == 'letters' and language == 'zh':
-                    continue
-                gemini_id = f"en/{item['id']}" if language == 'en' and item.get('category') != 'letters' else item['id']
-                if (ROOT / f'design/audio/{gemini_id}.json').exists():
-                    continue
+            if item.get('category') == 'letters' and language == 'zh':
+                continue
+            gemini_id = f"en/{item['id']}" if language == 'en' and item.get('category') != 'letters' else item['id']
+            if (ROOT / f'design/audio/{gemini_id}.json').exists():
+                continue
             jobs.append((item, language))
-    if batch and len(jobs) != batch['jobs_expected']:
-        raise ValueError(f"该批次录音必须为 {batch['jobs_expected']} 条中英条目。")
     return jobs
 
 
@@ -148,32 +133,17 @@ def with_lock(action):
 
 def main(argv=None):
     parser = argparse.ArgumentParser()
-    selection = parser.add_mutually_exclusive_group()
-    selection.add_argument('--expansion', action='store_true', help='77 expansion cards, both languages, full name plus description')
-    selection.add_argument('--additions', action='store_true', help='43 addition cards, both languages, full name plus description')
     parser.add_argument('--check', action='store_true', help='Validate existing files without network, writes or edge_tts')
     args = parser.parse_args(argv)
-    name = 'additions' if args.additions else 'expansion' if args.expansion else None
-    batch = None
-    if name:
-        cards_source, cards_expected, jobs_expected = BATCHES[name]
-        batch = {'cards': cards_source, 'cards_expected': cards_expected, 'jobs_expected': jobs_expected}
-    items = load_cards(batch)
-    jobs = jobs_for(items, batch)
+    jobs = jobs_for(load_cards())
     if args.check:
         asyncio.run(run_jobs(jobs, True))
-        if batch:
-            print(f"检查通过：{batch['cards_expected']} 张卡片，{batch['jobs_expected']} 条 Edge 录音。", flush=True)
-        else:
-            print('检查通过：现有临时录音与文案一致。', flush=True)
+        print('检查通过：数字与字母的临时录音与文案一致。', flush=True)
         return
 
     def action():
         asyncio.run(run_jobs(jobs, False))
-        if batch:
-            print(f"{batch['cards_expected']} 张卡片的双语录音处理完毕；已有文件未改写。", flush=True)
-        else:
-            print('临时中英文录音补齐，Gemini 文件未改动。', flush=True)
+        print('数字与字母的临时录音已补齐，Gemini 文件未改动。', flush=True)
 
     with_lock(action)
 

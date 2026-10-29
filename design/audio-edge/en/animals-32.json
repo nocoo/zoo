@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Crab. The crab walks sideways and holds up two big claws.",
-  "rate": "+0%",
-  "sha256": "8b6a227fe6dbb7f4f2fe22979cd84589b7a8c7cb8b3d0113773d3a2293b65b46",
-  "bytes": 31248
-}

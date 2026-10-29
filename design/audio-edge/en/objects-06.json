@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Towel",
-  "rate": "+0%",
-  "sha256": "e7d41163e0aa34cf3203bdf46929ad5c574f5d3745e3e9605116a430f615ad27",
-  "bytes": 8640
-}

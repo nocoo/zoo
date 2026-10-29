@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Cracker. A cracker is small and crunches when we bite it.",
-  "rate": "+0%",
-  "sha256": "a1fc98c788e6335de6a11686c7956089201ace36e9941d69d934ddc730d478a3",
-  "bytes": 28800
-}

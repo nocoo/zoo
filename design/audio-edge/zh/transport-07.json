@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "轮船。轮船大大的，在水面上慢慢往前走。",
-  "rate": "+10%",
-  "sha256": "447401f7ac9ebe18f4dc15677542f9053c53e5f71db89ea66357cd950bef0bc3",
-  "bytes": 28368
-}

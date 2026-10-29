@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "餐厅。餐厅里可以坐下来吃饭，服务员会端来饭菜。",
-  "rate": "+10%",
-  "sha256": "3df96f800d9f5eb056fc09e5764338eed13c08f9885b7050394c315c54d0e159",
-  "bytes": 30528
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "钥匙。钥匙插进锁孔一转，门就开了。",
-  "rate": "+10%",
-  "sha256": "86468e44fdee6fc2f6229de0f06a96aebea397baf67d7fd2d31a9c0a3cc428f8",
-  "bytes": 24480
-}

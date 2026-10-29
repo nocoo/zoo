@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Station. A station is where we wait, then get on with a grown-up.",
-  "rate": "+0%",
-  "sha256": "7445e83f7c9c46a81fce3f129d311526cf1074589209aafa67b1d4762c4c77ac",
-  "bytes": 32688
-}

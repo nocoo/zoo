@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Cup",
-  "rate": "+0%",
-  "sha256": "6bd9b87377427adc8d0c268cabbcc7329f9eed33818b1a699f2c776fe7576b72",
-  "bytes": 8352
-}

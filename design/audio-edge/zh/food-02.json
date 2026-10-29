@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "面条。面条长长细细的，盛在碗里热热的。",
-  "rate": "+10%",
-  "sha256": "6aefa500de52cd97ea01009bb63c2f9f1722f6796d033a4ed939115ff0635909",
-  "bytes": 26496
-}

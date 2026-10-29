@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "镜子。镜子亮亮平平的，可以看见自己的小脸。",
-  "rate": "+10%",
-  "sha256": "376b6fabe39ac725bdeb937d81b36fac10bab8eba255b3e2039fca10980d0656",
-  "bytes": 26784
-}

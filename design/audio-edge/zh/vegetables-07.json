@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "西兰花。西兰花绿绿的，头顶像一棵小小树。",
-  "rate": "+10%",
-  "sha256": "131d2505b92218c0cc33feecc85544ce1bd0c9e86875b0817f90aae4bd5f25f8",
-  "bytes": 27792
-}

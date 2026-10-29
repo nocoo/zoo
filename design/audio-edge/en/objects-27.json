@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Lamp. A lamp stands on the table and gives a soft light.",
-  "rate": "+0%",
-  "sha256": "f4f7f61c91cb3766e285d54570ccc4d64c2829f74f34c1219f3adca7bcfe431c",
-  "bytes": 29952
-}

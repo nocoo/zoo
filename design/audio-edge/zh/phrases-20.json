@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "听音乐。听一听，音乐真好听。",
-  "rate": "+10%",
-  "sha256": "0b204bcd0126d0e2f457670c9c5431c7a7e104bb7b2462cb857aa020b54f7df6",
-  "bytes": 21456
-}

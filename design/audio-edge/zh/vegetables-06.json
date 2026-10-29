@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "白菜。白菜叶子一层一层，白白的帮，绿绿的叶。",
-  "rate": "+10%",
-  "sha256": "67d5db8cfafb249967ed465304feca4586db399df76b04dfcdc1a14e01929547",
-  "bytes": 29664
-}

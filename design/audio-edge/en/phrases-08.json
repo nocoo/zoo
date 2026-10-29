@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Go to sleep",
-  "rate": "+0%",
-  "sha256": "5d839795798bad8772be5989fcd393bf0a3a79714ef58206b420308bf77c2c66",
-  "bytes": 10656
-}

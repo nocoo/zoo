@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Read a book",
-  "rate": "+0%",
-  "sha256": "4aa6f5e5fe49c15e03a09aad3cba7e62a6bf17436ea7efab51b5fe92b67442e0",
-  "bytes": 10512
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "粥。米加水慢慢煮，就变成了软软稠稠的粥。",
-  "rate": "+10%",
-  "sha256": "c92a2c3665d48c72081a66299dfb19e0a6429da8f048021149d10514ef71a5b0",
-  "bytes": 27504
-}

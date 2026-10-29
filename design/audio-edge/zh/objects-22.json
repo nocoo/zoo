@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "电话。电话可以传来声音，让我们和远处的人说话。",
-  "rate": "+10%",
-  "sha256": "7a8702c59dee322f93415cc7f94e549eaeab960b792f2c37d6e13015d7a13d6a",
-  "bytes": 28656
-}

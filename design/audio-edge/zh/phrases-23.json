@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "蹲下来。我们慢慢蹲下来。",
-  "rate": "+10%",
-  "sha256": "7cb7f7afc1a28a38eb519e85e65e64db700b2b0161da92c3c2a88e059e30a7a5",
-  "bytes": 18288
-}

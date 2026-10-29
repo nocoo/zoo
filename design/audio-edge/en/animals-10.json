@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Zebra",
-  "rate": "+0%",
-  "sha256": "64a26925b1a0b05b5ae15bf5831128e0ca717ffeaf6100331bb3ef350f27d46d",
-  "bytes": 9216
-}

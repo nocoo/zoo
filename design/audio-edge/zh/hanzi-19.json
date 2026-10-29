@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "牛。小牛哞哞叫，低头吃青草。",
-  "rate": "+10%",
-  "sha256": "bd9caba7eb87dd14683b381b1222e2b1b4be18d35ee48695b916fb8854e648eb",
-  "bytes": 21888
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Dumpling. A dumpling is a little pocket with filling inside a thin skin.",
-  "rate": "+0%",
-  "sha256": "ec64dad1b6048b2710f4765e732a29aa7549de1e9d32c9cdeea0878d7b5e300b",
-  "bytes": 34704
-}

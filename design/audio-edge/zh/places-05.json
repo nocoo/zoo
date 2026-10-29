@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "车站。车站是等车的地方，车来了再和大人上车。",
-  "rate": "+10%",
-  "sha256": "ac55fdb5eaefbaf2f9081bec4adbdde32a2de94deb3b9f0c0ed32c2a5662fe07",
-  "bytes": 30960
-}

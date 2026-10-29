@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "公交车。公交车长长的，停下来让大家上车。",
-  "rate": "+10%",
-  "sha256": "1ffc649fe88ac5a5650b30126077d81e63746f489a0b5c5fe7eced064eb0f0b7",
-  "bytes": 28800
-}

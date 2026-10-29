@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Koala",
-  "rate": "+0%",
-  "sha256": "3632646de75e0a5eda1e551fce2b6e2d01ca9f2a2f07aa214a66915966ad1d75",
-  "bytes": 9504
-}

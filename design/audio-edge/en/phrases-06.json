@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Put on your shoes",
-  "rate": "+0%",
-  "sha256": "c8321bde52baba27a10d36d0e638c3b6e89b7a3b65fc64e37a732b1b6c0f0970",
-  "bytes": 12528
-}

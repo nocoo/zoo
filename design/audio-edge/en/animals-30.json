@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Fish. A little fish swims in the water and wags its tail.",
-  "rate": "+0%",
-  "sha256": "46ce2686313f5563c109c6a6f8baabbf4aeb86b1a4ab701b806ccf4de060f1f9",
-  "bytes": 30528
-}

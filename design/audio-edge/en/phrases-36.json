@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Again please. For a game we enjoy, we can say again please.",
-  "rate": "+0%",
-  "sha256": "c21e33943805148de5849eebaaf347da806d1b6e4d9e0766473502fb65b6fd17",
-  "bytes": 33552
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "绵羊。绵羊的毛卷卷的，像一朵白云。",
-  "rate": "+10%",
-  "sha256": "48c7a4c2dc39f2577bf7d8c022eac716da992c0f075e2819fc25f5ecfaef864d",
-  "bytes": 24624
-}

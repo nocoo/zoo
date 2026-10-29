@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Sun",
-  "rate": "+0%",
-  "sha256": "2ba69ffa3a33052491f325226ab3b0c3da5d221eecf909c59f7013fa1693343a",
-  "bytes": 9072
-}

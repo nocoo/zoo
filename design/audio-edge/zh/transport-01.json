@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "小汽车。小汽车有四个轮子，载着我们出门。",
-  "rate": "+10%",
-  "sha256": "93d680ea6639933cb67b4c765da56025a70a78b6d3c910f739f8be51e4b81c1a",
-  "bytes": 27216
-}

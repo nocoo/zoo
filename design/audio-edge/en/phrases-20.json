@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Listen to music",
-  "rate": "+0%",
-  "sha256": "0c75d92243bd3dc57f95e5af7f48ff31f9e47cb6f44f2eeacc8fe44426e40c0f",
-  "bytes": 12384
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Spoon",
-  "rate": "+0%",
-  "sha256": "fcbcf4ad94855e21861ef63c3476ffada60559b9830e55c169622b4af1cadfb5",
-  "bytes": 9504
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Wake up",
-  "rate": "+0%",
-  "sha256": "f6a4eb4ef00aed172aafd99ad9a8f31b36d7427e61de31efb8536460399715f1",
-  "bytes": 9504
-}

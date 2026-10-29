@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "挖掘机。挖掘机有长长的铁手臂，可以挖土。",
-  "rate": "+10%",
-  "sha256": "50ec628263c66f6cee0b26bff6ab2d98c5f57f5f713b0c6aca92758bbd151aa9",
-  "bytes": 27648
-}

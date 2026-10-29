@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "地铁。地铁在地下跑，到站就会打开车门。",
-  "rate": "+10%",
-  "sha256": "d9ee298e77b4d64fa60e55b23ac50aa142d9ac4a1050efd66582feac470b85f3",
-  "bytes": 27648
-}

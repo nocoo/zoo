@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "柚子。柚子圆圆大大的，皮厚厚的，果肉一瓣一瓣。",
-  "rate": "+10%",
-  "sha256": "8f66dadc4e8e1a4ffe13f99df8a68cdf9ee99b8c970c9a3b2dba708e6e45cc01",
-  "bytes": 30672
-}

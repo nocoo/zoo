@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Eggplant. An eggplant is shiny purple and has a long body.",
-  "rate": "+0%",
-  "sha256": "28ce0ed29a57f80e0f64d5733dec4cad6c199ced419aeb2d75ac2e8f734cb5f3",
-  "bytes": 31680
-}

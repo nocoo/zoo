@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "动物园。动物园里有好多动物，要隔着栏杆看。",
-  "rate": "+10%",
-  "sha256": "b3689c0b7dbcaad93af051daf88b2451ffd266e257452cfa3f4e60b2b98c686d",
-  "bytes": 26928
-}

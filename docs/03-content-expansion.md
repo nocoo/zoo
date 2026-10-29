@@ -29,9 +29,9 @@ Unchanged categories: numbers 30, letters 26, hanzi 20. New animal groups: pig/c
 ## Integrated Media Contracts
 
 - All 77 natives and 154 delivery WebPs are complete and owner-approved. `src/expansion-art.json` preserves their content-versioned thumbnail/full URLs. Raw playable paths live under `/art/expansion/`; `scripts/build-media.mjs` hashes those files alongside the 176 original `/art/hd/` pairs into `src/media.json`. `imageLarge` is the normalized 2048 × 1792 delivery WebP, not the provider PNG. Thumbnails are 640 × 560. Native outputs, exact references, prompts and request records remain under `design/art/expansion/`.
-- Edge 7.3.1 completed 154/154 recordings, committed with `src/expansion-media.json` in `1d7320f`. Voices remain `zh-CN-XiaoxiaoNeural` at `+10%` and `en-US-JennyNeural` at `+0%`. Expansion transcripts are exactly `ZH name。description` and `EN name. description`.
+- Edge 7.3.1 completed 154/154 recordings in `1d7320f`; v1.5.1 replaced them with Gemini and deleted the files along with `src/expansion-media.json`. Voices were `zh-CN-XiaoxiaoNeural` at `+10%` and `en-US-JennyNeural` at `+0%`. Expansion transcripts are exactly `ZH name。description` and `EN name. description`.
 - Original Edge English recordings retain their name-only contract. `edgeEnglishAudioTranscript` is shared by the media builder and normal/expansion Edge modes, so new live cards never accidentally request a short English replacement. Identical files are skipped; mismatches, empty files, bad hashes and orphans fail without overwrite. Normal Edge generation skips existing Gemini recordings independently in both languages.
-- `--expansion` selects exactly the 77 live additions in approved source order, not isolated drafts. Outputs stay in `design/audio-edge/{zh,en}/` and `public/audio-edge/{zh,en}/`. The preserved `src/expansion-media.json` records the Edge inventory; playback and captions use the integrated `src/media.json`.
+- Edge output lived in `design/audio-edge/{zh,en}/` and `public/audio-edge/{zh,en}/`. Only `numbers-1..30` and `en/letters-A..Z` remain there; playback and captions use `src/media.json`.
 - Gemini remains preferred independently for each language. Replacements use the same approved full text, model, voice and styles. `bilingual_jobs` covers all ten non-number/non-alphabet categories: 480 eligible targets for 240 cards, all complete as of 2026-10-29. Numbers and letters remain excluded and keep their Edge recordings.
 - Opening/switching/closing cards stays silent; only language-button clicks play audio. Existing exclusive playback, interruption handling, stable subtitle geometry and at-most-four neighbor image preloads apply to every new card. No runtime TTS, collection audio preload or offline-speech claim is added.
 - Builds and all `--check` commands are offline with respect to speech providers. Keep the shared generation lock, budget ledger, historical cooldown, 20-second Gemini request spacing and first-error stop intact. The opt-in local-cap override does not change provider quotas or authorize a later retry.
@@ -40,7 +40,7 @@ Unchanged categories: numbers 30, letters 26, hanzi 20. New animal groups: pig/c
 
 Copy was approved at `c6344b5` on 2026-10-14. The first authorized Edge 7.2.8 run stopped on `transport-01` Mandarin/English websocket HTTP 403 with 0/154 completed. The application did not retry or schedule later pairs; that library version retried each websocket once internally. Root cause was not established. Zero-byte tmp files and the original log remain under `artifacts/expansion-audio/failed-first-pair/{zh,en}/` and `artifacts/expansion-audio/generation.log`.
 
-The fresh owner-authorized 2026-10-15 Edge 7.3.1 run completed all 154. This supersedes the earlier generation hold, not preservation rules. For similar failures, inspect the maintained client's latest release and use an explicitly authorized bounded probe before prolonged stale-version troubleshooting. Do not bypass endpoints, credentials, quotas or required owner approval. No further Edge generation is needed.
+The fresh owner-authorized 2026-10-15 Edge 7.3.1 run completed all 154, later superseded by Gemini in v1.5.1. For similar failures, inspect the maintained client's latest release and use an explicitly authorized bounded probe before prolonged stale-version troubleshooting. Do not bypass endpoints, credentials, quotas or required owner approval. No further Edge generation is needed.
 
 Illustration generation used Workflow Azure `gpt-image-2.5-sunburst`, native 2048 × 1792, existing-card style, at most three in-flight and 40 seconds between starts, without automatic retries. The 2026-10-14 run stopped at 46/77; `places-05` timed out after 612.72 seconds. On 2026-10-15 the owner authorized the 30 never-requested images, then one manual retry each of timeout `places-05` and `animals-22` plus the remaining eleven. `animals-22` first timed out after 602.66 seconds. The day added 31 originals (18 then 13); retry-13 exited 0. Failed attempt records, original paths and SHA-256 manifest remain under `design/art/expansion/attempts/2026-10-15-authorized-retry`. Prior 64 deliveries stayed SHA-256 identical. No active pending or outcome-unknown image remains.
 
@@ -56,9 +56,7 @@ npm run build
 node scripts/check-pwa.mjs
 node --experimental-strip-types scripts/check-audio-player.ts
 python3 -B scripts/check-audio-schedule.py
-python3 -B scripts/check-edge-expansion.py
 python3 -B scripts/generate-edge-audio.py --check
-python3 -B scripts/generate-edge-audio.py --check --expansion
 python3 -B scripts/generate-audio.py --check --bilingual-day --until-provider-error
 ```
 

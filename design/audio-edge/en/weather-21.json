@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Ocean. The ocean is blue, and little waves tap the shore.",
-  "rate": "+0%",
-  "sha256": "7bcf1df5095793ffa02c98e186fb9f6db90f20ae89dd89a1b08731cc0b3406f0",
-  "bytes": 31536
-}
