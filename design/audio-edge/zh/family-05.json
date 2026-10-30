@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "宝宝。宝宝小小的，大家都爱他。",
+  "rate": "+10%",
+  "sha256": "1575ac8b30e5c2ddf760f7557ed3c2af740461da9b0fc2379691d059352d2b42",
+  "bytes": 21600
+}

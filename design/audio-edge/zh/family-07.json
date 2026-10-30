@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "姐姐。姐姐教我画画。",
+  "rate": "+10%",
+  "sha256": "b6bff2931ec61d9ff9bbffb9a45fc1fe18cb03e37922232c4f82835bd085960f",
+  "bytes": 16416
+}

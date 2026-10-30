@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "星形。星形有五个尖尖的角。",
+  "rate": "+10%",
+  "sha256": "016794ddd949a827acb249655c880e30b285a9da90d87b5ac3ab662042633584",
+  "bytes": 20448
+}

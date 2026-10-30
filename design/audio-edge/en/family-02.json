@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Dad. Dad lifts me up high.",
+  "rate": "+0%",
+  "sha256": "359fe2985b687713afab0ce0808b120dcbc25ba4ca153423e028d6f65d914015",
+  "bytes": 21744
+}

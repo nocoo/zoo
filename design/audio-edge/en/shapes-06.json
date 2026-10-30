@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Star. A star has five pointed corners.",
+  "rate": "+0%",
+  "sha256": "d53d487fcf09b2b0aa3baf8844e177d19ff886d6d9fa31363c270ae2edb08ea8",
+  "bytes": 26352
+}

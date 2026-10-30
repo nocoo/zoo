@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Square. A square has four sides the same length.",
+  "rate": "+0%",
+  "sha256": "cc721f7fad61e1a597f9a8073bf8664d3d53eb11c68e423eb04b7c0e3351a890",
+  "bytes": 27504
+}

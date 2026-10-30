@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "三角形。三角形有三条边三个角。",
+  "rate": "+10%",
+  "sha256": "6694cbe44f4fd83be0f35f5a10d362e716da28966cadd1c26c524b4d13f9c7fb",
+  "bytes": 23184
+}

@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "正方形。正方形四条边一样长。",
+  "rate": "+10%",
+  "sha256": "9d54ee7d446152d16aa9ee747f957283533c3cd0741f71e01881c114e1b5b88c",
+  "bytes": 21744
+}

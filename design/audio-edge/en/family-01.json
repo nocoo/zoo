@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Mom. Mom gives hugs and plays with me.",
+  "rate": "+0%",
+  "sha256": "eeb30054ff88d896976c0fb4a758aebf9a5465b97c062ba37c5131d66ccfcb7a",
+  "bytes": 24336
+}

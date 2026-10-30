@@ -13,7 +13,7 @@ const build = () => spawnSync(process.execPath, [join(repository, 'scripts/build
 const outputs = ['src/media.json'];
 try {
   await mkdir(join(root, 'src'));
-  for (const map of ['src/expansion-art.json', 'src/additions-art.json']) {
+  for (const map of ['src/expansion-art.json', 'src/additions-art.json', 'src/foundations-art.json']) {
     await copyFile(join(repository, map), join(root, map));
   }
   for (const path of pictures.flatMap(picture => [picture.image, picture.imageLarge])) {

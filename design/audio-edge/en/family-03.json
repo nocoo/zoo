@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Grandpa. Grandpa holds my hand and walks slowly with me.",
+  "rate": "+0%",
+  "sha256": "cd0371eb6df88cfc5dbb3d3bcad756a7d183315d0aba39172f2c1565385d8911",
+  "bytes": 28800
+}

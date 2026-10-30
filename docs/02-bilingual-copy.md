@@ -1,6 +1,6 @@
 # Bilingual Copy Approval Ledger
 
-Status: 2026-10-29: every eligible Gemini recording is complete — 480/480 for the 240 non-number/non-alphabet cards, including all 77 expansion cards and the 43 cards added on 2026-10-23. The last 91 clips finished in one sequential run with no errors; the batch used 91 of 100 local attempts and emptied the queue. Commit `ada8689`; `npm run check` and `npm run build` pass. v1.5.1 (`6d02fd5`) is deployed; exact-revision CI [40874646579](https://github.com/nocoo/zoo/actions/runs/40874646579) passed and `/api/live` reports version `1.5.1`. Numbers and letters remain excluded and keep their Edge recordings. The approved copy below is unchanged.
+Status: 2026-10-30: 321 cards across 15 categories. 491/530 eligible recordings are Gemini; the 39 temporary Edge clips cover the English takes for the new colors, shapes and family categories plus 14 Mandarin clips awaiting a supported Gemini egress region. The new categories are catalogued in `04-basic-categories.md`; this ledger keeps the copy of the cards that existed before them. Numbers and letters remain excluded.
 
 ## Reading Contract
 
@@ -12,7 +12,7 @@ Status: 2026-10-29: every eligible Gemini recording is complete — 480/480 for 
 
 ## Totals
 
-253 cards in the original and expansion scope; 480 unique Gemini targets; 480 complete locally with zero eligible pending and zero excluded number/alphabet targets awaiting Gemini. Every card retains both playback URLs.
+253 cards in the original and expansion scope; 480 unique Gemini targets, all complete locally. The 25 basic-category cards added on 2026-10-30 bring the library to 321 cards and 530 targets. Every card retains both playback URLs.
 
 ## 动物朋友 (20)
 

@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Diamond. A diamond shape looks like a little kite.",
+  "rate": "+0%",
+  "sha256": "60eff5ef520797814480264138ea7b432b49262c69e3286dcb57b2591769490c",
+  "bytes": 27360
+}

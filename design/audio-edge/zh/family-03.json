@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "爷爷。爷爷牵着我的手慢慢走。",
+  "rate": "+10%",
+  "sha256": "b62626be24513e0825e02163e84d83169ba9cdac9daf0be773501947bbdff3aa",
+  "bytes": 20448
+}

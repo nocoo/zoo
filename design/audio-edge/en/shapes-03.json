@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Triangle. A triangle has three sides and three corners.",
+  "rate": "+0%",
+  "sha256": "f03e84858e9bee019f2ac2fbf42f619507cd5ec6d506b2460a2da75c432c3e0e",
+  "bytes": 31104
+}

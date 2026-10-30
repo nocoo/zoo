@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "心形。心形像一颗爱心。",
+  "rate": "+10%",
+  "sha256": "3b88f3161bec5edbf9325689ee03a89a895f0a3b802c7b22850a74b2fb65f77a",
+  "bytes": 18576
+}

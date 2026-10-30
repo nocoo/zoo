@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Baby. The baby is little and everyone loves him.",
+  "rate": "+0%",
+  "sha256": "8e209246dd1397bd45afe830a57084c18e94f405fdd111706aaa136b5ff9c8d8",
+  "bytes": 27216
+}

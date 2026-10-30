@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Red. Red is bright like a little apple.",
+  "rate": "+0%",
+  "sha256": "e135cbd0bcc975aed8e52c9442e73c344297c70eb2d88ffd2fa4da91542a79f3",
+  "bytes": 24336
+}

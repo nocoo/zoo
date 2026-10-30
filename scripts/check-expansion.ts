@@ -4,6 +4,7 @@ import { createHash } from 'node:crypto';
 import { pictures } from '../src/content.ts';
 import { expansionCategories } from '../src/expansion.ts';
 import { additionCategories } from '../src/additions.ts';
+import { foundationCategories } from '../src/foundations.ts';
 
 const expected = [
   { id: 'transport', name: '交通工具', kind: 'new', start: 1, names: ['小汽车', '公交车', '自行车', '火车', '地铁', '飞机', '轮船', '消防车', '救护车', '挖掘机'] },
@@ -52,7 +53,8 @@ assert.equal(expansionCategories.filter(category => category.kind === 'new').fla
 assert.equal(expansionCategories.filter(category => category.kind === 'existing').flatMap(category => category.cards).length, 40);
 
 const additionIds = additionCategories.flatMap(category => category.cards.map(card => card.id));
-const legacy = pictures.filter(picture => !expansionIds.includes(picture.id) && !additionIds.includes(picture.id));
+const foundationIds = foundationCategories.flatMap(category => category.cards.map(card => card.id));
+const legacy = pictures.filter(picture => !expansionIds.includes(picture.id) && !additionIds.includes(picture.id) && !foundationIds.includes(picture.id));
 assert.equal(legacy.length, 176);
 const legacyIds = new Set(legacy.map(picture => picture.id));
 const legacyNames = new Set(legacy.map(picture => picture.name));

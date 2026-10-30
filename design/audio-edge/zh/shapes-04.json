@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "长方形。长方形有两组长边和短边。",
+  "rate": "+10%",
+  "sha256": "e8e40ca3cacb005c412d901f1e19c7756b53c8e8ed7ee472ad8a4076eeffbc9f",
+  "bytes": 25056
+}

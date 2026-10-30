@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Grandma. Grandma's cooking smells yummy.",
+  "rate": "+0%",
+  "sha256": "1bc4a3715e91e2e1982f43e3e24cac00ccad7cc6b2d07c0231f8c35e08de512c",
+  "bytes": 24192
+}

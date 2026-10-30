@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Purple. Purple is like a little bunch of grapes.",
+  "rate": "+0%",
+  "sha256": "b5b6729c8ffbbc184ef16b54b5ec3a2f7ca6e7e29d103fb96f17e1d2382984ef",
+  "bytes": 26496
+}

@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Yellow. Yellow is warm like a little duckling.",
+  "rate": "+0%",
+  "sha256": "24456b8fb773d91d80f82cde9505f4df971a3e15fa39f99ca4906829b2f5bf67",
+  "bytes": 26352
+}

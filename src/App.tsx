@@ -2,7 +2,7 @@ import { Button, Modal } from 'animal-island-ui';
 import {
   AppleIcon, BearIcon, BookIcon, CarIcon, ChatIcon, DonutIcon, LocationIcon,
   CheckIcon, ChevronRightIcon, FlowerIcon, HeartIcon, HomeIcon, LeafIcon,
-  MusicIcon, PlayIcon, SettingsIcon, StarIcon, SunIcon,
+  MusicIcon, PlayIcon, RainbowIcon, SettingsIcon, StarIcon, SunIcon, UserIcon,
 } from 'naive-icons';
 import { animalGroups, categories } from './content';
 import { useIsland } from './useIsland';
@@ -10,7 +10,8 @@ import { Illustration } from './Illustration';
 import { PictureViewer } from './PictureViewer';
 
 const categoryIcons = {
-  animals: BearIcon, numbers: StarIcon, letters: BookIcon, hanzi: BookIcon,
+  animals: BearIcon, numbers: StarIcon, letters: BookIcon,
+  colors: RainbowIcon, shapes: HeartIcon, family: UserIcon, hanzi: BookIcon,
   phrases: ChatIcon, weather: SunIcon, objects: HomeIcon, fruits: AppleIcon,
   transport: CarIcon, vegetables: LeafIcon, food: DonutIcon, places: LocationIcon,
 };

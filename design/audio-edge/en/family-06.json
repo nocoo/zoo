@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Big brother. My big brother holds my hand and we play together.",
+  "rate": "+0%",
+  "sha256": "823d05d83e1c66d7b5712a7f0df966ef8fbdfd57fa4afe03e9f80344c9a38065",
+  "bytes": 30816
+}

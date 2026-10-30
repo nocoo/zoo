@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "哥哥。哥哥牵着我的手，一起玩。",
+  "rate": "+10%",
+  "sha256": "f4405d726ec3e32726a1694e0726afe70605b4e065e0bc8151a777c78e04a2e2",
+  "bytes": 21744
+}

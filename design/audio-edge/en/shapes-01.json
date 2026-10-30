@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Circle. A circle is round like a ball.",
+  "rate": "+0%",
+  "sha256": "88cea9c3af8317f3865c52aaf9fb865a25030501f5903c774c995f21f50f5167",
+  "bytes": 25200
+}

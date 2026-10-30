@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Heart. A heart shape looks like a loving heart.",
+  "rate": "+0%",
+  "sha256": "d62b91454f1b62b3e1a01d3edb1af5507452e73774723dec51cb746cdd708661",
+  "bytes": 26208
+}

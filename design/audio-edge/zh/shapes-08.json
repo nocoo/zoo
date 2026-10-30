@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "菱形。菱形像小风筝。",
+  "rate": "+10%",
+  "sha256": "52e3d60fa6c02c104ae67ea58b35df7929d69a5b0cabbcda54a83818497c9eed",
+  "bytes": 17424
+}

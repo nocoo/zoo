@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "爸爸。爸爸把我举得高高的。",
+  "rate": "+10%",
+  "sha256": "18ec7fd9d6925991a888eff6c9796eac44d521aed8991ddaa14d6e35e03c1969",
+  "bytes": 19296
+}

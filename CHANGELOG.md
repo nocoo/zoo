@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.6.0 - 2026-10-30
+
+- Add three basic-cognition categories for 25 new cards, bringing the library to 321 cards across 15: 认识颜色 (红黄蓝绿橙紫粉黑白棕), 认识形状 (圆形、正方形、三角形、长方形、椭圆形、星形、心形、菱形) and 我的家人 (妈妈、爸爸、爷爷、奶奶、宝宝、哥哥、姐姐). They sit before 汉字宝宝 so number, letter, color, shape and family recognition read as one foundation group.
+- Draw all 25 illustrations with the approved `gpt-image-2.5-sunburst` reference-edit pipeline at native 2048 x 1792 plus 640 x 560 thumbnails, delivered to `public/art/foundations/` with map `src/foundations-art.json`. The owner reviewed one sample per category before the fan-out. White carries a warm-grey outline so it stays visible on the cream paper, and each shape card pairs the geometric hero with one real object of that shape.
+- Add 50 recordings, one Mandarin and one English per card. 11 are Gemini/Sulafat; the other 39 were filled with Edge TTS after the provider returned HTTP 429 (Tier 1, 100 requests/day) for the shared quota and then HTTP 400 for the current egress region. The Edge takes stay temporary and can be replaced by Gemini later without changing transcripts.
+- Extend the content, audio, art and check tooling to the new categories: category icons, the Gemini job order, the Edge English transcript set, the art-map validation and the exact-count assertions. `process.py` gains `--dir` and now restores paper corners on native-size full images, which previously skipped LANCZOS resampling.
+- Give `/art/expansion/` and `/art/foundations/` the same one-year immutable cache rule that `/art/hd/` already had.
+
 ## v1.5.1 - 2026-10-29
 
 - Replace the last 91 temporary Edge narrations with approved-style Gemini/Sulafat recordings: the 43 Mandarin and 43 English clips for the cards added on 2026-10-23, plus `en/places-04`..`08`. Eligible Gemini coverage reaches 480/480 with no pending slot.

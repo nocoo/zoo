@@ -240,6 +240,56 @@
     "/art/expansion/weather-28-thumb.webp": "/art/expansion/weather-28-thumb.webp?v=f81103b1cd0191c8",
     "/art/expansion/weather-29-full.webp": "/art/expansion/weather-29-full.webp?v=2f95360f35b811c7",
     "/art/expansion/weather-29-thumb.webp": "/art/expansion/weather-29-thumb.webp?v=4654b6ce6a238c26",
+    "/art/foundations/colors-01-full.webp": "/art/foundations/colors-01-full.webp?v=73c55dcfb3f84300",
+    "/art/foundations/colors-01-thumb.webp": "/art/foundations/colors-01-thumb.webp?v=a7a33d4f083976de",
+    "/art/foundations/colors-02-full.webp": "/art/foundations/colors-02-full.webp?v=648031c6dc0cd36e",
+    "/art/foundations/colors-02-thumb.webp": "/art/foundations/colors-02-thumb.webp?v=1f0b0f3ba6792eb0",
+    "/art/foundations/colors-03-full.webp": "/art/foundations/colors-03-full.webp?v=a2ac888adf874f47",
+    "/art/foundations/colors-03-thumb.webp": "/art/foundations/colors-03-thumb.webp?v=8012f3cf699340f1",
+    "/art/foundations/colors-04-full.webp": "/art/foundations/colors-04-full.webp?v=921699ce2a6e2394",
+    "/art/foundations/colors-04-thumb.webp": "/art/foundations/colors-04-thumb.webp?v=2f36e811c7742828",
+    "/art/foundations/colors-05-full.webp": "/art/foundations/colors-05-full.webp?v=9c3fa3a261d8b22f",
+    "/art/foundations/colors-05-thumb.webp": "/art/foundations/colors-05-thumb.webp?v=0f9d8f171cdb7001",
+    "/art/foundations/colors-06-full.webp": "/art/foundations/colors-06-full.webp?v=ff1fc88ce35d5942",
+    "/art/foundations/colors-06-thumb.webp": "/art/foundations/colors-06-thumb.webp?v=5953288dcb89f097",
+    "/art/foundations/colors-07-full.webp": "/art/foundations/colors-07-full.webp?v=b5cb658a89ec7c03",
+    "/art/foundations/colors-07-thumb.webp": "/art/foundations/colors-07-thumb.webp?v=1f6492aeeba7a53f",
+    "/art/foundations/colors-08-full.webp": "/art/foundations/colors-08-full.webp?v=c578b1e33710c5f4",
+    "/art/foundations/colors-08-thumb.webp": "/art/foundations/colors-08-thumb.webp?v=4a11877443614dcd",
+    "/art/foundations/colors-09-full.webp": "/art/foundations/colors-09-full.webp?v=1f639c91ac662787",
+    "/art/foundations/colors-09-thumb.webp": "/art/foundations/colors-09-thumb.webp?v=b7882cc968df4b8e",
+    "/art/foundations/colors-10-full.webp": "/art/foundations/colors-10-full.webp?v=782caddee567d033",
+    "/art/foundations/colors-10-thumb.webp": "/art/foundations/colors-10-thumb.webp?v=81ebab722448e49c",
+    "/art/foundations/family-01-full.webp": "/art/foundations/family-01-full.webp?v=8b73797c39dc8e4c",
+    "/art/foundations/family-01-thumb.webp": "/art/foundations/family-01-thumb.webp?v=759d836e4da7f0d8",
+    "/art/foundations/family-02-full.webp": "/art/foundations/family-02-full.webp?v=dc4f79d0962587cb",
+    "/art/foundations/family-02-thumb.webp": "/art/foundations/family-02-thumb.webp?v=7253d294751e8934",
+    "/art/foundations/family-03-full.webp": "/art/foundations/family-03-full.webp?v=8759397abf206e4e",
+    "/art/foundations/family-03-thumb.webp": "/art/foundations/family-03-thumb.webp?v=2b0f00b1a53e21c4",
+    "/art/foundations/family-04-full.webp": "/art/foundations/family-04-full.webp?v=34d7587b6e32f021",
+    "/art/foundations/family-04-thumb.webp": "/art/foundations/family-04-thumb.webp?v=0f9c7ca2ee87727c",
+    "/art/foundations/family-05-full.webp": "/art/foundations/family-05-full.webp?v=5b8a5325b53e01be",
+    "/art/foundations/family-05-thumb.webp": "/art/foundations/family-05-thumb.webp?v=c4768cc22ef37fe2",
+    "/art/foundations/family-06-full.webp": "/art/foundations/family-06-full.webp?v=3ac81750a345d863",
+    "/art/foundations/family-06-thumb.webp": "/art/foundations/family-06-thumb.webp?v=54c961265b25aa9c",
+    "/art/foundations/family-07-full.webp": "/art/foundations/family-07-full.webp?v=9807c407386c867d",
+    "/art/foundations/family-07-thumb.webp": "/art/foundations/family-07-thumb.webp?v=d5a291c00f54b307",
+    "/art/foundations/shapes-01-full.webp": "/art/foundations/shapes-01-full.webp?v=fea2106f805d1876",
+    "/art/foundations/shapes-01-thumb.webp": "/art/foundations/shapes-01-thumb.webp?v=4944d32e39edbdd3",
+    "/art/foundations/shapes-02-full.webp": "/art/foundations/shapes-02-full.webp?v=077e9374493fbc72",
+    "/art/foundations/shapes-02-thumb.webp": "/art/foundations/shapes-02-thumb.webp?v=9f6de48f4b5ef9fa",
+    "/art/foundations/shapes-03-full.webp": "/art/foundations/shapes-03-full.webp?v=cc9cdd2365f24bf7",
+    "/art/foundations/shapes-03-thumb.webp": "/art/foundations/shapes-03-thumb.webp?v=eb42766ca58d631e",
+    "/art/foundations/shapes-04-full.webp": "/art/foundations/shapes-04-full.webp?v=da4f51c342477ac1",
+    "/art/foundations/shapes-04-thumb.webp": "/art/foundations/shapes-04-thumb.webp?v=db3857774585e5bd",
+    "/art/foundations/shapes-05-full.webp": "/art/foundations/shapes-05-full.webp?v=67a3480d48d0755d",
+    "/art/foundations/shapes-05-thumb.webp": "/art/foundations/shapes-05-thumb.webp?v=d780e755ed2fb087",
+    "/art/foundations/shapes-06-full.webp": "/art/foundations/shapes-06-full.webp?v=9a412144bafbccd1",
+    "/art/foundations/shapes-06-thumb.webp": "/art/foundations/shapes-06-thumb.webp?v=c6834fc86ea19ec6",
+    "/art/foundations/shapes-07-full.webp": "/art/foundations/shapes-07-full.webp?v=95c2d27bce3c9c37",
+    "/art/foundations/shapes-07-thumb.webp": "/art/foundations/shapes-07-thumb.webp?v=9d6949c200c3d6ef",
+    "/art/foundations/shapes-08-full.webp": "/art/foundations/shapes-08-full.webp?v=f19e868218af5ebe",
+    "/art/foundations/shapes-08-thumb.webp": "/art/foundations/shapes-08-thumb.webp?v=11a7c8b71fe15b08",
     "/art/hd/animals-01-full.webp": "/art/hd/animals-01-full.webp?v=e49862d262d44e4d",
     "/art/hd/animals-01-thumb.webp": "/art/hd/animals-01-thumb.webp?v=d2027d1610cd2722",
     "/art/hd/animals-02-full.webp": "/art/hd/animals-02-full.webp?v=8b989a95fcbe98c0",
@@ -1297,6 +1347,106 @@
     "letters-Z": {
       "zh": "/audio-edge/en/letters-Z.mp3?v=8105f75b36af91de",
       "en": "/audio-edge/en/letters-Z.mp3?v=8105f75b36af91de"
+    },
+    "colors-01": {
+      "zh": "/audio/colors-01.mp3?v=2701b848983db7d2",
+      "en": "/audio-edge/en/colors-01.mp3?v=e135cbd0bcc975ae"
+    },
+    "colors-02": {
+      "zh": "/audio/colors-02.mp3?v=97e6324f183384ba",
+      "en": "/audio-edge/en/colors-02.mp3?v=24456b8fb773d91d"
+    },
+    "colors-03": {
+      "zh": "/audio/colors-03.mp3?v=a452c069a41265eb",
+      "en": "/audio-edge/en/colors-03.mp3?v=15bb47df190746a4"
+    },
+    "colors-04": {
+      "zh": "/audio/colors-04.mp3?v=58d0a370be70d138",
+      "en": "/audio-edge/en/colors-04.mp3?v=32135b244302c902"
+    },
+    "colors-05": {
+      "zh": "/audio/colors-05.mp3?v=92b291ec9aa85ccd",
+      "en": "/audio-edge/en/colors-05.mp3?v=969e1e6c672f9fb3"
+    },
+    "colors-06": {
+      "zh": "/audio/colors-06.mp3?v=7a8001b536b13225",
+      "en": "/audio-edge/en/colors-06.mp3?v=b5b6729c8ffbbc18"
+    },
+    "colors-07": {
+      "zh": "/audio/colors-07.mp3?v=b0fce3dcbd7218ae",
+      "en": "/audio-edge/en/colors-07.mp3?v=fdbf9127f764cbbc"
+    },
+    "colors-08": {
+      "zh": "/audio/colors-08.mp3?v=10502594a9a689e0",
+      "en": "/audio-edge/en/colors-08.mp3?v=6a2e423dced1e846"
+    },
+    "colors-09": {
+      "zh": "/audio/colors-09.mp3?v=6e064796d7eed6c1",
+      "en": "/audio-edge/en/colors-09.mp3?v=2af7bfe513d65a47"
+    },
+    "colors-10": {
+      "zh": "/audio/colors-10.mp3?v=e3cbc3ab484539f9",
+      "en": "/audio-edge/en/colors-10.mp3?v=a9d7beb7805cfd52"
+    },
+    "shapes-01": {
+      "zh": "/audio/shapes-01.mp3?v=511e99e3cb65fe8d",
+      "en": "/audio-edge/en/shapes-01.mp3?v=88cea9c3af8317f3"
+    },
+    "shapes-02": {
+      "zh": "/audio-edge/zh/shapes-02.mp3?v=9d54ee7d446152d1",
+      "en": "/audio-edge/en/shapes-02.mp3?v=cc721f7fad61e1a5"
+    },
+    "shapes-03": {
+      "zh": "/audio-edge/zh/shapes-03.mp3?v=6694cbe44f4fd83b",
+      "en": "/audio-edge/en/shapes-03.mp3?v=f03e84858e9bee01"
+    },
+    "shapes-04": {
+      "zh": "/audio-edge/zh/shapes-04.mp3?v=e8e40ca3cacb005c",
+      "en": "/audio-edge/en/shapes-04.mp3?v=ca32509c454eab2a"
+    },
+    "shapes-05": {
+      "zh": "/audio-edge/zh/shapes-05.mp3?v=7008738ffed0b2ab",
+      "en": "/audio-edge/en/shapes-05.mp3?v=8967bb2a8c8debdf"
+    },
+    "shapes-06": {
+      "zh": "/audio-edge/zh/shapes-06.mp3?v=016794ddd949a827",
+      "en": "/audio-edge/en/shapes-06.mp3?v=d53d487fcf09b2b0"
+    },
+    "shapes-07": {
+      "zh": "/audio-edge/zh/shapes-07.mp3?v=3b88f3161bec5edb",
+      "en": "/audio-edge/en/shapes-07.mp3?v=d62b91454f1b62b3"
+    },
+    "shapes-08": {
+      "zh": "/audio-edge/zh/shapes-08.mp3?v=52e3d60fa6c02c10",
+      "en": "/audio-edge/en/shapes-08.mp3?v=60eff5ef52079781"
+    },
+    "family-01": {
+      "zh": "/audio-edge/zh/family-01.mp3?v=b085fecede6e5da3",
+      "en": "/audio-edge/en/family-01.mp3?v=eeb30054ff88d896"
+    },
+    "family-02": {
+      "zh": "/audio-edge/zh/family-02.mp3?v=18ec7fd9d6925991",
+      "en": "/audio-edge/en/family-02.mp3?v=359fe2985b687713"
+    },
+    "family-03": {
+      "zh": "/audio-edge/zh/family-03.mp3?v=b62626be24513e08",
+      "en": "/audio-edge/en/family-03.mp3?v=cd0371eb6df88cfc"
+    },
+    "family-04": {
+      "zh": "/audio-edge/zh/family-04.mp3?v=977f332fd9733f3c",
+      "en": "/audio-edge/en/family-04.mp3?v=1bc4a3715e91e2e1"
+    },
+    "family-05": {
+      "zh": "/audio-edge/zh/family-05.mp3?v=1575ac8b30e5c2dd",
+      "en": "/audio-edge/en/family-05.mp3?v=8e209246dd1397bd"
+    },
+    "family-06": {
+      "zh": "/audio-edge/zh/family-06.mp3?v=f4405d726ec3e327",
+      "en": "/audio-edge/en/family-06.mp3?v=823d05d83e1c66d7"
+    },
+    "family-07": {
+      "zh": "/audio-edge/zh/family-07.mp3?v=b6bff2931ec61d9f",
+      "en": "/audio-edge/en/family-07.mp3?v=6e520bfd43cbaab9"
     },
     "transport-01": {
       "zh": "/audio/transport-01.mp3?v=fa5897004ef73555",
@@ -2483,6 +2633,106 @@
     "letters-Z": {
       "zh": "Z",
       "en": "Z"
+    },
+    "colors-01": {
+      "zh": "红色。红色像小苹果一样鲜艳。",
+      "en": "Red. Red is bright like a little apple."
+    },
+    "colors-02": {
+      "zh": "黄色。黄色像小鸭子一样温暖。",
+      "en": "Yellow. Yellow is warm like a little duckling."
+    },
+    "colors-03": {
+      "zh": "蓝色。蓝色像天空和大海。",
+      "en": "Blue. Blue is the color of the sky and the sea."
+    },
+    "colors-04": {
+      "zh": "绿色。绿色像小草和树叶。",
+      "en": "Green. Green is the color of grass and leaves."
+    },
+    "colors-05": {
+      "zh": "橙色。橙色像甜甜的橙子。",
+      "en": "Orange. Orange is the color of a sweet orange."
+    },
+    "colors-06": {
+      "zh": "紫色。紫色像一串小葡萄。",
+      "en": "Purple. Purple is like a little bunch of grapes."
+    },
+    "colors-07": {
+      "zh": "粉色。粉色像软软的花瓣。",
+      "en": "Pink. Pink is soft like flower petals."
+    },
+    "colors-08": {
+      "zh": "黑色。黑色像夜晚的天空。",
+      "en": "Black. Black is like the night sky."
+    },
+    "colors-09": {
+      "zh": "白色。白色像棉花和雪花。",
+      "en": "White. White is like cotton and snowflakes."
+    },
+    "colors-10": {
+      "zh": "棕色。棕色像大树的树干。",
+      "en": "Brown. Brown is like the trunk of a big tree."
+    },
+    "shapes-01": {
+      "zh": "圆形。圆形像皮球一样圆滚滚。",
+      "en": "Circle. A circle is round like a ball."
+    },
+    "shapes-02": {
+      "zh": "正方形。正方形四条边一样长。",
+      "en": "Square. A square has four sides the same length."
+    },
+    "shapes-03": {
+      "zh": "三角形。三角形有三条边三个角。",
+      "en": "Triangle. A triangle has three sides and three corners."
+    },
+    "shapes-04": {
+      "zh": "长方形。长方形有两组长边和短边。",
+      "en": "Rectangle. A rectangle has two long sides and two short sides."
+    },
+    "shapes-05": {
+      "zh": "椭圆形。椭圆形像鸡蛋一样。",
+      "en": "Oval. An oval looks like an egg."
+    },
+    "shapes-06": {
+      "zh": "星形。星形有五个尖尖的角。",
+      "en": "Star. A star has five pointed corners."
+    },
+    "shapes-07": {
+      "zh": "心形。心形像一颗爱心。",
+      "en": "Heart. A heart shape looks like a loving heart."
+    },
+    "shapes-08": {
+      "zh": "菱形。菱形像小风筝。",
+      "en": "Diamond. A diamond shape looks like a little kite."
+    },
+    "family-01": {
+      "zh": "妈妈。妈妈会抱抱我，也会陪我玩。",
+      "en": "Mom. Mom gives hugs and plays with me."
+    },
+    "family-02": {
+      "zh": "爸爸。爸爸把我举得高高的。",
+      "en": "Dad. Dad lifts me up high."
+    },
+    "family-03": {
+      "zh": "爷爷。爷爷牵着我的手慢慢走。",
+      "en": "Grandpa. Grandpa holds my hand and walks slowly with me."
+    },
+    "family-04": {
+      "zh": "奶奶。奶奶做的饭菜香香的。",
+      "en": "Grandma. Grandma's cooking smells yummy."
+    },
+    "family-05": {
+      "zh": "宝宝。宝宝小小的，大家都爱他。",
+      "en": "Baby. The baby is little and everyone loves him."
+    },
+    "family-06": {
+      "zh": "哥哥。哥哥牵着我的手，一起玩。",
+      "en": "Big brother. My big brother holds my hand and we play together."
+    },
+    "family-07": {
+      "zh": "姐姐。姐姐教我画画。",
+      "en": "Big sister. My big sister teaches me to draw."
     },
     "transport-01": {
       "zh": "小汽车。小汽车有四个轮子，载着我们出门。",

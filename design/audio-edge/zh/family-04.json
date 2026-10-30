@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "奶奶。奶奶做的饭菜香香的。",
+  "rate": "+10%",
+  "sha256": "977f332fd9733f3c70b2a9668c904ec27d84fbf9dcb9e16ef665bde7070bb772",
+  "bytes": 19872
+}

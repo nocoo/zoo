@@ -1,6 +1,6 @@
 # Bilingual Gemini Narration
 
-Status: 2026-10-29, complete. All 480 eligible Gemini recordings are finished â€” 240 Mandarin plus 240 English for every non-number/non-alphabet card. The owner asked to continue the queue in order until the day's budget was spent; the 2026-10-24 15:00 cooldown had elapsed, so plain `--bilingual-day` ran with the 100-attempt local ceiling as the stop rule. It completed the remaining 91 clips (43 Mandarin and 43 English for the 2026-10-23 additions, plus `en/places-04`..`08`) in one sequential pass with no errors, using 91 of 100 attempts and emptying the queue. Commit `ada8689`; `npm run check` and `npm run build` pass. v1.5.1 (`6d02fd5`) is deployed; exact-revision CI [40874646579](https://github.com/nocoo/zoo/actions/runs/40874646579) passed and `/api/live` reports version `1.5.1`. The release also deleted the 521 Edge clips these recordings replaced. The 2026-10-23 quota stop is kept below as history.
+Status: 2026-10-30. Eligible scope grew to 530 recordings for 265 non-number/non-alphabet cards after the colors, shapes and family categories were added. 491 are complete Gemini/Sulafat takes. The remaining 39 - all 25 English clips for the new categories plus 14 Mandarin clips (shapes-02..08, family-01..07) - play from temporary Edge recordings. Gemini refused them twice: HTTP 429 for the shared Tier 1 quota of 100 requests/day, then HTTP 400 because the current egress region is not supported. No retry, model fallback, credential change or timer followed. Replacing the Edge takes needs fresh approval and a supported egress region. v1.6.0 ships this state. The 2026-10-29 completion below stays as history.
 
 ## Reading Contract
 
@@ -9,7 +9,7 @@ Status: 2026-10-29, complete. All 480 eligible Gemini recordings are finished â€
 - 240 picture/character/phrase cards: each language reads the name plus the full explanation.
 - 30 numbers: Mandarin retains number-name-only narration; English targets name plus counting explanation. Both languages are excluded from current generation.
 - 26 letters: one American English alphabet-name clip is shared by both playback entries. Descriptions are editorial, not narration. Letters are excluded from current generation.
-- Total full-coverage target: 480 unique recordings, not 506 (letters share clips). Current eligible scope: 480 recordings for 240 non-number/non-alphabet cards, all complete.
+- Total full-coverage target: 530 unique recordings (letters share clips). Current eligible scope: 530 recordings for 265 non-number/non-alphabet cards; 491 Gemini plus 39 temporary Edge.
 - Captions always match the selected recording. Original Edge English clips retain name-only narration; the 77 expansion English clips already include full explanations. Gemini has priority independently in both languages.
 
 ## Verified Local Inventory

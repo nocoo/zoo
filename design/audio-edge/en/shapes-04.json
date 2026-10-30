@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Rectangle. A rectangle has two long sides and two short sides.",
+  "rate": "+0%",
+  "sha256": "ca32509c454eab2af2c0fe42d6d5d2d538dbfbfe2fa34f7a7d22b5e01bd7cc70",
+  "bytes": 34416
+}

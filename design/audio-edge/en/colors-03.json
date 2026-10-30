@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Blue. Blue is the color of the sky and the sea.",
+  "rate": "+0%",
+  "sha256": "15bb47df190746a483cfe8a940f80c21c2d7e239577fb657324ca0ca0f8edfd9",
+  "bytes": 26064
+}

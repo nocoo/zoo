@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "椭圆形。椭圆形像鸡蛋一样。",
+  "rate": "+10%",
+  "sha256": "7008738ffed0b2abbba9eb0aabe3f01eeaa62c0bae07c205fd557457acb3bc21",
+  "bytes": 20448
+}

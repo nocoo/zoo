@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "妈妈。妈妈会抱抱我，也会陪我玩。",
+  "rate": "+10%",
+  "sha256": "b085fecede6e5da39f095344c153d3a42b807fce23d4c0f952a799a20618ebc0",
+  "bytes": 22032
+}

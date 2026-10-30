@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Black. Black is like the night sky.",
+  "rate": "+0%",
+  "sha256": "6a2e423dced1e846e42f0ac70f55cc13decd3e129c8c42e604de369884ebb8a7",
+  "bytes": 23040
+}
