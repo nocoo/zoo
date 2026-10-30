@@ -1,8 +1,9 @@
 import type { Picture } from './content';
 import { expansionCategories } from './expansion.ts';
 import { additionCategories } from './additions.ts';
+import { foundationCategories } from './foundations.ts';
 
-const expansionIds = new Set([...expansionCategories, ...additionCategories].flatMap(category => category.cards.map(card => card.id)));
+const expansionIds = new Set([...expansionCategories, ...additionCategories, ...foundationCategories].flatMap(category => category.cards.map(card => card.id)));
 
 export function audioTranscript(picture: Picture): string {
   if (picture.category === 'letters') return picture.name;
