@@ -1,0 +1,25 @@
+{
+  "source_sha256": "26925cb27f9fcec406cfc50138b9a7725e1414d04e2573527552465b7b47956e",
+  "source": "design/art/expansion/2026-10-30/shapes-06/raw/generated.png",
+  "processing": "Edge-connected paper normalization (RGB tolerance 8); lossless WebP; thumbnail downsampling only; restore four thumbnail corner pixels to exact paper after resample.",
+  "files": [
+    {
+      "path": "public/art/foundations/shapes-06-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1488964,
+      "sha256": "9a412144bafbccd1750c229deeb71d84b426a53e0630d5c8b040407ac9bb9aa5"
+    },
+    {
+      "path": "public/art/foundations/shapes-06-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 160980,
+      "sha256": "c6834fc86ea19ec6765b1f204b15045c37f94ac6250dfbadfda59f9a01661148"
+    }
+  ]
+}

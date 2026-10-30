@@ -17,7 +17,7 @@ const expected = [
   { id: 'fruits', name: '缤纷水果', kind: 'existing', start: 21, names: ['橘子', '柚子', '杏', '李子', '山竹', '杨梅'] },
 ] as const;
 
-assert.equal(pictures.length, 296);
+assert.equal(pictures.length, 321);
 assert.equal(expansionCategories.length, expected.length);
 
 const expansionCards = expansionCategories.flatMap(category => category.cards);

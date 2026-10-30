@@ -16,8 +16,11 @@ PROCESSING = 'Edge-connected paper normalization (RGB tolerance 8); lossless Web
 SIZES = [('full', (2048, 1792)), ('thumb', (640, 560))]
 
 
+DELIVERY = 'expansion'
+
+
 def public_dir():
-    return gen.ROOT / 'public/art/expansion'
+    return gen.ROOT / f'public/art/{DELIVERY}'
 
 
 ART = 'src/expansion-art.json'
@@ -48,7 +51,8 @@ def paper_corners(image):
 
 def resample(image, size):
     if image.size == size:
-        return image
+        # A native-size full image skips LANCZOS, so restore the corners here too.
+        return paper_corners(image.copy())
     out = atlas.normalize_paper(image.resize(size, Image.Resampling.LANCZOS), tolerance=8)
     return paper_corners(out)
 
@@ -93,8 +97,8 @@ def art_from(records):
         thumb = files[f"{item['id']}-thumb.webp"]
         full = files[f"{item['id']}-full.webp"]
         images[item['id']] = {
-            'image': f"/art/expansion/{item['id']}-thumb.webp?v={thumb['sha256'][:16]}",
-            'imageLarge': f"/art/expansion/{item['id']}-full.webp?v={full['sha256'][:16]}",
+            'image': f"/art/{DELIVERY}/{item['id']}-thumb.webp?v={thumb['sha256'][:16]}",
+            'imageLarge': f"/art/{DELIVERY}/{item['id']}-full.webp?v={full['sha256'][:16]}",
         }
     return {'images': images}
 
@@ -207,9 +211,11 @@ def main():
     parser.add_argument('--check', action='store_true', help='Read-only validation; no writes or network')
     parser.add_argument('--run', default='2026-10-14')
     parser.add_argument('--art', default='src/expansion-art.json')
+    parser.add_argument('--dir', default='expansion', help='Delivery directory and /art/<dir>/ URL prefix')
     args = parser.parse_args()
-    global ART
+    global ART, DELIVERY
     ART = args.art
+    DELIVERY = args.dir
     gen.set_run(args.run)
     items = gen.load_items()
     records = collect(items, args.check)

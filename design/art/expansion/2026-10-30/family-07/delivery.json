@@ -1,0 +1,25 @@
+{
+  "source_sha256": "0040d4b956cb092b6c2f21cf7a1cb2393bb23d1d6b00aa242bcf12664bce488e",
+  "source": "design/art/expansion/2026-10-30/family-07/raw/generated.png",
+  "processing": "Edge-connected paper normalization (RGB tolerance 8); lossless WebP; thumbnail downsampling only; restore four thumbnail corner pixels to exact paper after resample.",
+  "files": [
+    {
+      "path": "public/art/foundations/family-07-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 2223658,
+      "sha256": "9807c407386c867da34dce649d451f20b954cb801007361aa021df0bf4f5a5bd"
+    },
+    {
+      "path": "public/art/foundations/family-07-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 238862,
+      "sha256": "d5a291c00f54b30737c737ded1b217050240d8cd8df07fc8a6ca2312727e711e"
+    }
+  ]
+}

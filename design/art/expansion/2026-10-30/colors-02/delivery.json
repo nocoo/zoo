@@ -1,0 +1,25 @@
+{
+  "source_sha256": "a6f5f2e01a33c390dfdb80000b346dde15c57f01520c73322e8c05e7c8441f95",
+  "source": "design/art/expansion/2026-10-30/colors-02/raw/generated.png",
+  "processing": "Edge-connected paper normalization (RGB tolerance 8); lossless WebP; thumbnail downsampling only; restore four thumbnail corner pixels to exact paper after resample.",
+  "files": [
+    {
+      "path": "public/art/foundations/colors-02-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 2156290,
+      "sha256": "648031c6dc0cd36e46fd465ca80a52efb7a0366fb3009d5eb30d4ec3bc110bf0"
+    },
+    {
+      "path": "public/art/foundations/colors-02-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 235310,
+      "sha256": "1f0b0f3ba6792eb0d3257bdd5594fa72f206c669657e1a12ad3521a5968247fa"
+    }
+  ]
+}

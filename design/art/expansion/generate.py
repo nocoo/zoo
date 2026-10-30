@@ -44,7 +44,12 @@ ADDITION_IDS = (
     + tuple(f'weather-{index:02d}' for index in range(26, 30))
     + tuple(f'phrases-{index:02d}' for index in range(30, 38))
 )
-RUN_IDS = {'2026-10-14': APPROVED_IDS, '2026-10-23': ADDITION_IDS}
+CATEGORY_IDS = (
+    tuple(f'colors-{index:02d}' for index in range(1, 11))
+    + tuple(f'shapes-{index:02d}' for index in range(1, 9))
+    + tuple(f'family-{index:02d}' for index in range(1, 8))
+)
+RUN_IDS = {'2026-10-14': APPROVED_IDS, '2026-10-23': ADDITION_IDS, '2026-10-30': CATEGORY_IDS}
 APPROVED = APPROVED_IDS
 
 

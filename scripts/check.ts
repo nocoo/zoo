@@ -7,15 +7,16 @@ import { swipeStep } from '../src/swipe.ts';
 import { audioTranscript, englishAudioTranscript, edgeEnglishAudioTranscript } from '../src/audio.ts';
 import { shuffle } from '../src/shuffle.ts';
 import './check-expansion.ts';
+import './check-foundations.ts';
 import './check-expansion-media.mjs';
 
-assert.equal(pictures.length, 296);
-assert.equal(categories.length, 12);
-const counts = { animals: 35, numbers: 30, letters: 26, hanzi: 20, phrases: 37, weather: 29, objects: 37, fruits: 26, transport: 15, vegetables: 13, food: 16, places: 12 };
+assert.equal(pictures.length, 321);
+assert.equal(categories.length, 15);
+const counts = { animals: 35, numbers: 30, letters: 26, colors: 10, shapes: 8, family: 7, hanzi: 20, phrases: 37, weather: 29, objects: 37, fruits: 26, transport: 15, vegetables: 13, food: 16, places: 12 };
 const media = JSON.parse(readFileSync('src/media.json', 'utf8'));
-assert.equal(Object.keys(media.audio).length, 296);
-assert.equal(Object.keys(media.transcripts).length, 296);
-assert.equal(Object.keys(media.images).length, 592);
+assert.equal(Object.keys(media.audio).length, 321);
+assert.equal(Object.keys(media.transcripts).length, 321);
+assert.equal(Object.keys(media.images).length, 642);
 const manifest = JSON.parse(readFileSync('public/manifest.webmanifest', 'utf8'));
 assert.equal(manifest.name, '小小动物岛');
 assert.equal(manifest.short_name.length, 5);
@@ -55,7 +56,7 @@ for (const [value, label] of [[1, '一'], [10, '十'], [11, '十一'], [20, '二
 }
 assert.ok(!pictures.some(p => p.category === 'numbers' && p.value! > 30));
 assert.ok(existsSync('public/art/hero.webp'));
-assert.equal(pictures.filter(p => p.imageLarge).length, 296);
+assert.equal(pictures.filter(p => p.imageLarge).length, 321);
 assert.ok(pictures.every(p => p.image && p.imageLarge));
 assert.equal(swipeStep(-90, 12), 1);
 assert.equal(swipeStep(90, 12), -1);
@@ -64,7 +65,7 @@ assert.equal(swipeStep(80, 100), 0);
 assert.equal(swipeStep(60, 40), 0);
 assert.equal(audioTranscript(pictures.find(p => p.id === 'animals-01')!), '狮子。狮子有一圈蓬松的鬃毛，像戴着小围巾。');
 assert.equal(pictures.find(p => p.id === 'animals-01')!.englishDescription, 'The lion has a fluffy mane around his neck, like a little scarf.');
-assert.equal(pictures.filter(p => p.englishDescription).length, 296);
+assert.equal(pictures.filter(p => p.englishDescription).length, 321);
 assert.equal(englishAudioTranscript(pictures.find(p => p.id === 'animals-01')!), 'Lion. The lion has a fluffy mane around his neck, like a little scarf.');
 assert.equal(englishAudioTranscript(pictures.find(p => p.id === 'letters-A')!), 'A');
 assert.equal(englishAudioTranscript(pictures.find(p => p.id === 'animals-02')!), 'Panda. The panda has a black and white coat and loves to eat bamboo.');
@@ -101,4 +102,4 @@ try {
 } finally {
   Math.random = originalRandom;
 }
-console.log('检查通过：12 个分类、296 张内容卡、双语媒体、全部插画和数字读法。');
+console.log('检查通过：15 个分类、321 张内容卡、双语媒体、全部插画和数字读法。');

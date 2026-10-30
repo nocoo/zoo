@@ -1,0 +1,12 @@
+Use case: scientific-educational, toddler picture-learning illustration, ages 1.5-3.
+Create ONE finished illustration, not a sheet or interface mockup, at native 2048 x 1792.
+The attached illustrations are STYLE references only: match their tactile gouache, colored-pencil grain, cut-paper shapes, warm friendly proportions and rich but gentle colors. Do not copy their composition, glyphs or subjects.
+BACKGROUND: flat warm cream paper #faf6e8, uniform right to all four edges, no colored panel, vignette, horizon, frame, border, badge or cast shadow. Use delicate texture within painted shapes, not visual noise across the paper.
+
+DESIGN: one very large instantly legible color swatch is the unmistakable hero. It is a single warm rounded-square patch of one solid hue, painted in expressive hand-painted gouache with visible but gentle brush direction and colored-pencil grain. The hue must stay unmistakably one color across the whole patch; do not blend into a second hue, do not add stripes, dots, gradients or pattern, and keep the patch's silhouette complete and simple. The swatch fills approximately 72 percent of image height and sits just left of centre, leaving 8-10 percent clear outer margin. Illustration should feel close and generous, not a small subject floating in empty space.
+
+Beside the swatch place ONE small familiar concrete object described below, completely separate and fully visible. Nothing else on the paper: no stickers, stars, confetti, banners, captions, labels, chalk marks, paint splashes outside the shapes, or extraneous objects. No face, eyes, arms or legs on the swatch. Accurate color identity is essential; a child must read one clear color at a glance.
+
+SUBJECT AND COMPOSITION:
+Color (verbatim): 黑色 / black.
+A huge rounded-square patch in deep night black, a rich dark charcoal-black with soft painted light rather than pure digital #000000. To its lower right place exactly ONE small black cat with white whiskers and round dot eyes, about 24 percent of the swatch height and fully separate from the patch. The swatch must be seen first and the object second. Composition is centred as a whole. Do not include any text, letters, digits, the words black or 黑色, color-name labels, rainbow strips, color wheels or multiple swatches.

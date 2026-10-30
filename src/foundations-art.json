@@ -1,0 +1,104 @@
+{
+  "images": {
+    "colors-01": {
+      "image": "/art/foundations/colors-01-thumb.webp?v=a7a33d4f083976de",
+      "imageLarge": "/art/foundations/colors-01-full.webp?v=73c55dcfb3f84300"
+    },
+    "colors-02": {
+      "image": "/art/foundations/colors-02-thumb.webp?v=1f0b0f3ba6792eb0",
+      "imageLarge": "/art/foundations/colors-02-full.webp?v=648031c6dc0cd36e"
+    },
+    "colors-03": {
+      "image": "/art/foundations/colors-03-thumb.webp?v=8012f3cf699340f1",
+      "imageLarge": "/art/foundations/colors-03-full.webp?v=a2ac888adf874f47"
+    },
+    "colors-04": {
+      "image": "/art/foundations/colors-04-thumb.webp?v=2f36e811c7742828",
+      "imageLarge": "/art/foundations/colors-04-full.webp?v=921699ce2a6e2394"
+    },
+    "colors-05": {
+      "image": "/art/foundations/colors-05-thumb.webp?v=0f9d8f171cdb7001",
+      "imageLarge": "/art/foundations/colors-05-full.webp?v=9c3fa3a261d8b22f"
+    },
+    "colors-06": {
+      "image": "/art/foundations/colors-06-thumb.webp?v=5953288dcb89f097",
+      "imageLarge": "/art/foundations/colors-06-full.webp?v=ff1fc88ce35d5942"
+    },
+    "colors-07": {
+      "image": "/art/foundations/colors-07-thumb.webp?v=1f6492aeeba7a53f",
+      "imageLarge": "/art/foundations/colors-07-full.webp?v=b5cb658a89ec7c03"
+    },
+    "colors-08": {
+      "image": "/art/foundations/colors-08-thumb.webp?v=4a11877443614dcd",
+      "imageLarge": "/art/foundations/colors-08-full.webp?v=c578b1e33710c5f4"
+    },
+    "colors-09": {
+      "image": "/art/foundations/colors-09-thumb.webp?v=b7882cc968df4b8e",
+      "imageLarge": "/art/foundations/colors-09-full.webp?v=1f639c91ac662787"
+    },
+    "colors-10": {
+      "image": "/art/foundations/colors-10-thumb.webp?v=81ebab722448e49c",
+      "imageLarge": "/art/foundations/colors-10-full.webp?v=782caddee567d033"
+    },
+    "shapes-01": {
+      "image": "/art/foundations/shapes-01-thumb.webp?v=4944d32e39edbdd3",
+      "imageLarge": "/art/foundations/shapes-01-full.webp?v=fea2106f805d1876"
+    },
+    "shapes-02": {
+      "image": "/art/foundations/shapes-02-thumb.webp?v=9f6de48f4b5ef9fa",
+      "imageLarge": "/art/foundations/shapes-02-full.webp?v=077e9374493fbc72"
+    },
+    "shapes-03": {
+      "image": "/art/foundations/shapes-03-thumb.webp?v=eb42766ca58d631e",
+      "imageLarge": "/art/foundations/shapes-03-full.webp?v=cc9cdd2365f24bf7"
+    },
+    "shapes-04": {
+      "image": "/art/foundations/shapes-04-thumb.webp?v=db3857774585e5bd",
+      "imageLarge": "/art/foundations/shapes-04-full.webp?v=da4f51c342477ac1"
+    },
+    "shapes-05": {
+      "image": "/art/foundations/shapes-05-thumb.webp?v=d780e755ed2fb087",
+      "imageLarge": "/art/foundations/shapes-05-full.webp?v=67a3480d48d0755d"
+    },
+    "shapes-06": {
+      "image": "/art/foundations/shapes-06-thumb.webp?v=c6834fc86ea19ec6",
+      "imageLarge": "/art/foundations/shapes-06-full.webp?v=9a412144bafbccd1"
+    },
+    "shapes-07": {
+      "image": "/art/foundations/shapes-07-thumb.webp?v=9d6949c200c3d6ef",
+      "imageLarge": "/art/foundations/shapes-07-full.webp?v=95c2d27bce3c9c37"
+    },
+    "shapes-08": {
+      "image": "/art/foundations/shapes-08-thumb.webp?v=11a7c8b71fe15b08",
+      "imageLarge": "/art/foundations/shapes-08-full.webp?v=f19e868218af5ebe"
+    },
+    "family-01": {
+      "image": "/art/foundations/family-01-thumb.webp?v=759d836e4da7f0d8",
+      "imageLarge": "/art/foundations/family-01-full.webp?v=8b73797c39dc8e4c"
+    },
+    "family-02": {
+      "image": "/art/foundations/family-02-thumb.webp?v=7253d294751e8934",
+      "imageLarge": "/art/foundations/family-02-full.webp?v=dc4f79d0962587cb"
+    },
+    "family-03": {
+      "image": "/art/foundations/family-03-thumb.webp?v=2b0f00b1a53e21c4",
+      "imageLarge": "/art/foundations/family-03-full.webp?v=8759397abf206e4e"
+    },
+    "family-04": {
+      "image": "/art/foundations/family-04-thumb.webp?v=0f9c7ca2ee87727c",
+      "imageLarge": "/art/foundations/family-04-full.webp?v=34d7587b6e32f021"
+    },
+    "family-05": {
+      "image": "/art/foundations/family-05-thumb.webp?v=c4768cc22ef37fe2",
+      "imageLarge": "/art/foundations/family-05-full.webp?v=5b8a5325b53e01be"
+    },
+    "family-06": {
+      "image": "/art/foundations/family-06-thumb.webp?v=54c961265b25aa9c",
+      "imageLarge": "/art/foundations/family-06-full.webp?v=3ac81750a345d863"
+    },
+    "family-07": {
+      "image": "/art/foundations/family-07-thumb.webp?v=d5a291c00f54b307",
+      "imageLarge": "/art/foundations/family-07-full.webp?v=9807c407386c867d"
+    }
+  }
+}

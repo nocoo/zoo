@@ -109,7 +109,7 @@ def reserve_request(identifier, provider_limit=False):
 
 
 def bilingual_jobs(items):
-    order = ('animals', 'fruits', 'weather', 'objects', 'hanzi', 'phrases', 'transport', 'vegetables', 'food', 'places')
+    order = ('animals', 'fruits', 'colors', 'shapes', 'family', 'weather', 'objects', 'hanzi', 'phrases', 'transport', 'vegetables', 'food', 'places')
     ordered = sorted((item for item in items if item['category'] in order),
                      key=lambda item: (order.index(item['category']), item['id']))
     return ordered + [{**item, 'id': f"en/{item['id']}", 'language': 'en', 'text': item['englishText']}

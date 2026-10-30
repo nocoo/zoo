@@ -7,6 +7,7 @@ import { pictures } from '../src/content.ts';
 import { audioTranscript, englishAudioTranscript, edgeEnglishAudioTranscript } from '../src/audio.ts';
 import { expansionCategories } from '../src/expansion.ts';
 import { additionCategories } from '../src/additions.ts';
+import { foundationCategories } from '../src/foundations.ts';
 
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 
@@ -15,7 +16,7 @@ async function buildActive() {
   for (const path of pictures.flatMap(picture => [picture.image, picture.imageLarge]).sort()) {
     images[path] = `${path}?v=${hash(await readFile(`public${path}`)).slice(0, 16)}`;
   }
-  for (const [map, groups] of [['src/expansion-art.json', expansionCategories], ['src/additions-art.json', additionCategories]]) {
+  for (const [map, groups] of [['src/expansion-art.json', expansionCategories], ['src/additions-art.json', additionCategories], ['src/foundations-art.json', foundationCategories]]) {
     const approved = JSON.parse(await readFile(map, 'utf8')).images;
     for (const card of groups.flatMap(category => category.cards)) {
       const picture = pictures.find(picture => picture.id === card.id);

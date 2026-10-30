@@ -1,0 +1,42 @@
+{
+	"startedAt": "2026-10-30T00:33:32.252364+00:00",
+	"provider": "Azure OpenAI / Foundry",
+	"endpoint": "https://bingviz-data-analysis-api.openai.azure.com/openai/v1/images/edits",
+	"method": "POST",
+	"contentType": "multipart/form-data",
+	"parameters": {
+		"model": "gpt-image-2.5-sunburst",
+		"size": "2048x1792",
+		"quality": "high",
+		"n": "1",
+		"background": "opaque",
+		"output_format": "png"
+	},
+	"promptFile": "prompt.txt",
+	"promptSha256": "1561c24498b10a42df7c0998db299cc730310f440e0ec7ab57c992a1ef92ced0",
+	"images": [
+		{
+			"index": 1,
+			"path": "../shapes-01/raw/generated.png",
+			"sha256": "dba3892ce19f71b49d07e890486bd3896d4dfc84fa8d37fb958be5f1685c0ad3",
+			"bytes": 3451258,
+			"mime": "image/png"
+		},
+		{
+			"index": 2,
+			"path": "../../../symbol-studies/2026-10-10-162535/numbers-1/raw/generated.png",
+			"sha256": "5377f5570f5d38a1625fa8b1cb317883999dc4ec71ea8440b41f1d74e70962c8",
+			"bytes": 2882785,
+			"mime": "image/png"
+		},
+		{
+			"index": 3,
+			"path": "../../../symbol-studies/2026-10-10-162535/letters-A/raw/generated.png",
+			"sha256": "8e3eabded488f097c663f4c2300af4148173bca78b1e0b235cf9c05aecbb17b9",
+			"bytes": 2859075,
+			"mime": "image/png"
+		}
+	],
+	"transportReference": "workflow/agents/skills/agi-image-generation/scripts/generate.py",
+	"documentation": "https://developers.openai.com/api/docs/guides/image-generation"
+}

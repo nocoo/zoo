@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "紫色。紫色像一串小葡萄。",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 4.72,
+  "interaction_id": "v1_ChctT1RqYW9IaEtwLWcwLWtQX2RTbDBRMBIXLU9UamFvSGhLcC1nMC1rUF9kU2wwUTA",
+  "origin": "generated",
+  "wav_sha256": "c2b58d9707017af2cafe7e1af12894873d0103675f81428b53fdf6858b9c72ef",
+  "mp3_sha256": "7a8001b536b13225b362096d444c21b2304b78af48f7fa7a99d500b1e0d37aed"
+}

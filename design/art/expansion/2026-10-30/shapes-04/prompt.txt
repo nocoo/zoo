@@ -1,0 +1,12 @@
+Use case: scientific-educational, toddler picture-learning illustration, ages 1.5-3.
+Create ONE finished illustration, not a sheet or interface mockup, at native 2048 x 1792.
+The attached illustrations are STYLE references only: match their tactile gouache, colored-pencil grain, cut-paper shapes, warm friendly proportions and rich but gentle colors. Do not copy their composition, glyphs or subjects.
+BACKGROUND: flat warm cream paper #faf6e8, uniform right to all four edges, no colored panel, vignette, horizon, frame, border, badge or cast shadow. Use delicate texture within painted shapes, not visual noise across the paper.
+
+DESIGN: one very large instantly legible geometric shape is the unmistakable hero. A single flat front-view shape with a clean closed outline and one solid warm gouache fill, painted with visible but gentle brush direction and colored-pencil grain. Keep the silhouette crisp and unmistakable at thumbnail size: no perspective, no distortion, no rotation, no overlapping second shape, no partial hatching across the contour. The shape fills approximately 72 percent of image height and sits just left of centre, leaving 8-10 percent clear outer margin. Illustration should feel close and generous, not a small subject floating in empty space.
+
+Beside the shape place ONE small familiar concrete object described below, completely separate and fully visible. Nothing else on the paper: no stickers, stars, confetti, banners, captions, labels, chalk marks, paint splashes outside the shapes, or extraneous objects. No face, eyes, arms or legs on the shape. Accurate shape identity is essential; a child must read one clear shape at a glance.
+
+SUBJECT AND COMPOSITION:
+Shape (verbatim): 长方形 / rectangle.
+A huge upright rectangle in warm sky-blue gouache, clearly twice as tall as it is wide, four straight sides and four square corners. It must never look like a square. To its lower right place exactly ONE small upright rectangular picture book about 24 percent of the rectangle height, fully separate, clearly a real book with a visible cover edge rather than a second plain rectangle. The shape must be seen first and the object second. Composition is centred as a whole. Do not include any text, letters, digits, the words rectangle or 长方形, shape-name labels, dashed guide lines, dimension marks, other shapes, or a shape chart.

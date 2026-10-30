@@ -1,8 +1,9 @@
 import { englishLabel, englishNumber } from './english.ts';
 import { expansionCategories } from './expansion.ts';
 import { additionCategories } from './additions.ts';
+import { foundationCategories } from './foundations.ts';
 
-export type CategoryId = 'animals' | 'numbers' | 'letters' | 'hanzi' | 'phrases' | 'weather' | 'objects' | 'fruits' | 'transport' | 'vegetables' | 'food' | 'places';
+export type CategoryId = 'animals' | 'numbers' | 'letters' | 'colors' | 'shapes' | 'family' | 'hanzi' | 'phrases' | 'weather' | 'objects' | 'fruits' | 'transport' | 'vegetables' | 'food' | 'places';
 export type Picture = {
   id: string;
   category: CategoryId;
@@ -22,6 +23,9 @@ export const categories: { id: CategoryId; name: string; subtitle: string; title
   { id: 'animals', name: '动物朋友', subtitle: '认识可爱的新朋友', title: '今天，认识哪位动物朋友？', hint: '点一点小动物，听听它的名字吧', tone: 'mint' },
   { id: 'numbers', name: '认识数字', subtitle: '一起数一数', title: '一、二、三，一起数一数！', hint: '从 1 到 30，慢慢发现数字的秘密', tone: 'peach' },
   { id: 'letters', name: '认识字母', subtitle: '字母也有好朋友', title: '和 ABC 交个朋友吧！', hint: '26 个字母，看看大写和小写有什么不同', tone: 'blue' },
+  { id: 'colors', name: '认识颜色', subtitle: '找到身边的颜色', title: '今天，你看见什么颜色？', hint: '指一指家里的红色和黄色吧', tone: 'yellow' },
+  { id: 'shapes', name: '认识形状', subtitle: '形状藏在生活里', title: '这些形状，你认得几个？', hint: '看看圆形和方形有什么不一样', tone: 'mint' },
+  { id: 'family', name: '我的家人', subtitle: '最熟悉的人', title: '家里的人，都叫什么？', hint: '和爸爸妈妈一起，认一认家人', tone: 'rose' },
   { id: 'hanzi', name: '汉字宝宝', subtitle: '小小汉字大世界', title: '在图画里，遇见汉字宝宝', hint: '看一看、指一指，不用急着记住哦', tone: 'rose' },
   { id: 'phrases', name: '开口说说', subtitle: '每天学说一句话', title: '把小小的想法，说出来', hint: '和爸爸妈妈一起，试着说一说', tone: 'yellow' },
   { id: 'weather', name: '天气自然', subtitle: '抬头看看天空', title: '今天的天空，是什么样子？', hint: '风、雨、阳光，都是大自然的礼物', tone: 'blue' },
@@ -151,6 +155,11 @@ export const pictures: Picture[] = [
     englishDescription: `This is uppercase ${name}, and beside it is lowercase ${name.toLowerCase()}. Do they look the same?`,
     description: `这是大写字母 ${name}，旁边是它的小写 ${name.toLowerCase()}。找一找，它们长得一样吗？`,
   })),
+  ...foundationCategories.flatMap(category => category.cards.map(card => ({
+    ...card, category: category.id,
+    image: `/art/foundations/${card.id}-thumb.webp`,
+    imageLarge: `/art/foundations/${card.id}-full.webp`,
+  }))),
   ...expansionCategories.flatMap(category => category.cards.map(card => ({
     ...card, category: category.id,
     image: `/art/expansion/${card.id}-thumb.webp`,

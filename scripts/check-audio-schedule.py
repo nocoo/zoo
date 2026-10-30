@@ -162,21 +162,24 @@ with patch.object(sys, 'argv', ['generate-audio.py', '--until-provider-error']),
 payload = json.loads(subprocess.check_output([
     'node', '--experimental-strip-types', '--input-type=module', '-e',
     "import {pictures} from './src/content.ts'; import {expansionCategories} from './src/expansion.ts';"
-    "import {additionCategories} from './src/additions.ts'; import {audioTranscript,englishAudioTranscript} from './src/audio.ts';"
+    "import {additionCategories} from './src/additions.ts'; import {foundationCategories} from './src/foundations.ts';"
+    "import {audioTranscript,englishAudioTranscript} from './src/audio.ts';"
     "console.log(JSON.stringify({items:pictures.map(p=>({id:p.id,category:p.category,text:audioTranscript(p),englishText:englishAudioTranscript(p)})),"
     "expansionIds:expansionCategories.flatMap(c=>c.cards.map(p=>p.id)),"
-    "additionIds:additionCategories.flatMap(c=>c.cards.map(p=>p.id))}))",
+    "additionIds:additionCategories.flatMap(c=>c.cards.map(p=>p.id)),"
+    "foundationIds:foundationCategories.flatMap(c=>c.cards.map(p=>p.id))}))",
 ], cwd=audio.ROOT))
 items = payload['items']
 expansion_ids = set(payload['expansionIds'])
 addition_ids = set(payload['additionIds'])
+foundation_ids = set(payload['foundationIds'])
 legacy_ids = {f'{category}-{index:02d}' for category in ('animals', 'fruits', 'weather', 'objects', 'hanzi', 'phrases') for index in range(1, 21)}
 legacy_complete_ids = legacy_ids | {f'en/{identifier}' for identifier in legacy_ids}
-target_ids = expansion_ids | addition_ids
+target_ids = expansion_ids | addition_ids | foundation_ids
 expansion_target_ids = target_ids | {f'en/{identifier}' for identifier in target_ids}
 jobs = audio.bilingual_jobs(items)
-assert len(jobs) == 480 and len(expansion_ids) == 77 and len(addition_ids) == 43
-assert len(legacy_complete_ids) == 240 and len(expansion_target_ids) == 240
+assert len(jobs) == 530 and len(expansion_ids) == 77 and len(addition_ids) == 43 and len(foundation_ids) == 25
+assert len(legacy_complete_ids) == 240 and len(expansion_target_ids) == 290
 assert not legacy_complete_ids & expansion_target_ids
 assert {item['id'] for item in jobs} == legacy_complete_ids | expansion_target_ids
 
@@ -191,13 +194,13 @@ with TemporaryDirectory() as temporary:
         validated = [call.args[0] for call in generate.call_args_list if call.args[2]]
         requested = [call.args[0] for call in generate.call_args_list if not call.args[2]]
         assert {item['id'] for item in validated} == legacy_complete_ids
-        assert len(requested) == 240
-        assert {item['id'] for item in requested[:120]} == target_ids
-        assert all(item.get('language') != 'en' for item in requested[:120])
-        assert {item['id'] for item in requested[120:]} == {f'en/{identifier}' for identifier in target_ids}
-        assert all(item['language'] == 'en' for item in requested[120:])
+        assert len(requested) == 290
+        assert {item['id'] for item in requested[:145]} == target_ids
+        assert all(item.get('language') != 'en' for item in requested[:145])
+        assert {item['id'] for item in requested[145:]} == {f'en/{identifier}' for identifier in target_ids}
+        assert all(item['language'] == 'en' for item in requested[145:])
         assert all(call.kwargs.get('provider_limit') for call in generate.call_args_list if not call.args[2])
-        assert {category: sum(item['category'] == category for item in requested[:120]) for category in ('transport', 'vegetables', 'food', 'places')} == {'transport': 15, 'vegetables': 13, 'food': 16, 'places': 12}
+        assert {category: sum(item['category'] == category for item in requested[:145]) for category in ('transport', 'vegetables', 'food', 'places')} == {'transport': 15, 'vegetables': 13, 'food': 16, 'places': 12}
         first = requested[0]['id']
         (root / f'design/audio/{first}.json').write_text('{}')
         generate.reset_mock()
@@ -205,16 +208,16 @@ with TemporaryDirectory() as temporary:
         assert {call.args[0]['id'] for call in generate.call_args_list if call.args[2]} == legacy_complete_ids | {first}
         resumed = [call.args[0]['id'] for call in generate.call_args_list if not call.args[2]]
         assert resumed == [item['id'] for item in requested[1:]]
-        assert len(resumed) == 239
+        assert len(resumed) == 289
         assert not (root / 'artifacts/audio-schedule/request-budget.json').exists()
 
 complete = [item for item in jobs if (audio.ROOT / f"design/audio/{item['id']}.json").exists()]
 pending = [item for item in jobs if not (audio.ROOT / f"design/audio/{item['id']}.json").exists()]
 assert {item['id'] for item in complete} >= legacy_complete_ids
 assert {item['id'] for item in pending} <= expansion_target_ids
-assert len(complete) + len(pending) == 480
+assert len(complete) + len(pending) == 530
 with patch.object(audio.urllib.request, 'urlopen', side_effect=AssertionError('Offline regression must not call a provider')):
     for item in complete:
         audio.generate(item, None, True)
 
-print(f'检查通过：预算/冷却与隔离队列 480/240/240、中文优先、完成 1 条后续传；真实文件 {len(complete)} 完成/{len(pending)} 待补。')
+print(f'检查通过：预算/冷却与隔离队列 530/240/290、中文优先、完成 1 条后续传；真实文件 {len(complete)} 完成/{len(pending)} 待补。')
