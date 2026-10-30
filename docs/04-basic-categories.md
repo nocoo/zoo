@@ -1,6 +1,8 @@
 # Basic Cognition Categories
 
-Status: 2026-10-30. The owner asked for new categories with meaningful thickness,
+Status: 2026-10-30. v1.6.0 (`9427262`) is deployed; exact-revision CI [41130819539](https://github.com/nocoo/zoo/actions/runs/41130819539) passed and `/api/live` reports version `1.6.0`. GitHub Release `v1.6.0` is published.
+
+The owner asked for new categories with meaningful thickness,
 reviewed one sample per category, and authorized the rest plus a release.
 
 Three categories were added before the existing 汉字宝宝 section so number, letter,
