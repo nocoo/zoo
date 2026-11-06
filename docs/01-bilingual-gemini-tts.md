@@ -1,6 +1,6 @@
 # Bilingual Gemini Narration
 
-Status: 2026-10-30. Eligible scope grew to 530 recordings for 265 non-number/non-alphabet cards after the colors, shapes and family categories were added. 491 are complete Gemini/Sulafat takes. The remaining 39 - all 25 English clips for the new categories plus 14 Mandarin clips (shapes-02..08, family-01..07) - play from temporary Edge recordings. Gemini refused them twice: HTTP 429 for the shared Tier 1 quota of 100 requests/day, then HTTP 400 because the current egress region is not supported. No retry, model fallback, credential change or timer followed. Replacing the Edge takes needs fresh approval and a supported egress region. v1.6.0 (`9427262`) is deployed; exact-revision CI [41130819539](https://github.com/nocoo/zoo/actions/runs/41130819539) passed and `/api/live` reports version `1.6.0`. GitHub Release `v1.6.0` is published. The 2026-10-29 completion below stays as history.
+Status: 2026-11-06. Eligible scope is 530 recordings for 265 non-number/non-alphabet cards. All 530 are complete Gemini/Sulafat takes and nothing is pending. The last 39 - 14 Mandarin (shapes-02..08, family-01..07) and 25 English (colors, shapes, family) - were generated today. Gemini had refused them on 2026-10-30 with HTTP 429 for the shared Tier 1 quota and then HTTP 400 because the Hong Kong egress is not a supported region; a Singapore egress served the same requests normally. The 39 temporary Edge clips and their provenance were deleted, so only the 86 Edge files that numbers and the alphabet reference remain. v1.6.0 (`9427262`) is deployed; exact-revision CI [41130819539](https://github.com/nocoo/zoo/actions/runs/41130819539) passed and `/api/live` reports version `1.6.0`. The 2026-11-06 takes are committed but not released.
 
 ## Reading Contract
 
@@ -9,17 +9,20 @@ Status: 2026-10-30. Eligible scope grew to 530 recordings for 265 non-number/non
 - 240 picture/character/phrase cards: each language reads the name plus the full explanation.
 - 30 numbers: Mandarin retains number-name-only narration; English targets name plus counting explanation. Both languages are excluded from current generation.
 - 26 letters: one American English alphabet-name clip is shared by both playback entries. Descriptions are editorial, not narration. Letters are excluded from current generation.
-- Total full-coverage target: 530 unique recordings (letters share clips). Current eligible scope: 530 recordings for 265 non-number/non-alphabet cards; 491 Gemini plus 39 temporary Edge.
-- Captions always match the selected recording. Original Edge English clips retain name-only narration; the 77 expansion English clips already include full explanations. Gemini has priority independently in both languages.
+- Total full-coverage target: 530 unique recordings (letters share clips). Actual eligible scope: 530 recordings for 265 non-number/non-alphabet cards, all Gemini.
+- Captions always match the selected recording. The 77 expansion English clips and all 25 basic-category English clips include full explanations; number English clips still carry the pre-Edge name-only narration because numbers keep their Edge takes. Gemini has priority independently in both languages.
 
 ## Verified Local Inventory
 
-Updated after the completed 2026-10-29 batch. Completed recordings match their exact transcript, model, Sulafat voice, style and WAV/MP3 hashes. `src/media.json` selects these recordings; every pre-existing audio/archive file remains byte-identical.
+Updated after the completed 2026-11-06 batch. Completed recordings match their exact transcript, model, Sulafat voice, style and WAV/MP3 hashes. `src/media.json` selects these recordings; every pre-existing audio/archive file remains byte-identical.
 
 | Category | Mandarin complete | Mandarin pending | English complete | English pending | Shared alphabet pending |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Animals | 35 | 0 | 35 | 0 | 0 |
 | Fruit | 26 | 0 | 26 | 0 | 0 |
+| Colors | 10 | 0 | 10 | 0 | 0 |
+| Shapes | 8 | 0 | 8 | 0 | 0 |
+| Family | 7 | 0 | 7 | 0 | 0 |
 | Weather | 29 | 0 | 29 | 0 | 0 |
 | Objects | 37 | 0 | 37 | 0 | 0 |
 | Chinese characters | 20 | 0 | 20 | 0 | 0 |
@@ -30,11 +33,19 @@ Updated after the completed 2026-10-29 batch. Completed recordings match their e
 | Places | 12 | 0 | 12 | 0 | 0 |
 | Numbers 1-30 (excluded) | 0 | 30 | 0 | 30 | 0 |
 | Alphabet A-Z (excluded) | 0 | 0 | 0 | 0 | 26 |
-| Total | 240 | 0 | 240 | 0 | 26 |
+| Total | 265 | 0 | 265 | 0 | 26 |
 
-480/480 unique Gemini targets are complete locally, with no pending eligible slot. Numbers and alphabet remain excluded and keep their existing Edge recordings; the shared alphabet clip is unchanged. Every card already has both playback URLs.
+530/530 unique Gemini targets are complete locally, with no pending eligible slot. Numbers and alphabet remain excluded and keep their Edge recordings; the shared alphabet clip is unchanged. Every card has both playback URLs.
 
-These inventory numbers describe validated local files, not production deployment. The last 91 clips are committed but not released.
+These inventory numbers describe validated local files, not production deployment. The last 130 clips (91 on 2026-10-29, 39 on 2026-11-06) are committed but not released.
+
+## Completed On 2026-11-06
+
+The owner asked to finish the remaining queue and confirmed a Singapore proxy egress after the Hong Kong one was refused. A read-only `GET /v1beta/models?pageSize=1` probe showed the actual failure: HTTP 400 `User location is not supported for the API use.` with `103.116.72.119` (HK) as the egress; the same probe returned 200 from `23.249.26.180` (SG). The egress, not the credential or quota, was the blocker.
+
+`--bilingual-day --until-provider-error` ran three times. The first two stopped at `en/colors-06` with a generic failure message: an `OSError` subclass from the connection layer escaped the generator's `except (urllib.error.URLError, TimeoutError)` handler and the top-level handler printed no detail. Commit `8430dbd` added `OSError` to that handler and made the top-level failure report the exception type and text. The third run completed 20/20 with no retry, no model fallback and 20-second spacing.
+
+41 local attempts are recorded for the day, leaving 59 of the 100-attempt cap. `--check --bilingual-day --until-provider-error` reports 530/530. All 39 new MP3s decode fully with FFmpeg, and `npm run check`, `npm run build` and `--check` for the Edge inventory pass. Commit `6992997` holds the 39 WAV/JSON/MP3 sets plus `src/media.json`; `159071e` removed the 39 superseded Edge clips and their provenance. These are not sentence-by-sentence pronunciation approvals.
 
 ## Completed On 2026-10-29
 
