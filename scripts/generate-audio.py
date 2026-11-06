@@ -208,8 +208,8 @@ def generate(item, key, check_only, *, provider_limit=False):
                 except (ValueError, AttributeError):
                     detail = ''
                 raise ValueError(f'{identifier} Gemini HTTP {error.code}；未自动重试或切换模型\n{detail}') from None
-            except (urllib.error.URLError, TimeoutError):
-                raise ValueError(f'{identifier} Gemini 网络失败；可稍后重跑续传') from None
+            except (urllib.error.URLError, TimeoutError, OSError) as error:
+                raise ValueError(f'{identifier} Gemini 网络失败（{type(error).__name__}: {error}）；可稍后重跑续传') from None
             blocks = [content for step in result.get('steps', []) if step.get('type') == 'model_output'
                       for content in step.get('content', []) if content.get('type') == 'audio']
             if len(blocks) != 1:
@@ -366,4 +366,4 @@ if __name__ == '__main__':
     except (ValueError, OSError, subprocess.CalledProcessError) as error:
         if isinstance(error, ValueError):
             raise SystemExit(str(error)) from None
-        raise SystemExit('生成或文件处理失败；已完成条目保留，可重跑续传。') from None
+        raise SystemExit(f'生成或文件处理失败（{type(error).__name__}: {error}）；已完成条目保留，可重跑续传。') from None
