@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Circle. A circle is round like a ball.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.4,
+  "interaction_id": "v1_ChdneWZ0YXM3LUNmQ1ZqdU1QNk42NzhBaxIXZ3lmdGFzNy1DZkNWanVNUDZONjc4QWs",
+  "origin": "generated",
+  "wav_sha256": "937af15641eb75bae1bf0f60a4c003733ac25331ad631cac2f80ed4d46789ec1",
+  "mp3_sha256": "64ee6d9deb2bbfbf199a45c684fde384e266c8fdd5e5945e4b30bd83f5ee6edf"
+}

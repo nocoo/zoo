@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Brown. Brown is like the trunk of a big tree.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.28,
+  "interaction_id": "v1_ChdieWZ0YXV6TUI2X2c2OTRQbGJHMWdBdxIXYnlmdGF1ek1CNl9nNjk0UGxiRzFnQXc",
+  "origin": "generated",
+  "wav_sha256": "08e90ee2bcf751f66fff71fbda1b1063deb45e975f147d0fae6e6deddef45435",
+  "mp3_sha256": "d40cfc3af0920475c48db92aa73a39c46be1ffff4de0d88f1049f58e0b88e594"
+}

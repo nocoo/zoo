@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Pink. Pink is soft like flower petals.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.52,
+  "interaction_id": "v1_ChdNeWZ0YXNyM0NOdU42OTRQbU1ta21BaxIXTXlmdGFzcjNDTnVONjk0UG1NbWttQWs",
+  "origin": "generated",
+  "wav_sha256": "20b23d50080d3238170d4b6a475c2c5ace62c7e1ee84fc617ef0cd7a2ec008a1",
+  "mp3_sha256": "f4e12f1f92a11ea13284c40fe875f29ecd4749f805957d505398fbc842ede15b"
+}

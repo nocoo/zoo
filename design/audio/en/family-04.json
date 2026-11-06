@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Grandma. Grandma's cooking smells yummy.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.56,
+  "interaction_id": "v1_ChdYeWp0YXM2a0R2N2NxZmtQLTdmbG1RZxIXWHlqdGFzNmtEdjdjcWZrUC03ZmxtUWc",
+  "origin": "generated",
+  "wav_sha256": "49f07ffb1b73633529ce57954f0a43418740a5e238d45e609381c2c176a0266c",
+  "mp3_sha256": "f7896d13cb46765b463ea9e5eda80e604a5e603f33ead2068b7ee51ca174af5a"
+}

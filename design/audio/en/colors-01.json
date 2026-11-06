@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Red. Red is bright like a little apple.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.52,
+  "interaction_id": "v1_ChdNU1h0YXN2TU85Ym9xZmtQaU92emdRcxIXTVNYdGFzdk1POWJvcWZrUGlPdnpnUXM",
+  "origin": "generated",
+  "wav_sha256": "52f7f5f488f2cd90e96dfc1ef9d31cb00fcd43cbf3a091a1ff7681730c375ef1",
+  "mp3_sha256": "a4c11b55788439d2290f8029f2f60c0c19c7a7b4dcbe707e3b46f31da6159694"
+}

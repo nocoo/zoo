@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Blue. Blue is the color of the sky and the sea.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.24,
+  "interaction_id": "v1_ChZXaVh0YXZHUUFvMno2OTRQeHNxZ01REhZXaVh0YXZHUUFvMno2OTRQeHNxZ01R",
+  "origin": "generated",
+  "wav_sha256": "64a6c504da2ead7d096318a97af79028515fe917506162339773bb3d45846ff7",
+  "mp3_sha256": "bc53bdf13a955b3392d978a6e8240465311e28306997f98fa7ba3168b87573b0"
+}

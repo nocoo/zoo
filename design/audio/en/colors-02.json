@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Yellow. Yellow is warm like a little duckling.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.44,
+  "interaction_id": "v1_ChdSU1h0YXQ3TE9iT2s2OTRQNDVLcTZBNBIXUlNYdGF0N0xPYk9rNjk0UDQ1S3E2QTQ",
+  "origin": "generated",
+  "wav_sha256": "98c6a3bf97107ce522233573f30b7c1a1f3b036aa3c1c851ec8498a14618dae4",
+  "mp3_sha256": "edba44ae63bfebbdc0f23c6b4f303aef78c8a52275e4132be62af5534cc44e3b"
+}

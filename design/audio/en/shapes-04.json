@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Rectangle. A rectangle has two long sides and two short sides.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.68,
+  "interaction_id": "v1_Chd2eWZ0YW9LZERhR1VqdU1Qdzd6T3NROBIXdnlmdGFvS2REYUdVanVNUHc3ek9zUTg",
+  "origin": "generated",
+  "wav_sha256": "e25e6139ae092340f7aa70df7f35481f8448a91cc618b351ec5f5a947356f4fd",
+  "mp3_sha256": "30f7153097f49b6a8530cfe8ae29940a35ddf8e517359a3168fe2386216ace4a"
+}

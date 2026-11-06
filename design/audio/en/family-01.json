@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Mom. Mom gives hugs and plays with me.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.36,
+  "interaction_id": "v1_ChdJeWp0YW9DZURwUGw0dDRQNTV6RG1BOBIXSXlqdGFvQ2VEcFBsNHQ0UDU1ekRtQTg",
+  "origin": "generated",
+  "wav_sha256": "fec2b1c3fe8fd430aa29b0223e9bfe0e15dc6ebb3deb26df5b3951b05e35af90",
+  "mp3_sha256": "290d6ec2d38c4eced53174cee1d997e42556185633d05824f7a4bfd5d184d35f"
+}

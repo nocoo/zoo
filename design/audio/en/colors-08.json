@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Black. Black is like the night sky.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 3.92,
+  "interaction_id": "v1_ChdSeWZ0YXNHNkJyak42OTRQNGVuenNRMBIXUnlmdGFzRzZCcmpONjk0UDRlbnpzUTA",
+  "origin": "generated",
+  "wav_sha256": "91e7387aac06a94aa70d18c5b05fa69d892a7b91f8408a1d1d964e45b6f768eb",
+  "mp3_sha256": "f5a3fa2c5621c3168df591b6940051b24de031bfcf894fa7648cb4197a08301c"
+}

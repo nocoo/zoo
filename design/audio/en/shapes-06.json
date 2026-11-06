@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Star. A star has five pointed corners.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.12,
+  "interaction_id": "v1_Chc1eWZ0YW9HTkRfeTU2OTRQeVBMZTBBdxIXNXlmdGFvR05EX3k1Njk0UHlQTGUwQXc",
+  "origin": "generated",
+  "wav_sha256": "dddbca7bff762736824451477ba03edcb8411193a2669480da01afc0265fa0ec",
+  "mp3_sha256": "241c005c4e4e6a3479e3edf477dde2bdad08f1dac7b2640293d9e4c141df2e42"
+}

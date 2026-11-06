@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Square. A square has four sides the same length.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.6,
+  "interaction_id": "v1_ChdseWZ0YXNEQ0NmN2NxZmtQLTdmbG1RZxIXbHlmdGFzRENDZjdjcWZrUC03ZmxtUWc",
+  "origin": "generated",
+  "wav_sha256": "8c359d0f7d2cc88360d71754035df7f2416fd609e691e5d15f9345401c3f6157",
+  "mp3_sha256": "29a2375264cc50fad213ac2980cd1b04fc92453c764f8088610885e440d84c85"
+}

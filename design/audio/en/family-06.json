@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Big brother. My big brother holds my hand and we play together.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.4,
+  "interaction_id": "v1_ChdoeWp0YXBhV0VybkE0LUVQM2RldjRRZxIXaHlqdGFwYVdFcm5BNC1FUDNkZXY0UWc",
+  "origin": "generated",
+  "wav_sha256": "be0679f9fb3c068779012add0d68ebcb215969daa5730aed5ac65b8a4de0efbf",
+  "mp3_sha256": "efa55f8d63221e0fefdc8a431ef3915a450c5a264a3b0be3d7b273ec05e6787f"
+}

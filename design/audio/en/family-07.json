@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Big sister. My big sister teaches me to draw.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.04,
+  "interaction_id": "v1_ChdteWp0YXVIZ0UtVzJqdU1QLVpxVTBRbxIXbXlqdGF1SGdFLVcyanVNUC1acVUwUW8",
+  "origin": "generated",
+  "wav_sha256": "1325e26a3bc4c2ac67fe971e1b759b8bc395a8630aec2e4bf6f9fd59515de085",
+  "mp3_sha256": "acd95d83c63ae6fbdc7295f7a9de60322597f69fba027d1b1dd946b85a5ef9dd"
+}

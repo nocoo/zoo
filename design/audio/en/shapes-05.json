@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Oval. An oval looks like an egg.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.04,
+  "interaction_id": "v1_ChcweWZ0YXAtZENPXzV2X2dQLS1yZC1BWRIXMHlmdGFwLWRDT181dl9nUC0tcmQtQVk",
+  "origin": "generated",
+  "wav_sha256": "2a351e0ec0d04326ccd2f47050b5ea124f7042fd0a434f6e908fc1b5f650a3f0",
+  "mp3_sha256": "17097f974d87215579b67f0a2b26cfc29d2bbd1f1303af71f23f631248b451c3"
+}

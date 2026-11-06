@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Orange. Orange is the color of a sweet orange.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.96,
+  "interaction_id": "v1_ChdnaVh0YXBQdEJZekVqdU1QaTk2YmlBMBIXZ2lYdGFwUHRCWXpFanVNUGk5NmJpQTA",
+  "origin": "generated",
+  "wav_sha256": "768bab35e533069f2f39ee36000ab2f8075de9ce713e94f163aacb8795b658fa",
+  "mp3_sha256": "f4fa404e90eaa835b8bf56404cae9587ce5caff6374ddf9f403169faf3c82fc2"
+}

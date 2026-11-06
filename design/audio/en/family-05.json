@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Baby. The baby is little and everyone loves him.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.2,
+  "interaction_id": "v1_ChdjeWp0YXRDMkROZmNxZmtQOU9LRjJRcxIXY3lqdGF0QzJETmZjcWZrUDlPS0YyUXM",
+  "origin": "generated",
+  "wav_sha256": "3f5817384a7a49d35558a73fd418128c9d424e622d9a99e2150bf9772df887ab",
+  "mp3_sha256": "96b482473f7c434181ed06a051ade066603016c1797a0615655da7d42eaf9e4d"
+}

@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Green. Green is the color of grass and leaves.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.8,
+  "interaction_id": "v1_ChdiaVh0YXBtMkNOdm5qdU1Qbm9yMDRBcxIXYmlYdGFwbTJDTnZuanVNUG5vcjA0QXM",
+  "origin": "generated",
+  "wav_sha256": "95e6e04b75c3dab2f9dee5112740cffec018e62a5a212538f242bf060256edcf",
+  "mp3_sha256": "febde63c8781ad14f87502f4faf68dc300f9c9e3d014390f3e130a04eab95da4"
+}

@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Dad. Dad lifts me up high.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 4.0,
+  "interaction_id": "v1_ChdOeWp0YW9QTkNfN2NxZmtQLTdmbG1RZxIXTnlqdGFvUE5DXzdjcWZrUC03ZmxtUWc",
+  "origin": "generated",
+  "wav_sha256": "de9b1e447921f07a1c3006d9bd85cd56a1cfb1668701e610506d863706d5743d",
+  "mp3_sha256": "81576b52934e7b0fc87725732211bd2ba8744b71890610b78af6886b870c1ac1"
+}
