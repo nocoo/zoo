@@ -1,6 +1,6 @@
 # Basic Cognition Categories
 
-Status: 2026-10-30. v1.6.0 (`9427262`) is deployed; exact-revision CI [41130819539](https://github.com/nocoo/zoo/actions/runs/41130819539) passed and `/api/live` reports version `1.6.0`. GitHub Release `v1.6.0` is published.
+Status: 2026-10-30. v1.6.1 (`8afffc8`) is deployed; exact-revision CI [42143519634](https://github.com/nocoo/zoo/actions/runs/42143519634) passed and `/api/live` reports version `1.6.1`. GitHub Release `v1.6.1` is published.
 
 The owner asked for new categories with meaningful thickness,
 reviewed one sample per category, and authorized the rest plus a release.

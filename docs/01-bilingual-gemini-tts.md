@@ -1,6 +1,6 @@
 # Bilingual Gemini Narration
 
-Status: 2026-11-06. Eligible scope is 530 recordings for 265 non-number/non-alphabet cards. All 530 are complete Gemini/Sulafat takes and nothing is pending. The last 39 - 14 Mandarin (shapes-02..08, family-01..07) and 25 English (colors, shapes, family) - were generated today. Gemini had refused them on 2026-10-30 with HTTP 429 for the shared Tier 1 quota and then HTTP 400 because the Hong Kong egress is not a supported region; a Singapore egress served the same requests normally. The 39 temporary Edge clips and their provenance were deleted, so only the 86 Edge files that numbers and the alphabet reference remain. v1.6.0 (`9427262`) is deployed; exact-revision CI [41130819539](https://github.com/nocoo/zoo/actions/runs/41130819539) passed and `/api/live` reports version `1.6.0`. The 2026-11-06 takes are committed but not released.
+Status: 2026-11-06. Eligible scope is 530 recordings for 265 non-number/non-alphabet cards. All 530 are complete Gemini/Sulafat takes and nothing is pending. The last 39 - 14 Mandarin (shapes-02..08, family-01..07) and 25 English (colors, shapes, family) - were generated today. Gemini had refused them on 2026-10-30 with HTTP 429 for the shared Tier 1 quota and then HTTP 400 because the Hong Kong egress is not a supported region; a Singapore egress served the same requests normally. The 39 temporary Edge clips and their provenance were deleted, so only the 86 Edge files that numbers and the alphabet reference remain. v1.6.1 (`8afffc8`) is deployed; exact-revision CI [42143519634](https://github.com/nocoo/zoo/actions/runs/42143519634) passed and `/api/live` reports version `1.6.1`. GitHub Release `v1.6.1` is published.
 
 ## Reading Contract
 
@@ -37,7 +37,7 @@ Updated after the completed 2026-11-06 batch. Completed recordings match their e
 
 530/530 unique Gemini targets are complete locally, with no pending eligible slot. Numbers and alphabet remain excluded and keep their Edge recordings; the shared alphabet clip is unchanged. Every card has both playback URLs.
 
-These inventory numbers describe validated local files, not production deployment. The last 130 clips (91 on 2026-10-29, 39 on 2026-11-06) are committed but not released.
+These inventory numbers describe validated local files, not production deployment. All 130 clips added on 2026-10-29 and 2026-11-06 are released in v1.6.0 and v1.6.1.
 
 ## Completed On 2026-11-06
 
