@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.6.1 - 2026-11-06
+
+- Replace the last 39 temporary Edge narrations with Gemini/Sulafat recordings: the 14 Mandarin clips for 认识形状 2-8 and 我的家人 1-7, plus all 25 English clips for 认识颜色, 认识形状 and 我的家人. Eligible Gemini coverage reaches 530/530 with no pending slot.
+- Identify the real blocker behind the 2026-10-30 refusal. Gemini returned HTTP 400 `User location is not supported for the API use.` because the egress was Hong Kong, not because of the quota; the same requests succeed from Singapore. The generated takes keep the approved model, `Sulafat` voice, style and transcripts.
+- Surface swallowed network errors in `scripts/generate-audio.py`. A connection-layer `OSError` escaped the `urllib.error.URLError` handler and the top-level handler printed a detail-free message, so two authorized runs failed with no diagnosis. Failures now report the exception type and text.
+- Delete the 39 superseded Edge clips and their provenance, leaving only the 86 recordings that numbers and the alphabet still reference. Numbers and alphabet remain Edge-only playback.
+
 ## v1.6.0 - 2026-10-30
 
 - Add three basic-cognition categories for 25 new cards, bringing the library to 321 cards across 15: 认识颜色 (红黄蓝绿橙紫粉黑白棕), 认识形状 (圆形、正方形、三角形、长方形、椭圆形、星形、心形、菱形) and 我的家人 (妈妈、爸爸、爷爷、奶奶、宝宝、哥哥、姐姐). They sit before 汉字宝宝 so number, letter, color, shape and family recognition read as one foundation group.
