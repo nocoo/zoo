@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Ostrich. An ostrich runs very fast, but it cannot fly.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.28,
+  "interaction_id": "v1_ChdFckh1YXNXQ0JfYU4ycm9QMGVuVzhRURIXRXJIdWFzV0NCX2FOMnJvUDBlblc4UVE",
+  "origin": "generated",
+  "wav_sha256": "817f61a3e65fd947f023e25e081a60a8ec476773f22e8a24f471400ec49da5d9",
+  "mp3_sha256": "8dc381444bf44ce66ea7a38ff316b21b3a3795931a1ad389f2af062a333b1529"
+}

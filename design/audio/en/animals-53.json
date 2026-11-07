@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Eagle. An eagle spreads its wings and glides high in the sky.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.36,
+  "interaction_id": "v1_ChdfYkR1YXFIM09mejkxZThQcWY2R2dBYxIXX2JEdWFxSDNPZno5MWU4UHFmNkdnQWM",
+  "origin": "generated",
+  "wav_sha256": "785851c4bfbacc443c487dc22161f728160c63d5c55bf179f4aa0ef1afba06a2",
+  "mp3_sha256": "06462c3d792e5b5d79f08ab4ec1664ca2e783dc0944dedaf166f113d4de7a985"
+}

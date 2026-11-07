@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Jellyfish. A jellyfish is like a clear umbrella, floating gently in the water.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.36,
+  "interaction_id": "v1_ChRUckh1YXBjTWxxN1Y3dy1obkk4UhIUVHJIdWFwY01scTdWN3ctaG5JOFI",
+  "origin": "generated",
+  "wav_sha256": "b1bf058e438ea37fc15f96d5e655d54fbe5da247b424978c6da0d65c932a21d4",
+  "mp3_sha256": "ce23116a3dc69992763444189717830bd2ad4f328e45b53835158eb495b596a7"
+}

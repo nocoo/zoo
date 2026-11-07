@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Hamster. A hamster is tiny and stuffs food into its cheeks.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.08,
+  "interaction_id": "v1_Chdkckh1YXZUaUJzYm0ycm9QNHVXaGtBRRIXZHJIdWF2VGlCc2JtMnJvUDR1V2hrQUU",
+  "origin": "generated",
+  "wav_sha256": "969c5924fdb002a7c63abf8fc87e6d0078bffcfa0046247a1389a4204c22f799",
+  "mp3_sha256": "3f5e2ac1bff324e16307dafa8cfc97f698147648a741dc5db67a63a89dd0932b"
+}

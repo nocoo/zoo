@@ -1,0 +1,11 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "天鹅。天鹅的脖子又长又弯，在水上慢慢游。",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, standard Mainland Chinese Putonghua with precise four tones, natural neutral tones, and clear zh/ch/sh versus z/c/s. No Taiwanese Mandarin, Hong Kong or Cantonese accent, no exaggerated erhua. Calm and affectionate, lightly smiling, never whispery, breathy, theatrical or babyish. Use a natural conversational pace, about 4 Chinese syllables per second, roughly 25 percent faster than a slow bedtime reading. Keep syllables connected and crisp; do not stretch vowels or leave long pauses between phrases. Pause only 150 to 200 milliseconds after the animal name. Read the text verbatim, no extra words, music or effects.",
+  "duration_seconds": 7.52,
+  "interaction_id": "v1_ChdYckR1YXVHdUJmYU4ycm9QMGVuVzhRURIXWHJEdWF1R3VCZmFOMnJvUDBlblc4UVE",
+  "origin": "generated",
+  "wav_sha256": "411b2f2481bfba104804b0410927bd26a486a8c49b1fa99a7e4cbb6cf5d56700",
+  "mp3_sha256": "7cfbc6ccb5bb19150073ed81b567d7601eb7fdd1024d59a3fb7a3f647364f616"
+}

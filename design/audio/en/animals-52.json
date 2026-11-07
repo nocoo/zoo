@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Parrot. A parrot has bright feathers and can copy what we say.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.8,
+  "interaction_id": "v1_ChY2YkR1YXFLSk9yWFk5dE1QdGEyTFVREhY2YkR1YXFLSk9yWFk5dE1QdGEyTFVR",
+  "origin": "generated",
+  "wav_sha256": "e0675c96431f88f218cbda6dc3d8359fa5f1ae4db2bf2925f081b945e93d0b89",
+  "mp3_sha256": "2eb0d924f198ece7f01b263bc8d3b6e3d791b703b0a67d03d4ed0341c2e5d210"
+}

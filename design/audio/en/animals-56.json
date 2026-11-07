@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Tadpole. Tadpoles are tiny and black with a little tail, and they grow into frogs.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.36,
+  "interaction_id": "v1_ChdPYkh1YXI3Q084bTIxZThQZ2NhRTZBVRIXT2JIdWFyN0NPOG0yMWU4UGdjYUU2QVU",
+  "origin": "generated",
+  "wav_sha256": "14140c219a575747db625c22ad1221d2583b6af3f113aef70bf312ae35bff7e8",
+  "mp3_sha256": "7b917d43f842900df85864299dc19166ed71d21311afa9fa4ea8ea545ac30186"
+}

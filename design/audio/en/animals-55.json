@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Swan. A swan has a long curved neck and swims slowly on the water.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 8.12,
+  "interaction_id": "v1_ChZKckh1YXRvMXRkajIwd192d3FpQkFnEhZKckh1YXRvMXRkajIwd192d3FpQkFn",
+  "origin": "generated",
+  "wav_sha256": "2c6e1326729d2ed39d733da57497180b2218ee21e1742f897e79a082c0d13d04",
+  "mp3_sha256": "d12ef179d7433ecceace6fe3a3bf3b7c25ce1214bab92e1b22f8d1e5b0059228"
+}

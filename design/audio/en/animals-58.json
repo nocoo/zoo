@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Seahorse. A seahorse has a head like a tiny horse and a curly tail.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.44,
+  "interaction_id": "v1_ChZZckh1YXF5d0FveWwxZThQdUppRkVBEhZZckh1YXF5d0FveWwxZThQdUppRkVB",
+  "origin": "generated",
+  "wav_sha256": "c3a49b9b2eafe476d025796f4d9f6d7c0b62db18608ed32f6aa622c74af8e49e",
+  "mp3_sha256": "ad61b64fb105f3c5755f084e7516867461302eb905d156e5dc7df97a2836c9ac"
+}
