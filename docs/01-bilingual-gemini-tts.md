@@ -1,6 +1,6 @@
 # Bilingual Gemini Narration
 
-Status: 2026-11-07. Eligible scope is 588 recordings for 294 non-number/non-alphabet cards. All 588 are complete Gemini/Sulafat takes and nothing is pending. The last 39 - 14 Mandarin (shapes-02..08, family-01..07) and 25 English (colors, shapes, family) - were generated today. Gemini had refused them on 2026-10-30 with HTTP 429 for the shared Tier 1 quota and then HTTP 400 because the Hong Kong egress is not a supported region; a Singapore egress served the same requests normally. The 39 temporary Edge clips and their provenance were deleted, so only the 86 Edge files that numbers and the alphabet reference remain. v1.6.1 (`8afffc8`) is deployed; exact-revision CI [42143519634](https://github.com/nocoo/zoo/actions/runs/42143519634) passed and `/api/live` reports version `1.6.1`. GitHub Release `v1.6.1` is published.
+Status: 2026-11-07. Eligible scope is 588 recordings for 294 non-number/non-alphabet cards. All 588 are complete Gemini/Sulafat takes and nothing is pending. The last 58 cover the 29 animal and fruit cards added today; the 58 temporary Edge clips and their provenance were deleted afterwards, so only the 86 Edge files that numbers and the alphabet reference remain. v1.7.0 (`c8df93a`) is deployed; exact-revision CI [42334487396](https://github.com/nocoo/zoo/actions/runs/42334487396) passed and `/api/live` reports version `1.7.0` at that revision. GitHub Release `v1.7.0` is published.
 
 ## Reading Contract
 
