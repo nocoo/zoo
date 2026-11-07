@@ -1,0 +1,14 @@
+Use case: illustration-story, toddler picture-learning website for children aged 1.5-3 with an adult.
+Create ONE finished native 2048x1792 illustration, not a grid, contact sheet, collage, mockup or interface.
+
+The attached native PNG image(s) are STYLE references only. Match their paint, paper grain, rounded proportions, palette and cream paper. Do not copy the old subject, pose, identity, toy-scale context or composition.
+
+STYLE: charming flat gouache with layered painted-paper shapes, rounded child-friendly forms, tiny dark dot eyes and gentle peach blush only where a face naturally suits, fine organic painted-paper texture, and rich but restrained mint, ochre, coral and sky accents.
+
+CONCEPTUAL SOURCE (meaning only; do not write, letter, number, label or caption any of this in the image):
+Chinese: 孔雀。孔雀把尾巴张开，像一把彩色的大扇子。
+English: Peacock. A peacock's tail opens like a big colorful fan.
+
+SUBJECT: One peacock standing in calm side view with its rounded fan of tail feathers spread behind it: a soft teal-blue body, a slender neck, a small crest of three dots on the head, tiny dark dot eyes and two thin legs. The fan is a semicircle of long painted feathers with simple eye spots in warm ochre, coral and mint. Not a turkey, not a pheasant, not a parrot, no garden, no bench, no flowers.
+
+COMPOSITION: one complete centered subject or activity vignette, its longest dimension occupying approximately 82 percent of the canvas, with comfortable clean cream margin around every part. Flat uniform warm cream background, exact sRGB #faf6e8 right to every edge; no vignette, gradient, frame, corner shapes, colored letterbox or cast shadow. No text, letters, numbers, signage words, watermark, grid or extra panels. No 3D, photorealism or heavy outlines.

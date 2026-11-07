@@ -53,7 +53,8 @@ EXTENSION_IDS = (
     tuple(f'animals-{index:02d}' for index in range(36, 51))
     + tuple(f'fruits-{index:02d}' for index in range(27, 41))
 )
-RUN_IDS = {'2026-10-14': APPROVED_IDS, '2026-10-23': ADDITION_IDS, '2026-10-30': CATEGORY_IDS, '2026-11-07': EXTENSION_IDS}
+BIRD_IDS = tuple(f'animals-{index:02d}' for index in range(51, 61))
+RUN_IDS = {'2026-10-14': APPROVED_IDS, '2026-10-23': ADDITION_IDS, '2026-10-30': CATEGORY_IDS, '2026-11-07': EXTENSION_IDS, '2026-11-07-animals': BIRD_IDS}
 APPROVED = APPROVED_IDS
 
 

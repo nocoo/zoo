@@ -1,0 +1,14 @@
+Use case: illustration-story, toddler picture-learning website for children aged 1.5-3 with an adult.
+Create ONE finished native 2048x1792 illustration, not a grid, contact sheet, collage, mockup or interface.
+
+The attached native PNG image(s) are STYLE references only. Match their paint, paper grain, rounded proportions, palette and cream paper. Do not copy the old subject, pose, identity, toy-scale context or composition.
+
+STYLE: charming flat gouache with layered painted-paper shapes, rounded child-friendly forms, tiny dark dot eyes and gentle peach blush only where a face naturally suits, fine organic painted-paper texture, and rich but restrained mint, ochre, coral and sky accents.
+
+CONCEPTUAL SOURCE (meaning only; do not write, letter, number, label or caption any of this in the image):
+Chinese: 北极熊。北极熊的毛白白的，住在很冷的地方。
+English: Polar bear. A polar bear has white fur and lives where it is very cold.
+
+SUBJECT: One calm polar bear standing in side view on a small soft patch of pale blue-white ice: a large rounded body of creamy white fur with a few gentle painted shadow lines, a long pale muzzle, tiny dark eyes and nose, four sturdy legs with softly rounded paws. Not a panda, not a brown bear, no snowflakes falling, no sky, no igloo.
+
+COMPOSITION: one complete centered subject or activity vignette, its longest dimension occupying approximately 82 percent of the canvas, with comfortable clean cream margin around every part. Flat uniform warm cream background, exact sRGB #faf6e8 right to every edge; no vignette, gradient, frame, corner shapes, colored letterbox or cast shadow. No text, letters, numbers, signage words, watermark, grid or extra panels. No 3D, photorealism or heavy outlines.
