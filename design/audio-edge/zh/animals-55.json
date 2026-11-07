@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "天鹅。天鹅的脖子又长又弯，在水上慢慢游。",
+  "rate": "+10%",
+  "sha256": "63d6673bc63ebf90938d0189e43d866d8bdd52298f68b4e0083e471f748c419b",
+  "bytes": 28368
+}

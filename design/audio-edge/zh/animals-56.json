@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "蝌蚪。小蝌蚪黑黑的，长着小尾巴，长大就变成青蛙。",
+  "rate": "+10%",
+  "sha256": "50f0fac884bbb3aee78c0dbb7b2d30a9597e88d4b00a23b97b13fbc7bbd0ea14",
+  "bytes": 32256
+}

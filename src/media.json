@@ -60,6 +60,26 @@
     "/art/expansion/animals-49-thumb.webp": "/art/expansion/animals-49-thumb.webp?v=0a7f38e801176534",
     "/art/expansion/animals-50-full.webp": "/art/expansion/animals-50-full.webp?v=9af93c850c723721",
     "/art/expansion/animals-50-thumb.webp": "/art/expansion/animals-50-thumb.webp?v=f3c9a0961f520c41",
+    "/art/expansion/animals-51-full.webp": "/art/expansion/animals-51-full.webp?v=4e352be88c72c25a",
+    "/art/expansion/animals-51-thumb.webp": "/art/expansion/animals-51-thumb.webp?v=921b1af6dea73672",
+    "/art/expansion/animals-52-full.webp": "/art/expansion/animals-52-full.webp?v=8208d191fe12e31e",
+    "/art/expansion/animals-52-thumb.webp": "/art/expansion/animals-52-thumb.webp?v=0fff8df94a2132f5",
+    "/art/expansion/animals-53-full.webp": "/art/expansion/animals-53-full.webp?v=cded9307b205c61d",
+    "/art/expansion/animals-53-thumb.webp": "/art/expansion/animals-53-thumb.webp?v=a52ae3970ed032ad",
+    "/art/expansion/animals-54-full.webp": "/art/expansion/animals-54-full.webp?v=c6e86ecc8d5b7614",
+    "/art/expansion/animals-54-thumb.webp": "/art/expansion/animals-54-thumb.webp?v=3f105c4b48c73a9b",
+    "/art/expansion/animals-55-full.webp": "/art/expansion/animals-55-full.webp?v=7fbe95406b8c3951",
+    "/art/expansion/animals-55-thumb.webp": "/art/expansion/animals-55-thumb.webp?v=e1b8847ba95635a8",
+    "/art/expansion/animals-56-full.webp": "/art/expansion/animals-56-full.webp?v=8190fbb23febbbfa",
+    "/art/expansion/animals-56-thumb.webp": "/art/expansion/animals-56-thumb.webp?v=e802ab8eb4ab0637",
+    "/art/expansion/animals-57-full.webp": "/art/expansion/animals-57-full.webp?v=d8824f036f801b2b",
+    "/art/expansion/animals-57-thumb.webp": "/art/expansion/animals-57-thumb.webp?v=b1817b60adf80d73",
+    "/art/expansion/animals-58-full.webp": "/art/expansion/animals-58-full.webp?v=8a02856251d1c9c8",
+    "/art/expansion/animals-58-thumb.webp": "/art/expansion/animals-58-thumb.webp?v=61fd296d1cad878c",
+    "/art/expansion/animals-59-full.webp": "/art/expansion/animals-59-full.webp?v=e647d194da6d5034",
+    "/art/expansion/animals-59-thumb.webp": "/art/expansion/animals-59-thumb.webp?v=7bbbab3540fade60",
+    "/art/expansion/animals-60-full.webp": "/art/expansion/animals-60-full.webp?v=680d2c542b5803d2",
+    "/art/expansion/animals-60-thumb.webp": "/art/expansion/animals-60-thumb.webp?v=f6b22d5fd0a08767",
     "/art/expansion/food-01-full.webp": "/art/expansion/food-01-full.webp?v=137e9abdf9f3f214",
     "/art/expansion/food-01-thumb.webp": "/art/expansion/food-01-thumb.webp?v=27f05c9783e18f42",
     "/art/expansion/food-02-full.webp": "/art/expansion/food-02-full.webp?v=662622ac29dd44fd",
@@ -1898,6 +1918,46 @@
       "zh": "/audio/animals-50.mp3?v=26c61580e5097e3e",
       "en": "/audio/en/animals-50.mp3?v=d7f6480c50b63894"
     },
+    "animals-51": {
+      "zh": "/audio-edge/zh/animals-51.mp3?v=2d24ff14ef82daec",
+      "en": "/audio-edge/en/animals-51.mp3?v=8c476cd1e8ddd73a"
+    },
+    "animals-52": {
+      "zh": "/audio-edge/zh/animals-52.mp3?v=024a5481c1caeb10",
+      "en": "/audio-edge/en/animals-52.mp3?v=a727f4fa58f5d749"
+    },
+    "animals-53": {
+      "zh": "/audio-edge/zh/animals-53.mp3?v=63cc203e2cbb9379",
+      "en": "/audio-edge/en/animals-53.mp3?v=482331fd0319ee03"
+    },
+    "animals-54": {
+      "zh": "/audio-edge/zh/animals-54.mp3?v=8a9b7a60394b43ae",
+      "en": "/audio-edge/en/animals-54.mp3?v=ffaf31901432a4a3"
+    },
+    "animals-55": {
+      "zh": "/audio-edge/zh/animals-55.mp3?v=63d6673bc63ebf90",
+      "en": "/audio-edge/en/animals-55.mp3?v=5d7d6fe73623136f"
+    },
+    "animals-56": {
+      "zh": "/audio-edge/zh/animals-56.mp3?v=50f0fac884bbb3ae",
+      "en": "/audio-edge/en/animals-56.mp3?v=1b9c64880d03d036"
+    },
+    "animals-57": {
+      "zh": "/audio-edge/zh/animals-57.mp3?v=a82c93ec7fc4fdfb",
+      "en": "/audio-edge/en/animals-57.mp3?v=8eb67fa095f9b051"
+    },
+    "animals-58": {
+      "zh": "/audio-edge/zh/animals-58.mp3?v=43f85e4175a60686",
+      "en": "/audio-edge/en/animals-58.mp3?v=023675f2a682fb63"
+    },
+    "animals-59": {
+      "zh": "/audio-edge/zh/animals-59.mp3?v=c957c7a216b17ee4",
+      "en": "/audio-edge/en/animals-59.mp3?v=6d70bc9053a31653"
+    },
+    "animals-60": {
+      "zh": "/audio-edge/zh/animals-60.mp3?v=4e2979384a941d37",
+      "en": "/audio-edge/en/animals-60.mp3?v=7b18f40382b13d84"
+    },
     "fruits-27": {
       "zh": "/audio/fruits-27.mp3?v=84fdb6987f261c67",
       "en": "/audio/en/fruits-27.mp3?v=197bed0f2b08ce46"
@@ -3299,6 +3359,46 @@
     "animals-50": {
       "zh": "蜻蜓。蜻蜓有四片薄薄的翅膀，飞起来轻轻的。",
       "en": "Dragonfly. A dragonfly has four thin wings and flies very lightly."
+    },
+    "animals-51": {
+      "zh": "孔雀。孔雀把尾巴张开，像一把彩色的大扇子。",
+      "en": "Peacock. A peacock's tail opens like a big colorful fan."
+    },
+    "animals-52": {
+      "zh": "鹦鹉。鹦鹉的羽毛很鲜艳，会学我们说话。",
+      "en": "Parrot. A parrot has bright feathers and can copy what we say."
+    },
+    "animals-53": {
+      "zh": "老鹰。老鹰张开翅膀，在高高的天空滑翔。",
+      "en": "Eagle. An eagle spreads its wings and glides high in the sky."
+    },
+    "animals-54": {
+      "zh": "鸵鸟。鸵鸟跑得很快，可是不会飞。",
+      "en": "Ostrich. An ostrich runs very fast, but it cannot fly."
+    },
+    "animals-55": {
+      "zh": "天鹅。天鹅的脖子又长又弯，在水上慢慢游。",
+      "en": "Swan. A swan has a long curved neck and swims slowly on the water."
+    },
+    "animals-56": {
+      "zh": "蝌蚪。小蝌蚪黑黑的，长着小尾巴，长大就变成青蛙。",
+      "en": "Tadpole. Tadpoles are tiny and black with a little tail, and they grow into frogs."
+    },
+    "animals-57": {
+      "zh": "水母。水母像一把透明的伞，在水里轻轻飘。",
+      "en": "Jellyfish. A jellyfish is like a clear umbrella, floating gently in the water."
+    },
+    "animals-58": {
+      "zh": "海马。海马的头像小马，尾巴弯弯地卷起来。",
+      "en": "Seahorse. A seahorse has a head like a tiny horse and a curly tail."
+    },
+    "animals-59": {
+      "zh": "仓鼠。仓鼠小小的，会把食物塞到脸颊里。",
+      "en": "Hamster. A hamster is tiny and stuffs food into its cheeks."
+    },
+    "animals-60": {
+      "zh": "北极熊。北极熊的毛白白的，住在很冷的地方。",
+      "en": "Polar bear. A polar bear has white fur and lives where it is very cold."
     },
     "fruits-27": {
       "zh": "杨桃。杨桃切开是五角星的样子。",

@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Seahorse. A seahorse has a head like a tiny horse and a curly tail.",
+  "rate": "+0%",
+  "sha256": "023675f2a682fb63a2598f3c708ebc908dc5f38c628da13735c2dcccf182e05b",
+  "bytes": 34416
+}

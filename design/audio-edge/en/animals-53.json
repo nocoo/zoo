@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Eagle. An eagle spreads its wings and glides high in the sky.",
+  "rate": "+0%",
+  "sha256": "482331fd0319ee03210234324902e3f2db6a0f87dabbf7fe641126d260d56e51",
+  "bytes": 31104
+}

@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Ostrich. An ostrich runs very fast, but it cannot fly.",
+  "rate": "+0%",
+  "sha256": "ffaf31901432a4a337a3ed13beb814d2195c404343354e5065459b1097d36faa",
+  "bytes": 32976
+}

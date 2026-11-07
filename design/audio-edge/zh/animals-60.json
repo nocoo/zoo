@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "北极熊。北极熊的毛白白的，住在很冷的地方。",
+  "rate": "+10%",
+  "sha256": "4e2979384a941d37edbf12a0eebe63fa5f770004697dbaf2e49774ddcbfe7bfa",
+  "bytes": 27648
+}

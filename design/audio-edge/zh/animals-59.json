@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "仓鼠。仓鼠小小的，会把食物塞到脸颊里。",
+  "rate": "+10%",
+  "sha256": "c957c7a216b17ee42140102308273233d7fd76191174c71abd66fa1d0af165e7",
+  "bytes": 27072
+}

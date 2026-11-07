@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "水母。水母像一把透明的伞，在水里轻轻飘。",
+  "rate": "+10%",
+  "sha256": "a82c93ec7fc4fdfb410ec7086ca855487b0f1d6515c5c876e107ac4eab49288f",
+  "bytes": 28512
+}

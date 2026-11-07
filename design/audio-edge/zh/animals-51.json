@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "孔雀。孔雀把尾巴张开，像一把彩色的大扇子。",
+  "rate": "+10%",
+  "sha256": "2d24ff14ef82daecf5ca2d9b60007bfab047f86616fba960391ad0063d6755ec",
+  "bytes": 28800
+}
