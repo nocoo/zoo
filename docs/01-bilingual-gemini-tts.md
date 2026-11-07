@@ -1,6 +1,6 @@
 # Bilingual Gemini Narration
 
-Status: 2026-11-06. Eligible scope is 530 recordings for 265 non-number/non-alphabet cards. All 530 are complete Gemini/Sulafat takes and nothing is pending. The last 39 - 14 Mandarin (shapes-02..08, family-01..07) and 25 English (colors, shapes, family) - were generated today. Gemini had refused them on 2026-10-30 with HTTP 429 for the shared Tier 1 quota and then HTTP 400 because the Hong Kong egress is not a supported region; a Singapore egress served the same requests normally. The 39 temporary Edge clips and their provenance were deleted, so only the 86 Edge files that numbers and the alphabet reference remain. v1.6.1 (`8afffc8`) is deployed; exact-revision CI [42143519634](https://github.com/nocoo/zoo/actions/runs/42143519634) passed and `/api/live` reports version `1.6.1`. GitHub Release `v1.6.1` is published.
+Status: 2026-11-07. Eligible scope is 588 recordings for 294 non-number/non-alphabet cards. All 588 are complete Gemini/Sulafat takes and nothing is pending. The last 39 - 14 Mandarin (shapes-02..08, family-01..07) and 25 English (colors, shapes, family) - were generated today. Gemini had refused them on 2026-10-30 with HTTP 429 for the shared Tier 1 quota and then HTTP 400 because the Hong Kong egress is not a supported region; a Singapore egress served the same requests normally. The 39 temporary Edge clips and their provenance were deleted, so only the 86 Edge files that numbers and the alphabet reference remain. v1.6.1 (`8afffc8`) is deployed; exact-revision CI [42143519634](https://github.com/nocoo/zoo/actions/runs/42143519634) passed and `/api/live` reports version `1.6.1`. GitHub Release `v1.6.1` is published.
 
 ## Reading Contract
 
@@ -38,6 +38,16 @@ Updated after the completed 2026-11-06 batch. Completed recordings match their e
 530/530 unique Gemini targets are complete locally, with no pending eligible slot. Numbers and alphabet remain excluded and keep their Edge recordings; the shared alphabet clip is unchanged. Every card has both playback URLs.
 
 These inventory numbers describe validated local files, not production deployment. All 130 clips added on 2026-10-29 and 2026-11-06 are released in v1.6.0 and v1.6.1.
+
+## Completed On 2026-11-07
+
+The owner reviewed the 29 new animal and fruit cards and said 通过。进行gemini tts, authorizing the remaining 58 targets. Nothing else changed: same model `gemini-3.8-flash-tts`, same `Sulafat` voice, same styles, 20-second spacing, one exclusive lock, no retry, no model fallback.
+
+Before synthesis a read-only `GET /v1beta/models?pageSize=1` probe returned HTTP 200. The egress was the direct Tokyo address `74.82.193.28` (AS21887), so unlike 2026-11-06 no proxy was needed; the Singapore route stayed unused. Quota was not in play: the ledger held no attempts for the day.
+
+One `--bilingual-day` run completed 58/58 - 29 Mandarin then 29 English - with no error and no interruption. 58 of the 100-attempt local cap are recorded, leaving 42 unused, and the queue is empty. Every new MP3 decodes fully with FFmpeg.
+
+The 58 temporary Edge clips and their provenance were then deleted by deriving the keep list from the same `src/media.json` fields the build consumes, which left exactly the 86 number and alphabet recordings. `python3 scripts/generate-audio.py --check --bilingual-day` reports 588/588, `uv run --with edge-tts==7.3.1 --no-project python scripts/generate-edge-audio.py --check` passes, and `npm run check`, `npm run build` and `node scripts/check-pwa.mjs` pass. Chromium played the Mandarin and English takes for 奶牛, 桑葚 and 蜻蜓 with the expected captions and no failed media request. These are not sentence-by-sentence pronunciation approvals.
 
 ## Completed On 2026-11-06
 
