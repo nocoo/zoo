@@ -1,6 +1,6 @@
 # Bilingual Gemini Narration
 
-Status: 2026-11-07. Eligible scope is 588 recordings for 294 non-number/non-alphabet cards. All 588 are complete Gemini/Sulafat takes and nothing is pending. The last 58 cover the 29 animal and fruit cards added today; the 58 temporary Edge clips and their provenance were deleted afterwards, so only the 86 Edge files that numbers and the alphabet reference remain. v1.7.0 (`c8df93a`) is deployed; exact-revision CI [42334487396](https://github.com/nocoo/zoo/actions/runs/42334487396) passed and `/api/live` reports version `1.7.0` at that revision. GitHub Release `v1.7.0` is published.
+Status: 2026-11-07. Eligible scope is 608 recordings for 304 non-number/non-alphabet cards. All 608 are complete Gemini/Sulafat takes and nothing is pending. Today's two runs covered 58 takes for the 29 animal and fruit cards and 20 takes for the ten extra animals; every temporary Edge clip and its provenance was deleted afterwards, so only the 86 Edge files that numbers and the alphabet reference remain. v1.7.0 (`c8df93a`) is deployed; its exact-revision CI [42334487396](https://github.com/nocoo/zoo/actions/runs/42334487396) passed. GitHub Release `v1.7.0` is published.
 
 ## Reading Contract
 
@@ -38,6 +38,14 @@ Updated after the completed 2026-11-06 batch. Completed recordings match their e
 530/530 unique Gemini targets are complete locally, with no pending eligible slot. Numbers and alphabet remain excluded and keep their Edge recordings; the shared alphabet clip is unchanged. Every card has both playback URLs.
 
 These inventory numbers describe validated local files, not production deployment. All 130 clips added on 2026-10-29 and 2026-11-06 are released in v1.6.0 and v1.6.1.
+
+## Completed On 2026-11-07 (second run)
+
+The owner picked the combined option for the ten animals added the same day: Gemini for their 20 targets and a release. A read-only `GET /v1beta/models?pageSize=1` probe again returned HTTP 200 from the direct Tokyo egress `74.82.193.28`, and the local ledger held 58 attempts for the day, so 42 of 100 remained against 20 needed.
+
+One `--bilingual-day` run completed 20/20 - ten Mandarin then ten English - with 20-second spacing, no retry, no model fallback and no provider error. The day's ledger closes at 78 attempts with 22 unused, and the queue is empty.
+
+The 20 temporary Edge clips and their provenance were deleted from the keep list derived from the same `src/media.json` fields the build consumes, leaving exactly the 86 number and alphabet recordings. `python3 scripts/generate-audio.py --check --bilingual-day` reports 608/608 and `uv run --with edge-tts==7.3.1 --no-project python scripts/generate-edge-audio.py --check` passes. Chromium played 孔雀, 蝌蚪 and 北极熊 in both languages from `/audio/` with no failed request and no console error. These are not sentence-by-sentence pronunciation approvals.
 
 ## Completed On 2026-11-07
 

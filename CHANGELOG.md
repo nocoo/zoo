@@ -1,10 +1,11 @@
 # Changelog
 
-## Unreleased
+## v1.8.0 - 2026-11-07
 
 - Add ten more animals, bringing 动物朋友 to 60 and the library to 360 cards: peacock, parrot, eagle, ostrich, swan, tadpole, jellyfish, seahorse, hamster and polar bear. A new 天空飞鸟 filter holds the four birds, so the groups read 森林草原 18, 农场伙伴 13, 水边伙伴 16, 花园小伙伴 9 and 天空飞鸟 4.
 - Draw all ten with the approved reference-guided Azure `gpt-image-2.5-sunburst` pipeline at native 2048 x 1792 plus 640 x 560 thumbnails under `design/art/expansion/2026-11-07-animals/`, merging delivery into `src/additions-art.json`, which now lists 82 cards.
-- Add 20 temporary Edge recordings so the new cards are playable now. Gemini replacement is not authorized; 106 Edge files are referenced until it is.
+- Replace those temporary clips with 20 Gemini/Sulafat recordings in one `--bilingual-day` run with 20-second spacing, no retry and no provider error, after a read-only region probe returned HTTP 200 from the direct Tokyo egress. The day's ledger closes at 78 of 100 attempts with 22 unused.
+- Delete the 20 superseded Edge clips and their provenance, which leaves only the 86 number and alphabet recordings. Eligible Gemini coverage reaches 608/608.
 - Retarget the exact-count assertions to 360 cards, 82 additions, 608 recordings and five animal groups.
 
 ## v1.7.0 - 2026-11-07
