@@ -18,7 +18,7 @@ const expected = [
   { id: 'fruits', name: '缤纷水果', kind: 'existing', start: 21, names: ['橘子', '柚子', '杏', '李子', '山竹', '杨梅'] },
 ] as const;
 
-assert.equal(pictures.length, 321);
+assert.equal(pictures.length, 350);
 assert.equal(expansionCategories.length, expected.length);
 
 const expansionCards = expansionCategories.flatMap(category => category.cards);
@@ -54,6 +54,17 @@ assert.equal(expansionCategories.filter(category => category.kind === 'existing'
 
 const additionIds = additionCategories.flatMap(category => category.cards.map(card => card.id));
 const foundationIds = foundationCategories.flatMap(category => category.cards.map(card => card.id));
+assert.equal(additionIds.length, 72);
+assert.equal(new Set(additionIds).size, 72);
+const additionArt = JSON.parse(readFileSync('src/additions-art.json', 'utf8')).images;
+assert.deepEqual(Object.keys(additionArt).sort(), [...additionIds].sort());
+for (const category of additionCategories) {
+  for (const card of category.cards) {
+    const playable = pictures.find(picture => picture.id === card.id)!;
+    for (const field of fields) assert.equal(playable[field], card[field], `${card.id} ${field}`);
+    assert.equal(playable.category, category.id);
+  }
+}
 const legacy = pictures.filter(picture => !expansionIds.includes(picture.id) && !additionIds.includes(picture.id) && !foundationIds.includes(picture.id));
 assert.equal(legacy.length, 176);
 const legacyIds = new Set(legacy.map(picture => picture.id));

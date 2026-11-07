@@ -119,7 +119,7 @@ export function PictureViewer({ island }: { island: ReturnType<typeof useIsland>
             <MusicIcon size={20} color="currentColor" />
           </Button>}
         </div>
-        {picture.category === 'fruits' && <small className="food-note">请家长去核、切成适龄小块后再食用。</small>}
+        {picture.category === 'fruits' && <small className="food-note">请家长去核去籽、切成适龄小块后再食用。</small>}
       </div>
       <nav className="viewer-navigation" aria-label="切换认知卡片">
         <Button type="text" aria-label="上一个" disabled={island.viewerItems.length < 2} onClick={() => island.move(-1)} icon={<ArrowLeftIcon size={23} color="currentColor" />} />
