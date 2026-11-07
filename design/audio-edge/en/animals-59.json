@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Hamster. A hamster is tiny and stuffs food into its cheeks.",
-  "rate": "+0%",
-  "sha256": "6d70bc9053a316533861f6b298868300e7d3cb0b605944bd11c45d80cd3498d7",
-  "bytes": 31968
-}

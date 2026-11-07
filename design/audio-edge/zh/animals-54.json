@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "鸵鸟。鸵鸟跑得很快，可是不会飞。",
-  "rate": "+10%",
-  "sha256": "8a9b7a60394b43aea0fb06d8472b6c729aa3770ccee483d99caa415658abd5fe",
-  "bytes": 23472
-}

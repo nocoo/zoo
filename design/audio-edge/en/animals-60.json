@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Polar bear. A polar bear has white fur and lives where it is very cold.",
-  "rate": "+0%",
-  "sha256": "7b18f40382b13d84c4b4b1a00eb3c4fbb8bd96eaa0ef96e0228a7819970543a7",
-  "bytes": 34272
-}

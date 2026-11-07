@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Peacock. A peacock's tail opens like a big colorful fan.",
-  "rate": "+0%",
-  "sha256": "8c476cd1e8ddd73a5b2856cc78096063996264272a77fcead3b31a462783ac6d",
-  "bytes": 31248
-}

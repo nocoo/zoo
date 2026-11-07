@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "老鹰。老鹰张开翅膀，在高高的天空滑翔。",
-  "rate": "+10%",
-  "sha256": "63cc203e2cbb9379e2477bb7e29e4a04f8c521628923b62d108c4f1fd7516474",
-  "bytes": 26640
-}

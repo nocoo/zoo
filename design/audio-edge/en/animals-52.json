@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Parrot. A parrot has bright feathers and can copy what we say.",
-  "rate": "+0%",
-  "sha256": "a727f4fa58f5d749f47b142e34838f50fc0776f0ac7635f822cd477d11401f96",
-  "bytes": 31968
-}

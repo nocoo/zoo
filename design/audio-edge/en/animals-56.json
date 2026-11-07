@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Tadpole. Tadpoles are tiny and black with a little tail, and they grow into frogs.",
-  "rate": "+0%",
-  "sha256": "1b9c64880d03d0369dacb7bac45677f9c70561ce6a698968f5dff2ca8abc1e59",
-  "bytes": 38448
-}

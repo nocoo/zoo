@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "鹦鹉。鹦鹉的羽毛很鲜艳，会学我们说话。",
-  "rate": "+10%",
-  "sha256": "024a5481c1caeb10dcbe51f32c5e56cb03f4abf4834f6fd9676bfea092ec13fb",
-  "bytes": 25200
-}

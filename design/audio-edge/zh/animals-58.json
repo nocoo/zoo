@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "海马。海马的头像小马，尾巴弯弯地卷起来。",
-  "rate": "+10%",
-  "sha256": "43f85e4175a60686be21726611b22ab72b16981a900dde37002980cd8b1f9ae1",
-  "bytes": 27504
-}
