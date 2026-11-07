@@ -1,6 +1,6 @@
 # Bilingual Gemini Narration
 
-Status: 2026-11-07. Eligible scope is 608 recordings for 304 non-number/non-alphabet cards. All 608 are complete Gemini/Sulafat takes and nothing is pending. Today's two runs covered 58 takes for the 29 animal and fruit cards and 20 takes for the ten extra animals; every temporary Edge clip and its provenance was deleted afterwards, so only the 86 Edge files that numbers and the alphabet reference remain. v1.7.0 (`c8df93a`) is deployed; its exact-revision CI [42334487396](https://github.com/nocoo/zoo/actions/runs/42334487396) passed. GitHub Release `v1.7.0` is published.
+Status: 2026-11-07. Eligible scope is 608 recordings for 304 non-number/non-alphabet cards. All 608 are complete Gemini/Sulafat takes and nothing is pending. Today's two runs covered 58 takes for the 29 animal and fruit cards and 20 takes for the ten extra animals; every temporary Edge clip and its provenance was deleted afterwards, so only the 86 Edge files that numbers and the alphabet reference remain. v1.8.0 (`ba2d1a9`) is deployed; exact-revision CI [42341384741](https://github.com/nocoo/zoo/actions/runs/42341384741) passed and `/api/live` reports `1.8.0` at that revision. GitHub Release `v1.8.0` is published.
 
 ## Reading Contract
 

@@ -1,6 +1,6 @@
 # Basic Cognition Categories
 
-Status: 2026-11-07. v1.7.0 (`c8df93a`) is deployed; exact-revision CI [42334487396](https://github.com/nocoo/zoo/actions/runs/42334487396) passed and `/api/live` reports version `1.7.0` at that revision. GitHub Release `v1.7.0` is published. The library now holds 350 cards, with animals at 50 and fruits at 40.
+Status: 2026-11-07. v1.8.0 (`ba2d1a9`) is deployed; exact-revision CI [42341384741](https://github.com/nocoo/zoo/actions/runs/42341384741) passed and `/api/live` reports version `1.8.0` at that revision. GitHub Release `v1.8.0` is published. The library now holds 360 cards, with animals at 60 and fruits at 40.
 
 The owner asked for new categories with meaningful thickness,
 reviewed one sample per category, and authorized the rest plus a release.
