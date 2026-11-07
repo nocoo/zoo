@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Starfish. A starfish has five arms, like a little star resting by the sea.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.96,
+  "interaction_id": "v1_ChdNNWJ1YXRPaENyTFdyZmNQNDVUSnNBVRIXTTVidWF0T2hDckxXcmZjUDQ1VEpzQVU",
+  "origin": "generated",
+  "wav_sha256": "4338a986b63bb489c6936aa94b17c4f2ead24e647e2e7ff7bcb790f8ebc461b7",
+  "mp3_sha256": "a7c9573bd85762effd29bf5760e7437a38579d7519e0e42c4ba43cec23d40242"
+}

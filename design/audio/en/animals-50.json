@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Dragonfly. A dragonfly has four thin wings and flies very lightly.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.72,
+  "interaction_id": "v1_ChdiNWJ1YXNiNUNaN21yZmNQa0tyYnVBVRIXYjVidWFzYjVDWjdtcmZjUGtLcmJ1QVU",
+  "origin": "generated",
+  "wav_sha256": "3afe63846849fce55fab3125b06a663927bb73ef122d96146ccf861ecebd85de",
+  "mp3_sha256": "d7f6480c50b63894d16fbc68ebdb496cd848f3dec5fc489513baf0e1418863ff"
+}

@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Goat. A goat has curved horns and likes to nibble on grass.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.08,
+  "interaction_id": "v1_ChdrNVh1YXVfaUFwX1k5dE1QekpXYXNBbxIXazVYdWF1X2lBcF9ZOXRNUHpKV2FzQW8",
+  "origin": "generated",
+  "wav_sha256": "0855da666d9c145049078566b10219994aec33711c02d9d442bb985d0672785b",
+  "mp3_sha256": "3e9bbf9f40f1427f8218f63ec60484f4150dad028213274672d196fdb3e8c87f"
+}

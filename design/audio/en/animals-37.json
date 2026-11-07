@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Horse. A horse runs very fast, and its mane flows in the wind.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.72,
+  "interaction_id": "v1_ChdhNVh1YXVEUEJLN1o5dE1QcGR2VTZROBIXYTVYdWF1RFBCSzdaOXRNUHBkdlU2UTg",
+  "origin": "generated",
+  "wav_sha256": "142599333e1256672354e902c986040b19cba85fa7d2fb706403127beed251d8",
+  "mp3_sha256": "93f6367ddca01b7c54c893e86235afcca05b29eecadc7e4f5305e3c0c79edbfe"
+}

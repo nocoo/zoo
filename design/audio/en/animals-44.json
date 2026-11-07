@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Whale. A whale lives in the sea and spouts water when it comes up.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.92,
+  "interaction_id": "v1_Chc5NVh1YXRTdUJkSG5yZmNQbll5TmdBOBIXOTVYdWF0U3VCZEhucmZjUG5ZeU5nQTg",
+  "origin": "generated",
+  "wav_sha256": "9b63d4db9c8486b80eb50dc21d61bd007f91f857b133efd850bb8c2f45277f91",
+  "mp3_sha256": "8763cd56dc34271dfa14c0f3934be524af2e32544f576a6d007592be7a676959"
+}

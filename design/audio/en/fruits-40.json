@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Sugarcane. Sugarcane is like a little stick with sweet juice inside.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.04,
+  "interaction_id": "v1_ChdoNWZ1YXByY0MtWG1yZmNQMFk3WS1ROBIXaDVmdWFwcmNDLVhtcmZjUDBZN1ktUTg",
+  "origin": "generated",
+  "wav_sha256": "acd74d8303f08df9777cdd0e2d7b7d4a25de056c120807276391259a33cf747b",
+  "mp3_sha256": "d66ecce9942ce6e3fdf91f6bffe708ad95308227fa7f0624ae1caa639ad82df4"
+}

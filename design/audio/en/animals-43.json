@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Leopard. A leopard has spotted rings on its coat and runs very fast.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.08,
+  "interaction_id": "v1_Chc0NVh1YW9TOEJjSHVyZmNQbjUzdDhRURIXNDVYdWFvUzhCY0h1cmZjUG41M3Q4UVE",
+  "origin": "generated",
+  "wav_sha256": "122871e4e1c3abce7bcc2120d00424b4cfb2dc9d5df4fbe06585828449e75a85",
+  "mp3_sha256": "86f6de61958c0cc6a9961982c9a50525fbf027eb5ef59c2a112949b40e5f239e"
+}

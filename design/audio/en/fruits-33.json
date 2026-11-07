@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Papaya. A papaya is long and round with soft orange flesh.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.12,
+  "interaction_id": "v1_ChctNWJ1YXU2TUNzN1k5dE1QaDdlTThBOBIXLTVidWF1Nk1DczdZOXRNUGg3ZU04QTg",
+  "origin": "generated",
+  "wav_sha256": "20418ea78c12f3d4e4de0a238ed884ee23602c8ef1ce29d3cddb237272e129cc",
+  "mp3_sha256": "844c4fb8943f426905cab76b7ebf49c7612fc4eca9d289c0aaba1ef776dc567f"
+}

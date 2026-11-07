@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Cow. A cow has black and white patches and gives us milk.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 5.8,
+  "interaction_id": "v1_ChdWNVh1YXBhdEJzX2JyZmNQazRHQnVBVRIXVjVYdWFwYXRCc19icmZjUGs0R0J1QVU",
+  "origin": "generated",
+  "wav_sha256": "56bfb87b5ab2be834641a1f037340dc4a1744a4456e65c9cb9eead5543a531cb",
+  "mp3_sha256": "8cc0772f22d6db0998a42833e7e48ea54d8e71ac5650228193948c7c26ef5108"
+}

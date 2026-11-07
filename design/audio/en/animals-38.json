@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Rooster. A rooster has a red comb and calls out loudly in the morning.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.56,
+  "interaction_id": "v1_ChdmNVh1YXNxbEJ0SG5yZmNQbll5TmdBOBIXZjVYdWFzcWxCdEhucmZjUG5ZeU5nQTg",
+  "origin": "generated",
+  "wav_sha256": "dde95e680af4201ec2234ef2214438057ae669ffe1742e4e6c31524880768abe",
+  "mp3_sha256": "ab87ea3ded5baa7da473d24e1d439602d272263ce5c04238ef9998b15f953966"
+}

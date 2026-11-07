@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Rhino. A rhino has one horn on its nose and thick skin.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.16,
+  "interaction_id": "v1_ChdwNVh1YXM2SENaYm9yZmNQNzlEX2dBdxIXcDVYdWFzNkhDWmJvcmZjUDc5RF9nQXc",
+  "origin": "generated",
+  "wav_sha256": "6e5df6bdedbb9b5accde0313c5bfa0eace2da8c9b398676cd362506f4b145866",
+  "mp3_sha256": "0b98562a3210b197da0044ffc6fb51324e539b56055487addf3db053053e28bd"
+}

@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Red date. A red date is red and wrinkly, and it tastes sweet when dried.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.56,
+  "interaction_id": "v1_ChYwNWJ1YW8zV0RhaktyZmNQd1ppcVNBEhYwNWJ1YW8zV0RhaktyZmNQd1ppcVNB",
+  "origin": "generated",
+  "wav_sha256": "df2285c69958526b2b5ff5c090a77ed3fae42f3b7e1f61db69e3d8e52537263f",
+  "mp3_sha256": "0c4057768eee9de93e1a56ae5ecc50630c972a5d5d63cacac66f5392cbfcf0ad"
+}

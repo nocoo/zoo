@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Passion fruit. A passion fruit has firm skin, with fragrant seeds inside.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.28,
+  "interaction_id": "v1_ChdJNWZ1YXJYQUNyTFdyZmNQNDVUSnNBVRIXSTVmdWFyWEFDckxXcmZjUDQ1VEpzQVU",
+  "origin": "generated",
+  "wav_sha256": "0f84a7666e9ca4ad21b8252755109165815fe993b8ed8cc661f030095fd16fbe",
+  "mp3_sha256": "e3c419f52b1b177fceaaa885911910cb7833823b3e56d8908c1d5d921e99c71c"
+}

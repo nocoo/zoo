@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Avocado. Cut an avocado open and you find one big round pit.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.84,
+  "interaction_id": "v1_ChdENWZ1YXJ5RER1S012cjBQbkxqUDBRVRIXRDVmdWFyeUREdUtNdnIwUG5MalAwUVU",
+  "origin": "generated",
+  "wav_sha256": "e42e4d3cc02f0fc5a596557b16f9a9138a9d67da4db2cac17238d35494c5b2c0",
+  "mp3_sha256": "8c7de1aad56168984400e75a6a9cedd0ca4649b7e4bc4b4d9aa5df6f60da9920"
+}

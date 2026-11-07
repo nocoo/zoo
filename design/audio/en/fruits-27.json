@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Starfruit. A starfruit is shaped like a five-point star when sliced.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.8,
+  "interaction_id": "v1_ChdnNWJ1YXE3bEJkTHVyZmNQOXZqOTJBNBIXZzVidWFxN2xCZEx1cmZjUDl2ajkyQTQ",
+  "origin": "generated",
+  "wav_sha256": "a1ea4cda7a29138413aeb8771f07ece937a7f1e7d1370c4f976715e7a2565b8e",
+  "mp3_sha256": "197bed0f2b08ce4668f954f61664809dc9c54ff014c7fadb3ebdfb61f46b89fd"
+}

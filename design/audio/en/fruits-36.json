@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Guava. A guava is crunchy to bite and has a special fragrance.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.6,
+  "interaction_id": "v1_ChdONWZ1YW9MMENNeXgycm9QcVlteXNRbxIXTjVmdWFvTDBDTXl4MnJvUHFZbXlzUW8",
+  "origin": "generated",
+  "wav_sha256": "25886b6f9582583bb4ebff9cf52935a6ebbcec4e305c1548e232c68d126139da",
+  "mp3_sha256": "60baddaf992278cbb39db100e0e055f54926891b277b9c0f1d7686e80f2496da"
+}

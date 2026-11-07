@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Mulberry. Mulberries are tiny and dark purple, and they turn your tongue purple.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.72,
+  "interaction_id": "v1_ChdxNWJ1YXRIbUQ0eVl2cjBQakt1WTZRVRIXcTVidWF0SG1ENHlZdnIwUGpLdVk2UVU",
+  "origin": "generated",
+  "wav_sha256": "4a834b3e2cb12fb30fb2059811e3e3ace15a73602c756da2382ae8a2ec60a5c7",
+  "mp3_sha256": "b4b86282378ed134398d8fa8be372acb20d2b23f58bcac97970ac5c7f0e94847"
+}

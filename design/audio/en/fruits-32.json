@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Fig. A fig is soft, with lots of tiny seeds inside.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.32,
+  "interaction_id": "v1_Chc1NWJ1YXJ6Qk5hN1o5dE1QNUkyRjhBURIXNTVidWFyekJOYTdaOXRNUDVJMkY4QVE",
+  "origin": "generated",
+  "wav_sha256": "3b9e7b0ea2e4adf6db723b680c26d1530320bc948b6c9e34f640663336e0081c",
+  "mp3_sha256": "3cd989895eaf5befa8cdb4549027041364fc4d3fb6e11f5de1eb8583c09f65e7"
+}

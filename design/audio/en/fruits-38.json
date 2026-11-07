@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Jackfruit. Jackfruit is one of the biggest fruits, with flesh in segments.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.44,
+  "interaction_id": "v1_ChdYNWZ1YXNPNERJRzkwLWtQbXY3RXNBURIXWDVmdWFzTzRESUc5MC1rUG12N0VzQVE",
+  "origin": "generated",
+  "wav_sha256": "d06c44e882d0585a0830ed66a730b6e6e163df8d47bd47d29260752dff700c86",
+  "mp3_sha256": "6ea40a145cb8de0410ca541d72b5e58cdbe75c2a85040b10879b21d9f0359b23"
+}

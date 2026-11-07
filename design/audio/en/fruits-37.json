@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Durian. Durian is covered in sharp spikes; a grown-up helps open it.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.76,
+  "interaction_id": "v1_ChdTNWZ1YXBmNkNZX1o5dE1QcGNpaTZBURIXUzVmdWFwZjZDWV9aOXRNUHBjaWk2QVE",
+  "origin": "generated",
+  "wav_sha256": "486b1b7739d984fb934daf99cdf1b06e2c5ed1abf7cc8ba59b13b3cdf3869f28",
+  "mp3_sha256": "e32784aaf70ae4e1ee3a1fb619401878ed37717b8b90058db23d77d41ee1b66c"
+}

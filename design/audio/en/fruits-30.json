@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Hawthorn. A hawthorn is small and red, and it tastes so sour you squint.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 8.6,
+  "interaction_id": "v1_Chd2NWJ1YXJLWEN0LWQycm9QLUxpc3NBNBIXdjVidWFyS1hDdC1kMnJvUC1MaXNzQTQ",
+  "origin": "generated",
+  "wav_sha256": "e076df2776ea8e6bdfdbc28bced1600f7a6245f4e1da9423c34f0c95b1fa6e54",
+  "mp3_sha256": "87ec89d3ce8debde59afb5069c89eb80ee474b18861f3d2bdd28c0c76970ee08"
+}

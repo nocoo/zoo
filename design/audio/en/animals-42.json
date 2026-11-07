@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Kangaroo. A kangaroo hops on strong back legs, and the mother has a pouch on her tummy.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 8.12,
+  "interaction_id": "v1_Chd6NVh1YXVxb0JjTzkxZThQMkpLRHNBVRIXejVYdWF1cW9CY085MWU4UDJKS0RzQVU",
+  "origin": "generated",
+  "wav_sha256": "34a5c7593bb083aa81916f554aeb20611724d1d96acc3132c25c7757312ee0b9",
+  "mp3_sha256": "db3750966e4a160f7b825d2163fa244a7d79064b5737600b14f7b806ba449f20"
+}

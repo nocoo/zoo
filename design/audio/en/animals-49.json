@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Firefly. A firefly's tail glows, like carrying a little lamp.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 6.52,
+  "interaction_id": "v1_ChdXNWJ1YXBHVEM3X0tyZmNQMW96TG1BRRIXVzVidWFwR1RDN19LcmZjUDFvekxtQUU",
+  "origin": "generated",
+  "wav_sha256": "f80cfc21457c2f8e441581c8e6c1292d6bdbb040d868331cb46e893a94f96521",
+  "mp3_sha256": "7990271ef80467eb1556dff18ba438ff839a62cbf3ef0cb744373f400fad2fc4"
+}

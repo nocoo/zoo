@@ -1,0 +1,12 @@
+{
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "text": "Spider. A spider has eight legs and spins a web with fine silk.",
+  "style": "A gentle, warm adult female voice reading a picture book to a toddler. Use clear, natural standard American English with a lightly smiling tone. Read the name and the complete explanation verbatim at a natural conversational pace, about 150 words per minute, with only a brief pause after the name. Do not spell letters, repeat words, stretch vowels, whisper, sing or use baby talk. No extra words, commentary, music or effects.",
+  "language": "en",
+  "duration_seconds": 7.48,
+  "interaction_id": "v1_ChZSNWJ1YXM2NkNaVG1yZmNQMU8yUlNBEhZSNWJ1YXM2NkNaVG1yZmNQMU8yUlNB",
+  "origin": "generated",
+  "wav_sha256": "b247be302c24e77a9740438f6928b089042a50aa7a6fdfe9e127b69fdf9e2840",
+  "mp3_sha256": "80e6cb2a9981ac302d11996f2cdf145aca36daf83f5d6628f2b2a615a71f93ab"
+}
