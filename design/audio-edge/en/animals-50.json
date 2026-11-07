@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Dragonfly. A dragonfly has four thin wings and flies very lightly.",
+  "rate": "+0%",
+  "sha256": "987583576429c6cf30db7eaa49a463a3c8fc59b9ad00c2a06017680e479f8b35",
+  "bytes": 35136
+}

@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "海星。海星有五条角，像一颗落在海边的小星星。",
+  "rate": "+10%",
+  "sha256": "bb2fc39da20e49b83ec40c7356710ef8b708aeabf7b67dff37c334c2835da093",
+  "bytes": 29664
+}

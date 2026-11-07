@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Whale. A whale lives in the sea and spouts water when it comes up.",
+  "rate": "+0%",
+  "sha256": "cbe7c9d022a9a4449e904eec59479460436cdb5863e5d80e3cbf8aa057931841",
+  "bytes": 31104
+}

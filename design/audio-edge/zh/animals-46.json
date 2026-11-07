@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "章鱼。章鱼有八条软软的腕，会喷墨躲起来。",
+  "rate": "+10%",
+  "sha256": "08a21f8109e9c8a86c14f9c4458dfdcc344748da1349f20d5559ddd01e34d474",
+  "bytes": 26496
+}

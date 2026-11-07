@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "桑葚。桑葚一颗颗紫黑色，吃了舌头会变紫。",
+  "rate": "+10%",
+  "sha256": "b18d7627bdb6399cf13dd8f206fb72b4f548a822436b775a5195ab73f978f9ac",
+  "bytes": 27936
+}

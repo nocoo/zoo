@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "蜻蜓。蜻蜓有四片薄薄的翅膀，飞起来轻轻的。",
+  "rate": "+10%",
+  "sha256": "c28c4cef2197594457a5e8f82b2f85122c345b29508c792ec9a46ab01f3f2e5d",
+  "bytes": 28656
+}

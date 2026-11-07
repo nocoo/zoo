@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Goat. A goat has curved horns and likes to nibble on grass.",
+  "rate": "+0%",
+  "sha256": "8422aa4baceffb8b4b38529497ff1e2a04439b8393ef8f60c480e3936fead831",
+  "bytes": 30960
+}

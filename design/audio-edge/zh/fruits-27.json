@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "杨桃。杨桃切开是五角星的样子。",
+  "rate": "+10%",
+  "sha256": "0561657db46343e59de65bf2f2152e3f5dd445b2fde092e4fe06580b2cf67330",
+  "bytes": 22608
+}

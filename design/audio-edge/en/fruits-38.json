@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Jackfruit. Jackfruit is one of the biggest fruits, with flesh in segments.",
+  "rate": "+0%",
+  "sha256": "8e4dd033765bbdae83a8551cf3930971a85c2e9bde9495669a23c68e4ad3ce25",
+  "bytes": 34992
+}

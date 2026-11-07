@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "牛油果。牛油果切开，中间有一颗圆圆的大核。",
+  "rate": "+10%",
+  "sha256": "334e05aeb788fd342874d79b8048e639efd5569f3dc9db7c6f2189dfaed28200",
+  "bytes": 28800
+}

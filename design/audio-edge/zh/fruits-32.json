@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "无花果。无花果软软的，里面有好多小小的籽。",
+  "rate": "+10%",
+  "sha256": "485df0ececddc2d35e198a39d64640fe9dc57c39fd5f49ad6938f99a6b047571",
+  "bytes": 27936
+}

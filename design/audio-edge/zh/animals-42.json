@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "袋鼠。袋鼠用强壮的后腿跳着走，妈妈肚子上有口袋。",
+  "rate": "+10%",
+  "sha256": "3604775cad17e58951a7b92be86aae252db0e891d4071093d9547c9328929bd6",
+  "bytes": 32256
+}

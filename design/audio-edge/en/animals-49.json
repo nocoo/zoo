@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Firefly. A firefly's tail glows, like carrying a little lamp.",
+  "rate": "+0%",
+  "sha256": "fda11b16d401951d43262b3e4cc9b334c9d6b32cc20487f5da79e87c01d89940",
+  "bytes": 34704
+}

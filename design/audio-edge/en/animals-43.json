@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Leopard. A leopard has spotted rings on its coat and runs very fast.",
+  "rate": "+0%",
+  "sha256": "89bcb23df1ecbba1b5d08737f690dd439823bb66c634a672385c5fa812f5b842",
+  "bytes": 34128
+}

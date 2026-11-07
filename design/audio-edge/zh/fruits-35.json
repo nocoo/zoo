@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "百香果。百香果的皮有点硬，里面是香香的籽。",
+  "rate": "+10%",
+  "sha256": "a62f5cf955bfcf60ef84297b7a016b38198ab21eaa4cd92a5fc58dd5ac24b0a1",
+  "bytes": 28224
+}

@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "奶牛。奶牛身上有黑白花纹，会给我们牛奶。",
+  "rate": "+10%",
+  "sha256": "d4e43e446a3846168a8928af42a352b622826e4bc031fc3766ebdeacd73eb2d8",
+  "bytes": 26784
+}

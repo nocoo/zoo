@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "山楂。山楂红红的，圆圆的，酸得眯起眼睛。",
+  "rate": "+10%",
+  "sha256": "ae93e2e601ad6dc185ce531ff767cc1be5ded4c2964c5cc2bcb82ecf55005aca",
+  "bytes": 29232
+}

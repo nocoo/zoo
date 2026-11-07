@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "甜瓜。甜瓜外皮光滑，闻起来甜甜的。",
+  "rate": "+10%",
+  "sha256": "3cfe37344ae74a3d470329d41937143090cfdb736845e1033a17bd32c28f3bb2",
+  "bytes": 24768
+}

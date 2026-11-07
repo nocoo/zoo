@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Octopus. An octopus has eight soft arms and squirts ink to hide.",
+  "rate": "+0%",
+  "sha256": "f2477a4d7368f197aa2a837364c7b0e57b657b88d03aa178e217fc48acb46f7c",
+  "bytes": 33840
+}

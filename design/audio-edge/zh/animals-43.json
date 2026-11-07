@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "豹子。豹子身上一圈圈的花斑，跑得特别快。",
+  "rate": "+10%",
+  "sha256": "700a01003d6a43b8a4618b1de2d96eea97b8bf7109fb16d60a8d782f22163b8d",
+  "bytes": 26064
+}

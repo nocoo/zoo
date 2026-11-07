@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Starfish. A starfish has five arms, like a little star resting by the sea.",
+  "rate": "+0%",
+  "sha256": "823c5b86595393dd003f9ffbe81e7d188bc7e4bb1be593f34bb7fb2bacb6c80e",
+  "bytes": 37584
+}

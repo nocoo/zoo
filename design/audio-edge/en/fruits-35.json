@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Passion fruit. A passion fruit has firm skin, with fragrant seeds inside.",
+  "rate": "+0%",
+  "sha256": "0e0d94d6d8e5ed87547917e72794766d17f437127833bacc6295a9cf3afee304",
+  "bytes": 36864
+}

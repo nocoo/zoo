@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "海豹。海豹圆滚滚的，在水里游得又稳又快。",
+  "rate": "+10%",
+  "sha256": "2e3edd1ed61cee8993ba485f2455103b9b185fd8fff71bad39381067511d21f3",
+  "bytes": 28656
+}

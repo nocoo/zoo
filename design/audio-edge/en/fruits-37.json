@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Durian. Durian is covered in sharp spikes; a grown-up helps open it.",
+  "rate": "+0%",
+  "sha256": "430867aac809d63eebc97687d6a35ffc79fa81e6f7e6eae4c5cc6e5b879bbd9d",
+  "bytes": 34128
+}

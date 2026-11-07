@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Melon. A melon has smooth skin and smells sweet.",
+  "rate": "+0%",
+  "sha256": "2cf75671118100dc5fcf73a35321ca9407c1082e5c9945816673cb0986746cfa",
+  "bytes": 28224
+}

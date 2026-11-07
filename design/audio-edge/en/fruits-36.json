@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Guava. A guava is crunchy to bite and has a special fragrance.",
+  "rate": "+0%",
+  "sha256": "e8d7a574b975df32649fc04804830fa7d42ee669facd077968feec69ccfe1808",
+  "bytes": 32544
+}

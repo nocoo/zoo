@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Fig. A fig is soft, with lots of tiny seeds inside.",
+  "rate": "+0%",
+  "sha256": "1796a2a295bbd5db63f4d1bfbec2e185d9198a7c6290b341431a7ce5469ae169",
+  "bytes": 26208
+}

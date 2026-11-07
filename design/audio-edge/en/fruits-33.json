@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "en-US-JennyNeural",
+  "text": "Papaya. A papaya is long and round with soft orange flesh.",
+  "rate": "+0%",
+  "sha256": "62a920d37f317c774abfcc2dc156e036394673b3cc2ccad0170cf7463afc84e5",
+  "bytes": 32256
+}

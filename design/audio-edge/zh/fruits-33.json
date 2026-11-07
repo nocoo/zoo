@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "木瓜。木瓜长长圆圆的，果肉橙橙色，很软。",
+  "rate": "+10%",
+  "sha256": "23aba4db149e766b323b7f88fa9e946a4584ec8b91541c826f5a5adfc5c78740",
+  "bytes": 28944
+}

@@ -1,0 +1,8 @@
+{
+  "provider": "edge-tts",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "text": "番石榴。番石榴咬下去脆脆的，有特别的香味。",
+  "rate": "+10%",
+  "sha256": "c1258297955e03aa7b0f8ac5081e8bdb560058626775555bc0c32bea963e8c46",
+  "bytes": 28368
+}
