@@ -49,7 +49,11 @@ CATEGORY_IDS = (
     + tuple(f'shapes-{index:02d}' for index in range(1, 9))
     + tuple(f'family-{index:02d}' for index in range(1, 8))
 )
-RUN_IDS = {'2026-10-14': APPROVED_IDS, '2026-10-23': ADDITION_IDS, '2026-10-30': CATEGORY_IDS}
+EXTENSION_IDS = (
+    tuple(f'animals-{index:02d}' for index in range(36, 51))
+    + tuple(f'fruits-{index:02d}' for index in range(27, 41))
+)
+RUN_IDS = {'2026-10-14': APPROVED_IDS, '2026-10-23': ADDITION_IDS, '2026-10-30': CATEGORY_IDS, '2026-11-07': EXTENSION_IDS}
 APPROVED = APPROVED_IDS
 
 

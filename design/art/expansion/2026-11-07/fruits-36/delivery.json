@@ -1,0 +1,25 @@
+{
+  "source_sha256": "35b201a04638089100afb8bbc7887bef5a1ad98bac621b9fe9673bc5d9cb613e",
+  "source": "design/art/expansion/2026-11-07/fruits-36/raw/generated.png",
+  "processing": "Edge-connected paper normalization (RGB tolerance 8); lossless WebP; thumbnail downsampling only; restore four thumbnail corner pixels to exact paper after resample.",
+  "files": [
+    {
+      "path": "public/art/expansion/fruits-36-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 2092640,
+      "sha256": "ede8218f8d2cfb7bc9cb090b497d4879fccec40967ac76755943c38be5b0b46a"
+    },
+    {
+      "path": "public/art/expansion/fruits-36-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 226898,
+      "sha256": "decca23f9a7e3219e46aef849045ef241e5d321ccb051b3eff6fb002cb6c10b9"
+    }
+  ]
+}

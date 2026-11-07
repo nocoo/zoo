@@ -145,7 +145,8 @@ def tree(root, ids, *, prompts=True):
 
 
 def patched(root, run, ids):
-    return patch.multiple(gen, ROOT=root, RUN=run, APPROVED_IDS=tuple(ids), LOCK_PATH=root / 'expansion.lock')
+    return patch.multiple(gen, ROOT=root, RUN=run, APPROVED_IDS=tuple(ids), APPROVED=tuple(ids),
+                          LOCK_PATH=root / 'expansion.lock', set_run=lambda name: None)
 
 
 ids2 = ('transport-01', 'transport-02')
@@ -537,13 +538,14 @@ with TemporaryDirectory() as temporary:
                 assert saved.getpixel(point) == proc.atlas.PAPER
         again = proc.collect(items, True)
         assert len(again) == 1
-        (root / 'public/art/expansion/orphan.webp').write_bytes(b'nope')
+        orphan = root / 'public/art/expansion/transport-01-orphan.webp'
+        orphan.write_bytes(b'nope')
         try:
             proc.collect(items, True)
             raise AssertionError('orphan must fail')
         except ValueError as error:
             assert 'Orphan' in str(error)
-        (root / 'public/art/expansion/orphan.webp').unlink()
+        orphan.unlink()
         (run / 'transport-02/delivery.json').write_text('{}\n')
         try:
             proc.collect(items, True)

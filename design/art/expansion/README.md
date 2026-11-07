@@ -2,13 +2,15 @@
 
 Owner authorized 77 expansion drawings in the established HD style, skipping the stopped Edge 403 run. Generation is 77/77 natives and 154 exported deliveries. 2026-10-14 stopped at 46/77. 2026-10-15 added 31 new originals (18 never-requested, then one manual retry each of timeout `places-05` and `animals-22` plus 11 unattempted). Failed timeout records are under `attempts/2026-10-15-authorized-retry` with original paths and SHA-256. No pending or outcome-unknown active cards. No further image API is authorized. All 77 generated is not owner art approval; recorded defects remain in `2026-10-14/review.md`. Live playable `public/art/` files (non-expansion) and `design/art/hd/` originals stay untouched. Draft copy in `src/expansion.ts` is unchanged. Phase 3 audio stays 0/154. No playable integration or deploy. Root invokes generation; these scripts do not schedule provider calls.
 
+`2026-11-07` adds the second owner-requested batch: 29 natives for animals-36..50 and fruits-27..40, generated to 50 animals and 40 fruits. All 29 completed in one run with no retries and no failures; `python3 -B design/art/expansion/generate.py --run 2026-11-07 --check` reports 29/29. Delivery reuses `public/art/expansion/` and `src/additions-art.json`, so its export runs with `--merge` to keep the 43 cards of 2026-10-23: `uv run --with pillow --no-project python -B design/art/expansion/process.py --run 2026-11-07 --art src/additions-art.json --merge`. The map holds 72 cards. All 29 ship temporary Edge narration; no Gemini take exists for them, and none is authorized.
+
 `2026-10-14/manifest.json` is an array of the approved 77 records `{id,category,subject,references}` in source order. Each `2026-10-14/<id>/prompt.txt` is prepared separately. References are existing native 2048 x 1792 PNGs. This directory does not write prompts or the dated manifest. Raw visual notes: `2026-10-14/review.md`.
 
 Succeeded natives (77): transport-01..10, vegetables-01..09, food-01..10, places-01..08, objects-21..31, animals-21..29, phrases-21..29, weather-21..25, fruits-21..26. Archived timeout attempts: `places-05` and `animals-22` under `attempts/2026-10-15-authorized-retry`. No pending active cards.
 
 ## Generate Or Resume
 
-Use the already-installed `python3` and Pillow. Do not `uv run --with pillow` or otherwise install packages for these scripts.
+Use the already-installed `python3` and Pillow. This machine has no system Pillow, so run the scripts as `uv run --with pillow --no-project python -B ...`; do not otherwise install packages for them.
 
 ```sh
 python3 -B design/art/expansion/generate.py --check

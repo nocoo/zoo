@@ -1,0 +1,25 @@
+{
+  "source_sha256": "cb074c2210445892c02161c87dc35147af967ceae5a5f36c53e361851b78d811",
+  "source": "design/art/expansion/2026-11-07/animals-42/raw/generated.png",
+  "processing": "Edge-connected paper normalization (RGB tolerance 8); lossless WebP; thumbnail downsampling only; restore four thumbnail corner pixels to exact paper after resample.",
+  "files": [
+    {
+      "path": "public/art/expansion/animals-42-full.webp",
+      "size": [
+        2048,
+        1792
+      ],
+      "bytes": 1268066,
+      "sha256": "2b0b6beaa7115b4d258c37f7ce596ce5d5a7451c70e7c649b0ee932cffe4d539"
+    },
+    {
+      "path": "public/art/expansion/animals-42-thumb.webp",
+      "size": [
+        640,
+        560
+      ],
+      "bytes": 132306,
+      "sha256": "c9f578d739bc2c7cccb1c917e1cceb47e646131aaf2ae45fccf074d990f4dd51"
+    }
+  ]
+}

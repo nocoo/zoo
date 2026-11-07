@@ -17,6 +17,7 @@ SIZES = [('full', (2048, 1792)), ('thumb', (640, 560))]
 
 
 DELIVERY = 'expansion'
+MERGE = False
 
 
 def public_dir():
@@ -196,6 +197,9 @@ def collect(items, check):
             continue
         records.append((item, export_item(item)))
     expected = art_from(records)
+    if MERGE and art_path().exists():
+        existing = json.loads(art_path().read_text()).get('images') or {}
+        expected = {'images': {**existing, **expected['images']}}
     current = json.loads(art_path().read_text())
     if check:
         if current != expected:
@@ -211,11 +215,13 @@ def main():
     parser.add_argument('--check', action='store_true', help='Read-only validation; no writes or network')
     parser.add_argument('--run', default='2026-10-14')
     parser.add_argument('--art', default='src/expansion-art.json')
+    parser.add_argument('--merge', action='store_true', help='Keep entries already present in --art and add this run')
     parser.add_argument('--dir', default='expansion', help='Delivery directory and /art/<dir>/ URL prefix')
     args = parser.parse_args()
-    global ART, DELIVERY
+    global ART, DELIVERY, MERGE
     ART = args.art
     DELIVERY = args.dir
+    MERGE = args.merge
     gen.set_run(args.run)
     items = gen.load_items()
     records = collect(items, args.check)
