@@ -172,4 +172,4 @@ export const pictures: Picture[] = [
   }))),
 ];
 
-export const animalGroups = ['全部朋友', '森林草原', '农场伙伴', '水边伙伴', '花园小伙伴'];
+export const animalGroups = ['全部朋友', '森林草原', '农场伙伴', '水边伙伴', '花园小伙伴', '天空飞鸟'];
