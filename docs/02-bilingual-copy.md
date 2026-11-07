@@ -1,6 +1,6 @@
 # Bilingual Copy Approval Ledger
 
-Status: 2026-10-30: 321 cards across 15 categories. 491/530 eligible recordings are Gemini; the 39 temporary Edge clips cover the English takes for the new colors, shapes and family categories plus 14 Mandarin clips awaiting a supported Gemini egress region. The new categories are catalogued in `04-basic-categories.md`; this ledger keeps the copy of the cards that existed before them. Numbers and letters remain excluded.
+Status: 2026-11-07: 350 cards across 15 categories. 530/530 eligible Gemini recordings are complete for the cards that existed before 2026-11-07; the 29 cards added that day (animals-36..50, fruits-27..40) ship 58 temporary Edge clips with no Gemini take and no generation authorization. The new categories are catalogued in `04-basic-categories.md`; this ledger keeps the copy of the cards that existed before them. Numbers and letters remain excluded.
 
 ## Reading Contract
 
@@ -12,7 +12,7 @@ Status: 2026-10-30: 321 cards across 15 categories. 491/530 eligible recordings 
 
 ## Totals
 
-253 cards in the original and expansion scope; 480 unique Gemini targets, all complete locally. The 25 basic-category cards added on 2026-10-30 bring the library to 321 cards and 530 targets. Every card retains both playback URLs.
+253 cards in the original and expansion scope; 480 unique Gemini targets, all complete locally. The 25 basic-category cards added on 2026-10-30 bring the library to 321 cards and 530 targets; the 29 cards added on 2026-11-07 bring it to 350 cards, with their 58 narrations on temporary Edge voice. Every card retains both playback URLs.
 
 ## 动物朋友 (20)
 

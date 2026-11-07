@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+- Add 29 picture cards, bringing the library to 350 cards across 15 categories: 动物朋友 grows from 35 to 50 with cow, horse, rooster, goat, rhino, camel, kangaroo, leopard, whale, seal, octopus, starfish, spider, firefly and dragonfly; 缤纷水果 grows from 26 to 40 with starfruit, loquat, mulberry, hawthorn, red date, fig, papaya, avocado, passion fruit, guava, durian, jackfruit, melon and sugarcane. Animal groups become 森林草原 18, 农场伙伴 12, 水边伙伴 11 and 花园小伙伴 9.
+- Draw all 29 illustrations with the approved reference-guided Azure `gpt-image-2.5-sunburst` pipeline at native 2048 x 1792 plus 640 x 560 thumbnails, keeping every prompt, reference, request record and native original under `design/art/expansion/2026-11-07/`. Delivery stays in `public/art/expansion/` and `src/additions-art.json`, which now lists 72 cards.
+- Add 58 temporary Edge recordings, one Mandarin and one English per new card. Gemini replacement is not authorized; the transcripts already match the Gemini contract so a later run can replace them without changing captions.
+- Extend `process.py` with `--merge` so a second delivery batch can add to an existing art map instead of replacing it, and record the shared `2026-11-07` run id in `generate.py`.
+- Broaden the fruit food-safety note to `请家长去核去籽、切成适龄小块后再食用。` so it also fits sugarcane, melon and the other new fruit cards.
+
 ## v1.6.1 - 2026-11-06
 
 - Replace the last 39 temporary Edge narrations with Gemini/Sulafat recordings: the 14 Mandarin clips for 认识形状 2-8 and 我的家人 1-7, plus all 25 English clips for 认识颜色, 认识形状 and 我的家人. Eligible Gemini coverage reaches 530/530 with no pending slot.
