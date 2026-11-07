@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- Add ten more animals, bringing 动物朋友 to 60 and the library to 360 cards: peacock, parrot, eagle, ostrich, swan, tadpole, jellyfish, seahorse, hamster and polar bear. A new 天空飞鸟 filter holds the four birds, so the groups read 森林草原 18, 农场伙伴 13, 水边伙伴 16, 花园小伙伴 9 and 天空飞鸟 4.
+- Draw all ten with the approved reference-guided Azure `gpt-image-2.5-sunburst` pipeline at native 2048 x 1792 plus 640 x 560 thumbnails under `design/art/expansion/2026-11-07-animals/`, merging delivery into `src/additions-art.json`, which now lists 82 cards.
+- Add 20 temporary Edge recordings so the new cards are playable now. Gemini replacement is not authorized; 106 Edge files are referenced until it is.
+- Retarget the exact-count assertions to 360 cards, 82 additions, 608 recordings and five animal groups.
+
 ## v1.7.0 - 2026-11-07
 
 - Add 29 picture cards, bringing the library to 350 cards across 15 categories: 动物朋友 grows from 35 to 50 with cow, horse, rooster, goat, rhino, camel, kangaroo, leopard, whale, seal, octopus, starfish, spider, firefly and dragonfly; 缤纷水果 grows from 26 to 40 with starfruit, loquat, mulberry, hawthorn, red date, fig, papaya, avocado, passion fruit, guava, durian, jackfruit, melon and sugarcane. Animal groups become 森林草原 18, 农场伙伴 12, 水边伙伴 11 and 花园小伙伴 9.
