@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Hawthorn. A hawthorn is small and red, and it tastes so sour you squint.",
-  "rate": "+0%",
-  "sha256": "08048d60e46d135a538ffd740b2f31e06d693cc3c982e3a027bb8e5c2d02f9fc",
-  "bytes": 36720
-}

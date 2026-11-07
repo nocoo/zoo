@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Kangaroo. A kangaroo hops on strong back legs, and the mother has a pouch on her tummy.",
-  "rate": "+0%",
-  "sha256": "d48db455b36764af312c6e659d7c0bc32738905429b54507817adc4245aced03",
-  "bytes": 41328
-}

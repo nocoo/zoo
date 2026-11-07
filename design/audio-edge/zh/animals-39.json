@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "山羊。山羊头上有弯弯的角，喜欢啃青草。",
-  "rate": "+10%",
-  "sha256": "5305ed72af0985ccb6622b136079109d116307255b06dee6830a6e32f18ed975",
-  "bytes": 27072
-}

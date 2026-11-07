@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "骆驼。骆驼背上有驼峰，能在沙漠里走很久。",
-  "rate": "+10%",
-  "sha256": "fc1a9a6d81008f930940eba4f55ca9e6ddfaf4798aabcda28fb80e1e5eda0f1e",
-  "bytes": 27648
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "菠萝蜜。菠萝蜜是最大的水果之一，果肉一瓣一瓣。",
-  "rate": "+10%",
-  "sha256": "a3368926b17d833108b52b1465a7ce89a068bf29152f0b6a8a4dbd17415f037a",
-  "bytes": 30528
-}

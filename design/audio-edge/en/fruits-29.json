@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Mulberry. Mulberries are tiny and dark purple, and they turn your tongue purple.",
-  "rate": "+0%",
-  "sha256": "5ec5757c52e3cdc0d28ee2e7e4276e72ac86b8754092097bfe8b37720188af85",
-  "bytes": 36000
-}

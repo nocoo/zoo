@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "红枣。红枣红红的，皱皱的，晒干后甜甜的。",
-  "rate": "+10%",
-  "sha256": "1231d7a472d0678e4353fce8eab8320cc885b6ef7cb32e02b3e47a7a7cd68429",
-  "bytes": 29088
-}

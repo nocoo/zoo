@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "萤火虫。萤火虫的尾巴会发光，像提着一盏小灯。",
-  "rate": "+10%",
-  "sha256": "4dff3ca2c378bf0cecb4aa29d3ded1446862223089b72e3ea4d9038469b1a17d",
-  "bytes": 29376
-}

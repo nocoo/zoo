@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "公鸡。公鸡头上有红红的鸡冠，早上会大声叫。",
-  "rate": "+10%",
-  "sha256": "b725a54a141521030aa70a6769ad7268c1ca1d8b0ecf12f1286d6ce992ec3ef6",
-  "bytes": 28368
-}

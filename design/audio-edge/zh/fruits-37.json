@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "榴莲。榴莲外面长满尖刺，要大人帮忙打开。",
-  "rate": "+10%",
-  "sha256": "8fd978012c4b944cdb98cdce0e0cf259298a18203acc946a7057c936c8b4e126",
-  "bytes": 27648
-}

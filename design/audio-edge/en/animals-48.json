@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Spider. A spider has eight legs and spins a web with fine silk.",
-  "rate": "+0%",
-  "sha256": "e05e7309d4ee5e15e66bd013df5f05b337cfab3e88382ddc28b654970277e5f2",
-  "bytes": 33840
-}

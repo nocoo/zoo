@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Horse. A horse runs very fast, and its mane flows in the wind.",
-  "rate": "+0%",
-  "sha256": "6f912d057b3398c4270e61db01b92defbb73b36b58884902345ead8dd8fbd87e",
-  "bytes": 33840
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "犀牛。犀牛鼻子上长着一只角，皮厚厚的。",
-  "rate": "+10%",
-  "sha256": "fd43143166da95774a39b5ad4f259e36931186f1ceca15b907ad0cdce501eedc",
-  "bytes": 27360
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "马。马跑起来飞快，鬃毛在风里飘。",
-  "rate": "+10%",
-  "sha256": "3972e1bfac6e64901ee399418d64b64b296a48b0b7fb6a0af7cb91191fc7eb5d",
-  "bytes": 23472
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Camel. A camel has a hump on its back and can walk a long way in the desert.",
-  "rate": "+0%",
-  "sha256": "781d33020f898ce22a499920bb96e6afac0215e6beda44e335c2c24dfd8bdd19",
-  "bytes": 35136
-}

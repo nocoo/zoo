@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "鲸鱼。鲸鱼住在海里，浮上来时会喷出水柱。",
-  "rate": "+10%",
-  "sha256": "b4a06e88075017a9427ac9da2993cd1585aff54643c9ea0e546c712f3580d98d",
-  "bytes": 29232
-}

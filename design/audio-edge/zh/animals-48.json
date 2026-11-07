@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "蜘蛛。蜘蛛有八条腿，会用细细的丝结网。",
-  "rate": "+10%",
-  "sha256": "00a017482b2b9690c53c4aeda596b21c32f57d6e8676df2a75c58fa1766ba79f",
-  "bytes": 26496
-}

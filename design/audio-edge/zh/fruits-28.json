@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "text": "枇杷。枇杷黄黄的，圆圆的，剥开皮就能吃。",
-  "rate": "+10%",
-  "sha256": "c14c13937bde5834e98ffb185ede4e0c778fda2aa881975ed72dfc29e7b26ffb",
-  "bytes": 28656
-}

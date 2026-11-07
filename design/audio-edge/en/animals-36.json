@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Cow. A cow has black and white patches and gives us milk.",
-  "rate": "+0%",
-  "sha256": "740e29709e63e41db083556bf81b9dc3b33ad7fcbfe40e1f2a3681a400cd7335",
-  "bytes": 30816
-}

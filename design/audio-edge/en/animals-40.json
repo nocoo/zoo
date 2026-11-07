@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Rhino. A rhino has one horn on its nose and thick skin.",
-  "rate": "+0%",
-  "sha256": "7b54f38b9d5e79d07666961c5e7e7ff343a1a92f6a9ff956eed1b551af97fd3b",
-  "bytes": 30528
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Loquat. A loquat is yellow and round; just peel it and eat.",
-  "rate": "+0%",
-  "sha256": "48f8e2b3e94da6edac7ffdffe0c7bae2686d3adb49351fee898cd6ae8a6b70f0",
-  "bytes": 32112
-}

@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Rooster. A rooster has a red comb and calls out loudly in the morning.",
-  "rate": "+0%",
-  "sha256": "e8312c3a2d00283c133378cd508e7962bff26830d5f95b02da790400adbda502",
-  "bytes": 33264
-}

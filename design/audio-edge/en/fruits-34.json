@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Avocado. Cut an avocado open and you find one big round pit.",
-  "rate": "+0%",
-  "sha256": "33954dfab4868d42d9967d89afd4f63b74685febffba705b25eb68578065e3b6",
-  "bytes": 33552
-}

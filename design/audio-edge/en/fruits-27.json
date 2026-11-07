@@ -1,8 +1,0 @@
-{
-  "provider": "edge-tts",
-  "voice": "en-US-JennyNeural",
-  "text": "Starfruit. A starfruit is shaped like a five-point star when sliced.",
-  "rate": "+0%",
-  "sha256": "536a702a9e0cd8c97abeb2ac53a1ba307a046cd40ed7b34aaace4913e917592a",
-  "bytes": 34416
-}
