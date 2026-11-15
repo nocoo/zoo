@@ -72,7 +72,7 @@ jobs:
           const dir = ".github/workflows";
           for (const file of fs.readdirSync(dir).filter(f => f.endsWith(".yml") || f.endsWith(".yaml"))) {
             const content = fs.readFileSync(path.join(dir, file), "utf8");
-            for (const match of content.matchAll(/uses:\s*([^\s#]+)/g)) {
+            for (const match of content.matchAll(/^\s*-?\s*uses:\s*([^\s#]+)/gm)) {
               const ref = match[1];
               if (ref.startsWith("./") || ref.startsWith("docker://")) continue;
               const sha = ref.split("@")[1] ?? "";
@@ -173,6 +173,7 @@ jobs:
       - run: npm ci
       - name: Content, player and schedule checks
         run: |
+          npm run build
           npm run check
           node --experimental-strip-types scripts/check-audio-player.ts
           python3 scripts/check-audio-schedule.py
