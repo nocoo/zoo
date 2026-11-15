@@ -50,7 +50,9 @@
 - Reserved browser test ports: 17058 / 27058. The health harness selects ephemeral loopback ports instead of taking over an existing preview.
 - Production URL: `https://zoo.hexly.ai`; Worker `zoo`; configuration `wrangler.jsonc`.
 - This repository has not migrated to `cf` project configuration. Use Wrangler for deployment; `cf` resource reads are supported.
-- User requested basic validation only. Build/content checks and Chromium responsive smoke checks are not evidence of a full 6DQ quality audit.
+- **Quality Slots (`system1-quality` v1.3.0, native mode)**: `.github/workflows/ci.yml` delegates to `./.github/workflows/quality-slots.yml` with `nocoo/base-ci` composite actions pinned to `v2026.15` (`777bbe4f9bacab8a91d8c01974480a6ee23d28e0`). Branch protection (`main quality gate`) requires `quality / Z1: Gate`. Production deployment (`.github/workflows/deploy.yml`) verifies `quality / Z1: Gate` via `release-source` before deploying.
+  - Implemented (`impl`): `S1 Types` (`tsc --noEmit`), `S3 Workflow` (`actionlint` + 40-char SHA pin verification), `G1 Secrets` (`gitleaks`), `G2 Dependencies` (`osv-scanner` over `package-lock.json`), `B1 Build` (`npm run build && node scripts/check-pwa.mjs && wrangler deploy --dry-run`), `L1 Unit` (`npm run check`, `scripts/check-audio-player.ts`, `scripts/check-audio-schedule.py`, `npm run check:live`), `Z1 Gate`.
+  - Inapplicable (`na`): `S2 Lint` (no linter/formatter configured), `L2 Runtime` (static assets Worker), `L3 Integration` (no backend API), `L4 E2E` (no automated Playwright suite in CI), `P1 Package` (private app).
 - Playback uses static MP3 files only, never browser/OS speech or runtime TTS. Keep all completed Gemini recordings; local Edge TTS supplies temporary missing Mandarin and English recordings. Opening and switching cards must stay silent. Headless playback checks do not establish pronunciation accuracy of every generated sentence.
 
 ## Recorded Speech Generation

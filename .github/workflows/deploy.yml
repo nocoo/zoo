@@ -1,0 +1,70 @@
+name: Deploy Production
+
+on:
+  workflow_run:
+    workflows: ["CI"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: zoo-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Deploy Production
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.workflow_run.event == 'push' &&
+       github.event.workflow_run.head_branch == 'main' &&
+       github.event.workflow_run.head_repository.full_name == github.repository &&
+       github.event.workflow_run.conclusion == 'success')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: production
+      url: https://zoo.hexly.ai
+    steps:
+      - name: Resolve and verify CI-gated source revision
+        id: source
+        uses: nocoo/base-ci/.github/actions/release-source@777bbe4f9bacab8a91d8c01974480a6ee23d28e0 # v2026.15
+        with:
+          expected-workflow-path: ".github/workflows/ci.yml"
+          expected-workflow-name: "CI"
+          required-quality-check: "quality / Z1: Gate"
+          source-run-id: ${{ github.event_name == 'workflow_run' && format('{0}', github.event.workflow_run.id) || '' }}
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ steps.source.outputs.sha }}
+          persist-credentials: false
+      - name: Require deployment credential
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            echo '::error::Configure CLOUDFLARE_API_TOKEN in the production environment or repository Actions secrets.'
+            exit 1
+          fi
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "26.12.1"
+          cache: npm
+      - run: npm ci
+      - name: Build exact checked revision
+        run: |
+          npm run build
+          node scripts/check-pwa.mjs
+      - name: Deploy Worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: d51a8fde361e4be31db17d8c56737c1f
+        run: ./node_modules/.bin/wrangler deploy
+      - name: Verify production revision and assets
+        run: |
+          node scripts/verify-deployment.mjs https://zoo.hexly.ai "${{ steps.source.outputs.sha }}"
+          echo "Deployed and verified ${{ steps.source.outputs.sha }} at https://zoo.hexly.ai" >> "$GITHUB_STEP_SUMMARY"
