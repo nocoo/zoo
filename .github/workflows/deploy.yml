@@ -6,6 +6,11 @@ on:
     types: [completed]
     branches: [main]
   workflow_dispatch:
+    inputs:
+      source-run-id:
+        description: 'CI run ID to deploy'
+        required: true
+        type: string
 
 permissions:
   contents: read
@@ -38,10 +43,10 @@ jobs:
           expected-workflow-path: ".github/workflows/ci.yml"
           expected-workflow-name: "CI"
           required-quality-check: "quality / Z1: Gate"
-          source-run-id: ${{ github.event_name == 'workflow_run' && format('{0}', github.event.workflow_run.id) || '' }}
+          source-run-id: ${{ github.event_name == 'workflow_run' && format('{0}', github.event.workflow_run.id) || inputs.source-run-id || '' }}
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          ref: ${{ steps.source.outputs.sha }}
+          ref: ${{ steps.source.outputs.target-sha }}
           persist-credentials: false
       - name: Require deployment credential
         env:
@@ -67,5 +72,5 @@ jobs:
         run: ./node_modules/.bin/wrangler deploy
       - name: Verify production revision and assets
         run: |
-          node scripts/verify-deployment.mjs https://zoo.hexly.ai "${{ steps.source.outputs.sha }}"
-          echo "Deployed and verified ${{ steps.source.outputs.sha }} at https://zoo.hexly.ai" >> "$GITHUB_STEP_SUMMARY"
+          node scripts/verify-deployment.mjs https://zoo.hexly.ai "${{ steps.source.outputs.target-sha }}"
+          echo "Deployed and verified ${{ steps.source.outputs.target-sha }} at https://zoo.hexly.ai" >> "$GITHUB_STEP_SUMMARY"
