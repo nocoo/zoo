@@ -49,7 +49,10 @@ npm ci
 npm run dev
 npm run check
 npm run build
+npm run build:mac
 ```
+
+`npm run build:mac` 会先执行网页构建，再通过 [build-mac.mjs](scripts/build-mac.mjs) 编译 [macos/](macos) 下的原生 Swift `WKWebView` 外壳，将 `dist/` 资源打入本地离线应用 `dist-mac/小小动物岛.app`（`dist-mac/` 已加入 `.gitignore`，不引入 monorepo 拆分）。
 
 开发服务监听 `127.0.0.1:7058`，本机 Caddy 提供 `https://zoo.dev.hexly.ai`。`npm run preview` 在相同端口预览构建结果，运行前应停止开发服务。Service Worker 仅在生产构建中注册；离线验证请在保留测试端口使用生产预览，不要缓存开发服务器。
 
