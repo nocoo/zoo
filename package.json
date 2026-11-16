@@ -6,6 +6,7 @@
     "predev": "node scripts/build-media.mjs",
     "dev": "vite --host 127.0.0.1",
     "build": "node scripts/build-media.mjs && tsc --noEmit && vite build && node scripts/build-live.mjs && node scripts/build-pwa.mjs",
+    "build:mac": "npm run build && node scripts/build-mac.mjs",
     "check": "node --experimental-strip-types scripts/check.ts",
     "check:live": "node scripts/check-live.mjs",
     "preview": "vite preview --host 127.0.0.1 --port 7058",
