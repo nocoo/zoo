@@ -6,6 +6,7 @@
 - [02 - Bilingual copy approval ledger (all cards)](02-bilingual-copy.md)
 - [03 - Approved expansion integration and media history](03-content-expansion.md)
 - [04 - Basic cognition categories](04-basic-categories.md)
+- [05 - Media pipeline, UI specs and batch provenance history](05-media-pipeline-and-batch-history.md)
 
 ## Project And Operations
 
