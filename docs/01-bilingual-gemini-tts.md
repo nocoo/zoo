@@ -16,24 +16,24 @@ Status: 2026-11-07. Eligible scope is 608 recordings for 304 non-number/non-alph
 
 Updated after the completed 2026-11-06 batch. Completed recordings match their exact transcript, model, Sulafat voice, style and WAV/MP3 hashes. `src/media.json` selects these recordings; every pre-existing audio/archive file remains byte-identical.
 
-| Category | Mandarin complete | Mandarin pending | English complete | English pending | Shared alphabet pending |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| Animals | 35 | 0 | 35 | 0 | 0 |
-| Fruit | 26 | 0 | 26 | 0 | 0 |
-| Colors | 10 | 0 | 10 | 0 | 0 |
-| Shapes | 8 | 0 | 8 | 0 | 0 |
-| Family | 7 | 0 | 7 | 0 | 0 |
-| Weather | 29 | 0 | 29 | 0 | 0 |
-| Objects | 37 | 0 | 37 | 0 | 0 |
-| Chinese characters | 20 | 0 | 20 | 0 | 0 |
-| Phrases | 37 | 0 | 37 | 0 | 0 |
-| Transport | 15 | 0 | 15 | 0 | 0 |
-| Vegetables | 13 | 0 | 13 | 0 | 0 |
-| Food | 16 | 0 | 16 | 0 | 0 |
-| Places | 12 | 0 | 12 | 0 | 0 |
-| Numbers 1-30 (excluded) | 0 | 30 | 0 | 30 | 0 |
-| Alphabet A-Z (excluded) | 0 | 0 | 0 | 0 | 26 |
-| Total | 265 | 0 | 265 | 0 | 26 |
+| Category                | Mandarin complete | Mandarin pending | English complete | English pending | Shared alphabet pending |
+| ----------------------- | ----------------: | ---------------: | ---------------: | --------------: | ----------------------: |
+| Animals                 |                35 |                0 |               35 |               0 |                       0 |
+| Fruit                   |                26 |                0 |               26 |               0 |                       0 |
+| Colors                  |                10 |                0 |               10 |               0 |                       0 |
+| Shapes                  |                 8 |                0 |                8 |               0 |                       0 |
+| Family                  |                 7 |                0 |                7 |               0 |                       0 |
+| Weather                 |                29 |                0 |               29 |               0 |                       0 |
+| Objects                 |                37 |                0 |               37 |               0 |                       0 |
+| Chinese characters      |                20 |                0 |               20 |               0 |                       0 |
+| Phrases                 |                37 |                0 |               37 |               0 |                       0 |
+| Transport               |                15 |                0 |               15 |               0 |                       0 |
+| Vegetables              |                13 |                0 |               13 |               0 |                       0 |
+| Food                    |                16 |                0 |               16 |               0 |                       0 |
+| Places                  |                12 |                0 |               12 |               0 |                       0 |
+| Numbers 1-30 (excluded) |                 0 |               30 |                0 |              30 |                       0 |
+| Alphabet A-Z (excluded) |                 0 |                0 |                0 |               0 |                      26 |
+| Total                   |               265 |                0 |              265 |               0 |                      26 |
 
 530/530 unique Gemini targets are complete locally, with no pending eligible slot. Numbers and alphabet remain excluded and keep their Edge recordings; the shared alphabet clip is unchanged. Every card has both playback URLs.
 
@@ -95,14 +95,14 @@ All 1,349 pre-existing audio/archive files remain byte-identical. Exactly forty 
 2. Five-clip Mandarin review: `hanzi-19`, `phrases-01` through `phrases-04`. The owner listened and approved before continuation.
 3. Daily continuation: 84 successful requests, with no retries or provider errors:
 
-| Scope | IDs | New clips |
-| --- | --- | ---: |
-| Mandarin phrases | phrases-05 through phrases-20 | 16 |
-| English animals | animals-02 through animals-20 | 19 |
-| English fruit | fruits-01 through fruits-20 | 20 |
-| English weather | weather-01 through weather-20 | 20 |
-| English objects | objects-01 through objects-09 | 9 |
-| Total continuation | Mandarin first, then English | 84 |
+| Scope              | IDs                           | New clips |
+| ------------------ | ----------------------------- | --------: |
+| Mandarin phrases   | phrases-05 through phrases-20 |        16 |
+| English animals    | animals-02 through animals-20 |        19 |
+| English fruit      | fruits-01 through fruits-20   |        20 |
+| English weather    | weather-01 through weather-20 |        20 |
+| English objects    | objects-01 through objects-09 |         9 |
+| Total continuation | Mandarin first, then English  |        84 |
 
 The continuation preserved all 1,050 pre-existing audio/archive files byte-for-byte and added exactly 84 WAV/JSON/MP3 sets. Every new MP3 decoded fully with FFmpeg. Content and production-build checks passed. Local browser checks sample every newly generated category, silent navigation, exact language URLs and full captions; automated checks do not establish pronunciation quality of every sentence.
 

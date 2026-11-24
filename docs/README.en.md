@@ -17,20 +17,20 @@ Favorites stay in the current browser's local storage. There are no accounts, an
 - Each of 253 illustrations has a 640 × 560 thumbnail and a native 2048 × 1792 full-screen WebP with the two previous and two next images preloaded in the viewer; numbers include matching object counts and letters include familiar associations.
 - iPhone Home Screen installation, bounded offline use and a header link to the Hexly project archive.
 
-| Category | Cards |
-| --- | ---: |
-| Animal friends | 29 |
-| Numbers | 30 |
-| Letters | 26 |
-| Chinese characters | 20 |
-| Everyday phrases | 29 |
-| Weather and nature | 25 |
-| Everyday objects | 31 |
-| Fruit | 26 |
-| Transport | 10 |
-| Vegetables | 9 |
-| Table food | 10 |
-| Places to visit | 8 |
+| Category           | Cards |
+| ------------------ | ----: |
+| Animal friends     |    29 |
+| Numbers            |    30 |
+| Letters            |    26 |
+| Chinese characters |    20 |
+| Everyday phrases   |    29 |
+| Weather and nature |    25 |
+| Everyday objects   |    31 |
+| Fruit              |    26 |
+| Transport          |    10 |
+| Vegetables         |     9 |
+| Table food         |    10 |
+| Places to visit    |     8 |
 
 ## Usage
 

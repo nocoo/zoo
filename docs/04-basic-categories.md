@@ -8,11 +8,11 @@ reviewed one sample per category, and authorized the rest plus a release.
 Three categories were added before the existing 汉字宝宝 section so number, letter,
 color, shape and family recognition read as one foundation group:
 
-| Category | 中文名 | Cards | Template |
-| --- | --- | ---: | --- |
-| `colors` | 认识颜色 | 10 | symbol — oversized gouache swatch as hero |
-| `shapes` | 认识形状 | 8 | symbol — crisp geometric hero |
-| `family` | 我的家人 | 7 | figurative — places adult/child cast |
+| Category | 中文名   | Cards | Template                                  |
+| -------- | -------- | ----: | ----------------------------------------- |
+| `colors` | 认识颜色 |    10 | symbol — oversized gouache swatch as hero |
+| `shapes` | 认识形状 |     8 | symbol — crisp geometric hero             |
+| `family` | 我的家人 |     7 | figurative — places adult/child cast      |
 
 The library moved from 296 cards across 12 categories to 321 across 15. Colors are
 红黄蓝绿橙紫粉黑白棕; shapes are 圆形、正方形、三角形、长方形、椭圆形、星形、心形、菱形; family

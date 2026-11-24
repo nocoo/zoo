@@ -1,45 +1,69 @@
-import { useEffect, useRef, useState, type PointerEvent } from 'react';
-import { Button } from 'animal-island-ui';
-import { ArrowLeftIcon, ArrowRightIcon, CloseIcon, HeartIcon, MusicIcon, FlowerIcon, LeafIcon, StarIcon } from 'naive-icons';
-import { Illustration } from './Illustration';
-import type { useIsland } from './useIsland';
-import { swipeStep } from './swipe';
-import { neighborImages } from './neighbors';
-import { numberPinyin } from './content';
-import media from './media.json';
-import './viewer.css';
+import { useEffect, useRef, useState, type PointerEvent } from "react";
+import { Button } from "animal-island-ui";
+import {
+  ArrowLeftIcon,
+  ArrowRightIcon,
+  CloseIcon,
+  HeartIcon,
+  MusicIcon,
+  FlowerIcon,
+  LeafIcon,
+  StarIcon,
+} from "naive-icons";
+import { Illustration } from "./Illustration";
+import type { useIsland } from "./useIsland";
+import { swipeStep } from "./swipe";
+import { neighborImages } from "./neighbors";
+import { numberPinyin } from "./content";
+import media from "./media.json";
+import "./viewer.css";
 
 export function PictureViewer({ island }: { island: ReturnType<typeof useIsland> }) {
+  if (!island.selected) {
+    throw new Error("PictureViewer requires a selected picture");
+  }
   const dialog = useRef<HTMLDialogElement>(null);
   const gesture = useRef<{ id: number; x: number; y: number } | null>(null);
   const [offset, setOffset] = useState(0);
   const closing = useRef(false);
   const exitAnimation = useRef<Animation | null>(null);
-  const picture = island.selected!;
+  const picture = island.selected;
   const narration = island.narration;
   const transcripts: Record<string, { zh: string; en: string }> = media.transcripts;
-  const index = island.viewerItems.findIndex(item => item.id === picture.id);
-  const adjacent = neighborImages(island.viewerItems, picture.id).join('|');
+  const index = island.viewerItems.findIndex((item) => item.id === picture.id);
+  const adjacent = neighborImages(island.viewerItems, picture.id).join("|");
 
   useEffect(() => {
     const images: Record<string, string> = media.images;
-    const preload = adjacent.split('|').filter(Boolean).map(path => {
-      const image = new Image();
-      image.fetchPriority = 'low';
-      image.src = images[path];
-      return image;
-    });
-    return () => preload.forEach(image => image.removeAttribute('src'));
+    const preload = adjacent
+      .split("|")
+      .filter(Boolean)
+      .map((path) => {
+        const image = new Image();
+        image.fetchPriority = "low";
+        image.src = images[path];
+        return image;
+      });
+    return () => {
+      for (const image of preload) image.removeAttribute("src");
+    };
   }, [adjacent]);
 
   useEffect(() => {
-    const element = dialog.current!;
+    const element = dialog.current;
+    if (!element) return;
     const previousFocus = document.activeElement as HTMLElement | null;
     const overflow = document.body.style.overflow;
     element.showModal();
-    document.body.style.overflow = 'hidden';
-    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      element.animate([{ opacity: 0, transform: 'translateY(22px) scale(.98)' }, { opacity: 1, transform: 'translateY(0) scale(1)' }], { duration: 280, easing: 'cubic-bezier(.2,.7,.2,1)' });
+    document.body.style.overflow = "hidden";
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      element.animate(
+        [
+          { opacity: 0, transform: "translateY(22px) scale(.98)" },
+          { opacity: 1, transform: "translateY(0) scale(1)" },
+        ],
+        { duration: 280, easing: "cubic-bezier(.2,.7,.2,1)" },
+      );
     }
     return () => {
       exitAnimation.current?.cancel();
@@ -53,8 +77,21 @@ export function PictureViewer({ island }: { island: ReturnType<typeof useIsland>
     if (closing.current) return;
     closing.current = true;
     island.stopSpeech();
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { island.closePicture(); return; }
-    const animation = dialog.current!.animate([{ opacity: 1, transform: 'translateY(0) scale(1)' }, { opacity: 0, transform: 'translateY(16px) scale(.98)' }], { duration: 200, easing: 'ease-in', fill: 'forwards' });
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      island.closePicture();
+      return;
+    }
+    const animation = dialog.current?.animate(
+      [
+        { opacity: 1, transform: "translateY(0) scale(1)" },
+        { opacity: 0, transform: "translateY(16px) scale(.98)" },
+      ],
+      { duration: 200, easing: "ease-in", fill: "forwards" },
+    );
+    if (!animation) {
+      island.closePicture();
+      return;
+    }
     exitAnimation.current = animation;
     animation.finished.then(island.closePicture).catch(() => {});
   }
@@ -68,65 +105,184 @@ export function PictureViewer({ island }: { island: ReturnType<typeof useIsland>
     if (step && island.viewerItems.length > 1) island.move(step);
   }
 
-  return <dialog ref={dialog} className="picture-viewer" aria-labelledby="viewer-name" aria-describedby={narration ? 'viewer-description' : undefined}
-    onCancel={event => { event.preventDefault(); close(); }}
-    onKeyDown={event => {
-      if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
-        event.preventDefault(); island.move(event.key === 'ArrowLeft' ? -1 : 1);
-      }
-    }}>
-    <header className="viewer-toolbar">
-      <Button type="text" autoFocus aria-label="关闭认知卡片" onClick={close} icon={<CloseIcon size={25} color="currentColor" />} />
-      <span className="viewer-page"><LeafIcon size={16} color="currentColor" /> 小小发现 <b>{index + 1} / {island.viewerItems.length}</b></span>
-      <Button type="text" aria-label={island.favorites.includes(picture.id) ? '取消收藏' : '收藏'} aria-pressed={island.favorites.includes(picture.id)} onClick={() => island.toggleFavorite(picture.id)} icon={<HeartIcon size={24} color="currentColor" fill={island.favorites.includes(picture.id) ? 'currentColor' : 'none'} />} />
-    </header>
-    <div className="viewer-stage"
-      onPointerDown={event => {
-        if (!event.isPrimary || event.button !== 0) return;
-        gesture.current = { id: event.pointerId, x: event.clientX, y: event.clientY };
-        event.currentTarget.setPointerCapture(event.pointerId);
+  return (
+    <dialog
+      ref={dialog}
+      className="picture-viewer"
+      aria-labelledby="viewer-name"
+      aria-describedby={narration ? "viewer-description" : undefined}
+      onCancel={(event) => {
+        event.preventDefault();
+        close();
       }}
-      onPointerMove={event => {
-        const start = gesture.current;
-        if (!start || start.id !== event.pointerId) return;
-        const dx = event.clientX - start.x;
-        const dy = event.clientY - start.y;
-        if (Math.abs(dy) > 24 && Math.abs(dy) > Math.abs(dx)) { gesture.current = null; setOffset(0); return; }
-        setOffset(Math.max(-160, Math.min(160, dx)));
+      onKeyDown={(event) => {
+        if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+          event.preventDefault();
+          island.move(event.key === "ArrowLeft" ? -1 : 1);
+        }
       }}
-      onPointerUp={finishGesture}
-      onPointerCancel={() => { gesture.current = null; setOffset(0); }}
-      onLostPointerCapture={() => { gesture.current = null; setOffset(0); }}>
-      <div className="viewer-decor" aria-hidden="true"><FlowerIcon size={38} color="currentColor" /><StarIcon size={25} color="currentColor" /><LeafIcon size={32} color="currentColor" /></div>
-      <div key={picture.id} className="viewer-art" style={{ transform: `translateX(${offset}px)` }}><Illustration picture={picture} large /></div>
-    </div>
-    <footer className="viewer-footer">
-      <div className="viewer-caption" aria-live="polite">
-        <div className="viewer-subtitle">
-          {(['zh', 'en'] as const).map(language => <p key={language} className="subtitle-reserve" lang={language === 'zh' ? 'zh-CN' : 'en'} aria-hidden="true">{transcripts[picture.id][language]}</p>)}
-          {narration && <p key={`${picture.id}-${narration.language}`} id="viewer-description" lang={narration.language === 'zh' ? 'zh-CN' : 'en'}>{narration.text}</p>}
+    >
+      <header className="viewer-toolbar">
+        <Button
+          type="text"
+          autoFocus
+          aria-label="关闭认知卡片"
+          onClick={close}
+          icon={<CloseIcon size={25} color="currentColor" />}
+        />
+        <span className="viewer-page">
+          <LeafIcon size={16} color="currentColor" /> 小小发现{" "}
+          <b>
+            {index + 1} / {island.viewerItems.length}
+          </b>
+        </span>
+        <Button
+          type="text"
+          aria-label={island.favorites.includes(picture.id) ? "取消收藏" : "收藏"}
+          aria-pressed={island.favorites.includes(picture.id)}
+          onClick={() => island.toggleFavorite(picture.id)}
+          icon={
+            <HeartIcon
+              size={24}
+              color="currentColor"
+              fill={island.favorites.includes(picture.id) ? "currentColor" : "none"}
+            />
+          }
+        />
+      </header>
+      <div
+        className="viewer-stage"
+        onPointerDown={(event) => {
+          if (!event.isPrimary || event.button !== 0) return;
+          gesture.current = { id: event.pointerId, x: event.clientX, y: event.clientY };
+          event.currentTarget.setPointerCapture(event.pointerId);
+        }}
+        onPointerMove={(event) => {
+          const start = gesture.current;
+          if (!start || start.id !== event.pointerId) return;
+          const dx = event.clientX - start.x;
+          const dy = event.clientY - start.y;
+          if (Math.abs(dy) > 24 && Math.abs(dy) > Math.abs(dx)) {
+            gesture.current = null;
+            setOffset(0);
+            return;
+          }
+          setOffset(Math.max(-160, Math.min(160, dx)));
+        }}
+        onPointerUp={finishGesture}
+        onPointerCancel={() => {
+          gesture.current = null;
+          setOffset(0);
+        }}
+        onLostPointerCapture={() => {
+          gesture.current = null;
+          setOffset(0);
+        }}
+      >
+        <div className="viewer-decor" aria-hidden="true">
+          <FlowerIcon size={38} color="currentColor" />
+          <StarIcon size={25} color="currentColor" />
+          <LeafIcon size={32} color="currentColor" />
         </div>
-        <div className="viewer-readings">
-          <div className="reading-column">
-            <span className="viewer-pronunciation">{picture.category === 'letters' ? '大写和小写' : picture.category === 'numbers' ? numberPinyin(picture.value!) : picture.pronunciation}</span>
-            <Button type="default" className="reading-button" aria-pressed={narration?.language === 'zh'} aria-label={`播放${picture.category === 'letters' ? '字母' : '中文'}：${picture.name}`} onClick={() => island.speak(picture, 'zh')}>
-              <span id="viewer-name" className="reading-name">{picture.category === 'letters' ? `${picture.name} ${picture.pronunciation}` : picture.category === 'numbers' ? picture.pronunciation : picture.name}</span>
-              <MusicIcon size={20} color="currentColor" />
-            </Button>
-          </div>
-          {picture.category !== 'letters' && <Button type="default" className="reading-button english-reading" aria-pressed={narration?.language === 'en'} aria-label={`播放英文：${picture.english}`} onClick={() => island.speak(picture, 'en')}>
-            <span className="reading-name" lang="en">{picture.english}</span>
-            <MusicIcon size={20} color="currentColor" />
-          </Button>}
+        <div
+          key={picture.id}
+          className="viewer-art"
+          style={{ transform: `translateX(${offset}px)` }}
+        >
+          <Illustration picture={picture} large />
         </div>
-        {picture.category === 'fruits' && <small className="food-note">请家长去核去籽、切成适龄小块后再食用。</small>}
       </div>
-      <nav className="viewer-navigation" aria-label="切换认知卡片">
-        <Button type="text" aria-label="上一个" disabled={island.viewerItems.length < 2} onClick={() => island.move(-1)} icon={<ArrowLeftIcon size={23} color="currentColor" />} />
-        <span>左右滑动，认识新朋友</span>
-        <Button type="text" aria-label="下一个" disabled={island.viewerItems.length < 2} onClick={() => island.move(1)} icon={<ArrowRightIcon size={23} color="currentColor" />} />
-      </nav>
-    </footer>
-    {island.message && <div className="toast" role="status">{island.message}</div>}
-  </dialog>;
+      <footer className="viewer-footer">
+        <div className="viewer-caption" aria-live="polite">
+          <div className="viewer-subtitle">
+            {(["zh", "en"] as const).map((language) => (
+              <p
+                key={language}
+                className="subtitle-reserve"
+                lang={language === "zh" ? "zh-CN" : "en"}
+                aria-hidden="true"
+              >
+                {transcripts[picture.id][language]}
+              </p>
+            ))}
+            {narration && (
+              <p
+                key={`${picture.id}-${narration.language}`}
+                id="viewer-description"
+                lang={narration.language === "zh" ? "zh-CN" : "en"}
+              >
+                {narration.text}
+              </p>
+            )}
+          </div>
+          <div className="viewer-readings">
+            <div className="reading-column">
+              <span className="viewer-pronunciation">
+                {picture.category === "letters"
+                  ? "大写和小写"
+                  : picture.category === "numbers" && picture.value !== undefined
+                    ? numberPinyin(picture.value)
+                    : picture.pronunciation}
+              </span>
+              <Button
+                type="default"
+                className="reading-button"
+                aria-pressed={narration?.language === "zh"}
+                aria-label={`播放${picture.category === "letters" ? "字母" : "中文"}：${picture.name}`}
+                onClick={() => island.speak(picture, "zh")}
+              >
+                <span id="viewer-name" className="reading-name">
+                  {picture.category === "letters"
+                    ? `${picture.name} ${picture.pronunciation}`
+                    : picture.category === "numbers"
+                      ? picture.pronunciation
+                      : picture.name}
+                </span>
+                <MusicIcon size={20} color="currentColor" />
+              </Button>
+            </div>
+            {picture.category !== "letters" && (
+              <Button
+                type="default"
+                className="reading-button english-reading"
+                aria-pressed={narration?.language === "en"}
+                aria-label={`播放英文：${picture.english}`}
+                onClick={() => island.speak(picture, "en")}
+              >
+                <span className="reading-name" lang="en">
+                  {picture.english}
+                </span>
+                <MusicIcon size={20} color="currentColor" />
+              </Button>
+            )}
+          </div>
+          {picture.category === "fruits" && (
+            <small className="food-note">请家长去核去籽、切成适龄小块后再食用。</small>
+          )}
+        </div>
+        <nav className="viewer-navigation" aria-label="切换认知卡片">
+          <Button
+            type="text"
+            aria-label="上一个"
+            disabled={island.viewerItems.length < 2}
+            onClick={() => island.move(-1)}
+            icon={<ArrowLeftIcon size={23} color="currentColor" />}
+          />
+          <span>左右滑动，认识新朋友</span>
+          <Button
+            type="text"
+            aria-label="下一个"
+            disabled={island.viewerItems.length < 2}
+            onClick={() => island.move(1)}
+            icon={<ArrowRightIcon size={23} color="currentColor" />}
+          />
+        </nav>
+      </footer>
+      {island.message && (
+        <div className="toast" role="status">
+          {island.message}
+        </div>
+      )}
+    </dialog>
+  );
 }

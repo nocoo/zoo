@@ -13,6 +13,7 @@ npm run dev                  # https://zoo.dev.hexly.ai -> 127.0.0.1:7058
 npm run build                # build-media, tsc --noEmit, vite build, live, pwa
 npm run build:mac            # web build + Swift WKWebView bundle in dist-mac/
 npm run check                # content inventory, IDs, images, number labels
+npm run lint                 # S2: Biome lint and format check
 npm run check:live           # ephemeral local Worker GET/HEAD /api/live check
 node scripts/check-pwa.mjs   # service worker precache and bypass verification
 node --experimental-strip-types scripts/check-audio-player.ts
@@ -41,17 +42,17 @@ npm run deploy               # build + Wrangler deploy (authorized only)
 
 Follows `system1-quality`; CI slot definitions and pinned `base-ci` revision live in [.github/workflows/quality-slots.yml](.github/workflows/quality-slots.yml) (`quality / Z1: Gate` required on `main` and verified by `.github/workflows/deploy.yml`). Status vocabulary: `enforced`, `planned`, `manual`, `N/A`.
 
-- **Exceptions / gaps**: `S2 Lint` (no linter), `L2 Runtime` (static Worker), `L3 Integration` (no backend API), `L4 E2E` (no CI Playwright suite), and `P1 Package` (private app) are `N/A`.
+- **Exceptions / gaps**: `L2 Runtime` (static Worker), `L3 Integration` (no backend API), `L4 E2E` (no CI Playwright suite), and `P1 Package` (private app) are `N/A`. `S2 Lint` is `enforced` via Biome (`npm run lint`).
 - **Verification scope**: `L1 Unit` is `enforced` via repo check scripts without a coverage threshold; physical iPhone PWA/offline and listening pronunciation reviews remain `manual`.
 - **Local hooks**: none configured in repo; run `npm run check`, `npm run build`, `node scripts/check-pwa.mjs`, and `npm run check:live` manually (`manual`) before pushing.
 
 ## Resources & Isolation
 
-| Lane | Endpoint / State | Boundary |
-| --- | --- | --- |
-| Dev | `https://zoo.dev.hexly.ai` -> `127.0.0.1:7058` | Daily Vite dev server; stop before `npm run preview` on `7058`; no SW registered |
+| Lane  | Endpoint / State                                            | Boundary                                                                                        |
+| ----- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Dev   | `https://zoo.dev.hexly.ai` -> `127.0.0.1:7058`              | Daily Vite dev server; stop before `npm run preview` on `7058`; no SW registered                |
 | Tests | Preview `17058` / `27058`; ephemeral ports for `check:live` | Offline SW tests use `vite preview --port 17058`; local `workerd` uses compat date `2026-10-08` |
-| Prod | `https://zoo.hexly.ai` (Worker `zoo`, `wrangler.jsonc`) | Read-only checks unless deploy authorized; compat date `2026-10-09` verified post-deploy |
+| Prod  | `https://zoo.hexly.ai` (Worker `zoo`, `wrangler.jsonc`)     | Read-only checks unless deploy authorized; compat date `2026-10-09` verified post-deploy        |
 
 ## Retrospective
 

@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       source-run-id:
-        description: 'CI run ID to deploy'
+        description: "CI run ID to deploy"
         required: true
         type: string
 

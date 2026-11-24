@@ -1,8 +1,8 @@
 # Approved Content Expansion
+
 2026-10-29: the 43 additions moved off Edge narration. The owner asked to resume the speech queue in order until the day's budget was spent; the run completed 91 clips (43 Mandarin plus 43 English for these cards, plus `en/places-04`..`08`) with no provider error and emptied the queue at 91 of 100 local attempts. Every eligible non-number/non-alphabet slot is now Gemini. Commit `ada8689`; `npm run check` and `npm run build` pass. v1.5.1 (`6d02fd5`) is deployed; exact-revision CI [40874646579](https://github.com/nocoo/zoo/actions/runs/40874646579) passed and `/api/live` reports version `1.5.1`. The 521 Edge clips no card references were deleted; only numbers and the alphabet keep Edge playback. See `docs/01-bilingual-gemini-tts.md`.
 
 2026-10-23: the owner approved 43 additions to the twelve existing categories and an Azure `gpt-image-2.5-sunburst` batch in the established style. All 43 natives are archived under `design/art/expansion/2026-10-23/` with `prepare.py` prompts, a manifest and per-card request records; deliveries are 43 full plus 43 thumbnails under `public/art/expansion/`, tracked by `src/additions-art.json`. Edge TTS 7.3.1 produced all 86 bilingual clips; 43 cards went live with Edge narration and no Gemini request was made at that point. Recorded visual findings: `places-09`..`12` are scene-only while the earlier eight places cards include a grown-up and a child, and `places-09` reads closer to a garden than a zoo. Numbers and letters remain excluded; the local daily Gemini ceiling stays 100. v1.5.0 (`aeef853`) is deployed with exact-revision CI [40033451956](https://github.com/nocoo/zoo/actions/runs/40033451956) passing; `/api/live` reports version `1.5.0`.
-
 
 Status: 2026-10-15 playable integration. The owner approved all 77 illustrations/copy and authorized generation and publication of 154 Edge clips; the recordings have not received sentence-by-sentence listening or pronunciation approval. `src/content.ts` now assembles 253 cards across 12 categories, preserving the original 176 exact texts, ordering within each category, image URLs, recordings and captions. `src/expansion.ts` remains the approved expansion-copy source. The obsolete `?review=expansion` draft UI, its styles and separate playback hook are removed; all cards use the main gallery, favorites, random sessions and viewer.
 
@@ -12,17 +12,17 @@ Status: 2026-10-15 playable integration. The owner approved all 77 illustrations
 
 77 additions: 37 in four new categories, 40 in five existing categories. All bilingual fields remain in `src/expansion.ts`; food and vegetable names are everyday culinary labels. 橘子 / Mandarin orange and 柚子 / Pomelo stay distinct from 橙子 / Orange. These cards are optional shared exploration, not developmental requirements.
 
-| Group | Category id | Added | Total playable | Expansion IDs |
-| --- | --- | ---: | ---: | --- |
-| 交通工具 | transport | 10 | 10 | transport-01..10 |
-| 蔬菜 | vegetables | 9 | 9 | vegetables-01..09 |
-| 饭桌食物 | food | 10 | 10 | food-01..10 |
-| 一起出门 | places | 8 | 8 | places-01..08 |
-| 身边物品 | objects | 11 | 31 | objects-21..31 |
-| 动物朋友 | animals | 9 | 29 | animals-21..29 |
-| 开口说说 | phrases | 9 | 29 | phrases-21..29 |
-| 天气自然 | weather | 5 | 25 | weather-21..25 |
-| 缤纷水果 | fruits | 6 | 26 | fruits-21..26 |
+| Group    | Category id | Added | Total playable | Expansion IDs     |
+| -------- | ----------- | ----: | -------------: | ----------------- |
+| 交通工具 | transport   |    10 |             10 | transport-01..10  |
+| 蔬菜     | vegetables  |     9 |              9 | vegetables-01..09 |
+| 饭桌食物 | food        |    10 |             10 | food-01..10       |
+| 一起出门 | places      |     8 |              8 | places-01..08     |
+| 身边物品 | objects     |    11 |             31 | objects-21..31    |
+| 动物朋友 | animals     |     9 |             29 | animals-21..29    |
+| 开口说说 | phrases     |     9 |             29 | phrases-21..29    |
+| 天气自然 | weather     |     5 |             25 | weather-21..25    |
+| 缤纷水果 | fruits      |     6 |             26 | fruits-21..26     |
 
 Unchanged categories: numbers 30, letters 26, hanzi 20. New animal groups: pig/chick/goose join 农场伙伴; butterfly/snail/ant/bee/ladybug/caterpillar join 花园小伙伴. Every animal belongs to a visible filter. Counts follow the actual filtered collection. Desktop category tiles use two rows of six; mobile retains four columns.
 

@@ -62,16 +62,19 @@ Delivery assets live under `public/art/`; originals, prompts, exact subject orde
 All three batches deliver into `public/art/expansion/` and `src/additions-art.json`, and play Gemini/Sulafat narration:
 
 - **2026-10-23 (43 cards)** — `design/art/expansion/2026-10-23/` (natives, `prepare.py` prompts, `manifest.json`):
+
   ```sh
   python3 -B design/art/expansion/generate.py --run 2026-10-23
   uv run --with pillow --no-project python design/art/expansion/process.py --run 2026-10-23 --art src/additions-art.json
   ```
 - **2026-11-07 (29 cards)** — `design/art/expansion/2026-11-07/` (merged into `src/additions-art.json`):
+
   ```sh
   python3 -B design/art/expansion/generate.py --run 2026-11-07
   uv run --with pillow --no-project python design/art/expansion/process.py --run 2026-11-07 --art src/additions-art.json --merge
   ```
 - **2026-11-07 (10 animals)** — `design/art/expansion/2026-11-07-animals/` (merged into `src/additions-art.json`):
+
   ```sh
   python3 -B design/art/expansion/generate.py --run 2026-11-07-animals
   uv run --with pillow --no-project python design/art/expansion/process.py --run 2026-11-07-animals --art src/additions-art.json --merge

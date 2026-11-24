@@ -1,13 +1,17 @@
-import type { Picture } from './content';
-import { expansionCategories } from './expansion.ts';
-import { additionCategories } from './additions.ts';
-import { foundationCategories } from './foundations.ts';
+import type { Picture } from "./content";
+import { expansionCategories } from "./expansion.ts";
+import { additionCategories } from "./additions.ts";
+import { foundationCategories } from "./foundations.ts";
 
-const expansionIds = new Set([...expansionCategories, ...additionCategories, ...foundationCategories].flatMap(category => category.cards.map(card => card.id)));
+const expansionIds = new Set(
+  [...expansionCategories, ...additionCategories, ...foundationCategories].flatMap((category) =>
+    category.cards.map((card) => card.id),
+  ),
+);
 
 export function audioTranscript(picture: Picture): string {
-  if (picture.category === 'letters') return picture.name;
-  if (picture.category === 'numbers') return picture.pronunciation;
+  if (picture.category === "letters") return picture.name;
+  if (picture.category === "numbers") return picture.pronunciation;
   return `${picture.name}。${picture.description}`;
 }
 
@@ -16,7 +20,7 @@ export function edgeEnglishAudioTranscript(picture: Picture): string {
 }
 
 export function englishAudioTranscript(picture: Picture): string {
-  if (picture.category === 'letters') return picture.name;
+  if (picture.category === "letters") return picture.name;
   if (!picture.englishDescription) throw new Error(`Missing English explanation: ${picture.id}`);
   return `${picture.english}. ${picture.englishDescription}`;
 }
