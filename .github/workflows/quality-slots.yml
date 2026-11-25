@@ -1,5 +1,5 @@
 # System1 quality slots, native mode (system1-quality v1.3.0, base-ci v2026.17).
-# L2 Runtime, L3 Integration, L4 E2E, and P1 Package are declared `na` and stay skipped.
+# L2 Runtime, L3 Integration, and L4 E2E are declared `na` and stay skipped.
 name: Quality slots
 
 on:
@@ -155,16 +155,23 @@ jobs:
             !/design/art/
             !/design/audio/*.wav
             !/design/audio/**/*.wav
-      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+      - uses: nocoo/base-ci/.github/actions/setup-js@dc858360aa7812db61fd9d825943e4efd4dcd0e7 # v2026.17
         with:
+          package-manager: npm
           node-version: ${{ env.NODE_VERSION }}
-          cache: npm
-      - run: npm ci
-      - name: Build and verify PWA & dry-run deploy
+          install-policy: project
+      - name: Build production bundle and verify PWA
         run: |
-          npm run build
+          node scripts/build-media.mjs
+          ./node_modules/.bin/vite build
+          node scripts/build-live.mjs
+          node scripts/build-pwa.mjs
           node scripts/check-pwa.mjs
-          ./node_modules/.bin/wrangler deploy --dry-run
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: zoo-dist
+          path: dist
+          include-hidden-files: true
       - name: Record tested SHA
         id: record-sha
         if: always()
@@ -172,6 +179,8 @@ jobs:
 
   l1-unit:
     name: "L1: Unit"
+    needs:
+      - b1-build
     runs-on: ubuntu-latest
     timeout-minutes: 10
     outputs:
@@ -185,14 +194,17 @@ jobs:
           sparse-checkout: |
             /*
             !/design/art/
-      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+      - uses: nocoo/base-ci/.github/actions/setup-js@dc858360aa7812db61fd9d825943e4efd4dcd0e7 # v2026.17
         with:
+          package-manager: npm
           node-version: ${{ env.NODE_VERSION }}
-          cache: npm
-      - run: npm ci
+          install-policy: project
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: zoo-dist
+          path: dist
       - name: Content, player and schedule checks
         run: |
-          npm run build
           npm run check
           node --experimental-strip-types scripts/check-audio-player.ts
           python3 scripts/check-audio-schedule.py
@@ -225,10 +237,38 @@ jobs:
 
   p1-package:
     name: "P1: Package"
-    if: ${{ vars.ENABLE_P1_PACKAGE == 'true' }}
+    needs:
+      - b1-build
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      tested-sha: ${{ steps.record-sha.outputs.sha }}
     steps:
-      - run: echo "N/A — private package; nothing published to npm"
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/design/art/
+            !/design/audio/*.wav
+            !/design/audio/**/*.wav
+      - uses: nocoo/base-ci/.github/actions/setup-js@dc858360aa7812db61fd9d825943e4efd4dcd0e7 # v2026.17
+        with:
+          package-manager: npm
+          node-version: ${{ env.NODE_VERSION }}
+          install-policy: project
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: zoo-dist
+          path: dist
+      - name: Dry-run Wrangler deploy
+        run: ./node_modules/.bin/wrangler deploy --dry-run
+      - name: Record tested SHA
+        id: record-sha
+        if: always()
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
   z1-gate:
     name: "Z1: Gate"
@@ -259,8 +299,8 @@ jobs:
           node --input-type=module - <<'EOF'
           const needs = JSON.parse(process.env.NEEDS_JSON);
           const expectedSha = process.env.EXPECTED_SHA;
-          const implSlots = ["s1-types", "s2-lint", "s3-workflow", "g1-secrets", "g2-dependencies", "b1-build", "l1-unit"];
-          const naSlots = ["l2-runtime", "l3-integration", "l4-e2e", "p1-package"];
+          const implSlots = ["s1-types", "s2-lint", "s3-workflow", "g1-secrets", "g2-dependencies", "b1-build", "l1-unit", "p1-package"];
+          const naSlots = ["l2-runtime", "l3-integration", "l4-e2e"];
           const errors = [];
 
           for (const slot of implSlots) {

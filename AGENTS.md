@@ -42,7 +42,7 @@ npm run deploy               # build + Wrangler deploy (authorized only)
 
 Follows `system1-quality`; CI slot definitions and pinned `base-ci` revision live in [.github/workflows/quality-slots.yml](.github/workflows/quality-slots.yml) (`quality / Z1: Gate` required on `main` and verified by `.github/workflows/deploy.yml`). Status vocabulary: `enforced`, `planned`, `manual`, `N/A`.
 
-- **Exceptions / gaps**: `L2 Runtime` (static Worker), `L3 Integration` (no backend API), `L4 E2E` (no CI Playwright suite), and `P1 Package` (private app) are `N/A`. `S2 Lint` is `enforced` via Biome (`npm run lint`).
+- **Exceptions / gaps**: `L2 Runtime` (static Worker), `L3 Integration` (no backend API), and `L4 E2E` (no CI Playwright suite) are `N/A`. `P1 Package` (`wrangler deploy --dry-run`) and `S2 Lint` (`npm run lint`) are `enforced`.
 - **Verification scope**: `L1 Unit` is `enforced` via repo check scripts without a coverage threshold; physical iPhone PWA/offline and listening pronunciation reviews remain `manual`.
 - **Local hooks**: none configured in repo; run `npm run check`, `npm run build`, `node scripts/check-pwa.mjs`, and `npm run check:live` manually (`manual`) before pushing.
 
