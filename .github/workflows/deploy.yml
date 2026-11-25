@@ -48,6 +48,13 @@ jobs:
         with:
           ref: ${{ steps.source.outputs.target-sha }}
           persist-credentials: false
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/design/art/
+            !/design/audio/*.wav
+            !/design/audio/**/*.wav
       - name: Require deployment credential
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
