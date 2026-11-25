@@ -1010,8 +1010,8 @@ h2 {
   *,
   *::before,
   *::after {
-    animation: none;
-    transition: none;
-    scroll-behavior: auto;
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
   }
 }
