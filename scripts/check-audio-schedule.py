@@ -1,5 +1,6 @@
 import importlib.util
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -211,13 +212,31 @@ with TemporaryDirectory() as temporary:
         assert len(resumed) == 367
         assert not (root / 'artifacts/audio-schedule/request-budget.json').exists()
 
-complete = [item for item in jobs if (audio.ROOT / f"design/audio/{item['id']}.json").exists()]
-pending = [item for item in jobs if not (audio.ROOT / f"design/audio/{item['id']}.json").exists()]
-assert {item['id'] for item in complete} >= legacy_complete_ids
-assert {item['id'] for item in pending} <= expansion_target_ids
-assert len(complete) + len(pending) == 608
-with patch.object(audio.urllib.request, 'urlopen', side_effect=AssertionError('Offline regression must not call a provider')):
+if os.environ.get('ZOO_SKIP_MEDIA_BYTES') == '1':
+    tracked = set(
+        subprocess.check_output(
+            ['git', 'ls-tree', '-r', '--name-only', 'HEAD', 'design/audio', 'public/audio'],
+            cwd=audio.ROOT,
+            text=True,
+        ).splitlines()
+    )
+    complete = [item for item in jobs if f"design/audio/{item['id']}.json" in tracked]
+    pending = [item for item in jobs if f"design/audio/{item['id']}.json" not in tracked]
+    assert {item['id'] for item in complete} >= legacy_complete_ids
+    assert {item['id'] for item in pending} <= expansion_target_ids
+    assert len(complete) + len(pending) == 608
     for item in complete:
-        audio.generate(item, None, True)
+        assert f"design/audio/{item['id']}.wav" in tracked
+        assert f"public/audio/{item['id']}.mp3" in tracked
+    print(f'检查通过：预算/冷却与隔离队列 608/240/368、中文优先、完成 1 条后续传；Git 追踪 {len(complete)} 完成/{len(pending)} 待补（跳过 WAV/MP3 哈希重算）。')
+else:
+    complete = [item for item in jobs if (audio.ROOT / f"design/audio/{item['id']}.json").exists()]
+    pending = [item for item in jobs if not (audio.ROOT / f"design/audio/{item['id']}.json").exists()]
+    assert {item['id'] for item in complete} >= legacy_complete_ids
+    assert {item['id'] for item in pending} <= expansion_target_ids
+    assert len(complete) + len(pending) == 608
+    with patch.object(audio.urllib.request, 'urlopen', side_effect=AssertionError('Offline regression must not call a provider')):
+        for item in complete:
+            audio.generate(item, None, True)
 
-print(f'检查通过：预算/冷却与隔离队列 608/240/368、中文优先、完成 1 条后续传；真实文件 {len(complete)} 完成/{len(pending)} 待补。')
+    print(f'检查通过：预算/冷却与隔离队列 608/240/368、中文优先、完成 1 条后续传；真实文件 {len(complete)} 完成/{len(pending)} 待补。')

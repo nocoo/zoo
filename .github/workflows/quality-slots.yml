@@ -156,15 +156,19 @@ jobs:
           sparse-checkout-cone-mode: false
           sparse-checkout: |
             /*
-            !/design/art/
-            !/design/audio/*.wav
-            !/design/audio/**/*.wav
+            !/design/
+            !/public/art/
+            !/public/audio/
+            !/public/audio-edge/
+            !/public/voice-preview/
       - uses: nocoo/base-ci/.github/actions/setup-js@e5876a604547b1ddb0916f16dd841a4f832609a0 # v2026.20
         with:
           package-manager: npm
           node-version: ${{ env.NODE_VERSION }}
           install-policy: project
       - name: Build production bundle and verify PWA
+        env:
+          ZOO_CI_SPARSE_MEDIA: "1"
         run: |
           node scripts/build-media.mjs
           ./node_modules/.bin/vite build
@@ -190,8 +194,6 @@ jobs:
 
   l1-unit:
     name: "L1: Unit"
-    needs:
-      - b1-build
     runs-on: ubuntu-latest
     timeout-minutes: 10
     outputs:
@@ -205,21 +207,23 @@ jobs:
           sparse-checkout: |
             /*
             !/design/art/
+            !/design/audio/
+            !/public/art/
+            !/public/audio/
+            !/public/audio-edge/
+            !/public/voice-preview/
       - uses: nocoo/base-ci/.github/actions/setup-js@e5876a604547b1ddb0916f16dd841a4f832609a0 # v2026.20
         with:
           package-manager: npm
           node-version: ${{ env.NODE_VERSION }}
           install-policy: project
-      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
-        with:
-          name: zoo-dist-shell
-          path: dist
       - name: Content, player and schedule checks
+        env:
+          ZOO_SKIP_MEDIA_BYTES: "1"
         run: |
           npm run check
           node --experimental-strip-types scripts/check-audio-player.ts
           python3 scripts/check-audio-schedule.py
-          npm run check:live
       - name: Record tested SHA
         id: record-sha
         if: always()
@@ -273,6 +277,8 @@ jobs:
         with:
           name: zoo-dist-shell
           path: dist
+      - name: Local Worker health check
+        run: npm run check:live
       - name: Dry-run Wrangler deploy
         run: ./node_modules/.bin/wrangler deploy --dry-run
       - name: Record tested SHA

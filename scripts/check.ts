@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { existsSync, readFileSync } from "node:fs";
+import { getTrackedPublicFiles } from "./media-utils.ts";
 import { animalGroups, categories, chineseNumber, numberPinyin, pictures } from "../src/content.ts";
 import { englishNumber } from "../src/english.ts";
 import { neighborImages } from "../src/neighbors.ts";
@@ -38,6 +39,10 @@ assert.equal(Object.keys(media.audio).length, 360);
 assert.equal(Object.keys(media.transcripts).length, 360);
 assert.equal(Object.keys(media.images).length, 720);
 const manifest = JSON.parse(readFileSync("public/manifest.webmanifest", "utf8"));
+const skipMediaBytes = process.env.ZOO_SKIP_MEDIA_BYTES === "1";
+const trackedPublicFiles = skipMediaBytes ? getTrackedPublicFiles() : null;
+const publicAssetExists = (relativePath: string) =>
+  trackedPublicFiles ? trackedPublicFiles.has(relativePath) : existsSync(relativePath);
 assert.equal(manifest.name, "小小动物岛");
 assert.equal(manifest.short_name.length, 5);
 assert.equal(manifest.display, "standalone");
@@ -71,12 +76,12 @@ for (const category of categories) {
       item.category === "letters" ? item.name : `${item.english}. ${item.englishDescription}`,
     );
     for (const path of [item.image, item.imageLarge]) {
-      assert.ok(existsSync(`public${path}`), `Missing ${path}`);
+      assert.ok(publicAssetExists(`public${path}`), `Missing ${path}`);
       assert.ok(media.images[path].startsWith(`${path}?v=`));
     }
     for (const language of ["zh", "en"]) {
       const url = media.audio[item.id][language];
-      assert.ok(existsSync(`public${url.split("?")[0]}`), `Missing ${url}`);
+      assert.ok(publicAssetExists(`public${url.split("?")[0]}`), `Missing ${url}`);
       assert.equal(
         media.transcripts[item.id][language],
         language === "zh"
@@ -87,7 +92,7 @@ for (const category of categories) {
       );
     }
     if (item.imageLarge) {
-      assert.ok(existsSync(`public${item.imageLarge}`), `Missing ${item.imageLarge}`);
+      assert.ok(publicAssetExists(`public${item.imageLarge}`), `Missing ${item.imageLarge}`);
       assert.notEqual(item.image, item.imageLarge);
     }
   }
@@ -108,7 +113,7 @@ function requirePicture(id: string) {
   return found;
 }
 assert.ok(!pictures.some((p) => p.category === "numbers" && p.value !== undefined && p.value > 30));
-assert.ok(existsSync("public/art/hero.webp"));
+assert.ok(publicAssetExists("public/art/hero.webp"));
 assert.equal(pictures.filter((p) => p.imageLarge).length, 360);
 assert.ok(pictures.every((p) => p.image && p.imageLarge));
 assert.equal(swipeStep(-90, 12), 1);
