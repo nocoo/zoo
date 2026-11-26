@@ -1,4 +1,4 @@
-name: Deploy Production
+name: Release
 
 on:
   workflow_run:
@@ -37,7 +37,7 @@ jobs:
     steps:
       - name: Resolve and verify CI-gated source revision
         id: source
-        uses: nocoo/base-ci/.github/actions/release-source@bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c # v2026.18
+        uses: nocoo/base-ci/.github/actions/release-source@98fc023423f82b010f17e0ebbc9dd580fe68736a # v2026.19
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           expected-workflow-path: ".github/workflows/ci.yml"
@@ -75,7 +75,7 @@ jobs:
       - name: Deploy Worker
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: d51a8fde361e4be31db17d8c56737c1f
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
         run: ./node_modules/.bin/wrangler deploy
       - name: Verify production revision and assets
         run: |

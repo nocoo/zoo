@@ -40,9 +40,9 @@ npm run deploy               # build + Wrangler deploy (authorized only)
 
 ## Quality & Local Gates
 
-Follows `system1-quality`; CI slot definitions and pinned `base-ci` revision live in [.github/workflows/quality-slots.yml](.github/workflows/quality-slots.yml) (`quality / Z1: Gate` required on `main` and verified by `.github/workflows/deploy.yml`). Status vocabulary: `enforced`, `planned`, `manual`, `N/A`.
+Follows `system1-quality`; CI slot definitions and pinned `base-ci` revision live in [.github/workflows/quality-slots.yml](.github/workflows/quality-slots.yml) (`quality / Z1: Gate` required on `main` and verified by `.github/workflows/release.yml`). Status vocabulary: `enforced`, `planned`, `manual`, `N/A`.
 
-- **Exceptions / gaps**: `L2 Runtime` (static Worker), `L3 Integration` (no backend API), and `L4 E2E` (no CI Playwright suite) are `N/A`. `P1 Package` (`wrangler deploy --dry-run` on slim app-shell `zoo-dist-shell` artifact without static media; `deploy.yml` builds full `dist/`) and `S2 Lint` (`npm run lint`) are `enforced`. CI pins `nocoo/base-ci` `v2026.18` (`bfaac83b5a4d5c7ed26320bb5b09f3ca0a01932c`) with checkout-free `z1-gate`.
+- **Exceptions / gaps**: `L2 Runtime` (static Worker), `L3 Integration` (no backend API), and `L4 E2E` (no CI Playwright suite) are `N/A`. `P1 Package` (`wrangler deploy --dry-run` on slim app-shell `zoo-dist-shell` artifact without static media; `release.yml` builds full `dist/`) and `S2 Lint` (`npm run lint`) are `enforced`. CI pins `nocoo/base-ci` `v2026.19` (`98fc023423f82b010f17e0ebbc9dd580fe68736a`) with checkout-free `z1-gate`.
 - **Verification scope**: `L1 Unit` is `enforced` via repo check scripts without a coverage threshold; physical iPhone PWA/offline and listening pronunciation reviews remain `manual`.
 - **Local hooks**: none configured in repo; run `npm run check`, `npm run build`, `node scripts/check-pwa.mjs`, and `npm run check:live` manually (`manual`) before pushing.
 

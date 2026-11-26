@@ -6,7 +6,7 @@ After Check succeeds, the main-only Deploy Production job builds the same commit
 
 ## One-Time Credential Setup
 
-In GitHub repository Settings > Secrets and variables > Actions, add `CLOUDFLARE_API_TOKEN`. The production environment can alternatively hold this secret. Use a deployment API token scoped to the configured Cloudflare account, with Workers Scripts Write and the zone permissions required by the existing custom domain (Workers Routes Write and Zone Read). Account ID is public configuration in the workflow and `wrangler.jsonc`.
+In GitHub repository Settings > Environments > `production`, configure the `CLOUDFLARE_API_TOKEN` secret and `CLOUDFLARE_ACCOUNT_ID` variable. Use a deployment API token scoped to the configured Cloudflare account, with Workers Scripts Write and the zone permissions required by the existing custom domain (Workers Routes Write and Zone Read). Account ID is public configuration in the `production` environment and `wrangler.jsonc`.
 
 Never copy the local Wrangler/CF OAuth access or refresh tokens into CI, and never place tokens in files, logs or chat. A missing secret fails the deployment job explicitly. No speech/image-generation credentials are needed.
 
