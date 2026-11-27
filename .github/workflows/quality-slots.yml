@@ -32,7 +32,7 @@ jobs:
           sparse-checkout: |
             src
             scripts
-      - uses: nocoo/base-ci/.github/actions/setup-js@3703a073693d598159e87f77f99587e586c14cfe # v2026.24
+      - uses: nocoo/base-ci/.github/actions/setup-js@9933a7461a312cfaac526ccc5907357a7e3f669a # v2026.25
         with:
           package-manager: npm
           node-version: ${{ env.NODE_VERSION }}
@@ -60,7 +60,7 @@ jobs:
             docs
             scripts
             src
-      - uses: nocoo/base-ci/.github/actions/setup-js@3703a073693d598159e87f77f99587e586c14cfe # v2026.24
+      - uses: nocoo/base-ci/.github/actions/setup-js@9933a7461a312cfaac526ccc5907357a7e3f669a # v2026.25
         with:
           package-manager: npm
           node-version: ${{ env.NODE_VERSION }}
@@ -85,7 +85,7 @@ jobs:
           filter: blob:none
           sparse-checkout: |
             .github
-      - uses: nocoo/base-ci/.github/actions/lint-workflows@3703a073693d598159e87f77f99587e586c14cfe # v2026.24
+      - uses: nocoo/base-ci/.github/actions/lint-workflows@9933a7461a312cfaac526ccc5907357a7e3f669a # v2026.25
       - name: Record tested SHA
         id: record-sha
         if: always()
@@ -115,7 +115,7 @@ jobs:
             !/public/voice-preview/
             !/public/icons/
             !/public/assets/
-      - uses: nocoo/base-ci/.github/actions/scan-secrets@3703a073693d598159e87f77f99587e586c14cfe # v2026.24
+      - uses: nocoo/base-ci/.github/actions/scan-secrets@9933a7461a312cfaac526ccc5907357a7e3f669a # v2026.25
       - name: Record tested SHA
         id: record-sha
         if: always()
@@ -134,7 +134,7 @@ jobs:
           filter: blob:none
           sparse-checkout: |
             .github
-      - uses: nocoo/base-ci/.github/actions/scan-dependencies@3703a073693d598159e87f77f99587e586c14cfe # v2026.24
+      - uses: nocoo/base-ci/.github/actions/scan-dependencies@9933a7461a312cfaac526ccc5907357a7e3f669a # v2026.25
         with:
           lockfiles: "package-lock.json"
       - name: Record tested SHA
@@ -161,7 +161,7 @@ jobs:
             !/public/audio/
             !/public/audio-edge/
             !/public/voice-preview/
-      - uses: nocoo/base-ci/.github/actions/setup-js@3703a073693d598159e87f77f99587e586c14cfe # v2026.24
+      - uses: nocoo/base-ci/.github/actions/setup-js@9933a7461a312cfaac526ccc5907357a7e3f669a # v2026.25
         with:
           package-manager: npm
           node-version: ${{ env.NODE_VERSION }}
@@ -212,7 +212,7 @@ jobs:
             !/public/audio/
             !/public/audio-edge/
             !/public/voice-preview/
-      - uses: nocoo/base-ci/.github/actions/setup-js@3703a073693d598159e87f77f99587e586c14cfe # v2026.24
+      - uses: nocoo/base-ci/.github/actions/setup-js@9933a7461a312cfaac526ccc5907357a7e3f669a # v2026.25
         with:
           package-manager: npm
           node-version: ${{ env.NODE_VERSION }}
@@ -268,7 +268,7 @@ jobs:
             /*
             !/design/
             !/public/
-      - uses: nocoo/base-ci/.github/actions/setup-js@3703a073693d598159e87f77f99587e586c14cfe # v2026.24
+      - uses: nocoo/base-ci/.github/actions/setup-js@9933a7461a312cfaac526ccc5907357a7e3f669a # v2026.25
         with:
           package-manager: npm
           node-version: ${{ env.NODE_VERSION }}
@@ -308,7 +308,7 @@ jobs:
     steps:
       - name: Verify quality slots
         id: gate
-        uses: nocoo/base-ci/.github/actions/z1-gate@3703a073693d598159e87f77f99587e586c14cfe # v2026.24
+        uses: nocoo/base-ci/.github/actions/z1-gate@9933a7461a312cfaac526ccc5907357a7e3f669a # v2026.25
         with:
           needs-json: ${{ toJSON(needs) }}
           expected-sha: ${{ github.sha }}
